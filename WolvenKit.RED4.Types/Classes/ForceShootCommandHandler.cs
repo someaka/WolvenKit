@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<AIForceShootCommand>>();
 			set => SetPropertyValue<CWeakHandle<AIForceShootCommand>>(value);
 		}
+
+		public ForceShootCommandHandler()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

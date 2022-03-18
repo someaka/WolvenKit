@@ -29,6 +29,10 @@ namespace WolvenKit.RED4.Types
 			ForceLODLevel = -1;
 			Direction = new();
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

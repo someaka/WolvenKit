@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIArchetypeSet()
 		{
 			ArchetypeResources = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

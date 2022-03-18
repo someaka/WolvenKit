@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			InStealth = "in_stealth";
 			AiAlerted = "ai_alerted";
 			ReservedSignposts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

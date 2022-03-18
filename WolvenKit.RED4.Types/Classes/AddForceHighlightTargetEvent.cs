@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AddForceHighlightTargetEvent()
 		{
 			TargetID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

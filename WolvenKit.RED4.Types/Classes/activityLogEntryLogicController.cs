@@ -100,5 +100,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkanimProxy>>();
 			set => SetPropertyValue<CHandle<inkanimProxy>>(value);
 		}
+
+		public activityLogEntryLogicController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

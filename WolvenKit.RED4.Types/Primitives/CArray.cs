@@ -7,9 +7,9 @@ using System.Linq;
 namespace WolvenKit.RED4.Types
 {
     [RED("array")]
-    public class CArray<T> : CArrayBase<T>, IRedArray<T> where T : IRedType
+    public class CArray<T> : CArrayBase<T> where T : IRedType
     {
-        public CArray() : base()
+        public CArray()
         {
 
         }
@@ -19,7 +19,7 @@ namespace WolvenKit.RED4.Types
 
         }
 
-        public CArray(List<T> list) : base(list)
+        public CArray(List<T?> list) : base(list)
         {
 
         }

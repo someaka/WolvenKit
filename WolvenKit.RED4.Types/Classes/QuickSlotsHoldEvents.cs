@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EDPadSlot>>();
 			set => SetPropertyValue<CEnum<EDPadSlot>>(value);
 		}
+
+		public QuickSlotsHoldEvents()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public senseVisibleObjectTypeEvent()
 		{
 			Type = Enums.gamedataSenseObjectType.Undefined;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

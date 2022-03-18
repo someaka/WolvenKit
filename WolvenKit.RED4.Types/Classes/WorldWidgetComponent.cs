@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 			SpawnDistanceOverride = -1.000000F;
 			LimitedSpawnDistanceFromVehicle = true;
 			ScreenDefinition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

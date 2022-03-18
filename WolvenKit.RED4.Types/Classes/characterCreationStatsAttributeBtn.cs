@@ -128,6 +128,10 @@ namespace WolvenKit.RED4.Types
 			MinusBtnhitArea = new();
 			MinMaxLabel = new();
 			MinMaxLabelText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -89,6 +89,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CurrencyDiff = new();
 			CurrencyTotal = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

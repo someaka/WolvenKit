@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NodeId = new();
 			Tags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

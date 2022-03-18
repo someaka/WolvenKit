@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<worldTrafficSpotDirection>>();
 			set => SetPropertyValue<CEnum<worldTrafficSpotDirection>>(value);
 		}
+
+		public worldTrafficSpotDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

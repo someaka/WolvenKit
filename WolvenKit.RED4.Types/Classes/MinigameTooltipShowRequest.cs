@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<MessageTooltipData>>();
 			set => SetPropertyValue<CHandle<MessageTooltipData>>(value);
 		}
+
+		public MinigameTooltipShowRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

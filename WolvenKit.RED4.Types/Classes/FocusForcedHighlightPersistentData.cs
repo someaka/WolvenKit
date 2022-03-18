@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public FocusForcedHighlightPersistentData()
 		{
 			SourceID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

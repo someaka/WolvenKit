@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public AimAssistSettingsListener()
 		{
 			SettingsRecords = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

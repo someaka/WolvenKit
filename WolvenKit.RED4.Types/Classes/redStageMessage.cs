@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Parent = 4294967295;
 			Names = new();
 			Ids = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

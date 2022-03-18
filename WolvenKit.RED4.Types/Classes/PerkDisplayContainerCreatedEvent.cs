@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<PerkDisplayContainerController>>();
 			set => SetPropertyValue<CWeakHandle<PerkDisplayContainerController>>(value);
 		}
+
+		public PerkDisplayContainerCreatedEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

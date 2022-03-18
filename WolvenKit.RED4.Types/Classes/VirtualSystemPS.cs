@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DeviceName = "SYSTEM";
 			Slaves = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

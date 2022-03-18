@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			Killed = true;
 			Unconscious = true;
 			Defeated = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

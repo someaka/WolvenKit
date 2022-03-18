@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<AIThrowGrenadeCommand>>();
 			set => SetPropertyValue<CWeakHandle<AIThrowGrenadeCommand>>(value);
 		}
+
+		public ThrowGrenadeCommandHandler()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

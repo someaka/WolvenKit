@@ -231,6 +231,10 @@ namespace WolvenKit.RED4.Types
 			BlendRange = 20;
 			StreamingDistance = 64.000000F;
 			StreamingHeight = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

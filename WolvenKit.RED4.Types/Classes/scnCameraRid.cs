@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Tag = new() { SerialNumber = new() { SerialNumber = 4294967295 } };
 			Animations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

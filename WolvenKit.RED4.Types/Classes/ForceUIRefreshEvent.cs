@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ForceUIRefreshEvent()
 		{
 			OwnerID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

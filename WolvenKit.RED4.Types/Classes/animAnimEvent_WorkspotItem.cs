@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimEvent_WorkspotItem()
 		{
 			Actions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

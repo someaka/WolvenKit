@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public physicsQueryPresetDefinition()
 		{
 			QueryGroups = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

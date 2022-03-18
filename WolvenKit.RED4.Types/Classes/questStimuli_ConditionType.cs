@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			IsPlayerInstigator = true;
 			TargetRef = new() { Names = new() };
 			Type = Enums.gamedataStimType.FootStepRegular;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

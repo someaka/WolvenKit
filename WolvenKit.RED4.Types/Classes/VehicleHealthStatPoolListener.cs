@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<vehicleBaseObject>>();
 			set => SetPropertyValue<CWeakHandle<vehicleBaseObject>>(value);
 		}
+
+		public VehicleHealthStatPoolListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "EntityTeleportRequested";
 			Destination = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

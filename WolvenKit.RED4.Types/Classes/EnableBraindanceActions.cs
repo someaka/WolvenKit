@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EnableBraindanceActions()
 		{
 			ActionMask = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

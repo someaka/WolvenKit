@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			Velocity = new();
 			IsOnGround = true;
 			GroundNormal = new() { Z = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

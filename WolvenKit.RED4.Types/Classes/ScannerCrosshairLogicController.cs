@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkScreenProjection>>();
 			set => SetPropertyValue<CHandle<inkScreenProjection>>(value);
 		}
+
+		public ScannerCrosshairLogicController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

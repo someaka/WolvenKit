@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			TargetID = new();
 			TargetPosition = new();
 			RequestedHeat = Enums.EPreventionHeatStage.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

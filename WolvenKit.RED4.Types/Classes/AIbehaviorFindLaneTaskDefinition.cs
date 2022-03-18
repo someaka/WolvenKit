@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<worldFindLaneFilter>>();
 			set => SetPropertyValue<CEnum<worldFindLaneFilter>>(value);
 		}
+
+		public AIbehaviorFindLaneTaskDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

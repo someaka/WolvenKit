@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameItemObject>>();
 			set => SetPropertyValue<CWeakHandle<gameItemObject>>(value);
 		}
+
+		public gamestateMachineparameterTypeRequestReload()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

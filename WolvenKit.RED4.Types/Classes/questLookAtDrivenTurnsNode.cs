@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			Id = 65535;
 			PuppetRef = new() { Names = new() };
 			CanLookAtDrivenTurnsInterruptGesture = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

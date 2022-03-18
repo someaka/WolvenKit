@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Names = new();
 			Actions = new();
 			Tags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

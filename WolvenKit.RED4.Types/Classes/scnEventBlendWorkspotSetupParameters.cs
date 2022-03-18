@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			IdleOnlyMode = true;
 			WorkExcludedGestures = new();
 			ItemOverride = new() { PropOverrides = new(), ItemOverrides = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

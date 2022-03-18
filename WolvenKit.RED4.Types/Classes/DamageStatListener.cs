@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<UpdateDamageChangeEvent>>();
 			set => SetPropertyValue<CHandle<UpdateDamageChangeEvent>>(value);
 		}
+
+		public DamageStatListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

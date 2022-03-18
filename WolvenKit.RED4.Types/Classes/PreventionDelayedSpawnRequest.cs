@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EPreventionHeatStage>>();
 			set => SetPropertyValue<CEnum<EPreventionHeatStage>>(value);
 		}
+
+		public PreventionDelayedSpawnRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

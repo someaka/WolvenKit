@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiMappinUIProfile()
 		{
 			WidgetResource = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

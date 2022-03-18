@@ -187,6 +187,10 @@ namespace WolvenKit.RED4.Types
 			HudHintMessegeContent = new();
 			UIVisible = new();
 			ScannerLookAt = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

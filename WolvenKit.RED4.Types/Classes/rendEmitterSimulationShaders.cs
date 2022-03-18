@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public rendEmitterSimulationShaders()
 		{
 			SimCS = new(2);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

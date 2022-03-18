@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameweaponObject>>();
 			set => SetPropertyValue<CWeakHandle<gameweaponObject>>(value);
 		}
+
+		public gameAttackInitContext()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

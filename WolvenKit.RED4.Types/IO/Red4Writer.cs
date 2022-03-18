@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using WolvenKit.Core.Extensions;
 using WolvenKit.RED4.Types;
+using WolvenKit.RED4.Types.Exceptions;
 
 namespace WolvenKit.RED4.IO
 {
@@ -203,19 +204,19 @@ namespace WolvenKit.RED4.IO
 
         protected class StringInfo
         {
-            public List<CName> List { get; set; }
+            public List<CName> List { get; set; } = new();
             public int LastIndex { get; set; }
         }
 
         protected class ImportInfo
         {
-            public List<ImportEntry> List { get; set; }
+            public List<ImportEntry> List { get; set; } = new();
             public int LastIndex { get; set; }
         }
 
         protected class BufferInfo
         {
-            public List<RedBuffer> List { get; set; }
+            public List<RedBuffer> List { get; set; } = new();
             public int LastIndex { get; set; }
         }
 
@@ -242,8 +243,13 @@ namespace WolvenKit.RED4.IO
 
         public virtual void Write(CName val)
         {
-            CNameRef.Add(_writer.BaseStream.Position, val);
-            _writer.Write(GetStringIndex(val));
+            if ((string)val! == null)
+            {
+                throw new ArgumentNullException(nameof(val));
+            }
+
+            CNameRef.Add(_writer.BaseStream.Position, val!);
+            _writer.Write(GetStringIndex(val!));
         }
 
         public virtual void Write(CRUID val) => _writer.Write(val);
@@ -251,6 +257,11 @@ namespace WolvenKit.RED4.IO
 
         public virtual void Write(CVariant val)
         {
+            if (val.Value == null)
+            {
+                throw new ArgumentNullException(nameof(val));
+            }
+
             var typeName = RedReflection.GetRedTypeFromCSType(val.Value.GetType(), Flags.Empty);
 
             CNameRef.Add(_writer.BaseStream.Position, typeName);
@@ -304,7 +315,7 @@ namespace WolvenKit.RED4.IO
         #endregion Simple
 
         // TODO: Check for generic arguments
-        private MethodInfo GetMethod(string name, int genericParameterCount, Type[] types)
+        private MethodInfo? GetMethod(string name, int genericParameterCount, Type[] types)
         {
             var methods = typeof(Red4Writer).GetMethods();
             foreach (var methodInfo in methods)
@@ -383,6 +394,10 @@ namespace WolvenKit.RED4.IO
             var innerType = instance.GetType().GetGenericArguments()[0];
 
             var method = GetMethod("Write", 1, new[] { genericType });
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Writer.Write<T>(CArray<T>) could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
             generic.Invoke(this, new object[] { instance });
@@ -403,12 +418,16 @@ namespace WolvenKit.RED4.IO
             var innerType = instance.GetType().GetGenericArguments()[0];
 
             var method = GetMethod("Write", 1, new[] { genericType });
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Writer.Write<T>(CArrayFixedSize<T>) could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
             generic.Invoke(this, new object[] { instance });
         }
 
-        public virtual void Write<T>(CArrayFixedSize<T> instance) where T : IRedType
+        public virtual void Write<T>(CArrayFixedSize<T?> instance) where T : IRedType
         {
             var count = instance.Count(e => e != null);
 
@@ -430,6 +449,10 @@ namespace WolvenKit.RED4.IO
             var innerType = instance.GetType().GetGenericArguments()[0];
 
             var method = GetMethod("Write", 1, new[] { genericType });
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Writer.Write<T>(CStatic<T>) could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
             generic.Invoke(this, new object[] { instance });
@@ -479,12 +502,9 @@ namespace WolvenKit.RED4.IO
         public List<RedBaseClass> ChunkQueue = new();
         public Dictionary<Guid,List<(long, int, Type)>> ChunkReferences = new();
 
-        protected void InternalHandleWriter(RedBaseClass classRef, int pointerOffset)
-        {
-            InternalHandleWriter(classRef, pointerOffset, typeof(int));
-        }
+        protected void InternalHandleWriter(RedBaseClass? classRef, int pointerOffset) => InternalHandleWriter(classRef, pointerOffset, typeof(int));
 
-        protected void InternalHandleWriter(RedBaseClass classRef, int pointerOffset, Type indexType)
+        protected void InternalHandleWriter(RedBaseClass? classRef, int pointerOffset, Type indexType)
         {
             if (classRef == null)
             {
@@ -586,6 +606,10 @@ namespace WolvenKit.RED4.IO
             var innerType = instance.GetType().GetGenericArguments()[0];
 
             var method = GetMethod("Write", 1, new[] { genericType });
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Writer.Write<T>(MultiChannelCurve<T>) could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
             generic.Invoke(this, new object[] { instance });
@@ -639,8 +663,14 @@ namespace WolvenKit.RED4.IO
             var typeInfo = RedReflection.GetTypeInfo(instance.GetType());
             foreach (var propertyInfo in typeInfo.GetWritableProperties())
             {
+                if (propertyInfo.RedName == null)
+                {
+                    throw new RedNameMissingException($"{instance.GetType().Name}.{propertyInfo.Name}");
+                }
+
                 var value = instance.GetProperty(propertyInfo.RedName);
-                Write(value);
+                // TODO: null values?
+                Write(value!);
             }
         }
 
@@ -894,7 +924,21 @@ namespace WolvenKit.RED4.IO
 
         protected class CNameComparer : IEqualityComparer<CName>
         {
-            public bool Equals(CName x, CName y) => string.Equals(x, y);
+            public bool Equals(CName? a, CName? b)
+            {
+                if (ReferenceEquals(a, b))
+                {
+                    return true;
+                }
+
+                if (a is null || b is null || a.Length != b.Length)
+                {
+                    return false;
+                }
+
+                return string.Equals(a, b);
+            }
+
             public bool Equals(CName x, string y) => string.Equals(x, y);
 
             public int GetHashCode(CName obj) => obj.GetHashCode();
@@ -902,7 +946,20 @@ namespace WolvenKit.RED4.IO
 
         protected class ImportComparer : IEqualityComparer<ImportEntry>
         {
-            public bool Equals(ImportEntry x, ImportEntry y) => string.Equals(x.DepotPath, y.DepotPath);
+            public bool Equals(ImportEntry? a, ImportEntry? b)
+            {
+                if (ReferenceEquals(a, b))
+                {
+                    return true;
+                }
+
+                if (a is null || b is null)
+                {
+                    return false;
+                }
+
+                return string.Equals(a.DepotPath, b.DepotPath);
+            }
 
             public int GetHashCode(ImportEntry obj) => obj.DepotPath.GetHashCode();
         }

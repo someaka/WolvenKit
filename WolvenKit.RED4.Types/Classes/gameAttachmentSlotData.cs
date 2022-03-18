@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ActiveItemID = new();
 			PrevItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

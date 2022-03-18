@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CommunityArea = new() { Names = new() };
 			Conditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiRoachRaceChunkLayer()
 		{
 			Chunks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

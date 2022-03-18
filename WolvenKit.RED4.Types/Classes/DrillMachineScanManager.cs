@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IdleToScanTime = 1.700000F;
 			PpOffFrameDelay = 2;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

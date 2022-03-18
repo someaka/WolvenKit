@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			Acceleration = 16.000000F;
 			Deceleration = 16.000000F;
 			RotationSpeed = 180.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

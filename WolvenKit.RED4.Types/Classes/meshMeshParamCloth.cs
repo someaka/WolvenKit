@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			LodChunkIndices = new();
 			Chunks = new();
 			Drivers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

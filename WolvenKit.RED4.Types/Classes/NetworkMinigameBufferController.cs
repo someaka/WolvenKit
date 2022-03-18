@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			SlotList = new();
 			Blinker = new();
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

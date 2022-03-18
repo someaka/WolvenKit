@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameinteractionsLootChoiceActionWrapper()
 		{
 			ItemId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

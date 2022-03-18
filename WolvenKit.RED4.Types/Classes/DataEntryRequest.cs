@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CVariant>();
 			set => SetPropertyValue<CVariant>(value);
 		}
+
+		public DataEntryRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

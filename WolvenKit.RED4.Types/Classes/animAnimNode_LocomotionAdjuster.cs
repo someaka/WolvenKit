@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 			BlendSpeedPosMin = 2.000000F;
 			BlendSpeedRot = 180.000000F;
 			MaxDistance = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

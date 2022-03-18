@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			ObjectRef = new() { Names = new() };
 			StatType = Enums.gamedataStatType.Invalid;
 			SetExactValue = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

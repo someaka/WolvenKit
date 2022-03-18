@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public TransactionRequest()
 		{
 			Items = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

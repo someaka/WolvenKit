@@ -53,6 +53,10 @@ namespace WolvenKit.RED4.Types
 			SlotName = "UI_Interaction";
 			MappinData = new() { MappinType = 151509826449, Variant = Enums.gamedataMappinVariant.DefaultQuestVariant, Active = true, LocalizedCaption = new() { Unk1 = 0, Value = "" }, VisibleThroughWalls = true };
 			Offset = new() { Z = 0.500000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

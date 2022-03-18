@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkCanvasWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkCanvasWidget>>(value);
 		}
+
+		public artist_test_area_r()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

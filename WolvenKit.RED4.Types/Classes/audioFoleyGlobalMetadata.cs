@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public audioFoleyGlobalMetadata()
 		{
 			FadeoutTime = 20.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

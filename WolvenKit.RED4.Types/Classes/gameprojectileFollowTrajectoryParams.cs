@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gameprojectileFollowTrajectoryParams()
 		{
 			TargetOffset = new() { W = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

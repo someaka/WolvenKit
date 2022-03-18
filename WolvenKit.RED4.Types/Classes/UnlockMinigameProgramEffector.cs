@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public UnlockMinigameProgramEffector()
 		{
 			MinigameProgram = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

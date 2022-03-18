@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Effect = new();
 			Alive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

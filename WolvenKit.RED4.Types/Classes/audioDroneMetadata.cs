@@ -161,6 +161,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PlayDistance = 16.000000F;
 			Decorators = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

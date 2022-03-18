@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 			ReplPhaseState = new() { Time = -1.000000F };
 			ReplDefenseMode = new() { Time = -1.000000F };
 			ReplLocomotionMode = new() { Time = -1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

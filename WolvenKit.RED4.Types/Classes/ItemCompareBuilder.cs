@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SortData1 = new();
 			SortData2 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IkLeftHandLocalPosition = new() { W = 1.000000F };
 			IkRightHandLocalPosition = new() { W = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

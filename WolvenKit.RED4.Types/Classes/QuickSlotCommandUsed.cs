@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedeviceAction>>();
 			set => SetPropertyValue<CHandle<gamedeviceAction>>(value);
 		}
+
+		public QuickSlotCommandUsed()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

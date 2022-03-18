@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIActionBossDataDef()
 		{
 			ExcludedWaypointPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

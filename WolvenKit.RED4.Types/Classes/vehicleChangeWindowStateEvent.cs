@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<vehicleEVehicleDoor>>();
 			set => SetPropertyValue<CEnum<vehicleEVehicleDoor>>(value);
 		}
+
+		public vehicleChangeWindowStateEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

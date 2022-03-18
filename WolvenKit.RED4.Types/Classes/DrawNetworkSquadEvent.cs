@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MemberID = new();
 			FxResource = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

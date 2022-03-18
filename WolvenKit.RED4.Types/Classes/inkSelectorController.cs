@@ -127,6 +127,10 @@ namespace WolvenKit.RED4.Types
 			ValuePath = "Panel/Value";
 			LeftArrowPath = "Panel/LeftArrow";
 			RightArrowPath = "Panel/RightArrow";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIArchetype()
 		{
 			MovementParameters = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

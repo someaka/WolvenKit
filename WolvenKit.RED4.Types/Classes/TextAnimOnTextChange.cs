@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TextField = new();
 			AnimationName = "default";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public BoothModeGameController()
 		{
 			ButtonRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

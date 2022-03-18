@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StyleName = "CarriedObject.Style";
 			ForceStyleName = "CarriedObject.ForcedStyle";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

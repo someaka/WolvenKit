@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NodeType = Enums.gamedataDataNodeType.Variable;
 			Values = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

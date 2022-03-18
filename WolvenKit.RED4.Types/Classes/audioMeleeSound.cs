@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioMeleeSound()
 		{
 			Events = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

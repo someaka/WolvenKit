@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public inkTypographyResource()
 		{
 			Languages = new() { new() { LanguageCode = "en-us", IsoScriptCode = "Latn", Fonts = new() { new() } } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

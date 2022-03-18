@@ -71,6 +71,10 @@ namespace WolvenKit.RED4.Types
 			Weight = 1.000000F;
 			WeightNode = new();
 			MulFactorNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

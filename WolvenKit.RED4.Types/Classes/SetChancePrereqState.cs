@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class SetChancePrereqState : gamePrereqState
 	{
+		public SetChancePrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

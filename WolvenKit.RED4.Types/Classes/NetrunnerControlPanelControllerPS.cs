@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public NetrunnerControlPanelControllerPS()
 		{
 			FactQuickHackSetup = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

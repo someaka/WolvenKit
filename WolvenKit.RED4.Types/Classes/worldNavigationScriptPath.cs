@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldNavigationScriptPath()
 		{
 			Path = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

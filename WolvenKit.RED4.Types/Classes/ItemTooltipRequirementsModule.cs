@@ -70,6 +70,10 @@ namespace WolvenKit.RED4.Types
 			LevelRequirementsText = new();
 			StrenghtOrReflexText = new();
 			PerkText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

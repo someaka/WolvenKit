@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataDevelopmentPointType>>();
 			set => SetPropertyValue<CEnum<gamedataDevelopmentPointType>>(value);
 		}
+
+		public AddDevelopmentPoints()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

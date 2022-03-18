@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public DetermineInteractionStateTaskData()
 		{
 			Context = new() { RequestorID = new(), ActionPrereqs = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

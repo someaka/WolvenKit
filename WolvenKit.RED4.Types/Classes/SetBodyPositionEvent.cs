@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			BodyPosition = new();
 			BodyPositionID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

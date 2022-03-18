@@ -3404,6 +3404,10 @@ namespace WolvenKit.RED4.Types
 			Tongue_mid_twist_lAnimOverrideWeight = 1.000000F;
 			Tongue_mid_twist_rAnimOverrideWeight = 1.000000F;
 			Tongue_mid_thickAnimOverrideWeight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

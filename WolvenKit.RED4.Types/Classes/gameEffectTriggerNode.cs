@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectTriggerNode()
 		{
 			EffectDescs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

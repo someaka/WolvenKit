@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enable = true;
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

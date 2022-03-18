@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gamedataSimpleValueNode()
 		{
 			NodeType = Enums.gamedataDataNodeType.SimpleValue;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

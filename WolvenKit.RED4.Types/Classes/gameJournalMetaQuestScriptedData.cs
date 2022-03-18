@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameJournalMetaQuestScriptedData()
 		{
 			Hidden = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

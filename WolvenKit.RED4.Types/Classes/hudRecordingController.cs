@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			Option_intro = new();
 			Option_loop = new();
 			Option_outro = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

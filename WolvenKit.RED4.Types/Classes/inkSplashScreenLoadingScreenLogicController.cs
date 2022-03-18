@@ -130,6 +130,10 @@ namespace WolvenKit.RED4.Types
 			IntroMessageBink = new() { Binks = new() };
 			VideoPlayer = new();
 			SkipButtonPanel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LabelWidget = new();
 			ValueWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

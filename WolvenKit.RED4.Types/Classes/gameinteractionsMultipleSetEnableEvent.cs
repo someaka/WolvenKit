@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Enable = new(0);
 			Layer = new(0);
 			LinkedLayers = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

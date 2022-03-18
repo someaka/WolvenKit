@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public DisassemblableEntitySimple()
 		{
 			ControllerTypeName = "GenericDeviceController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

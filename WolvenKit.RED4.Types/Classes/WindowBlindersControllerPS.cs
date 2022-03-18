@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 96252370147;
 			TweakDBDescriptionRecord = 148393279395;
 			WindowBlindersData = new() { WindowBlindersState = Enums.EWindowBlindersStates.Closed, HasOpenInteraction = true, HasQuickHack = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public RevealNetworkRequestRequest()
 		{
 			Target = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

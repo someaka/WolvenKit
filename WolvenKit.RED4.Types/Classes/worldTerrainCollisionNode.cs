@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			MaterialIndices = new();
 			ActorTransform = new() { Position = new() { X = new(), Y = new(), Z = new() }, Orientation = new() { R = 1.000000F } };
 			Extents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

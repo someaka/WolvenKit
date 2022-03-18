@@ -173,6 +173,10 @@ namespace WolvenKit.RED4.Types
 			ButtonOk = new();
 			ButtonCancel = new();
 			LibraryPath = new() { WidgetLibrary = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

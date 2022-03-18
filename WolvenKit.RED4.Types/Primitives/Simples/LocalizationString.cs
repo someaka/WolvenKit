@@ -5,9 +5,9 @@ namespace WolvenKit.RED4.Types
     public class LocalizationString : IRedPrimitive, IEquatable<LocalizationString>
     {
         public ulong Unk1 { get; set; }
-        public string Value { get; set; }
+        public string? Value { get; set; }
 
-        public bool Equals(LocalizationString other)
+        public bool Equals(LocalizationString? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -22,7 +22,7 @@ namespace WolvenKit.RED4.Types
             return Unk1 == other.Unk1 && Value == other.Value;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {

@@ -53,6 +53,10 @@ namespace WolvenKit.RED4.Types
 			TimeToSkip = 0.050000F;
 			BaseTextLocalized = new() { Unk1 = 0, Value = "" };
 			TargetTextLocalized = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

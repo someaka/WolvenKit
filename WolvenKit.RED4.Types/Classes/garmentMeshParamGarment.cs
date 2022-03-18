@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public garmentMeshParamGarment()
 		{
 			Chunks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

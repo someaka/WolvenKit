@@ -144,6 +144,10 @@ namespace WolvenKit.RED4.Types
 			DataScanningWidget = new();
 			ElevatorStoppedWidget = new();
 			ButtonSizes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

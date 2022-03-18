@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public questShowWorldNode_NodeType()
 		{
 			Show = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

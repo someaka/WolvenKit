@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public entPhysicalMeshComponent()
 		{
 			SimulationType = Enums.physicsSimulationType.Kinematic;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

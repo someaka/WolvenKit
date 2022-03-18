@@ -604,6 +604,10 @@ namespace WolvenKit.RED4.Types
 			ItemDropQueue = new();
 			SellQueue = new();
 			BuyQueue = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

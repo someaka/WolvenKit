@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WarningMessage = new();
 			OnscreenMessage = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

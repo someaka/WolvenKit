@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LightAzimuth = 45.000000F;
 			LightElevation = 45.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

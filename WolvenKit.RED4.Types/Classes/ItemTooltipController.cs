@@ -777,6 +777,10 @@ namespace WolvenKit.RED4.Types
 			WeaponEvolutionDescription = new();
 			DEBUG_iconErrorWrapper = new();
 			DEBUG_iconErrorText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameaudioeventsSurfaceDirection>>();
 			set => SetPropertyValue<CEnum<gameaudioeventsSurfaceDirection>>(value);
 		}
+
+		public gameaudioeventsNotifySurfaceDirectionChanged()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

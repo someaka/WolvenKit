@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameSignalId()
 		{
 			Value = 65535;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

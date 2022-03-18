@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			ActorId = new() { Id = 4294967295 };
 			PerformerId = new() { Id = 4294967040 };
 			OwnershipTransferOptions = new() { DettachFromSlot = true, RemoveFromInventory = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

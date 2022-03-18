@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public scnRidTag()
 		{
 			SerialNumber = new() { SerialNumber = 4294967295 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

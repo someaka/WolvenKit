@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			KnownRecipes = new();
 			NewRecipes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

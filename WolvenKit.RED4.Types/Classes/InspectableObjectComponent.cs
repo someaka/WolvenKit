@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			AdsOffset = 0.250000F;
 			TimeToScan = 2.000000F;
 			Slot = "AttachmentSlots.Inspect";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

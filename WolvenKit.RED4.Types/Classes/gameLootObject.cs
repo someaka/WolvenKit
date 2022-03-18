@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataQuality>>();
 			set => SetPropertyValue<CEnum<gamedataQuality>>(value);
 		}
+
+		public gameLootObject()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

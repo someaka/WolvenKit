@@ -292,6 +292,10 @@ namespace WolvenKit.RED4.Types
 			WindowOpenAanimation = "windowOpen_16x9";
 			ComputerMenuButtonWidgetsData = new();
 			MenuToOpen = Enums.EComputerMenuType.INVALID;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

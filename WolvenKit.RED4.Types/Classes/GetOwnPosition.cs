@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIArgumentMapping>>();
 			set => SetPropertyValue<CHandle<AIArgumentMapping>>(value);
 		}
+
+		public GetOwnPosition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

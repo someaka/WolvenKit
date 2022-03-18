@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			Sockets = new();
 			Id = 65535;
 			AdditionalEndGameRewardsTweak = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorCheckDistanceToCompanionConditionDefinition()
 		{
 			ComparisonOperator = Enums.EComparisonType.Less;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

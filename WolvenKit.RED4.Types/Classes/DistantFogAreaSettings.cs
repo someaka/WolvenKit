@@ -152,6 +152,10 @@ namespace WolvenKit.RED4.Types
 		public DistantFogAreaSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

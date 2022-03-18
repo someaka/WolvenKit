@@ -259,6 +259,10 @@ namespace WolvenKit.RED4.Types
 			BlacklistDelayID = new();
 			MaxGlobalWarningsCount = 4;
 			DeescalationEventID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

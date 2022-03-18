@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			RequiredEntryState = "Any";
 			NewEntryState = "Inactive";
 			SendNotification = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

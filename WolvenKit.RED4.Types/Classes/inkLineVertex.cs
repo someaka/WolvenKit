@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkLineVertex()
 		{
 			Int = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

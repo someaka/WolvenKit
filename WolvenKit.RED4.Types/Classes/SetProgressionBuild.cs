@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataBuildType>>();
 			set => SetPropertyValue<CEnum<gamedataBuildType>>(value);
 		}
+
+		public SetProgressionBuild()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ComparisonReports = new();
 			SubStepsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

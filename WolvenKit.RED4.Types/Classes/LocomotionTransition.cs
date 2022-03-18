@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CString>();
 			set => SetPropertyValue<CString>(value);
 		}
+
+		public LocomotionTransition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

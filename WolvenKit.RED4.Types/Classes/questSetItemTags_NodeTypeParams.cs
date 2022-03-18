@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AddTags = true;
 			Tags = Enums.gameEItemDynamicTags.Quest;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

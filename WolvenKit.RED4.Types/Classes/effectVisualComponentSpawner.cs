@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public effectVisualComponentSpawner()
 		{
 			ComponentName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

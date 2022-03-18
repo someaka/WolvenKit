@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameObject>>();
 			set => SetPropertyValue<CWeakHandle<gameObject>>(value);
 		}
+
+		public subtitleLineMapEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<worlduiEntryVisibility>>();
 			set => SetPropertyValue<CEnum<worlduiEntryVisibility>>(value);
 		}
+
+		public questHUDEntryVisibilityData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

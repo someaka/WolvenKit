@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public audioConversationItemMetadata()
 		{
 			CharacterConditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VisibilityDistance = 100.000000F;
 			VisibleObjectType = Enums.gamedataSenseObjectType.Undefined;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

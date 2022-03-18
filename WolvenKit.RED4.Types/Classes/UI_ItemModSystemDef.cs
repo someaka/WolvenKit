@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public UI_ItemModSystemDef()
 		{
 			ItemModSystemUpdated = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

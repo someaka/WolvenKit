@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public RegisterItemUsedRequest()
 		{
 			ItemUsed = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

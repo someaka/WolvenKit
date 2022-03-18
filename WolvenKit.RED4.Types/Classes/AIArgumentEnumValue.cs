@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AIArgumentEnumValue()
 		{
 			Type = Enums.AIArgumentType.Enum;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			EnableVoicesetLines = true;
 			EnableVoicesetGrunts = true;
 			InputsToBlock = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<textWrappingPolicy>>();
 			set => SetPropertyValue<CEnum<textWrappingPolicy>>(value);
 		}
+
+		public textWrappingInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

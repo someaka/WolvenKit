@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AnimFeature_StatusEffect>>();
 			set => SetPropertyValue<CHandle<AnimFeature_StatusEffect>>(value);
 		}
+
+		public CollisionExitingEvents()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

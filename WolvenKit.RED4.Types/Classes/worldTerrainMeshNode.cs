@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<CMesh>>();
 			set => SetPropertyValue<CResourceAsyncReference<CMesh>>(value);
 		}
+
+		public worldTerrainMeshNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

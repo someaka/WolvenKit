@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			OperationType = Enums.animEAnimGraphMathOp.AGMO_Abs;
 			FirstInputNode = new();
 			SecondInputNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

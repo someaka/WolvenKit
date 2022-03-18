@@ -100,6 +100,10 @@ namespace WolvenKit.RED4.Types
 			ImagePresets = new();
 			MaxWinChance = 100;
 			Slots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

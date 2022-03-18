@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			AnimParams = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

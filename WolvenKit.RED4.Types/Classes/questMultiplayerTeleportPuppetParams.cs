@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			DestinationRef = new() { Names = new() };
 			DestinationOffset = new();
 			AreaNodeTriggerRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

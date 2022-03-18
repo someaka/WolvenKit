@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class gamemappinsInteractionMappinUpdateData : gamemappinsIMappinUpdateData
 	{
+		public gamemappinsInteractionMappinUpdateData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

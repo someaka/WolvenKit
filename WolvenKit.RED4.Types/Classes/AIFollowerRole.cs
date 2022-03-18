@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			FollowerRef = new() { Names = new() };
 			FollowTargetSquads = new();
 			LastStealthLeaveTimeStamp = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

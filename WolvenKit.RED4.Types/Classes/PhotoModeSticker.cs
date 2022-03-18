@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public PhotoModeSticker()
 		{
 			Image = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

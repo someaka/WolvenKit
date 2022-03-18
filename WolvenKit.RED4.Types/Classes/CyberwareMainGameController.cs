@@ -128,6 +128,10 @@ namespace WolvenKit.RED4.Types
 			TooltipsManagerRef = new();
 			ToolTipOffset = new();
 			RawStatsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

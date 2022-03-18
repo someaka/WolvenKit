@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public rendIRenderTextureBlob()
 		{
 			Header = new() { SizeInfo = new() { Depth = 1 }, TextureInfo = new(), MipMapInfo = new(), HistogramData = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

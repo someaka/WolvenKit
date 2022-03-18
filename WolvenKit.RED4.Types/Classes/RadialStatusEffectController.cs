@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			EffectTemplateRef = new() { WidgetLibrary = new() };
 			MaxSize = 8;
 			Effects = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

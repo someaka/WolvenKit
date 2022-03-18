@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 92771606930;
 			TweakDBDescriptionRecord = 144804359263;
 			CrossingLightSFXSetup = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

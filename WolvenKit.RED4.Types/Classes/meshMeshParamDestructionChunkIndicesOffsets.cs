@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Offsets = new();
 			ChunkOffsets = new();
 			Indices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

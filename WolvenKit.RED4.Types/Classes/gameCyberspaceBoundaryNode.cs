@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<NodeRef>();
 			set => SetPropertyValue<NodeRef>(value);
 		}
+
+		public gameCyberspaceBoundaryNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

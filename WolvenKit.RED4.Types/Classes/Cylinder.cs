@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PositionAndRadius = new();
 			NormalAndHeight = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

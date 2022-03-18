@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SecuritySystemOutputData()
 		{
 			Link = new() { PSID = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

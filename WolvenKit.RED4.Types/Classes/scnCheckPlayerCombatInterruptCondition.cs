@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnCheckPlayerCombatInterruptCondition()
 		{
 			Params = new() { IsInCombat = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

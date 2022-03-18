@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			PlayerStaticDetectionConeStartAngle = 5.000000F;
 			PlayerStaticDetectionConeEndAngle = 18.000000F;
 			CheckMeleeInvulnerability = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

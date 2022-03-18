@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public vgVectorGraphicDefinition()
 		{
 			Dimensions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

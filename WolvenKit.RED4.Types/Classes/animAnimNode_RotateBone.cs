@@ -130,6 +130,10 @@ namespace WolvenKit.RED4.Types
 			MinAngle = -90.000000F;
 			MaxAngle = 90.000000F;
 			ResetOnActivation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

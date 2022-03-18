@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ForceFadeOutlineEventForWeapon()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

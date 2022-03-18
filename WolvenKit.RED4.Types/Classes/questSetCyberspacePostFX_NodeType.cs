@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			TargetDatamosh = 1.000000F;
 			TargetTreshold = 0.300000F;
 			TimeBlend = 3.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

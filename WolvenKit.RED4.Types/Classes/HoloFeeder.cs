@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public HoloFeeder()
 		{
 			ControllerTypeName = "HoloFeederController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

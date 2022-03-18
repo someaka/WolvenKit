@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questPlayEnv_NodeType()
 		{
 			Params = new() { Enable = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

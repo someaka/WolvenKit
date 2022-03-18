@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			StreetName = new();
 			DistrictName = new();
 			SubdistrictName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

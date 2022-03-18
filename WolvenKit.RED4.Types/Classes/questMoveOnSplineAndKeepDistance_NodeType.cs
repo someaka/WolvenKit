@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			VehicleRef = new() { Names = new() };
 			KeepDistanceFromRef = new() { Names = new() };
 			ReduceSpeedOnTurns = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

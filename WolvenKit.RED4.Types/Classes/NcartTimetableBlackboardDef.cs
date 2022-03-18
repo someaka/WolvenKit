@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public NcartTimetableBlackboardDef()
 		{
 			TimeToDepart = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public scnInterruptAvailability_Operation()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

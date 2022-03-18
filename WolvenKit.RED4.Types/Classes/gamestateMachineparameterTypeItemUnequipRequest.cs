@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemId = new();
 			Instant = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

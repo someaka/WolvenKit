@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public senseSimpleBox()
 		{
 			Box = new() { Min = new(), Max = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

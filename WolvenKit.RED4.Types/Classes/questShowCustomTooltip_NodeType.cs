@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			SetTooltip = true;
 			Text = new() { Unk1 = 0, Value = "" };
 			QueuePriority = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

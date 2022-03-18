@@ -78,6 +78,10 @@ namespace WolvenKit.RED4.Types
 			TimerWaitsForInteraction = true;
 			AcceptableTraps = new();
 			Rules = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

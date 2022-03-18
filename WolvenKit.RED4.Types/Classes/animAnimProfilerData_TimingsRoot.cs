@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimProfilerData_TimingsRoot()
 		{
 			Timings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

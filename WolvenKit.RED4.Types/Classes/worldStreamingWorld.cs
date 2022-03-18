@@ -209,6 +209,10 @@ namespace WolvenKit.RED4.Types
 		{
 			BlockRefs = new();
 			WorldBoundingBox = new() { Min = new(), Max = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

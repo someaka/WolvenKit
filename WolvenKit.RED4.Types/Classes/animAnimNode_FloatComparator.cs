@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			SecondInputLink = new();
 			TrueInputLink = new();
 			FalseInputLink = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

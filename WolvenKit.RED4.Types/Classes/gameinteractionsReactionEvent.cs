@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameinteractionsReactionEvent()
 		{
 			InteractionItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

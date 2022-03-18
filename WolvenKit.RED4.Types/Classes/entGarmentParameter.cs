@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ComponentsData = new();
 			CollarArea = new() { RadiusInCM = 32.000000F, RadiusForTriangleRemovalInCM = 16.000000F, Offset = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

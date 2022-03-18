@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			Id = 65535;
 			EntityReference = new() { Names = new() };
 			Function = "questCombatNodeParams_ShootAt";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

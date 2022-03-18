@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Position = new();
 			Element = new();
 			Properties = new() { Traps = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

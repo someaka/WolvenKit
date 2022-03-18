@@ -164,6 +164,10 @@ namespace WolvenKit.RED4.Types
 			SkillIconShadow = new();
 			PassiveBonusRewardLabel = new();
 			PassiveBonusReward = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

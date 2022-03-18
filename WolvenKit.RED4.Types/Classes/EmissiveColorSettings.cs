@@ -89,6 +89,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enable = true;
 			CurveRampIBL = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

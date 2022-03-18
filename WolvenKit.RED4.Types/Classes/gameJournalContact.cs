@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Entries = new();
 			Name = new() { Unk1 = 0, Value = "" };
 			UseFlatMessageLayout = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

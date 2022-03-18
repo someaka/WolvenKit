@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkSelectorController>>();
 			set => SetPropertyValue<CWeakHandle<inkSelectorController>>(value);
 		}
+
+		public NewGameMenuGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -78,6 +78,10 @@ namespace WolvenKit.RED4.Types
 			Velocity = new();
 			SoundPositionOffset = new();
 			RenderLayerMask = Enums.RenderSceneLayerMask.Default;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

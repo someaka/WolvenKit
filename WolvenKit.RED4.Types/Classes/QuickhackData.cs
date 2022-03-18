@@ -234,6 +234,10 @@ namespace WolvenKit.RED4.Types
 			ActionOwner = new();
 			Vulnerabilities = new();
 			ActionCompletionEffects = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

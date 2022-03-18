@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = -1;
 			Choices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

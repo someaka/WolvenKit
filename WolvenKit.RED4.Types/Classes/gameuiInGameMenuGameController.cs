@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			ItemSceneInfos = new();
 			GarmentSwitchEffectControllers = new();
 			LoadSaveDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameBinkVideoAction>>();
 			set => SetPropertyValue<CEnum<gameBinkVideoAction>>(value);
 		}
+
+		public gameBinkVideoEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

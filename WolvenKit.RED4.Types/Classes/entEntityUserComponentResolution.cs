@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<entEntityUserComponentResolutionMode>>();
 			set => SetPropertyValue<CEnum<entEntityUserComponentResolutionMode>>(value);
 		}
+
+		public entEntityUserComponentResolution()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

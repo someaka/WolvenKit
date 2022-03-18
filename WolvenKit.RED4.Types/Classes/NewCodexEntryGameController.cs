@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public NewCodexEntryGameController()
 		{
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

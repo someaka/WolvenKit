@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public VehiclePurchaseDataDef()
 		{
 			PurchasedVehicleRecordID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

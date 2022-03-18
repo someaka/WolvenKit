@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public StimTargetsEvent()
 		{
 			Targets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

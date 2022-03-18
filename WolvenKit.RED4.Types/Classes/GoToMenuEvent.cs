@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WakeUp = true;
 			OwnerID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

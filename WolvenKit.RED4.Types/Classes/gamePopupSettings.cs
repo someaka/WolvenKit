@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			CloseAtInput = true;
 			Position = Enums.gamePopupPosition.Center;
 			Margin = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<ProficiencyDisplayData>>();
 			set => SetPropertyValue<CHandle<ProficiencyDisplayData>>(value);
 		}
+
+		public SkillTooltipData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

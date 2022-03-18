@@ -271,6 +271,10 @@ namespace WolvenKit.RED4.Types
 			ProgramListController = new();
 			BufferController = new();
 			EndScreenController = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

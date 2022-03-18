@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			BannersListWidget = new();
 			BannerWidgetsData = new();
 			FullBannerWidgetData = new() { Content = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			TextureData = new();
 			HaveSkyData = true;
 			FaceDepth = new(6);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

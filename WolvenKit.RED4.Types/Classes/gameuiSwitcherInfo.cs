@@ -36,6 +36,10 @@ namespace WolvenKit.RED4.Types
 			OnDeactivateActions = new();
 			UiSlots = new();
 			Options = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

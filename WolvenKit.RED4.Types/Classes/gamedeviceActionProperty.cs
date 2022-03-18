@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedeviceActionPropertyFlags>>();
 			set => SetPropertyValue<CEnum<gamedeviceActionPropertyFlags>>(value);
 		}
+
+		public gamedeviceActionProperty()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

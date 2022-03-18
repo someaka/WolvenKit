@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public HoloDevice()
 		{
 			ControllerTypeName = "HoloDeviceController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

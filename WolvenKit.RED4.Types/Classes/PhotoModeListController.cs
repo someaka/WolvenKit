@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LogoWidget = new();
 			Panel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

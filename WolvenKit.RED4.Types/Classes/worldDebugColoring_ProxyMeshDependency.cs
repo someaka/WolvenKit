@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AutoColor = new();
 			DiscardColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

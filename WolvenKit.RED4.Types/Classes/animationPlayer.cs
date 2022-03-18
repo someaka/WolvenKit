@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			LoopsAmount = 1;
 			AnimTarget = new();
 			AutoPlay = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

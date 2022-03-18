@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			TooltipContainer = new();
 			AxisDataThreshold = 0.400000F;
 			MouseDataThreshold = 0.900000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

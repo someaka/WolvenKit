@@ -113,6 +113,10 @@ namespace WolvenKit.RED4.Types
 			SmoothStep = 1.000000F;
 			TransformOutputs = new();
 			TrackOutputs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

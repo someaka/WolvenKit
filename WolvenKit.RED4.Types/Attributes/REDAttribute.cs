@@ -47,8 +47,8 @@ namespace WolvenKit.RED4.Types
 
         #region Properties
 
-        public int[] Flags { get; private set; }
-        public string Name { get; private set; }
+        public int[] Flags { get; }
+        public string? Name { get; }
 
         #endregion Properties
 

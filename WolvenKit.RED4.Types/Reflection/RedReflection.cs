@@ -10,11 +10,11 @@ namespace WolvenKit.RED4.Types
 {
     public static class RedReflection
     {
-        private static readonly ConcurrentDictionary<Type, object> s_defaultValueCache = new();
-        private static readonly Dictionary<string, Type> _redTypeCache = new();
-        private static Dictionary<Type, string> _redTypeCacheReverse = new();
+        private static readonly ConcurrentDictionary<Type, object?> s_defaultValueCache = new();
+        private static readonly Dictionary<string, Type> s_redTypeCache = new();
+        private static Dictionary<Type, string> s_redTypeCacheReverse = new();
 
-        private static readonly Dictionary<string, ExtendedEnumInfo> _redEnumCache = new();
+        private static readonly Dictionary<string, ExtendedEnumInfo> s_redEnumCache = new();
         private static readonly ConcurrentDictionary<Type, ExtendedTypeInfo> s_typeInfoCache = new();
 
         public static ExtendedTypeInfo GetTypeInfo(Type type)
@@ -28,21 +28,21 @@ namespace WolvenKit.RED4.Types
             return result;
         }
 
-        public static Dictionary<string, Type> GetTypes() => new(_redTypeCache);
+        public static Dictionary<string, Type> GetTypes() => new(s_redTypeCache);
 
-        public static IEnumerable<Type> GetSubClassesOf(Type type) => _redTypeCache?.Values.Where(_ => _.IsSubclassOf(type)).ToList();
+        public static IEnumerable<Type> GetSubClassesOf(Type type) => s_redTypeCache.Values.Where(_ => _.IsSubclassOf(type)).ToList();
 
-        public static ExtendedPropertyInfo GetPropertyByName(Type type, string propertyName)
+        public static ExtendedPropertyInfo? GetPropertyByName(Type type, string propertyName)
         {
             var typeInfo = GetTypeInfo(type);
 
             return typeInfo.PropertyInfos.FirstOrDefault(p => p.Name == propertyName);
         }
 
-        public static ExtendedPropertyInfo GetNativePropertyInfo(Type classType, string propertyName) =>
+        public static ExtendedPropertyInfo? GetNativePropertyInfo(Type classType, string propertyName) =>
             GetTypeInfo(classType).GetPropertyInfoByName(propertyName);
 
-        public static object GetClassDefaultValue(Type classType, string propertyName)
+        public static object? GetClassDefaultValue(Type classType, string propertyName)
         {
             var propertyInfo = GetNativePropertyInfo(classType, propertyName);
             if (propertyInfo == null)
@@ -53,19 +53,24 @@ namespace WolvenKit.RED4.Types
             return GetClassDefaultValue(classType, propertyInfo);
         }
 
-        public static object GetClassDefaultValue(Type classType, ExtendedPropertyInfo propertyInfo)
+        public static object? GetClassDefaultValue(Type classType, ExtendedPropertyInfo propertyInfo)
         {
+            if (propertyInfo.RedName == null)
+            {
+                throw new ArgumentException("ExtendedPropertyInfo.RedName needs to be set");
+            }
+
             return RedTypeManager.Create(classType).GetProperty(propertyInfo.RedName);
         }
 
-        public static object GetDefaultValue(Type type)
+        public static object? GetDefaultValue(Type type)
         {
             if (s_defaultValueCache.TryGetValue(type, out var value))
             {
                 return value;
             }
 
-            object result = null;
+            object? result = null;
             if (type.IsValueType)
             {
                 result = System.Activator.CreateInstance(type);
@@ -82,14 +87,14 @@ namespace WolvenKit.RED4.Types
             return result;
         }
 
-        public static ExtendedPropertyInfo GetPropertyByRedName(Type type, string redPropertyName)
+        public static ExtendedPropertyInfo? GetPropertyByRedName(Type type, string redPropertyName)
         {
             var typeInfo = GetTypeInfo(type);
 
             return typeInfo.PropertyInfos.FirstOrDefault(p => p.RedName == redPropertyName);
         }
 
-        public static bool IsDefault(Type clsType, string redPropertyName, object value)
+        public static bool IsDefault(Type clsType, string redPropertyName, object? value)
         {
             var extendedPropertyInfo = GetPropertyByRedName(clsType, redPropertyName);
             if (extendedPropertyInfo == null)
@@ -100,7 +105,7 @@ namespace WolvenKit.RED4.Types
             return IsDefault(clsType, extendedPropertyInfo, value);
         }
 
-        public static bool IsDefault(Type clsType, ExtendedPropertyInfo extendedPropertyInfo, object value)
+        public static bool IsDefault(Type clsType, ExtendedPropertyInfo extendedPropertyInfo, object? value)
         {
             if (!extendedPropertyInfo._isDefaultSet)
             {
@@ -111,14 +116,14 @@ namespace WolvenKit.RED4.Types
             return object.Equals(extendedPropertyInfo.DefaultValue, value);
         }
 
-        public static string GetTypeRedName(Type type)
+        public static string? GetTypeRedName(Type type)
         {
-            return _redTypeCacheReverse.ContainsKey(type) ? _redTypeCacheReverse[type] : null;
+            return s_redTypeCacheReverse.ContainsKey(type) ? s_redTypeCacheReverse[type] : null;
         }
 
         public static string GetEnumRedName(Type type)
         {
-            return _redEnumCache.FirstOrDefault(t => t.Value.Type == type).Key;
+            return s_redEnumCache.FirstOrDefault(t => t.Value.Type == type).Key;
         }
 
         private static readonly ConcurrentDictionary<string, (Type, Flags)> _csTypeCache2 = new();
@@ -130,7 +135,7 @@ namespace WolvenKit.RED4.Types
                 return (tuple.Item1, tuple.Item2.Clone());
             }
 
-            Type type = null;
+            Type? type = null;
             List<int> flagValues = new();
 
             var subTypes = redTypeName.Split(':');
@@ -153,7 +158,7 @@ namespace WolvenKit.RED4.Types
                     subType = subType.Substring(strVal.Length + 2);
                 }
 
-                if (_redTypeCache.TryGetValue(subType, out var tType))
+                if (s_redTypeCache.TryGetValue(subType, out var tType))
                 {
                     if (type == null)
                     {
@@ -175,7 +180,7 @@ namespace WolvenKit.RED4.Types
                     continue;
                 }
 
-                if (_redEnumCache.TryGetValue(subType, out var eType))
+                if (s_redEnumCache.TryGetValue(subType, out var eType))
                 {
                     if (type == null)
                     {
@@ -222,6 +227,11 @@ namespace WolvenKit.RED4.Types
                 }
             }
 
+            if (type == null)
+            {
+                throw new MissingRTTIException(redTypeName);
+            }
+
             flagValues.Reverse();
             var flags = new Flags(flagValues.ToArray());
 
@@ -232,7 +242,7 @@ namespace WolvenKit.RED4.Types
 
         private static readonly ConcurrentDictionary<int, string> _csTypeCache = new();
 
-        public static string GetRedTypeFromCSType(Type type, Flags flags = null)
+        public static string GetRedTypeFromCSType(Type type, Flags? flags = null)
         {
             flags ??= Flags.Empty;
 
@@ -299,24 +309,24 @@ namespace WolvenKit.RED4.Types
                 }
 
                 var redAttr = type.GetCustomAttribute<REDAttribute>();
-                if (redAttr != null)
+                if (redAttr is { Name: { } })
                 {
-                    _redTypeCache.Add(redAttr.Name, type);
+                    s_redTypeCache.Add(redAttr.Name, type);
                 }
                 else
                 {
-                    _redTypeCache.Add(type.Name, type);
+                    s_redTypeCache.Add(type.Name, type);
                 }
 
                 BuildTypeCache(type);
             }
 
-            _redTypeCacheReverse = _redTypeCache.ToDictionary(x => x.Value, x => x.Key);
+            s_redTypeCacheReverse = s_redTypeCache.ToDictionary(x => x.Value, x => x.Key);
 
             var types = typeof(Enums).GetNestedTypes();
             foreach (var type in types)
             {
-                _redEnumCache.Add(type.Name, new ExtendedEnumInfo(type));
+                s_redEnumCache.Add(type.Name, new ExtendedEnumInfo(type));
             }
 
             void BuildTypeCache(Type type)
@@ -429,12 +439,12 @@ namespace WolvenKit.RED4.Types
 
                     if (!string.IsNullOrEmpty(PropertyInfos[i].RedName))
                     {
-                        _redNameIndex.Add(PropertyInfos[i].RedName, i);
+                        _redNameIndex.Add(PropertyInfos[i].RedName!, i);
                     }
                 }
             }
 
-            public ExtendedPropertyInfo GetPropertyInfoByName(string name)
+            public ExtendedPropertyInfo? GetPropertyInfoByName(string name)
             {
                 if (_redNameIndex.TryGetValue(name, out var i1))
                 {
@@ -463,7 +473,7 @@ namespace WolvenKit.RED4.Types
 
         public class ExtendedPropertyInfo
         {
-            private Flags _flags;
+            private Flags? _flags;
             internal bool _isDefaultSet;
 
             public int Ordinal { get; private set; } = -1;
@@ -471,15 +481,15 @@ namespace WolvenKit.RED4.Types
             public int After { get; private set; } = -1;
 
             public string Name { get; }
-            public string RedName { get; private set; }
+            public string? RedName { get; private set; }
             public Flags Flags => _flags != null ? _flags.Clone() : Flags.Empty;
             public bool IsIgnored { get; internal set; }
 
             public Type Type { get; }
-            public Type GenericType { get; }
+            public Type? GenericType { get; }
 
             public bool SerializeDefault { get; private set; }
-            public object DefaultValue { get; internal set; }
+            public object? DefaultValue { get; internal set; }
 
 
             public ExtendedPropertyInfo(Type parent, PropertyInfo propertyInfo)

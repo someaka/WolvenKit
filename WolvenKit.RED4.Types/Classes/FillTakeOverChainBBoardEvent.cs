@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public FillTakeOverChainBBoardEvent()
 		{
 			RequesterID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

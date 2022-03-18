@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiDamageInfoUserData()
 		{
 			Flags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

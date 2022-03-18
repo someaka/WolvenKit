@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public inkStyle()
 		{
 			Properties = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

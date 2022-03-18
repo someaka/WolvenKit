@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiCharacterCustomizationPersonalLinkController()
 		{
 			Name = "Component";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

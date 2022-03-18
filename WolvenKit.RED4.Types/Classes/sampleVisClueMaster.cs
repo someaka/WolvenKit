@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public sampleVisClueMaster()
 		{
 			DependableEntities = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

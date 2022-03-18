@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WorldPosition = new();
 			LinearVelocity = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

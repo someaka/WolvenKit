@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ECoverSpecialAction>>();
 			set => SetPropertyValue<CEnum<ECoverSpecialAction>>(value);
 		}
+
+		public AIMoveToCoverCommand()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

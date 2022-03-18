@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<rendPostFx_ScanningState>>();
 			set => SetPropertyValue<CEnum<rendPostFx_ScanningState>>(value);
 		}
+
+		public entRenderScanEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorMovementPolicyTaskItemDefinition()
 		{
 			Params = new(1);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

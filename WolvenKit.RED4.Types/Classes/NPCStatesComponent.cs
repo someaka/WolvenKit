@@ -189,6 +189,10 @@ namespace WolvenKit.RED4.Types
 			PrevNPCStanceState = Enums.gamedataNPCStanceState.Invalid;
 			PreviousHighLevelState = Enums.gamedataNPCHighLevelState.Invalid;
 			PrevHitReactionMode = Enums.EHitReactionMode.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

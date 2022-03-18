@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			PulseWidget = new();
 			HideAtDistance = 25.000000F;
 			HideInCombat = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

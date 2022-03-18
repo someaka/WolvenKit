@@ -110,6 +110,10 @@ namespace WolvenKit.RED4.Types
 			FallbackAnimFrameDescs = new();
 			FallbackAnimDescIndexes = new();
 			Tags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

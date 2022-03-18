@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AddInvestigatorEvent()
 		{
 			Investigator = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

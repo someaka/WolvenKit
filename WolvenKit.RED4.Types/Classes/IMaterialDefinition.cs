@@ -68,5 +68,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<CEnum<EMaterialVertexFactory>>>();
 			set => SetPropertyValue<CArray<CEnum<EMaterialVertexFactory>>>(value);
 		}
+
+		public IMaterialDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

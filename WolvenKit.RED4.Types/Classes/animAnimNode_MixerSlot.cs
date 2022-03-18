@@ -36,6 +36,10 @@ namespace WolvenKit.RED4.Types
 			MaxNormalAnimEntriesCount = 2;
 			MaxAdditiveAnimEntriesCount = 2;
 			MaxOverrideAnimEntriesCount = 2;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

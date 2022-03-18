@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public scnInterestingConversationData()
 		{
 			InterruptionOperations = new() { null, null };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public audioRadioTrack()
 		{
 			IsStreamingFriendly = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

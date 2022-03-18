@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SelectedBlockId = 18446744073709551615;
 			Objects = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

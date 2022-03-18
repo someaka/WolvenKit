@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			DynamicEntityRef = new() { Names = new() };
 			MappinData = new() { Active = true };
 			Offset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameSceneTierData>>();
 			set => SetPropertyValue<CHandle<gameSceneTierData>>(value);
 		}
+
+		public gameGlobalTierSaveData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class gamestateMachineplayeractionsActionDischarge : gamestateMachineplayeractionsWeaponActionBase
 	{
+		public gamestateMachineplayeractionsActionDischarge()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

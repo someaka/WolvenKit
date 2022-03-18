@@ -236,6 +236,10 @@ namespace WolvenKit.RED4.Types
 			MaxSearchAngle = 60.000000F;
 			NoWaitToEndDistance = 10.000000F;
 			NoWaitToEndCompanionDistance = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

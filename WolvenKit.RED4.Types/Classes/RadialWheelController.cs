@@ -290,6 +290,10 @@ namespace WolvenKit.RED4.Types
 			RadialMode = Enums.ERadialMode.ApplyActiveSlotAndConsumables;
 			Dbg_layers = new();
 			Dbg_activeSlotLayers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

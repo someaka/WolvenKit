@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			MinimumPlayCount = 3;
 			Tooltips = new();
 			TooltipDuration = 1.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

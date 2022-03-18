@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CombatDebug = new();
 			NumberOfCombatants = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

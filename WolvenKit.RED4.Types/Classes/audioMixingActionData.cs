@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			VoContext = Enums.locVoiceoverContext.Vo_Context_Community;
 			DistanceRolloffFactor = 1.000000F;
 			CustomParameters = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

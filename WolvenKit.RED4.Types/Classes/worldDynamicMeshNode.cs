@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			DynamicTrafficSetting = new();
 			NavigationSetting = new() { NavmeshImpact = Enums.NavGenNavmeshImpact.Blocking };
 			UseMeshNavmeshSettings = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

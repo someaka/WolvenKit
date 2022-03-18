@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			ConfirmButton = new();
 			CancelButton = new();
 			DataSetByToken = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

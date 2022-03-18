@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<WeaponVendorActionWidgetController>>();
 			set => SetPropertyValue<CWeakHandle<WeaponVendorActionWidgetController>>(value);
 		}
+
+		public WeaponMachineInkGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

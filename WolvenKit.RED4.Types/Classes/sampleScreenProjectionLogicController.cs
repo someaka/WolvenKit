@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkScreenProjection>>();
 			set => SetPropertyValue<CHandle<inkScreenProjection>>(value);
 		}
+
+		public sampleScreenProjectionLogicController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

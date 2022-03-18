@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CrossingLight()
 		{
 			ControllerTypeName = "CrossingLightController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

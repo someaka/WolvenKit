@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Source = "default";
 			RestrictionIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

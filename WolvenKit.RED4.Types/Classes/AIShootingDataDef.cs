@@ -142,6 +142,10 @@ namespace WolvenKit.RED4.Types
 			FullyCharged = new();
 			WeaponOverheated = new();
 			RequestedTriggerMode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

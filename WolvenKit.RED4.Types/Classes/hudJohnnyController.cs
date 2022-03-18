@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			RightDates = new();
 			Cancelled = new();
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

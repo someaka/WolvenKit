@@ -242,6 +242,10 @@ namespace WolvenKit.RED4.Types
 			CodexLibraryPath = new();
 			ObjectiveItems = new();
 			QuestLists = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

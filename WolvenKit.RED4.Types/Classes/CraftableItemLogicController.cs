@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public CraftableItemLogicController()
 		{
 			NormalAppearence = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

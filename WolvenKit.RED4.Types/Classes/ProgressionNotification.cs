@@ -110,6 +110,10 @@ namespace WolvenKit.RED4.Types
 			Root = new();
 			CurrentLevel = new();
 			NextLevel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

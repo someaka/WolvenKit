@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameTaggedSignalUserData()
 		{
 			Tags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

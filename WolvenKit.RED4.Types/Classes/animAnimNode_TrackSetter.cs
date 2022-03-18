@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			InputLink = new();
 			Track = new();
 			Value = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

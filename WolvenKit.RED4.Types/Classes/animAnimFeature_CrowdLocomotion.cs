@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public animAnimFeature_CrowdLocomotion()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

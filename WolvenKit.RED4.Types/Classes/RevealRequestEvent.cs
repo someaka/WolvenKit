@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public RevealRequestEvent()
 		{
 			Requester = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

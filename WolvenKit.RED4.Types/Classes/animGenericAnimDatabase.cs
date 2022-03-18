@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animGenericAnimDatabase()
 		{
 			Rows = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LinearVelocity = new() { W = 1.000000F };
 			AngularVelocity = new() { W = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

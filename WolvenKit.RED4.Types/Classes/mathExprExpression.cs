@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TokenData = new();
 			ValuesData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

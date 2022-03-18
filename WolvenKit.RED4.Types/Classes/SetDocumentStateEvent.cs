@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SetDocumentStateEvent()
 		{
 			DocumentAdress = new() { FolderID = -1, DocumentID = -1 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

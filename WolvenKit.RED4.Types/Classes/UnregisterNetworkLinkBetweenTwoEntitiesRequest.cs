@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FirstID = new();
 			SecondID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

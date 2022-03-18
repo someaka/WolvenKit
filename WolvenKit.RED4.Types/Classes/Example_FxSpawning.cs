@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<gameFxResource>();
 			set => SetPropertyValue<gameFxResource>(value);
 		}
+
+		public Example_FxSpawning()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

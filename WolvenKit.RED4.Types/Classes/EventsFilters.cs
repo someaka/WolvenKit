@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IncomingEventsFilter = Enums.EFilterType.ALLOW_ALL;
 			OutgoingEventsFilter = Enums.EFilterType.ALLOW_ALL;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

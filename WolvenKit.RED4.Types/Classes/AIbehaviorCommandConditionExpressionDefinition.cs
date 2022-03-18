@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorCommandConditionExpressionDefinition()
 		{
 			IsEnqueued = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

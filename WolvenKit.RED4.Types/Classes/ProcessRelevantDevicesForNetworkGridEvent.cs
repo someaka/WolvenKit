@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			BreachedResource = new();
 			DefaultResource = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

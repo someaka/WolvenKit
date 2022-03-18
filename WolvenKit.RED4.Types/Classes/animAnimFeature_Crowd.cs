@@ -170,6 +170,10 @@ namespace WolvenKit.RED4.Types
 			SpeedType = 1;
 			AnimScale = 1.000000F;
 			DistanceToPlayer2D = float.PositiveInfinity;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class MeleeLookAtDecisions : LookAtPresetMeleeBaseDecisions
 	{
+		public MeleeLookAtDecisions()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

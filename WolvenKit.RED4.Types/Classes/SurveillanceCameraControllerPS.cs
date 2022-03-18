@@ -114,6 +114,10 @@ namespace WolvenKit.RED4.Types
 			FeedReceivers = new();
 			MostRecentRequester = new();
 			BinkVideoPath = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

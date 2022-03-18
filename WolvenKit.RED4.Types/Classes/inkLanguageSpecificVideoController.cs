@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public inkLanguageSpecificVideoController()
 		{
 			Languages = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

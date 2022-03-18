@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 			NetworkChargesCapacity = new();
 			NetworkName = new();
 			MemoryPercent = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			CanHoldWeapon = new();
 			CanShoot = new();
 			CanAimDownSight = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

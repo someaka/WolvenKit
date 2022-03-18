@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public VirtualNestedListDataView()
 		{
 			ToggledLevels = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

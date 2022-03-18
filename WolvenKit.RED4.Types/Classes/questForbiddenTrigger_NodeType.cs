@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questForbiddenTrigger_NodeType()
 		{
 			Activate = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

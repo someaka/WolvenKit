@@ -28,6 +28,10 @@ namespace WolvenKit.RED4.Types
 			RenderSceneLayerMask = Enums.RenderSceneLayerMask.Default;
 			ForceLODLevel = -1;
 			Radius = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

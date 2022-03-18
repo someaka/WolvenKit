@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<vehicleCameraPerspective>>();
 			set => SetPropertyValue<CEnum<vehicleCameraPerspective>>(value);
 		}
+
+		public vehicleRequestCameraPerspectiveEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

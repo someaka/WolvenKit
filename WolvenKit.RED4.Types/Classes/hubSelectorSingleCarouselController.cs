@@ -190,6 +190,10 @@ namespace WolvenKit.RED4.Types
 			Elements = new();
 			WidgetsControllers = new();
 			ActiveAnimations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

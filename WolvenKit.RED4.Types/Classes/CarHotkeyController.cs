@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			Restrictions = new();
 			DebugCommands = new();
 			CarIconSlot = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

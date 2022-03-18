@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			AuxiliaryMetadata = new();
 			MusicEvents = new();
 			MovementEvents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

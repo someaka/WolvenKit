@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public cpBumpEvent()
 		{
 			Amount = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

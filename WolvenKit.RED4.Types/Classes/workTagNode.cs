@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = new() { Id = 4294967295 };
 			Flags = 128;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

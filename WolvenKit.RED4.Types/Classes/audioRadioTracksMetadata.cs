@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioRadioTracksMetadata()
 		{
 			RadioTracks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

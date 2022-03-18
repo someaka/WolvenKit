@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			ContactAvatarRef = new();
 			ContactNameRef = new();
 			ContactDescriptionRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

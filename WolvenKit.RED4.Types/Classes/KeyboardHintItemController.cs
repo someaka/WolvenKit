@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 			FrameSelectedName = "top_button_selected";
 			FrameUnselectedName = "top_button";
 			AnimationName = "AnimRootOnThenOff";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SourceID = new();
 			LinkData = new() { FxResource = new(), SlaveID = new(), MasterID = new(), SlavePos = new(), MasterPos = new(), DrawLink = true, RevealMaster = true, RevealSlave = true, Lifetime = -1.000000F, DelayID = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

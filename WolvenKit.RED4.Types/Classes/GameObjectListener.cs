@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public GameObjectListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

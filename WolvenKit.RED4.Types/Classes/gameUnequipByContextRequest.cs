@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameItemUnequipContexts>>();
 			set => SetPropertyValue<CEnum<gameItemUnequipContexts>>(value);
 		}
+
+		public gameUnequipByContextRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

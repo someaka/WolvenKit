@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "VendingTerminalController";
 			Position = new();
 			VendingBlacklist = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

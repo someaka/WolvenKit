@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			TextRoot = new();
 			Background = new();
 			AnimationDuration = 0.300000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

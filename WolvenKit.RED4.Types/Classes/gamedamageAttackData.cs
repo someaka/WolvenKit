@@ -122,6 +122,10 @@ namespace WolvenKit.RED4.Types
 			AttackPosition = new();
 			Flags = new();
 			StatusEffects = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

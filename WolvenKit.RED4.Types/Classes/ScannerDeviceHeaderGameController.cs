@@ -151,6 +151,10 @@ namespace WolvenKit.RED4.Types
 			Status = new();
 			StatusIcon = new();
 			LevelWrapper = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

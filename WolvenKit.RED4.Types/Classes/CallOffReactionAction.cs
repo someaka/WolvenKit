@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EAISquadAction>>();
 			set => SetPropertyValue<CEnum<EAISquadAction>>(value);
 		}
+
+		public CallOffReactionAction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

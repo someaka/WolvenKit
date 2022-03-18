@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameAreaResource()
 		{
 			CookedData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -222,6 +222,10 @@ namespace WolvenKit.RED4.Types
 			UnmountBodyCarry = true;
 			WhitelistVisualTags = new() { Tags = new() };
 			BlacklistVisualTags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameScriptedPrereqAttitudeListenerWrapper>>();
 			set => SetPropertyValue<CHandle<gameScriptedPrereqAttitudeListenerWrapper>>(value);
 		}
+
+		public NPCAttitudeTowardsPlayerPrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

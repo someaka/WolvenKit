@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkTextWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkTextWidget>>(value);
 		}
+
+		public TechQA_ImageSwappingButtonController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<scnDialogLineLanguage>>();
 			set => SetPropertyValue<CEnum<scnDialogLineLanguage>>(value);
 		}
+
+		public scnDialogDisplayString()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

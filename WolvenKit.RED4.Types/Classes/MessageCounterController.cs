@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public MessageCounterController()
 		{
 			MessageCounter = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

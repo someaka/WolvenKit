@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedataRangedAttackPackage_Record>>();
 			set => SetPropertyValue<CHandle<gamedataRangedAttackPackage_Record>>(value);
 		}
+
+		public WeaponTransition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

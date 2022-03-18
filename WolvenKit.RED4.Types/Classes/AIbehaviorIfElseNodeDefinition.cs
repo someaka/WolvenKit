@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorIfElseNodeDefinition()
 		{
 			Children = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

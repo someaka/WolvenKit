@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ObjectRef = new() { Names = new() };
 			Threshold = 50.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

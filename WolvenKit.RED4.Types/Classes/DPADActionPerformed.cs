@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public DPADActionPerformed()
 		{
 			OwnerID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

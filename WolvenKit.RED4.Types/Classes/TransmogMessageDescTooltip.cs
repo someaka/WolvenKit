@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			DescriptionWrapper = new();
 			DescriptionLine = new();
 			Icon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

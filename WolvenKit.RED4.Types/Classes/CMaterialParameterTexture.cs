@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<ITexture>>();
 			set => SetPropertyValue<CResourceReference<ITexture>>(value);
 		}
+
+		public CMaterialParameterTexture()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

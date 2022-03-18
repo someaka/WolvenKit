@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkAsyncSpawnRequest>>();
 			set => SetPropertyValue<CWeakHandle<inkAsyncSpawnRequest>>(value);
 		}
+
+		public QuestEntryUserData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

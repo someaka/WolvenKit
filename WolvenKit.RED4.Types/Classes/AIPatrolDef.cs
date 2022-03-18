@@ -106,6 +106,10 @@ namespace WolvenKit.RED4.Types
 			WorkspotExitPosition = new();
 			PatrolAction = new();
 			PatrolInProgress = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

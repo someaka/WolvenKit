@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimFeature_DeviceCameraControlled()
 		{
 			CurrentRotation = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

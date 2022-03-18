@@ -201,6 +201,10 @@ namespace WolvenKit.RED4.Types
 			OverheatBL = new();
 			OverheatTR = new();
 			OverheatBR = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

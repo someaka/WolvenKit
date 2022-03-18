@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ExitPosition = new();
 			ExitProbability = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

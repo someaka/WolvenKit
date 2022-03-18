@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Start = new();
 			End = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

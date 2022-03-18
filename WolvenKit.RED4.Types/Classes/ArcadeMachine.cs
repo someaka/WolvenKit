@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "ArcadeMachineController";
 			ShortGlitchDelayID = new();
 			CurrentGame = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

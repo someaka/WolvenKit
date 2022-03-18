@@ -113,6 +113,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsInitialized = true;
 			CurrentRotation = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

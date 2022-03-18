@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public toolsMessageLocation_EditorObject()
 		{
 			Path = new() { Elements = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			HotkeysList = new();
 			UtilsList = new();
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

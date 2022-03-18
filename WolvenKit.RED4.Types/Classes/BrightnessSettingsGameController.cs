@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SettingsOptionsList = new();
 			SettingsElements = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

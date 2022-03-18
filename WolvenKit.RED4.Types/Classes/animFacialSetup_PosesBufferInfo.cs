@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Face = new();
 			Tongue = new();
 			Eyes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

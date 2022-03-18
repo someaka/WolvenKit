@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			InitialLocation = new();
 			Health = -1.000000F;
 			Armor = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

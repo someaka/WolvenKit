@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			Slot = "(Root)";
 			CustomOffsetPos = new();
 			CustomOffsetRot = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<gameSmartObjectsCompiledResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<gameSmartObjectsCompiledResource>>(value);
 		}
+
+		public worldCompiledSmartObjectsNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

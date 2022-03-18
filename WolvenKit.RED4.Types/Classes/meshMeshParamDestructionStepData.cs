@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public meshMeshParamDestructionStepData()
 		{
 			Offsets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameMasterDeviceComponent>>();
 			set => SetPropertyValue<CHandle<gameMasterDeviceComponent>>(value);
 		}
+
+		public Master_Test()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

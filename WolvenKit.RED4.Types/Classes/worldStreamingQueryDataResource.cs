@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RoadDatas = new();
 			ConnectedRoadDataIndices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

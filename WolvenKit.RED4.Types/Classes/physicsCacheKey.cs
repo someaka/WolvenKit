@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public physicsCacheKey()
 		{
 			Key = new() { Pe = 6, Ta = new(12) };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

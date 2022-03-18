@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			TargetDiffsDataSize = new(3);
 			TargetDiffsWidth = new(3);
 			TargetDiffsMipLevelCounts = new(3);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

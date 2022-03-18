@@ -23,9 +23,9 @@ namespace WolvenKit.RED4.Types
         public static implicit operator CByteArray(byte[] value) => new(value);
         public static implicit operator byte[](CByteArray value) => value._value;
 
-        public bool Equals(CByteArray other) => Equals(_value.Length, other._value.Length) && _value.SequenceEqual(other._value);
+        public bool Equals(CByteArray? other) => other != null && Equals(_value.Length, other._value.Length) && _value.SequenceEqual(other._value);
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {

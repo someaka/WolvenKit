@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldStaticParticleNodeInstance()
 		{
 			RenderLayerMask = Enums.RenderSceneLayerMask.Default;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

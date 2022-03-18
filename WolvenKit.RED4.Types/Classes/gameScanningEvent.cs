@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameScanningEvent()
 		{
 			State = Enums.gameScanningState.Stopped;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

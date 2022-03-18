@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EntityRef = new() { Names = new() };
 			ActionProperties = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

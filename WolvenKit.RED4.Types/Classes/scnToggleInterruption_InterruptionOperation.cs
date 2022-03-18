@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnToggleInterruption_InterruptionOperation()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

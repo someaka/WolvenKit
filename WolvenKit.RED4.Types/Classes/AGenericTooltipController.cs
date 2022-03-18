@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkCompoundWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkCompoundWidget>>(value);
 		}
+
+		public AGenericTooltipController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<StatPoolPrereqState>>();
 			set => SetPropertyValue<CWeakHandle<StatPoolPrereqState>>(value);
 		}
+
+		public StatPoolPrereqListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

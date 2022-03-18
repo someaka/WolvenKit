@@ -100,6 +100,10 @@ namespace WolvenKit.RED4.Types
 			UseCrowdBlacklist = true;
 			CrowdWhitelist = new() { Tags = new() };
 			CrowdBlacklist = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 		{
 			QuestObjectives = new();
 			Links = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

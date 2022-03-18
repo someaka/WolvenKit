@@ -94,6 +94,10 @@ namespace WolvenKit.RED4.Types
 			OldMinLink = new();
 			OldMaxLink = new();
 			Track = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

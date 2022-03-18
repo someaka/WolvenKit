@@ -131,6 +131,10 @@ namespace WolvenKit.RED4.Types
 			TimeDeltaMultiplier = 1.000000F;
 			AdditionalAnimDatabases = new();
 			NodesToInit = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

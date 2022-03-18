@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			RangeMax = 1.000000F;
 			ResetOnActivation = true;
 			Speed = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

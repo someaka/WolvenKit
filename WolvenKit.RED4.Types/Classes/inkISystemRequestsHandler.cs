@@ -84,5 +84,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<inkTrialOnBuyFullGame>();
 			set => SetPropertyValue<inkTrialOnBuyFullGame>(value);
 		}
+
+		public inkISystemRequestsHandler()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public AreaDisplayData()
 		{
 			Perks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

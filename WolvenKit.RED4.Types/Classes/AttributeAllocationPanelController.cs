@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			TokenAmountText = new();
 			AllocationData = new();
 			AllocationWidgets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

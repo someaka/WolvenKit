@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameJournalQuest>>();
 			set => SetPropertyValue<CWeakHandle<gameJournalQuest>>(value);
 		}
+
+		public RequestChangeTrackedObjective()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public MinimalItemTooltipModAttachmentData()
 		{
 			Abilities = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

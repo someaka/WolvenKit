@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AddRecipeRequest()
 		{
 			HideOnItemsAdded = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

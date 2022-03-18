@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			Transitions = new();
 			ConditionalEntries = new();
 			GlobalTransitions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -235,6 +235,10 @@ namespace WolvenKit.RED4.Types
 			BcBoundsRatioLimit = 0.250000F;
 			RemoveIslands = true;
 			BackgroundColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

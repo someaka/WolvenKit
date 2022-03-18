@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public worldCrowdNullAreaCollisionData()
 		{
 			Collisions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			BlendTimeIn = 0.500000F;
 			BlendTimeOut = 0.500000F;
 			Priority = 100;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

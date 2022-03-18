@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WorldPosition = new() { X = new(), Y = new(), Z = new() };
 			WorldNormal = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

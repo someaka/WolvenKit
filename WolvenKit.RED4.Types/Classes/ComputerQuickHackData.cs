@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EMathOperationType>>();
 			set => SetPropertyValue<CEnum<EMathOperationType>>(value);
 		}
+
+		public ComputerQuickHackData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

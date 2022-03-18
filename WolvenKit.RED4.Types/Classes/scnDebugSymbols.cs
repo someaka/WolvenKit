@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			WorkspotsDebugSymbols = new();
 			SceneEventsDebugSymbols = new();
 			SceneNodesDebugSymbols = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamemappinsMappinScriptData()
 		{
 			StatPoolType = Enums.gamedataStatPoolType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

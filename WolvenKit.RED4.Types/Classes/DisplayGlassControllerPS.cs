@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			DeviceName = "LocKey#2069";
 			TweakDBRecord = 86545678090;
 			TweakDBDescriptionRecord = 137703617399;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

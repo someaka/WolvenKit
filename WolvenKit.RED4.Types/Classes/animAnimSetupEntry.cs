@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Priority = 128;
 			VariableNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

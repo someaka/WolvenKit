@@ -99,6 +99,10 @@ namespace WolvenKit.RED4.Types
 			OutlineType = Enums.EFocusOutlineType.INVALID;
 			InTransitionTime = 0.500000F;
 			OutTransitionTime = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

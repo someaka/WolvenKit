@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameeventsUserEnteredCoverEvent()
 		{
 			ActionsPoints = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

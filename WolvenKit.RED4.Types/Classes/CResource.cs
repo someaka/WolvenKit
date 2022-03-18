@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ECookingPlatform>>();
 			set => SetPropertyValue<CEnum<ECookingPlatform>>(value);
 		}
+
+		public CResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

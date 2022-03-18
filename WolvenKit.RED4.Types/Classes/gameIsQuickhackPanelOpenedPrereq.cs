@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public gameIsQuickhackPanelOpenedPrereq()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

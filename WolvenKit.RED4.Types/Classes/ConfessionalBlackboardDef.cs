@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ConfessionalBlackboardDef()
 		{
 			IsConfessing = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

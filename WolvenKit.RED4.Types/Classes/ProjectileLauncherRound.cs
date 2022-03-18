@@ -203,6 +203,10 @@ namespace WolvenKit.RED4.Types
 			InstalledProjectile = new();
 			ReleaseRequestDelayID = new();
 			DetonateRequestDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

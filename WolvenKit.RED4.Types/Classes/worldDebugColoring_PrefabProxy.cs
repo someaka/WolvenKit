@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			InstancedMeshColor = new();
 			PrefabProxyMeshColor = new();
 			DistinguishInstancedMesh = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

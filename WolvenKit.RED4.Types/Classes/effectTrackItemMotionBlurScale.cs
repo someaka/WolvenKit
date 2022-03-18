@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TimeDuration = 1.000000F;
 			Scale = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

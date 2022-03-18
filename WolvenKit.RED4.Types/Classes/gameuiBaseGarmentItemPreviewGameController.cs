@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			GarmentSwitchEffectControllers = new();
 			GivenItem = new();
 			InitialItem = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

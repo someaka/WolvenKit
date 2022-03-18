@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			GlobalNodeRef = new();
 			PrefabVariantsReplicatedInfos = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

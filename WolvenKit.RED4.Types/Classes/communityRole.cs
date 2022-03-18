@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public communityRole()
 		{
 			RoleName = "default";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

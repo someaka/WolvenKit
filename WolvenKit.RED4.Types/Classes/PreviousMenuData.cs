@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<OpenMenuRequest>>();
 			set => SetPropertyValue<CHandle<OpenMenuRequest>>(value);
 		}
+
+		public PreviousMenuData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

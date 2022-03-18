@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<LaserTargettingState>>();
 			set => SetPropertyValue<CEnum<LaserTargettingState>>(value);
 		}
+
+		public BeingTargetByLaserSightUpdateEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

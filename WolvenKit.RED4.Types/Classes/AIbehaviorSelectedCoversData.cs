@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			CoverRingTypes = new();
 			CoversUseLOS = new();
 			SourcePresetName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

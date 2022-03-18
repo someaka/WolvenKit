@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ScoreboardList = new();
 			Champions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

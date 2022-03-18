@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<CDistantLightsResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<CDistantLightsResource>>(value);
 		}
+
+		public worldDistantLightsNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

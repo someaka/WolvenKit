@@ -172,6 +172,10 @@ namespace WolvenKit.RED4.Types
 			PendingHideLines = new();
 			GroupPath = "/audio/subtitles";
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			NameRef = new();
 			PassedStateName = "Passed";
 			FailedStateName = "Failed";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

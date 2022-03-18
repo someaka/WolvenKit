@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public entRagdollNotifyEnabledEvent()
 		{
 			Instigator = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

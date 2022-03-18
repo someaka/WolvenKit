@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<SensorDevice>>();
 			set => SetPropertyValue<CWeakHandle<SensorDevice>>(value);
 		}
+
+		public SensorJammed()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

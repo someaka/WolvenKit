@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<IScriptable>>();
 			set => SetPropertyValue<CHandle<IScriptable>>(value);
 		}
+
+		public scriptOptimizationsHandleWithValue()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

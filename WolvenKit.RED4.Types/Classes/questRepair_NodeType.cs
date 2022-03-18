@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questRepair_NodeType()
 		{
 			VehicleRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

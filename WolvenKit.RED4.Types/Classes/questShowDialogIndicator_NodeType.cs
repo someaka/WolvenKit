@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questShowDialogIndicator_NodeType()
 		{
 			Params = new() { new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

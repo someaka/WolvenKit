@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamestateMachineeventResetStateMachine()
 		{
 			StateMachineIdentifier = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

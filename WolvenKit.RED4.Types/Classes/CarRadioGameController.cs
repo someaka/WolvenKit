@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RadioStationName = new();
 			SongName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

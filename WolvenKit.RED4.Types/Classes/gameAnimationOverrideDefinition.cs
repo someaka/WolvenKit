@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameAnimationOverrideDefinition()
 		{
 			Variables = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Blocks = new();
 			Executed = new();
 			Failed = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

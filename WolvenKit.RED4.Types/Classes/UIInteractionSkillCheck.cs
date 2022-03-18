@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AdditionalRequirements = new();
 			OwnerID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

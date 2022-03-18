@@ -53,6 +53,10 @@ namespace WolvenKit.RED4.Types
 			NoiseInterval = 1.000000F;
 			Duration = 1.000000F;
 			WorldSpace = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

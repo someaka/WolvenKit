@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIStatListener>>();
 			set => SetPropertyValue<CHandle<AIStatListener>>(value);
 		}
+
+		public PassiveCoverSelectionConditions()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

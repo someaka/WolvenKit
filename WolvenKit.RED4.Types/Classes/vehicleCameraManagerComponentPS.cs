@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public vehicleCameraManagerComponentPS()
 		{
 			Perspective = Enums.vehicleCameraPerspective.TPPFar;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

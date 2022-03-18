@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<audioAnimationOverrideDictionary>>();
 			set => SetPropertyValue<CHandle<audioAnimationOverrideDictionary>>(value);
 		}
+
+		public audioAnimationOverrideMetadata()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

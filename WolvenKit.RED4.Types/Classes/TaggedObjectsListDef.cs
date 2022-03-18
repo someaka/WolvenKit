@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public TaggedObjectsListDef()
 		{
 			TaggedObjectsList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

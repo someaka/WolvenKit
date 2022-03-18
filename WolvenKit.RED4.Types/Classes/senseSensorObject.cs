@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			DetectionCoolDownTime = 2.000000F;
 			HearingEnabled = true;
 			SensorObjectType = Enums.gamedataSenseObjectType.Undefined;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

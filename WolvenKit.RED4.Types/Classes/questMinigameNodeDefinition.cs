@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			Id = 65535;
 			Start = true;
 			NetworkRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

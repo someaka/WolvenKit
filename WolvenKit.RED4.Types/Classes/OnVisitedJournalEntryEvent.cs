@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameJournalEntry>>();
 			set => SetPropertyValue<CWeakHandle<gameJournalEntry>>(value);
 		}
+
+		public OnVisitedJournalEntryEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

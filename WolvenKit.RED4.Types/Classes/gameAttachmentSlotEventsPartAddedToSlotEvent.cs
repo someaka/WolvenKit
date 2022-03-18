@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemID = new();
 			PartID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			Deselected = new();
 			AddedToList = new();
 			LabelPathRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

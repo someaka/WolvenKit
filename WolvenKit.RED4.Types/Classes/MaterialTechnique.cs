@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Passes = new();
 			FeatureFlagsEnabledMask = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

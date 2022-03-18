@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Position = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
 			Normal = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

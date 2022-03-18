@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			WeightLink = new();
 			BlendTracks = Enums.animEBlendTracksMode.AGBT_Add;
 			ConvertParentPoseToAdditive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

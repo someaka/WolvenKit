@@ -95,6 +95,10 @@ namespace WolvenKit.RED4.Types
 			DamageIndicatorRef = new();
 			AdditionalInfoText = new();
 			SingleIconSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

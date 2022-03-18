@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameprojectileSpawnerPreviewEvent()
 		{
 			PreviewActive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

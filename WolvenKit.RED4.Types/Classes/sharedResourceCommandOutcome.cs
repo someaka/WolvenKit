@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Result = Enums.sharedCommandResult.Fail;
 			ModifiedFiles = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

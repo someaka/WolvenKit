@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			FoldArrowRef = new();
 			FoldoutButton = new();
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

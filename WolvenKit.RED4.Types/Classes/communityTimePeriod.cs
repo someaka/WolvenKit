@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public communityTimePeriod()
 		{
 			Hour = Enums.communityECommunitySpawnTime.Day;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

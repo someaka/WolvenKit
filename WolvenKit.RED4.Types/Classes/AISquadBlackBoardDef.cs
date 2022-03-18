@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			BarkPlayed = new();
 			LowHealthBarkPlayed = new();
 			BarkPlayedTimeStamp = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			EditorName = "Initial color";
 			EditorGroup = "Material";
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

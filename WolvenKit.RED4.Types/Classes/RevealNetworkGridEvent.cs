@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			FxBreached = new();
 			RevealSlave = true;
 			RevealMaster = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

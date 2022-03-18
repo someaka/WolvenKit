@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enabled = true;
 			Slots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldStreamingSectorInplaceContent()
 		{
 			InplaceResources = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

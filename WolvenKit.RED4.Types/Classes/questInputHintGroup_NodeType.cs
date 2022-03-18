@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public questInputHintGroup_NodeType()
 		{
 			Show = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

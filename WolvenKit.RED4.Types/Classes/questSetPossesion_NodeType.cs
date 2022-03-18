@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataPlayerPossesion>>();
 			set => SetPropertyValue<CEnum<gamedataPlayerPossesion>>(value);
 		}
+
+		public questSetPossesion_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

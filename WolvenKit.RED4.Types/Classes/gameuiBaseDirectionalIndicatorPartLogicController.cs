@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DefaultForwardFovRange = 80.000000F;
 			AdjustedForwardFovRange = 160.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

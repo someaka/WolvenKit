@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public MapMenuUserData()
 		{
 			MoveTo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

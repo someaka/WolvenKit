@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "AccessPointController";
 			NetworkName = "Local Network 1";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

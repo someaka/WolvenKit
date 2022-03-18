@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public BinkVideoEvent()
 		{
 			Path = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

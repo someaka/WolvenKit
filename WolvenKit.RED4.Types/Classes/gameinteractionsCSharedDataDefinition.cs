@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameinteractionsCSharedDataDefinition()
 		{
 			DefaultChoices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

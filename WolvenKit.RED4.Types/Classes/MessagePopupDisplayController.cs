@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Title = new();
 			Message = new();
 			Image = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

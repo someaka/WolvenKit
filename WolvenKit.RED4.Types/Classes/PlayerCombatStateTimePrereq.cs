@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MinTime = -1.000000F;
 			MaxTime = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

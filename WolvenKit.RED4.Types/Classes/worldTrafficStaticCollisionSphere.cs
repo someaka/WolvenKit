@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldTrafficStaticCollisionSphere()
 		{
 			WorldPos = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

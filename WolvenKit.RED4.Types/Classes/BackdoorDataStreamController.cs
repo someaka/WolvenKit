@@ -133,6 +133,10 @@ namespace WolvenKit.RED4.Types
 			CanvasC2 = new();
 			CanvasC3 = new();
 			CanvasC4 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

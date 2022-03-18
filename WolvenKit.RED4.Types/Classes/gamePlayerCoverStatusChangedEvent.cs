@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gamePlayerCoverStatusChangedEvent()
 		{
 			Direction = Enums.gamePlayerCoverDirection.None;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

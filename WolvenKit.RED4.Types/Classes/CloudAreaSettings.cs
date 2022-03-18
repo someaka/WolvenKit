@@ -277,6 +277,10 @@ namespace WolvenKit.RED4.Types
 			VolNoiseWindInfluence = 1.000000F;
 			VolDetailWindInfluence = 1.250000F;
 			VolDistantFogOpacity = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

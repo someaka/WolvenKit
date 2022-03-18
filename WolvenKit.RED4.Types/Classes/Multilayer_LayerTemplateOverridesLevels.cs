@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public Multilayer_LayerTemplateOverridesLevels()
 		{
 			V = new(2);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

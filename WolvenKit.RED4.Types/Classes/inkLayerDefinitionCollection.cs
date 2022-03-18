@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			GameNotificationsLayer = new();
 			PhotoModeLayer = new();
 			DebugLayer = new() { Entries = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

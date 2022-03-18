@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			NetrunnerIDs = new();
 			TargetID = new();
 			StatusEffectList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

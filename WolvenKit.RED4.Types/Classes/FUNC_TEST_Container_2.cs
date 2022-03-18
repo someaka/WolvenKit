@@ -60,5 +60,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<TweakDBID>();
 			set => SetPropertyValue<TweakDBID>(value);
 		}
+
+		public FUNC_TEST_Container_2()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

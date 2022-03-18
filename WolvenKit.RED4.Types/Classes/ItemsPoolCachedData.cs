@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<ATooltipData>>();
 			set => SetPropertyValue<CHandle<ATooltipData>>(value);
 		}
+
+		public ItemsPoolCachedData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

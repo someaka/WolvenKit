@@ -158,6 +158,10 @@ namespace WolvenKit.RED4.Types
 			DamageLabel = new();
 			DamageValue = new();
 			HealthPercentageLabel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

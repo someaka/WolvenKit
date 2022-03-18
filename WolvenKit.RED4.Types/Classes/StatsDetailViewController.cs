@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StatLabelRef = new();
 			StatValueRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<FocusForcedHighlightPersistentData>>();
 			set => SetPropertyValue<CHandle<FocusForcedHighlightPersistentData>>(value);
 		}
+
+		public gameVisionModeComponentPS()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

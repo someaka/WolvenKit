@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public PaperdollGlitchController()
 		{
 			PaperdollGlichRoot = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

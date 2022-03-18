@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CommunityEntries = new();
 			CombatCommunityEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

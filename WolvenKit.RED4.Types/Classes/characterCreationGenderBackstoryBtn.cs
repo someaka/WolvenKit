@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Selector = new();
 			FluffText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemOperations = new();
 			TagOperations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

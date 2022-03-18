@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class BraindanceFlyDecisions : LocomotionBraindance
 	{
+		public BraindanceFlyDecisions()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

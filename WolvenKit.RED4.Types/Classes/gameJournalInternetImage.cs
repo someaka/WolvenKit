@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TintColor = new();
 			HoverTintColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

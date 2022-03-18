@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SlotBorder = new();
 			SlotBackground = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

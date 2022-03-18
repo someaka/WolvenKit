@@ -173,9 +173,9 @@ namespace WolvenKit.RED4.Archive.IO
         {
             var index = _reader.ReadInt16();
 
-            if (index >= 0 && index < importsList.Count)
+            if (index >= 0 && index < _importsList.Count)
             {
-                var import = (PackageImport)importsList[index - 0];
+                var import = (PackageImport)_importsList[index - 0];
 
                 return new CResourceAsyncReference<T>
                 {
@@ -196,9 +196,9 @@ namespace WolvenKit.RED4.Archive.IO
         {
             var index = _reader.ReadInt16();
 
-            if (index >= 0 && index < importsList.Count)
+            if (index >= 0 && index < _importsList.Count)
             {
-                var import = (PackageImport)importsList[index - 0];
+                var import = (PackageImport)_importsList[index - 0];
 
                 return new CResourceReference<T>
                 {

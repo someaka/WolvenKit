@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public NewAreaGameController()
 		{
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

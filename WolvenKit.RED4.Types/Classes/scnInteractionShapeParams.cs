@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			Rotation = new() { R = 1.000000F };
 			ActivationBaseLength = 1.000000F;
 			ActivationHeight = 3.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

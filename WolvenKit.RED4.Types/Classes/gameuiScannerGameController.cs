@@ -335,6 +335,10 @@ namespace WolvenKit.RED4.Types
 			SoundFinishedOn = "ui_generic_set_11_navigation";
 			SoundFinishedOff = "ui_generic_set_10_navigation";
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

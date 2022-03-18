@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SettingsSelectorControllerFloat()
 		{
 			SliderWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

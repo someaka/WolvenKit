@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIbehaviorConditionDefinition>>();
 			set => SetPropertyValue<CHandle<AIbehaviorConditionDefinition>>(value);
 		}
+
+		public AIbehaviorUnaryConditionDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -200,6 +200,10 @@ namespace WolvenKit.RED4.Types
 			SkillCheckNormalReqs = new();
 			SkillCheckIcon = new();
 			SkillCheckText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

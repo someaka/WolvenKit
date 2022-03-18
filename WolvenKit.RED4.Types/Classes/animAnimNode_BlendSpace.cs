@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			BlendSpace = new() { SpaceDimension = 1, CoordinatesDescriptions = new() { new() }, SpacePoints = new(), IsLooped = true, NeedsRuntimeTriangulation = true, CachedSpacePoints_coordinates = new(), CachedSpaceSimplexes_pointsIndices = new(), CachedSamplesForGridPoints_simplexIndex = new(), CachedSamplesForGridPoints_weightsForPoints = new() };
 			ProgressLink = new();
 			IsLooped = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

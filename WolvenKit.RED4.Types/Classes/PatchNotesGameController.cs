@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			AnimationName = "intro";
 			ConfirmBtn = new();
 			IsInputBlocked = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

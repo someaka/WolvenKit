@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<StatusEffectTriggerListener>>();
 			set => SetPropertyValue<CHandle<StatusEffectTriggerListener>>(value);
 		}
+
+		public RemoveStatusEffectListenerEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SlotList = new();
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

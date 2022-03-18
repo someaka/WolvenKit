@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SMovementPattern()
 		{
 			Speed = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

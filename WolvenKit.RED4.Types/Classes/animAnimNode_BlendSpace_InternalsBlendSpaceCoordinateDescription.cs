@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MaxValue = 1.000000F;
 			GridDivisionsCount = 4;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

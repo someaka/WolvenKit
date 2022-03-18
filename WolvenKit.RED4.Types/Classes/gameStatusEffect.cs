@@ -119,6 +119,10 @@ namespace WolvenKit.RED4.Types
 			OwnerEntityID = new();
 			InstigatorEntityID = new();
 			Direction = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			BuffDataList = new();
 			DebuffDataList = new();
 			BuffWidgets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataArchetypeType>>();
 			set => SetPropertyValue<CEnum<gamedataArchetypeType>>(value);
 		}
+
+		public ScannerArchetype()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

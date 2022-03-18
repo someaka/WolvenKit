@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameVisionModeType>>();
 			set => SetPropertyValue<CEnum<gameVisionModeType>>(value);
 		}
+
+		public gameVisionModeVisualEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

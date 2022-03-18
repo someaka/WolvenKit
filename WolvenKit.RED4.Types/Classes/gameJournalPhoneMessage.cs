@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Text = new() { Unk1 = 0, Value = "" };
 			Delay = 3.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

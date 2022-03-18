@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			Bar = new();
 			Header = new();
 			IconWidgetActive = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MappinState = new();
 			MappinWithJournalState = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

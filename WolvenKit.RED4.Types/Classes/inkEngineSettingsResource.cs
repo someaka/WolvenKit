@@ -132,5 +132,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<CBitmapTexture>>();
 			set => SetPropertyValue<CResourceReference<CBitmapTexture>>(value);
 		}
+
+		public inkEngineSettingsResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

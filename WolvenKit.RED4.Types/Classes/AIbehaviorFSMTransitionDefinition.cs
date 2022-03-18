@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			MonitorConditions = new();
 			EventConditions = new();
 			PassiveConditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

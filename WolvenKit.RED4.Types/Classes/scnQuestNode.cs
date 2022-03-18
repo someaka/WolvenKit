@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			OutputSockets = new();
 			IsockMappings = new();
 			OsockMappings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

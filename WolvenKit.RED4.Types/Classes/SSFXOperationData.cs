@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EEffectOperationType>>();
 			set => SetPropertyValue<CEnum<EEffectOperationType>>(value);
 		}
+
+		public SSFXOperationData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

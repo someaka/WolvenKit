@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CurveResourceSet()
 		{
 			CurveResources = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

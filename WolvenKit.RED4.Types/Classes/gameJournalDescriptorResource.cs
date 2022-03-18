@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameJournalDescriptorResource()
 		{
 			EntriesActivatedAtStart = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

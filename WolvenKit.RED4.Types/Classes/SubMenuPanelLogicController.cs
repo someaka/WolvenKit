@@ -243,6 +243,10 @@ namespace WolvenKit.RED4.Types
 			MenusList = new();
 			CurMenuData = new() { Identifier = -1, SubMenus = new() };
 			CurSubMenuData = new() { Identifier = -1, SubMenus = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

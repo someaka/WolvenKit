@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameLootResourceData>>();
 			set => SetPropertyValue<CHandle<gameLootResourceData>>(value);
 		}
+
+		public gameLootResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

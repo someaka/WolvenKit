@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public StimuliEffectEvent()
 		{
 			TargetPoint = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Healthbar = new();
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -168,6 +168,10 @@ namespace WolvenKit.RED4.Types
 			WeightNode = new();
 			EndTargetPositionNode = new();
 			EndTargetOrientationNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

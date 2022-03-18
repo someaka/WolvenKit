@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public ClaymoreMine()
 		{
 			Alive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

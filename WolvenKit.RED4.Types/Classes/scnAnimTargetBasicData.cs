@@ -87,6 +87,10 @@ namespace WolvenKit.RED4.Types
 			StaticTarget = new() { W = 1.000000F };
 			TargetActorId = new() { Id = 4294967295 };
 			TargetPropId = new() { Id = 4294967295 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

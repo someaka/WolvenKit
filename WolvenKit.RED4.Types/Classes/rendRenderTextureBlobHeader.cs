@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			TextureInfo = new();
 			MipMapInfo = new();
 			HistogramData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

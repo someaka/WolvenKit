@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enable = true;
 			GrainSize = new() { X = 0.500000F, Y = 0.500000F, Z = 0.500000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

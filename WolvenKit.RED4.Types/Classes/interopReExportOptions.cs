@@ -285,6 +285,10 @@ namespace WolvenKit.RED4.Types
 			AsBBoxThreshold = 0.000000;
 			AsBBoxPrefabsThreshold = 0.000000;
 			AsBBoxPrefabsSubdivide = 0.000000;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

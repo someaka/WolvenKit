@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			UsedTransformIndices = new();
 			LipsyncOverrideToMainPosesTracksMapping = new();
 			FirstLipsyncOverrideTrackIndex = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

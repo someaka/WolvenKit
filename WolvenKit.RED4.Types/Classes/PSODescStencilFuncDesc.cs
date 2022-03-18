@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<PSODescDepthStencilModeComparisonMode>>();
 			set => SetPropertyValue<CEnum<PSODescDepthStencilModeComparisonMode>>(value);
 		}
+
+		public PSODescStencilFuncDesc()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

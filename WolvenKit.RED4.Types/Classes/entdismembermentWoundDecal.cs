@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			Scale = 1.000000F;
 			FadeOrigin = 0.700000F;
 			FadePower = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

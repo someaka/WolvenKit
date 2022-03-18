@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public inkGridItemTemplate()
 		{
 			Widget = new() { WidgetLibrary = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

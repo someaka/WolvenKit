@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnOverrideTalkOnReturn_InterruptionScenarioOperation()
 		{
 			TalkOnReturn = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

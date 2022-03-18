@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameTransformAnimation_Position_LocalPosition()
 		{
 			Position = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

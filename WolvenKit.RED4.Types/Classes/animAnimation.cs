@@ -100,6 +100,10 @@ namespace WolvenKit.RED4.Types
 			AdditionalTracks = new() { Entries = new(), OverwriteExistingValues = true };
 			FrameClampingStartFrame = -1;
 			FrameClampingEndFrame = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

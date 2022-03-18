@@ -29,6 +29,10 @@ namespace WolvenKit.RED4.Types
 			LastTarget = new();
 			SideHorizontal = 1;
 			SideVertical = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

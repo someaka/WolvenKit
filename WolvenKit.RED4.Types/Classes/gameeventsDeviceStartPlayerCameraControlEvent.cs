@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public gameeventsDeviceStartPlayerCameraControlEvent()
 		{
 			InitialRotation = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

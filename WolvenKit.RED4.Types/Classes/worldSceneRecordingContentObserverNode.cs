@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldSceneRecordingContentObserverNode()
 		{
 			Filter = new() { MeshNodesOnly = true, MeshResourceFilter = new() { ForceFilterIgnore = new(), ForceFilterMatch = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

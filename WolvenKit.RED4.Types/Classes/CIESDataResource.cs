@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CIESDataResource()
 		{
 			Samples = new(128);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

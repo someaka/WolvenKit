@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ChildPadding = new();
 			ChildSizeStep = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

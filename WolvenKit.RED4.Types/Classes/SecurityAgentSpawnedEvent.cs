@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SpawnedAgent = new() { PSID = new() };
 			SecurityAreas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

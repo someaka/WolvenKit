@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIResource()
 		{
 			Variables = new() { List = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

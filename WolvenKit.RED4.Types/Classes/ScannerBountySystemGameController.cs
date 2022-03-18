@@ -180,6 +180,10 @@ namespace WolvenKit.RED4.Types
 			DeadNotice = new();
 			CrossedOut = new();
 			StarsWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

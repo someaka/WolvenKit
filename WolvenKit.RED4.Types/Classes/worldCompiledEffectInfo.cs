@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			RelativeRotations = new();
 			PlacementInfos = new();
 			EventsSortedByRUID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

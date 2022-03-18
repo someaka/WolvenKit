@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 		public FunctionalTestsDataTimeStatsData()
 		{
 			EngineTime = 0.000000;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

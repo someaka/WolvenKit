@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Label = new();
 			ContactInfo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

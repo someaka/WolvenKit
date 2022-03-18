@@ -94,6 +94,10 @@ namespace WolvenKit.RED4.Types
 			ShallowSettings = new() { MinDistanceBetweenImpulsesSquared = 0.010000F, ImpulseStrength = 0.002500F, ImpulseMinRadius = 0.040000F, ImpulseMaxRadius = 0.050000F };
 			IntermediateSettings = new() { MinDistanceBetweenImpulsesSquared = 0.010000F, ImpulseStrength = 0.002500F, ImpulseMinRadius = 0.040000F, ImpulseMaxRadius = 0.050000F };
 			DeepSettings = new() { MinDistanceBetweenImpulsesSquared = 0.010000F, ImpulseStrength = 0.002500F, ImpulseMinRadius = 0.040000F, ImpulseMaxRadius = 0.050000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

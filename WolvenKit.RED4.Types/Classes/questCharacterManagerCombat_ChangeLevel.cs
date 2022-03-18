@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PuppetRef = new() { Names = new() };
 			Level = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

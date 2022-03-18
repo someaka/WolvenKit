@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public inkFullscreenCompositionResource()
 		{
 			CompositionPresets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			EntityLocalPosition = new();
 			EntityLocalRotation = new() { R = 1.000000F };
 			SpawnerId = new() { EntityId = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

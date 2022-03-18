@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameuiAuthorisationNotificationType>>();
 			set => SetPropertyValue<CEnum<gameuiAuthorisationNotificationType>>(value);
 		}
+
+		public AuthorisationNotificationEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

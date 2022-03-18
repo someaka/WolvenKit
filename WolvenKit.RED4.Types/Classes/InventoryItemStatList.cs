@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Data = new();
 			ItemsList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			Parent = 4294967295;
 			Children = new();
 			Outlines = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

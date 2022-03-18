@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questShowNarrativeEvent_NodeType()
 		{
 			TextColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

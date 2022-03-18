@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public SecurityAlarmSetup()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

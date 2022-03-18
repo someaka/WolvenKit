@@ -45,6 +45,10 @@ namespace WolvenKit.RED4.Types
 			TransformsCountUpperBound = 94;
 			TracksCountUpperBound = 37;
 			RotationLimits = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

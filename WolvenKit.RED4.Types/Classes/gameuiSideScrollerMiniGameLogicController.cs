@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			PlayerColliderSizeOffset = new();
 			GameplayRoot = new();
 			SpawnedListLibraryNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

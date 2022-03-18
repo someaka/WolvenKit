@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LibraryItemAnchor = Enums.inkEAnchor.Fill;
 			OwnerID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

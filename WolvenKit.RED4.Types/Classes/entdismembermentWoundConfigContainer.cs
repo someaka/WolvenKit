@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public entdismembermentWoundConfigContainer()
 		{
 			Wounds = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

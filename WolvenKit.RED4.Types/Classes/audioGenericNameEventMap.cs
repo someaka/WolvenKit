@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<audioGenericNameEventDictionary>>();
 			set => SetPropertyValue<CHandle<audioGenericNameEventDictionary>>(value);
 		}
+
+		public audioGenericNameEventMap()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

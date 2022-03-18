@@ -76,5 +76,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EGenericNotificationPriority>>();
 			set => SetPropertyValue<CEnum<EGenericNotificationPriority>>(value);
 		}
+
+		public gameuiQuestUpdateNotificationViewData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

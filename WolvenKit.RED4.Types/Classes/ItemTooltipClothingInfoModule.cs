@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Value = new();
 			Arrow = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

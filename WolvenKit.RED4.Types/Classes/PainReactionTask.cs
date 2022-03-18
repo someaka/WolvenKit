@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AnimFeature_WeaponOverride>>();
 			set => SetPropertyValue<CHandle<AnimFeature_WeaponOverride>>(value);
 		}
+
+		public PainReactionTask()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

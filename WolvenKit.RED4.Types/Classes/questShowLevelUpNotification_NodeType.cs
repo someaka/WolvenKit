@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questShowLevelUpNotification_NodeType()
 		{
 			LevelUpData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

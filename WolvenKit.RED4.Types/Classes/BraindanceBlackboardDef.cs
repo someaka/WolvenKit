@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 			IsFPP = new();
 			PlaybackSpeed = new();
 			PlaybackDirection = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

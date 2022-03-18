@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EQuestFilterType>>();
 			set => SetPropertyValue<CEnum<EQuestFilterType>>(value);
 		}
+
+		public QuestModifyFilters()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -126,6 +126,10 @@ namespace WolvenKit.RED4.Types
 			NormalRootOpacity = 1.000000F;
 			HoverRootOpacity = 1.000000F;
 			AnimPulseOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

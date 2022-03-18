@@ -213,6 +213,10 @@ namespace WolvenKit.RED4.Types
 			TexturePart_Untracked = "untracked_left";
 			TexturePart_Succeeded = "succeeded";
 			TexturePart_Failed = "failed";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

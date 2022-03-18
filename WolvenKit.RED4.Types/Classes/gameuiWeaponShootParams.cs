@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FromWorldPosition = new();
 			Forward = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

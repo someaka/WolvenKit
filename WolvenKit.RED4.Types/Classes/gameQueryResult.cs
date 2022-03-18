@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameQueryResult()
 		{
 			HitShapes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

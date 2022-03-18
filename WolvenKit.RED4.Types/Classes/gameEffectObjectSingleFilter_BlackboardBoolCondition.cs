@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectObjectSingleFilter_BlackboardBoolCondition()
 		{
 			Parameter = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

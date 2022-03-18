@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			SequenceDuration = 2.000000F;
 			ActionTypeToForward = new() { QHack = true };
 			OngoingSequence = new() { SequenceInitiator = new(), DelayIDs = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

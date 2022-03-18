@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Cinematics = new() { AnimSets = new(), OverrideAnimSets = new(), AnimWrapperVariables = new() };
 			Gameplay = new() { AnimSets = new(), OverrideAnimSets = new(), AnimWrapperVariables = new() };
 			FinalAnimSetCollection = new() { AnimSets = new(), OverrideAnimSets = new(), AnimWrapperVariables = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

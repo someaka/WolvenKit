@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			PoliceTooltip = new();
 			Tooltips = new(3);
 			CurrentVisibleIndex = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

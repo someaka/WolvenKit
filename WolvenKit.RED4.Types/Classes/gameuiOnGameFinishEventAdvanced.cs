@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameuiSideScrollerMiniGameStateAdvanced>>();
 			set => SetPropertyValue<CHandle<gameuiSideScrollerMiniGameStateAdvanced>>(value);
 		}
+
+		public gameuiOnGameFinishEventAdvanced()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

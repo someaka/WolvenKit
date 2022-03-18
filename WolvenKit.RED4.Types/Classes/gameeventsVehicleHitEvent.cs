@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VehicleVelocity = new();
 			PreyVelocity = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

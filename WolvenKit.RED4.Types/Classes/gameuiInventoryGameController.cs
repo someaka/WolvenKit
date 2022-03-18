@@ -526,6 +526,10 @@ namespace WolvenKit.RED4.Types
 			ConsumablesAreas = new();
 			EquipmentAreaCategoryEventQueue = new();
 			EquipmentAreaCategories = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

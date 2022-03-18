@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FxResource = new();
 			Duration = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

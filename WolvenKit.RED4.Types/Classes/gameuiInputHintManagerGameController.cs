@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			GroupsContainer = new();
 			HintLibRef = new() { WidgetLibrary = new() };
 			GroupLibRef = new() { WidgetLibrary = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

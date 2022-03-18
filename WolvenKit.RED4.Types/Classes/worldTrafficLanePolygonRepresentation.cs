@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Outline = new();
 			Polygon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

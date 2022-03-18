@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			FxInstances = new();
 			CustomActions = new() { Actions = new() };
 			CustomActionsOperations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

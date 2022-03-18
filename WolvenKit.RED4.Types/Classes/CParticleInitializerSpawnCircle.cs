@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			WorldSpace = true;
 			SpawnToLocal = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

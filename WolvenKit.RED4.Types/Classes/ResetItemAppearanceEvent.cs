@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ResetItemAppearanceEvent()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

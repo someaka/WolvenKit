@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SNewsFeedElementData()
 		{
 			Banners = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

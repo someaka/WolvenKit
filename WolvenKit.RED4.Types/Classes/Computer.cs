@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "ComputerController";
 			BannerUpdateID = new();
 			PlayerControlData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

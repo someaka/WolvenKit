@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Set = true;
 			Attitude = Enums.EAIAttitude.AIA_Neutral;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

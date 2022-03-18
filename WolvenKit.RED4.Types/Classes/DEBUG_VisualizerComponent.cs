@@ -102,6 +102,10 @@ namespace WolvenKit.RED4.Types
 			TEXT_SCALE_IMMORTALITY_MODE = 1.000000F;
 			TEXT_TOP = 2.300000F;
 			TEXT_OFFSET = 0.200000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

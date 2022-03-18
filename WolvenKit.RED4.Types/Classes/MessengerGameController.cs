@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			ContactsRef = new();
 			DialogRef = new();
 			VirtualList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

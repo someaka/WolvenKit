@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<movePolicies>>();
 			set => SetPropertyValue<CHandle<movePolicies>>(value);
 		}
+
+		public moveReplicatedMovePolicies()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<PingCachedData>>();
 			set => SetPropertyValue<CHandle<PingCachedData>>(value);
 		}
+
+		public StopPingingNetworkRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

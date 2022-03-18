@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public communityCommunityEntryPhaseSpotsData()
 		{
 			TimePeriodsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

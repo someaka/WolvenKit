@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public questPrefetchStreaming_NodeTypeV2()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<CGradient>>();
 			set => SetPropertyValue<CResourceReference<CGradient>>(value);
 		}
+
+		public CMaterialParameterGradient()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

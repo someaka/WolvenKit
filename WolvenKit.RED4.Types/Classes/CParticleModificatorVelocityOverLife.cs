@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			Scale = 1.000000F;
 			Modulate = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

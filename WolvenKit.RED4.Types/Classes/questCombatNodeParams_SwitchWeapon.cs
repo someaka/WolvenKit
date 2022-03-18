@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questSwitchWeaponModes>>();
 			set => SetPropertyValue<CEnum<questSwitchWeaponModes>>(value);
 		}
+
+		public questCombatNodeParams_SwitchWeapon()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

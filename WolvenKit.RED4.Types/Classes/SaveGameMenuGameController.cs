@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			List = new();
 			ButtonHintsManagerRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

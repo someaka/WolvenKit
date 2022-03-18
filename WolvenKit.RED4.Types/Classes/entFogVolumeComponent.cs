@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 			Absorption = -1.000000F;
 			Size = new() { X = 1.000000F, Y = 1.000000F, Z = 1.000000F };
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			EditorName = "Texture animation";
 			EditorGroup = "Material";
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

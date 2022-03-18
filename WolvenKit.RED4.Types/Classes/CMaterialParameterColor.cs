@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CMaterialParameterColor()
 		{
 			Color = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

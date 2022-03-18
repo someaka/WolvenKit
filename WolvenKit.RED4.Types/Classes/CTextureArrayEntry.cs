@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<CBitmapTexture>>();
 			set => SetPropertyValue<CResourceReference<CBitmapTexture>>(value);
 		}
+
+		public CTextureArrayEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

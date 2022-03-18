@@ -117,6 +117,10 @@ namespace WolvenKit.RED4.Types
 			PhxBarycentrics = new();
 			PhxLodSwitchData = new();
 			PhxSimulated = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

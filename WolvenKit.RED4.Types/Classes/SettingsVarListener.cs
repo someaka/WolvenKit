@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<SettingsMainGameController>>();
 			set => SetPropertyValue<CWeakHandle<SettingsMainGameController>>(value);
 		}
+
+		public SettingsVarListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LibraryPath = new();
 			IsValid = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

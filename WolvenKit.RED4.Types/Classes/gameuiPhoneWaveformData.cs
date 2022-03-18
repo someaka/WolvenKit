@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiPhoneWaveformData()
 		{
 			Points = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

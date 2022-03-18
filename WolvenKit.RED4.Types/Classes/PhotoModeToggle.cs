@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			FrameWidget = new();
 			IconWidget = new();
 			LabelWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

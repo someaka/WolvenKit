@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public BossStealthComponent()
 		{
 			Owner_id = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

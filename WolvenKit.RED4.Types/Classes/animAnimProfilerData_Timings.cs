@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public animAnimProfilerData_Timings()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

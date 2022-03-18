@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameTickableEventState>>();
 			set => SetPropertyValue<CEnum<gameTickableEventState>>(value);
 		}
+
+		public gameTickableEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

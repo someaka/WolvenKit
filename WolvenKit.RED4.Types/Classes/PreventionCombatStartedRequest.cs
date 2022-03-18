@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public PreventionCombatStartedRequest()
 		{
 			RequesterPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

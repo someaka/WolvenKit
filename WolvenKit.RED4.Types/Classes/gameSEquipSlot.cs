@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameSEquipSlot()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

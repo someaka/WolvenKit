@@ -128,6 +128,10 @@ namespace WolvenKit.RED4.Types
 		public InspectionComponent()
 		{
 			LastInspectedObjID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

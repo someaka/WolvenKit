@@ -360,6 +360,10 @@ namespace WolvenKit.RED4.Types
 			Zoom = 1.000000F;
 			CurrentHealth = 100;
 			MaximumHealth = 100;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

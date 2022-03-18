@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			State = new(16);
 			RawChange = new(16);
 			DesiredChange = new(16);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

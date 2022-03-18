@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public VendorDataView()
 		{
 			OpenTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

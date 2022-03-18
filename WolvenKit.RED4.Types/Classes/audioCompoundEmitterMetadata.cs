@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioCompoundEmitterMetadata()
 		{
 			ChildrenNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

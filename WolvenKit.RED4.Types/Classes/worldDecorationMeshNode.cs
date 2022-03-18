@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public worldDecorationMeshNode()
 		{
 			FilterDataSource = Enums.physicsFilterDataSource.Collider;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public AIBaseUseWorkspotCommand()
 		{
 			Id = 4294967295;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

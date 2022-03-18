@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Name = "Component";
 			Stage1App = new();
 			Stage2App = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

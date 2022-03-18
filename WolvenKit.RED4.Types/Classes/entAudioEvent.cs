@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<audioAudioEventFlags>>();
 			set => SetPropertyValue<CEnum<audioAudioEventFlags>>(value);
 		}
+
+		public entAudioEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

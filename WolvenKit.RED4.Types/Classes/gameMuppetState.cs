@@ -124,6 +124,10 @@ namespace WolvenKit.RED4.Types
 			StateMachinesSnapshot = new() { StateMachines = new() };
 			ControllersSnapshot = new() { Controllers = new() };
 			SnapFrameId = 4294967295;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

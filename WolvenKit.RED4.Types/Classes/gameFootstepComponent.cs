@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameFootstepComponent()
 		{
 			Name = "Component";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

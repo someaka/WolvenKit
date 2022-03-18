@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AcceptInstant = true;
 			AcceptNotInstant = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			FirstBoneIdx = -1;
 			SecondBoneIdx = -1;
 			EndBoneIdx = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

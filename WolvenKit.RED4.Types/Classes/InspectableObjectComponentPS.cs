@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public InspectableObjectComponentPS()
 		{
 			Listeners = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

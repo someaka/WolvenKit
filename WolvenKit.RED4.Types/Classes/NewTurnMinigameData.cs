@@ -146,6 +146,10 @@ namespace WolvenKit.RED4.Types
 			PlayerProgramsRemoved = new();
 			EnemyprogramsAdded = new();
 			EnemyprogramsRemoved = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

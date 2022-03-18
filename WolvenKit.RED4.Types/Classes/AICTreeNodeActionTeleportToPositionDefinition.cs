@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AICTreeNodeActionTeleportToPositionDefinition()
 		{
 			PositionName = "MovementTarget";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

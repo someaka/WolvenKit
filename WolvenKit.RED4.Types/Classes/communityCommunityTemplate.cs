@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<communityCommunityTemplateData>>();
 			set => SetPropertyValue<CHandle<communityCommunityTemplateData>>(value);
 		}
+
+		public communityCommunityTemplate()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

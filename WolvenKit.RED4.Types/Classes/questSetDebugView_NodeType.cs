@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questEDebugViewMode>>();
 			set => SetPropertyValue<CEnum<questEDebugViewMode>>(value);
 		}
+
+		public questSetDebugView_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

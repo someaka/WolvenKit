@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public effectTrack()
 		{
 			Items = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

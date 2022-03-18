@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Offset = new();
 			Events = new(4);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

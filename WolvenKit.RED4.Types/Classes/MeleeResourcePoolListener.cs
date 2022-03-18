@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<CrosshairGameController_Melee>>();
 			set => SetPropertyValue<CWeakHandle<CrosshairGameController_Melee>>(value);
 		}
+
+		public MeleeResourcePoolListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameTransformAnimation_Rotation_CurrentRotation()
 		{
 			Offset = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

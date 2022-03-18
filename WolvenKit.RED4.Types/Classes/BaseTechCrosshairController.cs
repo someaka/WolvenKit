@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<CrosshairWeaponStatsListener>>();
 			set => SetPropertyValue<CHandle<CrosshairWeaponStatsListener>>(value);
 		}
+
+		public BaseTechCrosshairController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CUInt16>();
 			set => SetPropertyValue<CUInt16>(value);
 		}
+
+		public gameItemID()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

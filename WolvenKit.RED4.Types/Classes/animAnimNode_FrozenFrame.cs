@@ -36,6 +36,10 @@ namespace WolvenKit.RED4.Types
 			MaxFramesFrozen = 5;
 			TriggerEventName = "FreezeFrame";
 			ClearEventName = "UnfreezeFrame";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

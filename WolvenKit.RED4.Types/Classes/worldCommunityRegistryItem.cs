@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			EntriesInitialState = new();
 			CommunityId = new() { EntityId = new() };
 			CommunityAreaType = Enums.worldCommunityRegistryItemAreaNodeType.Count;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

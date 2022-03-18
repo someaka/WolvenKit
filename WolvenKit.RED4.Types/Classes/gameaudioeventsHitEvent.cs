@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AttackType = Enums.gamedataAttackType.Direct;
 			HitPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

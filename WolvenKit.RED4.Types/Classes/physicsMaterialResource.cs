@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			Density = 1000.000000F;
 			Tags = new();
 			Color = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

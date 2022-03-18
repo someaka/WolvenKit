@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameQuestDistanceRequestFilter()
 		{
 			DistanceSquared = 1000000.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

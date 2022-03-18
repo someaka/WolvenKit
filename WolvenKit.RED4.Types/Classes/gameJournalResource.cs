@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameJournalEntry>>();
 			set => SetPropertyValue<CHandle<gameJournalEntry>>(value);
 		}
+
+		public gameJournalResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

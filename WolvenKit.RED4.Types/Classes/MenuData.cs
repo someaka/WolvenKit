@@ -129,6 +129,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Identifier = -1;
 			SubMenus = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

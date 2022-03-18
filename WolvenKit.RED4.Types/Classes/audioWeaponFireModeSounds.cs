@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public audioWeaponFireModeSounds()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

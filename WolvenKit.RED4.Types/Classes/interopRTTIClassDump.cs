@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			DescriptiveNames = new();
 			ResourceInfos = new();
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

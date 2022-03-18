@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public RefreshPingEffector()
 		{
 			SquadMembers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameShapeData()
 		{
 			Result = new() { HitPositionEnter = new(), HitPositionExit = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

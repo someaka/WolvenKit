@@ -13,5 +13,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CString>();
 			set => SetPropertyValue<CString>(value);
 		}
+
+		public AbsolutePathSerializable()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Subcategories = new();
 			Options = new();
 			IsEmpty = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

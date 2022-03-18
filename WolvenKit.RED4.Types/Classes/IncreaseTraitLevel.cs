@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataTraitType>>();
 			set => SetPropertyValue<CEnum<gamedataTraitType>>(value);
 		}
+
+		public IncreaseTraitLevel()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ExitForce = new() { Value = new() };
 			BikeForce = new() { Value = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

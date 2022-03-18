@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsWaiting = true;
 			IsExecuting = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public Portal()
 		{
 			ControllerTypeName = "PortalController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

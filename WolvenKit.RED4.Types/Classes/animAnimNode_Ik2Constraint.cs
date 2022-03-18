@@ -121,6 +121,10 @@ namespace WolvenKit.RED4.Types
 			WeightFloatTrack = new();
 			WeightNode = new();
 			TwistNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

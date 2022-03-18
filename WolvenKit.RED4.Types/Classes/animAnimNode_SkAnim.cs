@@ -148,6 +148,10 @@ namespace WolvenKit.RED4.Types
 			IsLooped = true;
 			CollectEvents = true;
 			ApplyInertializationOnAnimSetSwap = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

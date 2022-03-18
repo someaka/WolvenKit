@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			ReferencePointFullEffectDistance = 5.000000F;
 			ReferencePoints = new();
 			AuxiliaryRelativePoint = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			ObjectRef = new() { Names = new() };
 			IsPlayer = true;
 			ComparisonType = Enums.EComparisonType.Equal;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

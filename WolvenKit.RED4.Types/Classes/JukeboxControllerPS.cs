@@ -45,6 +45,10 @@ namespace WolvenKit.RED4.Types
 			JukeboxSetup = new();
 			Stations = new();
 			IsPlaying = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

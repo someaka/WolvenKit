@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			OutTransitionIndices = new();
 			Tags = new();
 			RequiredQualityDistanceCategory = 4;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

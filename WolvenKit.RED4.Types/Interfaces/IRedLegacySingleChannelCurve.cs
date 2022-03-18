@@ -30,6 +30,6 @@ namespace WolvenKit.RED4.Types
     public interface IRedCurvePoint<T> : IRedCurvePoint, IRedType<T> where T : IRedType
     {
         public float Point { get; set; }
-        public T Value { get; set; }
+        public T? Value { get; set; }
     }
 }

@@ -1,33 +1,19 @@
 using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Diagnostics;
 using WolvenKit.RED4.Types.Exceptions;
 
 namespace WolvenKit.RED4.Types
 {
     public class RedTypeManager
     {
-        public static T Create<T>() where T : RedBaseClass
-        {
-            var instance = (RedBaseClass)System.Activator.CreateInstance<T>();
-            if (instance is IRedOverload tCls)
-            {
-                tCls.ConstructorOverload();
-            }
-
-            return (T)instance;
-        }
-
         public static RedBaseClass Create(Type type)
         {
-            var instance = (RedBaseClass)System.Activator.CreateInstance(type);
-            if (instance is IRedOverload tCls)
+            var result = System.Activator.CreateInstance(type);
+            if (result is not RedBaseClass rbc)
             {
-                tCls.ConstructorOverload();
+                throw new Exception($"Type \"{type.Name}\" needs to be derived from \"RedBaseClass\"");
             }
 
-            return instance;
+            return rbc;
         }
 
         public static RedBaseClass Create(string redTypeName)
@@ -43,13 +29,13 @@ namespace WolvenKit.RED4.Types
 
         public static IRedType CreateRedType(Type type, params object[] args)
         {
-            var instance = (IRedType)System.Activator.CreateInstance(type, args);
-            if (instance is IRedOverload tCls)
+            var result = System.Activator.CreateInstance(type, args);
+            if (result is not IRedType redType)
             {
-                tCls.ConstructorOverload();
+                throw new Exception($"Type \"{type.Name}\" needs to implement from \"IRedType\"");
             }
 
-            return instance;
+            return redType;
         }
 
         public static IRedType CreateRedType(string redTypeName)

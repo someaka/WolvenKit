@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiCharacterCustomizationOptionVersionUpdateInfo()
 		{
 			CurOptionNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

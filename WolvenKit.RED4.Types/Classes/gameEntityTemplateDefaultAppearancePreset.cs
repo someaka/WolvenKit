@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameEntityTemplateDefaultAppearancePreset()
 		{
 			DefaultAppearancePresets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

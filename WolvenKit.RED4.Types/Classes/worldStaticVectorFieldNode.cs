@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public worldStaticVectorFieldNode()
 		{
 			Direction = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

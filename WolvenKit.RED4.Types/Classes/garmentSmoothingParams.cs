@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			SmoothingRadiusInCM = 15.000000F;
 			SmoothingExponent = 0.500000F;
 			SmoothingNumNeighbours = 4;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

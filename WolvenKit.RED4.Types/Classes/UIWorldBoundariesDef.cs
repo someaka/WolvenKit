@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsPlayerCloseToBoundary = new();
 			IsPlayerGoingDeeper = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

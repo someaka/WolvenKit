@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			VideoPath = new();
 			Looped = true;
 			Sequence = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

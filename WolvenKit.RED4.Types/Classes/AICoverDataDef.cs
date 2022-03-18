@@ -160,6 +160,10 @@ namespace WolvenKit.RED4.Types
 			LastDebugCoverPreset = new();
 			FirstCoverEvaluationDone = new();
 			StartCoverEvaluationTimeStamp = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

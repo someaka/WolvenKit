@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Position = new();
 			Constraints = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

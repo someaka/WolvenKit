@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<ScriptableDeviceAction>>();
 			set => SetPropertyValue<CHandle<ScriptableDeviceAction>>(value);
 		}
+
+		public DelayedDeviceActionEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

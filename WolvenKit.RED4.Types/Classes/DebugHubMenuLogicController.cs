@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MenusList = new();
 			EventsList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

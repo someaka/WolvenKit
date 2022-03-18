@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FastForwardAvailable = new();
 			FastForwardActive = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

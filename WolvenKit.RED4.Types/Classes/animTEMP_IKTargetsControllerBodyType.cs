@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public animTEMP_IKTargetsControllerBodyType()
 		{
 			IkChainSettings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public JukeboxBlackboardDef()
 		{
 			IsPlaying = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AtlasResource = new();
 			OptionData = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			Animations = new() { Cinematics = new(), Gameplay = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Target = new();
 			TargetPos = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<entITransformBinding>>();
 			set => SetPropertyValue<CHandle<entITransformBinding>>(value);
 		}
+
+		public entIPlacedComponent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

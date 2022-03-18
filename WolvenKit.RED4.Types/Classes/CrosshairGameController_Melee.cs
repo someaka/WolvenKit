@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TargetColorChange = new();
 			WeaponID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

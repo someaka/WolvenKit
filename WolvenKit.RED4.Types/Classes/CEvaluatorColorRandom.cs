@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Min = new();
 			Max = new();
 			RandomPerChannel = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

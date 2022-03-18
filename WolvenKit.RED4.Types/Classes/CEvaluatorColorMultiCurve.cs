@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public CEvaluatorColorMultiCurve()
 		{
 			NumberOfCurveSamples = 16;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -10,7 +10,8 @@ namespace WolvenKit.RED4.Types
             set => SetPropertyValue<CFloat>(value);
         }
 
-        public animAnimStateTransitionInterpolator_Blend()
+
+        partial void PostConstruct()
         {
             VisTransitionDuration = 1F;
         }

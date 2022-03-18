@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DepartFrequency = 5;
 			UiUpdateFrequency = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			BlackboardProperty = new() { SerializableID = new(), PropertyPath = new() };
 			Value = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -217,6 +217,10 @@ namespace WolvenKit.RED4.Types
 			EquipmentAreaCategories = new();
 			AreaSlotControllers = new();
 			CurrentSet = new() { SetID = -1, ClothingList = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

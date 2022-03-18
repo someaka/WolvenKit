@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkImageWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkImageWidget>>(value);
 		}
+
+		public ApartmentScreenInkGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

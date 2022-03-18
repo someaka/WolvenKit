@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			EditTags = new();
 			OnDeactivateActions = new();
 			MorphNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

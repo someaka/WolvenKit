@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioAudBulletTimeModeMap()
 		{
 			BulletTimeMapItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

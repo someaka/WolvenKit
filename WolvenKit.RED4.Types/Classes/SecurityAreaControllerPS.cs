@@ -120,6 +120,10 @@ namespace WolvenKit.RED4.Types
 			AreaTransitions = new();
 			RuntimeTransitions = new();
 			LastOutput = new() { LastKnownPosition = new(), ObjectOfInterest = new(), WhoBreached = new(), Reporter = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

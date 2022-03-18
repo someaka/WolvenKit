@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public DelayHackedEvent()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

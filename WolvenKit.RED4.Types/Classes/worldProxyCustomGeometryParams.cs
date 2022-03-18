@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public worldProxyCustomGeometryParams()
 		{
 			UvType = Enums.worldProxyMeshUVType.UvGenerateNew;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

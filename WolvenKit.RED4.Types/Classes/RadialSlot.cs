@@ -85,6 +85,10 @@ namespace WolvenKit.RED4.Types
 			Active = "Hover";
 			Inactive = "Default";
 			Blocked = "Blocked";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

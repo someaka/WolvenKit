@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<animActionAnimDatabase>>();
 			set => SetPropertyValue<CResourceReference<animActionAnimDatabase>>(value);
 		}
+
+		public animAnimNode_SkPhaseSlotWithDurationAnim()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

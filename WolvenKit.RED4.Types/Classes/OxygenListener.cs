@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<OxygenbarWidgetGameController>>();
 			set => SetPropertyValue<CWeakHandle<OxygenbarWidgetGameController>>(value);
 		}
+
+		public OxygenListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -76,5 +76,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public SurveillanceCameraResaveData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

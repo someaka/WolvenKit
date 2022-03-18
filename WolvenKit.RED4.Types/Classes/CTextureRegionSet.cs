@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CTextureRegionSet()
 		{
 			Regions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

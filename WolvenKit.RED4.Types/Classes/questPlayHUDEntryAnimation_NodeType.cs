@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questPlayHUDEntryAnimation_NodeType()
 		{
 			DependsOnTimeDilation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

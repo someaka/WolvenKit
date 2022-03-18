@@ -135,6 +135,10 @@ namespace WolvenKit.RED4.Types
 			PerkNotificationContainer = new();
 			PerkNotificationText = new();
 			PerkIcon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

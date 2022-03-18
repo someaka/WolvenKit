@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public NumberPlateSelector()
 		{
 			ReplaceTextWithCustomNumber = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

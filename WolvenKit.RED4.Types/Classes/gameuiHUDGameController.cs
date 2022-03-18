@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ShowAnimationName = "unfold";
 			HideAnimationName = "fold";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

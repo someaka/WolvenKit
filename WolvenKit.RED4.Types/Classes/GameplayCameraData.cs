@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Is_forward_offset = 1.000000F;
 			Forward_offset_value = 0.200000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

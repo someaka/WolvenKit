@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "StateMachine";
 			PackageName = "playerStateMachine";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

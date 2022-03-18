@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<animCompareFunc>>();
 			set => SetPropertyValue<CEnum<animCompareFunc>>(value);
 		}
+
+		public animAnimStateTransitionCondition_ModifiedFloatVariable()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

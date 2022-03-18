@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OverrideFov = true;
 			OverrideDof = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

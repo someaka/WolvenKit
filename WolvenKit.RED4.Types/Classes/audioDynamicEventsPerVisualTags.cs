@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VisualTags = new();
 			Grunts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

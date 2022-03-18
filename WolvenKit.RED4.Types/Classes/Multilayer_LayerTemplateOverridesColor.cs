@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public Multilayer_LayerTemplateOverridesColor()
 		{
 			V = new(3);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

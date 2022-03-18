@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public PhoneSystem()
 		{
 			LastCallInformation = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

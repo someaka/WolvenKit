@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIFollowerRole>>();
 			set => SetPropertyValue<CHandle<AIFollowerRole>>(value);
 		}
+
+		public FriendlyTargetWeaponChangeCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

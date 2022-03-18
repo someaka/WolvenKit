@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LibraryItemName = "Root";
 			Visible = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

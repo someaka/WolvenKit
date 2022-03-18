@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameinteractionsInteractionScriptedCondition>>();
 			set => SetPropertyValue<CHandle<gameinteractionsInteractionScriptedCondition>>(value);
 		}
+
+		public gameinteractionsCHotSpotGameLogicFilterDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Ref = new() { Names = new() };
 			OnMount = true;
 			Role = Enums.gameMountingSlotRole.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

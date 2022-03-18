@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EWoundedBodyPart>>();
 			set => SetPropertyValue<CEnum<EWoundedBodyPart>>(value);
 		}
+
+		public CheckCurrentWoundedState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

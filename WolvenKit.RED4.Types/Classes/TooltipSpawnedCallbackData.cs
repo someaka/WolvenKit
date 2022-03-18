@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Index = -1;
 			StyleResRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

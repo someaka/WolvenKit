@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public questSetHUDEntryForcedVisibility_NodeType()
 		{
 			HudEntryName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

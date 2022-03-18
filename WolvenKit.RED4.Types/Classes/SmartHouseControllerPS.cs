@@ -53,6 +53,10 @@ namespace WolvenKit.RED4.Types
 			Timetable = new();
 			AvailablePresets = new();
 			SmartHouseCustomization = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

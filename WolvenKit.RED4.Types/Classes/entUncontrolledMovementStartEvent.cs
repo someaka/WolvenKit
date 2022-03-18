@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public entUncontrolledMovementStartEvent()
 		{
 			RagdollOnCollision = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

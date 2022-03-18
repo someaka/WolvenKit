@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public entHitRepresentationDataParameter()
 		{
 			HitRepresentationOverrides = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

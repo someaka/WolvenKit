@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SetWantedLevel()
 		{
 			WantedLevel = Enums.EPreventionHeatStage.Heat_1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

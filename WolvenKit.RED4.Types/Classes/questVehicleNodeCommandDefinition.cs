@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Sockets = new();
 			Id = 65535;
 			Vehicle = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

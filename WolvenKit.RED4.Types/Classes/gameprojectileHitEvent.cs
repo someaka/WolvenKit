@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameprojectileHitEvent()
 		{
 			HitInstances = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

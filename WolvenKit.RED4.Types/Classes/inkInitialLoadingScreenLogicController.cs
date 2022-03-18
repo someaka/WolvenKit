@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			SkipButtonPanel = new();
 			LoadingPartsContainer = new();
 			ProgressBarRoot = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

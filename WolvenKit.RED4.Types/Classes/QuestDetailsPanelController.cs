@@ -136,6 +136,10 @@ namespace WolvenKit.RED4.Types
 			CodexLinksContainer = new();
 			ContentContainer = new();
 			NoSelectedQuestContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

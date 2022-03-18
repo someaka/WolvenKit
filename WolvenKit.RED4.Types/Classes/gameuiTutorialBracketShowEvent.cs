@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiTutorialBracketShowEvent()
 		{
 			Data = new() { Offset = new(), Size = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

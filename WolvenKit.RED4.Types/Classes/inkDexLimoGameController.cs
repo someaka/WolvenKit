@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public inkDexLimoGameController()
 		{
 			VideoPath = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

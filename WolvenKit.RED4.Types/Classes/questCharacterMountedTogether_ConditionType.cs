@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questCharacterMountedTogether_ConditionType()
 		{
 			Characters = new() { null };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

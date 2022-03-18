@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HitPosition = new();
 			HitDirection = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

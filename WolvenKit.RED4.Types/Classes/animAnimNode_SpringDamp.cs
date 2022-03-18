@@ -95,6 +95,10 @@ namespace WolvenKit.RED4.Types
 			RangeMax = 180.000000F;
 			TimeStep = 0.005000F;
 			InputNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

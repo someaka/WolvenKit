@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public entVisualTagsSchema()
 		{
 			VisualTags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public SlidingLadder()
 		{
 			ControllerTypeName = "SlidingLadderController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

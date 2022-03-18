@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<worldTrafficNullAreaDynamicBlockadeData>>();
 			set => SetPropertyValue<CHandle<worldTrafficNullAreaDynamicBlockadeData>>(value);
 		}
+
+		public worldTrafficNullAreaCollisionResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

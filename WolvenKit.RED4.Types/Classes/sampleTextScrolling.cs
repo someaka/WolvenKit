@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ScrollingText = new();
 			Infiniteloop = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

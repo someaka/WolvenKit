@@ -109,6 +109,10 @@ namespace WolvenKit.RED4.Types
 			HorizontalPullSpeedFactor = 1.000000F;
 			PullScaleBySquareSizeFactor = 1.000000F;
 			InnerSquareScale = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

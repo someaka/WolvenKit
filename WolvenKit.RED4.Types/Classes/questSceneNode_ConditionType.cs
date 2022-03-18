@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public questSceneNode_ConditionType()
 		{
 			Type = Enums.questSceneConditionType.IsInside;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

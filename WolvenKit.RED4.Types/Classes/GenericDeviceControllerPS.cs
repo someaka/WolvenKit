@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBDescriptionRecord = 143157997633;
 			GenericDeviceActionsSetup = new() { StateActionsOverrides = new() { ToggleON = new(), TogglePower = new() }, CustomActions = new() { Actions = new() } };
 			PerformedCustomActionsIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

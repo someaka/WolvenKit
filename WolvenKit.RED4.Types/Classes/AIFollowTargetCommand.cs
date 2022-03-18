@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MatchSpeed = true;
 			Teleport = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

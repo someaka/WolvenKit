@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 96749304508;
 			TweakDBDescriptionRecord = 147694950908;
 			NcartTimetableSetup = new() { DepartFrequency = 5, UiUpdateFrequency = 1 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

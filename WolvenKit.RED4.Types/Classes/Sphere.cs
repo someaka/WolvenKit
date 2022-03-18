@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		public Sphere()
 		{
 			CenterRadius2 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

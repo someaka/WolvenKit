@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiDamageIndicatorGameController()
 		{
 			MaxVisibleParts = 6;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

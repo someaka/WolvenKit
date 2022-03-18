@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameinputContextDisplayData()
 		{
 			Actions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

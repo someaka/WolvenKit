@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<BraindanceSystem>>();
 			set => SetPropertyValue<CHandle<BraindanceSystem>>(value);
 		}
+
+		public BraindanceInputChangeEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

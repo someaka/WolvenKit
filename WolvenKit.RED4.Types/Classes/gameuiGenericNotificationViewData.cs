@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<GenericNotificationBaseAction>>();
 			set => SetPropertyValue<CHandle<GenericNotificationBaseAction>>(value);
 		}
+
+		public gameuiGenericNotificationViewData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StatType = Enums.gamedataStatType.Invalid;
 			Modifiers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

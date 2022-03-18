@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<workWorkspotResource>>();
 			set => SetPropertyValue<CResourceReference<workWorkspotResource>>(value);
 		}
+
+		public gameSmartObjectWorkspotDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

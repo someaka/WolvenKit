@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<redEvent>>();
 			set => SetPropertyValue<CHandle<redEvent>>(value);
 		}
+
+		public gameprojectileForwardEventToProjectileEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

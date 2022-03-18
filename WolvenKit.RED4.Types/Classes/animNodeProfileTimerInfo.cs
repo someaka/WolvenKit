@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animNodeProfileTimerInfo()
 		{
 			Mode = Enums.animNodeProfileTimerMode.End;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<HitReactionComponent>>();
 			set => SetPropertyValue<CHandle<HitReactionComponent>>(value);
 		}
+
+		public SimpleShouldEvadeCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

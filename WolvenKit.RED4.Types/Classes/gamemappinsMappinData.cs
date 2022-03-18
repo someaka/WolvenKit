@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			Active = true;
 			LocalizedCaption = new() { Unk1 = 0, Value = "" };
 			VisibleThroughWalls = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

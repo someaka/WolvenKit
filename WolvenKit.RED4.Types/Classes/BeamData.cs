@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StartDirection = new();
 			EndDirection = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

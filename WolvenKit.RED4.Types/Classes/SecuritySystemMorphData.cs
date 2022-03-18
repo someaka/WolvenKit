@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<EntitiesAtGate>>();
 			set => SetPropertyValue<CHandle<EntitiesAtGate>>(value);
 		}
+
+		public SecuritySystemMorphData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

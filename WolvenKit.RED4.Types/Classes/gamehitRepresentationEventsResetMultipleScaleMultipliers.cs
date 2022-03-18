@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamehitRepresentationEventsResetMultipleScaleMultipliers()
 		{
 			ShapeNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inkBrushMirrorType>>();
 			set => SetPropertyValue<CEnum<inkBrushMirrorType>>(value);
 		}
+
+		public inkWidgetBrush()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

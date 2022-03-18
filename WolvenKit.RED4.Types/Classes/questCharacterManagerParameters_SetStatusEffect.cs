@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			PuppetRef = new() { Names = new() };
 			StatusEffectSourceObject = new() { Names = new() };
 			Set = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

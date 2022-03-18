@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Geometries = new();
 			BonesPerGeometry = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public communityCommunityEntryPhaseTimePeriodData()
 		{
 			SpotNodeIds = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

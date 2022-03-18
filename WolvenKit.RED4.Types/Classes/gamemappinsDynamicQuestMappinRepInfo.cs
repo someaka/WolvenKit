@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<entEntity>>();
 			set => SetPropertyValue<CWeakHandle<entEntity>>(value);
 		}
+
+		public gamemappinsDynamicQuestMappinRepInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

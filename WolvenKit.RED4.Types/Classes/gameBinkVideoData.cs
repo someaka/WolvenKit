@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameBinkVideoData()
 		{
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

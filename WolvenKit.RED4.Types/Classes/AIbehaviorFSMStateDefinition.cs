@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<AIbehaviorStateCompletionStatus>>();
 			set => SetPropertyValue<CEnum<AIbehaviorStateCompletionStatus>>(value);
 		}
+
+		public AIbehaviorFSMStateDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamestateMachineeventPostponedParameterVector()
 		{
 			Value = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

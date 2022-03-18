@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			InputParameterNames = new();
 			Events = new();
 			EffectLoops = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<AICommandState>>();
 			set => SetPropertyValue<CEnum<AICommandState>>(value);
 		}
+
+		public AINPCCommandStateEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameAppearanceNameVisualTagsPreset_AppearanceTags()
 		{
 			VisualTags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

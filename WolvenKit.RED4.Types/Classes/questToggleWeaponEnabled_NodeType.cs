@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			VehicleRef = new() { Names = new() };
 			Val = true;
 			Weapon = Enums.questVehicleWeaponQuestID.All;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SCustomDeviceActionsData()
 		{
 			Actions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

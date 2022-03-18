@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkWidgetBrush>>();
 			set => SetPropertyValue<CHandle<inkWidgetBrush>>(value);
 		}
+
+		public inkWidgetBrushResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<PlayerPuppet>>();
 			set => SetPropertyValue<CWeakHandle<PlayerPuppet>>(value);
 		}
+
+		public CurrencyUpdateCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

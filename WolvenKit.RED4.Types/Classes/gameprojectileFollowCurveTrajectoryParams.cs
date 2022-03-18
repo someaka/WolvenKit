@@ -191,6 +191,10 @@ namespace WolvenKit.RED4.Types
 			Offset = new();
 			OffsetInPlane = new();
 			SendFollowEvent = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldWorldListResource()
 		{
 			Worlds = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

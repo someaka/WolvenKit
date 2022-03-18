@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Scale = 1.000000F;
 			RelativePosition = new();
 			AbsolutePosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

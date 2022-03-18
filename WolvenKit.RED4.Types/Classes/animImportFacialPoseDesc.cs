@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			TransformsNoScale = new();
 			TransformIds = new();
 			TransformNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			BountyTitleText = new();
 			BountyAmountText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

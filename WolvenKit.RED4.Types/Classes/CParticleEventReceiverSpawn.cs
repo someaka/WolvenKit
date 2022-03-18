@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			EditorName = "Event Receiver Spawn";
 			EditorGroup = "Event";
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

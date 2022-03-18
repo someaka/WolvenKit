@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			HeadMobility = 0.950000F;
 			ChestMobility = 0.600000F;
 			SoftLimitAngle = 360.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

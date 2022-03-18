@@ -278,6 +278,10 @@ namespace WolvenKit.RED4.Types
 			StopHasReachedTarget = true;
 			StartFromClosest = true;
 			SecureTimeOut = 60.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

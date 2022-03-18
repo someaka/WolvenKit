@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			AbilityIcon = new();
 			AbilityDescription = new();
 			QualityRoot = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

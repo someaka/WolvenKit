@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Targets = new();
 			Timestamps = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

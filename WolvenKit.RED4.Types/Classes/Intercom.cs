@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "IntercomController";
 			ShortGlitchDelayID = new();
 			DistractionSound = "dev_radio_ditraction_glitching";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

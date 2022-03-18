@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Sult = new() { HitShapes = new() };
 			TityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

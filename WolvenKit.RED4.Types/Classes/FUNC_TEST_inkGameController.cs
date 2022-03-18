@@ -142,6 +142,10 @@ namespace WolvenKit.RED4.Types
 			Shape = new();
 			BasicInputFields = new();
 			AdditionalFields = new() { BasePanel = new(), Compound = new(), Leaf = new(), Widget = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			FaceRegion = Enums.MorphTargetsFaceRegion.FACE_REGION_NONE;
 			BoneNames = new();
 			BoneRigMatrices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

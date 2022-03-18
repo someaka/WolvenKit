@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			TransformA = new();
 			TransformB = new();
 			Outputs = new() { new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

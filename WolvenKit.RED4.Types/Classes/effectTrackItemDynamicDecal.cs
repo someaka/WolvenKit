@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public effectTrackItemDynamicDecal()
 		{
 			TimeDuration = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 			Wheel2Position = new();
 			Wheel3Position = new();
 			Wheel4Position = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

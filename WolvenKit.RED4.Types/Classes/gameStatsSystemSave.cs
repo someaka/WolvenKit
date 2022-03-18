@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StatsObjectsData = new();
 			StatModifiersData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

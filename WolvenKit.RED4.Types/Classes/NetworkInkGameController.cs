@@ -257,6 +257,10 @@ namespace WolvenKit.RED4.Types
 			EnemyProgramsCompletion = new();
 			BasicAccessCompletion = new() { CompletionProgress = new() };
 			AppliedViruses = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

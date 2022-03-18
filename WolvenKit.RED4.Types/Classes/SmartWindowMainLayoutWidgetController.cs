@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			MenuFilesSlot = new();
 			MenuNewsFeedSlot = new();
 			MenuDevicesSlot = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

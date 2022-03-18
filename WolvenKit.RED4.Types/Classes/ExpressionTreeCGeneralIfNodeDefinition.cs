@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public ExpressionTreeCGeneralIfNodeDefinition()
 		{
 			Expressions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

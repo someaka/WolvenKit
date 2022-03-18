@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameScriptedPrereqMountingListenerWrapper>>();
 			set => SetPropertyValue<CHandle<gameScriptedPrereqMountingListenerWrapper>>(value);
 		}
+
+		public CanPlayerHijackMountedNpcPrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

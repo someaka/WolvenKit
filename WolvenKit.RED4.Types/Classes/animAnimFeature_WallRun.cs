@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WallPosition = new();
 			WallNormal = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

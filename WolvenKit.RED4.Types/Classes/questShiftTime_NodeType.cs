@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public questShiftTime_NodeType()
 		{
 			PreventVisualGlitch = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

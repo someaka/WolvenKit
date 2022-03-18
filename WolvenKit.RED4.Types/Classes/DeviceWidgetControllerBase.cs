@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			StatusNameWidget = new();
 			ActionsListWidget = new();
 			ActionWidgetsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

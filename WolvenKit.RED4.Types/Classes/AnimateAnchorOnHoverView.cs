@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			HoverAnchor = new();
 			NormalAnchor = new();
 			AnimTime = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

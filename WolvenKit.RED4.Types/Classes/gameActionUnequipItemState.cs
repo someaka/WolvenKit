@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameActionUnequipItemState()
 		{
 			Duration = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

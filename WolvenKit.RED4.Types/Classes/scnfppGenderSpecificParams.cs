@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			TransitionEndInputAngles = new();
 			IdleCameraLs = new();
 			IdleControlCameraMs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

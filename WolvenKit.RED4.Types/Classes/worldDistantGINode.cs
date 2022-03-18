@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public worldDistantGINode()
 		{
 			SectorSpan = new() { X = -1.000000F, Y = -1.000000F, Z = 1.000000F, W = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

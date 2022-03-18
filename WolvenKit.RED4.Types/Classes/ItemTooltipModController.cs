@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DotIndicator = new();
 			ModAbilitiesContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

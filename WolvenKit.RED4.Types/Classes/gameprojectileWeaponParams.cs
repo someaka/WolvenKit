@@ -103,6 +103,10 @@ namespace WolvenKit.RED4.Types
 			IgnoreWeaponOwnerCollision = true;
 			RicochetData = new();
 			Range = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

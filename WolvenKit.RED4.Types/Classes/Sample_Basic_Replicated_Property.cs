@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public Sample_Basic_Replicated_Property()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

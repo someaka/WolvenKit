@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public worldFoliageDestructionNode()
 		{
 			PopulationIndex = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

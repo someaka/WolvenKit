@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			ItemsID = new();
 			Quantity = new();
 			PiecesPrice = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -86,6 +86,10 @@ namespace WolvenKit.RED4.Types
 			MaxLightsSwitchedAtOnce = 5;
 			TimeToNextSwitch = 1.000000F;
 			LightSwitchRandomizerType = Enums.ELightSwitchRandomizerType.RANDOM_PROGRESSIVE;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

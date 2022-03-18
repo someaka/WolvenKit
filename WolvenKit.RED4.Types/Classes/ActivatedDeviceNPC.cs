@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ActivatedDeviceNPC()
 		{
 			ControllerTypeName = "ActivatedDeviceNPCController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

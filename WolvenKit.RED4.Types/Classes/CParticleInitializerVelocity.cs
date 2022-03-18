@@ -36,6 +36,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			Scale = 1.000000F;
 			WorldSpace = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

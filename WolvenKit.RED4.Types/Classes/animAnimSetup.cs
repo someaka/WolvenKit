@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Cinematics = new();
 			Gameplay = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

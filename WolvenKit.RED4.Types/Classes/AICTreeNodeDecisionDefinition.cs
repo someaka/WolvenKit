@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Expressions = new();
 			Interruption = new() { Importance = Enums.AIEInterruptionImportance.Rush };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

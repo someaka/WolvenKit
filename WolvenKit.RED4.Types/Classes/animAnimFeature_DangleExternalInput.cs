@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimFeature_DangleExternalInput()
 		{
 			FictitiousAccelerationWs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

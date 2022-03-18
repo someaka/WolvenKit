@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameScriptedPrereqSceneInspectionListenerWrapper>>();
 			set => SetPropertyValue<CHandle<gameScriptedPrereqSceneInspectionListenerWrapper>>(value);
 		}
+
+		public NPCInScenePrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

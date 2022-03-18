@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StartAction = Enums.gameBoolSignalAction.TurnOn;
 			EndAction = Enums.gameBoolSignalAction.TurnOff;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

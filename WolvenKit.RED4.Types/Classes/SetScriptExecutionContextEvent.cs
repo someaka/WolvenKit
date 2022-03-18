@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SetScriptExecutionContextEvent()
 		{
 			ScriptExecutionContext = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

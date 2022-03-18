@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questPuppetAIManagerNodeDefinitionEntry()
 		{
 			EntityReference = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

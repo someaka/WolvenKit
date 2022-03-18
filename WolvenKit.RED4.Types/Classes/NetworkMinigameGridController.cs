@@ -145,6 +145,10 @@ namespace WolvenKit.RED4.Types
 			LastSelected = new() { Position = new(), Element = new(), Properties = new() { Traps = new() } };
 			CurrentActivePosition = new();
 			LastHighlighted = new() { Position = new(), Element = new(), Properties = new() { Traps = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

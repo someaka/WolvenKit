@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			ButtonRef = new();
 			TooltipRef = new();
 			ConnectorRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<worldEffectBlackboard>>();
 			set => SetPropertyValue<CHandle<worldEffectBlackboard>>(value);
 		}
+
+		public ExhaustedEvents()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

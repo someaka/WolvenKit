@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public inkHudEntriesResource()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

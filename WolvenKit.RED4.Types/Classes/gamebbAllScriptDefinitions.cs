@@ -908,5 +908,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<GameplaySettingsDef>>();
 			set => SetPropertyValue<CHandle<GameplaySettingsDef>>(value);
 		}
+
+		public gamebbAllScriptDefinitions()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

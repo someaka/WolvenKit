@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<inkWidgetBrushResource>>();
 			set => SetPropertyValue<CResourceReference<inkWidgetBrushResource>>(value);
 		}
+
+		public inkBrushWrapper()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			MaxedOrMinimumLabelText = new();
 			MaxedOrMinimumLabel = new();
 			AttribiuteLevelLabel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

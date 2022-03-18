@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameJournalContact>>();
 			set => SetPropertyValue<CWeakHandle<gameJournalContact>>(value);
 		}
+
+		public SocialPanelContactInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

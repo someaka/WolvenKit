@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			InstructionDesc = new();
 			Pointer = new();
 			CurrentTutorialStep = new() { AllowedActions = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

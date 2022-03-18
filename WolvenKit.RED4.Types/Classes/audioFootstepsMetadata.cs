@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FootwearMetadataArray = new();
 			FootwearVfxMetadataArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -307,6 +307,10 @@ namespace WolvenKit.RED4.Types
 			MenusList = new();
 			EventsList = new();
 			LanguageMenuIndex = 5;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

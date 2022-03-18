@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<audioWeaponHandlingSettings>();
 			set => SetPropertyValue<audioWeaponHandlingSettings>(value);
 		}
+
+		public audioMeleeWeaponSettings()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

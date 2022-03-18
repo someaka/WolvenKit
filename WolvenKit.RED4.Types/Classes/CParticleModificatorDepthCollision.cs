@@ -55,6 +55,10 @@ namespace WolvenKit.RED4.Types
 			Friction = 1.000000F;
 			Radius = 0.010000F;
 			CollisionEffect = Enums.EDepthCollisionEffect.DCE_Bounce;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

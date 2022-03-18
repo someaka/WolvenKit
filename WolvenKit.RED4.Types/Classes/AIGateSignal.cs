@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Tags = new(0);
 			Priority = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

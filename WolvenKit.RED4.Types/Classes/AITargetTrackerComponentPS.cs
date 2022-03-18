@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AITargetTrackerComponentPS()
 		{
 			ThreatsSaveData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

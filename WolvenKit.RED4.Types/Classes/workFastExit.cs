@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			Flags = 32772;
 			ForcedBlendIn = 0.200000F;
 			MovementType = Enums.moveMovementType.Stand;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

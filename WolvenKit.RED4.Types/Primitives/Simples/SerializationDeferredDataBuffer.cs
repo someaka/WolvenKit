@@ -11,7 +11,7 @@ namespace WolvenKit.RED4.Types
         public RedBuffer Buffer { get; set; }
 
         [Browsable(false)]
-        public IParseableBuffer Data
+        public IParseableBuffer? Data
         {
             get => Buffer.Data;
             set => Buffer.Data = value;
@@ -32,7 +32,7 @@ namespace WolvenKit.RED4.Types
         public RedBuffer GetValue() => Buffer;
         public void SetValue(RedBuffer instance) => Buffer = instance;
 
-        public bool Equals(SerializationDeferredDataBuffer other)
+        public bool Equals(SerializationDeferredDataBuffer? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -52,7 +52,7 @@ namespace WolvenKit.RED4.Types
             return true;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {

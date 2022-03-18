@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public worldDeviceNode()
 		{
 			DeviceConnections = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

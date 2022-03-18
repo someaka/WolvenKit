@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AbilityNameText = new();
 			AbilityIcon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

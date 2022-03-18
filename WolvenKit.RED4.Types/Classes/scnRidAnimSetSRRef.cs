@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnRidAnimSetSRRef()
 		{
 			Animations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -264,6 +264,10 @@ namespace WolvenKit.RED4.Types
 			StartScale = 1.000000F;
 			ScaleTime = 1.000000F;
 			AutoHideDistance = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

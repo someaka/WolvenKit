@@ -85,6 +85,10 @@ namespace WolvenKit.RED4.Types
 			Rectangles = new();
 			Images = new();
 			Videos = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

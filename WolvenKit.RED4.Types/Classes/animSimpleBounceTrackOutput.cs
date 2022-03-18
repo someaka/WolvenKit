@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TargetTrack = new();
 			Multiplier = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

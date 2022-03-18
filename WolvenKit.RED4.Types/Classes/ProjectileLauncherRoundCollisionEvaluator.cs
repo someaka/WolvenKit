@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public ProjectileLauncherRoundCollisionEvaluator()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -177,6 +177,10 @@ namespace WolvenKit.RED4.Types
 			TextReplaceWidget = new();
 			AnimateValueButton = new();
 			AnimateValueWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -115,6 +115,10 @@ namespace WolvenKit.RED4.Types
 			ActiveModules = new();
 			ClueData = new();
 			ShouldRefreshQHack = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

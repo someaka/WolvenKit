@@ -6,17 +6,17 @@ namespace WolvenKit.RED4.Types;
 
 public class DataCollection
 {
-    public string FileName { get; set; }
+    public string? FileName { get; set; }
     public ulong Hash { get; set; }
 
     [JsonIgnore] public HashSet<string> RawStringList { get; } = new();
     [JsonIgnore] public HashSet<string> RawImportList { get; } = new();
     [JsonIgnore] public HashSet<string> RawUsedStrings { get; } = new();
-    public List<string> UnusedStrings { get; set; }
-    public List<string> Imports { get; set; }
-    public List<string> UsedStrings { get; set; }
+    public List<string>? UnusedStrings { get; set; }
+    public List<string>? Imports { get; set; }
+    public List<string>? UsedStrings { get; set; }
 
-    public List<DataCollection> Buffers { get; set; }
+    public List<DataCollection>? Buffers { get; set; }
 
     public void CleanUp()
     {

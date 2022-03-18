@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			ImageRef = new();
 			SlotList = new();
 			Data = new() { CommandLists = new(), Effects = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

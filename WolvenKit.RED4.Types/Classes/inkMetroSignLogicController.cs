@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			StationName = new();
 			SubDistrictName = new();
 			MetroStationsContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

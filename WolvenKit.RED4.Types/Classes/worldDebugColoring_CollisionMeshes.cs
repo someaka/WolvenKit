@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			DefaultColor = new();
 			PrefabColor = new();
 			CollisionMeshColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

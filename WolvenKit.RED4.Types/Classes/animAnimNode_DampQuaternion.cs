@@ -53,6 +53,10 @@ namespace WolvenKit.RED4.Types
 			InputNode = new();
 			InitialValueNode = new();
 			RotationSpeedNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

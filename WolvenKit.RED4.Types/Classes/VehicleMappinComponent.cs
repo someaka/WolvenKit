@@ -130,6 +130,10 @@ namespace WolvenKit.RED4.Types
 			VehicleEntityID = new();
 			ScheduleDiscreteModeDelayID = new();
 			InvalidDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

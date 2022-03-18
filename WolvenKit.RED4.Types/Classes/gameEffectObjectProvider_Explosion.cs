@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Puppets = true;
 			GameObjects = true;
 			DestructibleAndDynamic = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

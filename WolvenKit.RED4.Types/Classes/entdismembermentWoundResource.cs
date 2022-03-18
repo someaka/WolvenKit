@@ -118,6 +118,10 @@ namespace WolvenKit.RED4.Types
 			Decals = new();
 			CensoredPaths = new();
 			CensoredCookedPaths = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

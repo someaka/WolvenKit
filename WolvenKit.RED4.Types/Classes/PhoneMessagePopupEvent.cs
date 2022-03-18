@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<JournalNotificationData>>();
 			set => SetPropertyValue<CHandle<JournalNotificationData>>(value);
 		}
+
+		public PhoneMessagePopupEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

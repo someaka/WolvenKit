@@ -106,6 +106,10 @@ namespace WolvenKit.RED4.Types
 			NodeType = Enums.gamedataDataNodeType.Group;
 			SerializedVariables = new();
 			Tags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

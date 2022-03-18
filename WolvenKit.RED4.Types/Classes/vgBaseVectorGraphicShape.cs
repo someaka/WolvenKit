@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<vgVectorGraphicStyle>>();
 			set => SetPropertyValue<CHandle<vgVectorGraphicStyle>>(value);
 		}
+
+		public vgBaseVectorGraphicShape()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

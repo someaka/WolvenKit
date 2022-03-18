@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			IsInMirrorsAreaMapArray = new();
 			NodeCollisionMapArray = new();
 			PrefabVariants = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

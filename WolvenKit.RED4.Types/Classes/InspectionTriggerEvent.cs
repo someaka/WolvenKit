@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public InspectionTriggerEvent()
 		{
 			InspectedObjID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

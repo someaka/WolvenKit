@@ -113,6 +113,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AutoToggleQuestMark = true;
 			MaxDevicesToExtractInOneFrame = 10;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

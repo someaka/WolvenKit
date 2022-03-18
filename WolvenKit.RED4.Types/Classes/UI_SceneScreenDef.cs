@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public UI_SceneScreenDef()
 		{
 			AnimName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

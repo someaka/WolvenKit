@@ -609,6 +609,10 @@ namespace WolvenKit.RED4.Types
 			InitPosition = new();
 			GangsAsyncSpawnRequests = new();
 			CustomFiltersList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

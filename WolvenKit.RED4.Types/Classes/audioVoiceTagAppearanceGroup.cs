@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Appearances = new();
 			Voicetags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

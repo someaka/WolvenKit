@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			ImagesUpper = new();
 			ImagesLower = new();
 			ImagePresets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

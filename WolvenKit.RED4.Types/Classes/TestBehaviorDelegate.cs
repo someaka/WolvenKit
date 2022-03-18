@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public TestBehaviorDelegate()
 		{
 			Names = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

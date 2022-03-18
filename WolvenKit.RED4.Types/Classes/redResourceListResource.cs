@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Resources = new();
 			Descriptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

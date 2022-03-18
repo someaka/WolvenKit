@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Enable = true;
 			DistantLightStartDistance = 50.000000F;
 			DistantLightFadeDistance = 15.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

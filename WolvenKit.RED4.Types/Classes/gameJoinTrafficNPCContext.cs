@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			StartPosition = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
 			ThreatPosition = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
 			CheckRoadIntersection = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

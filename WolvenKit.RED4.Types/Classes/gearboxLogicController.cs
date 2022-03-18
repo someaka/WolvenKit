@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			GearboxRImageWidget = new();
 			GearboxNImageWidget = new();
 			GearboxDImageWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

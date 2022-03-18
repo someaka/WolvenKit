@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorParallelNodeDefinition()
 		{
 			Children = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

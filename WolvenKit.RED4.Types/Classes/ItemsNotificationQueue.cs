@@ -115,6 +115,10 @@ namespace WolvenKit.RED4.Types
 			CurrencyNotification = "notification_currency";
 			ItemNotification = "Item_Received_SMALL";
 			XpNotification = "progression";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

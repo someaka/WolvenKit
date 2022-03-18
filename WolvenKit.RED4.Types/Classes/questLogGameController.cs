@@ -159,6 +159,10 @@ namespace WolvenKit.RED4.Types
 			Quests = new();
 			ResolvedQuests = new();
 			ListData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public scnlocLocStoreEmbeddedVariantPayloadEntry()
 		{
 			VariantId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

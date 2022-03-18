@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public VehicleAlertNotification()
 		{
 			ZoneLabelText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public VisualTagsPrereq()
 		{
 			AllowedTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

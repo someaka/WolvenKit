@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameJournalEntryState>>();
 			set => SetPropertyValue<CEnum<gameJournalEntryState>>(value);
 		}
+
+		public SetGameplayObjectiveStateRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = -1;
 			ParentId = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameEffectHitDataType>>();
 			set => SetPropertyValue<CEnum<gameEffectHitDataType>>(value);
 		}
+
+		public gameEffectObjectFilter_HitType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

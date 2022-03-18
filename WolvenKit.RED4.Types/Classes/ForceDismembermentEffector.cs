@@ -60,5 +60,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedataForceDismembermentEffector_Record>>();
 			set => SetPropertyValue<CHandle<gamedataForceDismembermentEffector_Record>>(value);
 		}
+
+		public ForceDismembermentEffector()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

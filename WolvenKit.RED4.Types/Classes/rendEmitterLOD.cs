@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			BirthRate = new();
 			EmitterDurationSettings = new() { EmitterDuration = 1.000000F };
 			EmitterDelaySettings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

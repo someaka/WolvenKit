@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			Video_1280x720 = new();
 			Video_720x405 = new();
 			InputHint = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

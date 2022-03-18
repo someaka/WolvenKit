@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectExecutor_Finisher()
 		{
 			FinisherScenarios = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

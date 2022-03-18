@@ -92,6 +92,10 @@ namespace WolvenKit.RED4.Types
 			WidgetInt = new();
 			WidgetRef = new();
 			WidgetTech = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

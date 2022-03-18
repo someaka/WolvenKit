@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Duration = 3.000000F;
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

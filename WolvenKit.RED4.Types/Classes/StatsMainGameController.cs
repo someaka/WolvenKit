@@ -269,6 +269,10 @@ namespace WolvenKit.RED4.Types
 			DPSStatsData = new();
 			ArmorStatsData = new();
 			OtherStatsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ChunkDataIntact = new();
 			ChunkDataFractured = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

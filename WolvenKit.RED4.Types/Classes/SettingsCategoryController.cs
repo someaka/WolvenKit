@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SettingsCategoryController()
 		{
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

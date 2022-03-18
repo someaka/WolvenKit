@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			TimeDuration = 1.000000F;
 			LuminanceBias = new();
 			Strength = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

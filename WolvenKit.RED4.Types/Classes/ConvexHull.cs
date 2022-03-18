@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		public ConvexHull()
 		{
 			Planes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

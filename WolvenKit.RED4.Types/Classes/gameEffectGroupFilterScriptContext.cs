@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectGroupFilterScriptContext()
 		{
 			ResultIndices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

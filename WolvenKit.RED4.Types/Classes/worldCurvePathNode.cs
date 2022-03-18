@@ -102,6 +102,10 @@ namespace WolvenKit.RED4.Types
 			TurnCharacterToMatchVelocity = true;
 			AnimSets = new();
 			TimeDeltaMultiplier = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

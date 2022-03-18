@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<entIComponent>>();
 			set => SetPropertyValue<CWeakHandle<entIComponent>>(value);
 		}
+
+		public enteventsHitCharacterControllerEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

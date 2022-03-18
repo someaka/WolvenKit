@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<CodexListSyncData>>();
 			set => SetPropertyValue<CWeakHandle<CodexListSyncData>>(value);
 		}
+
+		public CodexSelectedEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

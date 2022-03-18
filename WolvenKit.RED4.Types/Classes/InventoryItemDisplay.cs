@@ -176,6 +176,10 @@ namespace WolvenKit.RED4.Types
 			AttachementsDisplay = new();
 			SmallSize = new();
 			BigSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

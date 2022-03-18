@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NodeId = new() { Id = 4294967295 };
 			Scenarios = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

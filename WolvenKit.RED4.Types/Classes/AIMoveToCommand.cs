@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MovementTarget = new() { WorldPosition = new() { X = new(), Y = new(), Z = new() } };
 			FacingTarget = new() { WorldPosition = new() { X = new(), Y = new(), Z = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

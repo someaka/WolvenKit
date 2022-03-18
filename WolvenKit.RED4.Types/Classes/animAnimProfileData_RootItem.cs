@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimProfileData_RootItem()
 		{
 			Children = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

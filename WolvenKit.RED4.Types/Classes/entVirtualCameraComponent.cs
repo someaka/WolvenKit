@@ -55,6 +55,10 @@ namespace WolvenKit.RED4.Types
 			ResolutionHeight = 1080;
 			DrawBackground = true;
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

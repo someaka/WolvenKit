@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HitDirection = new() { Y = -1.000000F };
 			HitIntensity = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

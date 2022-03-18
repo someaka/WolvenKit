@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			QueryPreset = new();
 			InputPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

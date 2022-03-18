@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			TrackingIcon = new();
 			TrackingFrame = new();
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

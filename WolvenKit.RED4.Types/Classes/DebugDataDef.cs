@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			WeaponSpread_UseCircularSpread = new();
 			WeaponSpread_UseEvenDistribution = new();
 			Vehicle_BlockSwitchSeats = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

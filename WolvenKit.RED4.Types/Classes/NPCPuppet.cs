@@ -597,6 +597,10 @@ namespace WolvenKit.RED4.Types
 			ThrowingGrenadeDelayEventID = new();
 			DelayNonStealthQuickHackVictimEventID = new();
 			SmartDespawnDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

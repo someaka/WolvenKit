@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MenusEntries = new();
 			ScenariosNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

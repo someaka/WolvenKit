@@ -190,6 +190,10 @@ namespace WolvenKit.RED4.Types
 			ScrollControllerWidget = new();
 			SoundName = "Phone";
 			AudioPhoneNavigation = "ui_phone_navigation";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

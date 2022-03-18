@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OneTimeSelection = true;
 			ForceStance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

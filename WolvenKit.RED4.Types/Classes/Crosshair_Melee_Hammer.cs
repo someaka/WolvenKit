@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public Crosshair_Melee_Hammer()
 		{
 			TargetColorChange = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

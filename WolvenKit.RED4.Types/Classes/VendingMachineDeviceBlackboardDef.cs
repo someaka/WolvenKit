@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ActionStatus = new();
 			SoldOut = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

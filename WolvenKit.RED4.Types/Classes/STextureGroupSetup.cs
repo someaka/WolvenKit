@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			IsStreamable = true;
 			HasMipchain = true;
 			AllowTextureDowngrade = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

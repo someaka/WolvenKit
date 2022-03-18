@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questCharacterManagerCombat_SetWeaponState()
 		{
 			AreaType = Enums.gameCityAreaType.PublicZone;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

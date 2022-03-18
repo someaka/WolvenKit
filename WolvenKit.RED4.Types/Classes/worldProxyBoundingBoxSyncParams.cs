@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PullRange = 0.050000F;
 			StackOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

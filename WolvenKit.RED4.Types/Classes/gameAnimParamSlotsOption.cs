@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<entAnimParamSlotFunction>>();
 			set => SetPropertyValue<CEnum<entAnimParamSlotFunction>>(value);
 		}
+
+		public gameAnimParamSlotsOption()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TimeDuration = 1.000000F;
 			Brigtness = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

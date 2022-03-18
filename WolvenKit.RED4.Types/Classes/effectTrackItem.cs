@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CRUID>();
 			set => SetPropertyValue<CRUID>(value);
 		}
+
+		public effectTrackItem()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

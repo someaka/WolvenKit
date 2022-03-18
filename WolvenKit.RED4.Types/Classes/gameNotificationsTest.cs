@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkGameNotificationToken>>();
 			set => SetPropertyValue<CHandle<inkGameNotificationToken>>(value);
 		}
+
+		public gameNotificationsTest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

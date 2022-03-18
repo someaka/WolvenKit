@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public gameEffectAction_NewEffect_ReverseFromLastHit()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TargetEntityId = new();
 			HitShapes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

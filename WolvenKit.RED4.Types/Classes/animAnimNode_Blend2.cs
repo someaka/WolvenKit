@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			FirstInputNode = new();
 			SecondInputNode = new();
 			WeightNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

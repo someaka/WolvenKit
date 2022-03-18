@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameuiBackpackMainGameController>>();
 			set => SetPropertyValue<CWeakHandle<gameuiBackpackMainGameController>>(value);
 		}
+
+		public BackpackInventoryListenerCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public VirtualQuestItemController()
 		{
 			QuestItem = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IncludeTags = new();
 			ExcludeTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

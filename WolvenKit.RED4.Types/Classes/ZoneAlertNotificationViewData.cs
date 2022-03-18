@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ESecurityAreaType>>();
 			set => SetPropertyValue<CEnum<ESecurityAreaType>>(value);
 		}
+
+		public ZoneAlertNotificationViewData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

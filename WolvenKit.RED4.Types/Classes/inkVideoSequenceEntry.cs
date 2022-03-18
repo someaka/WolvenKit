@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public inkVideoSequenceEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

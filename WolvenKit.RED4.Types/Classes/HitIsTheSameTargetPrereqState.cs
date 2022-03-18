@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameweaponObject>>();
 			set => SetPropertyValue<CWeakHandle<gameweaponObject>>(value);
 		}
+
+		public HitIsTheSameTargetPrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

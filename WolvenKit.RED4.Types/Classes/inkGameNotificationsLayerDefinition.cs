@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<inkWidgetLibraryResource>>();
 			set => SetPropertyValue<CResourceReference<inkWidgetLibraryResource>>(value);
 		}
+
+		public inkGameNotificationsLayerDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DefaultColor = new();
 			MergedMeshColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

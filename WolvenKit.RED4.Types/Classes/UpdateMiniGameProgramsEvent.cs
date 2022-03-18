@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public UpdateMiniGameProgramsEvent()
 		{
 			Program = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

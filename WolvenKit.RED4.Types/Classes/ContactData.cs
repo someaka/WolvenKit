@@ -121,6 +121,10 @@ namespace WolvenKit.RED4.Types
 		{
 			UnreadMessages = new();
 			TimeStamp = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HierarchySize = new();
 			UsedTextures = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

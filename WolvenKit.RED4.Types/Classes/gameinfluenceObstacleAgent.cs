@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameinfluenceObstacleAgent()
 		{
 			UseMeshes = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

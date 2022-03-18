@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WorldPos = new() { W = 1.000000F };
 			WorldNormal = new() { W = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

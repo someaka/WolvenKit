@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AnimFeature_DroneProcedural>>();
 			set => SetPropertyValue<CHandle<AnimFeature_DroneProcedural>>(value);
 		}
+
+		public ApplyDroneProceduralAnimFeatureEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

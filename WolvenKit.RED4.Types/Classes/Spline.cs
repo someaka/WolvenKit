@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Points = new();
 			HasDirection = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

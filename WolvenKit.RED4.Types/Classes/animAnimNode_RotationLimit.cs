@@ -62,6 +62,10 @@ namespace WolvenKit.RED4.Types
 			LimitOnY = new() { Min = -1.000000F, Max = 1.000000F };
 			LimitOnZ = new() { Min = -1.000000F, Max = 1.000000F };
 			WeightLink = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

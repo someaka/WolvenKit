@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			VoLineSignals = new();
 			TemplateSceneStateOverrides = new();
 			TemplateSceneSignalOverrides = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

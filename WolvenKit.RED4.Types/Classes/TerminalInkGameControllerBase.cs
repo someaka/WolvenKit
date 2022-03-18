@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public TerminalInkGameControllerBase()
 		{
 			CurrentlyActiveDevices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

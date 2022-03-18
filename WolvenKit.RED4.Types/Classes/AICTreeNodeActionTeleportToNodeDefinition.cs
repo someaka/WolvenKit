@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NodeRef = new() { VariableId = 65535 };
 			Offset = new() { VariableId = 65535, V = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

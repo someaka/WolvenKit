@@ -295,6 +295,10 @@ namespace WolvenKit.RED4.Types
 			DelayedTimeoutCallbackId = new();
 			TimeoutPeroid = 8.000000F;
 			Options = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

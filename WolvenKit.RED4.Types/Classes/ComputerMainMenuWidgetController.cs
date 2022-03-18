@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MenuButtonsListWidget = new();
 			ComputerMenuButtonWidgetsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

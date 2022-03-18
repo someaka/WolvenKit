@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamePrereqState>>();
 			set => SetPropertyValue<CHandle<gamePrereqState>>(value);
 		}
+
+		public PuppetListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

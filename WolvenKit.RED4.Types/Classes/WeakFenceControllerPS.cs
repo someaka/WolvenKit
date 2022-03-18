@@ -30,6 +30,10 @@ namespace WolvenKit.RED4.Types
 			ShouldScannerShowNetwork = false;
 			ShouldScannerShowRole = true;
 			WeakFenceSetup = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

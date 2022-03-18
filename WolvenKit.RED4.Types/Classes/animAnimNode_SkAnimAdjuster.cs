@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			TargetPositionWs = new();
 			TargetDirectionWs = new();
 			InitialForwardVector = new() { Y = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

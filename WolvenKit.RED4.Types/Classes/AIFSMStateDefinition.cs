@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			OnFailureTransition = new();
 			OnInterruptionTransition = new();
 			OnEventTransitions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

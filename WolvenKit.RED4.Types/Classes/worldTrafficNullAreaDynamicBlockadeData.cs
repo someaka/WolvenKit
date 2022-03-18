@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldTrafficNullAreaDynamicBlockadeData()
 		{
 			NullAreasBlockades = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

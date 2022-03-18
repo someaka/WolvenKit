@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SDeviceTimetableEntry()
 		{
 			Time = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

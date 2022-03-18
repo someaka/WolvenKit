@@ -423,6 +423,10 @@ namespace WolvenKit.RED4.Types
 			ColorGroupSaturation = 100;
 			AllowDistantLight = true;
 			AutoHideDistance = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

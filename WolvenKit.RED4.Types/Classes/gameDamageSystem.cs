@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PreviewTarget = new();
 			PreviewRWLockTemp = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

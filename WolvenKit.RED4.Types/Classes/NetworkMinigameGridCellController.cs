@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			CellData = new() { Position = new(), Element = new(), Properties = new() { Traps = new() } };
 			SlotsContainer = new();
 			DefaultColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

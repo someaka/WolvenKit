@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			EditorName = "Inital rotation rate 3D";
 			EditorGroup = "Rotation";
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

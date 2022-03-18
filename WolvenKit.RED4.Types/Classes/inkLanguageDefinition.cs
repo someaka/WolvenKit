@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			LanguageCode = "en-us";
 			IsoScriptCode = "Latn";
 			Fonts = new() { new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

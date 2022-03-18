@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public MenuEventBlackboardDef()
 		{
 			MenuEventToTrigger = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

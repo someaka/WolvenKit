@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			Max = 1.000000F;
 			Progress = 1.000000F;
 			Speed = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

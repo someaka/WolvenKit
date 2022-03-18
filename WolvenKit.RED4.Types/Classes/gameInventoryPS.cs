@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameInventoryPS()
 		{
 			Accessible = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

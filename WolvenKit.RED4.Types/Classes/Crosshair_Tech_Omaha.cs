@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public Crosshair_Tech_Omaha()
 		{
 			SizeOfChargeBar = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

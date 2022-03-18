@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			Stretch = 1.000000F;
 			BlendInCurve = Enums.scnEasingType.SinusoidalEaseInOut;
 			BlendOutCurve = Enums.scnEasingType.SinusoidalEaseInOut;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

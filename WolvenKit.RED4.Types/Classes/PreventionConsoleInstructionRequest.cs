@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public PreventionConsoleInstructionRequest()
 		{
 			HeatStage = Enums.EPreventionHeatStage.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

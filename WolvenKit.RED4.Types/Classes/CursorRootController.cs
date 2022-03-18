@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			MainCursor = new();
 			ProgressBar = new();
 			ProgressBarFrame = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

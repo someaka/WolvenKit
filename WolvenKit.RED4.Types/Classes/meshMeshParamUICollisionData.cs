@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Uvs = new();
 			TrianglesIndices = new();
 			Vertices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ScrollingText()
 		{
 			TextArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

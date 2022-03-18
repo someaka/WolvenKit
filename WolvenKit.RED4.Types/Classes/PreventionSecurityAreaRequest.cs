@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public PreventionSecurityAreaRequest()
 		{
 			AreaID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

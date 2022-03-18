@@ -146,6 +146,10 @@ namespace WolvenKit.RED4.Types
 			SpeedValue = new();
 			RPMChunks = new();
 			CurrentTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

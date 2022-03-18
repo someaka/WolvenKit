@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			Switches = new();
 			Params = new();
 			DynamicParams = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

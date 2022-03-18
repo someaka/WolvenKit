@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gameStatusEffectComponentPS()
 		{
 			StatusEffectArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

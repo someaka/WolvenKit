@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public locVoLanguageDataEntry()
 		{
 			VoMapChunks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

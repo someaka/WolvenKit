@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameBlackboardPrereq()
 		{
 			BlackboardValue = new() { SerializableID = new(), PropertyPath = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

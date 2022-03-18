@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EComparisonType>>();
 			set => SetPropertyValue<CEnum<EComparisonType>>(value);
 		}
+
+		public questVarComparison_ConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

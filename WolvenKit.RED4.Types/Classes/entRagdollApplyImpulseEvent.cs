@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WorldImpulsePos = new() { W = 1.000000F };
 			WorldImpulseValue = new() { W = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

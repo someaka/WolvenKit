@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Destinations = new();
 			FinalDestinations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

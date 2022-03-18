@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<inkWidgetLayout>();
 			set => SetPropertyValue<inkWidgetLayout>(value);
 		}
+
+		public inkIWidgetSlotController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

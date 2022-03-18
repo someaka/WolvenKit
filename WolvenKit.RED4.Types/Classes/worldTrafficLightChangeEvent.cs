@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<worldTrafficLightColor>>();
 			set => SetPropertyValue<CEnum<worldTrafficLightColor>>(value);
 		}
+
+		public worldTrafficLightChangeEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 			AnimEventsState = new() { Items = new(), LastAppliedActionsTime = new() };
 			EntityEventsState = new() { Items = new(), LastAppliedActionsTime = new() };
 			WeaponStates = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

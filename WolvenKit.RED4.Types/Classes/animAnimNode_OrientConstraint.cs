@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			TransformIndex = new();
 			Weight = 1.000000F;
 			WeightFloatTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

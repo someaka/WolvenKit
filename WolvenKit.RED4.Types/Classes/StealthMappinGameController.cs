@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<NPCPuppet>>();
 			set => SetPropertyValue<CWeakHandle<NPCPuppet>>(value);
 		}
+
+		public StealthMappinGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

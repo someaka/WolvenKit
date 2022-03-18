@@ -232,6 +232,10 @@ namespace WolvenKit.RED4.Types
 			NotificationJournalHash = new();
 			IsBriefingActive = new();
 			MuppetStats = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

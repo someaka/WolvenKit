@@ -134,6 +134,10 @@ namespace WolvenKit.RED4.Types
 			Shadow = new();
 			Midtone = new();
 			Highlight = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

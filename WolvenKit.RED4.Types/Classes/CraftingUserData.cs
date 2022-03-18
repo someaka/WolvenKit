@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<CraftingMode>>();
 			set => SetPropertyValue<CEnum<CraftingMode>>(value);
 		}
+
+		public CraftingUserData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

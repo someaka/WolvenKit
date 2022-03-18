@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public sampleBulletGeneric()
 		{
 			Alive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

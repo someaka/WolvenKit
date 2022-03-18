@@ -125,6 +125,10 @@ namespace WolvenKit.RED4.Types
 			AnchorPoint = new();
 			Margins = new();
 			SlotParams = new() { UseSlotLayout = true, LayoutOverride = new() { Padding = new(), Margin = new(), AnchorPoint = new(), SizeCoefficient = 1.000000F } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

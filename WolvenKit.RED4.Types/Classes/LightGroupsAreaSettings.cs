@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enable = true;
 			GroupFade = new(8);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

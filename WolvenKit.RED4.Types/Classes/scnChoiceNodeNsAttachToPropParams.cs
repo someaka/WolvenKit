@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PropId = new() { Id = 4294967295 };
 			VisualizerStyle = Enums.scnChoiceNodeNsVisualizerStyle.inWorld;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

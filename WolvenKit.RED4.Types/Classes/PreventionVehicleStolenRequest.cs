@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public PreventionVehicleStolenRequest()
 		{
 			RequesterPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

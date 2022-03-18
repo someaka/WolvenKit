@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gamePrereqCheckData()
 		{
 			ComparisonType = Enums.EComparisonType.Equal;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<AIShootCommand>>();
 			set => SetPropertyValue<CWeakHandle<AIShootCommand>>(value);
 		}
+
+		public ShootCommandHandler()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

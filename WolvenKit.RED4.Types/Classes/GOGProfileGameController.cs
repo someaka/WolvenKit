@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RetryButton = new();
 			ParentContainerWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

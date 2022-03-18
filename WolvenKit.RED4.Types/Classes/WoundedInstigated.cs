@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EHitReactionZone>>();
 			set => SetPropertyValue<CEnum<EHitReactionZone>>(value);
 		}
+
+		public WoundedInstigated()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

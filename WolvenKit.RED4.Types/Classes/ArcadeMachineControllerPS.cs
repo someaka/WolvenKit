@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 93060634862;
 			TweakDBDescriptionRecord = 143953089827;
 			GameVideosPaths = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

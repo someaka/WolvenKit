@@ -244,6 +244,10 @@ namespace WolvenKit.RED4.Types
 			CurrentMaxAmmo = 2;
 			MaxSupportedAmmo = 8;
 			GameplaySpreadMultiplier = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

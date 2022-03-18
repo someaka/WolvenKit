@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Center = new();
 			TargetableRegionSize = new();
 			ReticleSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

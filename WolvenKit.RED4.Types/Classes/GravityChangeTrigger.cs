@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RegularStateMachineName = "Locomotion";
 			LowGravityStateMachineName = "LocomotionLowGravity";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

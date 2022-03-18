@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<CustomActionOperationTriggerData>>();
 			set => SetPropertyValue<CHandle<CustomActionOperationTriggerData>>(value);
 		}
+
+		public CustomActionOperationsTriggers()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

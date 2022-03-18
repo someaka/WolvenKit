@@ -28,6 +28,10 @@ namespace WolvenKit.RED4.Types
 			ActionWidgetPackage = new() { DependendActions = new() };
 			CanTriggerStim = true;
 			SecurityAreaData = new() { Id = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

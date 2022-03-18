@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameMultiPrereqState()
 		{
 			NestedStates = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

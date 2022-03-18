@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			IsPlayer = true;
 			ComparisonType = Enums.EComparisonType.Equal;
 			StatPoolType = Enums.gamedataStatPoolType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

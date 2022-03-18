@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OffmeshLinks = new();
 			AffectedTrafficLanes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

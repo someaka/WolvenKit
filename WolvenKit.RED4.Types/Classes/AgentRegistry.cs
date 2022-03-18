@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			AgentsLock = new();
 			MaxReprimandsPerNPC = 2;
 			MaxReprimandsPerDEVICE = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

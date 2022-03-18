@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ERentStatus>>();
 			set => SetPropertyValue<CEnum<ERentStatus>>(value);
 		}
+
+		public SetApartmentScreenMessageEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

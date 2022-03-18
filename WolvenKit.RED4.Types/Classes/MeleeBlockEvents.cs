@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameStatModifierData_Deprecated>>();
 			set => SetPropertyValue<CHandle<gameStatModifierData_Deprecated>>(value);
 		}
+
+		public MeleeBlockEvents()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

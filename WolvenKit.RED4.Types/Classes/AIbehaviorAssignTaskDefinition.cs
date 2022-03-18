@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Assignments = new();
 			EndAssignments = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

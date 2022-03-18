@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MaxExecutionTimeSec = 250.000000F;
 			ParamsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

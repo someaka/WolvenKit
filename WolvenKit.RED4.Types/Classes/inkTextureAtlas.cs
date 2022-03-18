@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			Slots = new(3);
 			DynamicTextureSlot = new() { Parts = new() };
 			IsSingleTextureMode = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

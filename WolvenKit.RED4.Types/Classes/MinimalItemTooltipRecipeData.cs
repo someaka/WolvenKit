@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DamageTypes = new();
 			RecipeStats = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

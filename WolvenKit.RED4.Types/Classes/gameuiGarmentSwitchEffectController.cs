@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SwitchTime = 5.000000F;
 			HideTime = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

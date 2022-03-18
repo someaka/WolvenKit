@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public DeviceTimeTableManager()
 		{
 			TimeTable = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

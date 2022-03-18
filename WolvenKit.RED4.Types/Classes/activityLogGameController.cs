@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Entries = new();
 			Panel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

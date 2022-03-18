@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Names = new();
 			DefaultColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

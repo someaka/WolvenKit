@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<CompareBuilder>>();
 			set => SetPropertyValue<CHandle<CompareBuilder>>(value);
 		}
+
+		public DialerContactDataView()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

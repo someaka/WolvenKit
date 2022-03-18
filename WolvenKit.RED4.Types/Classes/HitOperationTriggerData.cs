@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			IsAttackerPlayer = true;
 			Bullets = true;
 			HealthPercentage = 100.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

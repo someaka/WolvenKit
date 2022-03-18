@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EMagazineAmmoState>>();
 			set => SetPropertyValue<CEnum<EMagazineAmmoState>>(value);
 		}
+
+		public AmmoStateHitPrereqCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

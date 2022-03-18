@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorConstantExpressionDefinition()
 		{
 			Type = new() { IsSet = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

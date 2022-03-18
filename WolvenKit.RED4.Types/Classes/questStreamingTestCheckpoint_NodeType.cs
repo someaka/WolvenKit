@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<worldStreamingTestCheckpointType>>();
 			set => SetPropertyValue<CEnum<worldStreamingTestCheckpointType>>(value);
 		}
+
+		public questStreamingTestCheckpoint_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

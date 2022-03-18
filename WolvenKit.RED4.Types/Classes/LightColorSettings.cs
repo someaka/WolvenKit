@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enable = true;
 			Light = new() { Unit = Enums.ELightUnit.LU_Lux };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

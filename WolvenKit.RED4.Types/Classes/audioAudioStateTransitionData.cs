@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			AllConditionsFulfilled = true;
 			ReadVariableActions = new();
 			Conditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

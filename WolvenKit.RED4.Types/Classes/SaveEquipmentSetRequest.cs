@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameEquipmentSetType>>();
 			set => SetPropertyValue<CEnum<gameEquipmentSetType>>(value);
 		}
+
+		public SaveEquipmentSetRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

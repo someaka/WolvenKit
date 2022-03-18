@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questToggleEventExecutionTag_NodeType()
 		{
 			Mute = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

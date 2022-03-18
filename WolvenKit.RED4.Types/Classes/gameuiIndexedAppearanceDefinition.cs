@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			Color = new();
 			Actions = new();
 			Tags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

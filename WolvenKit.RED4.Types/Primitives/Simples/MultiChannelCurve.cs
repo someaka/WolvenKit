@@ -10,9 +10,9 @@ namespace WolvenKit.RED4.Types
         public Enums.EInterpolationType InterpolationType { get; set; }
         public Enums.EChannelLinkType LinkType { get; set; }
         public uint Alignment { get; set; }
-        public byte[] Data { get; set; }
+        public byte[] Data { get; set; } = Array.Empty<byte>();
 
-        public bool Equals(MultiChannelCurve<T> other)
+        public bool Equals(MultiChannelCurve<T>? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -27,7 +27,7 @@ namespace WolvenKit.RED4.Types
             return NumChannels == other.NumChannels && InterpolationType == other.InterpolationType && LinkType == other.LinkType && Alignment == other.Alignment && Data.SequenceEqual(other.Data);
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {

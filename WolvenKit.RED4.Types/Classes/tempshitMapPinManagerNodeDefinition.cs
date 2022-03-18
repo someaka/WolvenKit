@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			NodeRef = new() { Names = new() };
 			Position = new();
 			ForceCaption = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

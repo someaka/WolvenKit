@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public locVoiceoverMap()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

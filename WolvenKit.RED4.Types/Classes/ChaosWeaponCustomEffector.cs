@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EffectorOwnerID = new();
 			Target = new() { IdType = Enums.gameStatIDType.Invalid };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

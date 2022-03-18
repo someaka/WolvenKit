@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AICTreeNodeSharedVarsDecoratorDefinition()
 		{
 			SharedVars = new() { Table = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

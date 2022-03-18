@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public worldPatrolSplinePointDefinition()
 		{
 			Target = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

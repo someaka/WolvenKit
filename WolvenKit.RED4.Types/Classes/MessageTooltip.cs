@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Title = new();
 			Description = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

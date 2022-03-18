@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			DamageIndicatorRef = new();
 			DPSRef = new();
 			DPSValueLabel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

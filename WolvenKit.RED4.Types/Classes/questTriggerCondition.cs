@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Type = Enums.questTriggerConditionType.IsInside;
 			ActivatorRef = new() { Names = new() };
 			IsPlayerActivator = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

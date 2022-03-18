@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ClueScannedEvent()
 		{
 			RequesterID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

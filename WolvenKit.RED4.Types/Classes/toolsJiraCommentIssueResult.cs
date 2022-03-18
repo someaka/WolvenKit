@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public toolsJiraCommentIssueResult()
 		{
 			ErrorMessages = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OwnerItemId = new();
 			AffectedByTimeDilation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

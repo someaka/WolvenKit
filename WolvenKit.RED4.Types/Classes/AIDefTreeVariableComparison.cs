@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			ReadableName = "TreeVar";
 			ReferenceVariableId = 65535;
 			Operator = Enums.EComparisonType.Equal;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

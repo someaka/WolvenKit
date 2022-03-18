@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CyberdeckDeviceHackIcon()
 		{
 			Image = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

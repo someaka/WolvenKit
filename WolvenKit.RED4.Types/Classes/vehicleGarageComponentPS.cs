@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			UnlockedVehicleArray = new();
 			ActiveVehicles = new(3);
 			MountedVehicleData = new() { EntityID = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

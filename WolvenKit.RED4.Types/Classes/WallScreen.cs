@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "WallScreenController";
 			MovementPattern = new() { Speed = 2.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			StartWithShieldActive = true;
 			AnimFeatureName = "ShieldState";
 			ShieldDestroyedModifierName = "Shield_ControllerDestroyed";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

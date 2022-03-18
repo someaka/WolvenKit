@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			GravitySimulation = -9.800000F;
 			MinTargetAngleDegrees = -180.000000F;
 			MaxTargetAngleDegrees = 180.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

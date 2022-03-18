@@ -589,6 +589,10 @@ namespace WolvenKit.RED4.Types
 			C_deviceCombatToAwareThreshold = 35.000000F;
 			C_objectMarkerMaxDistance = 50.000000F;
 			C_objectMarkerMaxCameraDistance = 30.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

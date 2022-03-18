@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			ImpulseVector = new();
 			SideTriggerNames = new();
 			TriggerComponents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

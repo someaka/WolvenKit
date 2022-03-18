@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public audioDistanceSoundDecoratorMetadata()
 		{
 			TriggerDistance = 10.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

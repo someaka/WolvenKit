@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Lanes = new();
 			NeighborGroups = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

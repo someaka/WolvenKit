@@ -195,6 +195,10 @@ namespace WolvenKit.RED4.Types
 			UnlockTraitPointsText = new();
 			UnlockTraitWrapper = new();
 			HoldToUpgradeHint = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

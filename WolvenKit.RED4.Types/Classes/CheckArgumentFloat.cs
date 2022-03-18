@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ECompareOp>>();
 			set => SetPropertyValue<CEnum<ECompareOp>>(value);
 		}
+
+		public CheckArgumentFloat()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -226,6 +226,10 @@ namespace WolvenKit.RED4.Types
 			AnimParamWeaponVignetteCircular = "weaponVignetteCircular";
 			AnimParamWeaponBlurIntensity = "weaponBlurIntensity";
 			WeaponPlane = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

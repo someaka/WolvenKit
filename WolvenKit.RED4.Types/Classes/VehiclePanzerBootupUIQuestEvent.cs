@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public VehiclePanzerBootupUIQuestEvent()
 		{
 			Mode = Enums.panzerBootupUI.Loop;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

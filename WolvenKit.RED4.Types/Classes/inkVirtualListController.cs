@@ -28,6 +28,10 @@ namespace WolvenKit.RED4.Types
 			AllElementsSpawned = new();
 			ItemTemplates = new();
 			CycleNavigation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

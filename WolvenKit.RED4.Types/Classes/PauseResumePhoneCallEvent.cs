@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataStatPoolType>>();
 			set => SetPropertyValue<CEnum<gamedataStatPoolType>>(value);
 		}
+
+		public PauseResumePhoneCallEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

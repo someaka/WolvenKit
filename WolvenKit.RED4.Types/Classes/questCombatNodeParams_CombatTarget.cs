@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public questCombatNodeParams_CombatTarget()
 		{
 			TargetPuppet = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

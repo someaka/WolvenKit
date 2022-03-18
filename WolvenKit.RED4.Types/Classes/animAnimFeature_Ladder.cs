@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public animAnimFeature_Ladder()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

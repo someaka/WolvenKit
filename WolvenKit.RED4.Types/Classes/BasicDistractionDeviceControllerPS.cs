@@ -53,6 +53,10 @@ namespace WolvenKit.RED4.Types
 			DistractorType = Enums.EPlaystyleType.NETRUNNER;
 			EffectOnSartNames = new();
 			AnimationType = Enums.EAnimationType.TRANSFORM;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

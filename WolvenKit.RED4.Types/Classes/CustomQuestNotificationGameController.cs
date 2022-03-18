@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			Desc = new();
 			Icon = new();
 			FluffHeader = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

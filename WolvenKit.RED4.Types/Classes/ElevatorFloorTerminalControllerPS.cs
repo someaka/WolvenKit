@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 127337775259;
 			TweakDBDescriptionRecord = 179291460156;
 			ElevatorFloorSetup = new() { DoorShouldOpenFrontLeftRight = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

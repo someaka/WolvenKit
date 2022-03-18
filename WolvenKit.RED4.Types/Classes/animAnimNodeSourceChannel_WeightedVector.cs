@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Weight = 1.000000F;
 			WeightLink = new();
 			WeightFloatTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

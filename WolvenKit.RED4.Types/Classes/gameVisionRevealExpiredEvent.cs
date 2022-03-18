@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameVisionRevealExpiredEvent()
 		{
 			RevealId = new() { SourceEntityId = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

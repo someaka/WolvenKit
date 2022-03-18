@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkPointerEvent>>();
 			set => SetPropertyValue<CHandle<inkPointerEvent>>(value);
 		}
+
+		public ItemChooserItemHoverOut()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

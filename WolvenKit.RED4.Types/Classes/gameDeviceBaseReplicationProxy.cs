@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			VersionTimestamp = new() { MilliSecs = 18446744073709551615 };
 			InitialOrientation = new();
 			InitialLocation = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

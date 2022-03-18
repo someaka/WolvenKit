@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			ConstrainedTransform = new();
 			DefaultProgress = 0.500000F;
 			ProgressTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

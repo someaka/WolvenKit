@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			ExternalForceWsLink = new();
 			Particles = new();
 			GravityWS = 9.810000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

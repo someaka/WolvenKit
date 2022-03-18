@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			PreviewImage = new();
 			PreviewTitle = new();
 			PreviewDescription = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

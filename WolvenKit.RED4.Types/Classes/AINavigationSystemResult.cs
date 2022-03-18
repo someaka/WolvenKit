@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			AdjustedTargetPosition = new() { X = new(), Y = new(), Z = new() };
 			ClosestPointOnNavmesh = new() { X = new(), Y = new(), Z = new() };
 			ClosestReachablePoint = new() { X = new(), Y = new(), Z = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

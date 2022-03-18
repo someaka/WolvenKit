@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldAIDirectorSpawnNode()
 		{
 			Tags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

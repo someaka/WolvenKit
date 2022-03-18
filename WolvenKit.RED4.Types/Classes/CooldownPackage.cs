@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Addressees = new();
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

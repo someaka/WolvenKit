@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Translation = new();
 			Scale = new() { X = 1.000000F, Y = 1.000000F };
 			Shear = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

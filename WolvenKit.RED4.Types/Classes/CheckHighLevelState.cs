@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataNPCHighLevelState>>();
 			set => SetPropertyValue<CEnum<gamedataNPCHighLevelState>>(value);
 		}
+
+		public CheckHighLevelState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public meshMeshParamGarmentSupport()
 		{
 			ChunkCapVertices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

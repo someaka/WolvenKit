@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			DamageTypesLabel = new();
 			DamageTypesWrapper = new();
 			DamageTypesContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

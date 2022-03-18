@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SoundPrefix = "Button";
 			PressSoundName = "OnPress";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

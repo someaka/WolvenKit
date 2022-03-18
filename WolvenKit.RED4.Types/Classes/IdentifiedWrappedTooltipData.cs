@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public IdentifiedWrappedTooltipData()
 		{
 			TooltipOwner = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			MatchSpeed = true;
 			UseTeleport = true;
 			RepeatCommandOnInterrupt = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

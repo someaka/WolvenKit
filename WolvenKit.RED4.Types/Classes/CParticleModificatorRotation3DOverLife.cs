@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			EditorGroup = "Rotation";
 			IsEnabled = true;
 			Modulate = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

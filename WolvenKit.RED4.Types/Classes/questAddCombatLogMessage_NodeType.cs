@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questAddCombatLogMessage_NodeType()
 		{
 			LocalizedMessage = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

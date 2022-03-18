@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<FocusModeOperationTriggerData>>();
 			set => SetPropertyValue<CHandle<FocusModeOperationTriggerData>>(value);
 		}
+
+		public FocusModeOperationsTrigger()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

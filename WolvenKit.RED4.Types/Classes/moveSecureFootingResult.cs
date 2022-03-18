@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			NormalDirection = new();
 			LowestLocalPosition = new();
 			StaticGroundFactor = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

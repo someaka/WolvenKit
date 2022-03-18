@@ -157,6 +157,10 @@ namespace WolvenKit.RED4.Types
 			StyleRoot = new();
 			DefaultStateName = "Default";
 			MarkedStateName = "Marked";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

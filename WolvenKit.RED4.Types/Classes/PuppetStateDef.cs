@@ -178,6 +178,10 @@ namespace WolvenKit.RED4.Types
 			HasCalledReinforcements = new();
 			IsBodyDisposed = new();
 			DetectionPercentage = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

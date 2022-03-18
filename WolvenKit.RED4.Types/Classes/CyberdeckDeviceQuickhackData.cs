@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gamedataObjectAction_Record>>();
 			set => SetPropertyValue<CWeakHandle<gamedataObjectAction_Record>>(value);
 		}
+
+		public CyberdeckDeviceQuickhackData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

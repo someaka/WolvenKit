@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkanimShapeBorderTransparencyInterpolator()
 		{
 			InterpolationDirection = Enums.inkanimInterpolationDirection.FromTo;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

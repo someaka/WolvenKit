@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			UnitText = new();
 			ValueIncreaseButton = new();
 			ValueDecreaseButton = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

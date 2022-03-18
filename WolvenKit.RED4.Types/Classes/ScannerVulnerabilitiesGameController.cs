@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ScannerVulnerabilitiesRightPanel = new();
 			AsyncSpawnRequests = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

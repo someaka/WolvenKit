@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public TriggerVolumeOperationTriggerData()
 		{
 			CanNPCBeDead = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

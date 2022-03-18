@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Pos = new();
 			Cost = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

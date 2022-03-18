@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Condition = Enums.gamedataUICondition.Visible;
 			Value = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

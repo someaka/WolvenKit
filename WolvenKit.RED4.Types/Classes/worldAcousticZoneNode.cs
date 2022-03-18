@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public worldAcousticZoneNode()
 		{
 			TagSpread = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

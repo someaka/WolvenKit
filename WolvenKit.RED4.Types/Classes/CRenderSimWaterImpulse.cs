@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Resolution = 1024;
 			SimulationSpeed = 24.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

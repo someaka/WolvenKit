@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<SkillCheckPrereqState>>();
 			set => SetPropertyValue<CHandle<SkillCheckPrereqState>>(value);
 		}
+
+		public ModifySkillCheckPrereq()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

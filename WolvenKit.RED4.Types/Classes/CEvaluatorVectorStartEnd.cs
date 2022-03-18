@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			Spill = true;
 			Start = new();
 			End = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

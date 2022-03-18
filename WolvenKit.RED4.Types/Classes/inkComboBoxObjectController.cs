@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			PlaceholderOffsetWidgetRef = new();
 			ColliderRef = new();
 			Offset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

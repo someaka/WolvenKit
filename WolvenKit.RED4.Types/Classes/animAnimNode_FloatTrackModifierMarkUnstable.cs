@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimNode_FloatTrackModifierMarkUnstable()
 		{
 			RequiredQualityDistanceCategory = 4;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

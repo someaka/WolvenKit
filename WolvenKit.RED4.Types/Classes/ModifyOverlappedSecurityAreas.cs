@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ModifyOverlappedSecurityAreas()
 		{
 			ZoneID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

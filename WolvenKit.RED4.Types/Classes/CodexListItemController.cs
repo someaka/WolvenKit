@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public CodexListItemController()
 		{
 			StateMapperRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

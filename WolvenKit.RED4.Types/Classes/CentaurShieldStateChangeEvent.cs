@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ECentaurShieldState>>();
 			set => SetPropertyValue<CEnum<ECentaurShieldState>>(value);
 		}
+
+		public CentaurShieldStateChangeEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

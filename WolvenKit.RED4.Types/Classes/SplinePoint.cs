@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			Tangents = new(2);
 			ContinuousTangents = true;
 			AutomaticTangents = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

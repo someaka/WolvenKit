@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<NodeRef>();
 			set => SetPropertyValue<NodeRef>(value);
 		}
+
+		public scnCheckPlayerTargetNodeDistanceReturnConditionParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

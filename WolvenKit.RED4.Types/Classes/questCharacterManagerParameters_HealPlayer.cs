@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			RemoveBuffs = true;
 			RemoveDebuffs = true;
 			ResetCyberdeckRAM = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

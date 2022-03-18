@@ -221,6 +221,10 @@ namespace WolvenKit.RED4.Types
 			HackingWeaknessContainer = new();
 			LeftPanel = new();
 			RightPanel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

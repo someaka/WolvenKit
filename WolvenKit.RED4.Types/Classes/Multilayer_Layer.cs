@@ -156,6 +156,10 @@ namespace WolvenKit.RED4.Types
 			MicroblendContrast = 0.500000F;
 			MicroblendNormalStrength = 1.000000F;
 			Opacity = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questQuestsSystemReplicatedState()
 		{
 			ReplicatedQuestPrefabs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

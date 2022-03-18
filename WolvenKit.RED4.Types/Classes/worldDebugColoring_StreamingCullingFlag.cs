@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			ForceCulledAlwaysColor = new();
 			ForceCulledPeripheralColor = new();
 			DefaultColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

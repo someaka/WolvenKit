@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AddItemToVendorRequest()
 		{
 			Quantity = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

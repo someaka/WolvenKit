@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<CHairProfile>>();
 			set => SetPropertyValue<CResourceReference<CHairProfile>>(value);
 		}
+
+		public CMaterialParameterHairParameters()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

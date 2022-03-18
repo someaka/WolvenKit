@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<WorkspotWeaponConditionEnum>>();
 			set => SetPropertyValue<CEnum<WorkspotWeaponConditionEnum>>(value);
 		}
+
+		public EquippedWeaponTypeCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

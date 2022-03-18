@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public scnScenesVersionsSceneChanges()
 		{
 			SceneChanges = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

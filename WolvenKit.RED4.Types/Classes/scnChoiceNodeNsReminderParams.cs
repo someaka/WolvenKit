@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			WaitTimeForReminderB = new();
 			WaitTimeForReminderC = new();
 			WaitTimeForLooping = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

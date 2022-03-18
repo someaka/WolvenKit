@@ -84,5 +84,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public SkillCheckBase()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

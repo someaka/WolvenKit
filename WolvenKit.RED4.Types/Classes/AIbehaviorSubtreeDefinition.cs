@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LateInitialization = true;
 			InitializeOnEvent = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

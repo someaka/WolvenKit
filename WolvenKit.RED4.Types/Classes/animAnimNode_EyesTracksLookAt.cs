@@ -62,6 +62,10 @@ namespace WolvenKit.RED4.Types
 			RightTrack = new();
 			UpTrack = new();
 			DownTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

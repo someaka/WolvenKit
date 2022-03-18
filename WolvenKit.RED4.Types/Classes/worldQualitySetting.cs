@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			QualityLevel = Enums.ConfigGraphicsQualityLevel.PlayStation4;
 			XEntitiesBudget = 50;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

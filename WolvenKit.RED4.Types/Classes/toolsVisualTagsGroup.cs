@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public toolsVisualTagsGroup()
 		{
 			Tags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

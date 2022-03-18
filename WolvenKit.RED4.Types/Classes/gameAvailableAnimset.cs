@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameAvailableAnimset()
 		{
 			ResourcePath = "Unknown";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

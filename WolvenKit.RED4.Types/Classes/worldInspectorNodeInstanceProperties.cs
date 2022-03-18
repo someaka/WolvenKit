@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			SetupInfo = new();
 			LastObserverDistanceToStreamingPoint = -1.000000F;
 			LastObserverDistanceToSecondaryReferencePoint = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

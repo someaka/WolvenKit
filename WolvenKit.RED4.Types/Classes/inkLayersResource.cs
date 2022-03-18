@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			PreGameLayerDefinitions = new() { MenuLayer = new(), MenuLayerMP = new(), HudLayer = new(), VideoLayer = new(), OffscreenLayer = new(), GameNotificationsLayer = new(), PhotoModeLayer = new(), DebugLayer = new() { Entries = new() } };
 			PermanentLayerDefinitions = new() { LoadingLayer = new(), WatermarksLayer = new(), SysNotificationsLayer = new(), WaitingSignLayerDefinition = new() };
 			LayerDefinitionsSet = new() { LayersDefinitions = new(), LayersSystemConnections = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

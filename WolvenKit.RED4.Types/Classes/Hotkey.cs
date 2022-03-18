@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemID = new();
 			Scope = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

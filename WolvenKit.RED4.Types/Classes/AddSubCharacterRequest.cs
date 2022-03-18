@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<ScriptedPuppet>>();
 			set => SetPropertyValue<CWeakHandle<ScriptedPuppet>>(value);
 		}
+
+		public AddSubCharacterRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			CurrentObstructedTarget = new();
 			ObstructedTargetDistance = new();
 			ObstructedTargetAttitude = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

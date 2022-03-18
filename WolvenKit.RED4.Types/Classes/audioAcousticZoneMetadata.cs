@@ -93,6 +93,10 @@ namespace WolvenKit.RED4.Types
 			EventsOnActive = new();
 			SoundBanks = new();
 			Parameters = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

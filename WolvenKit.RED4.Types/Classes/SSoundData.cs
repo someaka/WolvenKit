@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public SSoundData()
 		{
 			WidgetAudioName = "Button";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

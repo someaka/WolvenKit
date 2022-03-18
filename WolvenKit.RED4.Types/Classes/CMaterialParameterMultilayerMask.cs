@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<Multilayer_Mask>>();
 			set => SetPropertyValue<CResourceReference<Multilayer_Mask>>(value);
 		}
+
+		public CMaterialParameterMultilayerMask()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

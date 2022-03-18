@@ -351,6 +351,10 @@ namespace WolvenKit.RED4.Types
 			VehicleProceduralCameraWeight = 1.000000F;
 			T4CameraIdleOrientation = new() { R = 1.000000F };
 			T4CameraControlIdleOrientation = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

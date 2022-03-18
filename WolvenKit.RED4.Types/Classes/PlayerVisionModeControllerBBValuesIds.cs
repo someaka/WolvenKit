@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 			BraindanceActive = new();
 			VeryHardLanding = new();
 			IsBriefingActive = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

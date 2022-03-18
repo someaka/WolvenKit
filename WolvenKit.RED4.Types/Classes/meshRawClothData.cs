@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			BackstopDistanceChannel = new();
 			BackstopRadiusChannel = new();
 			SelfCollisionChannel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

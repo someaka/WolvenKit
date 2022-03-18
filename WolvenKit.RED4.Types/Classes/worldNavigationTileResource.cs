@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LocalBoundingBox = new() { Min = new(), Max = new() { X = 1.000000F, Y = 1.000000F, Z = 1.000000F, W = 1.000000F } };
 			TilesData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

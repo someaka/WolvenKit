@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public Sample_Replicated_Dynamic_Array_Property()
 		{
 			Property = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

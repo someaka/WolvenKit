@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class meshMeshParamSpeedTreeWind : meshMeshParameter
 	{
+		public meshMeshParamSpeedTreeWind()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

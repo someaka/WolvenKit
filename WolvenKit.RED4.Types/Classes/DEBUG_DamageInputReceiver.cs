@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<PlayerPuppet>>();
 			set => SetPropertyValue<CWeakHandle<PlayerPuppet>>(value);
 		}
+
+		public DEBUG_DamageInputReceiver()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

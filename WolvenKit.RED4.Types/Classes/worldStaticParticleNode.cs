@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ForcedAutoHideDistance = -1.000000F;
 			ForcedAutoHideRange = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkShapePreset()
 		{
 			Points = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

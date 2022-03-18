@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<entMeshComponent>>();
 			set => SetPropertyValue<CHandle<entMeshComponent>>(value);
 		}
+
+		public DestructibleRoadSign()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Appearances = new() { "default" };
 			TimePeriods = new() { new() { Quantity = 1, Markings = new(), SpotNodeRefs = new(), Categories = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OwnerID = new();
 			BodyID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

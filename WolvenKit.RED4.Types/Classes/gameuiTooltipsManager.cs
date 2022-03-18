@@ -209,6 +209,10 @@ namespace WolvenKit.RED4.Types
 			EnableTransitionAnimation = true;
 			AxisDataThreshold = 0.500000F;
 			MouseDataThreshold = 7.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

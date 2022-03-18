@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameuiBaseMenuGameControllerPuppetGenderInfo>>();
 			set => SetPropertyValue<CEnum<gameuiBaseMenuGameControllerPuppetGenderInfo>>(value);
 		}
+
+		public gameuiBaseMenuGameControllerPuppetSceneInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

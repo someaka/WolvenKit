@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Position = new();
 			Rotation = new() { R = 1.000000F };
 			Scale = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

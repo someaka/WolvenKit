@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TransitionType = Enums.animFacialEmotionTransitionType.Fast;
 			ToIdleWeight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

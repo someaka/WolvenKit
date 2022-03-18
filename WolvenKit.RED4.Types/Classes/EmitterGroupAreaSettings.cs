@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Enable = true;
 			EmitterGroupParams_72 = new();
 			EmitterGroupParams_88 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

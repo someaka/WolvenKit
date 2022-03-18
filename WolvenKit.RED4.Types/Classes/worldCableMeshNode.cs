@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public worldCableMeshNode()
 		{
 			DestructionHashes = new(2);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

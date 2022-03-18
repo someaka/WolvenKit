@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<AGenericTooltipController>>();
 			set => SetPropertyValue<CWeakHandle<AGenericTooltipController>>(value);
 		}
+
+		public NamedTooltipController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

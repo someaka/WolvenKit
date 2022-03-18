@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIAIBlackboardSerializableID()
 		{
 			Id = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

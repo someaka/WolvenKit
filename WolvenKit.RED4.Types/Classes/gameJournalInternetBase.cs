@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CColor>();
 			set => SetPropertyValue<CColor>(value);
 		}
+
+		public gameJournalInternetBase()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

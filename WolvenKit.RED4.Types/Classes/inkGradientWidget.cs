@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StartColor = new() { Alpha = 1.000000F };
 			EndColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -460,6 +460,10 @@ namespace WolvenKit.RED4.Types
 			AttacksSpawned = new();
 			AdditionalEffect = new();
 			CpoTimeBeforeRelease = 3.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

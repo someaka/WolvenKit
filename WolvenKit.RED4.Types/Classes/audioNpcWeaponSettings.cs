@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			WeaponHandlingSettings = new();
 			FireModeSounds = new();
 			VoiceSwitchCooldown = 3.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

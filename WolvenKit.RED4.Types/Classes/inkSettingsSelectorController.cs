@@ -126,6 +126,10 @@ namespace WolvenKit.RED4.Types
 			HoverGeneralHighlight = new();
 			Container = new();
 			HoveredChildren = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

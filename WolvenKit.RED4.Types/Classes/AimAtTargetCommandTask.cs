@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public AimAtTargetCommandTask()
 		{
 			TargetID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

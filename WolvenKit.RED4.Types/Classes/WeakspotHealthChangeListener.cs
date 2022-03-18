@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameStatPoolsSystem>>();
 			set => SetPropertyValue<CHandle<gameStatPoolsSystem>>(value);
 		}
+
+		public WeakspotHealthChangeListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

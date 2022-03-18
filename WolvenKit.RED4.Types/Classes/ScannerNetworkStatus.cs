@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ScannerNetworkState>>();
 			set => SetPropertyValue<CEnum<ScannerNetworkState>>(value);
 		}
+
+		public ScannerNetworkStatus()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

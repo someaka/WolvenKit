@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameScriptedPrereqPSChangeListenerWrapper>>();
 			set => SetPropertyValue<CHandle<gameScriptedPrereqPSChangeListenerWrapper>>(value);
 		}
+
+		public IsVehicleDoorLockedState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

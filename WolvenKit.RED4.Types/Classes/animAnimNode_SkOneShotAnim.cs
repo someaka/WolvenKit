@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimNode_SkOneShotAnim()
 		{
 			Input = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

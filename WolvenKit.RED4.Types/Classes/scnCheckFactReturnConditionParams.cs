@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<scnInterruptFactConditionType>>();
 			set => SetPropertyValue<CHandle<scnInterruptFactConditionType>>(value);
 		}
+
+		public scnCheckFactReturnConditionParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

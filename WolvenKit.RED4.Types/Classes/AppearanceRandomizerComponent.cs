@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AppearanceRandomizerComponent()
 		{
 			Appearances = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

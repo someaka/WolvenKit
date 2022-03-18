@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			UseEnterAnim = true;
 			UseExitAnim = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

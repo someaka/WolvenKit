@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DocumentAdress = new() { FolderID = -1, DocumentID = -1 };
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<LibTreeCTreeResource>>();
 			set => SetPropertyValue<CHandle<LibTreeCTreeResource>>(value);
 		}
+
+		public AICTreeLazyNodeDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

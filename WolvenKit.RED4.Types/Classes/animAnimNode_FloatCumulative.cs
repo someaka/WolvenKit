@@ -113,6 +113,10 @@ namespace WolvenKit.RED4.Types
 			Override = new();
 			CurValue = new();
 			Normalize180Input = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

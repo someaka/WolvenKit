@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public rendIndexBufferChunk()
 		{
 			Pe = Enums.GpuWrapApieIndexBufferChunkType.IBCT_Max;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

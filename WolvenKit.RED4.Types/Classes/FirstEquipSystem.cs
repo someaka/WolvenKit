@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public FirstEquipSystem()
 		{
 			EquipDataArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

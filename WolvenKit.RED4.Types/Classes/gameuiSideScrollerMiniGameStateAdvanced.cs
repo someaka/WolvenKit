@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<gameuiGameStatePropertyChangedCallback>();
 			set => SetPropertyValue<gameuiGameStatePropertyChangedCallback>(value);
 		}
+
+		public gameuiSideScrollerMiniGameStateAdvanced()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

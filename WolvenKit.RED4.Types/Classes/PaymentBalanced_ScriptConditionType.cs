@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EGameplayChallengeLevel>>();
 			set => SetPropertyValue<CEnum<EGameplayChallengeLevel>>(value);
 		}
+
+		public PaymentBalanced_ScriptConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

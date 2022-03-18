@@ -197,6 +197,10 @@ namespace WolvenKit.RED4.Types
 			GrenadeThrowQueryId = -1;
 			ScriptContext = new();
 			ActiveCommands = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

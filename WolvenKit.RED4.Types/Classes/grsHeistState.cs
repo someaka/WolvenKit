@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Time = new();
 			PlayersInfo = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

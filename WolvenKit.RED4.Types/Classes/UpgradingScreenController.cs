@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			TooltipDatas = new();
 			WeaponAreas = new();
 			EquipAreas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -76,5 +76,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<redCallbackObject>>();
 			set => SetPropertyValue<CHandle<redCallbackObject>>(value);
 		}
+
+		public PlayerVisionModeControllerBBListeners()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

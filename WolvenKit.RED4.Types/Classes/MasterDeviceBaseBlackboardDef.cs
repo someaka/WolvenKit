@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public MasterDeviceBaseBlackboardDef()
 		{
 			ThumbnailWidgetsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

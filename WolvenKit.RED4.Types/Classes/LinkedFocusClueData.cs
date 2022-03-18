@@ -82,6 +82,10 @@ namespace WolvenKit.RED4.Types
 			OwnerID = new();
 			ExtendedClueRecords = new();
 			PsData = new() { Id = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

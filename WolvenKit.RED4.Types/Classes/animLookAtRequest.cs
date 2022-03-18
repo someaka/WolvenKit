@@ -100,6 +100,10 @@ namespace WolvenKit.RED4.Types
 			FollowingSpeedFactorOverride = -1.000000F;
 			Limits = new() { SoftLimitDegrees = 360.000000F, HardLimitDegrees = 360.000000F, HardLimitDistance = 1000000.000000F, BackLimitDegrees = 180.000000F };
 			AdditionalParts = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

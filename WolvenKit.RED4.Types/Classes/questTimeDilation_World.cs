@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questTimeDilation_Operation>>();
 			set => SetPropertyValue<CHandle<questTimeDilation_Operation>>(value);
 		}
+
+		public questTimeDilation_World()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

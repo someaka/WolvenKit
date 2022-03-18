@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiUpdateInputHintEvent()
 		{
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

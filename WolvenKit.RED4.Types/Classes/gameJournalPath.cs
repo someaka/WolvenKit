@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameJournalPath()
 		{
 			FileEntryIndex = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

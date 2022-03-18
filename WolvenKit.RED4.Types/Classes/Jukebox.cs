@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public Jukebox()
 		{
 			ControllerTypeName = "JukeboxController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

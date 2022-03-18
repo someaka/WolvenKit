@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PuppetRef = new() { Names = new() };
 			DamageSourceRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

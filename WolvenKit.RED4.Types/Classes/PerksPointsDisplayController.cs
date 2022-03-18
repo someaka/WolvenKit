@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			Desc2Text = new();
 			Value2Text = new();
 			Icon2 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

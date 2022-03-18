@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			SpawnContainerPath = new() { Names = new() };
 			GpsQuestPathWidget = new();
 			GpsPlayerTrackedPathWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

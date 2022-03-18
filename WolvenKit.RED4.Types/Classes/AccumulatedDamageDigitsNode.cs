@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AccumulatedDamageDigitsNode()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

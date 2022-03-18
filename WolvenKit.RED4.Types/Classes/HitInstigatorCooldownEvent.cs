@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public HitInstigatorCooldownEvent()
 		{
 			InstigatorID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

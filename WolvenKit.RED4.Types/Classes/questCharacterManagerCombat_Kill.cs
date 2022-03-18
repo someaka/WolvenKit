@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			SkipDefeatedState = true;
 			WoundType = Enums.entdismembermentWoundTypeE.COARSE;
 			DismembermentStrenght = 8.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

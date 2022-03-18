@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<entEntity>>();
 			set => SetPropertyValue<CWeakHandle<entEntity>>(value);
 		}
+
+		public gameMovingPlatformDetachEntity()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

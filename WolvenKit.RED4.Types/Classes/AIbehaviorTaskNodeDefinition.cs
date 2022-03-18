@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIbehaviorTaskDefinition>>();
 			set => SetPropertyValue<CHandle<AIbehaviorTaskDefinition>>(value);
 		}
+
+		public AIbehaviorTaskNodeDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

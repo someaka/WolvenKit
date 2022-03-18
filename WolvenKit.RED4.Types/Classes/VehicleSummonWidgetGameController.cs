@@ -325,6 +325,10 @@ namespace WolvenKit.RED4.Types
 			DistanceVector = new();
 			GameInstance = new();
 			VehicleID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

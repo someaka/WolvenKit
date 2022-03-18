@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public IllegalActionTypes()
 		{
 			SkillChecks = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

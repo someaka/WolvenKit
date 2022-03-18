@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questTickDelay_ConditionType()
 		{
 			TickCount = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

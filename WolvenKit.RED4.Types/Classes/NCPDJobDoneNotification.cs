@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			NCPD_Reward = new();
 			NCPD_XP_RewardText = new();
 			NCPD_SC_RewardText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

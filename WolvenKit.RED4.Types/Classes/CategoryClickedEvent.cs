@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CategoryClickedEvent()
 		{
 			StatsData = new() { Type = Enums.gamedataStatType.Invalid };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

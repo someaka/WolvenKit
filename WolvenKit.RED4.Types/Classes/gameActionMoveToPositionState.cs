@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			UsePathfinding = true;
 			UseStart = true;
 			UseStop = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

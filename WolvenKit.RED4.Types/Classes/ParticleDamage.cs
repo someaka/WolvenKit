@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ParticleDamage()
 		{
 			BoundingBoxes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

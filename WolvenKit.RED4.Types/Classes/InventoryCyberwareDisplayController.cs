@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			SelectedFrame = new();
 			AmountPanel = new();
 			Amount = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

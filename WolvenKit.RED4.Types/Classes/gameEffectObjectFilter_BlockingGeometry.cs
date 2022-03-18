@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Inclusive = true;
 			SortQueryResultsByDistance = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Layout = new();
 			Placement = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

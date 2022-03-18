@@ -96,6 +96,10 @@ namespace WolvenKit.RED4.Types
 			NoTargetsActions = new();
 			Settings = new();
 			DebugSettings = new() { Duration = 1.000000F, Color = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

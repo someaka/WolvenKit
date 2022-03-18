@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AICTreeNodeActionDynamicMoveToDefinition()
 		{
 			Target = "CombatTarget";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

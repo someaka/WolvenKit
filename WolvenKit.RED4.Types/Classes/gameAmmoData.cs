@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Id = new();
 			Available = -1;
 			Equipped = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

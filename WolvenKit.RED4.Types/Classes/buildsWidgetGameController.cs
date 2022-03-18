@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public buildsWidgetGameController()
 		{
 			HorizontalPanelsList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

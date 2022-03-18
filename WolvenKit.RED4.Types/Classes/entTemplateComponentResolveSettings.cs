@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<entTemplateComponentResolveMode>>();
 			set => SetPropertyValue<CEnum<entTemplateComponentResolveMode>>(value);
 		}
+
+		public entTemplateComponentResolveSettings()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -45,6 +45,10 @@ namespace WolvenKit.RED4.Types
 			Vertices = new();
 			IndexBuffer = new();
 			PolygonVertices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

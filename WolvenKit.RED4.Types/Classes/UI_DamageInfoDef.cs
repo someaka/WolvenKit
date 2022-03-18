@@ -70,6 +70,10 @@ namespace WolvenKit.RED4.Types
 			DigitsStickingMode = new();
 			HitIndicatorEnabled = new();
 			DmgIndicatorMode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

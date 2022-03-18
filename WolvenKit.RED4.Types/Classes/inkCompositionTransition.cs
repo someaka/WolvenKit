@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkCompositionTransition()
 		{
 			Interpolators = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

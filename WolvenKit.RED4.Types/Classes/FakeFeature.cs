@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Choices = new();
 			Components = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

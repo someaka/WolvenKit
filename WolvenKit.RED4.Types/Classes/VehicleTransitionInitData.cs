@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public VehicleTransitionInitData()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -256,6 +256,10 @@ namespace WolvenKit.RED4.Types
 			ItemAttributeRequirements = new();
 			ItemAttributeRequirementsText = new();
 			IconicLines = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

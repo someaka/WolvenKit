@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gamestateMachineActionParameterDouble()
 		{
 			Value = 0.000000;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

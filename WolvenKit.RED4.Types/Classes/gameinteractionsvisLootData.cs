@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			Choices = new();
 			ItemIDs = new();
 			OwnerId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

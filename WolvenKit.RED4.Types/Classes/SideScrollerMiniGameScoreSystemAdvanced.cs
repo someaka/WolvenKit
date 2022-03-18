@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ScoreData = new(3);
 			GameNames = new(3);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<IScriptable>>();
 			set => SetPropertyValue<CHandle<IScriptable>>(value);
 		}
+
+		public gamestateMachineStateMachineInstanceData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

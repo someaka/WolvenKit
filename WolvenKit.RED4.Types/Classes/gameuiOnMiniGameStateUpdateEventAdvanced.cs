@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiOnMiniGameStateUpdateEventAdvanced()
 		{
 			PropertyNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

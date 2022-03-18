@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<entAppearanceStatus>>();
 			set => SetPropertyValue<CEnum<entAppearanceStatus>>(value);
 		}
+
+		public entShadowMeshChangeEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

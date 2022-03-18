@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gamePuppet>>();
 			set => SetPropertyValue<CWeakHandle<gamePuppet>>(value);
 		}
+
+		public ActionWorkSpot()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -29,6 +29,10 @@ namespace WolvenKit.RED4.Types
 			CanTriggerStim = true;
 			TrueRecordName = "Power";
 			FalseRecordName = "Unpower";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

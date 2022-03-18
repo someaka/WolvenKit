@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public LibTreeParameterList()
 		{
 			Parameters = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

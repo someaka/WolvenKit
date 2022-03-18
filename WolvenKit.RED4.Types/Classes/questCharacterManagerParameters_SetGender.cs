@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questCharacterManagerParameters_SetGender()
 		{
 			Params = new() { new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

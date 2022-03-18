@@ -200,6 +200,10 @@ namespace WolvenKit.RED4.Types
 			EmptyBar = new();
 			BarCap = new();
 			AnimDuration = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

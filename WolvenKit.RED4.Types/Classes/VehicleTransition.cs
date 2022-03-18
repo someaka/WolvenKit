@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<VehicleTransitionInitData>>();
 			set => SetPropertyValue<CWeakHandle<VehicleTransitionInitData>>(value);
 		}
+
+		public VehicleTransition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

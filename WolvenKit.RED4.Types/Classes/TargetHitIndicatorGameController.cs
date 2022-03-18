@@ -233,6 +233,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CurrentSway = new();
 			WeaponID = new() { IdType = Enums.gameStatIDType.Invalid };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

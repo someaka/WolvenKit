@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public NPCHitReactionTypePrereq()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

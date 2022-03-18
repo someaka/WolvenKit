@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			HoldStart = new();
 			HoldFinish = new();
 			HoldStop = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

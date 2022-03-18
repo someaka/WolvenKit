@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldTrafficCollisionDebug()
 		{
 			OverlapBoxes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

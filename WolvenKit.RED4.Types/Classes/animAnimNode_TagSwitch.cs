@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimNode_TagSwitch()
 		{
 			Tags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

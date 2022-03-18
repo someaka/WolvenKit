@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<animGenericAnimDatabase>>();
 			set => SetPropertyValue<CResourceReference<animGenericAnimDatabase>>(value);
 		}
+
+		public animAnimDatabaseCollectionEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

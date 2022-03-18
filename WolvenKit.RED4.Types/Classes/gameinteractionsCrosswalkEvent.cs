@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TrafficLightColor = Enums.worldTrafficLightColor.INVALID;
 			OldTrafficLightColor = Enums.worldTrafficLightColor.INVALID;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

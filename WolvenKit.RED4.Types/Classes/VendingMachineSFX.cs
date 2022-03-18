@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			GlitchingStart = "amb_int_custom_megabuilding_01_adverts_interactive_nicola_01_select_q110";
 			GlitchingStop = "amb_int_custom_megabuilding_01_adverts_interactive_nicola_01_select_q110_stop";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

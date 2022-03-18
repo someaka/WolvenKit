@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enabled = true;
 			ControllingPeerIDs = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

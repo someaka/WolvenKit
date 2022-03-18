@@ -148,6 +148,10 @@ namespace WolvenKit.RED4.Types
 			SpawnedFxInstancesToKill = new();
 			ComponentsON = new();
 			ComponentsOFF = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

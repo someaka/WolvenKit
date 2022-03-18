@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public questVehicleSpawned_ConditionType()
 		{
 			VehicleRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

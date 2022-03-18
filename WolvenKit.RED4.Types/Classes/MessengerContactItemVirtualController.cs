@@ -126,6 +126,10 @@ namespace WolvenKit.RED4.Types
 			ReplyAlertIcon = new();
 			CollapseIcon = new();
 			Image = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

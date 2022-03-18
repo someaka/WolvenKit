@@ -207,6 +207,10 @@ namespace WolvenKit.RED4.Types
 			ExitTooltipContainer = new();
 			SubtitlesContainer = new();
 			ExitNotificationDisplayTime = 3.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

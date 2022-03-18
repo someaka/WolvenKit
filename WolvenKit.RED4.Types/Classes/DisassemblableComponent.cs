@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public DisassemblableComponent()
 		{
 			DisassembleTargetRequesters = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

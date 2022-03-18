@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ProjectileSpawnPoint = new();
 			ProjectilePosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

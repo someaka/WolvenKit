@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			ToggleOperations = new();
 			PlayerWorkspot = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<scnSceneWorkspotDataId>();
 			set => SetPropertyValue<scnSceneWorkspotDataId>(value);
 		}
+
+		public scnWorkspotData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

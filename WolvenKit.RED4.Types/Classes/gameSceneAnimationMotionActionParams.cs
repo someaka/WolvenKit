@@ -133,6 +133,10 @@ namespace WolvenKit.RED4.Types
 			MountDescriptor = new() { ParentId = new(), InitialTransform = new() { Position = new(), Orientation = new() { R = 1.000000F } }, MountType = Enums.gameMountDescriptorMountType.KeepState };
 			PlayerParams = new();
 			TrajectoryLOD = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

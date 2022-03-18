@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IkEndPointOffset = new();
 			IkEndRotationOffset = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

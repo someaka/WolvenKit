@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ComboBoxObjectRef = new();
 			ComboBoxVisibleChanged = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

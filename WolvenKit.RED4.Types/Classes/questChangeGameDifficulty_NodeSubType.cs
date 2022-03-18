@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameDifficulty>>();
 			set => SetPropertyValue<CEnum<gameDifficulty>>(value);
 		}
+
+		public questChangeGameDifficulty_NodeSubType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

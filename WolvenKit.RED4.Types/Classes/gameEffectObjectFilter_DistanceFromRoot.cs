@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RootZOffset = 1.000000F;
 			BonusRange = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

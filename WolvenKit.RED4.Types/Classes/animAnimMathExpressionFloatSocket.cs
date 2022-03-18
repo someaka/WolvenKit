@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Link = new();
 			InputFloatTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

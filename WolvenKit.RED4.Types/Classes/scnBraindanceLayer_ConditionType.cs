@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<scnSceneVersionCheck>>();
 			set => SetPropertyValue<CEnum<scnSceneVersionCheck>>(value);
 		}
+
+		public scnBraindanceLayer_ConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

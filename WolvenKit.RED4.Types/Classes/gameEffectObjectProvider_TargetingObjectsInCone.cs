@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			QueryPreset = new();
 			SearchQuery = new() { SearchFilter = new(), IncludeSecondaryTargets = true, QueryTarget = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

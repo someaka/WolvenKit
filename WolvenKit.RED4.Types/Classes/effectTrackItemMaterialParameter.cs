@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 			CustomParameter2 = new();
 			Scale3 = 1.000000F;
 			CustomParameter3 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

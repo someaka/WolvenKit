@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			LastThrowAngle = new();
 			LastThrowPosition = new();
 			LastThrowStartType = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

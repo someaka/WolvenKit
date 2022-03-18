@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedataReactionPreset_Record>>();
 			set => SetPropertyValue<CHandle<gamedataReactionPreset_Record>>(value);
 		}
+
+		public gameeventsReactionChangeRequestEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

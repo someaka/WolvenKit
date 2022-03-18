@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectObjectFilter_OnlyNearestMelee()
 		{
 			Count = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

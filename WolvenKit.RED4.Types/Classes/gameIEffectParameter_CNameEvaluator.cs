@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class gameIEffectParameter_CNameEvaluator : ISerializable
 	{
+		public gameIEffectParameter_CNameEvaluator()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

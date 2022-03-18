@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FastTravelPoint = new();
 			TriggerWorldMap = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

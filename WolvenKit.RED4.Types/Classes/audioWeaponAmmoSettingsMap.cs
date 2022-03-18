@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 			SmartSniperFlyby = new() { MovementSpeed = 15.000000F };
 			HmgFlyby = new() { MovementSpeed = 15.000000F };
 			FlybyMinDistance = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

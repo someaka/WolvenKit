@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			DisplayString = new();
 			EnableActions = new();
 			Status = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

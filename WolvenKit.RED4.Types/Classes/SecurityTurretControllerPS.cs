@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			LookAtPresetVert = 116799757519;
 			LookAtPresetHor = 125000267963;
 			LaserGameEffectRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

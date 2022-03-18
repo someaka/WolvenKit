@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			AllowGlobalIllumination = true;
 			AllowScreenSpaceReflections = true;
 			AllowVolumetricFog = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Agent = new();
 			RemainingAreas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			DeviceAuthorizationText = new();
 			DeviceAuthorizationRow = new();
 			NetworkStatusRow = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

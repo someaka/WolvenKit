@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HitHistory = new();
 			KillHistory = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkanimProxy>>();
 			set => SetPropertyValue<CHandle<inkanimProxy>>(value);
 		}
+
+		public gameuiRoachRacePlayerController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

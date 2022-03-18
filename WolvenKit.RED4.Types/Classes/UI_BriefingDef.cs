@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			BriefingToOpen = new();
 			BriefingSize = new();
 			BriefingAlignment = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

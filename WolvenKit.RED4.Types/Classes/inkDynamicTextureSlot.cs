@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkDynamicTextureSlot()
 		{
 			Parts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

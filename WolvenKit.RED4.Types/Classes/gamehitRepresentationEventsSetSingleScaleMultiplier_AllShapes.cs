@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamehitRepresentationEventsSetSingleScaleMultiplier_AllShapes()
 		{
 			ScaleMultiplier = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

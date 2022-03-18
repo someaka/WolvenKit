@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			FreeAxes = Enums.EFreeVectorAxes.FVA_Three;
 			Spill = true;
 			NumberOfCurveSamples = 16;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

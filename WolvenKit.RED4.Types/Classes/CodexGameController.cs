@@ -176,6 +176,10 @@ namespace WolvenKit.RED4.Types
 			LeftBlockControllerRef = new();
 			FiltersContainer = new();
 			FiltersControllers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

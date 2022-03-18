@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AITrafficWorkspotDefinition()
 		{
 			Direction = Enums.worldTrafficSpotDirection.Both;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

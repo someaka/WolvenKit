@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<PuppetMortalPrereqState>>();
 			set => SetPropertyValue<CHandle<PuppetMortalPrereqState>>(value);
 		}
+
+		public PuppetMortalityListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

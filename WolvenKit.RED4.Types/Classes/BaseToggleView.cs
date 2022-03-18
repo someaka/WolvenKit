@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inkEToggleState>>();
 			set => SetPropertyValue<CEnum<inkEToggleState>>(value);
 		}
+
+		public BaseToggleView()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

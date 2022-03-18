@@ -99,6 +99,10 @@ namespace WolvenKit.RED4.Types
 			BlendTime = 1.000000F;
 			SceneBlendInDistance = 15.000000F;
 			SceneBlendOutDistance = 15.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

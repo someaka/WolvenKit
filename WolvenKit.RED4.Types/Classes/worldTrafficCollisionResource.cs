@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<worldTrafficStaticCollisionData>>();
 			set => SetPropertyValue<CHandle<worldTrafficStaticCollisionData>>(value);
 		}
+
+		public worldTrafficCollisionResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

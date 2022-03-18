@@ -157,6 +157,10 @@ namespace WolvenKit.RED4.Types
 			Bar = new();
 			GigBarCompletedText = new();
 			GigBarTotalText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

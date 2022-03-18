@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questLootTokenState>>();
 			set => SetPropertyValue<CEnum<questLootTokenState>>(value);
 		}
+
+		public questLootTokenManager_NodeTypeParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

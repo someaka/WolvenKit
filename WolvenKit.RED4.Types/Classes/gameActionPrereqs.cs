@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameActionPrereqs()
 		{
 			Prereqs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

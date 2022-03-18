@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CameraDeadBodySessionDataModule()
 		{
 			CameraDeadBodyData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

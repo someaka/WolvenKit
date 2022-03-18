@@ -358,6 +358,10 @@ namespace WolvenKit.RED4.Types
 			TargetID = new();
 			IgnoredTargetID = new();
 			StartPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

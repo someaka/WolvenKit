@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Entries = new();
 			ShortName = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			WorldPos = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
 			Direction = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
 			Flags = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

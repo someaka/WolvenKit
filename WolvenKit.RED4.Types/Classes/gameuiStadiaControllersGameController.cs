@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			OrbisControllerPage = new();
 			DisclaimerText = new();
 			ButtonHintsManagerRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

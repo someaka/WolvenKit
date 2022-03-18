@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inkETextureResolution>>();
 			set => SetPropertyValue<CEnum<inkETextureResolution>>(value);
 		}
+
+		public inkWidgetLibraryItemInstance()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<PlayerCombatState>>();
 			set => SetPropertyValue<CEnum<PlayerCombatState>>(value);
 		}
+
+		public PlayerCombatControllerOtherVars()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

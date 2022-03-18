@@ -20,6 +20,10 @@ namespace WolvenKit.RED4.Types
 			RenderSceneLayerMask = Enums.RenderSceneLayerMask.Default;
 			ForceLODLevel = -1;
 			EffectDescs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<DefaultTransitionStatListener>>();
 			set => SetPropertyValue<CHandle<DefaultTransitionStatListener>>(value);
 		}
+
+		public SandevistanDecisions()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

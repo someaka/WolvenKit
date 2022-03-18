@@ -166,6 +166,10 @@ namespace WolvenKit.RED4.Types
 			MinSearchAngle = 22.500000F;
 			MaxSearchAngle = 60.000000F;
 			InterruptCapability = Enums.scnInterruptCapability.NotInterruptable;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

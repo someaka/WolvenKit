@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<vehicleQuestUIEnable>>();
 			set => SetPropertyValue<CEnum<vehicleQuestUIEnable>>(value);
 		}
+
+		public ForwardVehicleQuestEnableUIEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

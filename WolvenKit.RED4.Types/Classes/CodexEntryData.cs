@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<CodexImageType>>();
 			set => SetPropertyValue<CEnum<CodexImageType>>(value);
 		}
+
+		public CodexEntryData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

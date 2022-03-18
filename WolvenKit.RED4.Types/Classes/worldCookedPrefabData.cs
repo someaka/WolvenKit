@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PrecookedDependencies = new();
 			Dependencies = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -170,6 +170,10 @@ namespace WolvenKit.RED4.Types
 			Topology = new();
 			QuantizationScale = new();
 			QuantizationOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

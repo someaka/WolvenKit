@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<TweakDBID>();
 			set => SetPropertyValue<TweakDBID>(value);
 		}
+
+		public FastTravelSystemLock()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

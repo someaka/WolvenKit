@@ -377,6 +377,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VisionConeWidget = new();
 			PulseWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

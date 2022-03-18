@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			TimeFloatTrack = new();
 			FrameFloatTrack = new();
 			InputWithTracks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

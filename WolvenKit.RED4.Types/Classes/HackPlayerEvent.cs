@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			NetrunnerID = new();
 			TargetID = new();
 			ShowDirectionalIndicator = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

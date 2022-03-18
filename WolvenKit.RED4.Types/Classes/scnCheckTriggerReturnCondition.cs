@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnCheckTriggerReturnCondition()
 		{
 			Params = new() { Inside = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

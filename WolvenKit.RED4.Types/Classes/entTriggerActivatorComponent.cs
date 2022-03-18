@@ -62,6 +62,10 @@ namespace WolvenKit.RED4.Types
 			Channels = Enums.TriggerChannel.TC_Default;
 			MaxContinousDistance = 0.100000F;
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

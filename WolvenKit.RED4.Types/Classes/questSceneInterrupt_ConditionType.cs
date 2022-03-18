@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OnlyInSafeMoment = true;
 			InterruptConditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

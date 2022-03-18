@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questIEntityManagerSetAttachment_NodeSubType>>();
 			set => SetPropertyValue<CHandle<questIEntityManagerSetAttachment_NodeSubType>>(value);
 		}
+
+		public questEntityManagerSetAttachment_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

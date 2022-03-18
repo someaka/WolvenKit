@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			ItemActivated = new();
 			AllElementsSpawned = new();
 			ItemTemplate = new() { WidgetLibrary = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			MaterialApperanceOverrides = new();
 			VolumeModifier = 1.000000F;
 			HalfExtents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

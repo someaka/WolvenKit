@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public PreventionCrimeWitnessRequest()
 		{
 			CriminalPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

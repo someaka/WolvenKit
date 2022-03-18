@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CommandLists = new();
 			Effects = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

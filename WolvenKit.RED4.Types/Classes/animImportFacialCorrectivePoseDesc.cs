@@ -127,6 +127,10 @@ namespace WolvenKit.RED4.Types
 			Weights = new();
 			InBetweenScopeMultipliers = new();
 			UseGlobalWeight = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

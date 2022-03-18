@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ItemPreferredAreaItems()
 		{
 			Items = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

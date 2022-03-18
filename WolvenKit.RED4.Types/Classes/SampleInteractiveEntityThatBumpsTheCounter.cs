@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SampleInteractiveEntityThatBumpsTheCounter()
 		{
 			TargetPersistentID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

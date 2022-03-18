@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public CyberwareSlot()
 		{
 			IconImageRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

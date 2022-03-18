@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			BackwardSegments = new();
 			Points = new();
 			UserData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

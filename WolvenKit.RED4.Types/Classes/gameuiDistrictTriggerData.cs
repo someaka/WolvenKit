@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiDistrictTriggerData()
 		{
 			District = Enums.gamedataDistrict.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

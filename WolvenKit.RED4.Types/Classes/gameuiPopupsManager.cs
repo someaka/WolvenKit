@@ -203,6 +203,10 @@ namespace WolvenKit.RED4.Types
 			TutorialOverlayContainer = new();
 			TutorialData = new() { VideoType = Enums.gameVideoType.Unknown };
 			TutorialSettings = new() { CloseAtInput = true, Position = Enums.gamePopupPosition.Center, Margin = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

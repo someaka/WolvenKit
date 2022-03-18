@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<UIScriptableSystem>>();
 			set => SetPropertyValue<CWeakHandle<UIScriptableSystem>>(value);
 		}
+
+		public UIScriptableInventoryListenerCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

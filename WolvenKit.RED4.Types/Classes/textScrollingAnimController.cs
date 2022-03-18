@@ -167,6 +167,10 @@ namespace WolvenKit.RED4.Types
 			ScrollingText = new() { TextArray = new() };
 			LogArray = new();
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

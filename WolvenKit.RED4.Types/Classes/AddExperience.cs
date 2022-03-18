@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public AddExperience()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public NPCKillDataTrackingRequest()
 		{
 			DamageEntry = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

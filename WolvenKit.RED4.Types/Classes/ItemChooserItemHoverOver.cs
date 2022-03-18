@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<InventoryItemDisplayController>>();
 			set => SetPropertyValue<CWeakHandle<InventoryItemDisplayController>>(value);
 		}
+
+		public ItemChooserItemHoverOver()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

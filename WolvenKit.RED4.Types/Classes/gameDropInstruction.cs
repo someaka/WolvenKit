@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemID = new();
 			Quantity = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

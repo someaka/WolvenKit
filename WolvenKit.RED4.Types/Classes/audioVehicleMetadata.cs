@@ -202,6 +202,10 @@ namespace WolvenKit.RED4.Types
 			RadioReceiverType = "radio_car";
 			MatchingStartupRadioStations = new();
 			RadioPlaysWhenEngineStartsProbability = 0.300000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

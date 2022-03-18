@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public physicsclothClothCapsuleExportData()
 		{
 			Capsules = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

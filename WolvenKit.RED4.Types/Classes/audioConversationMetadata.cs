@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioConversationMetadata()
 		{
 			Conversations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

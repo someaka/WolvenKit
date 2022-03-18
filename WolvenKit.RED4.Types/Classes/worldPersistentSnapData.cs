@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TargetObjectPath = new() { Elements = new() };
 			SnapTangent = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CurrentlyDebuggedDevice = new();
 			DebuggedEntityIDAsString = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

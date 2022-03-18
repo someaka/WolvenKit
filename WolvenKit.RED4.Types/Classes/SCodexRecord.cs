@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RecordContent = new();
 			Tags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

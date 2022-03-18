@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public questSimpleMoveOnSplineParams()
 		{
 			SnapToTerrain = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SelfRemovalEvents()
 		{
 			StateMachineInstanceData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

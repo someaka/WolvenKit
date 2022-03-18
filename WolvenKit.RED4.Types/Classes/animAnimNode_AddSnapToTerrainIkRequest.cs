@@ -45,6 +45,10 @@ namespace WolvenKit.RED4.Types
 			LeftFootRequest = new() { FootTransformIndex = new(), PoleVectorRefTransformIndex = new(), EnableFootLockFloatTrack = new() };
 			RightFootRequest = new() { FootTransformIndex = new(), PoleVectorRefTransformIndex = new(), EnableFootLockFloatTrack = new() };
 			HipsRequest = new() { HipsTransformIndex = new(), LeftFootTransformIndex = new(), RightFootTransformIndex = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

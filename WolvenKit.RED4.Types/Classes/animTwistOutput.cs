@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			NegativeScale = 1.000000F;
 			TwistedTransform = new();
 			OutputAngleTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

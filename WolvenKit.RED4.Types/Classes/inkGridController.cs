@@ -53,6 +53,10 @@ namespace WolvenKit.RED4.Types
 			Items = new();
 			SlotSize = new();
 			ItemTemplates = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

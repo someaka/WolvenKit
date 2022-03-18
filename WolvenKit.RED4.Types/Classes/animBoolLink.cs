@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<animAnimNode_BoolValue>>();
 			set => SetPropertyValue<CWeakHandle<animAnimNode_BoolValue>>(value);
 		}
+
+		public animBoolLink()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

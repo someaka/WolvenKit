@@ -89,6 +89,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Container = new();
 			Data = new() { Identifier = -1, SubMenus = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

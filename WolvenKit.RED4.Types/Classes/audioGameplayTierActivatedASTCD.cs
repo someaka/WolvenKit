@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<audioGameplayTier>>();
 			set => SetPropertyValue<CEnum<audioGameplayTier>>(value);
 		}
+
+		public audioGameplayTierActivatedASTCD()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

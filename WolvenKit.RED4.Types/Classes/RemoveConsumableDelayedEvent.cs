@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<ConsumeAction>>();
 			set => SetPropertyValue<CHandle<ConsumeAction>>(value);
 		}
+
+		public RemoveConsumableDelayedEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

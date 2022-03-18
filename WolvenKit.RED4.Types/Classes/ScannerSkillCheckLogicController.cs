@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ScannerSkillCheckItemName = "SkillCheckItem";
 			SkillCheckObjects = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

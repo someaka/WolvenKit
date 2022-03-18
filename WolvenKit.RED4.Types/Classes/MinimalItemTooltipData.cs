@@ -343,6 +343,10 @@ namespace WolvenKit.RED4.Types
 			ItemType = Enums.gamedataItemType.Invalid;
 			EquipmentArea = Enums.gamedataEquipmentArea.Invalid;
 			ItemEvolution = Enums.gamedataWeaponEvolution.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

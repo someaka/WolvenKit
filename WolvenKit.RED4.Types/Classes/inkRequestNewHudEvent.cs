@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<inkHudEntriesResource>>();
 			set => SetPropertyValue<CResourceReference<inkHudEntriesResource>>(value);
 		}
+
+		public inkRequestNewHudEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

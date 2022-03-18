@@ -197,6 +197,10 @@ namespace WolvenKit.RED4.Types
 			AnimOutroFullscreenLeft = "outro_fullscreen_left";
 			AnimOutroFullscreenRight = "outro_fullscreen_right";
 			TargetPopup = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

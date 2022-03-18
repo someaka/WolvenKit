@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<IScriptable>>();
 			set => SetPropertyValue<CHandle<IScriptable>>(value);
 		}
+
+		public VirutalNestedListData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

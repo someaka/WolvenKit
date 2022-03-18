@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<PuppetAction>>();
 			set => SetPropertyValue<CHandle<PuppetAction>>(value);
 		}
+
+		public ExecutePuppetActionEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

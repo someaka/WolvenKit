@@ -301,6 +301,10 @@ namespace WolvenKit.RED4.Types
 			Tele = new();
 			TeleScale = new();
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

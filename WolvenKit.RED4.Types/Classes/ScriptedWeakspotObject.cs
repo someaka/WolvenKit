@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			WeakspotOnDestroyProperties = new() { DisableInteraction = true, DestroyMesh = true };
 			WeakspotRecordData = new();
 			Alive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

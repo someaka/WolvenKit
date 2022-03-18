@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Mails = new();
 			Files = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

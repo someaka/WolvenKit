@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Tag = Enums.worldObjectTagExt.None;
 			Color = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

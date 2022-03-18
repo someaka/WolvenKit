@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questSpawnManagerNodeType>>();
 			set => SetPropertyValue<CHandle<questSpawnManagerNodeType>>(value);
 		}
+
+		public questSpawnManagerNodeActionEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

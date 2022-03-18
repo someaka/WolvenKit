@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			LocalToModel = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			CollisionShapes = new();
 			MappedBoneToBody = new() { Position = new(), Orientation = new() { R = 1.000000F } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

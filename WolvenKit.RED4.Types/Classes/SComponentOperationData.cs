@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EComponentOperation>>();
 			set => SetPropertyValue<CEnum<EComponentOperation>>(value);
 		}
+
+		public SComponentOperationData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

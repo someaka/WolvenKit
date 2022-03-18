@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Id = 4294967295;
 			CollectEvents = true;
 			InputLink = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

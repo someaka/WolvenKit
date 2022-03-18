@@ -28,23 +28,23 @@ namespace WolvenKit.RED4.Types
                 {
                     if (propertyInfo.Flags.Equals(Flags.Empty))
                     {
-                        InternalSetPropertyValue(propertyInfo.RedName, (IRedType)System.Activator.CreateInstance(propertyInfo.Type));
+                        InternalSetPropertyValue(propertyInfo.RedName, RedTypeManager.CreateRedType(propertyInfo.Type));
                     }
                     else
                     {
                         var flags = propertyInfo.Flags;
-                        InternalSetPropertyValue(propertyInfo.RedName, (IRedType)System.Activator.CreateInstance(propertyInfo.Type, flags.MoveNext() ? flags.Current : 0));
+                        InternalSetPropertyValue(propertyInfo.RedName, RedTypeManager.CreateRedType(propertyInfo.Type, flags.MoveNext() ? flags.Current : 0));
                     }
                 }
             }
         }
 
-        internal void InternalSetPropertyValue(string propertyName, IRedType value, bool onlyNative = true)
+        internal void InternalSetPropertyValue(string propertyName, IRedType? value, bool onlyNative = true)
         {
             var propertyInfo = RedReflection.GetNativePropertyInfo(GetType(), propertyName);
             if (propertyInfo != null)
             {
-                propertyName = propertyInfo.RedName;
+                propertyName = propertyInfo.RedName ?? throw new RedNameMissingException(propertyInfo.Name);
 
                 if (propertyInfo.GenericType != null)
                 {
@@ -53,9 +53,9 @@ namespace WolvenKit.RED4.Types
                         var flags = propertyInfo.Flags;
                         var size = flags.MoveNext() ? flags.Current : 0;
 
-                        if (((IRedArray)value).Count > size)
+                        if (value != null && ((IRedArray)value).Count != size)
                         {
-                            throw new ArgumentException();
+                            throw new ArgumentOutOfRangeException();
                         }
                     }
 
@@ -64,7 +64,14 @@ namespace WolvenKit.RED4.Types
                         var flags = propertyInfo.Flags;
                         var maxSize = flags.MoveNext() ? flags.Current : 0;
 
-                        ((IRedArray)value).MaxSize = maxSize;
+                        if (value != null)
+                        {
+                            if (((IRedArray)value).MaxSize > maxSize)
+                            {
+                                throw new ArgumentOutOfRangeException();
+                            }
+                            ((IRedArray)value).MaxSize = maxSize;
+                        }
                     }
                 }
             }
@@ -83,7 +90,7 @@ namespace WolvenKit.RED4.Types
 
         #region Properties
 
-        private readonly IDictionary<string, IRedType> _properties = new Dictionary<string, IRedType>();
+        private readonly IDictionary<string, IRedType?> _properties = new Dictionary<string, IRedType?>();
         private readonly IList<string> _dynamicProperties = new List<string>();
 
 
@@ -93,14 +100,24 @@ namespace WolvenKit.RED4.Types
         /// <typeparam name="T"></typeparam>
         /// <param name="callerName"></param>
         /// <returns></returns>
-        protected T GetPropertyValue<T>([CallerMemberName] string callerName = "") where T : IRedType
+        protected T? GetPropertyValue<T>([CallerMemberName] string callerName = "") where T : IRedType
         {
             var propertyInfo = RedReflection.GetNativePropertyInfo(GetType(), callerName);
-            if (propertyInfo != null && _properties.ContainsKey(propertyInfo.RedName))
+            if (propertyInfo == null)
             {
-                return (T)_properties[propertyInfo.RedName];
+                throw new MissingRTTIException($"{GetType().Name}.{callerName}");
             }
-            return (T)RedReflection.GetDefaultValue(typeof(T));
+
+            if (propertyInfo.RedName == null)
+            {
+                throw new RedNameMissingException($"{GetType().Name}.{callerName}");
+            }
+
+            if (_properties.ContainsKey(propertyInfo.RedName))
+            {
+                return (T?)_properties[propertyInfo.RedName];
+            }
+            return (T?)RedReflection.GetDefaultValue(typeof(T));
         }
 
         /// <summary>
@@ -114,9 +131,9 @@ namespace WolvenKit.RED4.Types
 
         public bool HasProperty(string propertyName) => _properties.ContainsKey(propertyName);
 
-        public void SetProperty(string propertyName, IRedType value) => InternalSetPropertyValue(propertyName, value, false);
+        public void SetProperty(string propertyName, IRedType? value) => InternalSetPropertyValue(propertyName, value, false);
 
-        public IRedType GetProperty(string propertyName)
+        public IRedType? GetProperty(string propertyName)
         {
             if (_dynamicProperties.Contains(propertyName))
             {
@@ -126,12 +143,22 @@ namespace WolvenKit.RED4.Types
             var propertyInfo = RedReflection.GetNativePropertyInfo(GetType(), propertyName);
             if (propertyInfo != null)
             {
+                if (propertyInfo == null)
+                {
+                    throw new MissingRTTIException($"{GetType().Name}.{propertyName}");
+                }
+
+                if (propertyInfo.RedName == null)
+                {
+                    throw new RedNameMissingException($"{GetType().Name}.{propertyName}");
+                }
+
                 if (_properties.ContainsKey(propertyInfo.RedName))
                 {
                     return _properties[propertyInfo.RedName];
                 }
 
-                return (IRedType)RedReflection.GetDefaultValue(propertyInfo.Type);
+                return (IRedType?)RedReflection.GetDefaultValue(propertyInfo.Type);
             }
 
             throw new PropertyNotFoundException();
@@ -142,7 +169,12 @@ namespace WolvenKit.RED4.Types
             var propertyInfo = RedReflection.GetNativePropertyInfo(GetType(), name);
             if (propertyInfo != null)
             {
-                SetProperty(propertyInfo.RedName, (IRedType)RedReflection.GetDefaultValue(propertyInfo.Type));
+                if (propertyInfo.RedName == null)
+                {
+                    throw new RedNameMissingException($"{GetType().Name}.{propertyInfo.Name}");
+                }
+
+                SetProperty(propertyInfo.RedName, (IRedType?)RedReflection.GetDefaultValue(propertyInfo.Type));
                 return true;
             }
 
@@ -162,7 +194,7 @@ namespace WolvenKit.RED4.Types
 
         #endregion Properties
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {
@@ -182,7 +214,7 @@ namespace WolvenKit.RED4.Types
             return Equals((RedBaseClass)obj);
         }
 
-        public bool Equals(RedBaseClass other)
+        public bool Equals(RedBaseClass? other)
         {
             if (ReferenceEquals(null, other))
             {

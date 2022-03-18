@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiWorldMapPreviewGameController()
 		{
 			Canvas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

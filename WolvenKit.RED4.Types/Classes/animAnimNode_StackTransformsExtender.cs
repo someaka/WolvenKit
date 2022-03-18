@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 			OffsetToReferenceValues = new();
 			OffsetSpaceBones = new();
 			Offsets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

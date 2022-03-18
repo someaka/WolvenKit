@@ -148,6 +148,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			OverrideMeshNavigationImpact = true;
 			NavigationImpact = new() { NavmeshImpact = Enums.NavGenNavmeshImpact.Ignored };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

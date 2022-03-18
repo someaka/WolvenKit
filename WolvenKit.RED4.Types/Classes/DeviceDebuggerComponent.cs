@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			PreviousContext = "NONE";
 			CachedContext = "NONE";
 			LayerIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

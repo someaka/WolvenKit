@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			AnalogTurnRate = 100.000000F;
 			MouseTurnRate = 7.000000F;
 			UsePhysicalCollision = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

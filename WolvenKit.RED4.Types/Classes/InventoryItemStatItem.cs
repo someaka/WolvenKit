@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			DiffrenceArrowIndicatorRef = new();
 			NegativeState = "worse";
 			PositiveState = "better";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

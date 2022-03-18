@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 			InputListeners = new();
 			InputActiveFlags = new();
 			OtherVars = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

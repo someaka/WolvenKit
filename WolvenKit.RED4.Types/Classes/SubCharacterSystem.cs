@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SubCharacterSystem()
 		{
 			UniqueSubCharacters = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

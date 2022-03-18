@@ -146,6 +146,10 @@ namespace WolvenKit.RED4.Types
 			Background = new();
 			ButtonHintsRoot = new();
 			LibraryPath = new() { WidgetLibrary = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

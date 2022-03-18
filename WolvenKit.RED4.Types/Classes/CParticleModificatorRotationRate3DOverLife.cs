@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			EditorName = "3D rotation rate over life";
 			EditorGroup = "Rotation";
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

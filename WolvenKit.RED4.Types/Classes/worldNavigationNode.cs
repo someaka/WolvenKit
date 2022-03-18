@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<worldNavigationTileResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<worldNavigationTileResource>>(value);
 		}
+
+		public worldNavigationNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

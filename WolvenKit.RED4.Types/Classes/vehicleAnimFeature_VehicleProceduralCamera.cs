@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CameraTranslationVS = new();
 			CameraOrientationVS = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

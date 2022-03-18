@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameAnimsetOverrideData()
 		{
 			Variables = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

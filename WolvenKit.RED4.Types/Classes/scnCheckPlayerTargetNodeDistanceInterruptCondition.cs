@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnCheckPlayerTargetNodeDistanceInterruptCondition()
 		{
 			Params = new() { Distance = 6.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

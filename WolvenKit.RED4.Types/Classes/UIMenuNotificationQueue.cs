@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public UIMenuNotificationQueue()
 		{
 			Duration = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

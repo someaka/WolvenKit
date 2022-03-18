@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			OrientationType = Enums.moveMovementOrientationType.Forward;
 			SyncOffset = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			BlendOutTime = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

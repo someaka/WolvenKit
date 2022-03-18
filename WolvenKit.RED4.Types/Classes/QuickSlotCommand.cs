@@ -163,6 +163,10 @@ namespace WolvenKit.RED4.Types
 			ItemId = new();
 			PlayerVehicleData = new() { VehicleType = Enums.gamedataVehicleType.Invalid };
 			InteractiveActionOwner = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			IsInstant = true;
 			ForcedCarryStyle = Enums.gamePSMBodyCarryingStyle.Friendly;
 			RemovePitchRollRotation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

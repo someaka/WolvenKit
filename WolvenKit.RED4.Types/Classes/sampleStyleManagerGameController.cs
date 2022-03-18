@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			StylePath1 = new();
 			StylePath2 = new();
 			Content = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

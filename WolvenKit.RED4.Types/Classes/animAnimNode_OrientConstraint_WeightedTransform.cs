@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Transform = new();
 			Weight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

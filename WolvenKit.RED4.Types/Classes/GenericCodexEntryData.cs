@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			TimeStamp = new();
 			NewEntries = new();
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

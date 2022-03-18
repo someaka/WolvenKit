@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<audioAmbientPaletteBrushDictionary>>();
 			set => SetPropertyValue<CHandle<audioAmbientPaletteBrushDictionary>>(value);
 		}
+
+		public audioAmbientPaletteBrushCategory()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

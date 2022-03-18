@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<QuickhackInstance>>();
 			set => SetPropertyValue<CHandle<QuickhackInstance>>(value);
 		}
+
+		public HUDInstruction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

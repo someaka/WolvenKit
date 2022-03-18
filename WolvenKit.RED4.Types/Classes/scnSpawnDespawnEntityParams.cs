@@ -140,6 +140,10 @@ namespace WolvenKit.RED4.Types
 			SpawnOnStart = true;
 			IsEnabled = true;
 			ValidateSpawnPostion = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

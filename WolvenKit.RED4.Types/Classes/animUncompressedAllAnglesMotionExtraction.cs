@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Duration = 1.000000F;
 			Frames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

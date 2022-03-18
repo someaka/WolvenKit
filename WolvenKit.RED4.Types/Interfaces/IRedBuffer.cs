@@ -5,7 +5,7 @@ namespace WolvenKit.RED4.Types
         public uint Flags { get; }
         public uint MemSize { get; }
 
-        public IParseableBuffer Data { get; set; }
+        public IParseableBuffer? Data { get; set; }
     }
 
     public interface IRedBufferWrapper

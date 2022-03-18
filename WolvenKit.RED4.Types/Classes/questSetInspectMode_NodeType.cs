@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			StartingOffset = 0.500000F;
 			ZoomOffset = 0.500000F;
 			TimeInterval = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public ArmsCWInSlotPrereq()
 		{
 			EquipmentArea = Enums.gamedataEquipmentArea.ArmsCW;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

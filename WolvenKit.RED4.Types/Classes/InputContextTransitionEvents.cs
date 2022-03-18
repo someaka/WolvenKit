@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<GameplaySettingsSystem>>();
 			set => SetPropertyValue<CWeakHandle<GameplaySettingsSystem>>(value);
 		}
+
+		public InputContextTransitionEvents()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			Strings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

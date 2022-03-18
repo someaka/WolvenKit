@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public CParticleDrawerMotionBlur()
 		{
 			StretchPerVelocity = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

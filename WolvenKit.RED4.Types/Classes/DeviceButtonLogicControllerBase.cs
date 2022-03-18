@@ -144,6 +144,10 @@ namespace WolvenKit.RED4.Types
 			DefaultStyle = new();
 			SelectionStyle = new();
 			SoundData = new() { WidgetAudioName = "Button" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

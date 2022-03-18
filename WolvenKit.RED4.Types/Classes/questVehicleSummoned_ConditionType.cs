@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<vehicleESummonedVehicleType>>();
 			set => SetPropertyValue<CEnum<vehicleESummonedVehicleType>>(value);
 		}
+
+		public questVehicleSummoned_ConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

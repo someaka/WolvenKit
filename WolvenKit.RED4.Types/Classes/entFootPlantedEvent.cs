@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<animEventSide>>();
 			set => SetPropertyValue<CEnum<animEventSide>>(value);
 		}
+
+		public entFootPlantedEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

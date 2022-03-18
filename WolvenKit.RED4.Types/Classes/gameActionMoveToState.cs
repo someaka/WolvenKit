@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameActionMoveToState()
 		{
 			TargetPos = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

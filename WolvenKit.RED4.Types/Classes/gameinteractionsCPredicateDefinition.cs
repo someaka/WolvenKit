@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameinteractionsCFunctorDefinition>>();
 			set => SetPropertyValue<CHandle<gameinteractionsCFunctorDefinition>>(value);
 		}
+
+		public gameinteractionsCPredicateDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

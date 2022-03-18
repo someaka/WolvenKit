@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<LibTreeSharedVarRegistrationName>();
 			set => SetPropertyValue<LibTreeSharedVarRegistrationName>(value);
 		}
+
+		public AICTreeNodeSingleSharedVarDecoratorDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

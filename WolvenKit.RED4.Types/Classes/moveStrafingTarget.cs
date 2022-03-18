@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public moveStrafingTarget()
 		{
 			Position = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

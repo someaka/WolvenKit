@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			StatValues = new();
 			StatNames = new();
 			ParamsCount = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

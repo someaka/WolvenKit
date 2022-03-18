@@ -93,6 +93,10 @@ namespace WolvenKit.RED4.Types
 			Params = new() { AreaParameters = new() };
 			BackgroundColor = new();
 			StreamingDistance = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

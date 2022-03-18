@@ -99,6 +99,10 @@ namespace WolvenKit.RED4.Types
 			FastTravelPointsTotal = 155;
 			LastUpdatedAchievementCount = -1;
 			FastTravelLocks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

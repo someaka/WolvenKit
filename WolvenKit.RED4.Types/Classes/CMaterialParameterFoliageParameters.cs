@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<CFoliageProfile>>();
 			set => SetPropertyValue<CResourceReference<CFoliageProfile>>(value);
 		}
+
+		public CMaterialParameterFoliageParameters()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

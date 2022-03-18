@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			JumpStartFrameId = 4294967295;
 			LandFrameId = 4294967295;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

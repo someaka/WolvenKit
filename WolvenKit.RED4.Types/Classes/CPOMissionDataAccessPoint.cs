@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			DamagesPresetName = "CPODataRaceParams";
 			FactsOnDownload = new();
 			FactsOnUpload = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

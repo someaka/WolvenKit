@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SyncNodesVisited = new();
 			InstanceHash = 6242570315725555409;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

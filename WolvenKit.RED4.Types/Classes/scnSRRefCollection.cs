@@ -133,6 +133,10 @@ namespace WolvenKit.RED4.Types
 			GameplayAnimNames = new();
 			DynamicAnimNames = new();
 			RidAnimationContainers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public QuickWheelStartUIStructure()
 		{
 			WheelItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

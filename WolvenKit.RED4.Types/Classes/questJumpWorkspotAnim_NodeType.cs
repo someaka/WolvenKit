@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questJumpWorkspotAnim_NodeType()
 		{
 			PuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<healthbarWidgetGameController>>();
 			set => SetPropertyValue<CWeakHandle<healthbarWidgetGameController>>(value);
 		}
+
+		public GodModeStatListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

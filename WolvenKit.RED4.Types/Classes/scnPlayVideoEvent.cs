@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = new() { Id = 18446744073709551615 };
 			Duration = 1000;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public FollowNPCDef()
 		{
 			Position = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

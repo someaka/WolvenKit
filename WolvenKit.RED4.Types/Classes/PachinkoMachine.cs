@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public PachinkoMachine()
 		{
 			DistractionFXName = "effect_distraction";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

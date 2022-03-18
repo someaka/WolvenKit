@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questHUDEntryVisibilityEvent()
 		{
 			DataEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

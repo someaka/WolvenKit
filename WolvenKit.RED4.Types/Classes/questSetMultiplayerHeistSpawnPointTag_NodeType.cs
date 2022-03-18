@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questSetMultiplayerHeistSpawnPointTag_NodeType()
 		{
 			SpawnPointTag = "heist";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Duration = 3.000000F;
 			StatPoolType = Enums.gamedataStatPoolType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			Title = new();
 			Text = new();
 			ActionText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

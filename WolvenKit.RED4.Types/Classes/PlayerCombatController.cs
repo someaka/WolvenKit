@@ -87,6 +87,10 @@ namespace WolvenKit.RED4.Types
 			DelayEventsIds = new() { Crouch = new() };
 			GameplayActiveFlags = new();
 			OtherVars = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

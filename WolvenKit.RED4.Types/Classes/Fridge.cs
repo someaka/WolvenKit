@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public Fridge()
 		{
 			ControllerTypeName = "FridgeController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

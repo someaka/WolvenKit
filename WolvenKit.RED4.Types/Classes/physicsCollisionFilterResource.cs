@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CollisionGroups = new(0);
 			QueryGroups = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

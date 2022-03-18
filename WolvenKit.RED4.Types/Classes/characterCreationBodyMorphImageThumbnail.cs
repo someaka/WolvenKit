@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Selector = new();
 			Equipped = new();
 			Bg = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

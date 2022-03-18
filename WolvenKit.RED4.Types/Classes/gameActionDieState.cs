@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<entSlotComponent>>();
 			set => SetPropertyValue<CWeakHandle<entSlotComponent>>(value);
 		}
+
+		public gameActionDieState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

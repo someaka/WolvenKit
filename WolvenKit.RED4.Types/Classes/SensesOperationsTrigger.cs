@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<SensesOperationTriggerData>>();
 			set => SetPropertyValue<CHandle<SensesOperationTriggerData>>(value);
 		}
+
+		public SensesOperationsTrigger()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

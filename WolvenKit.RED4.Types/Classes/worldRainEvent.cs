@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<worldRainIntensity>>();
 			set => SetPropertyValue<CEnum<worldRainIntensity>>(value);
 		}
+
+		public worldRainEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

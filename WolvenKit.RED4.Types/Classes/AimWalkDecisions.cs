@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public AimWalkDecisions()
 		{
 			CallbackIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

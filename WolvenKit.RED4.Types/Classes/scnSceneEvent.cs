@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<scnIScalingData>>();
 			set => SetPropertyValue<CHandle<scnIScalingData>>(value);
 		}
+
+		public scnSceneEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public worldTriggerAreaEventInfo()
 		{
 			EventWorldPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

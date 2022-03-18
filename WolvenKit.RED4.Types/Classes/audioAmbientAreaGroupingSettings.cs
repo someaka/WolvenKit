@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public audioAmbientAreaGroupingSettings()
 		{
 			MaxDistance = 100.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

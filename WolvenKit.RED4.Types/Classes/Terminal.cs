@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "TerminalController";
 			ShortGlitchDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

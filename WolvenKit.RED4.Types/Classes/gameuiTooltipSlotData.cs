@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiTooltipSlotData()
 		{
 			Margin = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

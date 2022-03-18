@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			ConstrainedTransform = new();
 			RadiusTrack = new();
 			DeviationTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

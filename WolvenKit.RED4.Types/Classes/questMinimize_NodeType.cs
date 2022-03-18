@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questMinimize_NodeType()
 		{
 			Minimize = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

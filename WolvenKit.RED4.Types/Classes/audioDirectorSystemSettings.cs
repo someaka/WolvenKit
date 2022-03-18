@@ -239,6 +239,10 @@ namespace WolvenKit.RED4.Types
 			MediumGearMaxTrafficSpeed = 0.570000F;
 			MediumGearAccelerationThreshold = -1.000000F;
 			HighGearAccelerationThreshold = -2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

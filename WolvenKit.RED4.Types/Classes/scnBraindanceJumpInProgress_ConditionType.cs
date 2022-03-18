@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public scnBraindanceJumpInProgress_ConditionType()
 		{
 			InProgress = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

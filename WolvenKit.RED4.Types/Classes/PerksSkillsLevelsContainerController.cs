@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			LevelBar = new();
 			LevelBarSpacer = new();
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

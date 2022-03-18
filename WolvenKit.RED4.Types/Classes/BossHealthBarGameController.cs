@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			HealthPersentage = new();
 			BossName = new();
 			BossPuppets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public TutorialStep()
 		{
 			AllowedActions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questRumble_NodeType()
 		{
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataAttackType>>();
 			set => SetPropertyValue<CEnum<gamedataAttackType>>(value);
 		}
+
+		public AttackTypeHitPrereqCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

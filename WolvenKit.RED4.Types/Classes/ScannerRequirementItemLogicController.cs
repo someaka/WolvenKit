@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			RequirementNameText = new();
 			RequirementLevelText = new();
 			RequirementIcon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

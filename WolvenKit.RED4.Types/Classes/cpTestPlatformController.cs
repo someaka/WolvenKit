@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public cpTestPlatformController()
 		{
 			Speed = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

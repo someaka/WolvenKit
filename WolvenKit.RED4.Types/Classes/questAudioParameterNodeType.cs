@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Param = new() { EnterCurveType = Enums.audioESoundCurveType.Linear, EnterCurveTime = 1.000000F, ExitCurveType = Enums.audioESoundCurveType.Linear, ExitCurveTime = 1.000000F };
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

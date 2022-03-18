@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Includes = new();
 			Contexts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

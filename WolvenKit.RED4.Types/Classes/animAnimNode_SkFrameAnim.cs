@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			ProgressLink = new();
 			TimeLink = new();
 			FrameLink = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

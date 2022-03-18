@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public ToggleFocusClueEvent()
 		{
 			UpdatePS = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

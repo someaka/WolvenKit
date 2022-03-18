@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public inkScrollAreaWidget()
 		{
 			UseInternalMask = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

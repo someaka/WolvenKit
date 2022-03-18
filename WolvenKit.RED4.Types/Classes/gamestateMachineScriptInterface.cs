@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OwnerEntityID = new();
 			ExecutionOwnerEntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

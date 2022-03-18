@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataVariableNodeVariableValueDeriveInfo>>();
 			set => SetPropertyValue<CEnum<gamedataVariableNodeVariableValueDeriveInfo>>(value);
 		}
+
+		public gamedataVariableNodeVariableValue()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

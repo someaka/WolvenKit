@@ -116,6 +116,10 @@ namespace WolvenKit.RED4.Types
 			StaminaStatusTextPath = new();
 			CurrentStamina = 100.000000F;
 			SceneTier = Enums.GameplayTier.Tier1_FullGameplay;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

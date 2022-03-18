@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public worldGeometryShapeNode()
 		{
 			Color = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

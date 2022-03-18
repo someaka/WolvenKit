@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SetHoverOverEvent()
 		{
 			ClothingSet = new() { SetID = -1, ClothingList = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

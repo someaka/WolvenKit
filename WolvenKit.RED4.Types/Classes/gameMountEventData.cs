@@ -82,6 +82,10 @@ namespace WolvenKit.RED4.Types
 			MountParentEntityId = new();
 			InitialTransformLS = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			RemovePitchRollRotationOnDismount = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

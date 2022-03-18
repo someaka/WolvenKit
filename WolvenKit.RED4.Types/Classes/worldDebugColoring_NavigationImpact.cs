@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			Staris_walkable = new();
 			Drones = new();
 			Everythign_else = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

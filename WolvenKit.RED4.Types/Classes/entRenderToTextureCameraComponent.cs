@@ -168,6 +168,10 @@ namespace WolvenKit.RED4.Types
 			BackgroundColor = new();
 			Features = new() { RenderDecals = true, RenderParticles = true, AntiAliasing = true, LocalShadows = true };
 			StreamingDistance = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

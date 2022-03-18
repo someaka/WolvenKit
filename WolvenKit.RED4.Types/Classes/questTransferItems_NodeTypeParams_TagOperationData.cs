@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemIDsToIgnore = new();
 			TagsToIgnore = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

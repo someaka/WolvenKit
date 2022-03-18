@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameObjectCarrierComponent()
 		{
 			Name = "Component";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

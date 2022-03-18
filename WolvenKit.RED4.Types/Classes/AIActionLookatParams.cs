@@ -120,6 +120,10 @@ namespace WolvenKit.RED4.Types
 		public AIActionLookatParams()
 		{
 			AdditionalParts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

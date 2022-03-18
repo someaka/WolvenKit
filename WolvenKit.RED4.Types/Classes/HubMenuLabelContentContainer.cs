@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			Border = new();
 			Line = new();
 			Data = new() { Identifier = -1, SubMenus = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

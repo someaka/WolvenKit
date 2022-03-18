@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MuteArmActive = new();
 			MuteArmRadius = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

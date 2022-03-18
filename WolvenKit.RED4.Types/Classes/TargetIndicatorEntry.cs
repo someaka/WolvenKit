@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public TargetIndicatorEntry()
 		{
 			TargetID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

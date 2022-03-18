@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public PassiveCommandCondition()
 		{
 			UseInheritance = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

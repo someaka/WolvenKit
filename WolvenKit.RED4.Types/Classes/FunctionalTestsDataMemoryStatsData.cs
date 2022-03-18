@@ -138,6 +138,10 @@ namespace WolvenKit.RED4.Types
 			EngineTime = 0.000000;
 			PoolsRuntimeInfo = new();
 			PoolsCurrentInfo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

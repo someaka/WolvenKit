@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<animPoseLink>();
 			set => SetPropertyValue<animPoseLink>(value);
 		}
+
+		public animAnimNode_OnePoseInput()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

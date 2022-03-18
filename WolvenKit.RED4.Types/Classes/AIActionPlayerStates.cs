@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			ZoneStates = new();
 			BodyCarryStates = new();
 			CombatStates = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

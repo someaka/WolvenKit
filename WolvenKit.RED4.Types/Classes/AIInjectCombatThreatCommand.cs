@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public AIInjectCombatThreatCommand()
 		{
 			TargetPuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

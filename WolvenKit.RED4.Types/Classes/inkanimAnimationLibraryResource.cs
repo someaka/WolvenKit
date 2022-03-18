@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public inkanimAnimationLibraryResource()
 		{
 			Sequences = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

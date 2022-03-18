@@ -29,6 +29,10 @@ namespace WolvenKit.RED4.Types
 			Shape = new() { ShapeSize = new() { X = 1.000000F, Y = 1.000000F, Z = 1.000000F }, ShapeLocalPose = new() { Position = new(), Orientation = new() { R = 1.000000F } } };
 			IsEnabled = true;
 			Impulse = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

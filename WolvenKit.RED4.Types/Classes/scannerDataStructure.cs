@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public scannerDataStructure()
 		{
 			QuestEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

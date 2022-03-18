@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			PlacementTagIndex = 255;
 			RelativePositionIndex = 255;
 			RelativeRotationIndex = 255;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

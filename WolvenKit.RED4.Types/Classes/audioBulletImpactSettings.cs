@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			CommonSettings = new() { StopAllSoundsOnDetach = true };
 			ScanningSettings = new();
 			AuxiliaryMetadata = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

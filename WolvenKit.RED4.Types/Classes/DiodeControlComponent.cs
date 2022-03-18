@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			PrimaryLightPreset = new() { State = true, ColorMax = new(), ColorMin = new(), OverrideColorMin = true, Strength = 1.000000F };
 			SecondaryLightPreset = new() { State = true, ColorMax = new(), ColorMin = new(), OverrideColorMin = true, Strength = 1.000000F };
 			SecondaryPresetRemovalID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questCharacterGroupAttitude_CondtionType()
 		{
 			Attitude = Enums.EAIAttitude.AIA_Neutral;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

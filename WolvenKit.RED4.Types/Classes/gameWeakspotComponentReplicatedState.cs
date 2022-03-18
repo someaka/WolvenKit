@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enabled = true;
 			WeakspotRepInfos = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			MetalLevelsIn = new();
 			MetalLevelsOut = new();
 			NormalStrength = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

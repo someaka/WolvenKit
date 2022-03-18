@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Spill = true;
 			Min = new();
 			Max = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

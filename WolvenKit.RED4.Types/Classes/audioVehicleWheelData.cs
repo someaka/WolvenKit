@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 			MinSuspensionPressureThreshold = 0.100000F;
 			SuspensionImpactCooldown = 0.200000F;
 			MinWheelTimeInAirBeforeLanding = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

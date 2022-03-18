@@ -107,6 +107,10 @@ namespace WolvenKit.RED4.Types
 			Quantity = 1;
 			ItemIDsToIgnoreOnRemove = new();
 			TagsToIgnoreOnRemove = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

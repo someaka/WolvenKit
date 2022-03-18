@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			EditorGroup = "Velocity";
 			IsEnabled = true;
 			ConserveMomentum = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

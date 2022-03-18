@@ -10,15 +10,20 @@ namespace WolvenKit.RED4.Types
         public RedBuffer Buffer { get; set; }
 
         [Browsable(false)]
-        public IParseableBuffer Data
+        public IParseableBuffer? Data
         {
             get => Buffer.Data;
             set => Buffer.Data = value;
         }
 
-        public Red4File File { get; set; }
+        public Red4File? File { get; set; }
 
-        public bool Equals(SharedDataBuffer other)
+        public SharedDataBuffer()
+        {
+            Buffer = new RedBuffer();
+        }
+
+        public bool Equals(SharedDataBuffer? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -38,7 +43,7 @@ namespace WolvenKit.RED4.Types
             return true;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questJournalEntry_NodeType()
 		{
 			SendNotification = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

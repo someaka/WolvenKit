@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ChestPress()
 		{
 			ControllerTypeName = "ChestPressController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

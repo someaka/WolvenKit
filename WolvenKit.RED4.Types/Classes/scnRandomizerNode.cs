@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			NodeId = new() { Id = 4294967295 };
 			OutputSockets = new();
 			Weights = new(32);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

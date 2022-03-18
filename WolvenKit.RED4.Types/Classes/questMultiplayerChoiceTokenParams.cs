@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questMultiplayerChoiceTokenParams()
 		{
 			Timeout = 15;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

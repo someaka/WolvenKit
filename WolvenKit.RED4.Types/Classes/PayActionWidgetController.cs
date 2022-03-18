@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			ProcessingStatusContainer = new();
 			MoneyStatusAnimName = "no_money";
 			ProcessingAnimName = "pay";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

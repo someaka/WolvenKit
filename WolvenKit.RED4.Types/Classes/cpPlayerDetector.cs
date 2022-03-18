@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public cpPlayerDetector()
 		{
 			Range = 10.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

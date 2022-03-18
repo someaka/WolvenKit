@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CurrentDelayID = new();
 			ItemsUsed = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

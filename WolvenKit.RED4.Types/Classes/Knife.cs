@@ -122,6 +122,10 @@ namespace WolvenKit.RED4.Types
 			ForceRegisterInHudManager = true;
 			IsActive = true;
 			DeactivationDepth = -99999.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

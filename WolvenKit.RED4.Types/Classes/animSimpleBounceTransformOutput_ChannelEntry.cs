@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animSimpleBounceTransformOutput_ChannelEntry()
 		{
 			Multiplier = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

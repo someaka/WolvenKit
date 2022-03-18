@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AreaType = Enums.gamedataEquipmentArea.Invalid;
 			EquipSlots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

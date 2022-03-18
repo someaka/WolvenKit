@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SSubCharacter()
 		{
 			PersistentID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

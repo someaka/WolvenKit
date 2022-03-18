@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<worldRoadMaterial>>();
 			set => SetPropertyValue<CEnum<worldRoadMaterial>>(value);
 		}
+
+		public worldRoadMaterialInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

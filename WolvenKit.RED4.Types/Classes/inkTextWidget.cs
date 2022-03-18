@@ -174,6 +174,10 @@ namespace WolvenKit.RED4.Types
 			LineHeightPercentage = 1.000000F;
 			ScrollTextSpeed = 0.200000F;
 			ScrollDelay = 30;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

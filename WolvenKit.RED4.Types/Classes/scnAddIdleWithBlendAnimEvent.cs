@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			PerformerId = new() { Id = 4294967040 };
 			ActorComponent = "body";
 			TargetWeight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

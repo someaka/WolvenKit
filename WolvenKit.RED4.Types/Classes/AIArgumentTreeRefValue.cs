@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIArgumentTreeRefValue()
 		{
 			Type = Enums.AIArgumentType.TreeRef;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

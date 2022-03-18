@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public audioKeyUiControlDictionary()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

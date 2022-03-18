@@ -119,6 +119,10 @@ namespace WolvenKit.RED4.Types
 			ScrapingMinVehicleUpCollisionContactAngle = 30.000000F;
 			UseScrapingMinVehicleUpCollisionContactAngle = true;
 			CollisionSettings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

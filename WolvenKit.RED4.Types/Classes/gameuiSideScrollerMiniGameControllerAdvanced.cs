@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiSideScrollerMiniGameControllerAdvanced()
 		{
 			GameplayCanvas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

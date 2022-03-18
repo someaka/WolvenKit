@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public QuestListHeaderLogicController()
 		{
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

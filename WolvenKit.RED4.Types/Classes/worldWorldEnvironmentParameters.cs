@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldWorldEnvironmentParameters()
 		{
 			GlobalLightingTrajectory = new() { TimeOfYearSeason = Enums.ETimeOfYearSeason.ETOYS_Summer };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

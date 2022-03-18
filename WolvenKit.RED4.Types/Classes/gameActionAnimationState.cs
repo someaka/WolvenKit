@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public gameActionAnimationState()
 		{
 			SlideParams = new() { UsePositionSlide = true, UseRotationSlide = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

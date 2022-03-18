@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Sockets = new();
 			Id = 65535;
 			IsOpen = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

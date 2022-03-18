@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			TransformIds = new();
 			TransformNames = new();
 			TransformRegions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

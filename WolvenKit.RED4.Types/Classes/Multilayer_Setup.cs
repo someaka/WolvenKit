@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Layers = new();
 			Ratio = 1.000000F;
 			UseNormal = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			QuestEnforcedTransform = new() { Position = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity }, Orientation = new() { R = 1.000000F } };
 			Destruction = new() { GridValues = new(30), WindshieldPoints = new(), DetachedParts = new() };
 			Audio = new() { AcousticIsolationFactor = -340282346638528859811704183484516925440.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

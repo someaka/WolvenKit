@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			DescriptionTextRef = new();
 			HintsContainerRef = new();
 			IconRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

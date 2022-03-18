@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public audioVoiceTriggerData()
 		{
 			OverridingVoContext = Enums.locVoiceoverContext.Default_Vo_Context;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

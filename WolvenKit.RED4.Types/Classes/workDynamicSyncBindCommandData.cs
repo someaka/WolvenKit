@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public workDynamicSyncBindCommandData()
 		{
 			MasterID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

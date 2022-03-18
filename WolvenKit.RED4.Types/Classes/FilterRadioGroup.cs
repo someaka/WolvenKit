@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LibraryPath = new() { WidgetLibrary = new() };
 			Toggles = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

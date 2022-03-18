@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			RpmThreshold = 3.000000F;
 			TimeToActivateTemperature = 8.000000F;
 			CooldownTime = 10.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

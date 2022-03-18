@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LinkImage = new();
 			LinkLabel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

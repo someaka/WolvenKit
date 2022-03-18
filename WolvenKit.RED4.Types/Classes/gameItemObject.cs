@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameItemObject()
 		{
 			UpdateBucket = Enums.UpdateBucketEnum.AttachedObject;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

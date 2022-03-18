@@ -36,6 +36,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			Frequency = 0.500000F;
 			Probability = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public entRagdollImpactEvent()
 		{
 			ImpactPoints = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

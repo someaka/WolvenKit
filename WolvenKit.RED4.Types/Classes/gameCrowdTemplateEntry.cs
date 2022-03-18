@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Markings = new();
 			Phases = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SActionWidgetPackage()
 		{
 			DependendActions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

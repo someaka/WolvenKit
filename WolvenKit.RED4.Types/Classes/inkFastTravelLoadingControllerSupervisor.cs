@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<worldEffect>>();
 			set => SetPropertyValue<CResourceReference<worldEffect>>(value);
 		}
+
+		public inkFastTravelLoadingControllerSupervisor()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

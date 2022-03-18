@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Sources = new(4);
 			Destination = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

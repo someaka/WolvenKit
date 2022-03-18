@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SHitNPC()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

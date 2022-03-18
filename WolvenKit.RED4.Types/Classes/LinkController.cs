@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			DefaultColor = new();
 			HoverColor = new();
 			IGNORED_COLOR = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

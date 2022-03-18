@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			TintColor = new();
 			HoverTintColor = new();
 			Text = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

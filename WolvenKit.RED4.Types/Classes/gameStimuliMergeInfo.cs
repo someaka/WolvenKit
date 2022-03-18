@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Radius = -1.000000F;
 			Type = Enums.gamedataStimType.Invalid;
 			PropagationType = Enums.gamedataStimPropagation.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

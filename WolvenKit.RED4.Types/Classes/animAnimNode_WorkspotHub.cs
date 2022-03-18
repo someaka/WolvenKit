@@ -109,6 +109,10 @@ namespace WolvenKit.RED4.Types
 			FacialKeyWeight = 1.000000F;
 			FacialIdleMaleAnimation = "idle__neutral__male";
 			FacialIdleFemaleAnimation = "idle__neutral__female";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

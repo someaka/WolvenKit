@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			TransformIds = new();
 			TransformNames = new();
 			ParentsWeights = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

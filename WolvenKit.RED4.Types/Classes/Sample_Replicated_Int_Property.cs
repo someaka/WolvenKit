@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CInt32>();
 			set => SetPropertyValue<CInt32>(value);
 		}
+
+		public Sample_Replicated_Int_Property()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public questSetLocationName_NodeType()
 		{
 			IsNewLocation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

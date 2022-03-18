@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SubGraphId = 65535;
 			StronglyConnectedComponentId = 65535;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

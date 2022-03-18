@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LazyDevices = new();
 			Devices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

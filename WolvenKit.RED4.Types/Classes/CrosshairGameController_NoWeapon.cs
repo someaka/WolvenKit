@@ -166,6 +166,10 @@ namespace WolvenKit.RED4.Types
 			DistanceImageRuler = new();
 			ZoomMoveBracketL = new();
 			ZoomMoveBracketR = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

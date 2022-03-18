@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimStateMachineConditionalEntry()
 		{
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

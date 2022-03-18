@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "ConfessionBoothController";
 			ShortGlitchDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

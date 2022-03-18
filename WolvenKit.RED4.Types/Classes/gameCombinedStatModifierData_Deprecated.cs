@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			RefStatType = Enums.gamedataStatType.Invalid;
 			Operation = Enums.gameCombinedStatOperation.Invalid;
 			RefObject = Enums.gameStatObjectsRelation.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

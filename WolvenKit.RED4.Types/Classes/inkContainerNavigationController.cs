@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkContainerNavigationController()
 		{
 			OverrideEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

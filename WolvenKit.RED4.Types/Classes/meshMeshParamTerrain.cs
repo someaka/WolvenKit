@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public meshMeshParamTerrain()
 		{
 			ChunkBoundingBoxes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -191,6 +191,10 @@ namespace WolvenKit.RED4.Types
 			HintClose = new();
 			HintReply = new();
 			HintMessenger = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public characterCreationNavigationBtn()
 		{
 			Icon1 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

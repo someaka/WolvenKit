@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FactionText = new();
 			DataBaseWidgetHolder = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

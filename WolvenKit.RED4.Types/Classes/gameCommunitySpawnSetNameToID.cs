@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameCommunitySpawnSetNameToID()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

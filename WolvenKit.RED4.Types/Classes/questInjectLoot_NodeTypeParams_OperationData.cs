@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questInjectLoot_NodeTypeParams_OperationData()
 		{
 			Quantity = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

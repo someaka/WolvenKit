@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questDrillingState>>();
 			set => SetPropertyValue<CEnum<questDrillingState>>(value);
 		}
+
+		public questDrillingState_ConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

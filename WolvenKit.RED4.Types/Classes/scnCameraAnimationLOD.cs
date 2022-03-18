@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Trajectory = new(0);
 			Tracks = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

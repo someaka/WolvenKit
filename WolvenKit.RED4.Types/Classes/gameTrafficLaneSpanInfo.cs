@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameTrafficLaneSpanInfo()
 		{
 			LaneId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

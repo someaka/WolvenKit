@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animLookAtPreset_Eyes()
 		{
 			SoftLimitAngle = 360.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PerformerId = new() { Id = 4294967040 };
 			EntityRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

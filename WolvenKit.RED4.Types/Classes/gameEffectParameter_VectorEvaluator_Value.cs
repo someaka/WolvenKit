@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectParameter_VectorEvaluator_Value()
 		{
 			Value = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

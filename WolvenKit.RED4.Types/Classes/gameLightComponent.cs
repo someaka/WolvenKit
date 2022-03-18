@@ -131,6 +131,10 @@ namespace WolvenKit.RED4.Types
 			TurnOnTime = 0.300000F;
 			TurnOffTime = 0.300000F;
 			IsDestructible = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

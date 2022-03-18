@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RightHanded = true;
 			SoftLimitAngle = 360.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

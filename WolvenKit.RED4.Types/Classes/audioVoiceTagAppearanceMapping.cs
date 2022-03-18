@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioVoiceTagAppearanceMapping()
 		{
 			Mappings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

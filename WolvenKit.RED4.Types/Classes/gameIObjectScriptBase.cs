@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameObject>>();
 			set => SetPropertyValue<CHandle<gameObject>>(value);
 		}
+
+		public gameIObjectScriptBase()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

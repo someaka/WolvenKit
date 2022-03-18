@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Vertices = new();
 			Indices = new();
 			Faces = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

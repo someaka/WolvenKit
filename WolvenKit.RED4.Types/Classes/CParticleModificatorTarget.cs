@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			EditorGroup = "Velocity";
 			IsEnabled = true;
 			MaxForce = 100.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

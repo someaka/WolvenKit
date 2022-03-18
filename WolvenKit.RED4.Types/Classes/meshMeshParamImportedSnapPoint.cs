@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public meshMeshParamImportedSnapPoint()
 		{
 			SnapFeatureData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

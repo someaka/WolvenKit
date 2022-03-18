@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OldContext = Enums.gameuiContext.MAX;
 			NewContext = Enums.gameuiContext.MAX;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameSmartObjectDefinition>>();
 			set => SetPropertyValue<CHandle<gameSmartObjectDefinition>>(value);
 		}
+
+		public worldSmartObjectNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

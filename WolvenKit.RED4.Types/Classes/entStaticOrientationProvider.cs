@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public entStaticOrientationProvider()
 		{
 			StaticOrientation = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

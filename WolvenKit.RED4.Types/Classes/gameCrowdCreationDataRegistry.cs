@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameCrowdCreationDataRegistry()
 		{
 			CreationData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

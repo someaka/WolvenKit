@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameWrappedEntIDArray()
 		{
 			Arr = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

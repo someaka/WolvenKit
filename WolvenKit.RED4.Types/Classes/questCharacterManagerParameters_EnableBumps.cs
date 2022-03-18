@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			PuppetRef = new() { Names = new() };
 			Enable = true;
 			Policy = Enums.AIinfluenceEBumpPolicy.Lean;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

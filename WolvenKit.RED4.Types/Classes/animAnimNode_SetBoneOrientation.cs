@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			InputLink = new();
 			Bone = new();
 			OrientationMs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

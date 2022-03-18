@@ -256,6 +256,10 @@ namespace WolvenKit.RED4.Types
 			InActiveTransparency = 0.100000F;
 			DialogHubData = new();
 			SpawnTokens = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

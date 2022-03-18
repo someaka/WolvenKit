@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			StatusText = new();
 			CallingAnimName = "calling_animation_maelstrom";
 			TalkingAnimName = "talking_animation_maelstrom";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

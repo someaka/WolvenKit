@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questEnforceScreenSpaceReflectionsUberQuality_NodeType()
 		{
 			Enabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

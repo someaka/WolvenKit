@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questvehicleJoinTrafficParams>>();
 			set => SetPropertyValue<CHandle<questvehicleJoinTrafficParams>>(value);
 		}
+
+		public questVehicleCommandParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

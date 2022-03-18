@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Categories = new();
 			Presets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

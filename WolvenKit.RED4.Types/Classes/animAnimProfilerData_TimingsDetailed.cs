@@ -92,5 +92,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CUInt32>();
 			set => SetPropertyValue<CUInt32>(value);
 		}
+
+		public animAnimProfilerData_TimingsDetailed()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

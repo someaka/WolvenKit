@@ -156,6 +156,10 @@ namespace WolvenKit.RED4.Types
 			OpeningSpeed = 1.000000F;
 			DoorOpeningTime = 1.000000F;
 			DoorOpeningStimRange = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -122,6 +122,10 @@ namespace WolvenKit.RED4.Types
 			ItemTypeIconWrapper = new();
 			ItemTypeIcon = new();
 			HighlightFrames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

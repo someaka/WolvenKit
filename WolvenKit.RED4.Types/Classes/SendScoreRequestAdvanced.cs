@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CString>();
 			set => SetPropertyValue<CString>(value);
 		}
+
+		public SendScoreRequestAdvanced()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

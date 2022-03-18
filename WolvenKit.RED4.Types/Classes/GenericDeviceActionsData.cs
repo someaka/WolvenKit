@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StateActionsOverrides = new() { ToggleON = new(), TogglePower = new() };
 			CustomActions = new() { Actions = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

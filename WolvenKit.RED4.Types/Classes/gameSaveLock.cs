@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameSaveLockReason>>();
 			set => SetPropertyValue<CEnum<gameSaveLockReason>>(value);
 		}
+
+		public gameSaveLock()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EquipVisualsRequest()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

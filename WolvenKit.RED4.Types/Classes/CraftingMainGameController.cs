@@ -205,6 +205,10 @@ namespace WolvenKit.RED4.Types
 			SkillWidgetRoot = new();
 			CraftingLogicControllerContainer = new();
 			UpgradingLogicControllerContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

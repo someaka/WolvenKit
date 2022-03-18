@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIbehaviorexpressionScript>>();
 			set => SetPropertyValue<CHandle<AIbehaviorexpressionScript>>(value);
 		}
+
+		public AIbehaviorScriptPassiveExpressionDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

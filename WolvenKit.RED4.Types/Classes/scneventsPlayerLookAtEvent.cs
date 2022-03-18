@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Id = new() { Id = 18446744073709551615 };
 			Performer = new() { Id = 4294967040 };
 			LookAtParams = new() { OffsetPos = new(), Duration = 0.250000F, EaseIn = true, EaseOut = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

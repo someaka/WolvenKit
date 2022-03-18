@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NodeId = new() { Id = 4294967295 };
 			IsockStamp = new() { Name = 65535, Ordinal = 65535 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

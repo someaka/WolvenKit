@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public FeedEvent()
 		{
 			CameraID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

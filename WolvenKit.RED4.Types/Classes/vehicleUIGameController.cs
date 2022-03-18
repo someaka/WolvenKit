@@ -183,6 +183,10 @@ namespace WolvenKit.RED4.Types
 			Radio = new();
 			AnalogTachWidget = new();
 			AnalogSpeedWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

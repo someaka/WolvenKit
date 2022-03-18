@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public entRenderHighlightEvent()
 		{
 			Opacity = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

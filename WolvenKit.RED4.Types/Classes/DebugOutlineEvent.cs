@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public DebugOutlineEvent()
 		{
 			Requester = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

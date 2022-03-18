@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enable = true;
 			Duration = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

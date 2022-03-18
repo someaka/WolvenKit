@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			PosFrames = new();
 			RotTime = new();
 			PosTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

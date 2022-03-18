@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			DebugIgnoreComponent = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

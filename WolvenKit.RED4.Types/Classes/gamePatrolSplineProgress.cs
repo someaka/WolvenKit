@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			CurrentControlPoints = new();
 			EntrySplineParam = -1.000000F;
 			ControlPointIndex = 4294967295;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

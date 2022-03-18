@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PerformWeaponCheck = true;
 			PerformCheckOnPlayerOnly = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			UseDefaultAnimation = true;
 			EndValue = 1.000000F;
 			TimeToSkip = 0.050000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

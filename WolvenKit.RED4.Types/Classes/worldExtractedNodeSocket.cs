@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			Rotation = new() { R = 1.000000F };
 			Direction = new();
 			Color = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

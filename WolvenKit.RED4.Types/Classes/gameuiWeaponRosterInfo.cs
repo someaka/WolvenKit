@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FileModeList = new();
 			DamageTypeList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

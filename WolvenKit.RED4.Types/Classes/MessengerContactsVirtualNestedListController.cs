@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<MessengerContactDataView>>();
 			set => SetPropertyValue<CWeakHandle<MessengerContactDataView>>(value);
 		}
+
+		public MessengerContactsVirtualNestedListController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

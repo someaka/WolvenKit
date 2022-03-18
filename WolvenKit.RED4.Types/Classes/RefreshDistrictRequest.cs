@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gamedataDistrictPreventionData_Record>>();
 			set => SetPropertyValue<CWeakHandle<gamedataDistrictPreventionData_Record>>(value);
 		}
+
+		public RefreshDistrictRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

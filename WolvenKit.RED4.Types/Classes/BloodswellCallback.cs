@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<BloodswellEffector>>();
 			set => SetPropertyValue<CHandle<BloodswellEffector>>(value);
 		}
+
+		public BloodswellCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

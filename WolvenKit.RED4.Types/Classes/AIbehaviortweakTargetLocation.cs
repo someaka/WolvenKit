@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			Position = new();
 			Speed = new();
 			CoverId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

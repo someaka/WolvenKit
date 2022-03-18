@@ -136,6 +136,10 @@ namespace WolvenKit.RED4.Types
 		public minibossPlasmaProjectile()
 		{
 			Alive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

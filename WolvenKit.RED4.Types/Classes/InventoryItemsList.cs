@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			ItemsLayoutRef = new();
 			TooltipsData = new();
 			InventoryItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

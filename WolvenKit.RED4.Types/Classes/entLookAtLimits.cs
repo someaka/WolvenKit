@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			HardLimitDegrees = 360.000000F;
 			HardLimitDistance = 1000000.000000F;
 			BackLimitDegrees = 180.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

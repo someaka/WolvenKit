@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public BlockStimProcessingCooldownEvent()
 		{
 			StimData = new() { SourceID = new(), DelayID = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

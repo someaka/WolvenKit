@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<TweakDBID>();
 			set => SetPropertyValue<TweakDBID>(value);
 		}
+
+		public gameContainerObjectSingleItem()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

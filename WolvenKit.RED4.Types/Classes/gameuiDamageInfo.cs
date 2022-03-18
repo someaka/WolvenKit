@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HitPosition = new();
 			DamageType = Enums.gamedataDamageType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

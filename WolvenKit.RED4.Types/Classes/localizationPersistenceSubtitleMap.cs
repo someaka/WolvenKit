@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public localizationPersistenceSubtitleMap()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

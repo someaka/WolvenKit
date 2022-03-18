@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questCameraClippingPlane_NodeType()
 		{
 			Preset = Enums.questCameraPlanesPreset.Normal;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

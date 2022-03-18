@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<AIbehaviorStoryActionType>>();
 			set => SetPropertyValue<CEnum<AIbehaviorStoryActionType>>(value);
 		}
+
+		public AIbehaviorStoryActionConditionDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

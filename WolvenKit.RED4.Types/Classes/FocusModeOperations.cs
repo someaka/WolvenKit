@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			Components = new();
 			FxInstances = new();
 			FocusModeOperations_ = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

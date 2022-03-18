@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CachedPlayerVelocity = new();
 			SecondaryKnockdownDir = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

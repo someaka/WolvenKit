@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "DataTermController";
 			MappinID = new();
 			ShortGlitchDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

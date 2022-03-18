@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StateFilter = new();
 			ClassFilter = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

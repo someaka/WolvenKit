@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			I = -1;
 			B = -1;
 			R = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

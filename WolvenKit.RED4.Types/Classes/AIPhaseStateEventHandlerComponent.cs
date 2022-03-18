@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ENPCPhaseState>>();
 			set => SetPropertyValue<CEnum<ENPCPhaseState>>(value);
 		}
+
+		public AIPhaseStateEventHandlerComponent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

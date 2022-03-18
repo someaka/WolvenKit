@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			StartActive = true;
 			ImpulseForce = 10.000000F;
 			ImpulseRadius = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

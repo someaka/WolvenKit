@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			TargetPosition3 = new();
 			TargetDirection3 = new();
 			TotalTimeToAdjust3 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

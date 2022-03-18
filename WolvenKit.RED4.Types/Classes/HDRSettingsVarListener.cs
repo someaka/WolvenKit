@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameuiHDRSettingsGameController>>();
 			set => SetPropertyValue<CWeakHandle<gameuiHDRSettingsGameController>>(value);
 		}
+
+		public HDRSettingsVarListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

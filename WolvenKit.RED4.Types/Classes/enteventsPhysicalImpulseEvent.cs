@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			BodyIndex = 4294967295;
 			WorldImpulse = new();
 			WorldPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

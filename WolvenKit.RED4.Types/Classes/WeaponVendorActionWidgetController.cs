@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			ButtonText = new();
 			StandardButtonContainer = new();
 			HoveredButtonContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

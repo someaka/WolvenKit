@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<LibTreeINodeDefinition>>();
 			set => SetPropertyValue<CHandle<LibTreeINodeDefinition>>(value);
 		}
+
+		public AICTreeExtendableNodeDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

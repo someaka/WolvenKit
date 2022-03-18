@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameinteractionsEInteractionEventType>>();
 			set => SetPropertyValue<CEnum<gameinteractionsEInteractionEventType>>(value);
 		}
+
+		public gameinteractionsInteractionActivationEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

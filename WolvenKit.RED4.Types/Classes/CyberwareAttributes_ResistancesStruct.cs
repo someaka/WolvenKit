@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			WidgetEMP = new();
 			WidgetChemical = new();
 			ResistanceTooltip = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

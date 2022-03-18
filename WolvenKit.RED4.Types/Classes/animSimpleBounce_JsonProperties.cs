@@ -92,6 +92,10 @@ namespace WolvenKit.RED4.Types
 			TransformOutputs = new();
 			TrackOutputs = new();
 			OutputDriverTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

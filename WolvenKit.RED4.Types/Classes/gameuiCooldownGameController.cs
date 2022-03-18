@@ -100,6 +100,10 @@ namespace WolvenKit.RED4.Types
 			EffectTypes = new();
 			CooldownPool = new();
 			MatchBuffer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

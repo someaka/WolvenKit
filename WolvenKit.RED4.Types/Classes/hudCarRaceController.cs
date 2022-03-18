@@ -117,6 +117,10 @@ namespace WolvenKit.RED4.Types
 			RaceTime = new();
 			RaceCheckpoint = new();
 			RaceStartEngineTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "TargetTracker";
 			TriggersCombat = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

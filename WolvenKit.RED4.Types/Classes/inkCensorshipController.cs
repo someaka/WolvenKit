@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBitField<CensorshipFlags>>();
 			set => SetPropertyValue<CBitField<CensorshipFlags>>(value);
 		}
+
+		public inkCensorshipController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

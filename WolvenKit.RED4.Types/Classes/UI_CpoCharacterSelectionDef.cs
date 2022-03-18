@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SelectionMenuVisible = new();
 			CharacterRecordId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

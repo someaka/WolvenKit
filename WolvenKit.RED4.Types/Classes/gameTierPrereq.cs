@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameTierPrereq()
 		{
 			Tier = Enums.GameplayTier.Tier1_FullGameplay;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

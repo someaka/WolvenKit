@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EVarDBMode>>();
 			set => SetPropertyValue<CEnum<EVarDBMode>>(value);
 		}
+
+		public SDebugChoice()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public audioEntityEmitterSettings()
 		{
 			EmitterDecorators = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

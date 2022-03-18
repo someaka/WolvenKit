@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			LimitAngle = 90.000000F;
 			TargetNode = new();
 			WeightNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

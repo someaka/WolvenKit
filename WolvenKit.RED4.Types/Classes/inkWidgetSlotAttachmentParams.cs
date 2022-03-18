@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			UseSlotLayout = true;
 			LayoutOverride = new() { Padding = new(), Margin = new(), AnchorPoint = new(), SizeCoefficient = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

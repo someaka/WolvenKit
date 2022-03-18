@@ -55,6 +55,10 @@ namespace WolvenKit.RED4.Types
 			HalfHeight = 0.500000F;
 			Color = new();
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

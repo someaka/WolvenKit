@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public audioCommonEntitySettings()
 		{
 			StopAllSoundsOnDetach = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

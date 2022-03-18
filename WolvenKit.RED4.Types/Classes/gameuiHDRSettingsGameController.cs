@@ -173,6 +173,10 @@ namespace WolvenKit.RED4.Types
 			ToneMappingOptionSelector = new();
 			TargetImageWidget = new();
 			SettingsElements = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

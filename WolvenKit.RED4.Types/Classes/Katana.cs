@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<entSlotComponent>>();
 			set => SetPropertyValue<CHandle<entSlotComponent>>(value);
 		}
+
+		public Katana()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

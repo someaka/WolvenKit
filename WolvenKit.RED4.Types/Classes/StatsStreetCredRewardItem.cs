@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LevelRef = new();
 			IconRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -99,6 +99,10 @@ namespace WolvenKit.RED4.Types
 			Stock = new();
 			PriceMultiplier = 1.000000F;
 			VendorPersistentID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

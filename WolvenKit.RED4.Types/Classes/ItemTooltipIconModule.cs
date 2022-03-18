@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			Icon = new();
 			IconicLines = new();
 			Transmogged = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

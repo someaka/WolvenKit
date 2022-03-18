@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DeviceCustomDescriptions = new();
 			DeviceRoleActionsDescriptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

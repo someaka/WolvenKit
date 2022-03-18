@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			Bar = new();
 			Ammo = new();
 			SizeOfChargeBar = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

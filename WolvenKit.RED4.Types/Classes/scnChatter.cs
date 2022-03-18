@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public scnChatter()
 		{
 			Id = 65535;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

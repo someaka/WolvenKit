@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			IsAvailable = true;
 			Requirement = new() { StatType = Enums.gamedataStatType.Invalid };
 			DynamicTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

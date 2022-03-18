@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnOverrideReturnConditions_Operation()
 		{
 			ReturnConditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

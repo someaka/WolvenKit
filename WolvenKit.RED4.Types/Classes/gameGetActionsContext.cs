@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RequestorID = new();
 			ActionPrereqs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

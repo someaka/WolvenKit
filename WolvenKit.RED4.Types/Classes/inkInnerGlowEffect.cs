@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			ColorG = 255.000000F;
 			ColorB = 255.000000F;
 			ColorA = 255.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

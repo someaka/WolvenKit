@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public TokenUpgradedCyberwareBlackboardDef()
 		{
 			CyberwareTypes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

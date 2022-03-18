@@ -138,6 +138,10 @@ namespace WolvenKit.RED4.Types
 			StimSource = new();
 			StimInvestigateData = new() { DistrationPoint = new(), AttackInstigatorPosition = new(), InvestigationSpots = new() };
 			StimEventData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			InnerRegion = new();
 			OuterRegion = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Transform = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			Radius = 1.000000F;
 			Height = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

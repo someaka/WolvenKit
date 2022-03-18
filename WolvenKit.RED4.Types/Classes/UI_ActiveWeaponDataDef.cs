@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			SmartGunParams = new();
 			TargetHitEvent = new();
 			ShootEvent = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

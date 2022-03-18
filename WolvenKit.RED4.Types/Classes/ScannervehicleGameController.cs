@@ -270,6 +270,10 @@ namespace WolvenKit.RED4.Types
 			VehicleMassHolder = new();
 			VehicleStateHolder = new();
 			VehicleInfoHolder = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

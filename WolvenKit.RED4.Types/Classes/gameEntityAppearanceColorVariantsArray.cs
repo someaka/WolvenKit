@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameEntityAppearanceColorVariantsArray()
 		{
 			ColorVariants = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Ref = new() { Id = -1 };
 			OutTransitionSpeed = 60.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

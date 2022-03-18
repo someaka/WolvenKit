@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Duration = 2.000000F;
 			BountyNotification = "notification_bounty";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			InteriorColor = new();
 			OpenInteriorColor = new();
 			ExteriorColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

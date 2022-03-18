@@ -112,6 +112,10 @@ namespace WolvenKit.RED4.Types
 		public questAnimMoveOnSplineParams()
 		{
 			ControllersSetupName = "Walk";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

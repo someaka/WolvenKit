@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameJournalManagerSharedState()
 		{
 			EntryData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

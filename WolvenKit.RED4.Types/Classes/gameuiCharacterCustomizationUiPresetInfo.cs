@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<gameuiCharacterCustomizationUiPreset>>();
 			set => SetPropertyValue<CResourceAsyncReference<gameuiCharacterCustomizationUiPreset>>(value);
 		}
+
+		public gameuiCharacterCustomizationUiPresetInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

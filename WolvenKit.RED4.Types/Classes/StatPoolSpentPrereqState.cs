@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<BaseStatPoolPrereqListener>>();
 			set => SetPropertyValue<CHandle<BaseStatPoolPrereqListener>>(value);
 		}
+
+		public StatPoolSpentPrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

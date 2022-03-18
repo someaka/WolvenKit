@@ -193,6 +193,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WaitForPassengersToSpawnEventDelayID = new();
 			TriggerPanicDrivingEventDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

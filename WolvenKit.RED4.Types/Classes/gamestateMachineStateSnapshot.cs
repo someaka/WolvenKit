@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public gamestateMachineStateSnapshot()
 		{
 			InstanceData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

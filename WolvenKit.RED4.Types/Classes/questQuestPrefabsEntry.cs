@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questQuestPrefabsEntry()
 		{
 			NodeRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectObjectProvider_Sweep_Box()
 		{
 			QueryPreset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

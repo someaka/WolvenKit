@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Ricocheted = new();
 			FromMuzzle = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

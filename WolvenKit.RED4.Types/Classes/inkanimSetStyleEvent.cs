@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<inkStyleResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<inkStyleResource>>(value);
 		}
+
+		public inkanimSetStyleEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

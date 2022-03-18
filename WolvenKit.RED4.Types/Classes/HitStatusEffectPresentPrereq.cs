@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsSync = true;
 			PipelineStage = Enums.gameDamagePipelineStage.Process;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

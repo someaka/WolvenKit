@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SettingsCategoryItem()
 		{
 			LabelHighlight = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

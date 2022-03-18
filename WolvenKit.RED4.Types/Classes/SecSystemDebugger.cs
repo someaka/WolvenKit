@@ -235,6 +235,10 @@ namespace WolvenKit.RED4.Types
 			Callstack = new();
 			Ids = new();
 			RefreshTime = 60.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

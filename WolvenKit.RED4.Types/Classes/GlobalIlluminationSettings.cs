@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public GlobalIlluminationSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

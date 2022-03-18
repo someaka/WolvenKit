@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Prereqs = new();
 			Game = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

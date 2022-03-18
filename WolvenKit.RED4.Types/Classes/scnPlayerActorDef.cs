@@ -166,6 +166,10 @@ namespace WolvenKit.RED4.Types
 			DynamicAnimSets = new();
 			FindNetworkPlayerParams = new();
 			FindActorInContextParams = new() { VoiceVagId = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

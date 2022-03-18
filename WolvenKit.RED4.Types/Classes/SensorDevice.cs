@@ -603,6 +603,10 @@ namespace WolvenKit.RED4.Types
 			PlayerControlData = new();
 			MinPitch = -70.000000F;
 			MaxPitch = 70.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

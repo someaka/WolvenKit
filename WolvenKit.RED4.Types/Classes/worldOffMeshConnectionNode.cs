@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Radius = 1.000000F;
 			Tags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameuiChoiceListVisualizerType>>();
 			set => SetPropertyValue<CEnum<gameuiChoiceListVisualizerType>>(value);
 		}
+
+		public gameuiInkChoiceVisualizer()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

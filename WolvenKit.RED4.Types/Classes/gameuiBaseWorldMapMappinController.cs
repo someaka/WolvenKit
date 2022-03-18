@@ -146,6 +146,10 @@ namespace WolvenKit.RED4.Types
 			CollectionCount = 1;
 			GroupContainerWidget = new();
 			GroupCountTextWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

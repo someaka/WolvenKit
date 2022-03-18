@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AreaEntry()
 		{
 			User = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

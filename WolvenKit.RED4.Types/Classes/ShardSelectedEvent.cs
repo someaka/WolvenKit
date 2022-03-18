@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<ShardEntryData>>();
 			set => SetPropertyValue<CWeakHandle<ShardEntryData>>(value);
 		}
+
+		public ShardSelectedEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

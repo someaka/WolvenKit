@@ -14,7 +14,7 @@ namespace WolvenKit.RED4.Types
         public InternalEnums.EImportFlags Flags { get; set; }
 
 
-        public bool Equals(CResourceReference<T> other)
+        public bool Equals(CResourceReference<T>? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -39,7 +39,7 @@ namespace WolvenKit.RED4.Types
             return true;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {

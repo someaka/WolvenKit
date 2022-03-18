@@ -114,6 +114,10 @@ namespace WolvenKit.RED4.Types
 			DistrationPoint = new();
 			AttackInstigatorPosition = new();
 			InvestigationSpots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

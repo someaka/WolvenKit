@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			PuppetRef = new() { Names = new() };
 			LookAtTargetRef = new() { Names = new() };
 			AssignLookAt = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

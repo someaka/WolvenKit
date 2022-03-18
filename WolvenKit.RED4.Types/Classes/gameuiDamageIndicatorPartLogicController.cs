@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			MaxDistanceForSharedIndicators = 4.000000F;
 			ArrowFrontWidget = new();
 			DamageThreshold = 100.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -29,6 +29,10 @@ namespace WolvenKit.RED4.Types
 			CanTriggerStim = true;
 			TrueRecord = "SpiderbotToggleOn";
 			FalseRecord = "SpiderbotToggleOff";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

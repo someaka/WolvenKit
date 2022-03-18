@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RevealDevicesGrid = false;
 			DeviceName = "DBGNetworkName";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

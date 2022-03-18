@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EAIThreatCalculationType>>();
 			set => SetPropertyValue<CEnum<EAIThreatCalculationType>>(value);
 		}
+
+		public AIThreatCalculationEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questElevator_ManageNPCAttachment_NodeTypeParams()
 		{
 			NpcRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			FxResource = new();
 			MasterEntity = new();
 			SlaveEntity = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

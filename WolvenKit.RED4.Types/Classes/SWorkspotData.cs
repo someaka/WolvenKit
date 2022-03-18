@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EWorkspotOperationType>>();
 			set => SetPropertyValue<CEnum<EWorkspotOperationType>>(value);
 		}
+
+		public SWorkspotData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

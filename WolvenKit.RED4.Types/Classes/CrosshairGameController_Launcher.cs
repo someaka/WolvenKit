@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Cori_S = new();
 			Cori_M = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

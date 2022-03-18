@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TimerText = new();
 			NoConnectionText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

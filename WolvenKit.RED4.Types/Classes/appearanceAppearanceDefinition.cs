@@ -152,6 +152,10 @@ namespace WolvenKit.RED4.Types
 			HitRepresentationOverrides = new();
 			ResolvedDependencies = new();
 			LooseDependencies = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

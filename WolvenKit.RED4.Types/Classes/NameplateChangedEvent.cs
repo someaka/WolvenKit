@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public NameplateChangedEvent()
 		{
 			Entity = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

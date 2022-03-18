@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<scnOutputSocket>>();
 			set => SetPropertyValue<CArray<scnOutputSocket>>(value);
 		}
+
+		public scnSceneGraphNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

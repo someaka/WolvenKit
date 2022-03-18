@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EquipProcessVisualTags()
 		{
 			Item = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

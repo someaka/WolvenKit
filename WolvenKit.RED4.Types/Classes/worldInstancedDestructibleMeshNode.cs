@@ -201,6 +201,10 @@ namespace WolvenKit.RED4.Types
 			CookedInstanceTransforms = new();
 			NavigationSetting = new() { NavmeshImpact = Enums.NavGenNavmeshImpact.Blocking };
 			UseMeshNavmeshSettings = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

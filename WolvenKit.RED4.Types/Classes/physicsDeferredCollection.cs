@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<SerializationDeferredDataBuffer>();
 			set => SetPropertyValue<SerializationDeferredDataBuffer>(value);
 		}
+
+		public physicsDeferredCollection()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ShowAd = new();
 			ShowVendor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

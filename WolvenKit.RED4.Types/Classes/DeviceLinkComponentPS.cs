@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ParentDevice = new() { PSID = new() };
 			OwnerEntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

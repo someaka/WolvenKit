@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			CrowdsOnMinimap = new();
 			ObjectMarkersEnabled = new();
 			NPCNamesEnabled = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

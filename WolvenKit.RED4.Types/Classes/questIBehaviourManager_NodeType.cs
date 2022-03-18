@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<gameEntityReference>();
 			set => SetPropertyValue<gameEntityReference>(value);
 		}
+
+		public questIBehaviourManager_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<workWorkspotTree>>();
 			set => SetPropertyValue<CHandle<workWorkspotTree>>(value);
 		}
+
+		public workWorkspotResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -361,6 +361,10 @@ namespace WolvenKit.RED4.Types
 			Type = new();
 			ControllerPromptLimit = 3;
 			FadingOptionEndTransparency = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

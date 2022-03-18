@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 			IsReady = true;
 			HackCount = 2;
 			ShopStock = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

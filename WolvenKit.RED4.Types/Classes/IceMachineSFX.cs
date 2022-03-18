@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IceFalls = "dev_ice_machine_ice_cube_falls";
 			Processing = "dev_vending_machine_processing";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameItemIconGender>>();
 			set => SetPropertyValue<CEnum<gameItemIconGender>>(value);
 		}
+
+		public CraftingSystem()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

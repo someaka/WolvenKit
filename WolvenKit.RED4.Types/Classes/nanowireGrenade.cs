@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TrailEffectName = "trail";
 			Alive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

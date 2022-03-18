@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public entReplicatedItem()
 		{
 			NetTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

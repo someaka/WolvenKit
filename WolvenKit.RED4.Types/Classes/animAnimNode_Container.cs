@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<CHandle<animAnimNode_Base>>>();
 			set => SetPropertyValue<CArray<CHandle<animAnimNode_Base>>>(value);
 		}
+
+		public animAnimNode_Container()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

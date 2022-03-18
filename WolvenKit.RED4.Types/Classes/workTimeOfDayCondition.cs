@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Equals_ = true;
 			ActiveAfter = new();
 			ActiveUntil = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

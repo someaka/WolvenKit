@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LayersDefinitions = new();
 			LayersSystemConnections = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

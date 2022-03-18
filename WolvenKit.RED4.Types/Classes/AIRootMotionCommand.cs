@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameSceneAnimationMotionActionParams>>();
 			set => SetPropertyValue<CHandle<gameSceneAnimationMotionActionParams>>(value);
 		}
+
+		public AIRootMotionCommand()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

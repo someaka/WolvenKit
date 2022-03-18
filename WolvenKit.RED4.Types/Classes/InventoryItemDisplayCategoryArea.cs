@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			NewItemsWrapper = new();
 			NewItemsCounter = new();
 			CategoryAreas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			AnimDatabaseCollection = new() { AnimDatabases = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

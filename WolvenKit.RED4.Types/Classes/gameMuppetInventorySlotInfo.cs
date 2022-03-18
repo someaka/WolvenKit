@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameMuppetInventorySlotInfo()
 		{
 			ItemId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

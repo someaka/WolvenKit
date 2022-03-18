@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiCharacterCustomizationSystem_OnAppearanceSwitchedEvent()
 		{
 			Pairs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

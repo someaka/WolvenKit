@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public AIFollowerInterpolateFollowingSpeed()
 		{
 			Reason = "Following";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

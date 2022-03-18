@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<TurretInitData>>();
 			set => SetPropertyValue<CWeakHandle<TurretInitData>>(value);
 		}
+
+		public TurretRipOffEvents()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

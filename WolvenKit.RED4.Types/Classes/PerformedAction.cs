@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedeviceAction>>();
 			set => SetPropertyValue<CHandle<gamedeviceAction>>(value);
 		}
+
+		public PerformedAction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

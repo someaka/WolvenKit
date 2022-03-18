@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiPatchIntroPackage()
 		{
 			PatchIntrosNeeded = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

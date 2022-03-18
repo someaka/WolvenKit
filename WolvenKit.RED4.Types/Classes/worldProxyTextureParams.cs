@@ -102,6 +102,10 @@ namespace WolvenKit.RED4.Types
 			GenerateRoughness = true;
 			MetalnessTextureResolution = Enums.worldProxyMeshTexRes.RES_128;
 			DiffuseAlphaAsEmissive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

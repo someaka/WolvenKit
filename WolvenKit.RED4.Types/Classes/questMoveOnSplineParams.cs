@@ -133,6 +133,10 @@ namespace WolvenKit.RED4.Types
 			RepeatCommandOnInterrupt = true;
 			NoWaitToEndDistance = 10.000000F;
 			NoWaitToEndCompanionDistance = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

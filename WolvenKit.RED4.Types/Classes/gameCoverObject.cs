@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			IsDestructible = true;
 			FovDegrees = 120.000000F;
 			FovExposureDegrees = 160.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

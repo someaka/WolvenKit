@@ -92,5 +92,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public MinimalLootingListItemData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

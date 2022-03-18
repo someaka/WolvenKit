@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			Sockets = new();
 			Id = 65535;
 			DeletedNodeIds = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

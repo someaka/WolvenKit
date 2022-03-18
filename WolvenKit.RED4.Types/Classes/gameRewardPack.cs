@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gameRewardPack()
 		{
 			Rewards = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

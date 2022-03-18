@@ -125,6 +125,10 @@ namespace WolvenKit.RED4.Types
 			Items = new();
 			Teleport = new();
 			PlayerWorkspot = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

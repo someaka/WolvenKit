@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RootCanvas = new();
 			BarCanvas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

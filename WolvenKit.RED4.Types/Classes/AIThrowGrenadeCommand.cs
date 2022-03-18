@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AIThrowGrenadeCommand()
 		{
 			TargetOverridePuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

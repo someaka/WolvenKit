@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<ScriptableDeviceComponentPS>>();
 			set => SetPropertyValue<CHandle<ScriptableDeviceComponentPS>>(value);
 		}
+
+		public NewBackdoorDeviceRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Forward = new() { Y = 1.000000F };
 			Right = new() { X = 1.000000F };
 			Up = new() { Z = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

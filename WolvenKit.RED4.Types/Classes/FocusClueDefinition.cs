@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			ExtendedClueRecords = new();
 			Facts = new();
 			IsProgressing = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

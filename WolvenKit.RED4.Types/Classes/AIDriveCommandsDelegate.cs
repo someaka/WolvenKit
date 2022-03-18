@@ -308,5 +308,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIVehicleJoinTrafficCommand>>();
 			set => SetPropertyValue<CHandle<AIVehicleJoinTrafficCommand>>(value);
 		}
+
+		public AIDriveCommandsDelegate()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

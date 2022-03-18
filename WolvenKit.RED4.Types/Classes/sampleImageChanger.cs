@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkImageWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkImageWidget>>(value);
 		}
+
+		public sampleImageChanger()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

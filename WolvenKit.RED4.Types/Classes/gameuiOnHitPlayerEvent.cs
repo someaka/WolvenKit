@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameuiMinigameState>>();
 			set => SetPropertyValue<CHandle<gameuiMinigameState>>(value);
 		}
+
+		public gameuiOnHitPlayerEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

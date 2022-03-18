@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public PlayerQuickHackDataDef()
 		{
 			CachedQuickHackList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

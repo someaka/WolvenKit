@@ -113,6 +113,10 @@ namespace WolvenKit.RED4.Types
 			CorrectivePoses = new();
 			GlobalPoseLimits = new();
 			WrinkleMapping = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

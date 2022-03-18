@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkButtonController>>();
 			set => SetPropertyValue<CWeakHandle<inkButtonController>>(value);
 		}
+
+		public sampleStylesGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

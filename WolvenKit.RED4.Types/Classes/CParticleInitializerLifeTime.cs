@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			EditorName = "Life time";
 			EditorGroup = "Default";
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animStackTracksExtender_JsonProperties()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

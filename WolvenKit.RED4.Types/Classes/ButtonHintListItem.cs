@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			InputDisplay = new();
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

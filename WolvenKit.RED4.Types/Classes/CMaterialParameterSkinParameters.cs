@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<CSkinProfile>>();
 			set => SetPropertyValue<CResourceReference<CSkinProfile>>(value);
 		}
+
+		public CMaterialParameterSkinParameters()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

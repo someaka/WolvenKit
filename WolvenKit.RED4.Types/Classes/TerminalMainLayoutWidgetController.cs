@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			TitleWidget = new();
 			BackgroundImage = new();
 			BackgroundImageTrace = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

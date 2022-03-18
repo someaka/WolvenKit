@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public WeaponVendingMachineSFX()
 		{
 			Processing = "dev_vending_machine_processing";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

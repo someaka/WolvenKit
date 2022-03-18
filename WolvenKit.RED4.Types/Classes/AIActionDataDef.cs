@@ -277,6 +277,10 @@ namespace WolvenKit.RED4.Types
 			AvoidLOSTimeStamp = new();
 			AttackBlocked = new();
 			AttackParried = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -254,6 +254,10 @@ namespace WolvenKit.RED4.Types
 			QuestNotification = "notification_quest";
 			GenericNotification = "notification";
 			MessageNotification = "notification_message";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

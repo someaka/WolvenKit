@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			TimeSystemCallbacks = new();
 			Fuses = new();
 			ForcedStatesStack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

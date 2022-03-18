@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			C_MaxDisplayRange = 50.000000F;
 			C_MaxDisplayRangeNotAggressive = 10.000000F;
 			C_DisplayRangeNotAggressive = 3.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

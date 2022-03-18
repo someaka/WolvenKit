@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameSmartObjectMembership()
 		{
 			Members = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

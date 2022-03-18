@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NPCgrunts = new();
 			EnvironmentSounds = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

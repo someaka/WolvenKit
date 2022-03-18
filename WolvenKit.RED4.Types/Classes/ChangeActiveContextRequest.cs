@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inputContextType>>();
 			set => SetPropertyValue<CEnum<inputContextType>>(value);
 		}
+
+		public ChangeActiveContextRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

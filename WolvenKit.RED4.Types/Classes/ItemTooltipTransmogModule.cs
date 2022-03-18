@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ButtonHintWidgetRef = new();
 			LabelRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

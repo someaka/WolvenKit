@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameStatModifierType>>();
 			set => SetPropertyValue<CEnum<gameStatModifierType>>(value);
 		}
+
+		public gameStatModifierData_Deprecated()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			PackageDependencies = new(0);
 			Variables = new();
 			Groups = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -168,6 +168,10 @@ namespace WolvenKit.RED4.Types
 			RepositioningVoScanningZoomFactor = 1.000000F;
 			GroupingExcludedVisualTags = new();
 			MaxWindowOffset = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

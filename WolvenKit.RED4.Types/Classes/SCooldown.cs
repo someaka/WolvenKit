@@ -122,6 +122,10 @@ namespace WolvenKit.RED4.Types
 			DelayId = new();
 			RemoveId = new();
 			OwnerItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

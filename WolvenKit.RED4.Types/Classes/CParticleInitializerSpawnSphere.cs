@@ -113,6 +113,10 @@ namespace WolvenKit.RED4.Types
 			SpawnPositiveZ = true;
 			SpawnNegativeZ = true;
 			WorldSpace = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

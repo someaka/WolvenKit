@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questIPayment_ConditionType>>();
 			set => SetPropertyValue<CHandle<questIPayment_ConditionType>>(value);
 		}
+
+		public questPaymentCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

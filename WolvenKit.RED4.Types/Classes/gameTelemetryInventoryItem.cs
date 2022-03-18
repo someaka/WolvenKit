@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			Quality = Enums.gamedataQuality.Invalid;
 			ItemType = Enums.gamedataItemType.Invalid;
 			ItemLevel = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

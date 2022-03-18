@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			ConeTransformLS = new() { Translation = new() { W = 1.000000F }, Rotation = new() { R = 1.000000F }, Scale = new() { X = 1.000000F, Y = 1.000000F, Z = 1.000000F, W = 1.000000F } };
 			HalfOfMaxApertureAngle = 45.000000F;
 			ProjectionType = Enums.animPendulumProjectionType.ShortestPathRotational;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

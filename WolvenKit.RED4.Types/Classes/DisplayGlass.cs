@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public DisplayGlass()
 		{
 			ControllerTypeName = "DisplayGlassController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

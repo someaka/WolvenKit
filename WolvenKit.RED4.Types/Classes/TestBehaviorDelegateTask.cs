@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AttrRef = new();
 			TaskRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

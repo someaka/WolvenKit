@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			IndexesOfComponentsToOFF = new();
 			ComponentsON = new();
 			ComponentsOFF = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

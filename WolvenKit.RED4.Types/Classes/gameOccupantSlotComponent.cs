@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameOccupantSlotComponent()
 		{
 			SlotData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

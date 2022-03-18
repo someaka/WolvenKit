@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldAcousticDataResource()
 		{
 			Cells = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Upper = 180.000000F;
 			Lower = -180.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 		public ExposureAreaSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

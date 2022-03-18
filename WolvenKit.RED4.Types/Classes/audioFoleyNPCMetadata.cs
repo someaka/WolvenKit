@@ -106,6 +106,10 @@ namespace WolvenKit.RED4.Types
 			SlowLight = new() { Events = new() };
 			Walk = new() { Events = new() };
 			Run = new() { Events = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			PiercingEffect = new();
 			TrailEffectName = "trail";
 			Alive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

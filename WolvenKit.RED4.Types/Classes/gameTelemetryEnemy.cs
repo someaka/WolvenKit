@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			EnemyEntityID = new();
 			Archetype = Enums.gamedataArchetypeType.Invalid;
 			Level = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimNode_SetDrivenKey_InternalsSetDrivenKeyEntryProviderInline()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

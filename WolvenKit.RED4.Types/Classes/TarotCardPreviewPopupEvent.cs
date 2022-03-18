@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<TarotCardPreviewData>>();
 			set => SetPropertyValue<CHandle<TarotCardPreviewData>>(value);
 		}
+
+		public TarotCardPreviewPopupEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

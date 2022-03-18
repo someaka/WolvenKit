@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Icon = new();
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

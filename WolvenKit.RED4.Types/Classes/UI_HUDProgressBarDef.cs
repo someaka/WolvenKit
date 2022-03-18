@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Header = new();
 			Active = new();
 			Progress = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

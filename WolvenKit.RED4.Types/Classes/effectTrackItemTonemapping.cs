@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			MidGrayScaleSDR = new();
 			MaxStopsHDR = new();
 			MidGrayScaleHDR = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

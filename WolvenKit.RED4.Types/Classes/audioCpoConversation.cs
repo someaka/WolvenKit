@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public audioCpoConversation()
 		{
 			VoTriggers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

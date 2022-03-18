@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Color = new();
 			PhysicsMaterial = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

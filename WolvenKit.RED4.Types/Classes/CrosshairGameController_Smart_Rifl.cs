@@ -344,6 +344,10 @@ namespace WolvenKit.RED4.Types
 			TargetsData = new();
 			BufferedSpread = new();
 			PrevTargetedEntityIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

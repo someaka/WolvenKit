@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TargetWidgetRef = new();
 			DisplayNameWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<moveMovementType>>();
 			set => SetPropertyValue<CEnum<moveMovementType>>(value);
 		}
+
+		public UseWorkspotCommandDelegate()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

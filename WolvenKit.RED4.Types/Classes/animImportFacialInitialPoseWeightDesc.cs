@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PoseNames = new();
 			Weights = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -101,6 +101,10 @@ namespace WolvenKit.RED4.Types
 			PoseIndices = new();
 			Weights = new();
 			InBetweenScopeMultipliers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

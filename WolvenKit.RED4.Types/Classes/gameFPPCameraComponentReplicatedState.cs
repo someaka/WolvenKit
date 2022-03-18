@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			LookAtData_m_pitchRef = 999.000000F;
 			LookAtData_m_yawInput = 999.000000F;
 			LookAtData_m_yawRef = 999.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

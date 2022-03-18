@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public resResourceSnapshot()
 		{
 			Resources = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

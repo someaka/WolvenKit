@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			TitleWrapper = new();
 			DescriptionWrapper = new();
 			DescriptionLine = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PlayContainer = new();
 			IsPlaying = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

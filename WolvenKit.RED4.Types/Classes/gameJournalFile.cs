@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Title = new() { Unk1 = 0, Value = "" };
 			Content = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

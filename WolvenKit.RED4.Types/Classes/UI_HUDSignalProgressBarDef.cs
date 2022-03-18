@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			Progress = new();
 			SignalStrength = new();
 			IsInRange = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

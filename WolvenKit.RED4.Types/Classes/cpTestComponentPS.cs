@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			NamePersistent = "P";
 			NamePersistentEdiable = "PE";
 			NamePersistentInstanceEditable = "PIE";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

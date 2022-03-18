@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Stretch = 1.000000F;
 			Weight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

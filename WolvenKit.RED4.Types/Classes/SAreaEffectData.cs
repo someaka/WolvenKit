@@ -151,6 +151,10 @@ namespace WolvenKit.RED4.Types
 			HighlightTargets = true;
 			HighlightType = Enums.EFocusForcedHighlightType.DISTRACTION;
 			HighlightPriority = Enums.EPriority.High;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

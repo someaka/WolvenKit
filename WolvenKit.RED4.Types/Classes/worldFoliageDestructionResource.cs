@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldFoliageDestructionResource()
 		{
 			Mappings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

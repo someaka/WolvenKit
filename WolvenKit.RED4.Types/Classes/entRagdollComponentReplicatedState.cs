@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Enabled = true;
 			Transforms = new();
 			IsSleeping = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

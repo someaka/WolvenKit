@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			UsedSpotId = new();
 			SpotUserId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

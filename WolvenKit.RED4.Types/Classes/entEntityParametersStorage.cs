@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public entEntityParametersStorage()
 		{
 			Parameters = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

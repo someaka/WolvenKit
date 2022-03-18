@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameObjectSpawnParametersList()
 		{
 			ParameterList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Priority = Enums.EPriority.Medium;
 			RemovePreviousRequests = true;
 			Savable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

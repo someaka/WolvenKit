@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkWidget>>(value);
 		}
+
+		public gameuiTutorialAreaSpawnEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIReactionData>>();
 			set => SetPropertyValue<CHandle<AIReactionData>>(value);
 		}
+
+		public SetDesiredReaction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

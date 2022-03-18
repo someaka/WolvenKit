@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Reveal = true;
 			Timeout = 4.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

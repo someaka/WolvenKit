@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			PlayEvents = new();
 			StopEvents = new();
 			ParameterEvents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

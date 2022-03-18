@@ -63,6 +63,10 @@ namespace WolvenKit.RED4.Types
 			PostTranslatedTextWidget = new();
 			NativeTextWidget = new();
 			TranslatedTextWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

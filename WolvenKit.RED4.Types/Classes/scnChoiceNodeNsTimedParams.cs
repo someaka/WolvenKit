@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public scnChoiceNodeNsTimedParams()
 		{
 			Duration = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

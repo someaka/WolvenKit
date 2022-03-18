@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			DocumentAdress = new() { FolderID = -1, DocumentID = -1 };
 			WakeUp = true;
 			OwnerID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

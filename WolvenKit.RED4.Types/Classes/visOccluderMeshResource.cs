@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public visOccluderMeshResource()
 		{
 			BoundingBox = new() { Min = new(), Max = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

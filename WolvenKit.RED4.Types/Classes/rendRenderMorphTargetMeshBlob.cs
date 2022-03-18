@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public rendRenderMorphTargetMeshBlob()
 		{
 			Header = new() { TargetStartsInVertexDiffs = new(), TargetStartsInVertexDiffsMapping = new(), TargetPositionDiffScale = new(), TargetPositionDiffOffset = new(), NumVertexDiffsInEachChunk = new(), NumVertexDiffsMappingInEachChunk = new(), TargetTextureDiffsData = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

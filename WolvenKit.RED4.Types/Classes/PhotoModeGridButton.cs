@@ -117,6 +117,10 @@ namespace WolvenKit.RED4.Types
 			HoverWidget = new();
 			PlusImg = new();
 			AtlasRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

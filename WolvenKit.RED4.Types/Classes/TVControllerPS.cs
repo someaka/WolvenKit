@@ -54,6 +54,10 @@ namespace WolvenKit.RED4.Types
 			DefaultGlitchVideoPath = new();
 			BroadcastGlitchVideoPath = new();
 			BackupCustomChannels = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public HackingRewardNotificationEvent()
 		{
 			Icons = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public RTAOAreaSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

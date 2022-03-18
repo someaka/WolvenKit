@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enabled = true;
 			MovePolicies = new() { Items = new(), LastAppliedActionsTime = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<animHitReactionType>>();
 			set => SetPropertyValue<CEnum<animHitReactionType>>(value);
 		}
+
+		public AIHitReactionTask()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

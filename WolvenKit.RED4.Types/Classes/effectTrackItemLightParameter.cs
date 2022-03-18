@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			IntensityMultiplier = new();
 			Intensity = new();
 			Radius = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EnableAdditiveAnim = true;
 			AdditiveScale = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<HUDInstruction>>();
 			set => SetPropertyValue<CHandle<HUDInstruction>>(value);
 		}
+
+		public HUDJob()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

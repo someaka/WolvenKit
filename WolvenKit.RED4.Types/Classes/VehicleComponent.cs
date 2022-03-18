@@ -322,6 +322,10 @@ namespace WolvenKit.RED4.Types
 			MappinID = new();
 			RaceClockTickID = new();
 			ArePlayerHitShapesEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

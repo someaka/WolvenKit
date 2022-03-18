@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<telemetryLevelGainReason>>();
 			set => SetPropertyValue<CEnum<telemetryLevelGainReason>>(value);
 		}
+
+		public SetProficiencyLevel()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

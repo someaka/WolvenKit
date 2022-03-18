@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedataWidgetStyle_Record>>();
 			set => SetPropertyValue<CHandle<gamedataWidgetStyle_Record>>(value);
 		}
+
+		public ScreenDefinitionPackage()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

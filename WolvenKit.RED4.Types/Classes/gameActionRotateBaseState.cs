@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public gameActionRotateBaseState()
 		{
 			RotationTime = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

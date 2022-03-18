@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Bg = new();
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<scnAnimNameType>>();
 			set => SetPropertyValue<CEnum<scnAnimNameType>>(value);
 		}
+
+		public scnAnimName()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

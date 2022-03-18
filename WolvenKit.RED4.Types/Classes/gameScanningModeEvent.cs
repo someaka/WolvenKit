@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameScanningMode>>();
 			set => SetPropertyValue<CEnum<gameScanningMode>>(value);
 		}
+
+		public gameScanningModeEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

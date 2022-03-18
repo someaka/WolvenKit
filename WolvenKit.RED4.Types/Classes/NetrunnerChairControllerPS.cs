@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 95884201829;
 			TweakDBDescriptionRecord = 149097016357;
 			KillDelay = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

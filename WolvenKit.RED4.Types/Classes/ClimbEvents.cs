@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IkHandEvents = new();
 			PlayerCapsuleDimensions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

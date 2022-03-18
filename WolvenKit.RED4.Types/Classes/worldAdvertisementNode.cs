@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MeshInitialScale = new();
 			LightsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

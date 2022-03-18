@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public communitySquadInitializer()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

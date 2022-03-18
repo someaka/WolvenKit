@@ -664,6 +664,10 @@ namespace WolvenKit.RED4.Types
 			SceneWeaponLoweringSpeedOverride = new();
 			IgnoreBarbedWireStateEnterTime = new();
 			IsInLoreAnimationScene = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

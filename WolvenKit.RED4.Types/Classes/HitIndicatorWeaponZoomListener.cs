@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<TargetHitIndicatorGameController>>();
 			set => SetPropertyValue<CWeakHandle<TargetHitIndicatorGameController>>(value);
 		}
+
+		public HitIndicatorWeaponZoomListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

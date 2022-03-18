@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnToggleScenario_InterruptionScenarioOperation()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

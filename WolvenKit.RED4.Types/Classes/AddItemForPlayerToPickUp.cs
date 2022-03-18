@@ -28,6 +28,10 @@ namespace WolvenKit.RED4.Types
 			ActionWidgetPackage = new() { DependendActions = new() };
 			CanTriggerStim = true;
 			ShouldAdd = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

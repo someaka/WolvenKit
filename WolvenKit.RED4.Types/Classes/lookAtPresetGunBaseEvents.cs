@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LookAtEvents = new();
 			OverrideLookAtEvents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

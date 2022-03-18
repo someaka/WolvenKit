@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			HipsTransformIndex = new();
 			LeftFootTransformIndex = new();
 			RightFootTransformIndex = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

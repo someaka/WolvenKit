@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public DEBUG_VirtualShopkeeper()
 		{
 			VendorID = "Vendors.CCLVendor";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			QuaternionNode = new();
 			Bone = new();
 			ResetOnActivation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

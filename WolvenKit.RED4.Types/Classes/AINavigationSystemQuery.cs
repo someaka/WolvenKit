@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			Target = new() { WorldPosition = new() { X = new(), Y = new(), Z = new() } };
 			AllowedTags = new();
 			BlockedTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

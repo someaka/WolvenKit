@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questITutorial_NodeSubType>>();
 			set => SetPropertyValue<CHandle<questITutorial_NodeSubType>>(value);
 		}
+
+		public questTutorial_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

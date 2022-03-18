@@ -68,5 +68,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkTextWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkTextWidget>>(value);
 		}
+
+		public DebugNpcNameplateGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

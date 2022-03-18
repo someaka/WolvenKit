@@ -68,5 +68,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<physicsFilterData>>();
 			set => SetPropertyValue<CHandle<physicsFilterData>>(value);
 		}
+
+		public physicsICollider()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

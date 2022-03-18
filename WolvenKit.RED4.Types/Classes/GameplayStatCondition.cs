@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public GameplayStatCondition()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

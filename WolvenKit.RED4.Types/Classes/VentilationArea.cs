@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "VentilationAreaController";
 			AttackRecord = "Attacks.FragGrenade";
 			GameEffectRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

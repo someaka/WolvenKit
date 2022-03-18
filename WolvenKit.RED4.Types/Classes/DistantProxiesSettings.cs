@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Enable = true;
 			DistantProxiesEmissiveHeight = 500.000000F;
 			DistantProxiesEmissivePower = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

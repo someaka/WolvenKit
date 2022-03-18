@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 			BlockSound = new() { Events = new() };
 			ParrySound = new() { Events = new() };
 			MeleeWeaponConfigurationsByRigTypeMap = new() { MapItems = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

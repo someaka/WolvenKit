@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioLanguageGameConfiguration()
 		{
 			LangsInProject = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

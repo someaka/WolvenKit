@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectExecutor_KatanaBulletBending()
 		{
 			Effects = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

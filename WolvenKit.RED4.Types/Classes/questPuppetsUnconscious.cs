@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questPuppetsUnconscious()
 		{
 			SetUnconscious = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

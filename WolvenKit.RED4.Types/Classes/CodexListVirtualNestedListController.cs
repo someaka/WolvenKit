@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<CodexListVirtualNestedDataView>>();
 			set => SetPropertyValue<CWeakHandle<CodexListVirtualNestedDataView>>(value);
 		}
+
+		public CodexListVirtualNestedListController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

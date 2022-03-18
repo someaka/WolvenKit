@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TargetBone = new();
 			PositionOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

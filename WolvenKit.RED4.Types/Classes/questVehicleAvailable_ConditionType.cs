@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questVehicleAvailable_ConditionType()
 		{
 			VehicleType = Enums.questAvailableVehicleType.SpecificVehicle;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public gameEffectParameter_BoolEvaluator_Value()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

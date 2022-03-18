@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public DeadOnInitTask()
 		{
 			PreventSkippingDeathAnimation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

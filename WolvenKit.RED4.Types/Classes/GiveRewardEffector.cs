@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public GiveRewardEffector()
 		{
 			Target = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AttackerRef = new() { Names = new() };
 			TargetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

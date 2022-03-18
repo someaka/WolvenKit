@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public TransmogButtonView()
 		{
 			Container = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

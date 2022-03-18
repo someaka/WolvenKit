@@ -115,6 +115,10 @@ namespace WolvenKit.RED4.Types
 			QuantizationBias = new();
 			BoxQuantizationScale = new();
 			BoxQuantizationBias = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

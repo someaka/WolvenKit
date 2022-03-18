@@ -89,6 +89,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PulseWidget = new();
 			C_pingAnimCount = 3;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

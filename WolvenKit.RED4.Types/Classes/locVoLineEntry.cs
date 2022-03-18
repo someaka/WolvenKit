@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<locVoResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<locVoResource>>(value);
 		}
+
+		public locVoLineEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

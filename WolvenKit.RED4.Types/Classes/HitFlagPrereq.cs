@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<hitFlag>>();
 			set => SetPropertyValue<CEnum<hitFlag>>(value);
 		}
+
+		public HitFlagPrereq()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

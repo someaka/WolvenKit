@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiGenericNotificationData()
 		{
 			WidgetLibraryResource = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

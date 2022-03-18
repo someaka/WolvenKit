@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamestateMachineParameterAspect>>();
 			set => SetPropertyValue<CEnum<gamestateMachineParameterAspect>>(value);
 		}
+
+		public gamestateMachineeventPostponedParameterBase()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

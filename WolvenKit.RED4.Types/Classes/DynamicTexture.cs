@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			Height = 256;
 			SamplesCount = 1;
 			DataFormat = Enums.DynamicTextureDataFormat.RGBA_Uint8_SRGB;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

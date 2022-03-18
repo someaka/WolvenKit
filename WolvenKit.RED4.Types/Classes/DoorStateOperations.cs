@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Components = new();
 			FxInstances = new();
 			DoorStateOperations_ = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

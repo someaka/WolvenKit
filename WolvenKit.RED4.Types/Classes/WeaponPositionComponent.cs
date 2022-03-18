@@ -279,6 +279,10 @@ namespace WolvenKit.RED4.Types
 			WeaponRotOffsetFromInput = new();
 			WeaponAimPosOffsetFromInput = new();
 			WeaponAimRotOffsetFromInput = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

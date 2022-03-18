@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HitHistory_ = new();
 			MaxEntries = 5;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

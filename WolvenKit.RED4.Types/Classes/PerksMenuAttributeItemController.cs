@@ -115,6 +115,10 @@ namespace WolvenKit.RED4.Types
 			ConnectionLine = new();
 			SkillsLevelsContainer = new();
 			ProficiencyButtonRefs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

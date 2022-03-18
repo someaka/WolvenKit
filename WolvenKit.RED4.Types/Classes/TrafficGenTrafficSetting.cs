@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<TrafficGenMeshImpact>>();
 			set => SetPropertyValue<CEnum<TrafficGenMeshImpact>>(value);
 		}
+
+		public TrafficGenTrafficSetting()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

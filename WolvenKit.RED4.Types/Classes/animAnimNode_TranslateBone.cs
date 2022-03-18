@@ -70,6 +70,10 @@ namespace WolvenKit.RED4.Types
 			BiasValue = new();
 			Bone = new();
 			ResetOnActivation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

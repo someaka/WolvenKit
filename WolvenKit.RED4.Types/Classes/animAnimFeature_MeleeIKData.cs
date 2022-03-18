@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			HeadPosition = new();
 			ChestPosition = new();
 			IkOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

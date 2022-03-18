@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorMappingExpressionDefinition()
 		{
 			BehaviorCallbackNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

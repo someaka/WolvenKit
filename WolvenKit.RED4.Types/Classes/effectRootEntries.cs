@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			InheritRotation = true;
 			Roots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

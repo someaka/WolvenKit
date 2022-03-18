@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EntitiesAtGate()
 		{
 			EntitiesAtGate_ = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

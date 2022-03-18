@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimFeature_EditorOnlyPredictiveLookAt()
 		{
 			Target = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SimulationFilter = new();
 			QueryFilter = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

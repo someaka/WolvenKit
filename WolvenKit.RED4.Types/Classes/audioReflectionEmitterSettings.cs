@@ -146,6 +146,10 @@ namespace WolvenKit.RED4.Types
 			NearReflectionDistance = 10.000000F;
 			MinimumFaceAlignement = 0.500000F;
 			FixedRaycastPitch = 15.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

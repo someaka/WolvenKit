@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ElevatorUpArrowsWidget = new();
 			ElevatorDownArrowsWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

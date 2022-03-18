@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EBOOL>>();
 			set => SetPropertyValue<CEnum<EBOOL>>(value);
 		}
+
+		public CooldownStorageID()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

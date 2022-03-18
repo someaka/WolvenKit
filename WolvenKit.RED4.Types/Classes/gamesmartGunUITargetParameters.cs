@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Pos = new();
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			PatrolPointDefs = new();
 			PatrolPoints = new();
 			Spots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

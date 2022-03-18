@@ -166,6 +166,10 @@ namespace WolvenKit.RED4.Types
 			PortalIcon = new();
 			AnimOptions = new();
 			VehicleAlreadySummonedTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

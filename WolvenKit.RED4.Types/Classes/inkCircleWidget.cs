@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public inkCircleWidget()
 		{
 			SegmentsNumber = 20;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkanimProxy>>();
 			set => SetPropertyValue<CHandle<inkanimProxy>>(value);
 		}
+
+		public CraftingNotification()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

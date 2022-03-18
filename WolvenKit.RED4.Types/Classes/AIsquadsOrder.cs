@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AIsquadsOrder()
 		{
 			State = 64;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

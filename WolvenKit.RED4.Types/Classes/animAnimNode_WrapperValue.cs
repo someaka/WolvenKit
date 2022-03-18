@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = 4294967295;
 			WrapperNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 87263028572;
 			TweakDBDescriptionRecord = 139452770593;
 			EffectsToPlay = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

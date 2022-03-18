@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CLegacySingleChannelCurve<CFloat>>();
 			set => SetPropertyValue<CLegacySingleChannelCurve<CFloat>>(value);
 		}
+
+		public CurveSetEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

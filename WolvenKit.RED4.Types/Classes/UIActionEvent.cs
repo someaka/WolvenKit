@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameObject>>();
 			set => SetPropertyValue<CWeakHandle<gameObject>>(value);
 		}
+
+		public UIActionEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

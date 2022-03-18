@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DownloadButton = new();
 			DescriptionText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

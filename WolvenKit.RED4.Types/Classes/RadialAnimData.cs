@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Hover_out = "Anim name for hover out";
 			Cycle_in = "Anim name for cycle in animation";
 			Cycle_out = "Anim name for cycle out animation";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

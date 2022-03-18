@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Transition = new();
 			StopActiveAnimation = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -167,6 +167,10 @@ namespace WolvenKit.RED4.Types
 			SmoothingNumNeighbours = 1;
 			GarmentBorderThreshold = 0.500000F;
 			RemoveHiddenTriangles = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

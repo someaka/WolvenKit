@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SendNotification = true;
 			TrackQuest = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

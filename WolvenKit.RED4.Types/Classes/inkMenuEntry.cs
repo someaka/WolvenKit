@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public inkMenuEntry()
 		{
 			IsAffectedByFadeout = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

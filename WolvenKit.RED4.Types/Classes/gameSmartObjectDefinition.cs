@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Actions = new() { "CoverGetOut" };
 			Enabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

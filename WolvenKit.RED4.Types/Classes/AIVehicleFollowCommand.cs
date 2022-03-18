@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			DistanceMax = 1.000000F;
 			StopWhenTargetReached = true;
 			UseTraffic = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

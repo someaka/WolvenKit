@@ -129,6 +129,10 @@ namespace WolvenKit.RED4.Types
 			ButtonHintsSecondaryManagerRef = new();
 			ButtonHintsSecondaryManagerParentRef = new();
 			LongTextTrashold = 1000;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

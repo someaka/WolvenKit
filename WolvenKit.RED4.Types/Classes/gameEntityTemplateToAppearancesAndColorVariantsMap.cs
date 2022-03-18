@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameEntityTemplateToAppearancesAndColorVariantsMap()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

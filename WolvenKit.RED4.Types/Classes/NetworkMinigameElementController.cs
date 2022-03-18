@@ -101,6 +101,10 @@ namespace WolvenKit.RED4.Types
 			TextHighlightColor = new();
 			Bg = new();
 			ColorAccent = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

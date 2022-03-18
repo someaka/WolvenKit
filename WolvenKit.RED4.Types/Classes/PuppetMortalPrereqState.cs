@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<PuppetMortalityListener>>();
 			set => SetPropertyValue<CWeakHandle<PuppetMortalityListener>>(value);
 		}
+
+		public PuppetMortalPrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

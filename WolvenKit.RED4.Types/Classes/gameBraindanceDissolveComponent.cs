@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			DissolveRadius = 0.600000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

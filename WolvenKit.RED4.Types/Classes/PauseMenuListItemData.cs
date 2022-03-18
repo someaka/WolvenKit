@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<PauseMenuAction>>();
 			set => SetPropertyValue<CEnum<PauseMenuAction>>(value);
 		}
+
+		public PauseMenuListItemData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

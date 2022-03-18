@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			NumberOfLoops = 1;
 			SortPatrolPoints = true;
 			PatrolAction = 144011363920;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

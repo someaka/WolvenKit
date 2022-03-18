@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Lines = new();
 			EntityDistance = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

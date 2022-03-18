@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Arrow = new();
 			Frame = new();
 			ContentContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

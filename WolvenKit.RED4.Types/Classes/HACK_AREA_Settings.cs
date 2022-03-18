@@ -95,6 +95,10 @@ namespace WolvenKit.RED4.Types
 			SkyScale = 1.000000F;
 			EmissiveScale = 1.000000F;
 			AlbedoMetalness = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

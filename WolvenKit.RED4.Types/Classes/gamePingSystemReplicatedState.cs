@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamePingSystemReplicatedState()
 		{
 			ReplicatedPingEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

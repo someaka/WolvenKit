@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public gameEffectAction_TerminateChildEffect()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

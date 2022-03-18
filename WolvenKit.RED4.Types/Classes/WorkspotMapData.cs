@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public WorkspotMapData()
 		{
 			Workspots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

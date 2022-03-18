@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameMuppetInputActionSelectWeapon()
 		{
 			WantedWeapon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

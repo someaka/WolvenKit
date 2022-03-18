@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CInt32>();
 			set => SetPropertyValue<CInt32>(value);
 		}
+
+		public AnimFeature_VehicleSteeringLimit()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

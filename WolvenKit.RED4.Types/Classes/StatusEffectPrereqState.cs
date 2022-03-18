@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<StatusEffectPrereqListener>>();
 			set => SetPropertyValue<CHandle<StatusEffectPrereqListener>>(value);
 		}
+
+		public StatusEffectPrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

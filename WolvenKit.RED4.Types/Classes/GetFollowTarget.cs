@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<vehicleBaseObject>>();
 			set => SetPropertyValue<CWeakHandle<vehicleBaseObject>>(value);
 		}
+
+		public GetFollowTarget()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

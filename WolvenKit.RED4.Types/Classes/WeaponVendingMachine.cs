@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public WeaponVendingMachine()
 		{
 			ControllerTypeName = "WeaponVendingMachineController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

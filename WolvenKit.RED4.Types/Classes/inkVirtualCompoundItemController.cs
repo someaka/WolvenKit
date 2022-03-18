@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			Selected_672 = new();
 			Deselected = new();
 			Added = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

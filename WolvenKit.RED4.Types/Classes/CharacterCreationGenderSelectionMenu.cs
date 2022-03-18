@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			StreetRat_male = new();
 			StreetRat_female = new();
 			ClickTarget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

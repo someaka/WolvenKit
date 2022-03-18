@@ -94,6 +94,10 @@ namespace WolvenKit.RED4.Types
 			FaceUpStartPosition = new();
 			FaceDownStartPosition = new();
 			WarpDistance = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

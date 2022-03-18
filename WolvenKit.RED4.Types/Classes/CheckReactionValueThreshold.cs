@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EReactionValue>>();
 			set => SetPropertyValue<CEnum<EReactionValue>>(value);
 		}
+
+		public CheckReactionValueThreshold()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

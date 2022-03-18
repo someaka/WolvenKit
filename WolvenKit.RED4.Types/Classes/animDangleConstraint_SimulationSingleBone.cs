@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<animTransformIndex>();
 			set => SetPropertyValue<animTransformIndex>(value);
 		}
+
+		public animDangleConstraint_SimulationSingleBone()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

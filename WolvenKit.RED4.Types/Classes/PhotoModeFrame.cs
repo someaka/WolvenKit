@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public PhotoModeFrame()
 		{
 			Images = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

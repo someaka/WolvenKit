@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			SourceSquaredDistance = float.PositiveInfinity;
 			SourceRadius = 0.400000F;
 			VehicleEntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

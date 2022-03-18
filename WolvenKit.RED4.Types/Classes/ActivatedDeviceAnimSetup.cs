@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ActivatedDeviceAnimSetup()
 		{
 			AnimationTime = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

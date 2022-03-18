@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SExperiencePoints()
 		{
 			Entity = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

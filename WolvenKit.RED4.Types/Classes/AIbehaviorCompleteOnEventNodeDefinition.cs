@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorCompleteOnEventNodeDefinition()
 		{
 			ResultOnEvent = Enums.AIbehaviorCompletionStatus.SUCCESS;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

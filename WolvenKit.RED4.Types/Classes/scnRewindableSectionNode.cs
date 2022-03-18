@@ -45,6 +45,10 @@ namespace WolvenKit.RED4.Types
 			SectionDuration = new();
 			ActorBehaviors = new();
 			PlaySpeedModifiers = new() { ForwardVeryFast = 6.000000F, ForwardFast = 3.000000F, ForwardSlow = 0.500000F, BackwardVeryFast = 6.000000F, BackwardFast = 3.000000F, BackwardSlow = 0.500000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			ShapeRef = new();
 			BorderRef = new();
 			MarkedStateName = "Marked";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

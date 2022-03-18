@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			RangeText = new();
 			DeliveryIcon = new();
 			DeliveryText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

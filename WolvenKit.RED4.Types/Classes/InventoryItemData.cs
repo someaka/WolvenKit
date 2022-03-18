@@ -465,6 +465,10 @@ namespace WolvenKit.RED4.Types
 			PrimaryStats = new();
 			SecondaryStats = new();
 			SortData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

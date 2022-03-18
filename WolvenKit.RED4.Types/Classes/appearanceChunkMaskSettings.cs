@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ChunksIds = new();
 			MeshLayout = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Arrow = new();
 			Value = new();
 			DiffValue = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

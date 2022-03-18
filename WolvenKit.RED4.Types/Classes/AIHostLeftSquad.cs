@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<AISquadScriptInterface>>();
 			set => SetPropertyValue<CWeakHandle<AISquadScriptInterface>>(value);
 		}
+
+		public AIHostLeftSquad()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

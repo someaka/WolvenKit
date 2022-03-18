@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AITreeNodeInterruptionDecoratorDefinition()
 		{
 			Interruptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

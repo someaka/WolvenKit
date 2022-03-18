@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public scnLookAtHeadProperties()
 		{
 			EnableFactor = 0.750000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

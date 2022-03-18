@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Contexts = new();
 			ResultIfNoCommand = Enums.AIbehaviorCompletionStatus.SUCCESS;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

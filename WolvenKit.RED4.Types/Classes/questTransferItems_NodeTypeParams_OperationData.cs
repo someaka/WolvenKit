@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questTransferItems_NodeTypeParams_OperationData()
 		{
 			Quantity = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

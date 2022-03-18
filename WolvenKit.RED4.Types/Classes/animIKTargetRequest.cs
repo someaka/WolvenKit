@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			WeightOrientation = 1.000000F;
 			TransitionIn = 0.300000F;
 			TransitionOut = 0.300000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DisappearAfterEquip = true;
 			RespawnTime = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

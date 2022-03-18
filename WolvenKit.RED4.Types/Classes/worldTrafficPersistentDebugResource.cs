@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			BrokenUIDs = new();
 			BrokenUIDsDeadEnds = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

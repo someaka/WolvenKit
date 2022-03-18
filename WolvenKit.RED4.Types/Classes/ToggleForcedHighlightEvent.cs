@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EToggleOperationType>>();
 			set => SetPropertyValue<CEnum<EToggleOperationType>>(value);
 		}
+
+		public ToggleForcedHighlightEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

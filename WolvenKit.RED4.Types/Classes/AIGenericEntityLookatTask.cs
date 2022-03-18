@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<entEntity>>();
 			set => SetPropertyValue<CWeakHandle<entEntity>>(value);
 		}
+
+		public AIGenericEntityLookatTask()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

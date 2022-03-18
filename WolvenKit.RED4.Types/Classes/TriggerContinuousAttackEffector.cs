@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public TriggerContinuousAttackEffector()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

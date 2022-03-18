@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public gameEntityReference()
 		{
 			Names = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -184,6 +184,10 @@ namespace WolvenKit.RED4.Types
 		public WeaponReadyListenerTransition()
 		{
 			CallBackIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

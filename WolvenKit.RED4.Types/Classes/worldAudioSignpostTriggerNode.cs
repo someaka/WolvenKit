@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public worldAudioSignpostTriggerNode()
 		{
 			ExitCooldown = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

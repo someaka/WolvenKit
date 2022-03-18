@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public inkanimSequenceTargetInfo()
 		{
 			Path = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

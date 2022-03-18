@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TicketHistory = new();
 			EnumValueToNdx = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

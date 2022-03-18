@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			VerticalVelocityOffsetUpBlendTime = 0.080000F;
 			VerticalVelocityOffsetDownBlendTime = 0.030000F;
 			SlidingOnSlopeBlendTime = 0.200000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

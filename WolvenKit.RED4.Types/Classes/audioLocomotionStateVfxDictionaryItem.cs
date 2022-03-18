@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<CResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<CResource>>(value);
 		}
+
+		public audioLocomotionStateVfxDictionaryItem()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

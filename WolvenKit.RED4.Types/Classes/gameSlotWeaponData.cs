@@ -87,6 +87,10 @@ namespace WolvenKit.RED4.Types
 			TriggerModeList = new();
 			Evolution = Enums.gamedataWeaponEvolution.Invalid;
 			IsFirstEquip = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

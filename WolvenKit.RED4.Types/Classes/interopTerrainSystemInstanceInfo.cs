@@ -104,6 +104,10 @@ namespace WolvenKit.RED4.Types
 		public interopTerrainSystemInstanceInfo()
 		{
 			NumUsedLODCells = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

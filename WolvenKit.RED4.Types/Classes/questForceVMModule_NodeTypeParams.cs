@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Reference = new() { Names = new() };
 			Components = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

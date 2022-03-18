@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<QuickSlotActionType>>();
 			set => SetPropertyValue<CEnum<QuickSlotActionType>>(value);
 		}
+
+		public CallAction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

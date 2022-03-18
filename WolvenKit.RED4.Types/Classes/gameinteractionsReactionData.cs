@@ -85,6 +85,10 @@ namespace WolvenKit.RED4.Types
 			RequiredEquips = new();
 			InteractionPoint = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			IKPoint = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

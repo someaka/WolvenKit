@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public RevealRequestsStorage()
 		{
 			RequestersList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

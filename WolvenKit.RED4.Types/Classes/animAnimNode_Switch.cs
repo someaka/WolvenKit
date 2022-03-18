@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			BlendTime = 0.100000F;
 			WeightNode = new();
 			InputNodes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

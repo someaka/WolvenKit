@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VfxToCache = new();
 			SfxToCache = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

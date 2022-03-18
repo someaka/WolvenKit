@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TargetRef = new() { Names = new() };
 			EventType = Enums.questBehindInteractionEventType.StartedBeingBehind;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

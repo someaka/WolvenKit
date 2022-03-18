@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIArgumentSerializableValue()
 		{
 			Type = Enums.AIArgumentType.Serializable;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

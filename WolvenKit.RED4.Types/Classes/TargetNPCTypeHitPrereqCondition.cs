@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataNPCType>>();
 			set => SetPropertyValue<CEnum<gamedataNPCType>>(value);
 		}
+
+		public TargetNPCTypeHitPrereqCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

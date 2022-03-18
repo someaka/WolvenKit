@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			EastOffset = new();
 			WestOffset = new();
 			Pins = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

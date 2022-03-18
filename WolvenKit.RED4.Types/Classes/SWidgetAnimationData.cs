@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 		public SWidgetAnimationData()
 		{
 			PlaybackOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

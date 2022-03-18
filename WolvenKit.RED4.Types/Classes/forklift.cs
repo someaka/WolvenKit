@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<entPhysicalMeshComponent>>();
 			set => SetPropertyValue<CHandle<entPhysicalMeshComponent>>(value);
 		}
+
+		public forklift()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

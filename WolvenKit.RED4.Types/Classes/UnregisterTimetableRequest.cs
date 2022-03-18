@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public UnregisterTimetableRequest()
 		{
 			RequesterData = new() { Id = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

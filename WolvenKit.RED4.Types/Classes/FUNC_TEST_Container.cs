@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Compound = new();
 			Leaf = new();
 			Widget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

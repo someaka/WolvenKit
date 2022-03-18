@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EMovementDirection>>();
 			set => SetPropertyValue<CEnum<EMovementDirection>>(value);
 		}
+
+		public ObjectMoverStatus()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

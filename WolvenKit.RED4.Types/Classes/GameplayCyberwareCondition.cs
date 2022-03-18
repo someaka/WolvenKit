@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public GameplayCyberwareCondition()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

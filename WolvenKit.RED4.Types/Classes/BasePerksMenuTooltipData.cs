@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<PlayerDevelopmentDataManager>>();
 			set => SetPropertyValue<CHandle<PlayerDevelopmentDataManager>>(value);
 		}
+
+		public BasePerksMenuTooltipData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

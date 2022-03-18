@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<entEntityTemplate>>();
 			set => SetPropertyValue<CResourceAsyncReference<entEntityTemplate>>(value);
 		}
+
+		public gameNetrunnerPrototypeStruct()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

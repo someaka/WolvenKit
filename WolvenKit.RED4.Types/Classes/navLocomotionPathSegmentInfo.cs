@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public navLocomotionPathSegmentInfo()
 		{
 			SegmentEnd = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

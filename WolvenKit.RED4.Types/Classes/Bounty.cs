@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public Bounty()
 		{
 			Transgressions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

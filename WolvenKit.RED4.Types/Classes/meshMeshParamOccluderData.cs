@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DefaultOccluderType = Enums.visWorldOccluderType.None;
 			AutoHideDistanceScale = 255;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

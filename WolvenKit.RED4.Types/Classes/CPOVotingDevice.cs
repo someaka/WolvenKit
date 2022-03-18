@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			BlockAfterOperation = false;
 			FactToUnblock = "defaults to compatibleDeviceName_enabled";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

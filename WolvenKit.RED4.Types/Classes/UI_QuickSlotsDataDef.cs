@@ -169,6 +169,10 @@ namespace WolvenKit.RED4.Types
 			DpadHintRefresh = new();
 			ContainerConsumable = new();
 			ConsumableBeingUsed = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

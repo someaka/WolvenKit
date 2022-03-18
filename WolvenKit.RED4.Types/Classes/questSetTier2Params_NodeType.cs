@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public questSetTier2Params_NodeType()
 		{
 			PlayerWalkType = Enums.Tier2WalkType.Normal;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AICommandQueuePS()
 		{
 			BehaviorArgumentList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

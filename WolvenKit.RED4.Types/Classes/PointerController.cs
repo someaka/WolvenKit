@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			Pointer = new();
 			CenterButtonSlot = new();
 			CurrentIndex = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

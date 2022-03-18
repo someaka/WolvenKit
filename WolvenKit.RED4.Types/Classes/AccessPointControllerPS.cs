@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 			ShouldScannerShowNetwork = false;
 			RewardNotificationIcons = new();
 			PingedSquads = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

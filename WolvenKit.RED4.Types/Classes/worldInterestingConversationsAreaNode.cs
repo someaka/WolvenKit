@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			ConversationResources = new();
 			Conversations = new();
 			Workspots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CurrentBounty = new();
 			CurrentWantedLevel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

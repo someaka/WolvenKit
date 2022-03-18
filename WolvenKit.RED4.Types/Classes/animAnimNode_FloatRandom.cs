@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Rand = true;
 			Cooldown = 1.000000F;
 			Max = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

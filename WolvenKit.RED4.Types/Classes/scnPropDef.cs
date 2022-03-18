@@ -130,6 +130,10 @@ namespace WolvenKit.RED4.Types
 			SpawnerParams = new();
 			FindEntityInNodeParams = new();
 			FindEntityInWorldParams = new() { ActorRef = new() { Names = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

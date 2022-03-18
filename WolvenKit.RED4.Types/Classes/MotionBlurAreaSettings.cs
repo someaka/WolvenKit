@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enable = true;
 			Strength = 0.200000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

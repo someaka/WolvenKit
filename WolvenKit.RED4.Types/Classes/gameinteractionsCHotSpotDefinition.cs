@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameinteractionsCHotSpotDefinition()
 		{
 			LayersDefinition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

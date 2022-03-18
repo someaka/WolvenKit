@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldTrafficStaticCollisionData()
 		{
 			LaneCollisions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

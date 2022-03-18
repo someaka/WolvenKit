@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			TexturesPerUnit = 0.500000F;
 			MinSegmentsPer360Degrees = 40;
 			RibbonTesselationDelta = 100.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public Stillage()
 		{
 			ControllerTypeName = "StillageController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

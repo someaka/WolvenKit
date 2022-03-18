@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			TintColor = new();
 			ScreenAreaMultiplier = 1.000000F;
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

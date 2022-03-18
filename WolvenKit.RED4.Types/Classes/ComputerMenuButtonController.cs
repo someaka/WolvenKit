@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CounterWidget = new();
 			Notificationidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

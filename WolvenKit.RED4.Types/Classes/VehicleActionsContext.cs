@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public VehicleActionsContext()
 		{
 			RequestorID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

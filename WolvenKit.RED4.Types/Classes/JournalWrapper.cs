@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			JournalSubQuestContext = new() { StateFilter = new(), ClassFilter = new() };
 			ListOfJournalEntries = new();
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

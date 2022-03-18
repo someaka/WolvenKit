@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 		public gameSmartObjectPropertyDictionaryPropertyEntry()
 		{
 			MovementOrientation = Enums.moveMovementOrientationType.Forward;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

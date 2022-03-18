@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SecurityGateForceUnlock()
 		{
 			EntranceAllowedFor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

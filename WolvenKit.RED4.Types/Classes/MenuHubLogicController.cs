@@ -176,6 +176,10 @@ namespace WolvenKit.RED4.Types
 			PanelJournal = new();
 			PanelCharacter = new();
 			TooltipsManagerRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

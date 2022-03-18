@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			Reactions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

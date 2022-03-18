@@ -183,6 +183,10 @@ namespace WolvenKit.RED4.Types
 			CosOfHalfXAngle = 1.000000F;
 			CosOfHalfYAngle = 0.707107F;
 			SinOfHalfYAngle = 0.707107F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

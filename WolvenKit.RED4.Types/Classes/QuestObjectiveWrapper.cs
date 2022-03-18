@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public QuestObjectiveWrapper()
 		{
 			QuestSubObjectives = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

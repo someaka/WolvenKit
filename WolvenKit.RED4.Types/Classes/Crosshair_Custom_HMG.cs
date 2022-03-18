@@ -210,6 +210,10 @@ namespace WolvenKit.RED4.Types
 			LatchVertical = 40.000000F;
 			TargetColorChange = new();
 			ForcedCooldownOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

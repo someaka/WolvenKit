@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			DistrictName = new();
 			DistrictIcon = new();
 			DistrictFluffIcon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

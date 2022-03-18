@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<DataBuffer>();
 			set => SetPropertyValue<DataBuffer>(value);
 		}
+
+		public inkWidgetLibraryItem()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

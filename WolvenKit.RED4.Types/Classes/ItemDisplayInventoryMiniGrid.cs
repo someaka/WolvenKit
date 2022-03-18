@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			GridList = new();
 			Label = new();
 			GridData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

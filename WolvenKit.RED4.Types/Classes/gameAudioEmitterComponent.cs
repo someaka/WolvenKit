@@ -78,6 +78,10 @@ namespace WolvenKit.RED4.Types
 			UpdateDistance = 100.000000F;
 			Tags = new();
 			TagList = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnWorkspotData_ExternalWorkspotResource()
 		{
 			DataId = new() { Id = 4294967295 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

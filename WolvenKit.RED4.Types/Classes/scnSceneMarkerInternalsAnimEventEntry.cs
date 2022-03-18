@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			EndPos = new();
 			StartDir = new();
 			EndDir = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

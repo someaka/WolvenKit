@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<TweakDBID>();
 			set => SetPropertyValue<TweakDBID>(value);
 		}
+
+		public workEquipInventoryWeaponAction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

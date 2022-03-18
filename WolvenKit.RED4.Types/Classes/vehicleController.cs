@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AlarmCurve = "default_alarm";
 			AlarmTime = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

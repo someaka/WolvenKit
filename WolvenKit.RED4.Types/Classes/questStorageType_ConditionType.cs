@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questStorage>>();
 			set => SetPropertyValue<CEnum<questStorage>>(value);
 		}
+
+		public questStorageType_ConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

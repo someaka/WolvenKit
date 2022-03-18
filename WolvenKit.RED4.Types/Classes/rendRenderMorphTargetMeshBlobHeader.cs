@@ -102,6 +102,10 @@ namespace WolvenKit.RED4.Types
 			NumVertexDiffsInEachChunk = new();
 			NumVertexDiffsMappingInEachChunk = new();
 			TargetTextureDiffsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

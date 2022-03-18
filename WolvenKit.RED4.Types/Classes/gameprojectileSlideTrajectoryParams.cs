@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Stickiness = 0.500000F;
 			ConstAccel = new() { Z = -0.500000F, W = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

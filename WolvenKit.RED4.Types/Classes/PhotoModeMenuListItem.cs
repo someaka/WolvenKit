@@ -366,6 +366,10 @@ namespace WolvenKit.RED4.Types
 			GridBottomRow = new();
 			OptionSelectorValues = new();
 			HoldBgInitMargin = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

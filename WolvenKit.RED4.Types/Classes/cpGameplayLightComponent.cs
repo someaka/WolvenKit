@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Begin = new();
 			End = new();
 			DelayRange = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

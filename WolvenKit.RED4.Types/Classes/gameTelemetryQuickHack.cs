@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gameTelemetryQuickHack()
 		{
 			Quality = Enums.gamedataQuality.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

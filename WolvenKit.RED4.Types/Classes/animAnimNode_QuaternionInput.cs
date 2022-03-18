@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimNode_QuaternionInput()
 		{
 			Id = 4294967295;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -70,6 +70,10 @@ namespace WolvenKit.RED4.Types
 			BannerButtonWidget = new();
 			BannerData = new() { Content = new() };
 			LastPlayedVideo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

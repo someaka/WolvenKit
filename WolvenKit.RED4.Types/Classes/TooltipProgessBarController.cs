@@ -86,6 +86,10 @@ namespace WolvenKit.RED4.Types
 			HintTextHolder = new();
 			LibraryPath = new() { WidgetLibrary = new() };
 			PostprogressText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

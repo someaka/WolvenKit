@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public RoyceHealthChangeListener()
 		{
 			Weakspots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

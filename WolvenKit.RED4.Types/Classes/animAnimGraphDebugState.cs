@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimGraphDebugState()
 		{
 			Nodes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

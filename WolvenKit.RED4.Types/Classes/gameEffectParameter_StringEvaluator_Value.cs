@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CString>();
 			set => SetPropertyValue<CString>(value);
 		}
+
+		public gameEffectParameter_StringEvaluator_Value()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

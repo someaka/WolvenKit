@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimNode_SkPhaseWithDurationAnim()
 		{
 			DurationLink = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

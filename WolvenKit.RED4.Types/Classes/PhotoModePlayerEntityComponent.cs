@@ -144,6 +144,10 @@ namespace WolvenKit.RED4.Types
 			SwapRifleWeaponItemId = new();
 			SwapShootgunWeaponItemId = new();
 			LoadingItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			NamesWidget = new();
 			ScoresWidget = new();
 			HighScores = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

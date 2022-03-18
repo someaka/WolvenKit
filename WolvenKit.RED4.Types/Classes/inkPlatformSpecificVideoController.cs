@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<Bink>>();
 			set => SetPropertyValue<CResourceAsyncReference<Bink>>(value);
 		}
+
+		public inkPlatformSpecificVideoController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

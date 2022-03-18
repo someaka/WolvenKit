@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			MessegeWidget = new();
 			MessageBackgroundWidget = new();
 			ActiveVideo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

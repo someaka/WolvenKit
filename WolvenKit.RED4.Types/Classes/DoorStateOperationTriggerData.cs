@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EDoorStatus>>();
 			set => SetPropertyValue<CEnum<EDoorStatus>>(value);
 		}
+
+		public DoorStateOperationTriggerData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

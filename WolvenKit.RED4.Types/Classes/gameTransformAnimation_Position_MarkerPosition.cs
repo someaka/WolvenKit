@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameTransformAnimation_Position_MarkerPosition()
 		{
 			Offset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

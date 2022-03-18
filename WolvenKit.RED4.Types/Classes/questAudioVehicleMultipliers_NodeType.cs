@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VehicleRef = new() { Names = new() };
 			Multipliers = new() { ThrottleInputMultiplier = 1.000000F, RpmMultiplier = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

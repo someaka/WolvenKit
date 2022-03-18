@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<LibTreeDefTreeVariablesList>();
 			set => SetPropertyValue<LibTreeDefTreeVariablesList>(value);
 		}
+
+		public LibTreeCTreeResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

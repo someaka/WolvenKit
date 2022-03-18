@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<IMaterial>>();
 			set => SetPropertyValue<CResourceReference<IMaterial>>(value);
 		}
+
+		public gameEffectExecutor_OverrideMaterial()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Targets = new();
 			BlockedStims = new();
 			FallbackInterval = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

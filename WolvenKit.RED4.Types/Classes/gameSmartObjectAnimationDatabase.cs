@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AnimationData = new();
 			BodyTypesData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

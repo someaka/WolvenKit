@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gamemappinsPointOfInterestMappinData()
 		{
 			Active = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

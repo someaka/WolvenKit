@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MsgLabel = new();
 			MsgContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

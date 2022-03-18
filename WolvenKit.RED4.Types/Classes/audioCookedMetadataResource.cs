@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioCookedMetadataResource()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

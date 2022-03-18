@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			GameEffectRef = new();
 			JammedSensorsArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

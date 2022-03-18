@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<ChargebarController>>();
 			set => SetPropertyValue<CWeakHandle<ChargebarController>>(value);
 		}
+
+		public ChargebarStatsListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

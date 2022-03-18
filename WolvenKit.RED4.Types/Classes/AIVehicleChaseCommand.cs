@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			DistanceMin = 0.500000F;
 			DistanceMax = 1.000000F;
 			ForcedStartSpeed = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

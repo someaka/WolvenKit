@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Id = 4294967295;
 			OnTrue = 1.000000F;
 			InputsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

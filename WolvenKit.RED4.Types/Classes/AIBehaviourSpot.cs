@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIResourceReference>>();
 			set => SetPropertyValue<CHandle<AIResourceReference>>(value);
 		}
+
+		public AIBehaviourSpot()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

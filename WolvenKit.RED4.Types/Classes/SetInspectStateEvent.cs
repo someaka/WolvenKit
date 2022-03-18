@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questObjectInspectEventType>>();
 			set => SetPropertyValue<CEnum<questObjectInspectEventType>>(value);
 		}
+
+		public SetInspectStateEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

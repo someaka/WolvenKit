@@ -126,6 +126,10 @@ namespace WolvenKit.RED4.Types
 			Duration = 1.000000F;
 			Dt = 0.033000F;
 			ExtraDataNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public RemoveFromChainRequest()
 		{
 			RequestSource = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CameraLimit = 5;
 			CameraList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questCharacterCallReinforcements_ConditionType()
 		{
 			PuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

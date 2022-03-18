@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameTutorialOverlayData()
 		{
 			WidgetLibraryResource = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

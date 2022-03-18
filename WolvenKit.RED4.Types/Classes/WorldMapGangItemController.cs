@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FactionNameText = new();
 			FactionIconImage = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

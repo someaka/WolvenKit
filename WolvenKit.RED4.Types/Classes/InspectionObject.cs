@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameinteractionsComponent>>();
 			set => SetPropertyValue<CHandle<gameinteractionsComponent>>(value);
 		}
+
+		public InspectionObject()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

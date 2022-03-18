@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public TooltipLootingCachedData()
 		{
 			ComparisonItemId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

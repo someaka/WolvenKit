@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			ColorB = 255.000000F;
 			ColorA = 255.000000F;
 			Saturation = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

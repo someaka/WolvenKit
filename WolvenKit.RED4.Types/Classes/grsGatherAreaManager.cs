@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public grsGatherAreaManager()
 		{
 			ActiveGatherAreaRepInfo = new() { EnteredPlayerIDs = new(0) };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

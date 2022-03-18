@@ -37,6 +37,10 @@ namespace WolvenKit.RED4.Types
 			CanTriggerStim = true;
 			ItemID = new();
 			Price = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

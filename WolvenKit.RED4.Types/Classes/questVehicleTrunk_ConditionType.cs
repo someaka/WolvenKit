@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			VehicleRef = new() { Names = new() };
 			ObjectRef = new() { Names = new() };
 			IsInside = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

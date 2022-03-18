@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public NonStealthQuickHackVictimEvent()
 		{
 			InstigatorID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

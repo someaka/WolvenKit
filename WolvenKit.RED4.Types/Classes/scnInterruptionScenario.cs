@@ -133,6 +133,10 @@ namespace WolvenKit.RED4.Types
 			PlayInterruptLine = true;
 			InterruptConditions = new();
 			ReturnConditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

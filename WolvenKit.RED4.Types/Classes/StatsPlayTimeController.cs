@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			PlayTimeRef = new();
 			LifePathRef = new();
 			LifePathIconRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

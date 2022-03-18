@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Switch = new();
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

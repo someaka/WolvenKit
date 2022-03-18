@@ -188,5 +188,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public AnimFeature_Paperdoll()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

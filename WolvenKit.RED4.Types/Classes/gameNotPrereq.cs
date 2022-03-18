@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameIPrereq>>();
 			set => SetPropertyValue<CHandle<gameIPrereq>>(value);
 		}
+
+		public gameNotPrereq()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

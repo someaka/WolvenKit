@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Meshes = new();
 			FillMeshes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

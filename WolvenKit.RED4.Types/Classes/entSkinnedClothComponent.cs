@@ -71,6 +71,10 @@ namespace WolvenKit.RED4.Types
 			MeshAppearance = "default";
 			ChunkMask = 18446744073709551615;
 			CompiledTopologyData = new() { GfxIndexToTriangles = new(), PhxIndexToTriangles = new(), GfxBarycentrics = new(), PhxBarycentrics = new(), PhxLodSwitchData = new(), PhxSimulated = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

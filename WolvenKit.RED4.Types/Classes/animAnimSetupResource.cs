@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimSetupResource()
 		{
 			Dependencies = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

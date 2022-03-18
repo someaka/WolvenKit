@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<RemoveLinkedStatusEffectsEvent>>();
 			set => SetPropertyValue<CHandle<RemoveLinkedStatusEffectsEvent>>(value);
 		}
+
+		public LinkedStatusEffectListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

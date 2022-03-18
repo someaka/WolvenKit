@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			SourceEntity = new();
 			HitCount = 1;
 			Distance = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

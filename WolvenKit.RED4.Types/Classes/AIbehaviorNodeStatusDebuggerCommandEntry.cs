@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedebugFailure>>();
 			set => SetPropertyValue<CHandle<gamedebugFailure>>(value);
 		}
+
+		public AIbehaviorNodeStatusDebuggerCommandEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

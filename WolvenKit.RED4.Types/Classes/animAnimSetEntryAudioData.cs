@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimSetEntryAudioData()
 		{
 			Events = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -216,6 +216,10 @@ namespace WolvenKit.RED4.Types
 			GroupingSettings = new() { MaxDistance = 100.000000F };
 			QuadSettings = new() { Offset = new(), Events = new(4) };
 			AmbientPaletteEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			WorldPosition = new() { X = new(), Y = new(), Z = new() };
 			GlobalNodeId = new();
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

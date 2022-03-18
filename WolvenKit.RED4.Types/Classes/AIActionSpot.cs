@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ClippingSpaceOrientation = 180.000000F;
 			ClippingSpaceRange = 120.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

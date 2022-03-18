@@ -70,6 +70,10 @@ namespace WolvenKit.RED4.Types
 			FreePoints = new();
 			FreeEdges = new();
 			FreeAreas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

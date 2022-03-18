@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "SmartHouseController";
 			TimetableActive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

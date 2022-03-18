@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			Addressee = new() { Id = 4294967295 };
 			Usage = new() { PlayerGenderMask = new() { Mask = 128 } };
 			LocstringId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

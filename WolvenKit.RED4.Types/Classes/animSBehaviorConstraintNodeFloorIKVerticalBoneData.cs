@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			Max_offset = 0.500000F;
 			OffsetToDesiredBlendTime = 0.100000F;
 			Stiffness = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

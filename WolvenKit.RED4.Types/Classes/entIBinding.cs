@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public entIBinding()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

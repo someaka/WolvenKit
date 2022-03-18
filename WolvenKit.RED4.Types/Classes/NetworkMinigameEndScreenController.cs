@@ -95,6 +95,10 @@ namespace WolvenKit.RED4.Types
 			Header_bg = new();
 			CompletionColor = new();
 			FailureColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

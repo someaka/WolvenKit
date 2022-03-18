@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SpawnPosition = new();
 			SpawnNormal = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			ScanningSettings = new();
 			AuxiliaryMetadata = new();
 			DeviceSettings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

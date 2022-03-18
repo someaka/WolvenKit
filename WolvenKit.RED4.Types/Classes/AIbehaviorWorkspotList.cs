@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorWorkspotList()
 		{
 			Spots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

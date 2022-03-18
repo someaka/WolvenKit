@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Interpolators = new();
 			Events = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

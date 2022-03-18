@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LaneRefs = new();
 			LanePositions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

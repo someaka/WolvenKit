@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameEntitySpawnerComponent()
 		{
 			SlotDataArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

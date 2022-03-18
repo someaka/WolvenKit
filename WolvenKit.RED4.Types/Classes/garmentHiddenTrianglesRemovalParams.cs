@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			RemoveHiddenTriangles = true;
 			RayLengthInCM = 10.000000F;
 			RayLengthMorphOffsetFactor = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

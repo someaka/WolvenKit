@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			ToIdleWeight = 1.000000F;
 			ToIdleNeckWeight = 1.000000F;
 			FacialKeyWeight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

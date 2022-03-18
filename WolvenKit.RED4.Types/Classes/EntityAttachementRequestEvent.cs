@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EntityAttachementRequestEvent()
 		{
 			AttachementData = new() { AttachementComponentName = "EntityAttachementComponent", OwnerID = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

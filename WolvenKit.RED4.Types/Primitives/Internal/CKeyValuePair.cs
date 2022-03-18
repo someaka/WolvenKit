@@ -13,7 +13,7 @@ public sealed class CKeyValuePair : IRedType, IEquatable<CKeyValuePair>
     public CName Key { get; set; }
     public IRedType Value { get; set; }
 
-    public bool Equals(CKeyValuePair other)
+    public bool Equals(CKeyValuePair? other)
     {
         if (ReferenceEquals(null, other))
         {
@@ -38,7 +38,7 @@ public sealed class CKeyValuePair : IRedType, IEquatable<CKeyValuePair>
         return true;
     }
 
-    public override bool Equals(object obj)
+    public override bool Equals(object? obj)
     {
         if (ReferenceEquals(null, obj))
         {

@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			UseLookAt = true;
 			DisableAfterSelectingChoice = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

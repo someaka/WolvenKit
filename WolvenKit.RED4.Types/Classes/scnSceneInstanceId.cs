@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			OwnerId = new();
 			InternalId = 255;
 			Hash = 6242570315725555409;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

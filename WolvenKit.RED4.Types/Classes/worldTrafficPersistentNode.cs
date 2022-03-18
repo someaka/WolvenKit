@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<worldTrafficPersistentResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<worldTrafficPersistentResource>>(value);
 		}
+
+		public worldTrafficPersistentNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public scnFindEntityInContextParams()
 		{
 			VoiceVagId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

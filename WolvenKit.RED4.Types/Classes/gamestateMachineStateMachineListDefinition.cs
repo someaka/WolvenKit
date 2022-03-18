@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamestateMachineStateMachineListDefinition()
 		{
 			StateMachinesStorage = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

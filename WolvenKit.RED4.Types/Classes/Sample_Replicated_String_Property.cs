@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CString>();
 			set => SetPropertyValue<CString>(value);
 		}
+
+		public Sample_Replicated_String_Property()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

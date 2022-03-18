@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Items = new();
 			LastAppliedActionsTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Id = new() { Id = 4294967295 };
 			Offset = new();
 			OriginMarker = new() { Type = Enums.scnMarkerType.Global, EntityRef = new() { Names = new() }, IsMounted = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

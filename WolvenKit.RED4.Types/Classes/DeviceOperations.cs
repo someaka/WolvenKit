@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<SVfxInstanceData>>();
 			set => SetPropertyValue<CArray<SVfxInstanceData>>(value);
 		}
+
+		public DeviceOperations()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

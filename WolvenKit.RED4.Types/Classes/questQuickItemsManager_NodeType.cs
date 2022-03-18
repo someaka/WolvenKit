@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questQuickItemsManager_NodeType()
 		{
 			Set = Enums.questQuickItemsSet.Q003_All;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

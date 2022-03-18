@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EntityId = new();
 			Data = new() { Overrides = new(), Base = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

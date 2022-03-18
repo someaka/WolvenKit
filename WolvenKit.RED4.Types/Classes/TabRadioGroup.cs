@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Root = new();
 			Toggles = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

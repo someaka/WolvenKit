@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public Sample_Replicated_Double_Property()
 		{
 			Property = 0.000000;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

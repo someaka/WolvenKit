@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StatModifiers = new();
 			InactiveStats = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

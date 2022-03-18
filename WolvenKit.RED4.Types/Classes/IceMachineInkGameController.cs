@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ButtonContainer = new();
 			SoldOutText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

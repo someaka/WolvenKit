@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<AIactionParamsPackageTypes>>();
 			set => SetPropertyValue<CEnum<AIactionParamsPackageTypes>>(value);
 		}
+
+		public AIScriptActionDelegate()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

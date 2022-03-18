@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			SubDistrictName = new();
 			MetroStationIconLeft = new();
 			MetroStationIconRight = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

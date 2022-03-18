@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LastEntityID = new();
 			LastPersistentID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

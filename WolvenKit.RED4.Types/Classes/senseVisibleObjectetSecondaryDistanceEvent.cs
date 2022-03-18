@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public senseVisibleObjectetSecondaryDistanceEvent()
 		{
 			Distance = 340282346638528859811704183484516925440.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -123,6 +123,10 @@ namespace WolvenKit.RED4.Types
 			UnequipDurationOverride = -1.000000F;
 			IsPlayer = true;
 			UnequipTypes = Enums.gameItemUnequipContexts.AllItems;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

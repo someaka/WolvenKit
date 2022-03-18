@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public GameplayQuestSystem()
 		{
 			Quests = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PlayerNameLabel = new();
 			PlayerClassIcon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

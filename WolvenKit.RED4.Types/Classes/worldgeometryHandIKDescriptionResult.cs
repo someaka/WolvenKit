@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			GrabPointStart = new();
 			GrabPointEnd = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

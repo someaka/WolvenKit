@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public QuestCodexLinkController()
 		{
 			LinkLabelContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

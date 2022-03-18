@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorActionSlideToWorldPositionNodeDefinition()
 		{
 			UseMovePlanner = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

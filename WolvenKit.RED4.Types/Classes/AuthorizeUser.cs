@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			ActionWidgetPackage = new() { DependendActions = new() };
 			CanTriggerStim = true;
 			ValidPasswords = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

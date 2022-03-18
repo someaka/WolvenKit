@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<questIAudioCharacterManager_NodeSubTypeCharacterEntry>>();
 			set => SetPropertyValue<CArray<questIAudioCharacterManager_NodeSubTypeCharacterEntry>>(value);
 		}
+
+		public questIAudioCharacterManager_NodeSubType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

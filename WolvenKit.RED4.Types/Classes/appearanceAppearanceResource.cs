@@ -151,6 +151,10 @@ namespace WolvenKit.RED4.Types
 			DismEffects = new();
 			DismWoundConfig = new() { Configs = new() };
 			ProxyPolyCount = 1400;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -76,5 +76,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamebbScriptDefinition>>();
 			set => SetPropertyValue<CHandle<gamebbScriptDefinition>>(value);
 		}
+
+		public PlayerVisionModeControllerBBIds()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

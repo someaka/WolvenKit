@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AddContact = true;
 			SendNotification = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

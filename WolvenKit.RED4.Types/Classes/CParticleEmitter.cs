@@ -316,6 +316,10 @@ namespace WolvenKit.RED4.Types
 			Falloff = 1.000000F;
 			NoiseScale = 1.000000F;
 			NoiseVelocity = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

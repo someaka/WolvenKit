@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public GameEffectTargetVisualizationData()
 		{
 			ForceHighlightTargets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

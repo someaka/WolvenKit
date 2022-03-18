@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = 4294967295;
 			Tags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

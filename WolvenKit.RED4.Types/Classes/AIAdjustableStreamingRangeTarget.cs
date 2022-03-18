@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIAdjustableStreamingRangeTarget()
 		{
 			MinStreamingDistance = 30.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

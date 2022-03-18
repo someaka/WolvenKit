@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public worldPopulationSpawnerNode()
 		{
 			AppearanceName = "default";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

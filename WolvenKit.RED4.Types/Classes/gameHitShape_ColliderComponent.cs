@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			Rotation = new() { R = 1.000000F };
 			LocalTransform = new();
 			ComponentNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

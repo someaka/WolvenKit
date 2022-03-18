@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public meshMeshParamDestructionBoneChunkMapping()
 		{
 			BoneChunkMasks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

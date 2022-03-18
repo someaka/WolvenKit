@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameMuppetInputActionLook()
 		{
 			Rotation = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

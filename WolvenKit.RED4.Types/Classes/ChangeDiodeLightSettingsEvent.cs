@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public ChangeDiodeLightSettingsEvent()
 		{
 			ColorValues = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

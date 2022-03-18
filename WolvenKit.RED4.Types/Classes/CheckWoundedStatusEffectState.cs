@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CheckWoundedStatusEffectState()
 		{
 			StateToCheck = Enums.EstatusEffectsState.Activating;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public gameEffectPostAction_Beam_RicochetPreviewPreviewEffect()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

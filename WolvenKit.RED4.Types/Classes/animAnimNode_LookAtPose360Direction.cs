@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = 4294967295;
 			AngleOffset = -90.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

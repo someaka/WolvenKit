@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ContactNameWidget = new();
 			ButtonHint = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

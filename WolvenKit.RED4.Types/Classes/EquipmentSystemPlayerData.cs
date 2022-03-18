@@ -145,6 +145,10 @@ namespace WolvenKit.RED4.Types
 			ActiveWardrobeSet = -1;
 			VisualTagProcessingInfo = new();
 			Hotkeys = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

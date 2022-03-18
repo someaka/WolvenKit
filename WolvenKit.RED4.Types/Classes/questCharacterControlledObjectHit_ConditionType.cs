@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			ExcludeHitTypes = new();
 			IncludeHitShapes = new();
 			ExcludeHitShapes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

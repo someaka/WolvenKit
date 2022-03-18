@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StationNameWidget = new();
 			StationLogoWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

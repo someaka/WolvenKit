@@ -92,6 +92,10 @@ namespace WolvenKit.RED4.Types
 			LiftTravelTimeOverride = 4.000000F;
 			EmptyLiftSpeedMultiplier = 2.000000F;
 			RadioStationNumer = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

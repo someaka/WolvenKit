@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			EditorEventId = 18446744073709551615;
 			OriginNodeId = new() { Id = 4294967295 };
 			SceneEventIds = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

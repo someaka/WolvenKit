@@ -153,6 +153,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DiscSpawnPoint = new();
 			DiscPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

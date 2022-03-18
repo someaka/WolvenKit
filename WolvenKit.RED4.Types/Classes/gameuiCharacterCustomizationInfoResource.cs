@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 			UiPresets = new();
 			ExcludedFromRandomize = new();
 			VersionUpdateInfo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EOutlineType>>();
 			set => SetPropertyValue<CEnum<EOutlineType>>(value);
 		}
+
+		public EffectExecutor_GameObjectOutline()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

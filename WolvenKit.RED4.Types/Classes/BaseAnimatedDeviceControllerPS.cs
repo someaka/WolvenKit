@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public BaseAnimatedDeviceControllerPS()
 		{
 			DeviceName = "Gameplay-Devices-DisplayNames-RoadBlock";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

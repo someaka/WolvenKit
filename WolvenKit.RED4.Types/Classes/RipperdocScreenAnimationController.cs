@@ -333,6 +333,10 @@ namespace WolvenKit.RED4.Types
 			M_eyesHoverTexture = new();
 			Man_wiresTexture = new();
 			Woman_wiresTexture = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

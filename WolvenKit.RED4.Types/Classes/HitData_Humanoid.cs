@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ReactionZones_Humanoid_Side>>();
 			set => SetPropertyValue<CEnum<ReactionZones_Humanoid_Side>>(value);
 		}
+
+		public HitData_Humanoid()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

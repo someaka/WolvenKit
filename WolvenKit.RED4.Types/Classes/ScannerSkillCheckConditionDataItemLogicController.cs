@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			OwnConditionTextPath = new() { Names = new() };
 			ConditionDescriptionListPath = new() { Names = new() };
 			ConditionDescriptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

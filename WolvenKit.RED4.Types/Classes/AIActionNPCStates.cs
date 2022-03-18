@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			BehaviorStates = new();
 			DefenseMode = new();
 			LocomotionMode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

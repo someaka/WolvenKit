@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PlayTime = 0.000000;
 			PlaythroughTime = 0.000000;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

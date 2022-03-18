@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameJournalTree()
 		{
 			RootEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

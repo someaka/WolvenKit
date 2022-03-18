@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public interopGlobalNodeIDResult()
 		{
 			ErrorMessage = "<Unknown>";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

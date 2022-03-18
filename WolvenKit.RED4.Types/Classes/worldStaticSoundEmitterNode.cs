@@ -122,6 +122,10 @@ namespace WolvenKit.RED4.Types
 			ObstructionChangeTime = 0.200000F;
 			DopplerFactor = 1.000000F;
 			RolloffOverride = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

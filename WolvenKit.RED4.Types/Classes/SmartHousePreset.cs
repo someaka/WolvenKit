@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<SPresetTimetableEntry>();
 			set => SetPropertyValue<SPresetTimetableEntry>(value);
 		}
+
+		public SmartHousePreset()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -125,6 +125,10 @@ namespace WolvenKit.RED4.Types
 			AlternativeModifierRecords = new(2);
 			Stat = Enums.gamedataStatType.Invalid;
 			ModificationStatus = Enums.gameStatPoolDataStatPoolModificationStatus.NoModification;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<scnSceneResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<scnSceneResource>>(value);
 		}
+
+		public scnInterestingConversation_DEPRECATED()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

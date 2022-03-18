@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			RotationAngleTolerance = 0.785398F;
 			TraceByTranslation = true;
 			TranslationTolerance = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

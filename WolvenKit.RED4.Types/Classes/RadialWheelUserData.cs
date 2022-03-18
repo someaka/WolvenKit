@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<RadialSlot>>();
 			set => SetPropertyValue<CHandle<RadialSlot>>(value);
 		}
+
+		public RadialWheelUserData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

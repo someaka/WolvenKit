@@ -110,6 +110,10 @@ namespace WolvenKit.RED4.Types
 			TerrainBlendScale = 0.200000F;
 			BillboardDepthScale = 1.000000F;
 			BillboardRoughnessBias = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Followers = new();
 			VehicleLeaderRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

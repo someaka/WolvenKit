@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemSelected = new();
 			ItemActivated = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gamePersistentState>>();
 			set => SetPropertyValue<CWeakHandle<gamePersistentState>>(value);
 		}
+
+		public SPreventionAgentData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

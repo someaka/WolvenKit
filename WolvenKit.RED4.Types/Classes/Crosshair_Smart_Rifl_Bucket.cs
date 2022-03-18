@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			LockedIndicator = new();
 			LockingIndicator = new();
 			Data = new() { Pos = new(), EntityID = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

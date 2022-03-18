@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<AIAimAtTargetCommand>>();
 			set => SetPropertyValue<CWeakHandle<AIAimAtTargetCommand>>(value);
 		}
+
+		public AimAtTargetCommandHandler()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

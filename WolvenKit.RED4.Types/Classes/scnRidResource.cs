@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Actors = new();
 			Cameras = new();
 			NextSerialNumber = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

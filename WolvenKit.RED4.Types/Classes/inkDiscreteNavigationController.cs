@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsNavigalbe = true;
 			SupportsHoldInput = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

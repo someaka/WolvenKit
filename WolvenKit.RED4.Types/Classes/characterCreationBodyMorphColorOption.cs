@@ -103,6 +103,10 @@ namespace WolvenKit.RED4.Types
 			ArrowsTexture = new();
 			OptionSwitchHint = new();
 			CurrColorIndex = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

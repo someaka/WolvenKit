@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CVariant>();
 			set => SetPropertyValue<CVariant>(value);
 		}
+
+		public LibTreeParameter()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

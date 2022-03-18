@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioWwiseIgnoredNames()
 		{
 			IgnoredNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

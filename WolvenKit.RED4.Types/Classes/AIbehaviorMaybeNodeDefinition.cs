@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<AIbehaviorMaybeNodeAction>>();
 			set => SetPropertyValue<CEnum<AIbehaviorMaybeNodeAction>>(value);
 		}
+
+		public AIbehaviorMaybeNodeDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

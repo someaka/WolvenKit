@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldDebugColoring_Loot()
 		{
 			DefaultColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

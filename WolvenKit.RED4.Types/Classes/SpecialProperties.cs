@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SpecialProperties()
 		{
 			Traps = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

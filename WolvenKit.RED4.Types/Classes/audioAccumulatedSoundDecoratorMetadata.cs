@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			AccumulatedSounds = new();
 			SoundTimeout = 1.000000F;
 			SpammingSoundInterval = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

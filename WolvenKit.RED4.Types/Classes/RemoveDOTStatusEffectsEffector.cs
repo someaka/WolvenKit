@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public RemoveDOTStatusEffectsEffector()
 		{
 			OwnerEntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

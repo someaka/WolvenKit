@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			Root = new();
 			Image = new();
 			AnimLib = new() { WidgetLibrary = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

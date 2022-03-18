@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Placement = Enums.entdismembermentPlacementE.MAIN_MESH;
 			Dangle = new() { DangleSegmentLenght = 0.100000F, DangleVelocityDamping = 0.400000F, DangleBendStiffness = 0.600000F, DangleCollisionSphereRadius = 0.250000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

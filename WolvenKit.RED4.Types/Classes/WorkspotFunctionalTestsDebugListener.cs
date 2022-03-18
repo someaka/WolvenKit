@@ -107,6 +107,10 @@ namespace WolvenKit.RED4.Types
 			AnimationsStack = new();
 			AnimationsSkippedStack = new();
 			AnimationsMissingStack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

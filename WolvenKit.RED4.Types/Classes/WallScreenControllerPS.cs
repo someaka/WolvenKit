@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TweakDBRecord = 78369534372;
 			TweakDBDescriptionRecord = 131860853415;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

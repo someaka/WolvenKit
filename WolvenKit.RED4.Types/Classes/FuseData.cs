@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PsOwnerData = new() { Id = new() };
 			TimeTable = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

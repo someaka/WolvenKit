@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CustomOffsetPos = new();
 			CustomOffsetRot = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

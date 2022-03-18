@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Min = -340282346638528859811704183484516925440.000000F;
 			Max = 340282346638528859811704183484516925440.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

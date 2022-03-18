@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Id = new() { Id = 18446744073709551615 };
 			ActorId = new() { Id = 4294967295 };
 			TargetWaypoint = new() { Type = Enums.scnMarkerType.Global, EntityRef = new() { Names = new() }, IsMounted = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

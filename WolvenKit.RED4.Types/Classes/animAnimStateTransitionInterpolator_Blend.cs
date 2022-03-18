@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<animAnimStateInterpolationType>>();
 			set => SetPropertyValue<CEnum<animAnimStateInterpolationType>>(value);
 		}
+
+		public animAnimStateTransitionInterpolator_Blend()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

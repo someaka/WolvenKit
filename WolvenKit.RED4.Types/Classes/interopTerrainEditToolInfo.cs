@@ -96,6 +96,10 @@ namespace WolvenKit.RED4.Types
 		public interopTerrainEditToolInfo()
 		{
 			CreationSlots = new() { new() { Scale = new() { X = 1.000000F, Y = 1.000000F }, HeightMappingMax = 100.000000F }, new() { Scale = new() { X = 1.000000F, Y = 1.000000F }, HeightMappingMax = 100.000000F }, new() { Scale = new() { X = 1.000000F, Y = 1.000000F }, HeightMappingMax = 100.000000F } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

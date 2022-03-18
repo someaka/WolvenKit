@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enabled = true;
 			ReplicatedInfo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

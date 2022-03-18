@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Entries = new();
 			OverwriteExistingValues = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

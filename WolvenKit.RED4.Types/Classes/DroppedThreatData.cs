@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public DroppedThreatData()
 		{
 			Position = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			Roughness0 = 0.750000F;
 			Roughness1 = 1.250000F;
 			LobeMix = 0.800000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

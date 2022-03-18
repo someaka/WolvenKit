@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			ParkingSpots = new();
 			AreaSpeedLimit = 30.000000F;
 			EnableNullArea = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			AnimLoopEventName = "At least one animation ended";
 			AnimDataBase = new();
 			InputLinks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

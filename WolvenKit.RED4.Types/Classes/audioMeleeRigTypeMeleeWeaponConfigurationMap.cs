@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioMeleeRigTypeMeleeWeaponConfigurationMap()
 		{
 			MapItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

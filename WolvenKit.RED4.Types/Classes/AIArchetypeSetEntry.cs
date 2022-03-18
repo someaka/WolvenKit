@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<AIArchetype>>();
 			set => SetPropertyValue<CResourceReference<AIArchetype>>(value);
 		}
+
+		public AIArchetypeSetEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

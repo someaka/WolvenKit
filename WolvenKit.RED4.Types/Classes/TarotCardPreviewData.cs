@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public TarotCardPreviewData()
 		{
 			CardData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnLookAtBodyPartPropertiesAdvanced()
 		{
 			BodyPartName = "Head";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

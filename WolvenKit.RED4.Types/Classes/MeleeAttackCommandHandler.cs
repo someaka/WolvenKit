@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<AIMeleeAttackCommand>>();
 			set => SetPropertyValue<CWeakHandle<AIMeleeAttackCommand>>(value);
 		}
+
+		public MeleeAttackCommandHandler()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

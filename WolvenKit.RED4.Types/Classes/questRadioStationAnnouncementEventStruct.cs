@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public questRadioStationAnnouncementEventStruct()
 		{
 			SceneInput = "vo_init";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

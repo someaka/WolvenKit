@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<Knife>>();
 			set => SetPropertyValue<CWeakHandle<Knife>>(value);
 		}
+
+		public ThrowingKnifeReloadListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

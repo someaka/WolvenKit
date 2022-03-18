@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SettingsListItem()
 		{
 			Selector = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

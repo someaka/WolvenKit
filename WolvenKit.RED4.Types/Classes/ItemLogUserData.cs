@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ItemLogUserData()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

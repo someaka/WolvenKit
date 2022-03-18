@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			RadiusInCM = 32.000000F;
 			RadiusForTriangleRemovalInCM = 16.000000F;
 			Offset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

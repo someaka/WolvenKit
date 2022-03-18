@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ObstacleSettings = new();
 			DecorationSettings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

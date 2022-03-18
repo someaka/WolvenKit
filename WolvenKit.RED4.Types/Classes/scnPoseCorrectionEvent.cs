@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			Duration = 1000;
 			PerformerId = new() { Id = 4294967040 };
 			PoseCorrectionGroup = new() { PoseCorrections = new(0) };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

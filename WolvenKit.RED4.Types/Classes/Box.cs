@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Min = new();
 			Max = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

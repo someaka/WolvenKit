@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 78736419072;
 			TweakDBDescriptionRecord = 132501907971;
 			IceMachineSFX = new() { IceFalls = "dev_ice_machine_ice_cube_falls", Processing = "dev_vending_machine_processing" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

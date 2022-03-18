@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MeshNodesOnly = true;
 			MeshResourceFilter = new() { ForceFilterIgnore = new(), ForceFilterMatch = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

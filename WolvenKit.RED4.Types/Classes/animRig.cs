@@ -159,6 +159,10 @@ namespace WolvenKit.RED4.Types
 			IkSetups = new();
 			RagdollDesc = new();
 			RagdollNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

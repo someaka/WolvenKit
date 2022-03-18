@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ResourceId = new() { Id = 4294967295 };
 			AnimationSN = new() { SerialNumber = 4294967295 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

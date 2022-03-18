@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			ToggleOperations = new();
 			Components = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

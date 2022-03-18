@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CullingBoxExtents = new() { X = 20.000000F, Y = 20.000000F, Z = 20.000000F };
 			CullingBoxOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

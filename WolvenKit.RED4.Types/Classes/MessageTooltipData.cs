@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameUILocalizationDataPackage>>();
 			set => SetPropertyValue<CHandle<gameUILocalizationDataPackage>>(value);
 		}
+
+		public MessageTooltipData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

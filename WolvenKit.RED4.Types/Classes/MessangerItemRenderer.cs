@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			FluffText = new();
 			StateMessage = "Default";
 			StatePlayerReply = "Player";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

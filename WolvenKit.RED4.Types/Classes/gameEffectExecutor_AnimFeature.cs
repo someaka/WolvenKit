@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public gameEffectExecutor_AnimFeature()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

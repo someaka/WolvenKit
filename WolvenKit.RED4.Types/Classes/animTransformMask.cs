@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animTransformMask()
 		{
 			Index = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

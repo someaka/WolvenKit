@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ERadioStationList>>();
 			set => SetPropertyValue<CEnum<ERadioStationList>>(value);
 		}
+
+		public RadioStationsMap()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

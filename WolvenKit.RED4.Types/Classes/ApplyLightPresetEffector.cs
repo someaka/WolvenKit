@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gamedataLightPreset_Record>>();
 			set => SetPropertyValue<CWeakHandle<gamedataLightPreset_Record>>(value);
 		}
+
+		public ApplyLightPresetEffector()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

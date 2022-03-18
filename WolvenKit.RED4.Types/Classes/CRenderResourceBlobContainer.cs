@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<IRenderResourceBlob>>();
 			set => SetPropertyValue<CHandle<IRenderResourceBlob>>(value);
 		}
+
+		public CRenderResourceBlobContainer()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

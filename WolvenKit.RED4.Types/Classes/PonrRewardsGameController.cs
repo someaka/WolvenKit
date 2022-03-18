@@ -120,6 +120,10 @@ namespace WolvenKit.RED4.Types
 			TooltipsManagerRef = new();
 			OkayButton = new();
 			EndingAchievementArt = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

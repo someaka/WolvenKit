@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public GateSignalInstance()
 		{
 			ConsumeTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

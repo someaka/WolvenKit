@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiRefreshGOGState()
 		{
 			QrCodePNGBlob = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

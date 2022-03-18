@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ObjectRef = new() { Names = new() };
 			ClueId = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

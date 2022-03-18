@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public MovableDeviceSetup()
 		{
 			NumberOfUses = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

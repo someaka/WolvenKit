@@ -324,6 +324,10 @@ namespace WolvenKit.RED4.Types
 			CameraLocation = new();
 			InputBottomRoot = new();
 			MenuPages = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

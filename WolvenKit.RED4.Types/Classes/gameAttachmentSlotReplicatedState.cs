@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameAttachmentSlotReplicatedState()
 		{
 			ActiveItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

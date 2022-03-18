@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimFeature_ContainerBase()
 		{
 			TransitionDuration = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

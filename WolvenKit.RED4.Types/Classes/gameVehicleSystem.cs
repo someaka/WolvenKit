@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameVehicleSystem()
 		{
 			RestrictionTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

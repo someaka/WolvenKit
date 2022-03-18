@@ -480,6 +480,10 @@ namespace WolvenKit.RED4.Types
 			AltimeterContainer = new();
 			ChargebarContainer = new();
 			ADSContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

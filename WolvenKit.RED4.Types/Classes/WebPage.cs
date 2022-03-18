@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			VideoList = new();
 			HOME_IMAGE_NAME = "ImageLink";
 			HOME_TEXT_NAME = "TextLink";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

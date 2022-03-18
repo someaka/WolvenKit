@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public audioFlybySettings()
 		{
 			MovementSpeed = 15.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

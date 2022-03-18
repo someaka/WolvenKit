@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			WeaponEvolutionIcon = new();
 			WeaponEvolutionName = new();
 			WeaponEvolutionDescription = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

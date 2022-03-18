@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SaveWardrobeSetRequest()
 		{
 			ClothingSet = new() { SetID = -1, ClothingList = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

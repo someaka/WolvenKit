@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameCookedMultiMappinData()
 		{
 			Positions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

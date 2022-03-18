@@ -89,6 +89,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Margin = new();
 			Video = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

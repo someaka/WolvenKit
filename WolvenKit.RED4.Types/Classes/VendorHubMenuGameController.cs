@@ -292,6 +292,10 @@ namespace WolvenKit.RED4.Types
 			StreetCredBarProgress = new();
 			StreetCredBarSpacer = new();
 			MenuData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

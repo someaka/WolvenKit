@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CompressionPreset = Enums.animcompressionQualityPreset.MID;
 			MotionExtractionCompression = Enums.animEMotionExtractionCompressionType.EMECT_SPLINE_MID;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

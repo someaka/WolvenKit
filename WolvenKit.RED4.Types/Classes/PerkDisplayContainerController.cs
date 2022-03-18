@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public PerkDisplayContainerController()
 		{
 			Widget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

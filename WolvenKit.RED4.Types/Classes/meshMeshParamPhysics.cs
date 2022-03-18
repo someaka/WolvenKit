@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<physicsSystemResource>>();
 			set => SetPropertyValue<CHandle<physicsSystemResource>>(value);
 		}
+
+		public meshMeshParamPhysics()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

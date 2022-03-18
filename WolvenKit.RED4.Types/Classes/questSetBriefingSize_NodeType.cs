@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questJournalSizeEventType>>();
 			set => SetPropertyValue<CEnum<questJournalSizeEventType>>(value);
 		}
+
+		public questSetBriefingSize_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

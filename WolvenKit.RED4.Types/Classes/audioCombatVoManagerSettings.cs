@@ -151,6 +151,10 @@ namespace WolvenKit.RED4.Types
 			GenericCombatVOContexts = new();
 			GenericCombatLosingVOContexts = new();
 			GenericCombatSingleEnemyVOContexts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

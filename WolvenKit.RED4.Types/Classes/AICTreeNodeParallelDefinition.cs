@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AICTreeNodeParallelDefinition()
 		{
 			ForwardChildrenCompleteness = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

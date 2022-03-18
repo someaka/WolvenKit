@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<NPCPuppet>>();
 			set => SetPropertyValue<CWeakHandle<NPCPuppet>>(value);
 		}
+
+		public NPCGodModeListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

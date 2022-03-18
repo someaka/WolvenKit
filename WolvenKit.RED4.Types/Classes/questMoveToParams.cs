@@ -124,6 +124,10 @@ namespace WolvenKit.RED4.Types
 			FinishWhenDestinationReached = true;
 			RepeatCommandOnInterrupt = true;
 			ExecuteWhileDespawned = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

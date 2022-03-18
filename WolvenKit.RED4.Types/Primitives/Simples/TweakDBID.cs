@@ -11,10 +11,10 @@ namespace WolvenKit.RED4.Types
     public sealed class TweakDBID : IRedPrimitive<ulong>, IEquatable<TweakDBID>
     {
         public delegate string ResolveHash(ulong hash);
-        public static ResolveHash ResolveHashHandler;
+        public static ResolveHash? ResolveHashHandler;
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private readonly string _value;
+        private readonly string? _value;
         private readonly ulong _hash;
 
         public TweakDBID() { }
@@ -34,13 +34,13 @@ namespace WolvenKit.RED4.Types
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         public int Length => (int)(_hash >> 32);
 
-        public string ResolvedText => GetResolvedText();
-        public string GetResolvedText() => !string.IsNullOrEmpty(_value) ? _value : ResolveHashHandler?.Invoke(_hash);
-        private ulong CalculateHash() => Crc32Algorithm.Compute(_value) + ((ulong)_value.Length << 32);
+        public string? ResolvedText => GetResolvedText();
+        public string? GetResolvedText() => !string.IsNullOrEmpty(_value) ? _value : ResolveHashHandler?.Invoke(_hash);
+        private ulong CalculateHash() => _value != null ? Crc32Algorithm.Compute(_value) + ((ulong)_value.Length << 32) : 0;
 
 
         public static implicit operator TweakDBID(string value) => new(value);
-        public static implicit operator string(TweakDBID value) => value._value;
+        public static implicit operator string?(TweakDBID value) => value._value;
 
         public static implicit operator TweakDBID(ulong value) => new(value);
         public static implicit operator ulong(TweakDBID value) => value._hash;
@@ -48,7 +48,7 @@ namespace WolvenKit.RED4.Types
         public static bool operator ==(TweakDBID a, TweakDBID b) => Equals(a, b);
         public static bool operator !=(TweakDBID a, TweakDBID b) => !(a == b);
 
-        public bool Equals(TweakDBID other)
+        public bool Equals(TweakDBID? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -63,7 +63,7 @@ namespace WolvenKit.RED4.Types
             return Equals(_hash, other._hash);
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {

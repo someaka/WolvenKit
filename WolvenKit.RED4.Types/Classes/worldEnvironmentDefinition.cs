@@ -78,6 +78,10 @@ namespace WolvenKit.RED4.Types
 			WeatherStates = new();
 			WeatherStateTransitions = new();
 			AreaEnvironmentParameterLayers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

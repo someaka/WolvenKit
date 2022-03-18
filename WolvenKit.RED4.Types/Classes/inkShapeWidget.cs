@@ -133,6 +133,10 @@ namespace WolvenKit.RED4.Types
 			BorderOpacity = 1.000000F;
 			FillOpacity = 1.000000F;
 			VertexList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

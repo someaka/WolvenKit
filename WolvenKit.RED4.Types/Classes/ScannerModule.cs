@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			InstancesList = new();
 			ActiveScans = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

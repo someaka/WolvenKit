@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<InteractionAreaOperationTriggerData>>();
 			set => SetPropertyValue<CHandle<InteractionAreaOperationTriggerData>>(value);
 		}
+
+		public InteractionAreaOperationsTrigger()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

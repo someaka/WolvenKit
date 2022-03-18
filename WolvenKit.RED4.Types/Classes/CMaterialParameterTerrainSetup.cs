@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<CTerrainSetup>>();
 			set => SetPropertyValue<CResourceReference<CTerrainSetup>>(value);
 		}
+
+		public CMaterialParameterTerrainSetup()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

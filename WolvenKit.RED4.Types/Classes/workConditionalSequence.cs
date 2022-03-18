@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public workConditionalSequence()
 		{
 			ConditionList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

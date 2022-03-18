@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public LibTreeDefFloat()
 		{
 			VariableId = 65535;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

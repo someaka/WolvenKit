@@ -286,6 +286,10 @@ namespace WolvenKit.RED4.Types
 			ScannerVehicleInfo = new();
 			ScannerQuickHackDescription = new();
 			ObjectType = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

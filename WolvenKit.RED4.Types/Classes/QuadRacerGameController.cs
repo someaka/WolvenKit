@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			GameMenu = new();
 			ScoreboardMenu = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

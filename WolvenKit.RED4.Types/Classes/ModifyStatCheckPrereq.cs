@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<StatCheckPrereqState>>();
 			set => SetPropertyValue<CHandle<StatCheckPrereqState>>(value);
 		}
+
+		public ModifyStatCheckPrereq()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

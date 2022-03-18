@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Rotation = new() { R = 1.000000F };
 			Translation = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

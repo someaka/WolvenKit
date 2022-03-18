@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			TargetID = new();
 			From = new();
 			To = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

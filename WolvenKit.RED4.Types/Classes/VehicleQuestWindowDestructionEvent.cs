@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<vehicleQuestWindowDestruction>>();
 			set => SetPropertyValue<CEnum<vehicleQuestWindowDestruction>>(value);
 		}
+
+		public VehicleQuestWindowDestructionEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

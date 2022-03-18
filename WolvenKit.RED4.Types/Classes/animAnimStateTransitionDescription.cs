@@ -112,6 +112,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimStateTransitionDescription()
 		{
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

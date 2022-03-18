@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public UnequipProcessVisualTags()
 		{
 			Item = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

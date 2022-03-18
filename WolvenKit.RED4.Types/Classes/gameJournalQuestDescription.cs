@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameJournalQuestDescription()
 		{
 			Description = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

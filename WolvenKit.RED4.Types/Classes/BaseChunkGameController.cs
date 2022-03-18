@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<UI_ScannerDef>>();
 			set => SetPropertyValue<CHandle<UI_ScannerDef>>(value);
 		}
+
+		public BaseChunkGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

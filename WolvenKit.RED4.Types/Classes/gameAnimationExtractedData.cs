@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameAnimationExtractedData()
 		{
 			AnimsetsExtractedTransforms = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

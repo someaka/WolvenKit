@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			CollisionType = new();
 			CollideWith = new();
 			QueryDetect = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

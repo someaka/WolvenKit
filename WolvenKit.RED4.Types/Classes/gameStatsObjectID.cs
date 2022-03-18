@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameStatsObjectID()
 		{
 			IdType = Enums.gameStatIDType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBitField<physicsEClothCollisionMaskEnum>>();
 			set => SetPropertyValue<CBitField<physicsEClothCollisionMaskEnum>>(value);
 		}
+
+		public worldClothMeshNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

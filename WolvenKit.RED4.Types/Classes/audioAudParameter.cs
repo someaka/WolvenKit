@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			EnterCurveTime = 1.000000F;
 			ExitCurveType = Enums.audioESoundCurveType.Linear;
 			ExitCurveTime = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

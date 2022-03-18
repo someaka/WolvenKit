@@ -193,6 +193,10 @@ namespace WolvenKit.RED4.Types
 			RepeatCommandOnInterrupt = true;
 			WorkExcludedGestures = new();
 			MeshDissolvingEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

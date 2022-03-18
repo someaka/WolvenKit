@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsAuthorizationModuleOn = true;
 			AuthorizationDataEntry = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

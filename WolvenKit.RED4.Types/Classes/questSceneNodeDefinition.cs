@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Id = 65535;
 			SceneLocation = new() { Type = Enums.scnWorldMarkerType.NodeRef };
 			InterruptionOperations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

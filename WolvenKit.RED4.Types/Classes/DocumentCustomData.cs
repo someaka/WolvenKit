@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EDocumentType>>();
 			set => SetPropertyValue<CEnum<EDocumentType>>(value);
 		}
+
+		public DocumentCustomData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 71902502349;
 			TweakDBDescriptionRecord = 124000636758;
 			ForkliftSetup = new() { ActionActivateName = "Activate", LiftingAnimationTime = 2.000000F, HasDistractionQuickhack = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

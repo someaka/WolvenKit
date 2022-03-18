@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Performer = new() { Id = 4294967040 };
 			ReferencePerformer = new() { Id = 4294967040 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

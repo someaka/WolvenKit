@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CurrentTime = new();
 			NextCallId = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

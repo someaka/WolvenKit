@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			InterpolationDirection = Enums.inkanimInterpolationDirection.FromTo;
 			EffectName = "";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

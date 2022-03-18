@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gamePhantomEntityParameters()
 		{
 			BlendableAppearanceMatches = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

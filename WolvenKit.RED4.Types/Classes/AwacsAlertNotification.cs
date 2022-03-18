@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AwacsAlertNotification()
 		{
 			ZoneLabelText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

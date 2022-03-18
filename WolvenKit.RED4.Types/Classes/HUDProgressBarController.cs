@@ -140,6 +140,10 @@ namespace WolvenKit.RED4.Types
 			Percent = new();
 			Completed = new();
 			Failed = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Expressions = new();
 			ReevaluateOnExecution = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			Fov = 60.000000F;
 			Zoom = 1.000000F;
 			MotionBlurScale = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

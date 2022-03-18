@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questRadioSongNodeType()
 		{
 			RadioStationEvents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

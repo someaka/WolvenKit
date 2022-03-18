@@ -100,6 +100,10 @@ namespace WolvenKit.RED4.Types
 			SourcePosition = new();
 			StimType = Enums.gamedataStimType.Invalid;
 			StimPropagation = Enums.gamedataStimPropagation.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

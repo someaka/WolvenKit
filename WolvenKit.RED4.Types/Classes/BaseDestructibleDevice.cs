@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "BaseDestructibleController";
 			MinTime = 5.000000F;
 			MaxTime = 10.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

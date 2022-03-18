@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 			PatrolAction = new();
 			ForceAlerted = new();
 			PatrolInProgress = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

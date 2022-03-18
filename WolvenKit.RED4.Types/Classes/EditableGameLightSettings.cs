@@ -112,6 +112,10 @@ namespace WolvenKit.RED4.Types
 		public EditableGameLightSettings()
 		{
 			Color = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

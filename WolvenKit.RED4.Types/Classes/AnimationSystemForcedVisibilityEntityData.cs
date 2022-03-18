@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			EntityID = new();
 			ForcedVisibilityInAnimSystemRequests = new();
 			DelayedForcedVisibilityInAnimSystemRequests = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

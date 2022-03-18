@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataPerkArea>>();
 			set => SetPropertyValue<CEnum<gamedataPerkArea>>(value);
 		}
+
+		public LockPerkArea()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

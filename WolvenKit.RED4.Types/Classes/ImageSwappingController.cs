@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			ButtonsNames = new();
 			ButtonsValues = new();
 			Buttons = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

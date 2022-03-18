@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questJournalAlignmentEventType>>();
 			set => SetPropertyValue<CEnum<questJournalAlignmentEventType>>(value);
 		}
+
+		public questSetBriefingAlignment_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

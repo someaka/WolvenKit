@@ -108,6 +108,10 @@ namespace WolvenKit.RED4.Types
 			Bar = new();
 			Value = new();
 			ChargesList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

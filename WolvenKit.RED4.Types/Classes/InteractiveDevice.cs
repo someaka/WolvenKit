@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			DisableAreaIndicatorID = new();
 			DelayedUIRefreshID = new();
 			InvestigationPositionsArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

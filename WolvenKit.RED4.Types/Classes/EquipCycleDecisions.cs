@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EquipCycleDecisions()
 		{
 			StateMachineInstanceData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -70,6 +70,10 @@ namespace WolvenKit.RED4.Types
 			MenuButtonWidgetsData = new();
 			MainMenuButtonWidgetsData = new();
 			BannerWidgetsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

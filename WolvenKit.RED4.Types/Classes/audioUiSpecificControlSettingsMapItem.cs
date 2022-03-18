@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioUiSpecificControlSettingsMapItem()
 		{
 			UiEventSettingsMatrix = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

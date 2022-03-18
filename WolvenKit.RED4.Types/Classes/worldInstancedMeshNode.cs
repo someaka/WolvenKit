@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			MeshLODScales = 4294967295;
 			OccluderAutohideDistanceScale = 255;
 			WorldTransformsBuffer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

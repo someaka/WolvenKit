@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Entries = new();
 			GroupName = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

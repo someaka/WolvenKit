@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			MinColor = new();
 			MinCount = 500;
 			MaxCount = 20000;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

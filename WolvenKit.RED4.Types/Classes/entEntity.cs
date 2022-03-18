@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public entEntity()
 		{
 			RenderSceneLayerMask = Enums.RenderSceneLayerMask.Default;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

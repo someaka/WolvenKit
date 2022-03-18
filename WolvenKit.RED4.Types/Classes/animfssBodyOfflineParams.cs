@@ -70,6 +70,10 @@ namespace WolvenKit.RED4.Types
 			LegLengthAdjustment = 0.005000F;
 			LegMaxStretchOffset = 0.050000F;
 			LegMaxStretchAdjustment = 0.015000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

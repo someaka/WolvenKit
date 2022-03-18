@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameeventsDeathDirection>>();
 			set => SetPropertyValue<CEnum<gameeventsDeathDirection>>(value);
 		}
+
+		public gameeventsDeathDirectionEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

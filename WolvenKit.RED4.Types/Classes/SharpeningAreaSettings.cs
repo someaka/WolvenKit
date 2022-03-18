@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SharpeningAreaSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

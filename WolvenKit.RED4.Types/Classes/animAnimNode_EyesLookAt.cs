@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			RightEye = new();
 			Head = new();
 			ForwardDirection = Enums.animAxis.NegativeY;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

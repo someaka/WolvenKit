@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<senseStimuliEvent>>();
 			set => SetPropertyValue<CHandle<senseStimuliEvent>>(value);
 		}
+
+		public DelayStimEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

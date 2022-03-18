@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			WatermarksLayer = new();
 			SysNotificationsLayer = new();
 			WaitingSignLayerDefinition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<HackingSkillCheck>>();
 			set => SetPropertyValue<CHandle<HackingSkillCheck>>(value);
 		}
+
+		public HackingContainer()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

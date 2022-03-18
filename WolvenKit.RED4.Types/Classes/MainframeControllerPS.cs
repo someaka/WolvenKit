@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public MainframeControllerPS()
 		{
 			FactName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

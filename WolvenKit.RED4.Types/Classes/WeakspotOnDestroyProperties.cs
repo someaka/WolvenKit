@@ -129,6 +129,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DisableInteraction = true;
 			DestroyMesh = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

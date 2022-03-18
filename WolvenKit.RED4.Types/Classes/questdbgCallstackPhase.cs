@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Phases = new();
 			Blocks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

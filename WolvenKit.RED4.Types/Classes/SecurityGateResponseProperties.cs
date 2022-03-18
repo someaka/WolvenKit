@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SecurityGateResponseType = Enums.ESecurityGateResponseType.SEC_SYS_REPRIMAND;
 			SecurityLevelAccessGranted = Enums.ESecurityAccessLevel.ESL_3;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

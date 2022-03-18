@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public CameraQuestProperties()
 		{
 			FollowedTargetID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

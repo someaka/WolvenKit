@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public gameprojectileLinearTrajectoryParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

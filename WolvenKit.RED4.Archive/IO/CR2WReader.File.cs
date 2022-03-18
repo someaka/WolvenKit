@@ -117,7 +117,7 @@ namespace WolvenKit.RED4.Archive.IO
 
             foreach (var importInfo in _cr2wFile.Info.ImportInfo)
             {
-                importsList.Add(ReadImport(importInfo, _cr2wFile.Info.StringDict));
+                _importsList.Add(ReadImport(importInfo, _cr2wFile.Info.StringDict));
             }
 
             foreach (var propertyInfo in _cr2wFile.Info.PropertyInfo)
@@ -302,7 +302,7 @@ namespace WolvenKit.RED4.Archive.IO
 
             var result = new CR2WEmbedded
             {
-                FileName = importsList[(int)info.importIndex - 1].DepotPath,
+                FileName = _importsList[(int)info.importIndex - 1].DepotPath,
                 Content = _chunks[(int)info.chunkIndex]
             };
 

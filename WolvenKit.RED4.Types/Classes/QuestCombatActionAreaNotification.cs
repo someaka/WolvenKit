@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public QuestCombatActionAreaNotification()
 		{
 			RevealPlayerSettings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			LastUsedRanged = new();
 			LastUsedMelee = new();
 			LastUsedHeavy = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

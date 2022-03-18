@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ShowTime = 0.300000F;
 			HideTime = 0.250000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

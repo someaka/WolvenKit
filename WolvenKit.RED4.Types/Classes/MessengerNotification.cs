@@ -109,6 +109,10 @@ namespace WolvenKit.RED4.Types
 			MappinIcon = new();
 			EnvelopIcon = new();
 			TextSizeLimit = 40;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

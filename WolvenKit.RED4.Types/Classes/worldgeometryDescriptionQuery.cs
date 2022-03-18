@@ -132,6 +132,10 @@ namespace WolvenKit.RED4.Types
 			MaxProbes = 100;
 			ProbeDimensions = new() { X = 0.400000F, Y = -1.000000F, Z = -1.000000F, W = 1.000000F };
 			Filter = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataSubCharacter>>();
 			set => SetPropertyValue<CEnum<gamedataSubCharacter>>(value);
 		}
+
+		public SubCharUnequipRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

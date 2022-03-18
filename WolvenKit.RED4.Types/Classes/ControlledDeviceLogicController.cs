@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkRectangleWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkRectangleWidget>>(value);
 		}
+
+		public ControlledDeviceLogicController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

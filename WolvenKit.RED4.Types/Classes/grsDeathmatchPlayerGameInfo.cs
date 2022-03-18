@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			PeerID = new() { Value = 255 };
 			SpawnTime = new();
 			LastShooter = new() { Value = 255 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

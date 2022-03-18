@@ -115,6 +115,10 @@ namespace WolvenKit.RED4.Types
 			RenderMask = Enums.EMeshChunkRenderMask.MCR_Scene | Enums.EMeshChunkRenderMask.MCR_Cascade1;
 			ChunkRenderMask = Enums.EMeshChunkFlags.MCF_RenderInScene | Enums.EMeshChunkFlags.MCF_RenderInShadows;
 			Streams = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIAlertedStateDelegate()
 		{
 			AttackInstigatorPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

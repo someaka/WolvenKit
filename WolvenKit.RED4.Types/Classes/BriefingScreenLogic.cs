@@ -110,6 +110,10 @@ namespace WolvenKit.RED4.Types
 			AnimatedWidget = new();
 			MinimizedSize = new();
 			MaximizedSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

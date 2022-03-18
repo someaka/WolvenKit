@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			Target = new() { Names = new() };
 			IsPlayerActivator = true;
 			Activator = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

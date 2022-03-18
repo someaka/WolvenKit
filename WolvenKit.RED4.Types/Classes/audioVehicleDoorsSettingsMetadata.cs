@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Door = new();
 			Trunk = new();
 			Hood = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

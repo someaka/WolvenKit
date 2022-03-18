@@ -115,6 +115,10 @@ namespace WolvenKit.RED4.Types
 			CollFilterPresetName = new();
 			CollFaceMatInds = new();
 			CollFaceMaterialNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

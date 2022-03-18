@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public BlindingLight()
 		{
 			ControllerTypeName = "BlindingLightController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

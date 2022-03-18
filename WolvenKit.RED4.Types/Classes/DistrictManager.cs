@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Stack = new();
 			VisitedDistricts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

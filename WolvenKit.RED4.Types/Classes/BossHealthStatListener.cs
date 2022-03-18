@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<BossHealthBarGameController>>();
 			set => SetPropertyValue<CWeakHandle<BossHealthBarGameController>>(value);
 		}
+
+		public BossHealthStatListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			DescriptionRef = new();
 			GuideRef = new();
 			ImageRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public ParticleBurst()
 		{
 			SpawnCount = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

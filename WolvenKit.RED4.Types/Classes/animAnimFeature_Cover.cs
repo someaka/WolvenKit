@@ -93,6 +93,10 @@ namespace WolvenKit.RED4.Types
 			BehaviorTime_PreAction = 1.000000F;
 			BehaviorTime_Action = 1.000000F;
 			BehaviorTime_PostAction = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

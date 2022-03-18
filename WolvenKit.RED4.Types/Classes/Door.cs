@@ -383,6 +383,10 @@ namespace WolvenKit.RED4.Types
 			ClosingAnimationLength = 1.100000F;
 			AutomaticCloseDelay = 3.000000F;
 			ForceOpeningAudioStimRange = 6.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

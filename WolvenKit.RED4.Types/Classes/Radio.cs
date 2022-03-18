@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "RadioController";
 			Stations = new();
 			ShortGlitchDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

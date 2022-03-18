@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AIForceShootCommand()
 		{
 			TargetOverridePuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

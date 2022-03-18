@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public vehiclePlayerVehicle()
 		{
 			VehicleType = Enums.gamedataVehicleType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

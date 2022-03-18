@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsImportant = true;
 			PropagateToSlaves = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

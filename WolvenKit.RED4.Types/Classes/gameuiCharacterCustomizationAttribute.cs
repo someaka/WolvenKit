@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CUInt32>();
 			set => SetPropertyValue<CUInt32>(value);
 		}
+
+		public gameuiCharacterCustomizationAttribute()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

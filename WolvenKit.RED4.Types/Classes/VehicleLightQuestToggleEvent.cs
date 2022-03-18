@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public VehicleLightQuestToggleEvent()
 		{
 			LightType = Enums.vehicleELightType.Default;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

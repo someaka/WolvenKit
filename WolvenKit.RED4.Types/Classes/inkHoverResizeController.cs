@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			VectorNewSize = new();
 			VectorOldSize = new();
 			AnimationDuration = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

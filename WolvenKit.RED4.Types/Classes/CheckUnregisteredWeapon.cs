@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PrimaryItemArrayRecordTweakDBID = new();
 			SecondaryItemArrayRecordTweakDBID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

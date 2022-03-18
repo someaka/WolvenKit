@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Vendors = new();
 			VendingMachinesVendors = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

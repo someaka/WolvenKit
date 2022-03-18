@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public Sample_Replicated_Float_Property()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

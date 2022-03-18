@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			From = new();
 			To = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

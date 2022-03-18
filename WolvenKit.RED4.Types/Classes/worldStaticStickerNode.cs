@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 			AlignSpritesHorizontally = true;
 			Scale = 1.000000F;
 			VisibilityDistance = 25.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

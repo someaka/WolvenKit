@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public DistantIrradianceeSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

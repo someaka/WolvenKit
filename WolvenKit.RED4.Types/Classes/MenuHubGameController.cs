@@ -291,6 +291,10 @@ namespace WolvenKit.RED4.Types
 			ButtonHintsManagerRef = new();
 			BgFluff = new();
 			GameTimeContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

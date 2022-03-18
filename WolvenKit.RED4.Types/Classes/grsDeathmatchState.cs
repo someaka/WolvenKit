@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Time = new();
 			SessionLength = new();
 			PlayersInfo = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

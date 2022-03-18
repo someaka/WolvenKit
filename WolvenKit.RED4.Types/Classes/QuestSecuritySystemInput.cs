@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<RevealPlayerSettings>();
 			set => SetPropertyValue<RevealPlayerSettings>(value);
 		}
+
+		public QuestSecuritySystemInput()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

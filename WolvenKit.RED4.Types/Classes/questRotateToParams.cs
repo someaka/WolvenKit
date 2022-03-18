@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questRotateToParams()
 		{
 			Speed = 180.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

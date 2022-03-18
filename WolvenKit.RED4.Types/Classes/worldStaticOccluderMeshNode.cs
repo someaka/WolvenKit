@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Color = new();
 			AutohideDistanceScale = 255;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

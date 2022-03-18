@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameLootPrefabMetadata()
 		{
 			LootTableTDBIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

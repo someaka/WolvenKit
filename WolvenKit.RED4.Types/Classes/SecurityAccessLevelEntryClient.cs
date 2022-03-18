@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ESecurityAccessLevel>>();
 			set => SetPropertyValue<CEnum<ESecurityAccessLevel>>(value);
 		}
+
+		public SecurityAccessLevelEntryClient()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

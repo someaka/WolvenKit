@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<JsonResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<JsonResource>>(value);
 		}
+
+		public localizationPersistenceSubtitleMapEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

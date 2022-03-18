@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			FxResource = new();
 			Lifetime = -1.000000F;
 			RevealMaster = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

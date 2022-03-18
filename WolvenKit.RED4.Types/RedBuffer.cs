@@ -10,13 +10,13 @@ namespace WolvenKit.RED4
         private byte[] _bytes = Array.Empty<byte>();
 
         public HashSet<string> ParentTypes { get; } = new();
-        public RedBaseClass Parent { get; set; }
+        public RedBaseClass? Parent { get; set; }
 
         public uint Flags { get; set; }
         public bool IsEmpty => _bytes == Array.Empty<byte>();
-        public IParseableBuffer Data { get; set; }
+        public IParseableBuffer? Data { get; set; }
 
-        public RedBaseClass RootChunk { get; set; }
+        public RedBaseClass? RootChunk { get; set; }
 
         /// <summary>
         /// The length of the uncompressed data
@@ -67,7 +67,7 @@ namespace WolvenKit.RED4
         private ReadOnlySpan<byte> GetSpan() => new(_bytes);
 
 
-        public bool Equals(RedBuffer other)
+        public bool Equals(RedBuffer? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -97,7 +97,7 @@ namespace WolvenKit.RED4
             return true;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			InstalledPart = new();
 			InnerItemData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

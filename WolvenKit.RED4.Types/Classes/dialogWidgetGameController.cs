@@ -149,6 +149,10 @@ namespace WolvenKit.RED4.Types
 			ActiveHubID = -1;
 			FadeAnimTime = 0.500000F;
 			FadeDelay = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

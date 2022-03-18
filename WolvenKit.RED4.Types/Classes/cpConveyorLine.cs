@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public cpConveyorLine()
 		{
 			PhysicsValidRanges = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiLevelUpNotificationViewData()
 		{
 			Levelupdata = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

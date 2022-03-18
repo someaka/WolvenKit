@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<BasePerkDisplayData>>();
 			set => SetPropertyValue<CHandle<BasePerkDisplayData>>(value);
 		}
+
+		public PerkHoverOverEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

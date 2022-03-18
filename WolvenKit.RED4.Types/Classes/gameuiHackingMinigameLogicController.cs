@@ -520,6 +520,10 @@ namespace WolvenKit.RED4.Types
 			SuccessExitButton = new();
 			FailureExitButton = new();
 			ResetButton = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

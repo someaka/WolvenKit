@@ -206,6 +206,10 @@ namespace WolvenKit.RED4.Types
 			CpoEnableMultiplePlayersScanningModifier = true;
 			Clues = new();
 			IsEntityVisible = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

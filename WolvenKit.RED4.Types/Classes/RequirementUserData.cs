@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkAsyncSpawnRequest>>();
 			set => SetPropertyValue<CWeakHandle<inkAsyncSpawnRequest>>(value);
 		}
+
+		public RequirementUserData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

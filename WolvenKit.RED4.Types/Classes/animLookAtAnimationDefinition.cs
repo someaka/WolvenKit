@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			MinTransitionDuration = 1.000000F;
 			PlayAnimProbability = 1.000000F;
 			Animations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

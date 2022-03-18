@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FromNames = new();
 			EventTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameTransformAnimation_Movement>>();
 			set => SetPropertyValue<CHandle<gameTransformAnimation_Movement>>(value);
 		}
+
+		public gameTransformAnimation_RotateFromTo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

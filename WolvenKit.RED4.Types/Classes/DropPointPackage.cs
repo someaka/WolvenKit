@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PredefinedDrop = new();
 			StatusHistory = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

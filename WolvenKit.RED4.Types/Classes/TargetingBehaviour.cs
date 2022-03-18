@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			CanRotate = true;
 			LostTargetLookAtTime = 2.000000F;
 			LostTargetSearchTime = 10.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

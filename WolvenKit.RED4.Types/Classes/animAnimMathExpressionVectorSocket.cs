@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimMathExpressionVectorSocket()
 		{
 			Link = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -158,6 +158,10 @@ namespace WolvenKit.RED4.Types
 			EnableWorldSpaceSmoothing = true;
 			CameraParallaxSpace = Enums.scnfppParallaxSpace.Trajectory;
 			GenderSpecificParams = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

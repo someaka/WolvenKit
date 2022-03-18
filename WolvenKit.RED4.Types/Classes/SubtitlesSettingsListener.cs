@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<BaseSubtitlesGameController>>();
 			set => SetPropertyValue<CWeakHandle<BaseSubtitlesGameController>>(value);
 		}
+
+		public SubtitlesSettingsListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

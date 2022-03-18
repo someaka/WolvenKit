@@ -338,6 +338,10 @@ namespace WolvenKit.RED4.Types
 			PlayerPosition = new();
 			PlayTime = 0.000000;
 			PlaythroughTime = 0.000000;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

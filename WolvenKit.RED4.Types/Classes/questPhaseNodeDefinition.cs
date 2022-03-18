@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Sockets = new();
 			Id = 65535;
 			PhaseInstancePrefabs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

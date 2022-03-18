@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			InputTab = new();
 			VehiclesTab = new();
 			BraindanceTab = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

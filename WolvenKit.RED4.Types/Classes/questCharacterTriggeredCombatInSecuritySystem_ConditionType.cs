@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questCharacterTriggeredCombatInSecuritySystem_ConditionType()
 		{
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

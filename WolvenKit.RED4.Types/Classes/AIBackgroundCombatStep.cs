@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Argument = new() { Names = new() };
 			ExposureMethod = Enums.AICoverExposureMethod.Stand_Up;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

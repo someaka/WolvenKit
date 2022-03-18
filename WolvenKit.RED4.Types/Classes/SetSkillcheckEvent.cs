@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<BaseSkillCheckContainer>>();
 			set => SetPropertyValue<CHandle<BaseSkillCheckContainer>>(value);
 		}
+
+		public SetSkillcheckEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

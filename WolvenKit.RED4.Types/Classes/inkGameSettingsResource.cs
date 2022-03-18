@@ -329,6 +329,10 @@ namespace WolvenKit.RED4.Types
 			PermanentTextureAtlasesStadiaDurango = new();
 			PermanentTextureAtlasesStadiaOrbis = new();
 			Themes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

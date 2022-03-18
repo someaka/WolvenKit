@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LightDirOverride = new() { TimeOfYearSeason = Enums.ETimeOfYearSeason.ETOYS_Summer };
 			LightColorOverride = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

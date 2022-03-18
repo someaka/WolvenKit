@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			MicroblendContrast = 1.000000F;
 			Layers = new();
 			Microblends = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

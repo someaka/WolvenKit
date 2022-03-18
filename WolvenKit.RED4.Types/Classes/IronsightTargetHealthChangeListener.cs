@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<IronsightGameController>>();
 			set => SetPropertyValue<CWeakHandle<IronsightGameController>>(value);
 		}
+
+		public IronsightTargetHealthChangeListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

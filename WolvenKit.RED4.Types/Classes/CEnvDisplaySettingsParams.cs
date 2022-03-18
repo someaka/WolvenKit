@@ -121,6 +121,10 @@ namespace WolvenKit.RED4.Types
 			AllowCloudsShadow = true;
 			AllowWaterShader = true;
 			Gamma = 2.200000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

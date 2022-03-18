@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			GameInstanceHack = new();
 			Packages = new();
 			Map = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

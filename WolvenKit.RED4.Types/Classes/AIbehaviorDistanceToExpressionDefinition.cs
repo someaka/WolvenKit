@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorDistanceToExpressionDefinition()
 		{
 			Tolerance = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

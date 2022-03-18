@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			StatValueRef = new();
 			Icon = new();
 			Stat = new() { Type = Enums.gamedataStatType.Invalid };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

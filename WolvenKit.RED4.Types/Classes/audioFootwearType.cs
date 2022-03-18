@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioFootwearType()
 		{
 			ItemNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			OnActivate = new();
 			OnUpdate = new();
 			OnDeactivate = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

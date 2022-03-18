@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CInt32>();
 			set => SetPropertyValue<CInt32>(value);
 		}
+
+		public AnimFeature_FacialReaction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

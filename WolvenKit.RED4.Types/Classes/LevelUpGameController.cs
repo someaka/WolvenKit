@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Value = new();
 			ProficencyLabel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

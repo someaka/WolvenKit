@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBitField<physicsRagdollBodyPartE>>();
 			set => SetPropertyValue<CBitField<physicsRagdollBodyPartE>>(value);
 		}
+
+		public entdismembermentBodyMaterialConfig()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

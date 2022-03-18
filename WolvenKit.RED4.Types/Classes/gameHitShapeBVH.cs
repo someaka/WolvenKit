@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ChildrenNodes = new();
 			ChildrenShapeNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

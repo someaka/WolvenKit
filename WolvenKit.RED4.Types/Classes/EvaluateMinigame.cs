@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public EvaluateMinigame()
 		{
 			Item = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

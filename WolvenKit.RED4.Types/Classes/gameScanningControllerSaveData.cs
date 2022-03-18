@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameScanningControllerSaveData()
 		{
 			TaggedObjectIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

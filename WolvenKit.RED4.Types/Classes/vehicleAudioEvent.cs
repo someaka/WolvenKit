@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<vehicleAudioEventAction>>();
 			set => SetPropertyValue<CEnum<vehicleAudioEventAction>>(value);
 		}
+
+		public vehicleAudioEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

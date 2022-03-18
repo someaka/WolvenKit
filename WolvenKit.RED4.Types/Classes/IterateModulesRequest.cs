@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public IterateModulesRequest()
 		{
 			RemainingJobs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Pe = new();
 			Oice = new() { CaptionParts = new() { Parts = new() }, Data = new(), ChoiceMetaData = new() { Type = new() }, LookAtDescriptor = new() { Offset = new(), OrbId = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

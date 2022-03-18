@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public inkCreditsResource()
 		{
 			Sections = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

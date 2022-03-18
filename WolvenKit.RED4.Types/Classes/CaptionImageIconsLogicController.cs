@@ -160,6 +160,10 @@ namespace WolvenKit.RED4.Types
 			CheckBackgroundFail = new();
 			PayBackground = new();
 			PayBackgroundFail = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

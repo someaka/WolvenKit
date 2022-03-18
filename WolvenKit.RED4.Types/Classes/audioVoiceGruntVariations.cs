@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioVoiceGruntVariations()
 		{
 			CachedVariations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

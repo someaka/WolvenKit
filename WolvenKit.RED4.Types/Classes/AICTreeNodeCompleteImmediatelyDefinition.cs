@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AICTreeNodeCompleteImmediatelyDefinition()
 		{
 			CompleteWithSuccess = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			ResolutionMultiplier = Enums.rendResolutionMultiplier.X2;
 			EmmModes = new();
 			SaveFormat = Enums.ESaveFormat.SF_PNG;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			ClueEntity = new() { Names = new() };
 			MarkedOnTimeline = true;
 			OverrideFact = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

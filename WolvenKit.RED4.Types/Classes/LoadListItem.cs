@@ -173,6 +173,10 @@ namespace WolvenKit.RED4.Types
 			GameVersion = new();
 			EmptySlotWrapper = new();
 			Wrapper = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

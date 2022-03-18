@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			Blue = new() { Color = new() };
 			Yellow = new() { Color = new() };
 			White = new() { Color = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

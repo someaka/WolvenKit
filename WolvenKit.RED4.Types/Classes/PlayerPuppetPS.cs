@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Keybindigs = new();
 			AvailablePrograms = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

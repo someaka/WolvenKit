@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Id = 4294967295;
 			InputLink = new();
 			BlendTime = 0.200000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

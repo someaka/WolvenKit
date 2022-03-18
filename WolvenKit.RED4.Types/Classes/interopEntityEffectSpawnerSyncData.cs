@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Effects = new();
 			TemplateColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

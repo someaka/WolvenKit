@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AISharedVarDefinition()
 		{
 			Name = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

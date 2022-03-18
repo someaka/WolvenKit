@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "SecuritySystemController";
 			SavedOutputCache = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

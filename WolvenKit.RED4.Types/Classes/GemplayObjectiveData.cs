@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public GemplayObjectiveData()
 		{
 			OwnerID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

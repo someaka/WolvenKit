@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CInt8>();
 			set => SetPropertyValue<CInt8>(value);
 		}
+
+		public gameNetrunnerPrototypeNetworkNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

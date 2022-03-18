@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TimeDuration = 1.000000F;
 			FarPlaneMultiplier = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

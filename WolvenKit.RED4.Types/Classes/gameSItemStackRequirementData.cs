@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameSItemStackRequirementData()
 		{
 			StatType = Enums.gamedataStatType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public entReplicatedVariableValue()
 		{
 			ApplyServerTime = new() { MilliSecs = 18446744073709551615 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

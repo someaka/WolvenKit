@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public SecurityAreaData()
 		{
 			Id = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

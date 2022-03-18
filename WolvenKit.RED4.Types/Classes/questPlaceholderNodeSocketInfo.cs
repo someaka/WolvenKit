@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questPlaceholderNodeSocketInfo()
 		{
 			Type = Enums.questSocketType.Input;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

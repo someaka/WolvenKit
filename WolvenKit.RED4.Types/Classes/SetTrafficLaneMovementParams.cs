@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameFearStage>>();
 			set => SetPropertyValue<CEnum<gameFearStage>>(value);
 		}
+
+		public SetTrafficLaneMovementParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

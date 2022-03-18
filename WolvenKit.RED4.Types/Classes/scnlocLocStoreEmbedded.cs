@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VdEntries = new();
 			VpEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

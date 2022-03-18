@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<HubVendorMenuItems>>();
 			set => SetPropertyValue<CEnum<HubVendorMenuItems>>(value);
 		}
+
+		public VendorHubMenuChanged()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

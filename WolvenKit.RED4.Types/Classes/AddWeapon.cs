@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AddWeapon()
 		{
 			Weapon = Enums.EquipmentPriority.All;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

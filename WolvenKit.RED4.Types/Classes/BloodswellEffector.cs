@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public BloodswellEffector()
 		{
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

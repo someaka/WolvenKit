@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<toolsIMessageLocation>>();
 			set => SetPropertyValue<CHandle<toolsIMessageLocation>>(value);
 		}
+
+		public toolsMessageToken_Location()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

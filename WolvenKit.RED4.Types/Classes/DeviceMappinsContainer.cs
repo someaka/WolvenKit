@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Mappins = new();
 			NewNewFocusMappin = new() { Enabled = true, Range = 30.000000F, Offset = new(), Position = new(), CheckIfIsTarget = true, Id = new() };
 			OffsetValue = 0.200000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

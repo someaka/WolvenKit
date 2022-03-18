@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<DataBuffer>();
 			set => SetPropertyValue<DataBuffer>(value);
 		}
+
+		public worldSharedDataBuffer()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

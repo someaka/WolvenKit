@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<UIGameContext>>();
 			set => SetPropertyValue<CEnum<UIGameContext>>(value);
 		}
+
+		public gameuiRequestPushContextEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

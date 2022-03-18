@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameeventsApplyStatusEffectEvent>>();
 			set => SetPropertyValue<CHandle<gameeventsApplyStatusEffectEvent>>(value);
 		}
+
+		public DelayedStatusEffectApplicationEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

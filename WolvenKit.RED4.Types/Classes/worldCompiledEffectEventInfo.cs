@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public worldCompiledEffectEventInfo()
 		{
 			Flags = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

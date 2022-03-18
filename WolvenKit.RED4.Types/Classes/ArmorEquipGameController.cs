@@ -366,6 +366,10 @@ namespace WolvenKit.RED4.Types
 			ConsumableTags = new();
 			ModulesTags = new();
 			FramesTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

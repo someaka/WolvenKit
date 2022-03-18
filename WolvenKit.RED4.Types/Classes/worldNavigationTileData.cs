@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public worldNavigationTileData()
 		{
 			OffMeshConnections = new() { Verts = new(), Radii = new(), Flags = new(), Areas = new(), Directions = new(), Ids = new(), TagIntervals = new(), TagsX = new(), GlobalNodeIDs = new(), UserData = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

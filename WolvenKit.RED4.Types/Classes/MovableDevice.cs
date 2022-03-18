@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			TriggerComponents = new();
 			OffMeshConnectionsToOpenNames = new();
 			OffMeshConnectionsToOpen = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

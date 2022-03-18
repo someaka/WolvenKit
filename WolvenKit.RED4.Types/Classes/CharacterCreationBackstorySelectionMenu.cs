@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			Nomad = new();
 			StreetRat = new();
 			Corpo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

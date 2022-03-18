@@ -86,6 +86,10 @@ namespace WolvenKit.RED4.Types
 			SpawnedSystems = new();
 			DefaultGlitchVideoPath = new();
 			BroadcastGlitchVideoPath = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

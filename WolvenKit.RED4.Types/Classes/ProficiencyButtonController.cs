@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			LabelText = new();
 			LevelText = new();
 			FrameHovered = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

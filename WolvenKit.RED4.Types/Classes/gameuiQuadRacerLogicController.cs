@@ -328,6 +328,10 @@ namespace WolvenKit.RED4.Types
 			ScoreText = new();
 			SpeedText = new();
 			NotificationText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

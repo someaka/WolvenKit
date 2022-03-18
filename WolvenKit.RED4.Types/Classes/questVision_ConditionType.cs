@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			ObservedTargetRef = new() { Names = new() };
 			IsObservedTargetPlayer = true;
 			IsInstant = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

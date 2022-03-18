@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			CircularBlurEnabled = new();
 			CircularBlurBlendTime = new();
 			TrackedMappin = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

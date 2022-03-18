@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Image = new();
 			PartName = "icon_circle_anim_";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

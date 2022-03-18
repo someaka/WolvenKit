@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorParameterizedBehavior()
 		{
 			ArgumentsOverrides = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

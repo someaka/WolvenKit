@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			Icon = new();
 			ScrollArea = new();
 			ScrollControllerWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

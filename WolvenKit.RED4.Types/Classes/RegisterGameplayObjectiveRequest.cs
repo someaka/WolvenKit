@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<GemplayObjectiveData>>();
 			set => SetPropertyValue<CHandle<GemplayObjectiveData>>(value);
 		}
+
+		public RegisterGameplayObjectiveRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

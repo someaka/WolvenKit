@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Name = "Component";
 			StreamingDistance = 50.000000F;
 			VisibleTargetRange = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,6 +28,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBDescriptionRecord = 174063646172;
 			WeaponVendingMachineSetup = new() { TimeToCompletePurchase = 3.000000F };
 			WeaponVendingMachineSFX = new() { Processing = "dev_vending_machine_processing" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

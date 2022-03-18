@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public RevealStateChangedEvent()
 		{
 			Reason = new() { SourceEntityId = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

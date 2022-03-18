@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public InteractiveAd()
 		{
 			ControllerTypeName = "InteractiveAdController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

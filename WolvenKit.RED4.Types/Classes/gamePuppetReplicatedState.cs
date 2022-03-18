@@ -84,5 +84,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<gameReplicatedEntityEventsState>();
 			set => SetPropertyValue<gameReplicatedEntityEventsState>(value);
 		}
+
+		public gamePuppetReplicatedState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

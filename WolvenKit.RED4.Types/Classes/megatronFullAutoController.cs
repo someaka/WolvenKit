@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkImageWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkImageWidget>>(value);
 		}
+
+		public megatronFullAutoController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

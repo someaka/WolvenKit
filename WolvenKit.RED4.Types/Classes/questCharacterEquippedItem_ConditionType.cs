@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			PuppetRef = new() { Names = new() };
 			ExcludedTweakDBIDs = new();
 			ExcludedTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

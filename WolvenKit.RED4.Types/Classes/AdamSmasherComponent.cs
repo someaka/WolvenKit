@@ -112,6 +112,10 @@ namespace WolvenKit.RED4.Types
 		public AdamSmasherComponent()
 		{
 			Owner_id = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

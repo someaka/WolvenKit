@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EnableStateColor = new();
 			DisableStateColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

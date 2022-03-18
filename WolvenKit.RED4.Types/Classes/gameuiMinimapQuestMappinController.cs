@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gamemappinsQuestMappin>>();
 			set => SetPropertyValue<CWeakHandle<gamemappinsQuestMappin>>(value);
 		}
+
+		public gameuiMinimapQuestMappinController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

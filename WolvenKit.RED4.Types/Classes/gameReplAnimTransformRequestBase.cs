@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameReplAnimTransformRequestBase()
 		{
 			ApplyServerTime = new() { MilliSecs = 18446744073709551615 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

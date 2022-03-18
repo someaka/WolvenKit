@@ -281,6 +281,10 @@ namespace WolvenKit.RED4.Types
 			ReceivedDamageHistory = new();
 			LastHitInstigatorID = new();
 			HitInstigatorCooldownID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

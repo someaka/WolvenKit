@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataNPCStanceState>>();
 			set => SetPropertyValue<CEnum<gamedataNPCStanceState>>(value);
 		}
+
+		public ChangeStanceState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questFormConvoy_NodeType()
 		{
 			LeaderRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectFilter_ReachableByAcousticGraph()
 		{
 			MaxPathLength = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

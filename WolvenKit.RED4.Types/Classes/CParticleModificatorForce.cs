@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			Pivot = new();
 			Radius = 10.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

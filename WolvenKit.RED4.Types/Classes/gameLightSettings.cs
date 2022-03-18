@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public gameLightSettings()
 		{
 			Color = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

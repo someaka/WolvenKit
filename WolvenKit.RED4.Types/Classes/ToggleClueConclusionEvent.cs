@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public ToggleClueConclusionEvent()
 		{
 			UpdatePS = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

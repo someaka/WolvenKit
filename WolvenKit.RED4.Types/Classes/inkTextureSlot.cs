@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Parts = new();
 			Slices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

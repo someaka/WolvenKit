@@ -161,6 +161,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Duration = 2.000000F;
 			WANTED_TIER_SIZE = 5;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

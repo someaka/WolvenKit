@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameEffectVectorEvaluator>>();
 			set => SetPropertyValue<CHandle<gameEffectVectorEvaluator>>(value);
 		}
+
+		public gameEffectExecutor_VisualEffect()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

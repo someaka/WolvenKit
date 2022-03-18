@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

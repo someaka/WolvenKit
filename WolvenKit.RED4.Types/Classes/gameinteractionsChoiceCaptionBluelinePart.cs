@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameinteractionsvisBluelineDescription>>();
 			set => SetPropertyValue<CHandle<gameinteractionsvisBluelineDescription>>(value);
 		}
+
+		public gameinteractionsChoiceCaptionBluelinePart()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			ButtonRef = new();
 			EditView = new();
 			EditOpacity = 0.400000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

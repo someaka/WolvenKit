@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 			MotherTongueContainter = new();
 			TargetTextWidgetRef = new();
 			LineData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

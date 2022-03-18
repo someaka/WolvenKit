@@ -7,15 +7,19 @@ namespace WolvenKit.RED4.Types
 
     public static class CBitField
     {
-        public static IRedBitField Parse(Type enumType, string value)
+        public static IRedBitField? Parse(Type enumType, string value)
         {
             var method = typeof(CBitField).GetMethod(nameof(Parse), BindingFlags.Public | BindingFlags.Static, null, new[] { typeof(string) }, null);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method CBitfield.Parse<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(enumType);
 
-            return (IRedBitField)generic.Invoke(null, new object[] { value });
+            return (IRedBitField?)generic.Invoke(null, new object[] { value });
         }
 
-        public static CBitField<T> Parse<T>(string value) where T : struct, Enum
+        public static CBitField<T>? Parse<T>(string value) where T : struct, Enum
         {
             if (Enum.TryParse<T>(value, out var result))
             {
@@ -55,7 +59,7 @@ namespace WolvenKit.RED4.Types
 
         public override int GetHashCode() => Value.GetHashCode();
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {
@@ -75,7 +79,7 @@ namespace WolvenKit.RED4.Types
             return Equals((CBitField<T>)obj);
         }
 
-        public bool Equals(CBitField<T> other)
+        public bool Equals(CBitField<T>? other)
         {
             if (ReferenceEquals(null, other))
             {

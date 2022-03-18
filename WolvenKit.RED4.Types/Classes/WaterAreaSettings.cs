@@ -118,6 +118,10 @@ namespace WolvenKit.RED4.Types
 			Density = 10.000000F;
 			LightAbsorptionColor = new() { Red = 0.100000F, Green = 0.500000F, Blue = 1.000000F, Alpha = 1.000000F };
 			LightDecayColor = new() { Red = 0.100000F, Green = 0.130000F, Blue = 0.130000F, Alpha = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

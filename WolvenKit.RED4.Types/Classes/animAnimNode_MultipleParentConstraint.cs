@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 			InterpolationType = Enums.animEInterpolationType.Slerp;
 			Weight = 1.000000F;
 			WeightFloatTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

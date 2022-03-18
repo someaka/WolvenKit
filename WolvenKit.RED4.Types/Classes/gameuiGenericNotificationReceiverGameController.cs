@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiGenericNotificationReceiverGameController()
 		{
 			ItemChanged = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

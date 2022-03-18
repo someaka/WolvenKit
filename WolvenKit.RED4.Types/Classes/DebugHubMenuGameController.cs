@@ -92,5 +92,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameTransactionSystem>>();
 			set => SetPropertyValue<CHandle<gameTransactionSystem>>(value);
 		}
+
+		public DebugHubMenuGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

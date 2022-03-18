@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			Events = new();
 			SectionDuration = new();
 			ActorBehaviors = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RootOffset_Z = 1.000000F;
 			Tollerance = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

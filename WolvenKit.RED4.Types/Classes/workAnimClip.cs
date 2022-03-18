@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Id = new() { Id = 4294967295 };
 			Flags = 2;
 			BlendOutTime = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

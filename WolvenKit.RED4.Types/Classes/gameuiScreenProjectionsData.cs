@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiScreenProjectionsData()
 		{
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

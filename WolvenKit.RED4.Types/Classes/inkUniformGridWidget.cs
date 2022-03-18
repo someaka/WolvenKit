@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inkEOrientation>>();
 			set => SetPropertyValue<CEnum<inkEOrientation>>(value);
 		}
+
+		public inkUniformGridWidget()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

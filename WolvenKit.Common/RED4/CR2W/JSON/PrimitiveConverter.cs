@@ -196,7 +196,13 @@ public class CNameConverter : JsonConverter<CName>, ICustomRedConverter
 
         if (reader.TokenType == JsonTokenType.String)
         {
-            return reader.GetString();
+            var strVal = reader.GetString();
+            if (strVal == null)
+            {
+                throw new JsonException();
+            }
+
+            return strVal;
         }
         else if (reader.TokenType == JsonTokenType.Number)
         {
@@ -210,13 +216,14 @@ public class CNameConverter : JsonConverter<CName>, ICustomRedConverter
 
     public override void Write(Utf8JsonWriter writer, CName value, JsonSerializerOptions options)
     {
-        if ((string)value != null)
+        string? strVal = value;
+        if (strVal == null)
         {
-            writer.WriteStringValue(value);
+            writer.WriteNumberValue(value);
         }
         else
         {
-            writer.WriteNumberValue(value);
+            writer.WriteStringValue(strVal);
         }
     }
 }
@@ -241,7 +248,13 @@ public class CStringConverter : JsonConverter<CString>, ICustomRedConverter
             return (CString)RedTypeManager.CreateRedType(typeToConvert);
         }
 
-        return reader.GetString();
+        var strVal = reader.GetString();
+        if (strVal == null)
+        {
+            throw new JsonException();
+        }
+
+        return strVal;
     }
 
     public override void Write(Utf8JsonWriter writer, CString value, JsonSerializerOptions options) => writer.WriteStringValue(value);
@@ -295,7 +308,13 @@ public class CVariantConverter : JsonConverter<CVariant>, ICustomRedConverter
                         throw new JsonException();
                     }
 
-                    (type, _) = RedReflection.GetCSTypeFromRedType(reader.GetString());
+                    var strVal = reader.GetString();
+                    if (strVal == null)
+                    {
+                        throw new JsonException();
+                    }
+
+                    (type, _) = RedReflection.GetCSTypeFromRedType(strVal);
                     break;
                 }
 
@@ -332,6 +351,11 @@ public class CVariantConverter : JsonConverter<CVariant>, ICustomRedConverter
     public override void Write(Utf8JsonWriter writer, CVariant value, JsonSerializerOptions options)
     {
         writer.WriteStartObject();
+
+        if (value.Value == null)
+        {
+            throw new JsonException();
+        }
 
         var redTypeName = RedReflection.GetRedTypeFromCSType(value.Value.GetType());
         writer.WriteString("Type", redTypeName);
@@ -1332,7 +1356,13 @@ public class NodeRefConverter : JsonConverter<NodeRef>, ICustomRedConverter
             return null;
         }
 
-        return reader.GetString();
+        var strVal = reader.GetString();
+        if (strVal == null)
+        {
+            throw new JsonException();
+        }
+
+        return strVal;
     }
 
     public override void Write(Utf8JsonWriter writer, NodeRef value, JsonSerializerOptions options) => writer.WriteStringValue(value);
@@ -1351,7 +1381,13 @@ public class TweakDBIDConverter : JsonConverter<TweakDBID>, ICustomRedConverter
 
         if (reader.TokenType == JsonTokenType.String)
         {
-            return reader.GetString();
+            var strVal = reader.GetString();
+            if (strVal == null)
+            {
+                throw new JsonException();
+            }
+
+            return strVal;
         }
         else if (reader.TokenType == JsonTokenType.Number)
         {
@@ -1365,13 +1401,14 @@ public class TweakDBIDConverter : JsonConverter<TweakDBID>, ICustomRedConverter
 
     public override void Write(Utf8JsonWriter writer, TweakDBID value, JsonSerializerOptions options)
     {
-        if ((string)value != null)
+        string? strVal = value;
+        if (strVal == null)
         {
-            writer.WriteStringValue(value);
+            writer.WriteNumberValue(value);
         }
         else
         {
-            writer.WriteNumberValue(value);
+            writer.WriteStringValue(strVal);
         }
     }
 }
@@ -1430,7 +1467,14 @@ public class CKeyValuePairConverter : JsonConverter<CKeyValuePair>, ICustomRedCo
         {
             throw new JsonException();
         }
-        var (valType, _) = RedReflection.GetCSTypeFromRedType(reader.GetString());
+
+        var strVal = reader.GetString();
+        if (strVal == null)
+        {
+            throw new JsonException();
+        }
+
+        var (valType, _) = RedReflection.GetCSTypeFromRedType(strVal);
         if (valType == null)
         {
             throw new JsonException();
@@ -1443,6 +1487,10 @@ public class CKeyValuePairConverter : JsonConverter<CKeyValuePair>, ICustomRedCo
         }
 
         propertyName = reader.GetString();
+        if (propertyName == null)
+        {
+            throw new JsonException();
+        }
 
         object? result;
         var converter = options.GetConverter(valType);
@@ -1477,7 +1525,7 @@ public class CKeyValuePairConverter : JsonConverter<CKeyValuePair>, ICustomRedCo
         var valType = RedReflection.GetRedTypeFromCSType(value.Value.GetType());
         writer.WriteString("Type", valType);
 
-        writer.WritePropertyName(value.Key);
+        writer.WritePropertyName(value.Key!);
         JsonSerializer.Serialize(writer, (object)value.Value, options);
 
         writer.WriteEndObject();
@@ -1846,9 +1894,9 @@ public class EnumConverterFactory : JsonConverterFactory
 
 public class CBitFieldConverter : JsonConverter<IRedBitField>, ICustomRedConverter
 {
-    public object ReadRedType(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) => Read(ref reader, typeToConvert, options);
+    public object? ReadRedType(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) => Read(ref reader, typeToConvert, options);
 
-    public override IRedBitField Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    public override IRedBitField? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         if (reader.TokenType == JsonTokenType.Null)
         {
@@ -1862,6 +1910,11 @@ public class CBitFieldConverter : JsonConverter<IRedBitField>, ICustomRedConvert
 
         var enumType = typeToConvert.GetGenericArguments()[0];
         var str = reader.GetString();
+        if (str == null)
+        {
+            throw new JsonException();
+        }
+
         return CBitField.Parse(enumType, str);
     }
 
@@ -1886,6 +1939,11 @@ public class CEnumConverter : JsonConverter<IRedEnum>, ICustomRedConverter
 
         var enumType = typeToConvert.GetGenericArguments()[0];
         var str = reader.GetString();
+        if (str == null)
+        {
+            throw new JsonException();
+        }
+
         return CEnum.Parse(enumType, str);
     }
 
@@ -2129,7 +2187,7 @@ public class ResourceReferenceConverter : JsonConverter<IRedRef>, ICustomRedConv
                     if (converter is ICustomRedConverter conv)
                     {
                         reader.Read();
-                        result.DepotPath = (CName?)conv.ReadRedType(ref reader, typeof(CName), options);
+                        result.DepotPath = ((CName?)conv.ReadRedType(ref reader, typeof(CName), options))!;
                     }
                     else
                     {
@@ -2260,6 +2318,10 @@ public class RedClassConverter : JsonConverter<RedBaseClass>, ICustomRedConverte
                     }
 
                     clsType = reader.GetString();
+                    if (clsType == null)
+                    {
+                        throw new JsonException();
+                    }
 
                     if (refId != null && _referenceResolver.HasReference(refId))
                     {
@@ -2311,7 +2373,7 @@ public class RedClassConverter : JsonConverter<RedBaseClass>, ICustomRedConverte
                         }
 
                         var valInfo = typeInfo.PropertyInfos.FirstOrDefault(x => x.RedName == key);
-                        if (valInfo == null)
+                        if (valInfo == null || valInfo.RedName == null)
                         {
                             throw new JsonException();
                         }
@@ -2363,8 +2425,13 @@ public class RedClassConverter : JsonConverter<RedBaseClass>, ICustomRedConverte
         var typeInfo = RedReflection.GetTypeInfo(value.GetType());
         foreach (var propertyInfo in typeInfo.PropertyInfos.OrderBy(x => x.RedName))
         {
+            if (propertyInfo.RedName == null)
+            {
+                throw new JsonException();
+            }
+
             writer.WritePropertyName(propertyInfo.RedName);
-            JsonSerializer.Serialize(writer, (object)value.GetProperty(propertyInfo.RedName), options);
+            JsonSerializer.Serialize(writer, (object?)value.GetProperty(propertyInfo.RedName), options);
         }
 
         writer.WriteEndObject();
@@ -2897,6 +2964,11 @@ public class RedFileDtoConverter : JsonConverter<RedFileDto>, ICustomRedConverte
                     for (var i = 0; i < chunkList.Count; i++)
                     {
                         var type = chunkList[i].GetProperty("Type").GetString();
+                        if (type == null)
+                        {
+                            throw new JsonException();
+                        }
+
                         _referenceResolver.AddReference(i.ToString(), RedTypeManager.Create(type));
                     }
 

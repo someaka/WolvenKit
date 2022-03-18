@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<worldEffectBlackboard>>();
 			set => SetPropertyValue<CHandle<worldEffectBlackboard>>(value);
 		}
+
+		public OxygenStatListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

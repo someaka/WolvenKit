@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TimesPlayed = -1;
 			TimeScale = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

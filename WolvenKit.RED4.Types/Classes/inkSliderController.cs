@@ -145,6 +145,10 @@ namespace WolvenKit.RED4.Types
 			SliderInput = new();
 			SliderValueChanged = new();
 			SliderHandleReleased = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

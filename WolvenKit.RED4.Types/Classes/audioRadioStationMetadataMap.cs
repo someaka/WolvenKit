@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RadioStations = new();
 			DefaultBackgroundJingle = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

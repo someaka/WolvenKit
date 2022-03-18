@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public MinimapDataNode()
 		{
 			LocalBounds = new() { Min = new(), Max = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

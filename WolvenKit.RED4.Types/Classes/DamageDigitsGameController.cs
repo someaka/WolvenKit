@@ -180,6 +180,10 @@ namespace WolvenKit.RED4.Types
 			ActiveWeapon = new() { WeaponID = new(), AmmoCurrent = -1, MagazineCap = -1, AmmoId = new(), TriggerModeCurrent = Enums.gamedataTriggerMode.Invalid, TriggerModeList = new(), Evolution = Enums.gamedataWeaponEvolution.Invalid, IsFirstEquip = true };
 			IndividualControllerArray = new();
 			AccumulatedControllerArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

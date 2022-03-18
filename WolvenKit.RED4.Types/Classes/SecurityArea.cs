@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SecurityArea()
 		{
 			ControllerTypeName = "SecurityAreaController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

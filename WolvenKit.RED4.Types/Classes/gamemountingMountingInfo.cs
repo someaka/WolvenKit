@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			ChildId = new();
 			ParentId = new();
 			SlotId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

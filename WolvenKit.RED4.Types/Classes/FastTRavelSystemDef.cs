@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			FastTravelStarted = new();
 			FastTravelLoadingScreenStarted = new();
 			FastTravelLoadingScreenFinished = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

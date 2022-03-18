@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioAppearancesGroup()
 		{
 			Appearances = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

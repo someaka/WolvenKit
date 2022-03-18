@@ -10,71 +10,36 @@ namespace WolvenKit.RED4.Types
         public static IRedBaseHandle Parse(Type handleType, RedBaseClass value)
         {
             var method = typeof(CHandle).GetMethod(nameof(Parse), BindingFlags.Public | BindingFlags.Static, null, new[] { typeof(RedBaseClass) }, null);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method CHandle.Parse<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(handleType);
 
-            return (IRedBaseHandle)generic.Invoke(null, new object[] { value });
+            var result = generic.Invoke(null, new object[] { value });
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedBaseHandle)result;
         }
 
-        public static CHandle<T> Parse<T>(RedBaseClass value) where T : RedBaseClass
-        {
-            return new CHandle<T>((T)value);
-        }
+        public static CHandle<T> Parse<T>(RedBaseClass value) where T : RedBaseClass => new((T)value);
     }
 
     [RED("handle")]
-    public class CHandle<T> : IRedHandle<T>, /*IRedNotifyObjectChanged, */IEquatable<CHandle<T>>, IRedCloneable where T : RedBaseClass
+    public class CHandle<T> : IRedHandle<T>, IEquatable<CHandle<T>>, IRedCloneable where T : RedBaseClass
     {
-        // public event ObjectChangedEventHandler ObjectChanged;
-
-        private T _chunk;
-
         [DebuggerBrowsable(DebuggerBrowsableState.RootHidden)]
-        public T Chunk {
-            get => _chunk;
-            set
-            {
-                _chunk = value;
-
-                //if (!Equals(_chunk, value))
-                //{
-                //    if (_chunk != null)
-                //    {
-                //        _chunk.ObjectChanged -= OnObjectChanged;
-                //    }
-                //
-                //    var oldChunk = _chunk;
-                //    _chunk = value;
-                //
-                //    if (_chunk != null)
-                //    {
-                //        _chunk.ObjectChanged += OnObjectChanged;
-                //    }
-                //
-                //    var args = new ObjectChangedEventArgs(ObjectChangedType.Modified, null, oldChunk, _chunk);
-                //    args._callStack.Add(this);
-                //
-                //    ObjectChanged?.Invoke(null, args);
-                //}
-            }
-        }
-
-        //private void OnObjectChanged(object sender, ObjectChangedEventArgs e)
-        //{
-        //    if (e._callStack.Contains(this))
-        //    {
-        //        return;
-        //    }
-        //    e._callStack.Add(this);
-        //
-        //    ObjectChanged?.Invoke(sender, e);
-        //}
+        public T? Chunk { get; set; }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         public Type InnerType => typeof(T);
 
 
-        public RedBaseClass GetValue() => Chunk;
-        public void SetValue(RedBaseClass cls) => Chunk = (T)cls;
+        public RedBaseClass? GetValue() => Chunk;
+        public void SetValue(RedBaseClass? cls) => Chunk = (T?)cls;
 
 
         public CHandle(){}
@@ -86,10 +51,10 @@ namespace WolvenKit.RED4.Types
 
 
         public static implicit operator CHandle<T>(T value) => new(value);
-        public static implicit operator T(CHandle<T> value) => value.Chunk;
+        public static implicit operator T?(CHandle<T> value) => value.Chunk;
 
 
-        public bool Equals(CHandle<T> other)
+        public bool Equals(CHandle<T>? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -109,7 +74,7 @@ namespace WolvenKit.RED4.Types
             return true;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {
@@ -129,7 +94,7 @@ namespace WolvenKit.RED4.Types
             return Equals((CHandle<T>)obj);
         }
 
-        public override int GetHashCode() => EqualityComparer<T>.Default.GetHashCode((T)Chunk);
+        public override int GetHashCode() => Chunk != null ? Chunk.GetHashCode() : 0;
 
         public object ShallowCopy()
         {
@@ -138,7 +103,12 @@ namespace WolvenKit.RED4.Types
 
         public object DeepCopy()
         {
-            return CHandle.Parse(InnerType, (RedBaseClass)_chunk.DeepCopy());
+            if (Chunk != null)
+            {
+                return new CHandle<T>((T)Chunk.DeepCopy());
+            }
+
+            return new CHandle<T>();
         }
     }
 }

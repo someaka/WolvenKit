@@ -95,6 +95,10 @@ namespace WolvenKit.RED4.Types
 			MaxValue = 200.000000F;
 			BarsPadding = 4.000000F;
 			BarSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

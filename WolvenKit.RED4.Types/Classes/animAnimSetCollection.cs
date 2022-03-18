@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			AnimSets = new();
 			OverrideAnimSets = new();
 			AnimWrapperVariables = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

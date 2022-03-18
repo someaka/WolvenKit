@@ -230,6 +230,10 @@ namespace WolvenKit.RED4.Types
 			CurrentWeaponAmmo = 10;
 			CurrentWeaponAmmoCapacity = 10;
 			SelectedConsumable = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

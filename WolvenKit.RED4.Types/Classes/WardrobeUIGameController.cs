@@ -109,6 +109,10 @@ namespace WolvenKit.RED4.Types
 			MainScreenWidget = new();
 			SetGridWidget = new();
 			Sets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

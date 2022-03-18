@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameObject>>();
 			set => SetPropertyValue<CWeakHandle<gameObject>>(value);
 		}
+
+		public CheckThreat()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

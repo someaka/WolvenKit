@@ -152,6 +152,10 @@ namespace WolvenKit.RED4.Types
 		public GameplayRoleMappinData()
 		{
 			ShowOnMiniMap = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

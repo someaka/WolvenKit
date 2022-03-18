@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			IncludeChannels = Enums.TriggerChannel.TC_Player | Enums.TriggerChannel.TC_Environment;
 			WeatherStateNames = new();
 			WeatherStateValues = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

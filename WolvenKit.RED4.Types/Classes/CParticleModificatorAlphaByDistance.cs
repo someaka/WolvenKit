@@ -28,6 +28,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			NearBlendDistance = new() { X = 7.000000F, Y = 5.000000F };
 			FarBlendDistance = new() { X = 27.000000F, Y = 20.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

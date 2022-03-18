@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Image = new();
 			Highlight = new();
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

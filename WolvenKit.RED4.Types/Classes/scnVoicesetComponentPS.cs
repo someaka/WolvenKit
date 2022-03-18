@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			NPCHighLevelState = Enums.gamedataNPCHighLevelState.Invalid;
 			AreVoicesetLinesEnabled = true;
 			AreVoicesetGruntsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

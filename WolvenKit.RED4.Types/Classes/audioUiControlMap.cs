@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<audioKeyUiControlDictionary>>();
 			set => SetPropertyValue<CHandle<audioKeyUiControlDictionary>>(value);
 		}
+
+		public audioUiControlMap()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

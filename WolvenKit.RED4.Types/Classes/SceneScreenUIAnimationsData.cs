@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OnSpawnAnimations = new();
 			DefaultLibraryItemAnchor = Enums.inkEAnchor.Fill;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

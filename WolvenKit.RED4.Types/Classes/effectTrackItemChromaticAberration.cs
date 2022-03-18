@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			TimeDuration = 1.000000F;
 			ChromaticAberrationOffset = new();
 			ChromaticAberrationExp = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

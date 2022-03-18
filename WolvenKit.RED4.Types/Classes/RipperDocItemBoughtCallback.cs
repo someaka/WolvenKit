@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<RipperDocGameController>>();
 			set => SetPropertyValue<CWeakHandle<RipperDocGameController>>(value);
 		}
+
+		public RipperDocItemBoughtCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

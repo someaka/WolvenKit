@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CalTransform = new();
 			Mensions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

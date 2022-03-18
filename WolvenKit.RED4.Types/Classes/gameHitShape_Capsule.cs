@@ -28,6 +28,10 @@ namespace WolvenKit.RED4.Types
 			LocalTransform = new();
 			Radius = 0.200000F;
 			Height = 0.400000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

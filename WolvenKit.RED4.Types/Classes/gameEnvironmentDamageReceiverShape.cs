@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<Transform>();
 			set => SetPropertyValue<Transform>(value);
 		}
+
+		public gameEnvironmentDamageReceiverShape()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

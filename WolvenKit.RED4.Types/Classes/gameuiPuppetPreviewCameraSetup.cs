@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CameraZoom = -1.000000F;
 			InterpolationTime = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

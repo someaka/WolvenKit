@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			IsPrimary = true;
 			AimAssistData = new();
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

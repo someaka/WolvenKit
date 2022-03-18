@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public BlurAreaSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

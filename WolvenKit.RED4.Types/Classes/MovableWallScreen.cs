@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public MovableWallScreen()
 		{
 			ControllerTypeName = "MovableWallScreenController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

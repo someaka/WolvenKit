@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<TransferSaveAction>>();
 			set => SetPropertyValue<CEnum<TransferSaveAction>>(value);
 		}
+
+		public TransferSaveData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

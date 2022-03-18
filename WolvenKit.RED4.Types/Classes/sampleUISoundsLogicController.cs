@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkTextWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkTextWidget>>(value);
 		}
+
+		public sampleUISoundsLogicController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

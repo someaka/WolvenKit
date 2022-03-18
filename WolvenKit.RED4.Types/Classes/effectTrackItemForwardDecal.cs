@@ -116,6 +116,10 @@ namespace WolvenKit.RED4.Types
 			SizeThreshold = 0.050000F;
 			SubUVx = 1;
 			SubUVy = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

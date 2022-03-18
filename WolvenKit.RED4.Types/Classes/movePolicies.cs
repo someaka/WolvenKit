@@ -283,6 +283,10 @@ namespace WolvenKit.RED4.Types
 			UseCollisionAvoidance = true;
 			UseStart = true;
 			UseStop = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

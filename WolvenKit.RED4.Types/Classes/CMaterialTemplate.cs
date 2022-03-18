@@ -87,6 +87,10 @@ namespace WolvenKit.RED4.Types
 			Techniques = new();
 			SamplerStates = new(3);
 			UsedParameters = new(3);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

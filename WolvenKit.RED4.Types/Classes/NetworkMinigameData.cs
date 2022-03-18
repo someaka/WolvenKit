@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			PlayerPrograms = new();
 			EnemyLockNetwork = new() { CommandLists = new(), Effects = new() };
 			EnemyPrograms = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

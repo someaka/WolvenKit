@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			EditTags = new();
 			OnDeactivateActions = new();
 			Definitions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

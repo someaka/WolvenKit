@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 		public SWidgetPackage()
 		{
 			OwnerID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

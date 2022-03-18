@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EntityPosition = new();
 			EntityOrientation = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

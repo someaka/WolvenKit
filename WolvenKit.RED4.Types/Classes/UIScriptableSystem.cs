@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NewItems = new();
 			DLCAddedItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

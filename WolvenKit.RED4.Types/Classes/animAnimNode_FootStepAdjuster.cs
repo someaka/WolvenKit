@@ -152,6 +152,10 @@ namespace WolvenKit.RED4.Types
 			StepAdjustmentInterval = 1.000000F;
 			ControlValueNode = new();
 			ControlVectorNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -144,6 +144,10 @@ namespace WolvenKit.RED4.Types
 			OutputPath = new();
 			FovMultiplier = 1.000000F;
 			SaveFormat = Enums.ESaveFormat.SF_PNG;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EAISquadVerb>>();
 			set => SetPropertyValue<CEnum<EAISquadVerb>>(value);
 		}
+
+		public StimuliSquadActionEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

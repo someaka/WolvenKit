@@ -8,7 +8,7 @@ namespace WolvenKit.RED4.Types
 {
     [DebuggerTypeProxy(typeof(ICollectionDebugView<>))]
     [DebuggerDisplay("Count = {Count}")]
-    public class CArrayBase<T> : IRedArray<T>, IRedCloneable, /*IRedNotifyObjectChanged, */IEquatable<CArrayBase<T>>
+    public class CArrayBase<T> : IRedArray<T?>, IRedCloneable, /*IRedNotifyObjectChanged, */IEquatable<CArrayBase<T?>>
     {
         private int _maxSize = -1;
 
@@ -32,17 +32,17 @@ namespace WolvenKit.RED4.Types
         // public event ObjectChangedEventHandler ObjectChanged;
 
 
-        private readonly List<T> _internalList;
+        private readonly List<T?> _internalList;
 
 
         public CArrayBase()
         {
-            _internalList = new List<T>();
+            _internalList = new List<T?>();
         }
 
         public CArrayBase(int size)
         {
-            _internalList = new List<T>(new T[size]);
+            _internalList = new List<T?>(new T[size]);
 
             var propTypeInfo = RedReflection.GetTypeInfo(typeof(T));
             if (propTypeInfo.IsValueType)
@@ -54,7 +54,7 @@ namespace WolvenKit.RED4.Types
             }
         }
 
-        public CArrayBase(List<T> list)
+        public CArrayBase(List<T?> list)
         {
             _internalList = list;
         }
@@ -68,7 +68,7 @@ namespace WolvenKit.RED4.Types
 
         public object DeepCopy()
         {
-            var other = (IList<T>)RedTypeManager.CreateRedType(GetType());
+            var other = (IList<T?>)RedTypeManager.CreateRedType(GetType());
 
             foreach (var element in _internalList)
             {
@@ -152,7 +152,7 @@ namespace WolvenKit.RED4.Types
         public bool IsSynchronized => ((ICollection)_internalList).IsSynchronized;
         public object SyncRoot => ((ICollection)_internalList).IsSynchronized;
 
-        private int AddItem(object value)
+        private int AddItem(object? value)
         {
             if (value != null && value is not T)
             {
@@ -169,62 +169,28 @@ namespace WolvenKit.RED4.Types
                 throw new NotSupportedException();
             }
 
-            var castedValue = (T)value;
 
-            _internalList.Add(castedValue);
-
-            //if (castedValue != null)
-            //{
-            //    AddEventHandler(castedValue);
-            //    OnObjectChanged(ObjectChangedType.Added, null, castedValue);
-            //}
-
+            _internalList.Add((T?)value);
             return _internalList.Count - 1;
         }
 
-        private void SetItem(int index, object value)
-        {
-            _internalList[index] = (T)value;
+        private void SetItem(int index, object? value) => _internalList[index] = (T?)value;
 
-            //if (!Equals(_internalList[index], value))
-            //{
-            //    var oldValue = _internalList[index];
-            //
-            //    if (_internalList[index] != null)
-            //    {
-            //        RemoveEventHandler(_internalList[index]);
-            //    }
-            //
-            //    _internalList[index] = (T)value;
-            //
-            //    if (_internalList[index] != null)
-            //    {
-            //        AddEventHandler(_internalList[index]);
-            //    }
-            //
-            //    var typeInfo = RedReflection.GetTypeInfo(_internalList[index].GetType());
-            //    if (_internalList[index].GetType().IsValueType || typeInfo.IsValueType)
-            //    {
-            //        OnObjectChanged(ObjectChangedType.Modified, oldValue, _internalList[index]);
-            //    }
-            //}
-        }
-
-        public T this[int index]
+        public T? this[int index]
         {
             get => _internalList[index];
             set => SetItem(index, value);
         }
 
-        object IList.this[int index]
+        object? IList.this[int index]
         {
             get => _internalList[index];
             set => SetItem(index, value);
         }
 
-        public void Add(T item) => AddItem(item);
+        public void Add(T? item) => AddItem(item);
 
-        public int Add(object item) => AddItem(item);
+        public int Add(object? item) => AddItem(item);
 
         public void AddRange(ICollection collection)
         {
@@ -278,20 +244,15 @@ namespace WolvenKit.RED4.Types
             _internalList.Clear();
         }
 
-        public bool Contains(T item) => _internalList.Contains(item);
+        public bool Contains(T? item) => _internalList.Contains(item);
 
-        public void CopyTo(T[] array, int arrayIndex) => ((IList)_internalList).CopyTo(array, arrayIndex);
+        public void CopyTo(T?[] array, int arrayIndex) => ((IList)_internalList).CopyTo(array, arrayIndex);
 
-        public bool Contains(object value) => ((IList)_internalList).Contains(value);
+        public bool Contains(object? value) => ((IList)_internalList).Contains(value);
 
-        public int IndexOf(object value) => ((IList)_internalList).IndexOf(value);
+        public int IndexOf(object? value) => ((IList)_internalList).IndexOf(value);
 
-        public void Insert(int index, object value)
-        {
-            //OnObjectChanged(ObjectChangedType.Added, null, value);
-
-            ((IList)_internalList).Insert(index, value);
-        }
+        public void Insert(int index, object? value) => ((IList)_internalList).Insert(index, value);
 
         public void InsertRange(int index, ICollection collection)
         {
@@ -309,7 +270,7 @@ namespace WolvenKit.RED4.Types
             }
         }
 
-        public void Remove(object value)
+        public void Remove(object? value)
         {
             if (IsReadOnly)
             {
@@ -322,7 +283,7 @@ namespace WolvenKit.RED4.Types
             ((IList)_internalList).Remove(value);
         }
 
-        public bool Remove(T item)
+        public bool Remove(T? item)
         {
             if (IsReadOnly)
             {
@@ -335,9 +296,9 @@ namespace WolvenKit.RED4.Types
             return _internalList.Remove(item);
         }
 
-        public int IndexOf(T item) => _internalList.IndexOf(item);
+        public int IndexOf(T? item) => _internalList.IndexOf(item);
 
-        public void Insert(int index, T item)
+        public void Insert(int index, T? item)
         {
             if (IsReadOnly)
             {
@@ -373,7 +334,7 @@ namespace WolvenKit.RED4.Types
 
         #region IEquatable
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {
@@ -390,10 +351,10 @@ namespace WolvenKit.RED4.Types
                 return false;
             }
 
-            return Equals((CArrayBase<T>)obj);
+            return Equals((CArrayBase<T?>)obj);
         }
 
-        public bool Equals(CArrayBase<T> other)
+        public bool Equals(CArrayBase<T?>? other)
         {
             if (ReferenceEquals(null, other))
             {

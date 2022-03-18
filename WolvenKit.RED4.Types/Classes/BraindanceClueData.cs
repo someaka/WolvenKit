@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameuiEBraindanceLayer>>();
 			set => SetPropertyValue<CEnum<gameuiEBraindanceLayer>>(value);
 		}
+
+		public BraindanceClueData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

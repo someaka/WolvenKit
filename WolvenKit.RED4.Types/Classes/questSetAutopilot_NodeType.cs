@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VehicleRef = new() { Names = new() };
 			Val = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

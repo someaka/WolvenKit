@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			PressTransparency = 0.400000F;
 			AnimationProxies = new();
 			Targets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

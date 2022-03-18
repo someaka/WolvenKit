@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questMappinState_ConditionType()
 		{
 			Active = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

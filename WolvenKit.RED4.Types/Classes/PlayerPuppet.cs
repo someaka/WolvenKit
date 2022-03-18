@@ -890,6 +890,10 @@ namespace WolvenKit.RED4.Types
 			DelayEndGracePeriodAfterSpawnEventID = new();
 			LastActiveWardrobeSet = -1;
 			BossThatTargetsPlayer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -46,6 +46,10 @@ namespace WolvenKit.RED4.Types
 			AnimationSetup = new() { AnimationTime = 0.500000F };
 			ActivatedDeviceSetup = new() { ActionName = "LocKey#233", VfxResource = new(), ThumbnailIconRecord = 133181765352 };
 			IndustrialArmAnimationOverride = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

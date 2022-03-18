@@ -132,6 +132,10 @@ namespace WolvenKit.RED4.Types
 			FluffText = new();
 			RequiredTrainerIcon = new();
 			RequiredPointsText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

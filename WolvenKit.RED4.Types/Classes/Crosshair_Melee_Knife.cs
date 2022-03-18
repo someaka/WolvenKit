@@ -166,6 +166,10 @@ namespace WolvenKit.RED4.Types
 			BotPart = new();
 			WeaponID = new();
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CollisionFilters = new();
 			Offset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

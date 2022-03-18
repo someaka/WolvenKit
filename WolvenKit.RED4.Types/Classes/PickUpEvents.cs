@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			StyleName = "CarriedObject.Style";
 			ForceStyleName = "CarriedObject.ForcedStyle";
 			StateMachineInstanceData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

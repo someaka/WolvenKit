@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ProjectionPlaneSize = new() { X = 1.000000F, Y = 1.000000F };
 			FaceVector = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

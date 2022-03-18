@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			BakedPose = new();
 			BakedBoneNames = new();
 			ForceLOD0Components = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

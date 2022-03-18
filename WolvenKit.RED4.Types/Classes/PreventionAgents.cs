@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public PreventionAgents()
 		{
 			RequsteredAgents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<QuickhackData>>();
 			set => SetPropertyValue<CHandle<QuickhackData>>(value);
 		}
+
+		public ScannerQuickHackDescription()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

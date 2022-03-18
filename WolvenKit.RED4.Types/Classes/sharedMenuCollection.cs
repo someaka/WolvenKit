@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public sharedMenuCollection()
 		{
 			Items = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

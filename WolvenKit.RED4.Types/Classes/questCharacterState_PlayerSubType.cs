@@ -126,6 +126,10 @@ namespace WolvenKit.RED4.Types
 			VehicleState = Enums.gamePSMVehicle.Any;
 			TakedownState = Enums.gamePSMTakedown.Any;
 			SwimmingState = Enums.gamePSMSwimming.Any;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

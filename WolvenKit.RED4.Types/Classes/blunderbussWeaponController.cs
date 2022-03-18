@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ChargeWidgetSize = new();
 			Shots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

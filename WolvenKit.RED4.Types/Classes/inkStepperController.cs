@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			LeftButton = new();
 			RightButton = new();
 			Change = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

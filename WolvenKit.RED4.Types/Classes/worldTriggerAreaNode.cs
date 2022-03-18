@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldTriggerAreaNode()
 		{
 			Notifiers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

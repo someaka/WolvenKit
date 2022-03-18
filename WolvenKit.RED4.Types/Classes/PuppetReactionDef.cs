@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ExitReactionFlag = new();
 			BlockReactionFlag = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

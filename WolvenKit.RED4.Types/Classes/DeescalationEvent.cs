@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<SecuritySystemInput>>();
 			set => SetPropertyValue<CHandle<SecuritySystemInput>>(value);
 		}
+
+		public DeescalationEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

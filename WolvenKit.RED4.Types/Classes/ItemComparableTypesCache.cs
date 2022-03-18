@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ComparableTypes = new();
 			ComparableRecordTypes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

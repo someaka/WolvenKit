@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataTriggerMode>>();
 			set => SetPropertyValue<CEnum<gamedataTriggerMode>>(value);
 		}
+
+		public gameweaponeventsChangeTriggerModeEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

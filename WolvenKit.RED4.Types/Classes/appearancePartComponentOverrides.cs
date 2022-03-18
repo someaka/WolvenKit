@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			InitialTransform = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			VisualScale = new();
 			AcceptDismemberment = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

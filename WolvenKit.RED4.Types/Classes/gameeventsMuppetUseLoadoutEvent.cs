@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedataCPOLoadoutBase_Record>>();
 			set => SetPropertyValue<CHandle<gamedataCPOLoadoutBase_Record>>(value);
 		}
+
+		public gameeventsMuppetUseLoadoutEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Animations = new();
 			FacialAnimations = new();
 			CyberwareAnimations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

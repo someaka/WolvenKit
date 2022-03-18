@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class SwimmingForceFreezeDecisions : LocomotionSwimming
 	{
+		public SwimmingForceFreezeDecisions()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

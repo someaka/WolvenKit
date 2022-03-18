@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questVehicleCrowdHit_ConditionType()
 		{
 			Lethal = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

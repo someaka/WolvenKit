@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AlarmLightControllerPS()
 		{
 			SecurityAlarmState = Enums.ESecuritySystemState.SAFE;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

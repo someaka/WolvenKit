@@ -30,6 +30,10 @@ namespace WolvenKit.RED4.Types
 			ShouldScannerShowNetwork = false;
 			ShouldScannerShowRole = true;
 			MovableDeviceSetup = new() { NumberOfUses = 1 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

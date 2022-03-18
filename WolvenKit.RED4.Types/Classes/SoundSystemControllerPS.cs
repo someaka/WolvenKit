@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public SoundSystemControllerPS()
 		{
 			SoundSystemSettings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataOutput>>();
 			set => SetPropertyValue<CEnum<gamedataOutput>>(value);
 		}
+
+		public CheckReaction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

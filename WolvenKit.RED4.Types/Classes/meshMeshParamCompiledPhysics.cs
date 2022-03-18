@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<physicsDeferredCollection>>();
 			set => SetPropertyValue<CHandle<physicsDeferredCollection>>(value);
 		}
+
+		public meshMeshParamCompiledPhysics()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

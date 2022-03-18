@@ -132,5 +132,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CUInt16>();
 			set => SetPropertyValue<CUInt16>(value);
 		}
+
+		public animFacialSetup_OneSermoBufferInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

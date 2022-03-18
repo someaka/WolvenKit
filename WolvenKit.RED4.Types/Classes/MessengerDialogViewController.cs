@@ -108,6 +108,10 @@ namespace WolvenKit.RED4.Types
 			ReplayFluff = new();
 			ReplyOptions = new();
 			Messages = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

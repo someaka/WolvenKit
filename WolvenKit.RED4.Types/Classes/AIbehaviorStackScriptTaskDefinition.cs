@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIbehaviortaskStackScript>>();
 			set => SetPropertyValue<CHandle<AIbehaviortaskStackScript>>(value);
 		}
+
+		public AIbehaviorStackScriptTaskDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

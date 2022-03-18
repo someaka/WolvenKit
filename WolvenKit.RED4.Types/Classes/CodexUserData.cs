@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<CodexDataSource>>();
 			set => SetPropertyValue<CEnum<CodexDataSource>>(value);
 		}
+
+		public CodexUserData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

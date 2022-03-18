@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkCallbackConnectorData>>();
 			set => SetPropertyValue<CHandle<inkCallbackConnectorData>>(value);
 		}
+
+		public MenuScenario_BenchmarkResults()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

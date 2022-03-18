@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questVendorPanelData()
 		{
 			Data = new() { EntityID = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

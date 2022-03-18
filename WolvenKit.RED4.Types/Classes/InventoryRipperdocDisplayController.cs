@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OwnedBackground = new();
 			OwnedSign = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

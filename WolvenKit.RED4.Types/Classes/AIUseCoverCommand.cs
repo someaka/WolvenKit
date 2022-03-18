@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public AIUseCoverCommand()
 		{
 			ExposureMethods = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

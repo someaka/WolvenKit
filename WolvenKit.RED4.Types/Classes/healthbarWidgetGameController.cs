@@ -640,6 +640,10 @@ namespace WolvenKit.RED4.Types
 			IsUnarmedLeftHand = true;
 			GameInstance = new();
 			SpawnTokens = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

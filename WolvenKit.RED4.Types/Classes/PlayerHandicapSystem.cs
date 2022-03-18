@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CanDropHealingConsumable = true;
 			CanDropAmmo = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

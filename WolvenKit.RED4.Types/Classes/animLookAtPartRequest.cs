@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public animLookAtPartRequest()
 		{
 			Weight = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

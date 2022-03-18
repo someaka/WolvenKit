@@ -472,6 +472,10 @@ namespace WolvenKit.RED4.Types
 			LootQuality = Enums.gamedataQuality.Invalid;
 			IsActiveCached = new();
 			AttemptedShards = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

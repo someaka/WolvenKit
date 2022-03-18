@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamestateMachineparameterTypeRequestItem()
 		{
 			Requests = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

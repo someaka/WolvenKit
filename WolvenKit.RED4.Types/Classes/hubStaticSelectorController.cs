@@ -143,6 +143,10 @@ namespace WolvenKit.RED4.Types
 			WidgetsControllers = new();
 			CurrentData = new();
 			DebugText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

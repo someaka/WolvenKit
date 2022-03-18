@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameJournalEntry>>();
 			set => SetPropertyValue<CWeakHandle<gameJournalEntry>>(value);
 		}
+
+		public OpenMessengerNotificationAction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

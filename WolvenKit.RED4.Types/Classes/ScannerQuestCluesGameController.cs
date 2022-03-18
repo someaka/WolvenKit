@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			ScannerQuestPanel = new();
 			ScannerData = new() { QuestEntries = new() };
 			AsyncSpawnRequests = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

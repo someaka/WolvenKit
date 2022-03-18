@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			FxDefault = new();
 			RevealSlave = true;
 			RevealMaster = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

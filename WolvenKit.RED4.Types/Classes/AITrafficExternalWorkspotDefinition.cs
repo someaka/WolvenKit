@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Direction = Enums.worldTrafficSpotDirection.Both;
 			NearestPointEntry = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

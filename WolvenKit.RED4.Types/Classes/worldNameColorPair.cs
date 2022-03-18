@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public worldNameColorPair()
 		{
 			Color = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

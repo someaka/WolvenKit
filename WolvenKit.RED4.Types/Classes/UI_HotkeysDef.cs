@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public UI_HotkeysDef()
 		{
 			ModifiedHotkey = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

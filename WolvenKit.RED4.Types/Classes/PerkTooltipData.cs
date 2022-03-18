@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AttributeData>>();
 			set => SetPropertyValue<CHandle<AttributeData>>(value);
 		}
+
+		public PerkTooltipData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

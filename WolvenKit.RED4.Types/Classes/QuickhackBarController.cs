@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			EmptyMask = new();
 			Empty = new();
 			Full = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

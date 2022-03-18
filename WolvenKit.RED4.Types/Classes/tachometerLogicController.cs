@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			RpmValueWidget = new();
 			RpmGaugeForegroundWidget = new();
 			RpmGaugeMaxSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

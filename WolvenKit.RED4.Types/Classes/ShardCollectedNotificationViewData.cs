@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public ShardCollectedNotificationViewData()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

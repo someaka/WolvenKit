@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gamePSDeviceChangedEvent()
 		{
 			PersistentID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animSBehaviorConstraintNodeFloorIKMaintainLookBoneData()
 		{
 			AmountOfRotation = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

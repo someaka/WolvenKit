@@ -163,6 +163,10 @@ namespace WolvenKit.RED4.Types
 			AtlasFrameStart = -1;
 			AtlasFrameEnd = -1;
 			OrderPriority = Enums.RenderDecalOrderPriority.Priority3;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

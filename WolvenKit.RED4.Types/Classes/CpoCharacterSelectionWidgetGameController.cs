@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HorizontalPanelsList = new();
 			Amount = 5;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

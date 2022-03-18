@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VisualItem = new();
 			VisualTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

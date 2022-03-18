@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Samples = 10;
 			Intensity = 0.050000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

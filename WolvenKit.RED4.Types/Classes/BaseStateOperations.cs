@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			FxInstances = new();
 			StateActionsOverrides = new() { ToggleON = new(), TogglePower = new() };
 			BaseStateOperations_ = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

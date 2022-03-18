@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public PersonnelSystem()
 		{
 			ControllerTypeName = "PersonnelSystemController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

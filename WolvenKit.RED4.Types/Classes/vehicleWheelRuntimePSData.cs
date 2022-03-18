@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			PreviousLogicalSpringCompression = -340282346638528859811704183484516925440.000000F;
 			PreviousSwaybarDisplacement = -340282346638528859811704183484516925440.000000F;
 			PreviousDampedSpringForce = -340282346638528859811704183484516925440.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

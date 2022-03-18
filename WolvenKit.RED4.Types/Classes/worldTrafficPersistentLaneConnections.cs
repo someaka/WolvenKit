@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Outlanes = new();
 			InLanes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

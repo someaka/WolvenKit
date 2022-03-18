@@ -133,6 +133,10 @@ namespace WolvenKit.RED4.Types
 			LastAttemptedChoice = new();
 			LookAtTargetVisualizerID = new();
 			HasScrollableInteraction = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

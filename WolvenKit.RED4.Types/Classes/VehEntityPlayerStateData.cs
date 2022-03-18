@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public VehEntityPlayerStateData()
 		{
 			EntID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

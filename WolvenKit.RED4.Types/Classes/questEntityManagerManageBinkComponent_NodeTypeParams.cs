@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ObjectRef = new() { Names = new() };
 			Action = Enums.gameBinkVideoAction.Start;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

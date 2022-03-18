@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public CyberwareTooltipData()
 		{
 			SlotData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

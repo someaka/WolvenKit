@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			CameraUseTrajectorySpace = true;
 			VehicleProceduralCameraWeight = 1.000000F;
 			ParallaxWeight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

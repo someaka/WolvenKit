@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Icon = new();
 			Foreground = new();
 			SelectionMark = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SpeedIndicator = new();
 			MirroredSpeedIndicator = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

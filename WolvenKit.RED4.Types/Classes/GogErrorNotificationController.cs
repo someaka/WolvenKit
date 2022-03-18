@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public GogErrorNotificationController()
 		{
 			ErrorMessageWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

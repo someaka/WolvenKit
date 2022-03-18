@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			Sockets = new();
 			Id = 65535;
 			Params = new() { DestinationRef = new() { Names = new() }, DestinationOffset = new(), AreaNodeTriggerRef = new() { Names = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

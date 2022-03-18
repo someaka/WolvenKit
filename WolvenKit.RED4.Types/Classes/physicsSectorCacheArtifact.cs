@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SectorBounds = new() { Min = new(), Max = new() };
 			SectorGeometries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

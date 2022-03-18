@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			AnimationIndex = new();
 			UseBothHands = new();
 			UnequipWeapon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

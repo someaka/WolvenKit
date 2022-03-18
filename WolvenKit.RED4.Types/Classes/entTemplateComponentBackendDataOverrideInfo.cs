@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public entTemplateComponentBackendDataOverrideInfo()
 		{
 			Offset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

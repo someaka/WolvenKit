@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameWeakSpotReplicatedInfo()
 		{
 			WsHealthValue = 100.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

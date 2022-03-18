@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataWorkspotActionType>>();
 			set => SetPropertyValue<CEnum<gamedataWorkspotActionType>>(value);
 		}
+
+		public OnReserveWorkspotEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

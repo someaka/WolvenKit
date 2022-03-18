@@ -111,6 +111,10 @@ namespace WolvenKit.RED4.Types
 			Distance = new();
 			Root = new();
 			NewIcon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

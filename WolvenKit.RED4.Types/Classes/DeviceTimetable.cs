@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<DeviceTimeTableManager>>();
 			set => SetPropertyValue<CHandle<DeviceTimeTableManager>>(value);
 		}
+
+		public DeviceTimetable()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

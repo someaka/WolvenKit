@@ -218,6 +218,10 @@ namespace WolvenKit.RED4.Types
 			VariationsCount = 1;
 			ContextualVoiceGruntSettings = new() { PainShort = new(), Effort = new() };
 			GruntVariations = new() { CachedVariations = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

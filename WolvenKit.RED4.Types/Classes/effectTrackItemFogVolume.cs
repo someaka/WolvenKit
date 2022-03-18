@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TimeDuration = 1.000000F;
 			Priority = 5;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

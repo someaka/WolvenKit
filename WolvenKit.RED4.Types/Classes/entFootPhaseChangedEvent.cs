@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public entFootPhaseChangedEvent()
 		{
 			FootPhase = Enums.animEFootPhase.NotConsidered;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

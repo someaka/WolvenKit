@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public QuestMappinLinkController()
 		{
 			JumpTo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

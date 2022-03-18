@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OwnerID = new();
 			AgentAreas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

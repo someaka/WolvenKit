@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiIndexedMorphName()
 		{
 			Tags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AddTargetToHighlightEvent()
 		{
 			Target = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

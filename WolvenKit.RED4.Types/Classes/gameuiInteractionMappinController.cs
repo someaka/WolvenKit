@@ -47,6 +47,10 @@ namespace WolvenKit.RED4.Types
 			TaggedWidgets = new();
 			CanvasWidgetName = "Canvas";
 			ArrowWidgetName = "Arrow";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

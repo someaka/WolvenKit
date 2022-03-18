@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIbehavioreventResolverScript>>();
 			set => SetPropertyValue<CHandle<AIbehavioreventResolverScript>>(value);
 		}
+
+		public AIbehaviorScriptEventResolverDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

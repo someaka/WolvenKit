@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<inkCallbackListener>>();
 			set => SetPropertyValue<CArray<inkCallbackListener>>(value);
 		}
+
+		public inkCallbackBase()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

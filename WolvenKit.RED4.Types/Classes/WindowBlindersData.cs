@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			WindowBlindersState = Enums.EWindowBlindersStates.Closed;
 			HasOpenInteraction = true;
 			HasQuickHack = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

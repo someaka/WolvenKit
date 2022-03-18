@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<DropPointSystem>>();
 			set => SetPropertyValue<CWeakHandle<DropPointSystem>>(value);
 		}
+
+		public DropPointCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

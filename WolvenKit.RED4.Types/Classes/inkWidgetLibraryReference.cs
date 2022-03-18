@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkWidgetLibraryReference()
 		{
 			WidgetLibrary = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

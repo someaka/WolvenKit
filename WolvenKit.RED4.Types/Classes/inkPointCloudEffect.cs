@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			Repeat = 1.000000F;
 			FovScale = 3.000000F;
 			ParallaxDepth = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

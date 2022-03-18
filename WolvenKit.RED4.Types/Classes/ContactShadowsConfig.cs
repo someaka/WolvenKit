@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			ScreenEdgeFadeRange = 0.150000F;
 			DistanceFadeLimit = 3.000000F;
 			DistanceFadeRange = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

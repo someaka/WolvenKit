@@ -101,6 +101,10 @@ namespace WolvenKit.RED4.Types
 			Number = new();
 			NumberPanel = new();
 			GridData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

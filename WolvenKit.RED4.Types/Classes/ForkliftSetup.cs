@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			ActionActivateName = "Activate";
 			LiftingAnimationTime = 2.000000F;
 			HasDistractionQuickhack = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

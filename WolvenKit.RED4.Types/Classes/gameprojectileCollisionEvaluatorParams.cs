@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public gameprojectileCollisionEvaluatorParams()
 		{
 			Position = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

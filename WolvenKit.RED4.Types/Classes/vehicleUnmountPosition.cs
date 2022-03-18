@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public vehicleUnmountPosition()
 		{
 			Position = new() { X = new(), Y = new(), Z = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

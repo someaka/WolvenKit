@@ -71,6 +71,10 @@ namespace WolvenKit.RED4.Types
 			TaggedWidgets = new();
 			FixedOrientationWidget = new();
 			ClampArrowWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

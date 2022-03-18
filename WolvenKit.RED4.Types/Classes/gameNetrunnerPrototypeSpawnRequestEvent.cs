@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			WhereToSpawn = new();
 			Scale = new();
 			ColorIndex = 255;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public scnOverridePhantomParamsEventParams()
 		{
 			Performer = new() { Id = 4294967040 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

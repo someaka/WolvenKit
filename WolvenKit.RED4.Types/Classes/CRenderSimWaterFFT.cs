@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			WindScale = 1.000000F;
 			Amplitude = 20.000000F;
 			Lambda = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Includes = new();
 			Triggers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EnableQueries = true;
 			Components = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

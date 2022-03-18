@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkMenuEventDispatcher>>();
 			set => SetPropertyValue<CWeakHandle<inkMenuEventDispatcher>>(value);
 		}
+
+		public gameuiMenuGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Data = new();
 			Show = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

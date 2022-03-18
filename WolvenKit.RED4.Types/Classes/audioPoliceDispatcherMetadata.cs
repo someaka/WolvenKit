@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			PlayerChaseBackupNeededInputs = new();
 			PlayerChaseEndInputs = new();
 			DispatcherTimeInterval = 30.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

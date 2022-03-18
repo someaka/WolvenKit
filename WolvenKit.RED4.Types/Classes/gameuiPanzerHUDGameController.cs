@@ -384,6 +384,10 @@ namespace WolvenKit.RED4.Types
 			TargetHolder = new();
 			TargetWidgetLibraryName = "Marker";
 			TargetWidgetPoolSize = 10;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

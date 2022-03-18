@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameItemData>>();
 			set => SetPropertyValue<CWeakHandle<gameItemData>>(value);
 		}
+
+		public ResolveQualityRangeInteractionLayerEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

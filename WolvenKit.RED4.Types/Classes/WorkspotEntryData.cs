@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public WorkspotEntryData()
 		{
 			IsAvailable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

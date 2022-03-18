@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Rarities = new();
 			OwnerId = -1;
 			IsPossible = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

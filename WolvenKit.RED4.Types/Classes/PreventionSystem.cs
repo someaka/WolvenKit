@@ -531,6 +531,10 @@ namespace WolvenKit.RED4.Types
 			InputlockDelayID = new();
 			Vehicles = new();
 			Viewers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

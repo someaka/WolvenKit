@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public InteractiveSign()
 		{
 			ControllerTypeName = "InteractiveSignController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

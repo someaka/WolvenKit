@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameAreaVolume()
 		{
 			AreaData = new() { Position = new() { W = 1.000000F }, Size = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

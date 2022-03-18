@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			Id = new() { Id = 18446744073709551615 };
 			EffectEntry = new() { EffectInstanceId = new() { EffectId = new() { Id = 4294967295 }, Id = 4294967295 } };
 			PerformerId = new() { Id = 4294967040 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

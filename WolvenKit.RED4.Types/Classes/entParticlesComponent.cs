@@ -54,6 +54,10 @@ namespace WolvenKit.RED4.Types
 			EmissionRate = 1.000000F;
 			RenderLayerMask = Enums.RenderSceneLayerMask.Default;
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

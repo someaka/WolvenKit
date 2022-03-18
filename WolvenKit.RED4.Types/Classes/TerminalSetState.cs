@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameinteractionsReactionState>>();
 			set => SetPropertyValue<CEnum<gameinteractionsReactionState>>(value);
 		}
+
+		public TerminalSetState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

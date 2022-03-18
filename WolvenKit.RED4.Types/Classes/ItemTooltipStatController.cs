@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			StatComparedContainer = new();
 			StatComparedValue = new();
 			Arrow = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

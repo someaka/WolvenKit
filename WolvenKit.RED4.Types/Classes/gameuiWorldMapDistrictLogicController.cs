@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OutlineWidget = new();
 			IconWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

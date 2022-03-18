@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			IsVisible = new();
 			HeightOffset = new();
 			DamageProjection = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -163,6 +163,10 @@ namespace WolvenKit.RED4.Types
 			LaserFXSlotName = "laser";
 			BurstDelayEvtID = new();
 			NextShootCycleDelayEvtID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

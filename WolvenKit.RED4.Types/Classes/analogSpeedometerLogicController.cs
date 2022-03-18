@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public analogSpeedometerLogicController()
 		{
 			AnalogSpeedNeedleWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

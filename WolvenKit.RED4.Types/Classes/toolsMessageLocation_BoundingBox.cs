@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public toolsMessageLocation_BoundingBox()
 		{
 			Box = new() { Min = new(), Max = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

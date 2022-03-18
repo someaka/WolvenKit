@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsEnabled = true;
 			Tags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

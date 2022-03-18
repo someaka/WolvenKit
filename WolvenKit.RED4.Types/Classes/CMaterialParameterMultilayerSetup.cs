@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<Multilayer_Setup>>();
 			set => SetPropertyValue<CResourceReference<Multilayer_Setup>>(value);
 		}
+
+		public CMaterialParameterMultilayerSetup()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

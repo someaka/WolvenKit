@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public DropQueueUpdatedEvent()
 		{
 			DropQueue = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

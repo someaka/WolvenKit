@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ObjectRef = new() { Names = new() };
 			VisionModeType = Enums.gameVisionModeType.Focus;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<worldTrafficCollisionDebug>>();
 			set => SetPropertyValue<CHandle<worldTrafficCollisionDebug>>(value);
 		}
+
+		public worldTrafficCollisionDebugResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ObjectRef = new() { Names = new() };
 			Gender = "Female";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

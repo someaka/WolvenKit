@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			SpeedInDegreesPerSecond = 120.000000F;
 			AngleOffsetNode = new();
 			TargetAngleOffsetNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

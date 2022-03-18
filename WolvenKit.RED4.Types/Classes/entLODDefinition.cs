@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			VehicleInteriorDistanceLODs = new(0);
 			LargeVehicleInteriorDistanceLODs = new(0);
 			ConsoleDistanceLODs = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

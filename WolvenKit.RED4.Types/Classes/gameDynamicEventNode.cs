@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questIBaseCondition>>();
 			set => SetPropertyValue<CHandle<questIBaseCondition>>(value);
 		}
+
+		public gameDynamicEventNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

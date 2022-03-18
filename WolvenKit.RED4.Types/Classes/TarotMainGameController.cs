@@ -107,6 +107,10 @@ namespace WolvenKit.RED4.Types
 			TooltipsManagerRef = new();
 			List = new();
 			NumberOfCardsInTarotDeck = 22;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

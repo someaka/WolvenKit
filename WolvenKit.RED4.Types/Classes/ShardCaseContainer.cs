@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<entMeshComponent>>();
 			set => SetPropertyValue<CHandle<entMeshComponent>>(value);
 		}
+
+		public ShardCaseContainer()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public worldRelativeNodePath()
 		{
 			Elements = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

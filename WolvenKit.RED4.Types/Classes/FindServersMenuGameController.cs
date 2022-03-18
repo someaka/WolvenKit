@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			CurentlyChoosenServer = -1;
 			C_onlineColor = new();
 			C_offlineColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

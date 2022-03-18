@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Box = new();
 			OnlyForPlayer = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

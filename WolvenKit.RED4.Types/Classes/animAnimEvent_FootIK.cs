@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<animLeg>>();
 			set => SetPropertyValue<CEnum<animLeg>>(value);
 		}
+
+		public animAnimEvent_FootIK()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

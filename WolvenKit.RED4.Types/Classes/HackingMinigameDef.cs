@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 			TimerLeftPercent = new();
 			Entity = new();
 			IsJournalTarget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

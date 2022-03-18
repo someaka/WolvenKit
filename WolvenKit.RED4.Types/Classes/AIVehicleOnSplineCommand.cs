@@ -147,6 +147,10 @@ namespace WolvenKit.RED4.Types
 			StartFromClosest = true;
 			ForcedStartSpeed = -1.000000F;
 			StopAtPathEnd = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

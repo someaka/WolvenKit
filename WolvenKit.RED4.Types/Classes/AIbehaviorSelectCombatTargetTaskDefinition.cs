@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorSelectCombatTargetTaskDefinition()
 		{
 			TargetClosest = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

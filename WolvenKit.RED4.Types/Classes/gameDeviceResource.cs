@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameDeviceResourceData>>();
 			set => SetPropertyValue<CHandle<gameDeviceResourceData>>(value);
 		}
+
+		public gameDeviceResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

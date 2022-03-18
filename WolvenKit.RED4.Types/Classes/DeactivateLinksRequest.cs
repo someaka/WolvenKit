@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public DeactivateLinksRequest()
 		{
 			LinksIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

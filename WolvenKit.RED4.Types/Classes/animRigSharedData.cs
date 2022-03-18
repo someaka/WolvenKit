@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Parts = new();
 			IkSetups = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public PlayRecordedSessionMenuGameController()
 		{
 			Records = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

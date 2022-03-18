@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			TresspasserList = new();
 			EntranceToken = new();
 			IsLocked = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

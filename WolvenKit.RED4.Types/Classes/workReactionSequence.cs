@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			ForcedBlendIn = 0.200000F;
 			ReactionTypes = new();
 			FacialKeyWeight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

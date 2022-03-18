@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<animAnimNode_TransformValue>>();
 			set => SetPropertyValue<CWeakHandle<animAnimNode_TransformValue>>(value);
 		}
+
+		public animTransformLink()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

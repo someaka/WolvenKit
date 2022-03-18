@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			RbfPowValue = 20.000000F;
 			CompareBones = new(0);
 			BoneCorrections = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

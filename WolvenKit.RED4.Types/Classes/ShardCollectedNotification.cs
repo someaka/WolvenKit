@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ShardCollectedNotification()
 		{
 			ShardTitle = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIThreatSaveData()
 		{
 			EntityId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

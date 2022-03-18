@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ComputerFullBannerWidgetController()
 		{
 			CloseButtonWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

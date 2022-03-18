@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			ScreenplayLineId = new() { Id = 4294967040 };
 			VoParams = new();
 			AdditionalSpeakers = new() { Speakers = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

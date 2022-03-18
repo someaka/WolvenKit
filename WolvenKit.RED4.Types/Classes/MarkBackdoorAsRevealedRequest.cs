@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<SharedGameplayPS>>();
 			set => SetPropertyValue<CHandle<SharedGameplayPS>>(value);
 		}
+
+		public MarkBackdoorAsRevealedRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

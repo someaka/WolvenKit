@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public interopSelectByDefinitionOptions()
 		{
 			MaxBBoxDiagonalLength = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

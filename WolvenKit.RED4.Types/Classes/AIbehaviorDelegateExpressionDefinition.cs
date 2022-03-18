@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DelegateAttribute = new();
 			BehaviorCallbackNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

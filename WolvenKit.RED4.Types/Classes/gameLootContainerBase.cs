@@ -89,6 +89,10 @@ namespace WolvenKit.RED4.Types
 		{
 			UseAreaLoot = true;
 			LootTables = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -76,5 +76,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public InventoryTooltiData_GrenadeData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

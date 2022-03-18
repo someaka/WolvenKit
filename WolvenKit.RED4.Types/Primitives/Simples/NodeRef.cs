@@ -12,7 +12,7 @@ namespace WolvenKit.RED4.Types
         private NodeRef(string value) : base(value) {}
 
         public static implicit operator NodeRef(string value) => new(value);
-        public static implicit operator string(NodeRef value) => value._value;
+        public static implicit operator string?(NodeRef value) => value._value;
 
         public override string ToString() => $"NodeRef, Text = '{_value}'";
     }

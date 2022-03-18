@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			JointsToCompare = new();
 			Enabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

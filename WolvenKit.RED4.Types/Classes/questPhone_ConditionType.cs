@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questPhone_ConditionType()
 		{
 			CallPhase = Enums.questPhoneCallPhase.IncomingCall;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

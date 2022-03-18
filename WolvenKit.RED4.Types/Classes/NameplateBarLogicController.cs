@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<DamagePreviewController>>();
 			set => SetPropertyValue<CWeakHandle<DamagePreviewController>>(value);
 		}
+
+		public NameplateBarLogicController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

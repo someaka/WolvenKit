@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<ShardsNestedListDataView>>();
 			set => SetPropertyValue<CWeakHandle<ShardsNestedListDataView>>(value);
 		}
+
+		public ShardsVirtualNestedListController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

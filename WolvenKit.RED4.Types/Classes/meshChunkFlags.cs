@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RenderInScene = true;
 			RenderInShadows = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

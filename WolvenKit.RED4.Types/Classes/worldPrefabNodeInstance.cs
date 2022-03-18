@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class worldPrefabNodeInstance : worldSnappableNodeInstance
 	{
+		public worldPrefabNodeInstance()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBDescriptionRecord = 127414107948;
 			HasSimpleInteraction = true;
 			AlternativeInteractionString = "ToggleActivate";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

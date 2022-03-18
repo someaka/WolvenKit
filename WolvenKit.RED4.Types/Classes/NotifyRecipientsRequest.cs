@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Recipients = new();
 			Time = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

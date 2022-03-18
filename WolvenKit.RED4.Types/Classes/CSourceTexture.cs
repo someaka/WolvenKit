@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Depth = 1;
 			Format = Enums.ETextureRawFormat.TRF_TrueColor;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

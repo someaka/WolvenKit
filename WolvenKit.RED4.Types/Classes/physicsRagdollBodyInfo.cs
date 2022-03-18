@@ -145,6 +145,10 @@ namespace WolvenKit.RED4.Types
 			SwingAnglesY = new(2);
 			SwingAnglesZ = new(2);
 			TwistAngles = new(2);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CLegacySingleChannelCurve<CFloat>>();
 			set => SetPropertyValue<CLegacySingleChannelCurve<CFloat>>(value);
 		}
+
+		public gameTransformAnimation_Movement_CustomCurve()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -93,6 +93,10 @@ namespace WolvenKit.RED4.Types
 			DecimalPrecision = 2;
 			FaceRightStartPosition = new();
 			FaceLeftStartPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

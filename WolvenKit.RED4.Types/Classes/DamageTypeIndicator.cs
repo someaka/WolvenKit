@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DamageIconRef = new();
 			DamageTypeLabelRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

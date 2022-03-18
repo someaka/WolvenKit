@@ -113,6 +113,10 @@ namespace WolvenKit.RED4.Types
 			FrameFluff_Off = new();
 			Folder_On = new();
 			Folder_Off = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

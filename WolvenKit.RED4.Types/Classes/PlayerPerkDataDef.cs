@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			DismembermentInstigated = new();
 			EntityNoticedPlayer = new();
 			CombatStateTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

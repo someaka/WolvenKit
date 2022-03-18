@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AddUserEvent()
 		{
 			UserEntry = new() { User = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

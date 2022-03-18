@@ -84,5 +84,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<audioMeleeMaterialType>>();
 			set => SetPropertyValue<CEnum<audioMeleeMaterialType>>(value);
 		}
+
+		public audioAudioMaterialMetadataMapItem()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

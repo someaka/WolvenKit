@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SPerformedActions()
 		{
 			ActionContext = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VideoWidget = new();
 			VideoSequence = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

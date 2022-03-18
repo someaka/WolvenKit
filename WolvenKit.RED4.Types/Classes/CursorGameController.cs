@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Margin = new();
 			CursorType = "default";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

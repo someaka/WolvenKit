@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questRequestVehicleCameraPerspective_NodeType()
 		{
 			CameraPerspective = Enums.questVehicleCameraPerspective.FPP;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public questMovePuppetNodeParams()
 		{
 			RepeatCommandOnInterrupt = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

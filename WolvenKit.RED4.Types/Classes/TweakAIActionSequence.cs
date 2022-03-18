@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			LookatEvents = new();
 			GeneralSubActionsResults = new(8);
 			PhaseSubActionsResults = new(8);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

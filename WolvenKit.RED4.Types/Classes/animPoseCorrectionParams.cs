@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PoseCorrectionGroup = new() { PoseCorrections = new(0) };
 			BlendDuration = 0.200000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

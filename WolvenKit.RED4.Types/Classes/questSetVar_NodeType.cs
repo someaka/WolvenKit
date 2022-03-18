@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questSetVar_NodeType()
 		{
 			Value = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

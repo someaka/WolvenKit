@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SelectorRevalutionBreak()
 		{
 			ReevaluationDuration = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

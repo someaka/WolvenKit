@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LastTime = -1.000000F;
 			TimeoutDuration = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

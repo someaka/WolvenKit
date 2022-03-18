@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameaudioISoundComponentSubSystem>>();
 			set => SetPropertyValue<CHandle<gameaudioISoundComponentSubSystem>>(value);
 		}
+
+		public gameaudioSoundComponentSubSystemWrapper()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

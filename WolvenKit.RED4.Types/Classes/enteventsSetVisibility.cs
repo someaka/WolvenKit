@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public enteventsSetVisibility()
 		{
 			Visible = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

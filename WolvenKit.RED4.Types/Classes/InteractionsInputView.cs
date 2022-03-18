@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			BotArrowRef = new();
 			InputImage = new();
 			ShowArrows = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Id = 4294967295;
 			PoseInputNode = new();
 			AdditionalTracks = new() { Entries = new(), OverwriteExistingValues = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

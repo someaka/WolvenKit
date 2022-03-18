@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inkFinalConfigurationVisibility>>();
 			set => SetPropertyValue<CEnum<inkFinalConfigurationVisibility>>(value);
 		}
+
+		public inkFinalConfigurationController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

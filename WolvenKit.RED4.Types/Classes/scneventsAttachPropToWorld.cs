@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			CustomOffsetPos = new();
 			CustomOffsetRot = new() { R = 1.000000F };
 			ReferencePerformer = new() { Id = 4294967040 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

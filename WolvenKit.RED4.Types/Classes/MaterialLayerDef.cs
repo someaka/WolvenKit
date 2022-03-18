@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public MaterialLayerDef()
 		{
 			ColorPalette = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

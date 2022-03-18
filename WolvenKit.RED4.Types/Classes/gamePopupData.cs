@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public gamePopupData()
 		{
 			VideoType = Enums.gameVideoType.Unknown;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

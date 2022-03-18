@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			HoverStateName = "Hover";
 			PressStateName = "Hover";
 			DefaultStateName = "Default";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -162,6 +162,10 @@ namespace WolvenKit.RED4.Types
 			AttrText = new();
 			PerkFlag = new();
 			PerkText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

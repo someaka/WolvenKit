@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			LightType = Enums.vehicleELightType.Head;
 			HighBeamRadiusMultiplier = 2.000000F;
 			HighBeamConeMultiplier = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

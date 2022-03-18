@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ESoundStatusEffects>>();
 			set => SetPropertyValue<CEnum<ESoundStatusEffects>>(value);
 		}
+
+		public MusicSettings()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

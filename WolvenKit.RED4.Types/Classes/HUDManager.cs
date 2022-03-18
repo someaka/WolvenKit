@@ -378,6 +378,10 @@ namespace WolvenKit.RED4.Types
 			LookatRequest = new() { CheckRange = true, LookAtTarget = new(), ProcessAsInput = true, BptMaxSwitches = -1.000000F };
 			PulseDelayID = new();
 			PreviousStickInput = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

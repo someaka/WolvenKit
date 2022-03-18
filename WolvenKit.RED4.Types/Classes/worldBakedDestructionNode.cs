@@ -161,6 +161,10 @@ namespace WolvenKit.RED4.Types
 			AccumulateDamage = true;
 			NavigationSetting = new() { NavmeshImpact = Enums.NavGenNavmeshImpact.Blocking };
 			UseMeshNavmeshSettings = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

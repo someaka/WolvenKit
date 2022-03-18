@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			RightArrowWidget = new();
 			MenuLabelHolder = new();
 			HubElementsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

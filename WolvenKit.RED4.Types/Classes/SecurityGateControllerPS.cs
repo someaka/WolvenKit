@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			SecurityGateDetectionProperties = new() { PerformWeaponCheck = true, PerformCheckOnPlayerOnly = true };
 			SecurityGateResponseProperties = new() { SecurityGateResponseType = Enums.ESecurityGateResponseType.SEC_SYS_REPRIMAND, SecurityLevelAccessGranted = Enums.ESecurityAccessLevel.ESL_3 };
 			TrespassersDataList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

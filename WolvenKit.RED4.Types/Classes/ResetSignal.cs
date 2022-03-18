@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameBoolSignalTable>>();
 			set => SetPropertyValue<CHandle<gameBoolSignalTable>>(value);
 		}
+
+		public ResetSignal()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SBannerWidgetPackage()
 		{
 			Content = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

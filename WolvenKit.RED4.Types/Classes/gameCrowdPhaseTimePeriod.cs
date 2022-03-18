@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			CharactersData = new();
 			ReducedCharactersData = new();
 			UseDensityPreset = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

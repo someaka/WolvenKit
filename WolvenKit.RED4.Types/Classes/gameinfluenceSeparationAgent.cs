@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameinfluenceSeparationAgent()
 		{
 			Radius = 0.250000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

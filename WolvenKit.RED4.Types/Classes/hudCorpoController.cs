@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			ScrollText = new();
 			ScrollTextWidget = new();
 			Root_canvas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

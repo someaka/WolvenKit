@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameAttitudeAgent()
 		{
 			Name = "AttitudeAgent";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

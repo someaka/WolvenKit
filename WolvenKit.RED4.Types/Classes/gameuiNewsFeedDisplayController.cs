@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NewsTitleWidget = new();
 			RandomNewsContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<AIArgumentType>>();
 			set => SetPropertyValue<CEnum<AIArgumentType>>(value);
 		}
+
+		public AIbehaviorTypeRef()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

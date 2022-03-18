@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questRemoveAllContacts_NodeType()
 		{
 			ExcludedContacts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

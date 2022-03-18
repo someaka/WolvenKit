@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameMountEventData>>();
 			set => SetPropertyValue<CHandle<gameMountEventData>>(value);
 		}
+
+		public SlotReservationDecorator()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

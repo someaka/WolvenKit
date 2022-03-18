@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Type = Enums.AIArgumentType.GlobalNodeId;
 			DefaultValue = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

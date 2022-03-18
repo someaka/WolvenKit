@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questVehicleAirtime_ConditionType()
 		{
 			Seconds = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

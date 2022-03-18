@@ -389,6 +389,10 @@ namespace WolvenKit.RED4.Types
 			ItemDropQueue = new();
 			CraftingMaterialsListItems = new();
 			FilterSpawnRequests = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<LocomotionTakedownInitData>>();
 			set => SetPropertyValue<CWeakHandle<LocomotionTakedownInitData>>(value);
 		}
+
+		public GrappleMountDecisions()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

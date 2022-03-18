@@ -120,6 +120,10 @@ namespace WolvenKit.RED4.Types
 			CachedSpaceSimplexes_pointsIndices = new();
 			CachedSamplesForGridPoints_simplexIndex = new();
 			CachedSamplesForGridPoints_weightsForPoints = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

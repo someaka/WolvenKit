@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PainShort = new();
 			Effort = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

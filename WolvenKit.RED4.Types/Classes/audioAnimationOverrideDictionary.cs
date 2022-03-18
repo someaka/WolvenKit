@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public audioAnimationOverrideDictionary()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

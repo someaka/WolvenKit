@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameJournalManager>>();
 			set => SetPropertyValue<CWeakHandle<gameJournalManager>>(value);
 		}
+
+		public ShardCollectedInventoryCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

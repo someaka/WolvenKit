@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NumTargets = 1;
 			RenderTarget = new(8);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

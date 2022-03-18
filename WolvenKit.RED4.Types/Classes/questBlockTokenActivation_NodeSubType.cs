@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questBlockTokenActivation_NodeSubType()
 		{
 			ResetTokenSpawnTimer = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

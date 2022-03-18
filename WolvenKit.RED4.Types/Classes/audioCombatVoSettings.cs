@@ -101,6 +101,10 @@ namespace WolvenKit.RED4.Types
 			GruntTriggerLimits = new() { Probability = 1.000000F };
 			MinDamageToInterruptVoWithPainShort = 9.000000F;
 			MinDamageToInterruptVoWithPainLong = 30.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

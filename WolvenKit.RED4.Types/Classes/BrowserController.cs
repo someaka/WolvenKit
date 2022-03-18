@@ -116,6 +116,10 @@ namespace WolvenKit.RED4.Types
 			PageContentRoot = new();
 			SpinnerPath = new();
 			WebsiteData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

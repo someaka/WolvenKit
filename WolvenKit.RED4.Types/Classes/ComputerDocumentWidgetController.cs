@@ -114,6 +114,10 @@ namespace WolvenKit.RED4.Types
 			ImageContentWidget = new();
 			CloseButtonWidget = new();
 			LastPlayedVideo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

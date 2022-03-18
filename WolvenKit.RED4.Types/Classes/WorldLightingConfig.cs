@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public WorldLightingConfig()
 		{
 			LightAttenuationClamp = 96.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

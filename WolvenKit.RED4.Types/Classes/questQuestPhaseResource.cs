@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PhasePrefabs = new();
 			InplacePhases = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -100,6 +100,10 @@ namespace WolvenKit.RED4.Types
 			Lookat_yaw_offset_active_angle = 45.000000F;
 			Paralax_radius = 0.100000F;
 			Paralax_forward_offset = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

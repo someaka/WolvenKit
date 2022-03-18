@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gamemountingUnmountingRequest()
 		{
 			LowLevelMountingInfo = new() { ChildId = new(), ParentId = new(), SlotId = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

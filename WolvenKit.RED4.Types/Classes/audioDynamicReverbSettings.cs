@@ -132,6 +132,10 @@ namespace WolvenKit.RED4.Types
 			SmallReverbMaxDistance = 20.000000F;
 			SmallReverbFadeOutThreshold = 15.000000F;
 			WeaponTailType = Enums.audioWeaponTailEnvironment.ExteriorUrbanNarrow;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

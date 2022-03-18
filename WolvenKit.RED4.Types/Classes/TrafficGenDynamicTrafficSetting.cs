@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<TrafficGenDynamicImpact>>();
 			set => SetPropertyValue<CEnum<TrafficGenDynamicImpact>>(value);
 		}
+
+		public TrafficGenDynamicTrafficSetting()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

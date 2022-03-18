@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			ReadableName = "TreeVar";
 			ExportAsProperty = true;
 			DefaultValue = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

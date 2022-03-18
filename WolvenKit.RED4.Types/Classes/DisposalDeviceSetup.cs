@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NumberOfUses = 1;
 			IsBodyRequired = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

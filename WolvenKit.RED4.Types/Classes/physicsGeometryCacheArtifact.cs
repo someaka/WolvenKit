@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EntryKeys = new();
 			EntryTable = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

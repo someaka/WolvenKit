@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LocalToCloud = new();
 			SnapTags = new() { IncludeTags = new(), ExcludeTags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inkEHorizontalAlign>>();
 			set => SetPropertyValue<CEnum<inkEHorizontalAlign>>(value);
 		}
+
+		public GridUserData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

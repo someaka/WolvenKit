@@ -212,6 +212,10 @@ namespace WolvenKit.RED4.Types
 			ProgressBarHolder = new();
 			SpawnTokens = new();
 			CurrentOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

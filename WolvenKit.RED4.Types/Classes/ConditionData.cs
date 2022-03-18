@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ConditionData()
 		{
 			RequirementList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			NameText = new();
 			SkullIndicator = new();
 			ArchetypeIcon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

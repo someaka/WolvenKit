@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<audioLocomotionCustomActionEventDictionary>>();
 			set => SetPropertyValue<CHandle<audioLocomotionCustomActionEventDictionary>>(value);
 		}
+
+		public audioFootwearVsMaterialMetadata()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

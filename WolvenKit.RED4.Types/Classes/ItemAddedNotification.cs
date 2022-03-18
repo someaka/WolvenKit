@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemImage = new();
 			RarityBar = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

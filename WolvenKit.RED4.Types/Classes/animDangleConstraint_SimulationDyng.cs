@@ -54,6 +54,10 @@ namespace WolvenKit.RED4.Types
 			SubstepTime = 0.010000F;
 			SolverIterations = 1;
 			ParticlesContainer = new() { ExternalForceWS = new(), ExternalForceWsLink = new(), Particles = new(), GravityWS = 9.810000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

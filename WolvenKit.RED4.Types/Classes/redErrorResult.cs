@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public redErrorResult()
 		{
 			Message = "Unknown error";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

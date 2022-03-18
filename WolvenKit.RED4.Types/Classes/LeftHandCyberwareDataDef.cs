@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public LeftHandCyberwareDataDef()
 		{
 			ProjectileCaught = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

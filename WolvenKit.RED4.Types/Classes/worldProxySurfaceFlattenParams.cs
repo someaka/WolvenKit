@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public worldProxySurfaceFlattenParams()
 		{
 			GroupingStepAngle = Enums.worldProxyNormalAngleStepSize.STEP_45;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

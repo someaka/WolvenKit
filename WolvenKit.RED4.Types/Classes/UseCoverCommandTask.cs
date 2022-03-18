@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<AIUseCoverCommand>>();
 			set => SetPropertyValue<CWeakHandle<AIUseCoverCommand>>(value);
 		}
+
+		public UseCoverCommandTask()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

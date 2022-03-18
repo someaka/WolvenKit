@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			NameWidget = new();
 			DescriptionWidget = new();
 			IconImage = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

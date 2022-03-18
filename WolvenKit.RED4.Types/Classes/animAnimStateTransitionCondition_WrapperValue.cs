@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimStateTransitionCondition_WrapperValue()
 		{
 			CheckIfWrapperIsSet = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

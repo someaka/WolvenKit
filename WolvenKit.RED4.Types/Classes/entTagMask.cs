@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			HardTags = new() { Tags = new() };
 			SoftTags = new() { Tags = new() };
 			ExcludedTags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

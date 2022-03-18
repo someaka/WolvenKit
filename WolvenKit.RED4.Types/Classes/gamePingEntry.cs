@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			WorldPosition = new();
 			Time = new();
 			PingType = Enums.gamedataPingType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

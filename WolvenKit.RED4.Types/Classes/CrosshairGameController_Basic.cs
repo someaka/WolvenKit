@@ -128,6 +128,10 @@ namespace WolvenKit.RED4.Types
 			HorizontalMinSpread = 20.000000F;
 			VerticalMinSpread = 20.000000F;
 			GameplaySpreadMultiplier = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

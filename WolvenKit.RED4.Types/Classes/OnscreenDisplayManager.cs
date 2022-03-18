@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public OnscreenDisplayManager()
 		{
 			ContentText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

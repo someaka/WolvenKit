@@ -29,6 +29,10 @@ namespace WolvenKit.RED4.Types
 			ShouldScannerShowStatus = false;
 			IsShootable = true;
 			AnimationTime = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

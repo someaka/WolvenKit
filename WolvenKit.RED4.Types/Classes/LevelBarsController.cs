@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			Bar3 = new();
 			Bar4 = new();
 			Bars = new(5);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

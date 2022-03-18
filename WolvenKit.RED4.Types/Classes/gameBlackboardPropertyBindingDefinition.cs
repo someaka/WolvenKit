@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SerializableID = new();
 			PropertyPath = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

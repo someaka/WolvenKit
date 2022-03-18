@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Transforms = new();
 			Tracks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

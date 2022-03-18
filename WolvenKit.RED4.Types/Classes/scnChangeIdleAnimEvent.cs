@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 			EyesBlendAdditive = true;
 			IsEnabled = true;
 			BakedFacialTransition = new() { TransitionType = Enums.animFacialEmotionTransitionType.Fast, ToIdleWeight = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

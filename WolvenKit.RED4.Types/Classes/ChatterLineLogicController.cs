@@ -193,6 +193,10 @@ namespace WolvenKit.RED4.Types
 			NameplateEntityId = new();
 			OwnerId = new();
 			C_ExtraWideTextWidth = 110;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

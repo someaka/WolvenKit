@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameeventsHitEvent>>();
 			set => SetPropertyValue<CHandle<gameeventsHitEvent>>(value);
 		}
+
+		public HitReactionRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

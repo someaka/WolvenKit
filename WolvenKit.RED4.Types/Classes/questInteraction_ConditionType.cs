@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questObjectInteractionEventType>>();
 			set => SetPropertyValue<CEnum<questObjectInteractionEventType>>(value);
 		}
+
+		public questInteraction_ConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

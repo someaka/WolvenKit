@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			BodyPart = "ikRightArm";
 			OutIKTargetRef = new() { Id = -1 };
 			Request = new() { WeightPosition = 1.000000F, WeightOrientation = 1.000000F, TransitionIn = 0.300000F, TransitionOut = 0.300000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

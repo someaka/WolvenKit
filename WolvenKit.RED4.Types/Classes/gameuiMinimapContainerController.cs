@@ -298,6 +298,10 @@ namespace WolvenKit.RED4.Types
 			SecurityAreaVignetteWidget = new();
 			SecurityAreaText = new();
 			CombatModeHighlight = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

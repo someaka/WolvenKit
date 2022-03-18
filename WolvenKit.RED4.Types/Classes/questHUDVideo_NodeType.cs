@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			PlayOnHud = true;
 			Position = new();
 			Size = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

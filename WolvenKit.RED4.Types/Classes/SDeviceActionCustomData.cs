@@ -106,6 +106,10 @@ namespace WolvenKit.RED4.Types
 			On = true;
 			Off = true;
 			CustomClearance = 3;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

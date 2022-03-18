@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ImageActionButtonLogicController()
 		{
 			TallImageWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

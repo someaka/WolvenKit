@@ -548,6 +548,10 @@ namespace WolvenKit.RED4.Types
 			CachedIncomingData = new() { Attitude = Enums.EAIAttitude.AIA_Neutral, HighLevelState = Enums.gamedataNPCHighLevelState.Any };
 			BossColor = new();
 			AnimatingObject = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

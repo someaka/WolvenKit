@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public CraftingDataView()
 		{
 			AttachmentsList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

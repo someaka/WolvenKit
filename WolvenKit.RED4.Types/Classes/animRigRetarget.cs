@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<animRig>>();
 			set => SetPropertyValue<CResourceReference<animRig>>(value);
 		}
+
+		public animRigRetarget()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

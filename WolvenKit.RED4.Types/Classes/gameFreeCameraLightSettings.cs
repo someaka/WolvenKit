@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			S = new();
 			Lor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

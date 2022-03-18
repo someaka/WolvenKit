@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SubtitlesContainer = new();
 			AudioVOList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

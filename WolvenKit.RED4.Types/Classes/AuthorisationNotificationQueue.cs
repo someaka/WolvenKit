@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AuthorisationNotificationQueue()
 		{
 			Duration = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

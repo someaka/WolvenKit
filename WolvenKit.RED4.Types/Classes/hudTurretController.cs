@@ -188,6 +188,10 @@ namespace WolvenKit.RED4.Types
 			OffsetRight = 1495.000000F;
 			CurrentTime = new();
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

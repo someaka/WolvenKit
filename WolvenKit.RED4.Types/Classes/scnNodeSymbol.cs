@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			NodeId = new() { Id = 4294967295 };
 			EditorNodeId = new() { Id = 4294967295 };
 			EditorEventId = 18446744073709551615;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public TransmogMessageTooltipData()
 		{
 			TransmogItem = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

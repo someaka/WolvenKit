@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			PitchBottomLimit = 45.000000F;
 			PitchSpeedMultiplier = 1.000000F;
 			YawSpeedMultiplier = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

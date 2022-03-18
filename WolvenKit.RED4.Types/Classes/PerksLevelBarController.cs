@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ForegroundImage = new();
 			BackgroundImage = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

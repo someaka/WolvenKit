@@ -110,6 +110,10 @@ namespace WolvenKit.RED4.Types
 			SelectorTexture = new();
 			ArrowsTexture = new();
 			OptionSwitchHint = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

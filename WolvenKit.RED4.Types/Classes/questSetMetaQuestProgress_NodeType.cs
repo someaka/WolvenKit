@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questSetMetaQuestProgress_NodeType()
 		{
 			Text = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

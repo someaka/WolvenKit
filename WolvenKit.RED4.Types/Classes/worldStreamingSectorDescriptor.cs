@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			Variants = new();
 			BlockIndex = 4294967295;
 			Category = Enums.worldStreamingSectorCategory.Unknown;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

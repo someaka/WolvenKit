@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HitPositionEnter = new();
 			HitPositionExit = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

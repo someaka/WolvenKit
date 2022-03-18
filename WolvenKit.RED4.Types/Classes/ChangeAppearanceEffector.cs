@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameObject>>();
 			set => SetPropertyValue<CWeakHandle<gameObject>>(value);
 		}
+
+		public ChangeAppearanceEffector()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

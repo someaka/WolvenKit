@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public ApplyEffectorEffector()
 		{
 			Target = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

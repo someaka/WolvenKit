@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			Foreground = new();
 			Midground = new();
 			Background = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

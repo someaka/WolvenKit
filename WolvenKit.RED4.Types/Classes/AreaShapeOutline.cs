@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Points = new() { new() { X = -1.000000F, Y = -1.000000F }, new() { X = 1.000000F, Y = -1.000000F }, new() { X = 1.000000F, Y = 1.000000F }, new() { X = -1.000000F, Y = 1.000000F } };
 			Height = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

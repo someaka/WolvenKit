@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<inkWidgetReference>>();
 			set => SetPropertyValue<CArray<inkWidgetReference>>(value);
 		}
+
+		public gameuiMappinBaseController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

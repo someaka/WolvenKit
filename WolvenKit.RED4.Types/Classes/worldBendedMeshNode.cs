@@ -85,6 +85,10 @@ namespace WolvenKit.RED4.Types
 			CastShadows = true;
 			CastLocalShadows = true;
 			NavigationSetting = new() { NavmeshImpact = Enums.NavGenNavmeshImpact.Blocking };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

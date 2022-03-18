@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			JumpSpeed = 100.000000F;
 			PostJumpPlaySpeed = Enums.scnPlaySpeed.Normal;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public inkInputKeyDictionaryJSON()
 		{
 			DevicesMappings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

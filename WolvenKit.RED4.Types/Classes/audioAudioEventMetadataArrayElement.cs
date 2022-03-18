@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			WwiseId = 2166136261;
 			StopActionEvents = new();
 			Tags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

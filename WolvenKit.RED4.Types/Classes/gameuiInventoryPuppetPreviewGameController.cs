@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Collider = new();
 			MaxMousePointerOffset = 40.000000F;
 			MouseRotationSpeed = 250.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

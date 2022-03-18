@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Styles = new();
 			StyleImports = new();
 			Themes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

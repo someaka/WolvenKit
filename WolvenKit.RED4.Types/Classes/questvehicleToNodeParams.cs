@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			StopAtEnd = true;
 			UseTraffic = true;
 			ForceGreenLights = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

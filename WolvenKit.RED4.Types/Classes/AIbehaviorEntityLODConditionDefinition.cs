@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Any = new();
 			All = new();
 			None = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

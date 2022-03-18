@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Duration = 1.000000F;
 			Color = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

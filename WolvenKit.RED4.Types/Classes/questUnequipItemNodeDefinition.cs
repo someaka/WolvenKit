@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			Id = 65535;
 			EntityReference = new() { Names = new() };
 			Params = new() { UnequipDurationOverride = -1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

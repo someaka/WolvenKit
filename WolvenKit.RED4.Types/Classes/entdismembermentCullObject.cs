@@ -78,6 +78,10 @@ namespace WolvenKit.RED4.Types
 			CapsuleRadius = 0.100000F;
 			NearestAnimIndex = -1;
 			RagdollBodyIndex = 65535;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

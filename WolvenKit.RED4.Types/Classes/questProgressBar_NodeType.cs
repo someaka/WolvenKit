@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Show = true;
 			Duration = 3.000000F;
 			Text = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

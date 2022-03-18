@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			TopSettings = new();
 			BottomSettings = new();
 			JewelrySettings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

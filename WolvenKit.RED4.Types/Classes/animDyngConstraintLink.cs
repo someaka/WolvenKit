@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			LengthLowerBoundRatioPercentage = 100.000000F;
 			LengthUpperBoundRatioPercentage = 100.000000F;
 			LookAtAxis = new() { X = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

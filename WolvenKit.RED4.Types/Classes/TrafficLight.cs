@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public TrafficLight()
 		{
 			ControllerTypeName = "TrafficLightController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

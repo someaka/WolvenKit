@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			States = new();
 			Transitions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<graphGraphDefinition>>();
 			set => SetPropertyValue<CHandle<graphGraphDefinition>>(value);
 		}
+
+		public graphGraphResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

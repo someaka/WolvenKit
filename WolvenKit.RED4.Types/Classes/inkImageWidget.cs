@@ -106,6 +106,10 @@ namespace WolvenKit.RED4.Types
 			NineSliceScale = new();
 			TileHAlign = Enums.inkEHorizontalAlign.Left;
 			TileVAlign = Enums.inkEVerticalAlign.Top;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

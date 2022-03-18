@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameStatModifierGroup()
 		{
 			StatModifierArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

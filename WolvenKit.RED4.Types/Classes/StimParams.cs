@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ReactionOutput = new();
 			StimData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

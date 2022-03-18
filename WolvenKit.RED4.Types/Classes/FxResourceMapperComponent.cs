@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			AreaEffectData = new();
 			InvestigationSlotOffsetMultiplier = 1.000000F;
 			AreaEffectInFocusMode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

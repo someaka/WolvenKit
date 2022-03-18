@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			Type = Enums.scnMarkerType.Global;
 			EntityRef = new() { Names = new() };
 			IsMounted = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

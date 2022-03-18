@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AICTreeNodeBrainDefinition()
 		{
 			Children = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

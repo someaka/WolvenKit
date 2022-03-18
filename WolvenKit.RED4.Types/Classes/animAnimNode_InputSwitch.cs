@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SelectIntNode = new();
 			SelectFloatNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			ObjectiveName = new();
 			TrackingMarker = new();
 			Root = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

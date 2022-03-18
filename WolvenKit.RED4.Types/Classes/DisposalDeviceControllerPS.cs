@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 			DisposalDeviceSetup = new() { NumberOfUses = 1, IsBodyRequired = true };
 			DistractionSetup = new() { StimuliRange = 10.000000F, ExplosionDefinition = new() };
 			ExplosionSetup = new() { StimuliRange = 10.000000F, ExplosionDefinition = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

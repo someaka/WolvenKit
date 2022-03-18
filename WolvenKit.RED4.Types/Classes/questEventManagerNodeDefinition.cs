@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Id = 65535;
 			ObjectRef = new() { Names = new() };
 			ManagerName = "None";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -46,6 +46,10 @@ namespace WolvenKit.RED4.Types
 			UseLights = true;
 			LightsSettings = new();
 			UseDeviceAppearence = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

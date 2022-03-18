@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public LightAreaSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

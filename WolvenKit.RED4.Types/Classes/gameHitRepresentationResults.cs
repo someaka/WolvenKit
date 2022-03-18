@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameHitRepresentationResults()
 		{
 			Sults = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

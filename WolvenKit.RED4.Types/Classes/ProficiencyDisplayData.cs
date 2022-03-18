@@ -113,6 +113,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Areas = new();
 			PassiveBonusesData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

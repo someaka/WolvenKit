@@ -93,6 +93,10 @@ namespace WolvenKit.RED4.Types
 			MaxWeight = 1.000000F;
 			WeightNode = new();
 			InputNodes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

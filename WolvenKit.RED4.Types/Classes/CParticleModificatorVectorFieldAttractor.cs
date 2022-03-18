@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			EditorGroup = "Velocity";
 			IsEnabled = true;
 			InheritVelocity = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

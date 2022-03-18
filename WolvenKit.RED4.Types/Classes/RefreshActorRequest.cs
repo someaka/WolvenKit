@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public RefreshActorRequest()
 		{
 			RequestedModules = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

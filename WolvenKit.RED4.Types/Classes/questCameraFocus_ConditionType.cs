@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			ObjectRef = new() { Names = new() };
 			TimeInterval = 1.000000F;
 			AngleTolerance = 30.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

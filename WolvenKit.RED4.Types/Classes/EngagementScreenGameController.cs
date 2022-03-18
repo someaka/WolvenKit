@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			Text = new();
 			TextShadow = new();
 			TextContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public sampleUIAnchorController()
 		{
 			RectangleAnchor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DefaultColor = new();
 			DuplicateColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

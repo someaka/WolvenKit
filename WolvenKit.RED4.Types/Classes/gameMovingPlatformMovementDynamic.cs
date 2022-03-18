@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameMovingPlatformMovementDynamic()
 		{
 			InitData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

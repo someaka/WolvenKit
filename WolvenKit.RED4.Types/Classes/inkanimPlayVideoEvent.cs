@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<Bink>>();
 			set => SetPropertyValue<CResourceAsyncReference<Bink>>(value);
 		}
+
+		public inkanimPlayVideoEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

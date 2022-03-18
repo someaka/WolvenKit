@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<InventoryStatsController>>();
 			set => SetPropertyValue<CWeakHandle<InventoryStatsController>>(value);
 		}
+
+		public InventoryStatsListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

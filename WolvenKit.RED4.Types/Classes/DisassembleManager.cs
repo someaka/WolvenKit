@@ -132,6 +132,10 @@ namespace WolvenKit.RED4.Types
 			PopupList = new();
 			ListOfAddedInventoryItems = new();
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

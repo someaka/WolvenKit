@@ -70,6 +70,10 @@ namespace WolvenKit.RED4.Types
 			GlitchData = new();
 			UI_InteractivityBlocked = new();
 			IsInvestigated = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

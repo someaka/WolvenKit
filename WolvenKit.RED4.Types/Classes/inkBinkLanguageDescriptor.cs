@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inkLanguageId>>();
 			set => SetPropertyValue<CEnum<inkLanguageId>>(value);
 		}
+
+		public inkBinkLanguageDescriptor()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

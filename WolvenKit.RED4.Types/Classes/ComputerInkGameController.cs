@@ -153,6 +153,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ForceOpenDocumentType = Enums.EDocumentType.Invalid;
 			ForceOpenDocumentAdress = new() { FolderID = -1, DocumentID = -1 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

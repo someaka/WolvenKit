@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public entLocalizationStringMapEntry()
 		{
 			String = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

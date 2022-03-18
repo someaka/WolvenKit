@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorPassiveEventTagConditionDefinition()
 		{
 			DeactivateEvents = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

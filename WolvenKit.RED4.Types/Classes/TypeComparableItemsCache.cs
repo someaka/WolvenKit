@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public TypeComparableItemsCache()
 		{
 			Items = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

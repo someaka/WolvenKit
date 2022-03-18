@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public SPaperdollEquipData()
 		{
 			EquipArea = new() { AreaType = Enums.gamedataEquipmentArea.Invalid, EquipSlots = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

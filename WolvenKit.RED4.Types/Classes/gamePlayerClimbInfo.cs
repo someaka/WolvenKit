@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gamePlayerClimbInfo()
 		{
 			ObstacleEnd = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			VectorVariables = new();
 			QuaternionVariables = new();
 			TransformVariables = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

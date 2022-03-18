@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ForceFilterIgnore = new();
 			ForceFilterMatch = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

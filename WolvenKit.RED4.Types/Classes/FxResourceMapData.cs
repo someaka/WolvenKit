@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public FxResourceMapData()
 		{
 			Resource = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

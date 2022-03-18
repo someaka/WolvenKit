@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ShowHudHintMessege = new();
 			HudHintMessegeContent = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

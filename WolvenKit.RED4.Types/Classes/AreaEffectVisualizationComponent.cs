@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			AvailableQuickHacks = new();
 			AvailablespiderbotActions = new();
 			ActiveEffectIndex = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

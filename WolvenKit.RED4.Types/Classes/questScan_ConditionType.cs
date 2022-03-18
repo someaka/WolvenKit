@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ObjectRef = new() { Names = new() };
 			EventType = Enums.questObjectScanEventType.Started;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

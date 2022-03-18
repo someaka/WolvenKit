@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			WorkExcludedGestures = new();
 			InfiniteSequenceEntryId = new() { Id = 4294967295 };
 			EntryId = new() { Id = 4294967295 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

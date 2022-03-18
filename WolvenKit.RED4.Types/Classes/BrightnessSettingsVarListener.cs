@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<BrightnessSettingsGameController>>();
 			set => SetPropertyValue<CWeakHandle<BrightnessSettingsGameController>>(value);
 		}
+
+		public BrightnessSettingsVarListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

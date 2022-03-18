@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			XFactor = 1.000000F;
 			YFactor = 1.000000F;
 			ZFactor = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

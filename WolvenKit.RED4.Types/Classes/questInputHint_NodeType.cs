@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Show = true;
 			QueuePriority = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

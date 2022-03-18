@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HighlightTargets = new();
 			RequestingDevice = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

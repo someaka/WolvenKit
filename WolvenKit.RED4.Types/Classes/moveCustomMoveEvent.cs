@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public moveCustomMoveEvent()
 		{
 			Test = 666;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

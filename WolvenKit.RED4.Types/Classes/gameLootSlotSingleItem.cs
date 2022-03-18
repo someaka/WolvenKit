@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameLootSlotSingleItem()
 		{
 			UseAreaLoot = false;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

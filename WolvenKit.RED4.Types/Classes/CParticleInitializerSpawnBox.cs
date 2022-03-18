@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			EditorGroup = "Location";
 			IsEnabled = true;
 			WorldSpace = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

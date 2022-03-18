@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questProximityProgressBar_ConditionType()
 		{
 			Action = Enums.questProximityProgressBarAction.Completed;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

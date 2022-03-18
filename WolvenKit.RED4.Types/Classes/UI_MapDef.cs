@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			CurrentLocationEnumName = new();
 			NewLocationDiscovered = new();
 			CurrentState = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

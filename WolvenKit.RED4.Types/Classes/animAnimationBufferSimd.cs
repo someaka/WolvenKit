@@ -138,6 +138,10 @@ namespace WolvenKit.RED4.Types
 			DataAddress = new() { UnkIndex = 4294967295, FsetInBytes = 4294967295, ZeInBytes = 4294967295 };
 			FallbackFrameIndices = new();
 			ExtraDataNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

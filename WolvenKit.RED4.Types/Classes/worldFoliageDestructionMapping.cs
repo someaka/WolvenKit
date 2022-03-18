@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<CMesh>>();
 			set => SetPropertyValue<CResourceAsyncReference<CMesh>>(value);
 		}
+
+		public worldFoliageDestructionMapping()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

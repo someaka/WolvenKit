@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkWidgetLibraryItemUnpackedView>>();
 			set => SetPropertyValue<CHandle<inkWidgetLibraryItemUnpackedView>>(value);
 		}
+
+		public inkWidgetLibraryItemClipboardData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

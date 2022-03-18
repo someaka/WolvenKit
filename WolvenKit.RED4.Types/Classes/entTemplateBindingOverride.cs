@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<entIBinding>>();
 			set => SetPropertyValue<CHandle<entIBinding>>(value);
 		}
+
+		public entTemplateBindingOverride()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

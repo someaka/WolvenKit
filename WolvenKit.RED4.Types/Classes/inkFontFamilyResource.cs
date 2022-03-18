@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkFontFamilyResource()
 		{
 			FontStyles = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

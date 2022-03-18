@@ -168,6 +168,10 @@ namespace WolvenKit.RED4.Types
 			HealthText = new();
 			ScoreText = new();
 			ScoreMultiplierText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

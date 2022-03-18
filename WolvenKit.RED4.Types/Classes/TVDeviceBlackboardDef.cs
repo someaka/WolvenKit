@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PreviousChannel = new();
 			CurrentChannel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

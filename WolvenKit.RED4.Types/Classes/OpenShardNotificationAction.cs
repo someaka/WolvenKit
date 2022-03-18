@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameuiGameSystemUI>>();
 			set => SetPropertyValue<CHandle<gameuiGameSystemUI>>(value);
 		}
+
+		public OpenShardNotificationAction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

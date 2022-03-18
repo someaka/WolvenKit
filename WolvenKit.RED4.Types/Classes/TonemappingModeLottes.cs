@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			MidOut = 0.180000F;
 			Crosstalk = new() { X = 2.000000F, Y = 2.000000F, Z = 2.000000F };
 			CrosstalkSaturation = new() { X = 1.000000F, Y = 2.000000F, Z = 20.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

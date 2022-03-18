@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public entReplicatedAnimFeature()
 		{
 			InvokeCallback = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

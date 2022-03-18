@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			MinSize = new();
 			MaxSize = new();
 			CurrentSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

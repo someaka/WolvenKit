@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Points = new(2);
 			Areas = new(2);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

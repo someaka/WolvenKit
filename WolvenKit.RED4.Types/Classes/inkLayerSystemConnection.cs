@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkILayerSystemData>>();
 			set => SetPropertyValue<CHandle<inkILayerSystemData>>(value);
 		}
+
+		public inkLayerSystemConnection()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

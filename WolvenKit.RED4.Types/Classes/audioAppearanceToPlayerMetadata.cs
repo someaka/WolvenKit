@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Appearances = new();
 			Priority = Enums.audioFoleyItemPriority.P6;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

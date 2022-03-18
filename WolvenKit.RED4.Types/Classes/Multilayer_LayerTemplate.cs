@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			TilingMultiplier = 1.000000F;
 			ColorMaskLevelsIn = new(2);
 			ColorMaskLevelsOut = new(2);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

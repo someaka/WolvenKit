@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorSelectWorkspotNodeDefinition()
 		{
 			RepeatChild = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

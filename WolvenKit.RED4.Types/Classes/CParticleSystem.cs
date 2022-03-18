@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			BoundingBox = new() { Min = new(), Max = new() };
 			AutoHideDistance = 100.000000F;
 			LastLODFadeoutRange = 10.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Tiling = new();
 			PhysicalMaterial = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

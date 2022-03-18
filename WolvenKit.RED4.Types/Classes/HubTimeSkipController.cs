@@ -82,6 +82,10 @@ namespace WolvenKit.RED4.Types
 			GameTimeText = new();
 			CantSkipTimeContainer = new();
 			TimeSkipButton = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SActionTypeForward()
 		{
 			QHack = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

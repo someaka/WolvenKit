@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public SquadTicketReceipt()
 		{
 			LastRecipient = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

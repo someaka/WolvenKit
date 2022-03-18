@@ -137,6 +137,10 @@ namespace WolvenKit.RED4.Types
 		{
 			UsePositionSlide = true;
 			UseRotationSlide = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

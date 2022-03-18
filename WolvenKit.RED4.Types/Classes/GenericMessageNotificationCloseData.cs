@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<GenericMessageNotificationResult>>();
 			set => SetPropertyValue<CEnum<GenericMessageNotificationResult>>(value);
 		}
+
+		public GenericMessageNotificationCloseData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

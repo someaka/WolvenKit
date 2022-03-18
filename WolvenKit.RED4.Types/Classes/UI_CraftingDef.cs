@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			LastCommand = new();
 			LastItem = new();
 			LastIngredients = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<animAnimFeature_HitReactionsData>>();
 			set => SetPropertyValue<CHandle<animAnimFeature_HitReactionsData>>(value);
 		}
+
+		public RoyceComponent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

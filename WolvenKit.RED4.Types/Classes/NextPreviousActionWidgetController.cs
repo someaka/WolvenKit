@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			DefaultContainer = new();
 			DeclineContainer = new();
 			MoneyStatusAnimName = "no_money";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

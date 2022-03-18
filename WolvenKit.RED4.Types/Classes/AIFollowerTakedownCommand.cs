@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AIFollowerTakedownCommand()
 		{
 			TargetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public AnimFeature_TriggerModeChange()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

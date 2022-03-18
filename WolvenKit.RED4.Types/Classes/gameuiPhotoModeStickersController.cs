@@ -262,6 +262,10 @@ namespace WolvenKit.RED4.Types
 			MouseDragCurrentPos = new();
 			StickerMove = new();
 			StickersAreaSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

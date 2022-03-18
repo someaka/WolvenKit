@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<CraftingCommands>>();
 			set => SetPropertyValue<CEnum<CraftingCommands>>(value);
 		}
+
+		public CraftingPopupData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

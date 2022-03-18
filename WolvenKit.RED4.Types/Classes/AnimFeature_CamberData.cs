@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			LeftFrontCamberOffset = new();
 			RightBackCamberOffset = new();
 			LeftBackCamberOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

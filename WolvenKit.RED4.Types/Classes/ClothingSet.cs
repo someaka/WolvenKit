@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SetID = -1;
 			ClothingList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

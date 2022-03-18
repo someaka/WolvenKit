@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Entered = true;
 			SendNewLocationNotification = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -209,6 +209,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CallbackIDs = new();
 			MouseZoomLevel = 100000.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

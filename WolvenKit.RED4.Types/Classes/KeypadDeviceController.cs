@@ -96,6 +96,10 @@ namespace WolvenKit.RED4.Types
 		public KeypadDeviceController()
 		{
 			PasswordsList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

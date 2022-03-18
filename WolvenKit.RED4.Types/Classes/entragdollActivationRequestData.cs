@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			ActivateOnCollision = true;
 			ApplyPowerPose = true;
 			ApplyMomentum = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

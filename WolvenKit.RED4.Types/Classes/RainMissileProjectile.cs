@@ -264,6 +264,10 @@ namespace WolvenKit.RED4.Types
 			InitialTargetOffset = new();
 			FinalTargetPosition = new();
 			FinalTargetOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

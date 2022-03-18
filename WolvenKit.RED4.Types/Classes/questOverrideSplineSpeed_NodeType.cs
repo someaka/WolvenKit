@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VehicleRef = new() { Names = new() };
 			Speed = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

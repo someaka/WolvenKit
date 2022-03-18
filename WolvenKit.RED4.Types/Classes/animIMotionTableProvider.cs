@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<animParentStaticSwitchBranch>>();
 			set => SetPropertyValue<CEnum<animParentStaticSwitchBranch>>(value);
 		}
+
+		public animIMotionTableProvider()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnsimActionsScenarios()
 		{
 			AllScenarios = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

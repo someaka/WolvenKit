@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public Multilayer_Mask()
 		{
 			RenderResourceBlob = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

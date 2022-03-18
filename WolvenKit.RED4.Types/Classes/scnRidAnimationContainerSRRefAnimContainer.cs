@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Animation = new() { Id = 4294967295 };
 			Context = new() { GenderMask = new() { Mask = 128 } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

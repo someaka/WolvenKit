@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameCategorySelectionProbability()
 		{
 			Probabilities = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -172,6 +172,10 @@ namespace WolvenKit.RED4.Types
 			GlobalTVChannels = new();
 			PreviousGlobalTVChannelID = -1;
 			GlobalTVchanellsCount = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

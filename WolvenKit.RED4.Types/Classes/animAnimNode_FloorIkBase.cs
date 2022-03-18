@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			UseFixedVersion = true;
 			SlopeAngleDamp = 0.200000F;
 			Common = new() { GravityCentreBone = new(), RootRotationBlendTime = 0.200000F, VerticalVelocityOffsetUpBlendTime = 0.080000F, VerticalVelocityOffsetDownBlendTime = 0.030000F, SlidingOnSlopeBlendTime = 0.200000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

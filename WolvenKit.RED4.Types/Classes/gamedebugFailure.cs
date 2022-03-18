@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = new();
 			Path = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

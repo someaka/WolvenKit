@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<CurveSet>>();
 			set => SetPropertyValue<CResourceReference<CurveSet>>(value);
 		}
+
+		public CurveResourceSetEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

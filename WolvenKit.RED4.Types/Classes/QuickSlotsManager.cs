@@ -191,6 +191,10 @@ namespace WolvenKit.RED4.Types
 			CurrentVehicleWheelItem = new() { IsSlotUnlocked = true, ItemId = new(), PlayerVehicleData = new() { VehicleType = Enums.gamedataVehicleType.Invalid }, InteractiveActionOwner = new() };
 			CurrentGadgetWheelItem = new() { IsSlotUnlocked = true, ItemId = new(), PlayerVehicleData = new() { VehicleType = Enums.gamedataVehicleType.Invalid }, InteractiveActionOwner = new() };
 			CurrentInteractionWheelItem = new() { IsSlotUnlocked = true, ItemId = new(), PlayerVehicleData = new() { VehicleType = Enums.gamedataVehicleType.Invalid }, InteractiveActionOwner = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			Counter = new();
 			CollapseIcon = new();
 			IsNewFlag = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

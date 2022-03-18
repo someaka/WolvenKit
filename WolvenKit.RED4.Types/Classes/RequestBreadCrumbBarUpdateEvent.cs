@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Requester = new();
 			BreadCrumbData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

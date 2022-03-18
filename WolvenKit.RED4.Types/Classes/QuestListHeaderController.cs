@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			Title = new();
 			Arrow = new();
 			Root = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

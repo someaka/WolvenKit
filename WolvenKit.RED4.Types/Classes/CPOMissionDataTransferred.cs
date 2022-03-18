@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public CPOMissionDataTransferred()
 		{
 			DataDamagesPresetName = "CPODataRaceParams";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

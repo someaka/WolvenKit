@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameprojectileSetUpAndLaunchEvent()
 		{
 			LerpMultiplier = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

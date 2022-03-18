@@ -451,6 +451,10 @@ namespace WolvenKit.RED4.Types
 			PreviousCompanionDistanceToEnd = 9999999.000000F;
 			SplineEndPoint = new();
 			TeleportDestination = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

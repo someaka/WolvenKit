@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CUInt32>();
 			set => SetPropertyValue<CUInt32>(value);
 		}
+
+		public gameEffectParameter_IntEvaluator_Value()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

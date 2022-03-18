@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "RoadBlockController";
 			OpeningSpeed = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

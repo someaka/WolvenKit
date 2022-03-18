@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public SuppressSecuritySystemReaction()
 		{
 			ProtectedEntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

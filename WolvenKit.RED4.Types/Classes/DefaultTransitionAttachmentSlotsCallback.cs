@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<DefaultTransition>>();
 			set => SetPropertyValue<CWeakHandle<DefaultTransition>>(value);
 		}
+
+		public DefaultTransitionAttachmentSlotsCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

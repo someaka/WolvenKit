@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ServerReplicatedTime = new();
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

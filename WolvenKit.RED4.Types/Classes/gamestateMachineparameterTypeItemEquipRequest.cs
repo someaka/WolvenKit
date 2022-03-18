@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemId = new();
 			StartingRenderingPlane = Enums.ERenderingPlane.RPl_Weapon;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

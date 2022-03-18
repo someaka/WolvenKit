@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			ParentTransform = new();
 			Multiplier = 1.000000F;
 			ChannelEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

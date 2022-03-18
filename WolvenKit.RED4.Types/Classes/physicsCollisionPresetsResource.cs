@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public physicsCollisionPresetsResource()
 		{
 			Presets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

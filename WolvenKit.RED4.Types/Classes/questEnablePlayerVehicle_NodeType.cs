@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Enable = true;
 			Despawn = true;
 			MakePlayerActiveVehicle = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

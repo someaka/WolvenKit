@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			ContainerRef = new();
 			HighlightRef = new();
 			ItemListRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

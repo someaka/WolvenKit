@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			PerformerId = new() { Id = 4294967040 };
 			EffectEntry = new() { EffectInstanceId = new() { EffectId = new() { Id = 4294967295 }, Id = 4294967295 } };
 			GlitchEffectEntry = new() { EffectInstanceId = new() { EffectId = new() { Id = 4294967295 }, Id = 4294967295 } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

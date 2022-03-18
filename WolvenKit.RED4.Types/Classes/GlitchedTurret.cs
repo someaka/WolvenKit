@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public GlitchedTurret()
 		{
 			ControllerTypeName = "GlitchedTurretController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

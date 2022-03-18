@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SpawnerID = new();
 			EntryNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

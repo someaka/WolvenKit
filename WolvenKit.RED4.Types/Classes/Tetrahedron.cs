@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			Point2 = new();
 			Point3 = new();
 			Point4 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

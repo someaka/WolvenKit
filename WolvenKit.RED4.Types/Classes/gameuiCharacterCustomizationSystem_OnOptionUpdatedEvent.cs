@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameuiCharacterCustomizationOption>>();
 			set => SetPropertyValue<CWeakHandle<gameuiCharacterCustomizationOption>>(value);
 		}
+
+		public gameuiCharacterCustomizationSystem_OnOptionUpdatedEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

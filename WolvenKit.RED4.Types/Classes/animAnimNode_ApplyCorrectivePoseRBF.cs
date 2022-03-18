@@ -45,6 +45,10 @@ namespace WolvenKit.RED4.Types
 			RbfPowValue = 20.000000F;
 			CorrectiveFrame = 0.033330F;
 			Correctives = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -133,6 +133,10 @@ namespace WolvenKit.RED4.Types
 			ToDoHeader = new();
 			OptionalList = new();
 			NonOptionalList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

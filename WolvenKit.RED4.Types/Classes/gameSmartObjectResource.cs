@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			ExitPoints = new();
 			BodyTypes = new();
 			LoopAnimations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

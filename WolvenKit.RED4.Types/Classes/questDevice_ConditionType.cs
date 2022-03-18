@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public questDevice_ConditionType()
 		{
 			FunctionParameters = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

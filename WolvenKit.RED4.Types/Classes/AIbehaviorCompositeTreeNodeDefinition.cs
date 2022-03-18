@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<CHandle<AIbehaviorTreeNodeDefinition>>>();
 			set => SetPropertyValue<CArray<CHandle<AIbehaviorTreeNodeDefinition>>>(value);
 		}
+
+		public AIbehaviorCompositeTreeNodeDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

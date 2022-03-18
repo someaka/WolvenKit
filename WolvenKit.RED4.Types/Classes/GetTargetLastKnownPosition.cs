@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public GetTargetLastKnownPosition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			TextWidget = new();
 			CaptionWidget = new();
 			Root = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

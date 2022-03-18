@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			SecureTimeOut = 60.000000F;
 			PreciseLevel = 1.000000F;
 			Closest = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

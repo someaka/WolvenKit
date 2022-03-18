@@ -241,6 +241,10 @@ namespace WolvenKit.RED4.Types
 			IsInWater = new();
 			RaceTimer = new();
 			IsTargetingFriendly = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			Heal3HealthPercentage = 40.000000F;
 			Heal4HealthPercentage = 25.000000F;
 			Heal5HealthPercentage = 10.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

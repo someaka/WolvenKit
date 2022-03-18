@@ -150,6 +150,10 @@ namespace WolvenKit.RED4.Types
 			DiffuseColorScale = new() { Red = 1.000000F, Green = 1.000000F, Blue = 1.000000F, Alpha = 1.000000F };
 			EnableNormalTreshold = true;
 			ShouldCollectWithRayTracing = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

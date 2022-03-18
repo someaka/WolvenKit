@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<CMesh>>();
 			set => SetPropertyValue<CResourceReference<CMesh>>(value);
 		}
+
+		public entdismembermentDebrisResourceItem()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

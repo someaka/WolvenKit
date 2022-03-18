@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DisableAutomaticSwitchToVehicleTPP = new();
 			EnableVehicleToggleSummonMode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AISharedVarTableDefinition()
 		{
 			Table = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

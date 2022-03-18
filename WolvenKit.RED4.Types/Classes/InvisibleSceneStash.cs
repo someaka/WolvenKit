@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "InvisibleSceneStashController";
 			ItemSlots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

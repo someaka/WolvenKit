@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "BillboardDeviceController";
 			ShortGlitchDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

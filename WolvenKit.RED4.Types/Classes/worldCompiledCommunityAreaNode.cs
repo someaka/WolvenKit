@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public worldCompiledCommunityAreaNode()
 		{
 			SourceObjectId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<worldEffect>>();
 			set => SetPropertyValue<CResourceAsyncReference<worldEffect>>(value);
 		}
+
+		public gameFxResource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

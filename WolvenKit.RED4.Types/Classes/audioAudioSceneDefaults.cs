@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioAudioSceneDefaults()
 		{
 			Parameters = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

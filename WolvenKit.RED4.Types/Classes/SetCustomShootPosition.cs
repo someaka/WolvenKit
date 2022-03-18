@@ -158,6 +158,10 @@ namespace WolvenKit.RED4.Types
 			OwnerPosition = new();
 			TargetPosition = new();
 			FxPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorWaitingMountCommandConditionDefinition()
 		{
 			CallbackName = "OnMountRequest";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

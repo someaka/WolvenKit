@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<ISerializable>>();
 			set => SetPropertyValue<CHandle<ISerializable>>(value);
 		}
+
+		public AIISerializableArgumentInstancePS()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

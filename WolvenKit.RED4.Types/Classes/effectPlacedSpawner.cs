@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<effectIPlacementEntries>>();
 			set => SetPropertyValue<CHandle<effectIPlacementEntries>>(value);
 		}
+
+		public effectPlacedSpawner()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

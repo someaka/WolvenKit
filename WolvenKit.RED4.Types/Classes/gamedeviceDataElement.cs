@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			VideoPath = new();
 			QuestInfo = new();
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

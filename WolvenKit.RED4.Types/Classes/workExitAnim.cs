@@ -82,6 +82,10 @@ namespace WolvenKit.RED4.Types
 			Id = new() { Id = 4294967295 };
 			Flags = 8;
 			SyncOffset = new() { Position = new(), Orientation = new() { R = 1.000000F } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

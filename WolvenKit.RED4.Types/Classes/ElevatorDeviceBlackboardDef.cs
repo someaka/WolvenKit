@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			CurrentFloor = new();
 			IsPlayerScanned = new();
 			IsPaused = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

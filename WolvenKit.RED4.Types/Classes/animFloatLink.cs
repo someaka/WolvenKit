@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<animAnimNode_FloatValue>>();
 			set => SetPropertyValue<CWeakHandle<animAnimNode_FloatValue>>(value);
 		}
+
+		public animFloatLink()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

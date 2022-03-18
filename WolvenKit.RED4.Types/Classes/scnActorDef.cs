@@ -201,6 +201,10 @@ namespace WolvenKit.RED4.Types
 			CyberwareCinematicAnimSets = new();
 			DynamicAnimSets = new();
 			SpecAppearance = "default";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

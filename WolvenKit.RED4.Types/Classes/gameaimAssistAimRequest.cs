@@ -171,6 +171,10 @@ namespace WolvenKit.RED4.Types
 			LookAtTarget = new();
 			ProcessAsInput = true;
 			BptMaxSwitches = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

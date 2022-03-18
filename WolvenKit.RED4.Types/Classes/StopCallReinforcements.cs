@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public StopCallReinforcements()
 		{
 			StatPoolType = Enums.gamedataStatPoolType.CallReinforcementProgress;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

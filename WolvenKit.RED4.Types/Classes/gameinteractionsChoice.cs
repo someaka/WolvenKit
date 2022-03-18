@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			Data = new();
 			ChoiceMetaData = new() { Type = new() };
 			LookAtDescriptor = new() { Offset = new(), OrbId = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

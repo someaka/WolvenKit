@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<MenuItemController>>();
 			set => SetPropertyValue<CWeakHandle<MenuItemController>>(value);
 		}
+
+		public SelectMenuRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

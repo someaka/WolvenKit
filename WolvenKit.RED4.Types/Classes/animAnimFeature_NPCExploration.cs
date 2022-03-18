@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimFeature_NPCExploration()
 		{
 			IsEvenLoop = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			CompressedInputStates = new();
 			FirstFrameId = 4294967295;
 			ReplicationTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

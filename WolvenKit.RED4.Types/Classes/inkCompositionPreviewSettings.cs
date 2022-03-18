@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public inkCompositionPreviewSettings()
 		{
 			PreviewResolution = Enums.inkETextureResolution.HD_1280_720;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

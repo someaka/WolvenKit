@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MiniGameVideoPath = new();
 			MiniGameVideoLenght = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

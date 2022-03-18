@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ELaunchMode>>();
 			set => SetPropertyValue<CEnum<ELaunchMode>>(value);
 		}
+
+		public NanoWireProjectile()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

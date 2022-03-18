@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questEUIMenuState>>();
 			set => SetPropertyValue<CEnum<questEUIMenuState>>(value);
 		}
+
+		public questMenuState_ConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldDebugColoring_UniqueMeshColors()
 		{
 			Alpha = 192;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

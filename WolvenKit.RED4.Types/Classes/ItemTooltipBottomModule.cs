@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			PriceWrapper = new();
 			WeightText = new();
 			PriceText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

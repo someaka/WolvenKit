@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TargetOverridePuppetRef = new() { Names = new() };
 			Duration = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

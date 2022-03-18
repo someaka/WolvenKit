@@ -92,6 +92,10 @@ namespace WolvenKit.RED4.Types
 			LodDistanceScale = 1.000000F;
 			StreamingDistance = -1.000000F;
 			PopulationSpanInfo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

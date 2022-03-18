@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Offset = new();
 			PlayTillHour = 24;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

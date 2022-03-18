@@ -94,6 +94,10 @@ namespace WolvenKit.RED4.Types
 			MessageMaxLength = 120;
 			MessageTopper = "...";
 			Queue = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

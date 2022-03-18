@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DescriptionText = new();
 			CustomDescriptionText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

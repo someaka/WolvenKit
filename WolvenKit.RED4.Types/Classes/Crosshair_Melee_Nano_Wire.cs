@@ -92,5 +92,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkanimProxy>>();
 			set => SetPropertyValue<CHandle<inkanimProxy>>(value);
 		}
+
+		public Crosshair_Melee_Nano_Wire()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

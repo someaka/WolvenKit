@@ -85,6 +85,10 @@ namespace WolvenKit.RED4.Types
 			ButtonSelectionChanged = new();
 			ButtonHoldProgressChanged = new();
 			AutoUpdateWidgetState = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

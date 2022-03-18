@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<audioAudioSceneDictionary>>();
 			set => SetPropertyValue<CHandle<audioAudioSceneDictionary>>(value);
 		}
+
+		public audioAudioScenesMap()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

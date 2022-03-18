@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EmissionScale = 1.000000F;
 			OpacityScale = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

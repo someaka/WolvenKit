@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<physicsMaterialTagVehicleTraction>>();
 			set => SetPropertyValue<CEnum<physicsMaterialTagVehicleTraction>>(value);
 		}
+
+		public physicsMaterialTags()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			Components = new();
 			FxInstances = new();
 			BaseActionsOperations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

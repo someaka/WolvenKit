@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ErrorMessages = new();
 			Errors = new() { Labels = new(), FixVersions = new(), Customfield_15306 = new(), Attachment = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

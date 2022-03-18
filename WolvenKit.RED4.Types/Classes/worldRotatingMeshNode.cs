@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public worldRotatingMeshNode()
 		{
 			FullRotationTime = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

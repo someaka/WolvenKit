@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			PriceContainer = new();
 			MoneyStatusContainer = new();
 			ProcessingStatusContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -172,6 +172,10 @@ namespace WolvenKit.RED4.Types
 			DistractionSoundName = "v_car_thorton_galena_horn";
 			DistractionSoundDuration = 5.000000F;
 			WorkspotDuration = 0.010000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

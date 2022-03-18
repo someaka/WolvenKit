@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameRenderGameplayEffectsManagerSaveData()
 		{
 			CyberspacePixelsortParams = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

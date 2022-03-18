@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<HitReactionBehaviorData>>();
 			set => SetPropertyValue<CHandle<HitReactionBehaviorData>>(value);
 		}
+
+		public LastHitDataEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

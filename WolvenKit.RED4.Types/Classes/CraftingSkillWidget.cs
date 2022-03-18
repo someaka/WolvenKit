@@ -111,6 +111,10 @@ namespace WolvenKit.RED4.Types
 			NextLevelText = new();
 			ExpPointText1 = new();
 			ExpPointText2 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			CommonAd = new();
 			FadeDuration = 0.500000F;
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

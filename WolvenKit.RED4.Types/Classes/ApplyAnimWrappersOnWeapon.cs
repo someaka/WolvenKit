@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public ApplyAnimWrappersOnWeapon()
 		{
 			OwnerPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameLoadoutData()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

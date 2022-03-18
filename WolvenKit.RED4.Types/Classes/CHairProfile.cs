@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			SampleCount = 64;
 			GradientEntriesID = new() { new(), new() };
 			GradientEntriesRootToTip = new() { new(), new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

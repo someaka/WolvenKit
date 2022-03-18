@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			MinClearance = 1;
 			MaxClearance = 10;
 			ShouldForceVirtualSystem = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

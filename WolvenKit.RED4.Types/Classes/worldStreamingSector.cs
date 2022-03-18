@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			LocalInplaceResource = new();
 			Level = 255;
 			Category = Enums.worldStreamingSectorCategory.Unknown;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

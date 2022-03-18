@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameCookedLootData()
 		{
 			LootTables = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

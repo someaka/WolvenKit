@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public ScannerSkillchecks()
 		{
 			Skillchecks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

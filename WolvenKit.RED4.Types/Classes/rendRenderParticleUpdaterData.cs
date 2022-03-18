@@ -181,6 +181,10 @@ namespace WolvenKit.RED4.Types
 			EventFrequency = 1.000000F;
 			EventProbability = 1.000000F;
 			RandomPerChannel = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

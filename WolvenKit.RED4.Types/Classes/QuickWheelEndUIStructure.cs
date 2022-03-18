@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public QuickWheelEndUIStructure()
 		{
 			ChosenItem = new() { IsSlotUnlocked = true, ItemId = new(), PlayerVehicleData = new() { VehicleType = Enums.gamedataVehicleType.Invalid }, InteractiveActionOwner = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

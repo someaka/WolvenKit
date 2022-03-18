@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			YawDefault = -125.000000F;
 			RotationSpeed = 30.000000F;
 			CameraController = new() { CameraSetup = new(), TransitionDelay = 0.500000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

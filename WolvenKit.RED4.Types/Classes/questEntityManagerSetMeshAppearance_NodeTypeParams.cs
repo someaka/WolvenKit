@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public questEntityManagerSetMeshAppearance_NodeTypeParams()
 		{
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

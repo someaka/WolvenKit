@@ -206,6 +206,10 @@ namespace WolvenKit.RED4.Types
 			ProficiencyDescriptionText = new();
 			WidgetMap = new();
 			ConnectionLines = new(45);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Root = new();
 			Image = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

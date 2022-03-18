@@ -146,6 +146,10 @@ namespace WolvenKit.RED4.Types
 			RoughnessScale = 1.000000F;
 			ShouldCollectWithRayTracing = true;
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -78,6 +78,10 @@ namespace WolvenKit.RED4.Types
 			State = new();
 			GameParameter = new();
 			Bus = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

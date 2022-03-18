@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public ShardCaseAnimationEnded()
 		{
 			Item = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

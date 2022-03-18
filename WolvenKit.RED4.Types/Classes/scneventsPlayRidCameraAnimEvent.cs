@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			AnimOriginMarker = new() { Type = Enums.scnMarkerType.Global, EntityRef = new() { Names = new() }, IsMounted = true };
 			ActivateAsGameCamera = true;
 			MarkCamerCut = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

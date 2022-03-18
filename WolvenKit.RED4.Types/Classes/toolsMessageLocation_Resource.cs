@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<MessageResourcePath>();
 			set => SetPropertyValue<MessageResourcePath>(value);
 		}
+
+		public toolsMessageLocation_Resource()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

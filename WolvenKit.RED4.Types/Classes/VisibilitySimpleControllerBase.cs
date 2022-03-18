@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public VisibilitySimpleControllerBase()
 		{
 			AffectedWidgets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

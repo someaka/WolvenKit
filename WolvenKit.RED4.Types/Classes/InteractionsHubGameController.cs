@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			BotInteractionWidgetsLibraries = new();
 			BotInteractionsRoot = new();
 			TooltipsManagerRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -87,6 +87,10 @@ namespace WolvenKit.RED4.Types
 			DistantWindowsSize = 3.000000F;
 			DistantWindowsSaturation = 0.750000F;
 			DistantWindowsTurnedOf = 0.450000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

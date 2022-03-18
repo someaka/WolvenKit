@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public QuickhackModule()
 		{
 			InstancesList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

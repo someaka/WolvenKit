@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AICTreeNodeIncludedTreeDefinition()
 		{
 			Tree = new() { VariableId = 65535 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StimuliRange = 10.000000F;
 			ExplosionDefinition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

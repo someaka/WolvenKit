@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ColliderPositionOffset = new();
 			ColliderSizeOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedeviceClearance>>();
 			set => SetPropertyValue<CHandle<gamedeviceClearance>>(value);
 		}
+
+		public gameMasterDeviceComponent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

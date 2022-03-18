@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VehicleRef = new() { Names = new() };
 			State = Enums.vehicleVehicleDoorState.Open;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorRandomConditionDefinition()
 		{
 			Chance = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

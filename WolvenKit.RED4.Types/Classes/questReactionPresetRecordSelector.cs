@@ -112,6 +112,10 @@ namespace WolvenKit.RED4.Types
 		public questReactionPresetRecordSelector()
 		{
 			IsGanger = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

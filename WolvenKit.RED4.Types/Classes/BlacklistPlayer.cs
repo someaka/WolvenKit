@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Blacklist = true;
 			Reason = Enums.BlacklistReason.COMBAT;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

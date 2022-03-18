@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<PerksMenuAttributeItemController>>();
 			set => SetPropertyValue<CWeakHandle<PerksMenuAttributeItemController>>(value);
 		}
+
+		public PerksMenuAttributeItemCreated()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 71462547290;
 			TweakDBDescriptionRecord = 123510029761;
 			ForceLookAt = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

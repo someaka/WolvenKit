@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WorkspotExitTangent = new();
 			TrafficLaneReturnTangent = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

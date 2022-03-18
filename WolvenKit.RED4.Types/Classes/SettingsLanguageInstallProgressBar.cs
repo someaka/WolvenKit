@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			ProgressBarRoot = new();
 			ProgressBarFill = new();
 			TextProgress = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

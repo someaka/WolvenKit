@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gamedataRadioStation_Record>>();
 			set => SetPropertyValue<CWeakHandle<gamedataRadioStation_Record>>(value);
 		}
+
+		public RadioListItemData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

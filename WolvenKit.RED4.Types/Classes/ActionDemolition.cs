@@ -23,6 +23,10 @@ namespace WolvenKit.RED4.Types
 			LocalizedName = "LocKey#22271";
 			SkillcheckDescription = new() { AdditionalRequirements = new(), OwnerID = new() };
 			SlotID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

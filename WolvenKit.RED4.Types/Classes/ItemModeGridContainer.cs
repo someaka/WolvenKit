@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 			M_eyesTexture = new();
 			M_systemReplacementTexture = new();
 			M_handsTexture = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

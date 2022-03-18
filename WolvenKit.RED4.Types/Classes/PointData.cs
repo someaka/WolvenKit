@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Position = new();
 			Direction = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

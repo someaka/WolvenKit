@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameuiCharacterCustomization_BrokenNoseStage>>();
 			set => SetPropertyValue<CEnum<gameuiCharacterCustomization_BrokenNoseStage>>(value);
 		}
+
+		public questCharacterManagerVisuals_SetBrokenNoseStage()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

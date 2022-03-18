@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedataGameplayAbility_Record>>();
 			set => SetPropertyValue<CHandle<gamedataGameplayAbility_Record>>(value);
 		}
+
+		public SimpleCombatConditon()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

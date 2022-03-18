@@ -237,6 +237,10 @@ namespace WolvenKit.RED4.Types
 			DebugCashedPingFxResource = new();
 			ActivateLinksDelayID = new();
 			DeactivateLinksDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public worldGINode()
 		{
 			Location = new(3);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

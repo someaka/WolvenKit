@@ -169,6 +169,10 @@ namespace WolvenKit.RED4.Types
 		{
 			GpLookAtTarget = new();
 			GpLookAtUp = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

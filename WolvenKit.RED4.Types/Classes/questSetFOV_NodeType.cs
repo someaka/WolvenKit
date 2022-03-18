@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questSetFOV_NodeType()
 		{
 			FOV = 60.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

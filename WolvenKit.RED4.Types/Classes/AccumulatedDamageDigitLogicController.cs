@@ -651,6 +651,10 @@ namespace WolvenKit.RED4.Types
 			AnimStickingDistanceHeightBias = 70.000000F;
 			AnimPositiveOpacity = 1.000000F;
 			AnimNegativeOpacity = 0.800000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

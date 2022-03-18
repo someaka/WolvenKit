@@ -132,6 +132,10 @@ namespace WolvenKit.RED4.Types
 			OxygenStatusTextPath = new();
 			CurrentOxygen = 100.000000F;
 			SceneTier = Enums.GameplayTier.Tier1_FullGameplay;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

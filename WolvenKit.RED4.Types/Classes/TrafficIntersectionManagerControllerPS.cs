@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			DeviceName = "Traffic Intersection Manager";
 			TweakDBRecord = 147361436664;
 			TweakDBDescriptionRecord = 201737502228;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

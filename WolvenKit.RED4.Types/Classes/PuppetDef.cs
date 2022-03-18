@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			ForceFriendlyCarry = new();
 			ForcedCarryStyle = new();
 			HasCPOMissionData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HighlightedDeviceID = new();
 			HighlightedConnectionsIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

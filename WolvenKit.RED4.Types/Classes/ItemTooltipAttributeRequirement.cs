@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ItemTooltipAttributeRequirement()
 		{
 			LabelRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

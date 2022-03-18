@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			GlobalActions = new();
 			Context = new() { RequestorID = new(), ActionPrereqs = new() };
 			ConnectedDevices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

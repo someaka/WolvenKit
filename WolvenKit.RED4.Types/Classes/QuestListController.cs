@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Icon = new();
 			QuestListRef = new();
 			QuestItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameMuppetInputActionRangedAttack()
 		{
 			ActionType = Enums.gameMuppetInputActionType.Press;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

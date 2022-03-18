@@ -246,6 +246,10 @@ namespace WolvenKit.RED4.Types
 			MoveXAxis = "left_stick_x";
 			MoveYAxis = "left_stick_y";
 			ShootTriggerName = "right_trigger";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

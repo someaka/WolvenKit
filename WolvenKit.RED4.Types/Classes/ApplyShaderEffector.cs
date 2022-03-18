@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public ApplyShaderEffector()
 		{
 			OwnerWeapons = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

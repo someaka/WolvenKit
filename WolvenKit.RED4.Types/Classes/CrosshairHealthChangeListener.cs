@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameuiCrosshairBaseGameController>>();
 			set => SetPropertyValue<CWeakHandle<gameuiCrosshairBaseGameController>>(value);
 		}
+
+		public CrosshairHealthChangeListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

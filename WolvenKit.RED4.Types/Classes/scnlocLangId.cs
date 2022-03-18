@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnlocLangId()
 		{
 			LangId = 255;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

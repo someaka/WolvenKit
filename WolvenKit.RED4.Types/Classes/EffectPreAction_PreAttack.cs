@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public EffectPreAction_PreAttack()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

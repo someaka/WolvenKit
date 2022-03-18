@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questUnequipItemParams()
 		{
 			UnequipDurationOverride = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

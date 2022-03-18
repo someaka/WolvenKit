@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PlayerData = new();
 			OwnerData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

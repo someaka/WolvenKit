@@ -102,6 +102,10 @@ namespace WolvenKit.RED4.Types
 			WaitTimeForLooping = new();
 			StartTime = new();
 			ReminderParams = new() { ReminderActor = new() { Id = 4294967295 }, WaitTimeForReminderA = new(), WaitTimeForReminderB = new(), WaitTimeForReminderC = new(), WaitTimeForLooping = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

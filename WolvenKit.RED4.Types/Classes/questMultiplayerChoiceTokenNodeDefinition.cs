@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			Sockets = new();
 			Id = 65535;
 			Params = new() { Timeout = 15 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

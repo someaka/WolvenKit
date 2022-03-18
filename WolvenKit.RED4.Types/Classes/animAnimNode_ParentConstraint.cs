@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 			WeightNode = new();
 			OffsetTranslationLS = new();
 			OffsetEulerRotationLS = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

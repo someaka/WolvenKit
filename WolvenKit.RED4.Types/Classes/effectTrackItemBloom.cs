@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			TimeDuration = 1.000000F;
 			SceneColorScale = new();
 			BloomColorScale = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

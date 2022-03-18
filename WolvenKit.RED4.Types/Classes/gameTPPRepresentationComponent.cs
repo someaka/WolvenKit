@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			DetachedObjectInfo = new();
 			AttachedObjectInfo = new();
 			AffectedAppearanceSlots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

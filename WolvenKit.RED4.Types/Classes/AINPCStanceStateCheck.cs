@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameIBlackboard>>();
 			set => SetPropertyValue<CWeakHandle<gameIBlackboard>>(value);
 		}
+
+		public AINPCStanceStateCheck()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

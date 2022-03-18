@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public scnWorldMarker()
 		{
 			Type = Enums.scnWorldMarkerType.NodeRef;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

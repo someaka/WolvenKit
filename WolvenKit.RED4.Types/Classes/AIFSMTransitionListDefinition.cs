@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CUInt16>();
 			set => SetPropertyValue<CUInt16>(value);
 		}
+
+		public AIFSMTransitionListDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

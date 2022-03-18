@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Mapping = new();
 			StatPools = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

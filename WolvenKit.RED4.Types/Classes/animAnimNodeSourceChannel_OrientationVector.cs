@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			TransformIndex = new();
 			InputTransformIndex = new();
 			Up = new() { Y = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

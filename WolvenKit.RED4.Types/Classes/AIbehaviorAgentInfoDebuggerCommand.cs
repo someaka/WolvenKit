@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EntityId = new();
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

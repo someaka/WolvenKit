@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AnimFeature_AnimatedDevice>>();
 			set => SetPropertyValue<CHandle<AnimFeature_AnimatedDevice>>(value);
 		}
+
+		public AnimatedSign()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

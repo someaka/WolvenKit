@@ -150,6 +150,10 @@ namespace WolvenKit.RED4.Types
 			BroadcastBlockingLines = new();
 			LastBroadcastBlockingLineTime = new();
 			LastChoiceTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

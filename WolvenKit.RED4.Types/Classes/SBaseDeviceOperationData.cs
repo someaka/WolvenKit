@@ -189,6 +189,10 @@ namespace WolvenKit.RED4.Types
 			PlayerWorkspot = new();
 			ToggleOperations = new();
 			DelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

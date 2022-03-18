@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			Legacy = true;
 			LegacyDensityInTimePeriods = true;
 			LegacyCharactersData = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

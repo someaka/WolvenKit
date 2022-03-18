@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public audioDynamicEventsWithInterval()
 		{
 			Events = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

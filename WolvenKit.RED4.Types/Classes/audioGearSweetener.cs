@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public audioGearSweetener()
 		{
 			BurnoutFactor = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

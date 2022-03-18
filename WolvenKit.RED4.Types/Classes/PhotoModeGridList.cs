@@ -164,6 +164,10 @@ namespace WolvenKit.RED4.Types
 			SliderWidget = new();
 			Buttons = new();
 			Rows = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

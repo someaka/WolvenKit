@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			RenderParticles = true;
 			AntiAliasing = true;
 			LocalShadows = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

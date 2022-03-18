@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			PressColor = new();
 			DisableColor = new();
 			TintControlRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<questTutorialManager>>();
 			set => SetPropertyValue<CWeakHandle<questTutorialManager>>(value);
 		}
+
+		public gameuiTutorialOverlayLogicController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

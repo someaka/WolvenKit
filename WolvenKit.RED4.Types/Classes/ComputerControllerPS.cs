@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 			OpenedMailAdress = new() { FolderID = -1, DocumentID = -1 };
 			OpenedFileAdress = new() { FolderID = -1, DocumentID = -1 };
 			IsInSleepMode = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

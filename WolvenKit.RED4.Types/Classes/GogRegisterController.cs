@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LinkWidget = new();
 			QrImageWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

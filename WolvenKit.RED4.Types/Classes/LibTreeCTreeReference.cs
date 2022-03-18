@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<LibTreeParameterList>();
 			set => SetPropertyValue<LibTreeParameterList>(value);
 		}
+
+		public LibTreeCTreeReference()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

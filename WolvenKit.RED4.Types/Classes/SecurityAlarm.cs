@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SecurityAlarm()
 		{
 			ControllerTypeName = "SecurityAlarmController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

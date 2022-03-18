@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<audioRadioSpeakerType>>();
 			set => SetPropertyValue<CEnum<audioRadioSpeakerType>>(value);
 		}
+
+		public questRadio_ConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

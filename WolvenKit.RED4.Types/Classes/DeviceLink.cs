@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public DeviceLink()
 		{
 			PSID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimNodeSourceChannel_StaticQuat()
 		{
 			Data = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

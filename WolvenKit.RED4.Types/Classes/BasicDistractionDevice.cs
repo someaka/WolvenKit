@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			DistractionComponentSwapNamesToOFF = new();
 			DistractionComponentON = new();
 			CdistractionComponentOFF = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

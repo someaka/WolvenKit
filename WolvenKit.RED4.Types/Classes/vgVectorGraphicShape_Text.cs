@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public vgVectorGraphicShape_Text()
 		{
 			CalTransform = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

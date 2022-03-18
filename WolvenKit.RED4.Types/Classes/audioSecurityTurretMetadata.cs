@@ -89,6 +89,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ObstructionEnabled = true;
 			OcclusionEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

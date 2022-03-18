@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CallPhase = Enums.questPhoneCallPhase.IncomingCall;
 			CallMode = Enums.questPhoneCallMode.Audio;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

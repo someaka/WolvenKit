@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EquipmentChangeTaskData()
 		{
 			EqData = new() { EquipArea = new() { AreaType = Enums.gamedataEquipmentArea.Invalid, EquipSlots = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

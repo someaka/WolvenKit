@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LocalAimForward = new();
 			LocalAimPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

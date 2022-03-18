@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			EntryViewRef = new();
 			CharacterEntryViewRef = new();
 			ImageViewRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

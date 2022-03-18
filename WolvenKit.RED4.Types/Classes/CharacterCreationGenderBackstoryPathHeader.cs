@@ -70,6 +70,10 @@ namespace WolvenKit.RED4.Types
 			UnSelectedColor = new();
 			TextSelectedColor = new();
 			TextUnselectedColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

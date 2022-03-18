@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			CollisionCapsuleAxisLS = new() { X = 0.500000F };
 			DirectionReferenceBone = new();
 			ProjectionType = Enums.animPositionProjectionType.ShortestPath;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

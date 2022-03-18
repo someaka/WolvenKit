@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			CenterForwardRight = new();
 			FrontLeft = new();
 			FrontRight = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

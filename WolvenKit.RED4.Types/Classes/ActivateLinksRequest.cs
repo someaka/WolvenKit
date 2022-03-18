@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ActivateLinksRequest()
 		{
 			LinksIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

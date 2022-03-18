@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SDeviceWidgetPackage()
 		{
 			ActionWidgets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

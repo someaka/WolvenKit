@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DetailsButton = new();
 			EntryContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

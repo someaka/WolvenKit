@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<TemporalPrereqState>>();
 			set => SetPropertyValue<CWeakHandle<TemporalPrereqState>>(value);
 		}
+
+		public TemporalPrereqDelayCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

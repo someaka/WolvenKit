@@ -95,7 +95,7 @@ namespace WolvenKit.RED4.Archive.IO
             foreach (var r in refDesc)
             {
                 BaseStream.Position = baseOff + r.offset;
-                importsList.Add(ReadImport(r, readAsHash));
+                _importsList.Add(ReadImport(r, readAsHash));
             }
 
             // read strings

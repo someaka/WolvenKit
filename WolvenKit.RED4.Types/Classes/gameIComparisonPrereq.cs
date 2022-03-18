@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameComparisonType>>();
 			set => SetPropertyValue<CEnum<gameComparisonType>>(value);
 		}
+
+		public gameIComparisonPrereq()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

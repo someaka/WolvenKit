@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			EntityId = new();
 			AimStartPosition = new();
 			ClosestHitPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

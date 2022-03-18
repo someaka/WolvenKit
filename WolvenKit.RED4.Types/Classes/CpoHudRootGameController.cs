@@ -60,5 +60,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkWidget>>(value);
 		}
+
+		public CpoHudRootGameController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

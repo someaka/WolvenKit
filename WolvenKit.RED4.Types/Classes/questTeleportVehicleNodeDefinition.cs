@@ -36,6 +36,10 @@ namespace WolvenKit.RED4.Types
 			EntityReference = new() { Names = new() };
 			Params = new() { DestinationOffset = new() };
 			ResetVelocities = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

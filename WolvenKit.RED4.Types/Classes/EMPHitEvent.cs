@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EMPHitEvent()
 		{
 			Lifetime = 15.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

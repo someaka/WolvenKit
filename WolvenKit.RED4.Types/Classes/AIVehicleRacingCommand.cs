@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SecureTimeOut = 2.000000F;
 			StartFromClosest = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

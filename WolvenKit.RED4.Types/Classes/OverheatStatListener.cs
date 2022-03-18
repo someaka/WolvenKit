@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<StartOverheatEffectEvent>>();
 			set => SetPropertyValue<CHandle<StartOverheatEffectEvent>>(value);
 		}
+
+		public OverheatStatListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

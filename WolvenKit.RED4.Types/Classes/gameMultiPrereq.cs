@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameMultiPrereq()
 		{
 			NestedPrereqs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

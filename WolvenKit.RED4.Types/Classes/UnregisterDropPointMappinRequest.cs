@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OwnerID = new();
 			RemoveFromSystem = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

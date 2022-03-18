@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public NarrationJournalGameController()
 		{
 			EntriesContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

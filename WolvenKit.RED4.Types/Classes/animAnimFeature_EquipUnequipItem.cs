@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimFeature_EquipUnequipItem()
 		{
 			ItemType = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

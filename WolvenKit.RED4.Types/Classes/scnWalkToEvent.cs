@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = new() { Id = 18446744073709551615 };
 			ActorId = new() { Id = 4294967295 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

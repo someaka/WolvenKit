@@ -364,6 +364,10 @@ namespace WolvenKit.RED4.Types
 			Preset3Bg = new();
 			RandomizBg = new();
 			NavigationButtons = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			EffectEntry = new() { EffectInstanceId = new() { EffectId = new() { Id = 4294967295 }, Id = 4294967295 } };
 			EndAction = Enums.scneventsVFXActionType.Kill;
 			PerformerId = new() { Id = 4294967040 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

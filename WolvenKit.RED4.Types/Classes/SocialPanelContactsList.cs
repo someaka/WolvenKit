@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			ItemsRoot = new();
 			ItemsList = new();
 			CurrentContactHash = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

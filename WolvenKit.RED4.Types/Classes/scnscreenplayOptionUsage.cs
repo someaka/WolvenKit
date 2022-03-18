@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnscreenplayOptionUsage()
 		{
 			PlayerGenderMask = new() { Mask = 128 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

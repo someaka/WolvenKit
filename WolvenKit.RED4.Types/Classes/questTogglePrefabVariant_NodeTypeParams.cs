@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questTogglePrefabVariant_NodeTypeParams()
 		{
 			VariantStates = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

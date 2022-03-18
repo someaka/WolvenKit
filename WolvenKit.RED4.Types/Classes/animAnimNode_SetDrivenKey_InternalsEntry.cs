@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<animAnimNode_SetDrivenKey_InternalsEChannelType>>();
 			set => SetPropertyValue<CEnum<animAnimNode_SetDrivenKey_InternalsEChannelType>>(value);
 		}
+
+		public animAnimNode_SetDrivenKey_InternalsEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

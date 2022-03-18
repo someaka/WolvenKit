@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 69554440257;
 			TweakDBDescriptionRecord = 121659857626;
 			AOEAreaSetup = new() { Duration = -1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			AppearanceDependency = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

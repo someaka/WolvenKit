@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkanimPlayAnimEvent()
 		{
 			PlaybackOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

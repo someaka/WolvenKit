@@ -53,6 +53,10 @@ namespace WolvenKit.RED4.Types
 			LayerOverrides = new();
 			LayerOverridesTemp = new();
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

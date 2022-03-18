@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public worldWorldGlobalLightParameters()
 		{
 			Unit = Enums.ELightUnit.LU_Lux;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

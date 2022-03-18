@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gameTransformAnimation_RotateOnAxis()
 		{
 			Axis = Enums.gameTransformAnimation_RotateOnAxisAxis.Z;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

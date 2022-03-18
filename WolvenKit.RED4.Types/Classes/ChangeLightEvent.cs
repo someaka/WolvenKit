@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public ChangeLightEvent()
 		{
 			Settings = new() { Color = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

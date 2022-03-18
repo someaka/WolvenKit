@@ -118,6 +118,10 @@ namespace WolvenKit.RED4.Types
 			AddedInputNode = new();
 			WeightNode = new();
 			WeightPreviousFrameFloatTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

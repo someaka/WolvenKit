@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<animAnimGraph>>();
 			set => SetPropertyValue<CResourceReference<animAnimGraph>>(value);
 		}
+
+		public animAnimNode_GraphSlot_Test()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

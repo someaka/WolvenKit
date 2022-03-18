@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<HUDActorType>>();
 			set => SetPropertyValue<CEnum<HUDActorType>>(value);
 		}
+
+		public HUDManagerRegistrationRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

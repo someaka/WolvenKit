@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Status = Enums.worldNavigationRequestStatus.OtherError;
 			Point = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SlavesConnectedCount = new();
 			ConnectedDevicesHolder = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

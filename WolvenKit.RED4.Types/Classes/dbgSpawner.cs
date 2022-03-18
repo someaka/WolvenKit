@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public dbgSpawner()
 		{
 			Appearance = "default";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

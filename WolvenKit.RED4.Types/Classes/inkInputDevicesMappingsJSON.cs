@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Devices = new();
 			Mappings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

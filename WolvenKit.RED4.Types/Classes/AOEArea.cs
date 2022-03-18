@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "AOEAreaController";
 			ActiveStatusEffects = new();
 			ExtendPercentAABB = 1.300000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

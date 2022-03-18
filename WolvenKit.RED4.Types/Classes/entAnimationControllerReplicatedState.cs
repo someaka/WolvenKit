@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			AnimWrapperVarsState = new() { ServerReplicatedTime = new(), Data = new() };
 			AnimFeaturesState = new() { Items = new(), LastAppliedActionsTime = new() };
 			InputSettersState = new() { ServerReplicatedTime = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -428,6 +428,10 @@ namespace WolvenKit.RED4.Types
 			ColorGroupSaturation = 100;
 			AllowDistantLight = true;
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public InjectCombatTargetCommandTask()
 		{
 			TargetID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

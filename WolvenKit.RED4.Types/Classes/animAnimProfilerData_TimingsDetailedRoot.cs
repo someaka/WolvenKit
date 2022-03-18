@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Sections = new();
 			Timings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

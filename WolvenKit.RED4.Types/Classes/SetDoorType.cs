@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EDoorType>>();
 			set => SetPropertyValue<CEnum<EDoorType>>(value);
 		}
+
+		public SetDoorType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

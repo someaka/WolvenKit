@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			LocalizedMessage = new() { Unk1 = 0, Value = "" };
 			Duration = 3.000000F;
 			Show = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

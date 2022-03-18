@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public interopGraphConnectionCreationData()
 		{
 			ExtraData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

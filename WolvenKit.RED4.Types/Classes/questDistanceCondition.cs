@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questIDistanceConditionType>>();
 			set => SetPropertyValue<CHandle<questIDistanceConditionType>>(value);
 		}
+
+		public questDistanceCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

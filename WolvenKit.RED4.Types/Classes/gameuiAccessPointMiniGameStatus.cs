@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameuiHackingMinigameState>>();
 			set => SetPropertyValue<CEnum<gameuiHackingMinigameState>>(value);
 		}
+
+		public gameuiAccessPointMiniGameStatus()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

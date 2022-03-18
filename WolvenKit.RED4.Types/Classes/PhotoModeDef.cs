@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsActive = new();
 			PlayerHealthState = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

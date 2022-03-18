@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<GameTimePrereqState>>();
 			set => SetPropertyValue<CHandle<GameTimePrereqState>>(value);
 		}
+
+		public DelayPrereqEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

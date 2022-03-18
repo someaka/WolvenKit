@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			FirstInput = new();
 			SecondInput = new();
 			Weight = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

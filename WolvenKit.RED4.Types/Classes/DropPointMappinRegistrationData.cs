@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Position = new();
 			MapinID = new();
 			TrackingAlternativeMappinID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

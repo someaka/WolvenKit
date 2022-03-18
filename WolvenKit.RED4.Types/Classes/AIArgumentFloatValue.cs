@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIArgumentFloatValue()
 		{
 			Type = Enums.AIArgumentType.Float;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

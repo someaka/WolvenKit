@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questCharacterManagerParameters_SetReactionPreset()
 		{
 			PuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

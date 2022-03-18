@@ -92,6 +92,10 @@ namespace WolvenKit.RED4.Types
 			ColorMin = new();
 			OverrideColorMin = true;
 			Strength = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public workWorkspotGlobalProp()
 		{
 			Id = "[Enter Prop ID Here]";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Filled = new();
 			Difference = new();
 			Empty = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

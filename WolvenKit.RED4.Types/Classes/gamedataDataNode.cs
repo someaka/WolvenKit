@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gamedataDataNode>>();
 			set => SetPropertyValue<CWeakHandle<gamedataDataNode>>(value);
 		}
+
+		public gamedataDataNode()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

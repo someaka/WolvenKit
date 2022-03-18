@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<gameJournalDescriptorResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<gameJournalDescriptorResource>>(value);
 		}
+
+		public gameJournalRootFolderEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

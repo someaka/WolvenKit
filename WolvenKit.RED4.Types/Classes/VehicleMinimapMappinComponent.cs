@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 		public VehicleMinimapMappinComponent()
 		{
 			VehicleEntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

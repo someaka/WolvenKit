@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			GridValues = new(30);
 			WindshieldPoints = new();
 			DetachedParts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

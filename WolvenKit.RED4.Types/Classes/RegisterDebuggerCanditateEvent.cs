@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<Device>>();
 			set => SetPropertyValue<CWeakHandle<Device>>(value);
 		}
+
+		public RegisterDebuggerCanditateEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

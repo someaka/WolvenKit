@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public FastTravelGameController()
 		{
 			FastTravelPointsList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -61,6 +61,10 @@ namespace WolvenKit.RED4.Types
 			Toggle3 = new();
 			RadioGroup = new();
 			Text = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

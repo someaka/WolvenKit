@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			RightPart = new();
 			TopPart = new();
 			BotPart = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

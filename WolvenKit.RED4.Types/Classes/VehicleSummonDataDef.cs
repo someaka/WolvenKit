@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			UnlockedVehiclesCount = new();
 			SummonState = new();
 			SummonedVehicleEntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

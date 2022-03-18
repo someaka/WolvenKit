@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			FolderID = -1;
 			DocumentID = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

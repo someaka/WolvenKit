@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			AttributeName = new();
 			AttributePoints = new();
 			AttributeIcon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public animGenericAnimDatabase_AnimationData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

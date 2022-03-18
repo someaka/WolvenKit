@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 			ReactionSettings = new();
 			AutoPlayBumpAnimation = true;
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

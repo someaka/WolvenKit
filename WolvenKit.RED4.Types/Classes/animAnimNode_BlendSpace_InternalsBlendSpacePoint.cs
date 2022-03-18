@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			UseFixedCoordinates = true;
 			FixedCoordinates = new();
 			StaticPoseProgress = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

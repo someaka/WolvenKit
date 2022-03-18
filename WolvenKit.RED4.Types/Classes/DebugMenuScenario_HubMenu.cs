@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DefaultMenu = "builds_panel";
 			CpoDefaultMenu = "builds_panel";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

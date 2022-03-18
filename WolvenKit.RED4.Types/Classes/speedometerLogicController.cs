@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public speedometerLogicController()
 		{
 			SpeedTextWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

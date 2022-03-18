@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EnableFields()
 		{
 			ActionMask = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

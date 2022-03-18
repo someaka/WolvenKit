@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EGameSessionDataType>>();
 			set => SetPropertyValue<CEnum<EGameSessionDataType>>(value);
 		}
+
+		public GameSessionDataModule()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

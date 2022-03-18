@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ETVChannel>>();
 			set => SetPropertyValue<CEnum<ETVChannel>>(value);
 		}
+
+		public SChannelEnumData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

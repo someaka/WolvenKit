@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			LeftArrowFull = new();
 			RightArrowEmpty = new();
 			RightArrowFull = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

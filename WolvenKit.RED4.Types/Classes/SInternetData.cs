@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CString>();
 			set => SetPropertyValue<CString>(value);
 		}
+
+		public SInternetData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

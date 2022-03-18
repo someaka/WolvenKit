@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public questCrowdManagerNodeType_ControlCrowd()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

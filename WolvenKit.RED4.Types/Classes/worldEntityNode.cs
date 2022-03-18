@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AppearanceName = "default";
 			IoPriority = Enums.entEntitySpawnPriority.Immediate;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

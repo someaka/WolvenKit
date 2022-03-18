@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<ItemsNotificationQueue>>();
 			set => SetPropertyValue<CWeakHandle<ItemsNotificationQueue>>(value);
 		}
+
+		public ItemAddedInventoryCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

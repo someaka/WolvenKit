@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameTransformAnimation_Movement_PredefinedFunction()
 		{
 			Function = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

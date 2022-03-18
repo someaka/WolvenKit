@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<DropdownItemDirection>>();
 			set => SetPropertyValue<CEnum<DropdownItemDirection>>(value);
 		}
+
+		public DropdownItemData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

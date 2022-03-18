@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnCinematicAnimSetSRRefId()
 		{
 			Id = 4294967295;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

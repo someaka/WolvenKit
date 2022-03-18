@@ -68,5 +68,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CInt32>();
 			set => SetPropertyValue<CInt32>(value);
 		}
+
+		public gameuiQuadRacerGameState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

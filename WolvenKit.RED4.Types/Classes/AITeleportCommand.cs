@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AITeleportCommand()
 		{
 			Position = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			Intensity = new();
 			GlitchColor = new();
 			PixelsortIntensity = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

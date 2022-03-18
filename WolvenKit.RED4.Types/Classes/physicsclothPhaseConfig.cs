@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			StiffnessMultiplier = 1.000000F;
 			CompressionLimit = 1.000000F;
 			StretchLimit = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

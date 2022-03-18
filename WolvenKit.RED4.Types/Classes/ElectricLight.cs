@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "ElectricLightController";
 			LightComponents = new();
 			LightDefinitions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

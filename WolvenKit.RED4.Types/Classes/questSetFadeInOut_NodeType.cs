@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			FadeColor = new();
 			FadeIn = true;
 			Duration = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

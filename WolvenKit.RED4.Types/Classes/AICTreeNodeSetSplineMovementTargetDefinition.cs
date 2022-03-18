@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SplineNode = new();
 			MovementTarget = new() { Name = "MovementTarget" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

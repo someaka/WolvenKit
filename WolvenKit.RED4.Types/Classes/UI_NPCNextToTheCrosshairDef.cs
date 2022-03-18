@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			NameplateData = new();
 			BuffsList = new();
 			DebuffsList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

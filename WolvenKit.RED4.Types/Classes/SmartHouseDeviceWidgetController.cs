@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkWidget>>(value);
 		}
+
+		public SmartHouseDeviceWidgetController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

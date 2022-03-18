@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<sampleTimeListener>>();
 			set => SetPropertyValue<CHandle<sampleTimeListener>>(value);
 		}
+
+		public sampleTimeDilatable()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

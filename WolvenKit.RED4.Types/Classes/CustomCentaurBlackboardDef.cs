@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			WeakSpotHitTimeStamp = new();
 			ShieldTarget = new();
 			WoundedStateHPThreshold = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

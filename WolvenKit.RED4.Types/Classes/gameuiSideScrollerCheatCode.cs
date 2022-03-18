@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiSideScrollerCheatCode()
 		{
 			Keys = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

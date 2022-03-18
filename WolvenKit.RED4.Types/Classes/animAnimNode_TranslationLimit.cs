@@ -54,6 +54,10 @@ namespace WolvenKit.RED4.Types
 			LimitOnXAxis = new() { Min = -1.000000F, Max = 1.000000F };
 			LimitOnYAxis = new() { Min = -1.000000F, Max = 1.000000F };
 			LimitOnZAxis = new() { Min = -1.000000F, Max = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

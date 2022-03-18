@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questSetVehicleCamera_NodeType()
 		{
 			CameraType = Enums.questVehicleCameraType.PuppetFPP;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

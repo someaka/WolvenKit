@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameAttack_GameEffect>>();
 			set => SetPropertyValue<CHandle<gameAttack_GameEffect>>(value);
 		}
+
+		public TriggerAttackEffectorWithDelay()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -187,6 +187,10 @@ namespace WolvenKit.RED4.Types
 			PuddlesAccumulationSpeed = 1.500000F;
 			MoistureEvaporationSpeed = 2.500000F;
 			PuddlesEvaporationSpeed = 0.250000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

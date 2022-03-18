@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkAnimatedAdvertController()
 		{
 			LoopType = Enums.inkanimLoopType.Cycle;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

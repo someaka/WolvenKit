@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animOverrideBlendBoneInfo()
 		{
 			TransformIndex = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

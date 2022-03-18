@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<inkActionName>>();
 			set => SetPropertyValue<CHandle<inkActionName>>(value);
 		}
+
+		public PerksMenuAttributeItemHoldStart()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

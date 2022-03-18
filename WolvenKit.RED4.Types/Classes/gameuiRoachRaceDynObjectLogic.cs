@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiRoachRaceDynObjectLogic()
 		{
 			AvailableY = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

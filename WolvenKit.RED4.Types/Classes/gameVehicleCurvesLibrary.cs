@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Curves = new();
 			CommonCurves = new();
 			BikeCurves = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

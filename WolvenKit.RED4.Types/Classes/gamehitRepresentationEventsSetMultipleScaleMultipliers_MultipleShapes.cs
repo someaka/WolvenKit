@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ScaleMultipliers = new();
 			ShapeNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

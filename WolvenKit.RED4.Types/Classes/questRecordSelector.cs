@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public questRecordSelector()
 		{
 			IsCharacter = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

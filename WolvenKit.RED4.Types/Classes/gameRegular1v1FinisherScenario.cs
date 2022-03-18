@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			TargetBlendTime = 0.500000F;
 			AttackerBlendTime = 0.500000F;
 			AttackerIsMaster = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

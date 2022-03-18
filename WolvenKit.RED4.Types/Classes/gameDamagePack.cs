@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameDamagePack()
 		{
 			DamageList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

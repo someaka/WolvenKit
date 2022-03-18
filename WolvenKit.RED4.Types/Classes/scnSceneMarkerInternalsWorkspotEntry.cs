@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			InstanceOrigin = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			Entries = new();
 			Exits = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

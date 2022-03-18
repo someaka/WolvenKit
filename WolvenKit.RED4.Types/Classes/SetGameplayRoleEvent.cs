@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EGameplayRole>>();
 			set => SetPropertyValue<CEnum<EGameplayRole>>(value);
 		}
+
+		public SetGameplayRoleEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

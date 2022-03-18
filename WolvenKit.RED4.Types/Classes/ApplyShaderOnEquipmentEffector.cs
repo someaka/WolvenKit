@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameEffectInstance>>();
 			set => SetPropertyValue<CHandle<gameEffectInstance>>(value);
 		}
+
+		public ApplyShaderOnEquipmentEffector()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

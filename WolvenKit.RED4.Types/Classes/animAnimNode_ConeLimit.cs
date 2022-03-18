@@ -249,6 +249,10 @@ namespace WolvenKit.RED4.Types
 			ParaboloidRadius4 = 0.050000F;
 			ConeLimitReached = new();
 			ApplyDebugConeScalling = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AreaTags = new();
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

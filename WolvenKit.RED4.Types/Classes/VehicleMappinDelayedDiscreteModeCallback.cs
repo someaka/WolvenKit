@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<VehicleMappinComponent>>();
 			set => SetPropertyValue<CWeakHandle<VehicleMappinComponent>>(value);
 		}
+
+		public VehicleMappinDelayedDiscreteModeCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

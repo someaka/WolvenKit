@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public RegisterLinkedCluekRequest()
 		{
 			LinkedCluekData = new() { OwnerID = new(), ExtendedClueRecords = new(), PsData = new() { Id = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

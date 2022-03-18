@@ -129,6 +129,10 @@ namespace WolvenKit.RED4.Types
 			OffsetPos = new();
 			RotationTime = 0.500000F;
 			UsePlayerWorkspot = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

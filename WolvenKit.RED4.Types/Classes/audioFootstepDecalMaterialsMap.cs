@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ClosestDecalDetectionRadius = 2.000000F;
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldAmbientPaletteExclusionAreaNode()
 		{
 			ExclusionPaletteEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

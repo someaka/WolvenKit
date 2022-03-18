@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<ConstantStatPoolPrereqState>>();
 			set => SetPropertyValue<CWeakHandle<ConstantStatPoolPrereqState>>(value);
 		}
+
+		public ConstantStatPoolPrereqListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

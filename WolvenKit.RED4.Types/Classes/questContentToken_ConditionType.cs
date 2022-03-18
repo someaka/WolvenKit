@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questContentToken_ConditionType()
 		{
 			Type = Enums.questQuestContentType.MainQuest;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

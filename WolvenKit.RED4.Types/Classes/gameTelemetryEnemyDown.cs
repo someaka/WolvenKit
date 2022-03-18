@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameTelemetryEnemyDown()
 		{
 			Enemy = new() { EnemyEntityID = new(), Archetype = Enums.gamedataArchetypeType.Invalid, Level = -1 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

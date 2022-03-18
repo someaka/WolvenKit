@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			Targets = new();
 			Sight = new() { Center = new(), TargetableRegionSize = new(), ReticleSize = new() };
 			CrosshairPos = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

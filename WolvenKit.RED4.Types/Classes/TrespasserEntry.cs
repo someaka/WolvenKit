@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public TrespasserEntry()
 		{
 			AreaStack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

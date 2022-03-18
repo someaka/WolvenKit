@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CMatrix>();
 			set => SetPropertyValue<CMatrix>(value);
 		}
+
+		public gameHitShapeBase()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

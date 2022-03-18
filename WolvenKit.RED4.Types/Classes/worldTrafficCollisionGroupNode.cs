@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldTrafficCollisionGroupNode()
 		{
 			CollisionEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

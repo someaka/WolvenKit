@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 			TimeToMeshSwap = 0.100000F;
 			ProvideExplodeAction = true;
 			DoExplosiveEngineerLogic = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

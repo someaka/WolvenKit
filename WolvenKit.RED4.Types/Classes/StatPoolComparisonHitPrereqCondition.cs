@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataStatPoolType>>();
 			set => SetPropertyValue<CEnum<gamedataStatPoolType>>(value);
 		}
+
+		public StatPoolComparisonHitPrereqCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

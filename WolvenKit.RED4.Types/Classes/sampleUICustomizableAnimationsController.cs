@@ -202,6 +202,10 @@ namespace WolvenKit.RED4.Types
 			DefaultSize = new();
 			DefaultMargin = new();
 			DefaultColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

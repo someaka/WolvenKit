@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LifeTime = 3.000000F;
 			Radius = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

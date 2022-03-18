@@ -169,6 +169,10 @@ namespace WolvenKit.RED4.Types
 			WeightMax = new();
 			CurrentInventoryWeight = new();
 			IsReplacer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

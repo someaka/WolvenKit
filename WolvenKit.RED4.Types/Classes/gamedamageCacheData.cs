@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CInt64>();
 			set => SetPropertyValue<CInt64>(value);
 		}
+
+		public gamedamageCacheData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

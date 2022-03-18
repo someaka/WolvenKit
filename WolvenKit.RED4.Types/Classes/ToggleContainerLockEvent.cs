@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ToggleContainerLockEvent()
 		{
 			IsLocked = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

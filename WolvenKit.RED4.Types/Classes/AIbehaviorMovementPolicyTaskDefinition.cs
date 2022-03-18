@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WaitForPolicy = true;
 			Policies = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

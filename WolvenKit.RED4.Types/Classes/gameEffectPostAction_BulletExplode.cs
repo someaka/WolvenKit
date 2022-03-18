@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EndRangeTolerance = 0.100000F;
 			ExplosionDuration = 0.050000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

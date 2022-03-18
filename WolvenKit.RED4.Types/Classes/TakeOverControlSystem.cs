@@ -99,6 +99,10 @@ namespace WolvenKit.RED4.Types
 			ChainLockSources = new();
 			TCDUpdateDelayID = new();
 			TCSupdateRate = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

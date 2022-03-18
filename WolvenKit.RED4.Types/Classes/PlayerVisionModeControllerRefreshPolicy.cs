@@ -100,5 +100,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<PlayerVisionModeControllerRefreshPolicyEnum>>();
 			set => SetPropertyValue<CEnum<PlayerVisionModeControllerRefreshPolicyEnum>>(value);
 		}
+
+		public PlayerVisionModeControllerRefreshPolicy()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

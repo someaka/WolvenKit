@@ -5,8 +5,6 @@
 - CR2WWriter.File.SetParent / Find better way for parentId
 
 - Why can struct CName be null?
-
-- Read_smartobjects
-- Read_streamingsector
+- Fix CName!!!
 
 - Fix worldStaticCollisionShapeCategories_CollisionNode

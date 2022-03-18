@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			BraindanceSetVisible = new();
 			BraindanceSetHidden = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

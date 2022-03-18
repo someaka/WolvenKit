@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<scnDistractedConditionTarget>>();
 			set => SetPropertyValue<CEnum<scnDistractedConditionTarget>>(value);
 		}
+
+		public scnCheckDistractedReturnConditionParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

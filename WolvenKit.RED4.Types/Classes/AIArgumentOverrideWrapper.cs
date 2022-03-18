@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIArgumentDefinition>>();
 			set => SetPropertyValue<CHandle<AIArgumentDefinition>>(value);
 		}
+
+		public AIArgumentOverrideWrapper()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

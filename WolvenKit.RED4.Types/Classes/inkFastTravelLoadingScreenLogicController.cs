@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			SupportBackgroundImage = new();
 			TooltipsWidget = new();
 			ProgressBarRoot = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -95,6 +95,10 @@ namespace WolvenKit.RED4.Types
 			InputNode = new();
 			IncreaseSpeedNode = new();
 			DecreaseSpeedNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -122,6 +122,10 @@ namespace WolvenKit.RED4.Types
 			Attributes = new() { WidgetBody = new(), WidgetCool = new(), WidgetInt = new(), WidgetRef = new(), WidgetTech = new() };
 			Resistances = new() { WidgetHealth = new(), WidgetPhysical = new(), WidgetThermal = new(), WidgetEMP = new(), WidgetChemical = new(), ResistanceTooltip = new() };
 			LevelUpPoints = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

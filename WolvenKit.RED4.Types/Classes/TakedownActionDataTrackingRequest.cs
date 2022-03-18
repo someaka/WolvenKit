@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ETakedownActionType>>();
 			set => SetPropertyValue<CEnum<ETakedownActionType>>(value);
 		}
+
+		public TakedownActionDataTrackingRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

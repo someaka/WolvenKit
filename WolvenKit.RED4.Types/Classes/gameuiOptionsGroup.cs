@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiOptionsGroup()
 		{
 			Options = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

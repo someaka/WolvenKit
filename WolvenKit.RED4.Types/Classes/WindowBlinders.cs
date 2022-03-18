@@ -82,6 +82,10 @@ namespace WolvenKit.RED4.Types
 			ControllerTypeName = "WindowBlindersController";
 			SideTriggerNames = new();
 			TriggerComponents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

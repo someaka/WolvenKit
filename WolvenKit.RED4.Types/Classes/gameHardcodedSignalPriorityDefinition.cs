@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DefaultPriority = 65535;
 			Signals = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

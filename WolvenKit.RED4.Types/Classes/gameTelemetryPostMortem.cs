@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TrackedQuest = new();
 			Location = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

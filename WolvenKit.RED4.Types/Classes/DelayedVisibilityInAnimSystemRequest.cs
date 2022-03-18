@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public DelayedVisibilityInAnimSystemRequest()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

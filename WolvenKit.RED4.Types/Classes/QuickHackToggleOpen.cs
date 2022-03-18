@@ -4,7 +4,6 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class QuickHackToggleOpen : ActionBool
 	{
-
 		public QuickHackToggleOpen()
 		{
 			RequesterID = new();
@@ -12,6 +11,10 @@ namespace WolvenKit.RED4.Types
 			ActionWidgetPackage = new() { DependendActions = new() };
 			CanTriggerStim = true;
 			IsQuickHack = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

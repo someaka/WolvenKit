@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			Issues = new();
 			ErrorMessages = new();
 			WarningMessages = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

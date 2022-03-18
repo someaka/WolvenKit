@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Reprimands = new();
 			SupportingAgents = new();
 			Areas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

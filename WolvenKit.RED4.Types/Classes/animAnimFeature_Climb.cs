@@ -93,6 +93,10 @@ namespace WolvenKit.RED4.Types
 			FrontEdgeNormal = new();
 			ClimbType = -1;
 			State = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

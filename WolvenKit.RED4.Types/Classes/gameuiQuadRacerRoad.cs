@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			RightBackground = new();
 			GroundParts = new();
 			RoadParts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

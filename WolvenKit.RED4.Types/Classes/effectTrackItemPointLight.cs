@@ -156,6 +156,10 @@ namespace WolvenKit.RED4.Types
 			SceneDiffuse = true;
 			SceneSpecular = true;
 			Flicker = new() { FlickerPeriod = 0.200000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

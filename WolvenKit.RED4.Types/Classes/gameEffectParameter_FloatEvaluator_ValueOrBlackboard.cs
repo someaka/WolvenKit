@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectParameter_FloatEvaluator_ValueOrBlackboard()
 		{
 			BlackboardProperty = new() { SerializableID = new(), PropertyPath = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

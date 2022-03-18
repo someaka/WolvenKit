@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public worldCrowdNullAreaCollisionHeader()
 		{
 			Direction = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

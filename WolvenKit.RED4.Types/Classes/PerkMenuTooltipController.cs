@@ -150,6 +150,10 @@ namespace WolvenKit.RED4.Types
 			VideoContainerWidget = new();
 			VideoWidget = new();
 			MaxProficiencyLevel = 20;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

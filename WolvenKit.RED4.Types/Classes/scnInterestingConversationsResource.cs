@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnInterestingConversationsResource()
 		{
 			ConversationGroups = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

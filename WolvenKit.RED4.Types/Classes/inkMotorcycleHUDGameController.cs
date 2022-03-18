@@ -331,6 +331,10 @@ namespace WolvenKit.RED4.Types
 			SpeedTextWidget = new();
 			GearTextWidget = new();
 			RPMTextWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

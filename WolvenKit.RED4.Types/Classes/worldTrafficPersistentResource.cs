@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldTrafficPersistentResource()
 		{
 			Data = new() { Lanes = new(), NeighborGroups = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

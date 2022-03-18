@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questAudioEventPrefetchMode>>();
 			set => SetPropertyValue<CEnum<questAudioEventPrefetchMode>>(value);
 		}
+
+		public questAudioEventPrefetchStruct()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

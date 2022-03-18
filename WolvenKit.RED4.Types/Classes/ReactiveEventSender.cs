@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Tags = new();
 			Flags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

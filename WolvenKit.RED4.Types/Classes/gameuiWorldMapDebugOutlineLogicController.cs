@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiWorldMapDebugOutlineLogicController()
 		{
 			OutlineWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

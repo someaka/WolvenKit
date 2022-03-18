@@ -124,6 +124,10 @@ namespace WolvenKit.RED4.Types
 			ColliderBox = new();
 			Rotation = new() { R = 1.000000F };
 			ExplodeAfterRangeTravelled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

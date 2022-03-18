@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ToggleON = new();
 			TogglePower = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

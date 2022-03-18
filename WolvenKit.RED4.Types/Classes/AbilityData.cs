@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			ID = new();
 			EquipmentArea = Enums.gamedataEquipmentArea.Invalid;
 			AssignedIndex = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

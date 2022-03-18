@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 			ModsLine = new();
 			ModsWrapper = new();
 			ModsContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

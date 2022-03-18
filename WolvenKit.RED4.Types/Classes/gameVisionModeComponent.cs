@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			ForcedHighlights = new();
 			ActiveRevealRequests = new();
 			SlaveObjectsToHighlight = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

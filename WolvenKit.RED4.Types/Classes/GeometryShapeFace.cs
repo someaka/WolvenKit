@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public GeometryShapeFace()
 		{
 			Indices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			InterpolationDirection = Enums.inkanimInterpolationDirection.FromTo;
 			AllowSkipBackward = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

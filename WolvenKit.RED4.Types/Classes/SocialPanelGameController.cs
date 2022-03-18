@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SocialPanelContactsListRef = new();
 			SocialPanelContactsDetailsRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

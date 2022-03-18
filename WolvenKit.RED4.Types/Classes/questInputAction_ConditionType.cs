@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ValueLessThan = 1.000000F;
 			ValueMoreThan = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

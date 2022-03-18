@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public questCharacterManagerVisuals_BreastSizeController()
 		{
 			PuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

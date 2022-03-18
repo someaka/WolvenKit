@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EGlitchState>>();
 			set => SetPropertyValue<CEnum<EGlitchState>>(value);
 		}
+
+		public GlitchData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

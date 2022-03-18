@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questAnimationEventsOverrideNode()
 		{
 			PerActorOverrides = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

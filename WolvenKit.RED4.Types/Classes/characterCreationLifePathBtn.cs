@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			Image = new();
 			Label = new();
 			Video = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

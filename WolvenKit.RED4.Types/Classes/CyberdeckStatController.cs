@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CyberdeckStatController()
 		{
 			Label = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

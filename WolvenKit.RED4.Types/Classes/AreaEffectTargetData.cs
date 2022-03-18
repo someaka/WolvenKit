@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AreaEffectTargetData()
 		{
 			OnSelf = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

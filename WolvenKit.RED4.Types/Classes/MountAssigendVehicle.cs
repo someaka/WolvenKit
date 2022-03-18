@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<AIbehaviorUpdateOutcome>>();
 			set => SetPropertyValue<CEnum<AIbehaviorUpdateOutcome>>(value);
 		}
+
+		public MountAssigendVehicle()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

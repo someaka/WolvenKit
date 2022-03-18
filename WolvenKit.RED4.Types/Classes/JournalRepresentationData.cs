@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public JournalRepresentationData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

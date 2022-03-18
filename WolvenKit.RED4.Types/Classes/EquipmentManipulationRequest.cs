@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameEquipAnimationType>>();
 			set => SetPropertyValue<CEnum<gameEquipAnimationType>>(value);
 		}
+
+		public EquipmentManipulationRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

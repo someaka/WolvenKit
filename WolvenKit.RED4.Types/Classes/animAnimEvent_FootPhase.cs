@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimEvent_FootPhase()
 		{
 			DurationInFrames = 15;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			ProgramNetworkContainer = new();
 			SlotList = new();
 			HeaderBG = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

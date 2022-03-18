@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public curveSingleChannelCurve()
 		{
 			InterpolationType = Enums.curveEInterpolationType.EIT_Linear;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

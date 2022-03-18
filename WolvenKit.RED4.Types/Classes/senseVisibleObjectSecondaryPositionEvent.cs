@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public senseVisibleObjectSecondaryPositionEvent()
 		{
 			Offset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

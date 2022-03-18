@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public entDebug_MeshComponent()
 		{
 			FilterName = "Other";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

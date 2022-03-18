@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IsSubmenuHidden = new();
 			MetaQuestStatus = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

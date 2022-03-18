@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<GateSignal>>();
 			set => SetPropertyValue<CHandle<GateSignal>>(value);
 		}
+
+		public ConsumeGateSignal()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

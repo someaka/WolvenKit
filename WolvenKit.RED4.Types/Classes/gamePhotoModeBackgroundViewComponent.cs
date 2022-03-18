@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gamePhotoModeBackgroundViewComponent()
 		{
 			Name = "Component";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

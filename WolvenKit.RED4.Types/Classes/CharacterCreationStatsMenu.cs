@@ -226,6 +226,10 @@ namespace WolvenKit.RED4.Types
 			OptionSwitchHint = new();
 			AttributesControllers = new();
 			ToolTipOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

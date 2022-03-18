@@ -112,6 +112,10 @@ namespace WolvenKit.RED4.Types
 			NewsFeed = new();
 			NewsFeedInterval = 5.000000F;
 			InternetSubnet = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

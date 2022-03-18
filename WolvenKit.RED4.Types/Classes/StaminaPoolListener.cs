@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<StaminabarWidgetGameController>>();
 			set => SetPropertyValue<CWeakHandle<StaminabarWidgetGameController>>(value);
 		}
+
+		public StaminaPoolListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

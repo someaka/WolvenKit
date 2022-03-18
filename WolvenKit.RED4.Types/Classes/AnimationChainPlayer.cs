@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkWidgetLogicController>>();
 			set => SetPropertyValue<CWeakHandle<inkWidgetLogicController>>(value);
 		}
+
+		public AnimationChainPlayer()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

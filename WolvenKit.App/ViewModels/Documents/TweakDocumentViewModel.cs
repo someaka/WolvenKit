@@ -97,7 +97,7 @@ namespace WolvenKit.ViewModels.Documents
                 return;
             }
 
-            var record = RedTypeManager.Create<gamedataTweakDBRecord>();
+            var record = new gamedataTweakDBRecord();
             TweakDocument.Groups.Add(FlatName, record);
 
             GenerateEntries();

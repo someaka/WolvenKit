@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorComparisonExpressionDefinition()
 		{
 			Operator = Enums.EComparisonType.Equal;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

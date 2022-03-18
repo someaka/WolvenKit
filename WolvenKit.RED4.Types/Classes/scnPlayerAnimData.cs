@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public scnPlayerAnimData()
 		{
 			UnmountBodyCarry = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

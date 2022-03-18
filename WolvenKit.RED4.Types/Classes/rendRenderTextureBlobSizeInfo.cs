@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public rendRenderTextureBlobSizeInfo()
 		{
 			Depth = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

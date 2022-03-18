@@ -180,6 +180,10 @@ namespace WolvenKit.RED4.Types
 			Grid = new();
 			BuffData = new();
 			C_EXCLUDED_STATUS_EFFECT_NAME = "BaseStatusEffect.AlcoholDebuff";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

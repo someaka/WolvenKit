@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiGridCell()
 		{
 			IsActive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gsmGameDefinition()
 		{
 			SpawnPointTags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

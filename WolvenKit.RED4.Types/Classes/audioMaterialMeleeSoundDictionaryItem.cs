@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public audioMaterialMeleeSoundDictionaryItem()
 		{
 			Value = new() { Events = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

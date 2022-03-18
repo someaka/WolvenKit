@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questISpawnerConditionType>>();
 			set => SetPropertyValue<CHandle<questISpawnerConditionType>>(value);
 		}
+
+		public questSpawnerCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

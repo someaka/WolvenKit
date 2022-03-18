@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VendingBlacklist = new();
 			TimeToCompletePurchase = 3.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

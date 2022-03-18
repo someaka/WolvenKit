@@ -183,6 +183,10 @@ namespace WolvenKit.RED4.Types
 			TopNormal = new();
 			BehindPoint = new();
 			BehindNormal = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

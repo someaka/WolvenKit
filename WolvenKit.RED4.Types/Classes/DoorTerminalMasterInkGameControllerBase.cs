@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public DoorTerminalMasterInkGameControllerBase()
 		{
 			CurrentlyActiveDevices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

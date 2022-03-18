@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public meshMeshParamWaterPatchData()
 		{
 			Nodes = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MinSpeed = new() { X = 0.350000F, Y = 0.350000F };
 			EnterTime = 0.050000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

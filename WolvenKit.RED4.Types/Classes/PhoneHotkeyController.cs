@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 			MessageCounter = new();
 			PhoneIconAtlas = "base\\gameplay\\gui\\common\\icons\\atlas_common.inkatlas";
 			PhoneIconName = "ico_phone";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			CNameParameters = new(0);
 			IScriptableParameters = new(0);
 			TweakDBIDParameters = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

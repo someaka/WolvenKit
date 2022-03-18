@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CameraSetup = new();
 			TransitionDelay = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

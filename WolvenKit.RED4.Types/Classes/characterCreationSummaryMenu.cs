@@ -138,6 +138,10 @@ namespace WolvenKit.RED4.Types
 			AttributeCoolValue = new();
 			PreviousPageBtn = new();
 			GlitchBtn = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

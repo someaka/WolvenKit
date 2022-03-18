@@ -208,6 +208,10 @@ namespace WolvenKit.RED4.Types
 			BoneRigMatrices = new();
 			BoneVertexEpsilons = new();
 			LodBoneMask = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CInt32>();
 			set => SetPropertyValue<CInt32>(value);
 		}
+
+		public UpperBodyEventsTransition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

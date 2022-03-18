@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SequenceCallback()
 		{
 			PersistentID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

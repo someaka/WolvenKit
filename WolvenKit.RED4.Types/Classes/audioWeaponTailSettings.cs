@@ -84,5 +84,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public audioWeaponTailSettings()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

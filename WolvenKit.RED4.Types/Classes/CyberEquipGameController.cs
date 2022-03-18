@@ -124,6 +124,10 @@ namespace WolvenKit.RED4.Types
 			QuickSlotTags = new();
 			WeaponsQuickSlotTags = new();
 			FragmentTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

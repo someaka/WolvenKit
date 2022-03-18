@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<GameObjectListener>>();
 			set => SetPropertyValue<CHandle<GameObjectListener>>(value);
 		}
+
+		public RevealAccessPointPrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

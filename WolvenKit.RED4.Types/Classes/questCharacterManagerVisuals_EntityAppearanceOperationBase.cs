@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<questCharacterManagerVisuals_EntityAppearanceOperationBaseEntityAppearanceEntry>>();
 			set => SetPropertyValue<CArray<questCharacterManagerVisuals_EntityAppearanceOperationBaseEntityAppearanceEntry>>(value);
 		}
+
+		public questCharacterManagerVisuals_EntityAppearanceOperationBase()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

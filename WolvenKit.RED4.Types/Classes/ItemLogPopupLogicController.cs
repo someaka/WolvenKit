@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			Label = new();
 			Duration = 3.000000F;
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

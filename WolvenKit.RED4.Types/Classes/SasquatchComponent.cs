@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SasquatchComponent()
 		{
 			Owner_id = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

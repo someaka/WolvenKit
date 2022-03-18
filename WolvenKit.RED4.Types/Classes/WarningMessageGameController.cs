@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MainTextWidget = new();
 			SimpleMessage = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

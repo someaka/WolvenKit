@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Arguments = new() { Args = new() };
 			InitializationEvents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			DataId = new() { Id = 4294967295 };
 			LocalTransform = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			OriginMarker = new() { Type = Enums.scnMarkerType.Global, EntityRef = new() { Names = new() }, IsMounted = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

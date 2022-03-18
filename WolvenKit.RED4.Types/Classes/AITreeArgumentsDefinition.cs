@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AITreeArgumentsDefinition()
 		{
 			Args = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

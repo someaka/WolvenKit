@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiCharacterCustomizationUiPreset()
 		{
 			Values = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public TonemappingAreaSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

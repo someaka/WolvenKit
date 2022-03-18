@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkTextureAtlasSlice()
 		{
 			NineSliceScaleRect = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

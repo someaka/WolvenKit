@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataProficiencyType>>();
 			set => SetPropertyValue<CEnum<gamedataProficiencyType>>(value);
 		}
+
+		public InvestedPerksPrereq()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

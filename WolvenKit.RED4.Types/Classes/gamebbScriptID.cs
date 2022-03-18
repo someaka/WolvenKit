@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamebbScriptID()
 		{
 			None = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

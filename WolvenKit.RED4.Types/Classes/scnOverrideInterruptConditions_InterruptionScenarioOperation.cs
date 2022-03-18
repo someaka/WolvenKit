@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnOverrideInterruptConditions_InterruptionScenarioOperation()
 		{
 			InterruptConditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

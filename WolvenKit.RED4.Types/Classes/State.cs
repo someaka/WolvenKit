@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ESecuritySystemState>>();
 			set => SetPropertyValue<CEnum<ESecuritySystemState>>(value);
 		}
+
+		public State()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

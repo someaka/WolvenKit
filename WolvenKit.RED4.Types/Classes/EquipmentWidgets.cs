@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public EquipmentWidgets()
 		{
 			WidgetArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

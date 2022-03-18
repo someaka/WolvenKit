@@ -135,6 +135,10 @@ namespace WolvenKit.RED4.Types
 			ImpulseToDamage = 1.000000F;
 			ContactToDamage = 1.000000F;
 			AccumulateDamage = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

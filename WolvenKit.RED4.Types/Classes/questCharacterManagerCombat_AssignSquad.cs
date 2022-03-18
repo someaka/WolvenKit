@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			PresetID = 130861404206;
 			PuppetRef = new() { Names = new() };
 			SquadType = Enums.AISquadType.Combat;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

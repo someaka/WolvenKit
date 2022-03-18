@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RequesterID = new();
 			MappinID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<TriggerVolumeOperationTriggerData>>();
 			set => SetPropertyValue<CHandle<TriggerVolumeOperationTriggerData>>(value);
 		}
+
+		public TriggerVolumeOperationsTrigger()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

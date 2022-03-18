@@ -330,6 +330,10 @@ namespace WolvenKit.RED4.Types
 			ActiveWeapon = new();
 			EquipRecords = new();
 			InventoryItemDataWrappers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ButtonHintsManagerRef = new();
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			IsInDefaultState = new();
 			ShutdownModule = new();
 			BootModule = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

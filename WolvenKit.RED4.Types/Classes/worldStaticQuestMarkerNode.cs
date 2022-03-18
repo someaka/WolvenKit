@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			QuestLabel = "Temporary Quest Label";
 			QuestMarkerHeight = 500.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

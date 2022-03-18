@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Text = "Activated!";
 			TimeOnScreen = 2.000000F;
 			UseVisualDebug = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

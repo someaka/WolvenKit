@@ -404,6 +404,10 @@ namespace WolvenKit.RED4.Types
 			AreaEffectsData = new();
 			AreaEffectsInFocusMode = new();
 			DebugOptions = new() { LayerIDs = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

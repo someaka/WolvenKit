@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SimpleCanSwapWeapons()
 		{
 			Items = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

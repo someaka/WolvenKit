@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public appearanceCookedAppearanceData()
 		{
 			Dependencies = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

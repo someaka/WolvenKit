@@ -7,16 +7,16 @@ namespace WolvenKit.RED4.Types
     public class CurvePoint<T> : IRedCurvePoint<T>, IEquatable<CurvePoint<T>> where T : IRedType
     {
         public float Point { get; set; }
-        public T Value { get; set; }
+        public T? Value { get; set; }
 
 
         public float GetPoint() => Point;
         public void SetPoint(float point) => Point = point;
 
-        public IRedType GetValue() => Value;
+        public IRedType GetValue() => Value ?? throw new NullReferenceException();
         public void SetValue(object value) => Value = (T)value;
 
-        public bool Equals(CurvePoint<T> other)
+        public bool Equals(CurvePoint<T>? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -31,7 +31,7 @@ namespace WolvenKit.RED4.Types
             return Point.Equals(other.Point) && EqualityComparer<T>.Default.Equals(Value, other.Value);
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {
@@ -68,7 +68,7 @@ namespace WolvenKit.RED4.Types
         public void Add(float point, object value) => Add(point, (T)value);
         public void Add(float point, T value) => Add(new CurvePoint<T> {Point = point, Value = value});
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {
@@ -88,7 +88,7 @@ namespace WolvenKit.RED4.Types
             return Equals((CLegacySingleChannelCurve<T>)obj);
         }
 
-        public bool Equals(CLegacySingleChannelCurve<T> other)
+        public bool Equals(CLegacySingleChannelCurve<T>? other)
         {
             if (other == null)
             {

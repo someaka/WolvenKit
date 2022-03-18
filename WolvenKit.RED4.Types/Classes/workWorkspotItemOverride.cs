@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PropOverrides = new();
 			ItemOverrides = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

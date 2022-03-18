@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<InventoryItemDisplayController>>();
 			set => SetPropertyValue<CWeakHandle<InventoryItemDisplayController>>(value);
 		}
+
+		public InventorySlotWrapperTooltip()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

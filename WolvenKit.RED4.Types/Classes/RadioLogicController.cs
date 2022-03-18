@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			RadioTextWidget = new();
 			RadioEQWidget = new();
 			RadioTextWidgetSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

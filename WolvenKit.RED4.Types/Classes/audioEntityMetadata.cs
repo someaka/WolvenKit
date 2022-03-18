@@ -84,6 +84,10 @@ namespace WolvenKit.RED4.Types
 			DefaultEmitterName = "default";
 			Priority = 3;
 			EmitterDescriptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

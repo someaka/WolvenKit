@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			SourceTangent = new();
 			TargetTangent = new();
 			DebugTargetTranslation = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

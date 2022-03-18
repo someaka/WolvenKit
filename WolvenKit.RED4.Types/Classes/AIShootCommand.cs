@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AIShootCommand()
 		{
 			TargetOverridePuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

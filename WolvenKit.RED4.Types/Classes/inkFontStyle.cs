@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<rendFont>>();
 			set => SetPropertyValue<CResourceReference<rendFont>>(value);
 		}
+
+		public inkFontStyle()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

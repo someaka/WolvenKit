@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public characterCreationBodyMorphOptionSelectorButton()
 		{
 			OverArrow = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

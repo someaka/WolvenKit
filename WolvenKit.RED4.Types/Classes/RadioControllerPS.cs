@@ -36,6 +36,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBDescriptionRecord = 109081313862;
 			RadioSetup = new();
 			Stations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			MsgIndicator = new();
 			QuestFlag = new();
 			RegFlag = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			EditorName = "Size by distance";
 			EditorGroup = "Size";
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

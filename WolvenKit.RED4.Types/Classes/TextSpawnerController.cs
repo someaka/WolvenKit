@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AmountOfRows = 6;
 			Texts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

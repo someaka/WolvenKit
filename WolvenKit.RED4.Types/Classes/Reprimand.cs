@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public Reprimand()
 		{
 			ReprimandData = new() { Receiver = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

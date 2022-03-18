@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameContainerObjectAnimated()
 		{
 			AnimFeatureName = "ContainerAnim";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

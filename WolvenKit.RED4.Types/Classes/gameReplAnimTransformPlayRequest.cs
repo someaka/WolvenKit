@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TimeScale = 1.000000F;
 			TimesToPlay = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

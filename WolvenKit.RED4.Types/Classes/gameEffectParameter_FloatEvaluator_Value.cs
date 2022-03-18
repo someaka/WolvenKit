@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public gameEffectParameter_FloatEvaluator_Value()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

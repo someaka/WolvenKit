@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public scnCinematicAnimSetSRRef()
 		{
 			Priority = 128;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public RoadBlockTrap()
 		{
 			ControllerTypeName = "RoadBlockTrapController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

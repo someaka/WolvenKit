@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			InputLink = new();
 			ExpressionData = new() { FloatSockets = new(), VectorSockets = new(), QuaternionSockets = new() };
 			OutputFloatTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

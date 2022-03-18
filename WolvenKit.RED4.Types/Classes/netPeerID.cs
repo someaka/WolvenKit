@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public netPeerID()
 		{
 			Value = 255;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<audioDeviceStateSettings>();
 			set => SetPropertyValue<audioDeviceStateSettings>(value);
 		}
+
+		public audioDeviceSettings()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

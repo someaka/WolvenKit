@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			WorldPosition = new();
 			WorldNormal = new() { Z = 1.000000F };
 			DeltaVelocity = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

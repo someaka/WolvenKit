@@ -147,6 +147,10 @@ namespace WolvenKit.RED4.Types
 			KnownRecipes = new();
 			StartingLevel = 1;
 			DisplayActivityLog = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -243,6 +243,10 @@ namespace WolvenKit.RED4.Types
 			LastScannedObject = new();
 			IsDescriptionVisible = true;
 			AsyncSpawnRequests = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

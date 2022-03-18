@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			Representations = new();
 			BvhRoot = new() { ChildrenNodes = new(), ChildrenShapeNames = new() };
 			AppearanceOverrides = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

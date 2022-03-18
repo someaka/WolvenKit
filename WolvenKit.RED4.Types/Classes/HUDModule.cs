@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<CHandle<ModuleInstance>>>();
 			set => SetPropertyValue<CArray<CHandle<ModuleInstance>>>(value);
 		}
+
+		public HUDModule()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

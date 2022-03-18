@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CookedMultilayer_Setup()
 		{
 			Dependencies = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

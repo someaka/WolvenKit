@@ -98,6 +98,10 @@ namespace WolvenKit.RED4.Types
 			LastKnownPosition = new();
 			Id = -1;
 			CustomRecipientsList = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

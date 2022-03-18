@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<GenericHotkeyController>>();
 			set => SetPropertyValue<CWeakHandle<GenericHotkeyController>>(value);
 		}
+
+		public HotkeyWidgetStatsListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

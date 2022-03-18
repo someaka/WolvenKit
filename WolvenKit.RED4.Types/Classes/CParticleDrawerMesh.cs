@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public CParticleDrawerMesh()
 		{
 			Meshes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<gameMotionConstrainedTierDataParams>();
 			set => SetPropertyValue<gameMotionConstrainedTierDataParams>(value);
 		}
+
+		public gameSceneTierDataMotionConstrained()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

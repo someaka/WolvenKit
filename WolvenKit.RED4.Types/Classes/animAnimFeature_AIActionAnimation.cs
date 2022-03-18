@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public animAnimFeature_AIActionAnimation()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<audioLocomotionStateEventDictionary>>();
 			set => SetPropertyValue<CHandle<audioLocomotionStateEventDictionary>>(value);
 		}
+
+		public audioFootstepDecalMaterialEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

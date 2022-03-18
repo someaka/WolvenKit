@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gamedataAchievement_Record>>();
 			set => SetPropertyValue<CWeakHandle<gamedataAchievement_Record>>(value);
 		}
+
+		public AddAchievementRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

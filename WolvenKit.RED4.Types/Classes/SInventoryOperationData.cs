@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EItemOperationType>>();
 			set => SetPropertyValue<CEnum<EItemOperationType>>(value);
 		}
+
+		public SInventoryOperationData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

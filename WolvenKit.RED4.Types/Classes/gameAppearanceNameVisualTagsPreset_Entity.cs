@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CommonVisualTags = new() { Tags = new() };
 			AppearancesToTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

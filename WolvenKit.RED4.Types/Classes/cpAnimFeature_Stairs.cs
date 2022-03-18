@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public cpAnimFeature_Stairs()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

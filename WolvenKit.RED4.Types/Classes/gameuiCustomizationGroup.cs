@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Customization = new();
 			Morphs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

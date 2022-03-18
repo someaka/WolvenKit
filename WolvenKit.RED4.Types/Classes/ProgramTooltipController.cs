@@ -230,6 +230,10 @@ namespace WolvenKit.RED4.Types
 			DEBUG_iconErrorWrapper = new();
 			DEBUG_iconErrorText = new();
 			QuickHackData = new() { AttackEffects = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

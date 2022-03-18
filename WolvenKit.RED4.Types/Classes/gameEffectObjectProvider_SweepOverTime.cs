@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<physicsQueryPreset>();
 			set => SetPropertyValue<physicsQueryPreset>(value);
 		}
+
+		public gameEffectObjectProvider_SweepOverTime()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

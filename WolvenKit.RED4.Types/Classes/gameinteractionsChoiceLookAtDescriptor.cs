@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Offset = new();
 			OrbId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

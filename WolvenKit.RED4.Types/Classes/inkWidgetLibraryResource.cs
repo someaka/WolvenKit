@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			ExternalLibraries = new();
 			Sequences = new();
 			ExternalDependenciesForInternalItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldDebugFilterSetting_MeshResource()
 		{
 			ResourcePaths = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

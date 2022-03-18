@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public QuickMeleeEvents()
 		{
 			QuickMeleeAttackData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

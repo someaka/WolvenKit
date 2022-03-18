@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public worldDebugColoring_DistanceAbstractBase()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 		public audioAdvertSoundMetadata()
 		{
 			SpeedOfSound = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

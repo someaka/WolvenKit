@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiWorldMapGameObject()
 		{
 			Districts = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

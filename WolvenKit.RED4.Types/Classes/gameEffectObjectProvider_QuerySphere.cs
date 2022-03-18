@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameEffectObjectProvider_QuerySphere()
 		{
 			QueryPreset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

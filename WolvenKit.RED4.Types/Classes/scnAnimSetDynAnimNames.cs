@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AnimVariable = new(0);
 			AnimNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

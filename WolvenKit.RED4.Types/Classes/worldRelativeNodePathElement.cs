@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CUInt64>();
 			set => SetPropertyValue<CUInt64>(value);
 		}
+
+		public worldRelativeNodePathElement()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

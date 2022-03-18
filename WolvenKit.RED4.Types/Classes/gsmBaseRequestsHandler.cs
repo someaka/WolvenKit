@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<gsmSavingRequesResult>();
 			set => SetPropertyValue<gsmSavingRequesResult>(value);
 		}
+
+		public gsmBaseRequestsHandler()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

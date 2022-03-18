@@ -62,6 +62,10 @@ namespace WolvenKit.RED4.Types
 			StateMachinesSettings = new();
 			BodyPartsDependencies = new();
 			SubstepTime = 0.010000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

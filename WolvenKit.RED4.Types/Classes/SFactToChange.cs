@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SFactToChange()
 		{
 			OperationType = Enums.EMathOperationType.Set;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -105,6 +105,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AnsweringEntityId = new();
 			OverridingVoiceoverContext = Enums.locVoiceoverContext.Default_Vo_Context;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

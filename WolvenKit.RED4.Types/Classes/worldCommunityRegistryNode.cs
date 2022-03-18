@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			SpawnSetNameToCommunityID = new() { Entries = new() };
 			CommunitiesData = new();
 			WorkspotsPersistentData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

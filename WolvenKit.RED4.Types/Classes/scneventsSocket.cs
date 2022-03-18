@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = new() { Id = 18446744073709551615 };
 			OsockStamp = new() { Name = 65535, Ordinal = 65535 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

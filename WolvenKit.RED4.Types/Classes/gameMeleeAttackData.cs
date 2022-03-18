@@ -282,6 +282,10 @@ namespace WolvenKit.RED4.Types
 			StartPosition = new();
 			EndPosition = new();
 			IkOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

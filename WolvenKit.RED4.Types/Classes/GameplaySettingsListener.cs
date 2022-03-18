@@ -159,6 +159,10 @@ namespace WolvenKit.RED4.Types
 			ControlsPath = "/controls";
 			HudPath = "/interface/hud";
 			HintsName = "input_hints";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

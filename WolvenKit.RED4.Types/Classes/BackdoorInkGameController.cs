@@ -89,6 +89,10 @@ namespace WolvenKit.RED4.Types
 		{
 			IdleGroup = new();
 			ConnectedGroup = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -181,6 +181,10 @@ namespace WolvenKit.RED4.Types
 			EmptyPlaceholderRef = new();
 			LeftBlockControllerRef = new();
 			CrackHint = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

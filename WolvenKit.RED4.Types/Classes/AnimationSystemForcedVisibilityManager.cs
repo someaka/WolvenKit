@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AnimationSystemForcedVisibilityManager()
 		{
 			Entities = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

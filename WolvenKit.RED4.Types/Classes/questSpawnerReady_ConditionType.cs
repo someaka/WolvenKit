@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questSpawnerReady_ConditionType()
 		{
 			CommunityEntryNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

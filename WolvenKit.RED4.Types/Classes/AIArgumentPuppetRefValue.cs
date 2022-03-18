@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Type = Enums.AIArgumentType.PuppetRef;
 			DefaultValue = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

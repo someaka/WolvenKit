@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			EquipmentData = new();
 			UIjailbreakData = new();
 			AmmoLooted = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

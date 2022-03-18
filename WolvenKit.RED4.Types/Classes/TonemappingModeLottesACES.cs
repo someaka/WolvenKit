@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Contrast = 1.500000F;
 			MidIn = 0.180000F;
 			MidOut = 0.180000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

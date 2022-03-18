@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<moveMovementOrientationType>>();
 			set => SetPropertyValue<CEnum<moveMovementOrientationType>>(value);
 		}
+
+		public gameSmartObjectGate()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

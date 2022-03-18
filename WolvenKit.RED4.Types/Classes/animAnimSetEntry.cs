@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<animEventsContainer>>();
 			set => SetPropertyValue<CHandle<animEventsContainer>>(value);
 		}
+
+		public animAnimSetEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

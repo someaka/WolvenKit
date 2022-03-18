@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			ContentWidget = new();
 			FileWidgetsData = new();
 			FileThumbnailWidgetsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

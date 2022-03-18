@@ -159,6 +159,10 @@ namespace WolvenKit.RED4.Types
 			HighlightOffset = new();
 			LdrLut = new() { InputMapping = Enums.EColorMappingFunction.CMF_sRGB, OutputMapping = Enums.EColorMappingFunction.CMF_sRGB };
 			HdrLut = new() { InputMapping = Enums.EColorMappingFunction.CMF_sRGB, OutputMapping = Enums.EColorMappingFunction.CMF_sRGB };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

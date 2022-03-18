@@ -135,6 +135,10 @@ namespace WolvenKit.RED4.Types
 			MetaQuest1Value = new();
 			MetaQuest2Value = new();
 			MetaQuest3Value = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

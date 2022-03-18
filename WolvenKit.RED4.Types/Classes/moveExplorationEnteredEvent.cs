@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<moveExplorationType>>();
 			set => SetPropertyValue<CEnum<moveExplorationType>>(value);
 		}
+
+		public moveExplorationEnteredEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

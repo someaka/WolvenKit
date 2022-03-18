@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EIndustrialArmAnimations>>();
 			set => SetPropertyValue<CEnum<EIndustrialArmAnimations>>(value);
 		}
+
+		public ActivatedDeviceIndustrialArm()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

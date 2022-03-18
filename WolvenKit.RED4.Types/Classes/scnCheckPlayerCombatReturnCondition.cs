@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnCheckPlayerCombatReturnCondition()
 		{
 			Params = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

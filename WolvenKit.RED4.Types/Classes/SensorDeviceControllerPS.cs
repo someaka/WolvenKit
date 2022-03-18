@@ -225,6 +225,10 @@ namespace WolvenKit.RED4.Types
 			LinkedStatusEffect = new() { NetrunnerIDs = new(), TargetID = new(), StatusEffectList = new() };
 			QuestForcedTargetID = new();
 			QuestTargetToSpot = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

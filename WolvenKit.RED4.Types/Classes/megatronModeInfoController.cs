@@ -76,5 +76,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkWidget>>(value);
 		}
+
+		public megatronModeInfoController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

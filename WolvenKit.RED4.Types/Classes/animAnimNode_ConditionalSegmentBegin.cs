@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			Id = 4294967295;
 			InputLink = new();
 			Condition = new() { Lod = -1 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

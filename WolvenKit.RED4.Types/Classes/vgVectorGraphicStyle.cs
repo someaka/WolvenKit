@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public vgVectorGraphicStyle()
 		{
 			Attributes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

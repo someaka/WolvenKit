@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameHitRepresentationOverride()
 		{
 			RepresenationOverride = new() { Color = new(), PhysicsMaterial = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

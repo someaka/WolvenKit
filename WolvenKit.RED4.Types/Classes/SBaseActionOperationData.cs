@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public SBaseActionOperationData()
 		{
 			Operation = new() { IsEnabled = true, TransformAnimations = new(), VFXs = new(), SFXs = new(), Facts = new(), Components = new(), Stims = new(), StatusEffects = new(), Damages = new(), Items = new(), Teleport = new(), PlayerWorkspot = new(), ToggleOperations = new(), DelayID = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

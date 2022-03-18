@@ -443,6 +443,10 @@ namespace WolvenKit.RED4.Types
 			ResetNpcBlockedReqDelayID = new();
 			ResetNpcDeflectedReqDelayID = new();
 			ResetNpcGuardbreakReqDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

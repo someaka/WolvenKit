@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Point = new() { W = 1.000000F };
 			Normal = new() { Z = 1.000000F };
 			Weight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

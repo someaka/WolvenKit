@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			DestinationOffset = new();
 			ResetLookAt = true;
 			HealAtTeleport = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

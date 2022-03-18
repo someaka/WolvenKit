@@ -136,6 +136,10 @@ namespace WolvenKit.RED4.Types
 			Fluff_02 = new();
 			Fluff_03 = new();
 			Fluff_04 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

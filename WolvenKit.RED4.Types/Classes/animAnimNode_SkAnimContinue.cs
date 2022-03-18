@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimNode_SkAnimContinue()
 		{
 			Input = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

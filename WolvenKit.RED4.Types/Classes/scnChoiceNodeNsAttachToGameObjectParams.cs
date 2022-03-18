@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public scnChoiceNodeNsAttachToGameObjectParams()
 		{
 			VisualizerStyle = Enums.scnChoiceNodeNsVisualizerStyle.inWorld;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<inkWidgetLibraryResource>>();
 			set => SetPropertyValue<CResourceAsyncReference<inkWidgetLibraryResource>>(value);
 		}
+
+		public inkLoadingLayerDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

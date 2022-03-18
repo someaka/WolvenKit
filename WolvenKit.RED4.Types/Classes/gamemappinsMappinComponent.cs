@@ -18,6 +18,10 @@ namespace WolvenKit.RED4.Types
 			Name = "Component";
 			LocalTransform = new() { Position = new() { X = new(), Y = new(), Z = new() }, Orientation = new() { R = 1.000000F } };
 			Data = new() { Variant = Enums.gamedataMappinVariant.DefaultQuestVariant, Active = true, LocalizedCaption = new() { Unk1 = 0, Value = "" }, VisibleThroughWalls = true };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceReference<inkStyleResource>>();
 			set => SetPropertyValue<CResourceReference<inkStyleResource>>(value);
 		}
+
+		public inkStyleTheme()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

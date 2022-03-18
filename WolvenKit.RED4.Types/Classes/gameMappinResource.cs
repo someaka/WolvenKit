@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			CookedData = new();
 			CookedMultiData = new();
 			CookedGpsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

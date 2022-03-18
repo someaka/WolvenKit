@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnscreenplayItemId()
 		{
 			Id = 4294967040;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

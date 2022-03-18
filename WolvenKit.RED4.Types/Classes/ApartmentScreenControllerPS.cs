@@ -123,6 +123,10 @@ namespace WolvenKit.RED4.Types
 			RandomizeInitialOverdue = true;
 			AllowAutomaticRentStatusChange = true;
 			MaxDays = 90;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

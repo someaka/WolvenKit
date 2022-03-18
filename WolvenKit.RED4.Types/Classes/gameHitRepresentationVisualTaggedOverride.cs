@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VisualTags = new() { Tags = new() };
 			RepresenationOverride = new() { Color = new(), PhysicsMaterial = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

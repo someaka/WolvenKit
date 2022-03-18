@@ -163,6 +163,10 @@ namespace WolvenKit.RED4.Types
 			ErrorText = new();
 			ProceedButtonWidget = new();
 			CancelButtonWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

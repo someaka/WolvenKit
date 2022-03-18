@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameActionInternalEvent>>();
 			set => SetPropertyValue<CHandle<gameActionInternalEvent>>(value);
 		}
+
+		public gameActionEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VariableId = 65535;
 			V = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

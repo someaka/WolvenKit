@@ -37,6 +37,10 @@ namespace WolvenKit.RED4.Types
 			ForceLODLevel = -1;
 			IsEnabled = true;
 			Channels = Enums.rendLightChannel.LC_Channel1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

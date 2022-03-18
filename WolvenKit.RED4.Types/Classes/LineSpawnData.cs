@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public LineSpawnData()
 		{
 			LineData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

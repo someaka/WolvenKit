@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Channels = Enums.rendLightChannel.LC_Channel1;
 			StreamingDistanceFactor = 5.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

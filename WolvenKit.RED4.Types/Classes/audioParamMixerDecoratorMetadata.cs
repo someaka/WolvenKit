@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public audioParamMixerDecoratorMetadata()
 		{
 			InParams = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

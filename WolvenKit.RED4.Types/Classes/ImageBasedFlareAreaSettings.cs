@@ -78,6 +78,10 @@ namespace WolvenKit.RED4.Types
 			Distortion = 1.000000F;
 			Curve = 1.000000F;
 			Tint = new(8);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

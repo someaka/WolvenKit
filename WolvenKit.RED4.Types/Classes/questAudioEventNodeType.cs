@@ -102,6 +102,10 @@ namespace WolvenKit.RED4.Types
 			DynamicParams = new();
 			Event = new();
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

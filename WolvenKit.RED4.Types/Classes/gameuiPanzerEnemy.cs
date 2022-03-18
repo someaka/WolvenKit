@@ -134,6 +134,10 @@ namespace WolvenKit.RED4.Types
 			Score50ChanceCoeff = 50;
 			Score100ChanceCoeff = 35;
 			Score200ChanceCoeff = 15;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

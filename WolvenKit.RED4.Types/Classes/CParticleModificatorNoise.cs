@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			EditorGroup = "Position";
 			IsEnabled = true;
 			ChangeRate = new() { X = 1.000000F, Y = 1.000000F, Z = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questIInt32ValueProvider>>();
 			set => SetPropertyValue<CHandle<questIInt32ValueProvider>>(value);
 		}
+
+		public questInt32ValueWrapper()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

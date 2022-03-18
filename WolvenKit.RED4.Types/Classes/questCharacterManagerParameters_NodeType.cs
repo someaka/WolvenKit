@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questICharacterManagerParameters_NodeSubType>>();
 			set => SetPropertyValue<CHandle<questICharacterManagerParameters_NodeSubType>>(value);
 		}
+
+		public questCharacterManagerParameters_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

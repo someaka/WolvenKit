@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public attrChoice()
 		{
 			Tions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

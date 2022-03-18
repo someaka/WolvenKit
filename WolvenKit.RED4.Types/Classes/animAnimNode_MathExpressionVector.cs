@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = 4294967295;
 			ExpressionData = new() { FloatSockets = new(), VectorSockets = new(), QuaternionSockets = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<SerializationDeferredDataBuffer>();
 			set => SetPropertyValue<SerializationDeferredDataBuffer>(value);
 		}
+
+		public rendRenderMultilayerMaskBlob()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

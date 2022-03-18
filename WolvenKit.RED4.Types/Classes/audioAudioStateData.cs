@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			MixingActions = new();
 			InterruptionSources = new();
 			WriteVariableActions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			OwnerEntityID = new();
 			PoolModifier = new();
 			PreviousMod = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

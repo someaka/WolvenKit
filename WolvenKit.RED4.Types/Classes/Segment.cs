@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Origin = new();
 			Direction = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VehicleID = new();
 			Health = 100.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Position1 = new();
 			Position2 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LocalizedTitle = new() { Unk1 = 0, Value = "" };
 			LocalizedMessage = new() { Unk1 = 0, Value = "" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

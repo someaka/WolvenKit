@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamedataLifePath_Record>>();
 			set => SetPropertyValue<CHandle<gamedataLifePath_Record>>(value);
 		}
+
+		public LifePathBluelinePart()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

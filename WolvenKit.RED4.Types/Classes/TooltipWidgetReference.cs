@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public TooltipWidgetReference()
 		{
 			WidgetLibraryReference = new() { WidgetLibrary = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

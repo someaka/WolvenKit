@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animPoseBlendMethod_BoneBranch()
 		{
 			Bones = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CraftingFill = new();
 			CraftingLabel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

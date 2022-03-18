@@ -294,6 +294,10 @@ namespace WolvenKit.RED4.Types
 			RarityElementsRefs = new();
 			TooltipCycleIndicatorsContainer = new();
 			TooltipCycleHintContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

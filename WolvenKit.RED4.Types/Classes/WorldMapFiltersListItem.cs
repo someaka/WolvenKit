@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Checker = new();
 			FilterName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

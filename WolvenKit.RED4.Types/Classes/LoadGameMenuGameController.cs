@@ -148,6 +148,10 @@ namespace WolvenKit.RED4.Types
 			ButtonHintsManagerRef = new();
 			GogButtonWidgetRef = new();
 			GogContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

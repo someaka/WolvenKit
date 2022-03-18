@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questSceneReturn_ConditionType()
 		{
 			ReturnConditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

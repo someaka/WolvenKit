@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ETriggerOperationType>>();
 			set => SetPropertyValue<CEnum<ETriggerOperationType>>(value);
 		}
+
+		public SensesOperationTriggerData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

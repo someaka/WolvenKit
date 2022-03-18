@@ -133,6 +133,10 @@ namespace WolvenKit.RED4.Types
 			SlotsRootLabel = new();
 			SlotsContainer = new();
 			TransmogCtrlsContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

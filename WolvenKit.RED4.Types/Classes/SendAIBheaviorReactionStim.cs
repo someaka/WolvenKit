@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataStimType>>();
 			set => SetPropertyValue<CEnum<gamedataStimType>>(value);
 		}
+
+		public SendAIBheaviorReactionStim()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<FactOperationTriggerData>>();
 			set => SetPropertyValue<CHandle<FactOperationTriggerData>>(value);
 		}
+
+		public FactOperationsTrigger()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

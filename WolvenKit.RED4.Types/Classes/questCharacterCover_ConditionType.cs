@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questCharacterCover_ConditionType()
 		{
 			PuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

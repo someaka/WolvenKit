@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public animAnimNode_GraphSlotConditions()
 		{
 			Conditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

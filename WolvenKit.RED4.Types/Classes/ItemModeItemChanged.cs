@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameEHotkey>>();
 			set => SetPropertyValue<CEnum<gameEHotkey>>(value);
 		}
+
+		public ItemModeItemChanged()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

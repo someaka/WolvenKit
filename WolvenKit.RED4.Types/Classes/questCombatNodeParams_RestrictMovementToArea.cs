@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<NodeRef>();
 			set => SetPropertyValue<NodeRef>(value);
 		}
+
+		public questCombatNodeParams_RestrictMovementToArea()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

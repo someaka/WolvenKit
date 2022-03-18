@@ -92,6 +92,10 @@ namespace WolvenKit.RED4.Types
 			PriceText = new();
 			NoMoneyPanel = new();
 			SoldOutPanel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

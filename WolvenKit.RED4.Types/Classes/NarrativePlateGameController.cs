@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public NarrativePlateGameController()
 		{
 			PlateHolder = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

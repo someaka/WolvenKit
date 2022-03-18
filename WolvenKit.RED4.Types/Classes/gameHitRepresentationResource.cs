@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Representations = new();
 			Overrides = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

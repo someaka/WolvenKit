@@ -118,6 +118,10 @@ namespace WolvenKit.RED4.Types
 			Position = Enums.gamePopupPosition.Center;
 			CloseCurrentPopup = true;
 			VideoType = Enums.gameVideoType.Unknown;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

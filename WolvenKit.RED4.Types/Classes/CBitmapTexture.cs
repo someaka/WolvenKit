@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			HistBiasMulCoef = new() { X = 1.000000F, Y = 1.000000F, Z = 1.000000F };
 			HistBiasAddCoef = new();
 			RenderTextureResource = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

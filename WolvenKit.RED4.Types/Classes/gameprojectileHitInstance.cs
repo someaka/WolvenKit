@@ -110,6 +110,10 @@ namespace WolvenKit.RED4.Types
 			Forward = new();
 			Velocity = new();
 			HitRepresentationResult = new() { HitShapes = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

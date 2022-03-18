@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameuiCharacterCustomizationActionType>>();
 			set => SetPropertyValue<CEnum<gameuiCharacterCustomizationActionType>>(value);
 		}
+
+		public gameuiCensorshipInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

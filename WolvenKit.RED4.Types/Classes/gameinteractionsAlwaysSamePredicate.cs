@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameinteractionsAlwaysSamePredicate()
 		{
 			Priority = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

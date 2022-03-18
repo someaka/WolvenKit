@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioMeleeRigMap()
 		{
 			MapItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

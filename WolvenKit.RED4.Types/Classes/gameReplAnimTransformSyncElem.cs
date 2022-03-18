@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			CurrentTime = -1.000000F;
 			TimeScale = 1.000000F;
 			TimesToPlay = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			Offset = new();
 			PositionLerpSpeed = 1.000000F;
 			RotationLerpSpeed = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

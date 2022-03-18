@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Lane = new();
 			Collisions = new();
 			DeadEndStart = float.PositiveInfinity;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

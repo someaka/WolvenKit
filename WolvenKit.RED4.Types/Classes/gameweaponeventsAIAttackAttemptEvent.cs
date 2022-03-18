@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gameweaponeventsAIAttackAttemptEvent()
 		{
 			MinimumOpacity = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

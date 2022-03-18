@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			DistrictName = new();
 			LocationName = new();
 			SoundData = new() { WidgetAudioName = "Button" };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

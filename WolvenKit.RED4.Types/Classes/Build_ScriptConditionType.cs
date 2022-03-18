@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<ECompareOp>>();
 			set => SetPropertyValue<CEnum<ECompareOp>>(value);
 		}
+
+		public Build_ScriptConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

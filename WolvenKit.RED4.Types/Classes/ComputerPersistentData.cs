@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			Files = new();
 			NewsFeedElements = new();
 			InternetData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

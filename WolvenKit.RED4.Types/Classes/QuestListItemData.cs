@@ -113,6 +113,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Timestamp = new();
 			ObjectivesDistances = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

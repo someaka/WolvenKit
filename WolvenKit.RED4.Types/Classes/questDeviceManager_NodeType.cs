@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questDeviceManager_NodeType()
 		{
 			Params = new() { null };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

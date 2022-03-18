@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			Title = new();
 			BasePrice = new();
 			Price = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

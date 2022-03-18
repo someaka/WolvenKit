@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameinteractionsInteractionBaseEvent()
 		{
 			LayerData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

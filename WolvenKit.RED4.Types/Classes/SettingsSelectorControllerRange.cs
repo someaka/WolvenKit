@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			LeftArrow = new();
 			RightArrow = new();
 			ProgressBar = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

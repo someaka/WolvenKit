@@ -674,6 +674,10 @@ namespace WolvenKit.RED4.Types
 			DisturbComfortZoneAggressiveEventId = new();
 			DeadBodyInvestigators = new();
 			DeadBodyStartingPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

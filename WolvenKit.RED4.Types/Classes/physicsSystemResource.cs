@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Bodies = new();
 			Joints = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

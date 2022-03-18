@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			InputRange = new();
 			OutputRaycastEnd = new() { BlackboardProperty = new() { SerializableID = new(), PropertyPath = new() } };
 			QueryPreset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

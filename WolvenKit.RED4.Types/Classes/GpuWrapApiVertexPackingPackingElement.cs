@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<GpuWrapApiVertexPackingEStreamType>>();
 			set => SetPropertyValue<CEnum<GpuWrapApiVertexPackingEStreamType>>(value);
 		}
+
+		public GpuWrapApiVertexPackingPackingElement()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

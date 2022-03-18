@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public scnLookAtBodyPartProperties()
 		{
 			EnableFactor = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

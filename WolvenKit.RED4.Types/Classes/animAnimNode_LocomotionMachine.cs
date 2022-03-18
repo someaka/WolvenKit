@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			UsePlanner = true;
 			TransitionTime = 0.200000F;
 			NumVariants = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

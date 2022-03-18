@@ -156,6 +156,10 @@ namespace WolvenKit.RED4.Types
 			TrackedMappinTitle = new();
 			TrackedMappinContainer = new();
 			TrackedMappinObjectiveContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

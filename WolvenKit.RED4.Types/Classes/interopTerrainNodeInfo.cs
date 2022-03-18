@@ -140,6 +140,10 @@ namespace WolvenKit.RED4.Types
 			NodeTransform = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			NodeCellResScale = 1.000000F;
 			NodeIDPath = new() { Elements = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<BaseTechCrosshairController>>();
 			set => SetPropertyValue<CWeakHandle<BaseTechCrosshairController>>(value);
 		}
+
+		public CrosshairWeaponStatsListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

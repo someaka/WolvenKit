@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<graphGraphSocketDefinition>>();
 			set => SetPropertyValue<CWeakHandle<graphGraphSocketDefinition>>(value);
 		}
+
+		public graphGraphConnectionDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

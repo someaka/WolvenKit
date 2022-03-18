@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<audioMaterialMeleeSoundDictionary>>();
 			set => SetPropertyValue<CHandle<audioMaterialMeleeSoundDictionary>>(value);
 		}
+
+		public audioMeleeHitSoundMetadata()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

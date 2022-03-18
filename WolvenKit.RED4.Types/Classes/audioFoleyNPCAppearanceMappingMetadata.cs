@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			NPCsPerAppearance = new();
 			NPCsPerMainMaterial = new();
 			NPCsPerAdditive = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

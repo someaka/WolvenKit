@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Range = 1.000000F;
 			Offset = new();
 			Effect = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

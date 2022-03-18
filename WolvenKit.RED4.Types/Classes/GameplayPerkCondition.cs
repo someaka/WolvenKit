@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public GameplayPerkCondition()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EJuryrigTrapState>>();
 			set => SetPropertyValue<CEnum<EJuryrigTrapState>>(value);
 		}
+
+		public ChangeJuryrigTrapState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ScenePaths = new();
 			SceneEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

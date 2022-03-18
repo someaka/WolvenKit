@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public BraindanceSystem()
 		{
 			InputMask = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

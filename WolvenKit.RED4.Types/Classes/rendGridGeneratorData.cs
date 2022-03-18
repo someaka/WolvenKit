@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			NumberOfYSteps = 10;
 			OrbitDistance = 1.000000F;
 			Zoom = 50.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			PreviousPosition = new();
 			CurrentPosition = new();
 			UvPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

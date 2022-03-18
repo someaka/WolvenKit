@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			FloatSockets = new();
 			VectorSockets = new();
 			QuaternionSockets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

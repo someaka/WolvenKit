@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HeatRadius = 1.500000F;
 			HeatValue = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Height = 1.000000F;
 			Width = 1.000000F;
 			Curvature = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

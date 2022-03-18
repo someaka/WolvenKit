@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questElevator_ManageNPCAttachment_NodeType()
 		{
 			Params = new() { new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

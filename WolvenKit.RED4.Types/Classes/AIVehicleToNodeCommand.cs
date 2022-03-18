@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			SecureTimeOut = 2.000000F;
 			UseTraffic = true;
 			ForceGreenLights = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

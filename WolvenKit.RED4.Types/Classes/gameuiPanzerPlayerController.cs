@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiPanzerPlayerController()
 		{
 			BulletSpawnOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

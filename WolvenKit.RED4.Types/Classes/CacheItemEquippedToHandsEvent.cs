@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public CacheItemEquippedToHandsEvent()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

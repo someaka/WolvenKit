@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			PropId = new() { Id = 4294967295 };
 			CustomOffsetPos = new();
 			CustomOffsetRot = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

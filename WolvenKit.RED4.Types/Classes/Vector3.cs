@@ -29,5 +29,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public Vector3()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

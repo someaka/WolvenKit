@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 			UpAxisLS = new() { Y = 1.000000F };
 			Weight = 1.000000F;
 			WeightFloatTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

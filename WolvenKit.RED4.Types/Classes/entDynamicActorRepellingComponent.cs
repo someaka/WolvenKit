@@ -94,6 +94,10 @@ namespace WolvenKit.RED4.Types
 			Radius = 1.000000F;
 			CapsuleRadius = 1.000000F;
 			CapsuleHeight = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			SellingCart = new();
 			VendingBlacklist = new();
 			OpenTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

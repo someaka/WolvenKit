@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enable = true;
 			ColorGroup = new(16);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

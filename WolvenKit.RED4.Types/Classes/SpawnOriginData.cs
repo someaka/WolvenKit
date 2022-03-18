@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Position = new();
 			Direction = new();
 			PlayerPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public RequestDismembermentEvent()
 		{
 			HitPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

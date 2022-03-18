@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			IsEnabled = true;
 			IncludeChannels = Enums.TriggerChannel.TC_Player;
 			SendNewLocationNotification = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

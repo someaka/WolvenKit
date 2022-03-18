@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public toolsJiraAddAttachmentsResult()
 		{
 			Array = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

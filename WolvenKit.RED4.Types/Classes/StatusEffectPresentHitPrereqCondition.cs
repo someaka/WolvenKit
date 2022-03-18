@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public StatusEffectPresentHitPrereqCondition()
 		{
 			ObjectToCheck = "Target";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

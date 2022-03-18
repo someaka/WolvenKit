@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			AnimResRefId = new() { Id = 4294967295 };
 			AnimOriginMarker = new() { Type = Enums.scnMarkerType.Global, EntityRef = new() { Names = new() }, IsMounted = true };
 			ActorHasCollision = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LibraryItems = new();
 			ExternalLibraries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

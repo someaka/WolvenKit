@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public animMultipleParentConstraint_JsonProperties()
 		{
 			ParentsTransforms = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

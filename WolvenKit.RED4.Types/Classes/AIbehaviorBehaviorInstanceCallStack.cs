@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorBehaviorInstanceCallStack()
 		{
 			ResourceHashes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

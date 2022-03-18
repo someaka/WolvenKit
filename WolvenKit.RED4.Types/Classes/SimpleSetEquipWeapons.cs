@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			Game = new();
 			PrimaryItems = new();
 			SecondaryItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

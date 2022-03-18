@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TTime = new();
 			Apes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

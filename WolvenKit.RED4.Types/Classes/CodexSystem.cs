@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public CodexSystem()
 		{
 			Codex = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ControllerTypeName = "VendingMachineController";
 			ShortGlitchDelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

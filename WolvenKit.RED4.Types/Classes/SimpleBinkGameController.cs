@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			Video2Path = "Video2";
 			Video1 = new();
 			Video2 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

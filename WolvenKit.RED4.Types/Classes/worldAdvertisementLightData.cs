@@ -454,6 +454,10 @@ namespace WolvenKit.RED4.Types
 			Flicker = new() { FlickerPeriod = 0.200000F };
 			ColorGroupSaturation = 100;
 			AllowDistantLight = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

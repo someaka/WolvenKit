@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AICommand>>();
 			set => SetPropertyValue<CHandle<AICommand>>(value);
 		}
+
+		public questConstAICommandParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

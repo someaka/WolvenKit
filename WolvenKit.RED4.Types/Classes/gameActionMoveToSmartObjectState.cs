@@ -109,6 +109,10 @@ namespace WolvenKit.RED4.Types
 			EntryDirection = new() { X = float.PositiveInfinity, Y = float.PositiveInfinity, Z = float.PositiveInfinity };
 			EntryPointPos = new();
 			EntryPointDir = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

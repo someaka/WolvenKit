@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			InputMapping = Enums.EColorMappingFunction.CMF_sRGB;
 			OutputMapping = Enums.EColorMappingFunction.CMF_sRGB;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

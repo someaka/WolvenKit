@@ -116,6 +116,10 @@ namespace WolvenKit.RED4.Types
 			StepsTargetSpeedMultiplier = 10000.000000F;
 			TimeBetweenSteps = 0.100000F;
 			TimeInStep = 0.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SlotID = new();
 			SlotTransform = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

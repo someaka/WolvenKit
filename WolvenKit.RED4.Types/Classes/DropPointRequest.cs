@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public DropPointRequest()
 		{
 			Holder = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

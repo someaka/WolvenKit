@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public worldConversationData()
 		{
 			InterruptionOperations = new() { null, null };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

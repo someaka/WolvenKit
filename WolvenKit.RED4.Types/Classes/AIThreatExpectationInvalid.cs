@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CUInt32>();
 			set => SetPropertyValue<CUInt32>(value);
 		}
+
+		public AIThreatExpectationInvalid()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

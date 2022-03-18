@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			RightTireSmoke = new();
 			RightFlame = new();
 			LeftFlame = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

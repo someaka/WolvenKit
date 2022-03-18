@@ -125,6 +125,10 @@ namespace WolvenKit.RED4.Types
 			LinkType = Enums.ELinkType.FREE;
 			LinkFXresource = new();
 			SourcePosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

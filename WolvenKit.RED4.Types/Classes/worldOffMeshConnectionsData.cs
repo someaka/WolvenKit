@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 			TagsX = new();
 			GlobalNodeIDs = new();
 			UserData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

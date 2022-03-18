@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OwnerID = new();
 			ActivatorID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

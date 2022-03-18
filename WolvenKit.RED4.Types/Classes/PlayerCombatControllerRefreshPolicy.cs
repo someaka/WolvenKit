@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<PlayerCombatControllerRefreshPolicyEnum>>();
 			set => SetPropertyValue<CEnum<PlayerCombatControllerRefreshPolicyEnum>>(value);
 		}
+
+		public PlayerCombatControllerRefreshPolicy()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

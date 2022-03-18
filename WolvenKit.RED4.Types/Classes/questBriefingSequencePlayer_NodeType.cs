@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public questBriefingSequencePlayer_NodeType()
 		{
 			BriefingType = Enums.questBriefingType.Hud;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

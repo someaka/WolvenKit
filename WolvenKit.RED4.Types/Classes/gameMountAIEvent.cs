@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameMountEventData>>();
 			set => SetPropertyValue<CHandle<gameMountEventData>>(value);
 		}
+
+		public gameMountAIEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

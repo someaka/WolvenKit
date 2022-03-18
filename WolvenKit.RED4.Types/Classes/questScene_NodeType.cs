@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questScene_NodeType()
 		{
 			EntityReference = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

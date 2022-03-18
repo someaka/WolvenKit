@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			Type = new();
 			Data = new();
 			CaptionParts = new() { Parts = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

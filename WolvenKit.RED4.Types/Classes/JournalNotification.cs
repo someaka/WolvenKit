@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameuiQuestUpdateNotificationViewData>>();
 			set => SetPropertyValue<CHandle<gameuiQuestUpdateNotificationViewData>>(value);
 		}
+
+		public JournalNotification()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

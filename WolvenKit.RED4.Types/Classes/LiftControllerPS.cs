@@ -155,6 +155,10 @@ namespace WolvenKit.RED4.Types
 			FloorsAuthorization = new();
 			Stations = new();
 			CachedGoToFloorAction = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

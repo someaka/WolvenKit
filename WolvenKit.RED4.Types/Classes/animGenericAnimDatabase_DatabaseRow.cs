@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			InputValues = new();
 			AnimationData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

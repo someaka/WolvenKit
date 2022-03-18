@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SourceID = new();
 			DelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

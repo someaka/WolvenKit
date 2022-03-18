@@ -205,6 +205,10 @@ namespace WolvenKit.RED4.Types
 			Attachment = new();
 			Customfield_25500 = new() { Value = "NONE" };
 			Versions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

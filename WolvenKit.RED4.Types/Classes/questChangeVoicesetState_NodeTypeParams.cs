@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PuppetRef = new() { Names = new() };
 			InputsToBlock = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

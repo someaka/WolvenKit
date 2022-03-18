@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			DeprecatedSpeedRestrictions = new();
 			OrientationChangeSections = new();
 			RoadAdjustmentFactorChangeSections = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

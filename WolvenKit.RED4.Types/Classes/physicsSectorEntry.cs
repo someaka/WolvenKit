@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public physicsSectorEntry()
 		{
 			SectorBounds = new() { Min = new(), Max = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -125,6 +125,10 @@ namespace WolvenKit.RED4.Types
 			Position = new();
 			CheckIfIsTarget = true;
 			Id = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			UPDATE_DELAY = 1.000000F;
 			DISPLAY_DURATION = 1.100000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questPaymentConditionData()
 		{
 			PaymentItemId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

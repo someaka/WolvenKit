@@ -138,6 +138,10 @@ namespace WolvenKit.RED4.Types
 			C_selectionColor = new();
 			C_initialColor = new();
 			C_markColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

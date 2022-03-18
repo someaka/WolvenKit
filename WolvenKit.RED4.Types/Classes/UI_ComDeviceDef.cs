@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 			PhoneStyle_Minimized = new();
 			IsDisplayingMessage = new();
 			ContactsActive = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

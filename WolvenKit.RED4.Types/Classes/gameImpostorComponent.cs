@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			AddHead = true;
 			IgnorePlayerHeadSlot = true;
 			SlotIDsToOmit = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

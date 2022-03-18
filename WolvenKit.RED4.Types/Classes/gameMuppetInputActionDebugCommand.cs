@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameMuppetDebugCommand>>();
 			set => SetPropertyValue<CEnum<gameMuppetDebugCommand>>(value);
 		}
+
+		public gameMuppetInputActionDebugCommand()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			TestMountRequest = true;
 			AcceptInstant = true;
 			AcceptNotInstant = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

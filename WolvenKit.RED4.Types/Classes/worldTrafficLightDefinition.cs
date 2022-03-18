@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			GroupIdx = 4294967295;
 			Timeline = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

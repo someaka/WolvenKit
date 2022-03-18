@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			ScenarioName = "MenuScenario_Vendor";
 			OpenVendorPanel = true;
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

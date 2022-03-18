@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			ItemNameText = new();
 			ItemRarityText = new();
 			ItemTypeText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

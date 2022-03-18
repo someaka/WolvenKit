@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			EffectTypes = new();
 			EffectString = new();
 			EffectTags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

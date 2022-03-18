@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Phase = Enums.gamedataMappinPhase.DefaultPhase;
 			Variant = Enums.gamedataMappinVariant.DefaultVariant;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

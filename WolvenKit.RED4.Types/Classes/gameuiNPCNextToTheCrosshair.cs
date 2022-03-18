@@ -121,6 +121,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Attitude = Enums.EAIAttitude.AIA_Neutral;
 			HighLevelState = Enums.gamedataNPCHighLevelState.Any;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

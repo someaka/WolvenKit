@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ToggleDropPointSystemRequest()
 		{
 			Reason = "quest";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

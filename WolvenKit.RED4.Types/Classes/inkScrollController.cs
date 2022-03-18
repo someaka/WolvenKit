@@ -120,6 +120,10 @@ namespace WolvenKit.RED4.Types
 			ScrollSpeedMouse = 75.000000F;
 			ViewportSize = new();
 			ContentSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

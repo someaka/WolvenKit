@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			DoorAction = Enums.vehicleEQuestVehicleDoorState.Invalid;
 			Door = Enums.vehicleEVehicleDoor.invalid;
 			ToOpen = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

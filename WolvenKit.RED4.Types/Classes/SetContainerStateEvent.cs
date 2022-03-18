@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SetContainerStateEvent()
 		{
 			IsDisabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

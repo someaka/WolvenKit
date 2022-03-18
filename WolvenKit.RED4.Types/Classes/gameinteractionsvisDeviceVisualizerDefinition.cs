@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public gameinteractionsvisDeviceVisualizerDefinition()
 		{
 			IsDynamic = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -73,6 +73,10 @@ namespace WolvenKit.RED4.Types
 		{
 			OpenTime = 1.000000F;
 			CloseTime = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

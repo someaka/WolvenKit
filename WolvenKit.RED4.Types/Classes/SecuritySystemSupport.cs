@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public SecuritySystemSupport()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

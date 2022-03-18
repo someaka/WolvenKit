@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 			AngleMax = 180.000000F;
 			AngleValueNode = new();
 			AngleSpeedNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

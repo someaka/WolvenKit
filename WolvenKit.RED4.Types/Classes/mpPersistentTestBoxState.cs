@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<entIComponent>>();
 			set => SetPropertyValue<CWeakHandle<entIComponent>>(value);
 		}
+
+		public mpPersistentTestBoxState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StatsRoot = new();
 			StatItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

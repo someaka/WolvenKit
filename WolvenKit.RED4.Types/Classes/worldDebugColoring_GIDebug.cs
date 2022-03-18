@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			GIVisibleColor = new();
 			GITransparentColor = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

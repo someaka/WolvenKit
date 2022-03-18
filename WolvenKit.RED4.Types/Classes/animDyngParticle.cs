@@ -85,6 +85,10 @@ namespace WolvenKit.RED4.Types
 			Bone = new();
 			CollisionCapsuleAxisLS = new() { X = 0.500000F };
 			ProjectionType = Enums.animDyngParticleProjectionType.ShortestPath;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

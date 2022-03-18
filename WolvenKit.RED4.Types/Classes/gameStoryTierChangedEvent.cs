@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "StoryTierChanged";
 			NewTier = Enums.gameStoryTier.Cinematic;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

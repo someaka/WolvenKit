@@ -67,6 +67,10 @@ namespace WolvenKit.RED4.Types
 			MainDisplayWidget = new();
 			MessegeWidget = new();
 			BackgroundWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

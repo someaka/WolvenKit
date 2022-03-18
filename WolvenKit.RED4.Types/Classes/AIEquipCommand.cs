@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AIEquipCommand()
 		{
 			DurationOverride = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

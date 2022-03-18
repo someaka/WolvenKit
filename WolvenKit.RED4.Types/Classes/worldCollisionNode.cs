@@ -120,6 +120,10 @@ namespace WolvenKit.RED4.Types
 		public worldCollisionNode()
 		{
 			Extents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

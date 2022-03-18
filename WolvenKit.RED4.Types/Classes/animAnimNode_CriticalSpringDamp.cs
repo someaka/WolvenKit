@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			RangeMin = -180.000000F;
 			RangeMax = 180.000000F;
 			InputNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

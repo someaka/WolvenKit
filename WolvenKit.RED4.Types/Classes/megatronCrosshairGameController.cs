@@ -99,6 +99,10 @@ namespace WolvenKit.RED4.Types
 			OrgSideSize = new();
 			MinSpread = 120.000000F;
 			GameplaySpreadMultiplier = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

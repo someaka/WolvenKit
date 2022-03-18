@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<questIEntityConditionType>>();
 			set => SetPropertyValue<CHandle<questIEntityConditionType>>(value);
 		}
+
+		public questEntityCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

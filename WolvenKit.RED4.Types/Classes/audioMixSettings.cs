@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			MusicVolume = 10.000000F;
 			VoVolume = 10.000000F;
 			UiMenuVolume = 10.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

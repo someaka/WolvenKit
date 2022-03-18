@@ -176,6 +176,10 @@ namespace WolvenKit.RED4.Types
 		public VolumetricFogAreaSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

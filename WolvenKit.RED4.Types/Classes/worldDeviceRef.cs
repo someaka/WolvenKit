@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public worldDeviceRef()
 		{
 			ComponentName = "controller";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

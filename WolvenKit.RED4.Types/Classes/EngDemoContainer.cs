@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<DemolitionSkillCheck>>();
 			set => SetPropertyValue<CHandle<DemolitionSkillCheck>>(value);
 		}
+
+		public EngDemoContainer()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

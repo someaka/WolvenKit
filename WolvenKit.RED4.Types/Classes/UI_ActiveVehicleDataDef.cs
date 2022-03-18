@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			IsPlayerMounted = new();
 			IsTPPCameraOn = new();
 			PositionInRace = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

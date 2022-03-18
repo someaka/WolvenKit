@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public QuickSlotsManagerPS()
 		{
 			ActiveVehicleType = Enums.gamedataVehicleType.Car;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

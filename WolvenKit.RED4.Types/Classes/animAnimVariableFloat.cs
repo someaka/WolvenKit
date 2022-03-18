@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Min = -16.000000F;
 			Max = 16.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questMinimizeCallRequest()
 		{
 			Minimized = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

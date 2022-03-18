@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public worldPrefabVariantsList()
 		{
 			ActiveVariants = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

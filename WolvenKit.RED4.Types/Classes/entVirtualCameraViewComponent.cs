@@ -29,6 +29,10 @@ namespace WolvenKit.RED4.Types
 			ForceLODLevel = -1;
 			VirtualCameraName = "Component";
 			TargetPlaneSize = new() { X = 2.000000F, Y = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

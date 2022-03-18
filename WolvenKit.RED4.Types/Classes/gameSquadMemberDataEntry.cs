@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameSquadMemberDataEntry()
 		{
 			SquadType = Enums.AISquadType.Unknown;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

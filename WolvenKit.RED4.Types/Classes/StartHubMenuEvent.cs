@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<HubMenuInitData>>();
 			set => SetPropertyValue<CHandle<HubMenuInitData>>(value);
 		}
+
+		public StartHubMenuEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

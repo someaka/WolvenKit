@@ -108,5 +108,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<gameuiCharacterCustomizationAction>>();
 			set => SetPropertyValue<CArray<gameuiCharacterCustomizationAction>>(value);
 		}
+
+		public gameuiCharacterCustomizationInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

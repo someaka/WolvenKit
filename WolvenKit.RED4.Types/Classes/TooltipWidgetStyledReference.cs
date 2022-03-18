@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			WidgetLibraryReference = new() { WidgetLibrary = new() };
 			MenuTooltipStylePath = new();
 			HudTooltipStylePath = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

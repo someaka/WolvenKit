@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			YawDefault = -125.000000F;
 			RotationSpeed = 30.000000F;
 			Image = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

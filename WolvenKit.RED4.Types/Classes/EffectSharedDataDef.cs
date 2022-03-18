@@ -502,6 +502,10 @@ namespace WolvenKit.RED4.Types
 			ForceVisionAppearanceData = new();
 			TickRateOverride = new();
 			DebugBool = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

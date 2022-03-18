@@ -151,6 +151,10 @@ namespace WolvenKit.RED4.Types
 			StopSnapToTerrain = new() { VariableId = 65535 };
 			StartSnapToTerrainBlendTime = new() { VariableId = 65535 };
 			StopSnapToTerrainBlendTime = new() { VariableId = 65535 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

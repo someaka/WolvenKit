@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ScannerVulnerabilities()
 		{
 			Vulnerabilities = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

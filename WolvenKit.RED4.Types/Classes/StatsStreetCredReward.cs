@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			NextRewardsList = new();
 			ScrollSlider = new();
 			ScrollButtonHint = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

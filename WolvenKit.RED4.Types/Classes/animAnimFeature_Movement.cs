@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MovementDirection = new() { Y = 1.000000F };
 			TimeToChangeLocomotion = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

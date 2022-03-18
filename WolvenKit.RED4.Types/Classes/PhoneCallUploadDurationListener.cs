@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			GameInstance = new();
 			RequesterID = new();
 			StatPoolType = Enums.gamedataStatPoolType.PhoneCallDuration;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

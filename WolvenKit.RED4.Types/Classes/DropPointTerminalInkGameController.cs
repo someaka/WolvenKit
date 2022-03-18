@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SellAction = new();
 			StatusText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

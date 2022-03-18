@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ButtonHintsRef = new();
 			ContainersRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

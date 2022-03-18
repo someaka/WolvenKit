@@ -5,7 +5,7 @@ using WolvenKit.RED4.IO;
 
 namespace WolvenKit.RED4.Types
 {
-    public class CacheList<T> : ICacheList<T>
+    public class CacheList<T> : ICacheList<T> where T : notnull
     {
         private readonly HashSet<T> _valueList;
         private readonly Dictionary<T, ushort> _keyValueList;
@@ -13,8 +13,6 @@ namespace WolvenKit.RED4.Types
         private IEqualityComparer<T> _comparer;
 
         public ushort Count => _index;
-
-        public CacheList() : this(EqualityComparer<T>.Default) {}
 
         public CacheList(IEqualityComparer<T> comparer)
         {

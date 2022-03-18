@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Animsets = new();
 			Overrides = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

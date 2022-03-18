@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public AIPatrolCommand()
 		{
 			AlertedSpots = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

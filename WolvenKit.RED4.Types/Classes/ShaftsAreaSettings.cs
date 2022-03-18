@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			ShaftsLevelIndex = 1;
 			ShaftsIntensity = 1.000000F;
 			ShaftsThresholdsScale = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

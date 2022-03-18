@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AmbientOverrideAreaSettings()
 		{
 			Color = new(6);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

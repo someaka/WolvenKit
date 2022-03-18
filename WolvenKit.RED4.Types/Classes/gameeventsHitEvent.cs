@@ -106,6 +106,10 @@ namespace WolvenKit.RED4.Types
 			HitPosition = new();
 			HitDirection = new();
 			HitRepresentationResult = new() { HitShapes = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

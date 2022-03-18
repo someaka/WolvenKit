@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questEnableScanning_NodeType()
 		{
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public DebuggerProperties()
 		{
 			LayerIDs = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

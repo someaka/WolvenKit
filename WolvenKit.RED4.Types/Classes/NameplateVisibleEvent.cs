@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public NameplateVisibleEvent()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

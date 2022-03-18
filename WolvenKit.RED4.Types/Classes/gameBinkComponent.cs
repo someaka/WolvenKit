@@ -69,6 +69,10 @@ namespace WolvenKit.RED4.Types
 			ForceLODLevel = -1;
 			VideoPlayerName = "DefaultVideoPlayerName";
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

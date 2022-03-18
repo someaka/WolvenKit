@@ -52,5 +52,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<entIVelocityProvider>>();
 			set => SetPropertyValue<CHandle<entIVelocityProvider>>(value);
 		}
+
+		public gameprojectileLaunchParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questEntryScanned_ConditionType()
 		{
 			ObjectRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

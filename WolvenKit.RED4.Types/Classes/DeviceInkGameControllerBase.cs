@@ -123,6 +123,10 @@ namespace WolvenKit.RED4.Types
 			DeviceWidgetsData = new();
 			BreadcrumbStack = new();
 			ActiveBreadcrumb = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

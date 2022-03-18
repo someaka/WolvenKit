@@ -103,6 +103,10 @@ namespace WolvenKit.RED4.Types
 			Difficulty3 = new();
 			C_atlas1 = new();
 			C_atlas2 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

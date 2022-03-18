@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public HeatHazeAreaSettings()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

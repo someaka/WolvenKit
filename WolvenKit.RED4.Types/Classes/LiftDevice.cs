@@ -109,6 +109,10 @@ namespace WolvenKit.RED4.Types
 			Floors = new();
 			QuestSafeguardColliders = new();
 			QuestSafeguardColliderNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

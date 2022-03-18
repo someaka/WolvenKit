@@ -81,6 +81,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PeerID = new() { Value = 255 };
 			SpawnTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

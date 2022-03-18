@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public CheckStimTag()
 		{
 			StimTagToCompare = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

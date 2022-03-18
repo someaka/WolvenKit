@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public vehicleChaseTargetEvent()
 		{
 			InProgress = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

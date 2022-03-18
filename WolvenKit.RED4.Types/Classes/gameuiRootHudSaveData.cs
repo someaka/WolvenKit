@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiRootHudSaveData()
 		{
 			EntriesVisibility = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

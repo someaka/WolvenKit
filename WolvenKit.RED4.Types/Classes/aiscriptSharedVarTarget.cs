@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public aiscriptSharedVarTarget()
 		{
 			VarName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

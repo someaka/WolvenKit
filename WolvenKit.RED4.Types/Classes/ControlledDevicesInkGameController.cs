@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public ControlledDevicesInkGameController()
 		{
 			ControlledDevicesWidgetsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

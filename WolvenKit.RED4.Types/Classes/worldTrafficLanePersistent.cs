@@ -178,6 +178,10 @@ namespace WolvenKit.RED4.Types
 			NeighborGroupIndex = 65535;
 			RoadMaterials = new();
 			Polygon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

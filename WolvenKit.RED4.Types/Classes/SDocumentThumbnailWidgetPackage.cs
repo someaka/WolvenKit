@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DocumentAdress = new() { FolderID = -1, DocumentID = -1 };
 			QuestInfo = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

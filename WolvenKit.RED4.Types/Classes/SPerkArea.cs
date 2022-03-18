@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SPerkArea()
 		{
 			BoughtPerks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			BanksToLoad = new();
 			BanksToUnload = new();
 			WaitOnLoad = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

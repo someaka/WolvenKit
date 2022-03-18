@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public RetractableAd()
 		{
 			ControllerTypeName = "RetractableAdController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

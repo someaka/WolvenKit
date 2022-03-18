@@ -115,6 +115,10 @@ namespace WolvenKit.RED4.Types
 			Duration = 0.250000F;
 			EaseIn = true;
 			EaseOut = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

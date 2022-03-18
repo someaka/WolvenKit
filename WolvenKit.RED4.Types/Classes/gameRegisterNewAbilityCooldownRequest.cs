@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 		public gameRegisterNewAbilityCooldownRequest()
 		{
 			OwnerItemId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

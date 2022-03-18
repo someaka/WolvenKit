@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<CodexCategoryType>>();
 			set => SetPropertyValue<CEnum<CodexCategoryType>>(value);
 		}
+
+		public CodexListVirtualNestedDataView()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

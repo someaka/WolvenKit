@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Operations = new();
 			Triggers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

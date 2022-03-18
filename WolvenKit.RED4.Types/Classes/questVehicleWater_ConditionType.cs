@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SubmergedOnly = true;
 			OnEnter = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

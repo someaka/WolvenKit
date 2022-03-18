@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<DeviceActionOperationTriggerData>>();
 			set => SetPropertyValue<CHandle<DeviceActionOperationTriggerData>>(value);
 		}
+
+		public DeviceActionOperationsTrigger()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

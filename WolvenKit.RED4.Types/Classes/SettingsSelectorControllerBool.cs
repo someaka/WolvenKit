@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			OffState = new();
 			OnStateBody = new();
 			OffStateBody = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

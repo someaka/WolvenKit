@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questEnableVehicleSummon_NodeType()
 		{
 			Enable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

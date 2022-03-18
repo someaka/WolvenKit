@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiSetupOptionSelectorForAttributeEvent()
 		{
 			Values = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

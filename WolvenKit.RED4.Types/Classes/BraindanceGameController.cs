@@ -325,6 +325,10 @@ namespace WolvenKit.RED4.Types
 			SpeedIndicatorManagers = new();
 			ClueArray = new();
 			GameInstance = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

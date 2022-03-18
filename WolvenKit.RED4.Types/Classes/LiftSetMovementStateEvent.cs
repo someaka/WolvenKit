@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamePlatformMovementState>>();
 			set => SetPropertyValue<CEnum<gamePlatformMovementState>>(value);
 		}
+
+		public LiftSetMovementStateEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

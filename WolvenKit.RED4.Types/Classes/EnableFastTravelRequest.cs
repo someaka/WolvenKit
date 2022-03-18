@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ForceRefreshUI = true;
 			Reason = "quest";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

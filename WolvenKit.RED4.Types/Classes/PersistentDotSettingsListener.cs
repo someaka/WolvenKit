@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<CrosshairGameControllerPersistentDot>>();
 			set => SetPropertyValue<CWeakHandle<CrosshairGameControllerPersistentDot>>(value);
 		}
+
+		public PersistentDotSettingsListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

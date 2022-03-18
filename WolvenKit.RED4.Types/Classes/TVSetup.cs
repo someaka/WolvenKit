@@ -56,6 +56,10 @@ namespace WolvenKit.RED4.Types
 		public TVSetup()
 		{
 			Channels = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

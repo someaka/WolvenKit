@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			BonesWithRotationInModelSpace = new();
 			Mask = new();
 			MaskRotMS = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

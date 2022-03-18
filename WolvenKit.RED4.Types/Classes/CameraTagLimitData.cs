@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<SurveillanceCamera>>();
 			set => SetPropertyValue<CWeakHandle<SurveillanceCamera>>(value);
 		}
+
+		public CameraTagLimitData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

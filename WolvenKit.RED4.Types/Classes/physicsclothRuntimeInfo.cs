@@ -168,6 +168,10 @@ namespace WolvenKit.RED4.Types
 			DragCoefficient = 0.020000F;
 			GravityScale = 1.000000F;
 			MotionConstraintStiffness = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

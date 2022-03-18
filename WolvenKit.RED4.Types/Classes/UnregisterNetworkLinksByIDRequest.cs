@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public UnregisterNetworkLinksByIDRequest()
 		{
 			ID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gamemappinsPingSystemMappin()
 		{
 			PingType = Enums.gamedataPingType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

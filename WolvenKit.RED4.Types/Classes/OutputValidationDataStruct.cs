@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			ReprimenderID = new();
 			EventReportedFromArea = new();
 			BreachedAreas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -87,6 +87,10 @@ namespace WolvenKit.RED4.Types
 			PerspectiveBlend = 0.500000F;
 			RenderSettingsFPP = new() { AreaParameters = new() };
 			RenderSettingsTPP = new() { AreaParameters = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -92,6 +92,10 @@ namespace WolvenKit.RED4.Types
 			Priority = Enums.EPriority.VeryHigh;
 			Targets = new();
 			HighlightedTargets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -126,6 +126,10 @@ namespace WolvenKit.RED4.Types
 			AnimParameters = new();
 			ServerForcedLod = -1;
 			ClientForcedLod = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

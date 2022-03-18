@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			Info = new() { TracksMapping = new(), Face = new(), Eyes = new(), Tongue = new() };
 			PosesInfo = new() { Face = new(), Tongue = new(), Eyes = new() };
 			UsedTransformIndices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

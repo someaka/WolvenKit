@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public inkCursorInfo()
 		{
 			Pos = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

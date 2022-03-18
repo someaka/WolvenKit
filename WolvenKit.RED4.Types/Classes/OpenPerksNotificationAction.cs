@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<worlduiIWidgetGameController>>();
 			set => SetPropertyValue<CWeakHandle<worlduiIWidgetGameController>>(value);
 		}
+
+		public OpenPerksNotificationAction()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

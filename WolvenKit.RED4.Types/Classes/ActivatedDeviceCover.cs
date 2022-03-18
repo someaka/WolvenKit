@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIOffMeshConnectionComponent>>();
 			set => SetPropertyValue<CHandle<AIOffMeshConnectionComponent>>(value);
 		}
+
+		public ActivatedDeviceCover()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

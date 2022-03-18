@@ -146,6 +146,10 @@ namespace WolvenKit.RED4.Types
 			ComponentsToEnableNames = new();
 			ComponentsToEnable = new();
 			AlreadyPlayedVFXComponents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

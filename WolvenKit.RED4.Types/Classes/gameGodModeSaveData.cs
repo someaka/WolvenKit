@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameGodModeSaveData()
 		{
 			Gods = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

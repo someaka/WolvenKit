@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public animAnimFeatureWorkspotInertializationAnim()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

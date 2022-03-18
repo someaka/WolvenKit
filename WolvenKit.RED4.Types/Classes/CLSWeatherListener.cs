@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<CityLightSystem>>();
 			set => SetPropertyValue<CWeakHandle<CityLightSystem>>(value);
 		}
+
+		public CLSWeatherListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

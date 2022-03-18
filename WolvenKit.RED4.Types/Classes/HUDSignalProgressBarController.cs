@@ -174,6 +174,10 @@ namespace WolvenKit.RED4.Types
 			SignalBars = new();
 			Data = new();
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

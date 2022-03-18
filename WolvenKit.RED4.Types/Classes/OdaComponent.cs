@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public OdaComponent()
 		{
 			Owner_id = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

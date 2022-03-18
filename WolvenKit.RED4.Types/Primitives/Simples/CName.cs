@@ -14,7 +14,7 @@ namespace WolvenKit.RED4.Types
         private static readonly ConcurrentDictionary<string, ulong> s_cNameCache = new();
 
         public delegate string ResolveHash(ulong hash);
-        public static ResolveHash ResolveHashHandler;
+        public static ResolveHash? ResolveHashHandler;
 
         private readonly ulong _hash;
 
@@ -30,7 +30,7 @@ namespace WolvenKit.RED4.Types
             _hash = value;
         }
 
-        public string GetResolvedText() => !string.IsNullOrEmpty(_value) ? _value : ResolveHashHandler?.Invoke(_hash);
+        public string? GetResolvedText() => !string.IsNullOrEmpty(_value) ? _value : ResolveHashHandler?.Invoke(_hash);
         private ulong CalculateHash()
         {
             if (string.IsNullOrEmpty(_value))
@@ -55,17 +55,17 @@ namespace WolvenKit.RED4.Types
         public uint GetOldRedHash() => (uint)(_hash & 0xFFFFFFFF);
 
         public static implicit operator CName(string value) => new(value);
-        public static implicit operator string(CName value) => value?._value; 
+        public static implicit operator string?(CName value) => value._value;
 
         public static implicit operator CName(ulong value) => new(value);
         public static implicit operator ulong(CName value) => value?._hash ?? 0;
 
-        public static bool operator ==(CName a, CName b) => Equals(a, b);
-        public static bool operator !=(CName a, CName b) => !(a == b);
+        public static bool operator ==(CName? a, CName? b) => Equals(a, b);
+        public static bool operator !=(CName? a, CName? b) => !(a == b);
 
         public override int GetHashCode() => _hash.GetHashCode();
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {
@@ -85,7 +85,7 @@ namespace WolvenKit.RED4.Types
             return Equals((CName)obj);
         }
 
-        public bool Equals(CName other)
+        public bool Equals(CName? other)
         {
             if (!Equals(GetRedHash(), other?.GetRedHash()))
             {
@@ -95,6 +95,6 @@ namespace WolvenKit.RED4.Types
             return true;
         }
 
-        public override string ToString() => GetResolvedText();
+        public override string? ToString() => GetResolvedText();
     }
 }

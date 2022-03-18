@@ -35,6 +35,10 @@ namespace WolvenKit.RED4.Types
 			EditorGroup = "Velocity";
 			IsEnabled = true;
 			WorldSpace = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

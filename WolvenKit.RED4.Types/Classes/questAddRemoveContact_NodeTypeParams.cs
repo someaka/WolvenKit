@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questAddRemoveContact_NodeTypeParams()
 		{
 			AddContact = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

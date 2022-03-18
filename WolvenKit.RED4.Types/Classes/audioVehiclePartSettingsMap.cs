@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MinAcousticsIsolationFactorValue = 0.200000F;
 			PartSettings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

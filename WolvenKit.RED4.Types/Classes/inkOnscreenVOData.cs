@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CRUID>();
 			set => SetPropertyValue<CRUID>(value);
 		}
+
+		public inkOnscreenVOData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

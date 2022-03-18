@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public SequenceVideo()
 		{
 			VideoPath = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

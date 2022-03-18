@@ -19,6 +19,10 @@ namespace WolvenKit.RED4.Types
 			ScanningAreaName = "scanningArea";
 			SurroundingAreaName = "surroundingArea";
 			Lasers = new(2);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

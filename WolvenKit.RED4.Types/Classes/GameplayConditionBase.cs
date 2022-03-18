@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<entEntityID>();
 			set => SetPropertyValue<entEntityID>(value);
 		}
+
+		public GameplayConditionBase()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

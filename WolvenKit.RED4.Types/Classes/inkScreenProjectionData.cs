@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StaticWorldPosition = new();
 			FixedWorldOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

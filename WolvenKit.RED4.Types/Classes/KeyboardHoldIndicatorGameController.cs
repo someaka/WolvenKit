@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public KeyboardHoldIndicatorGameController()
 		{
 			Progress = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

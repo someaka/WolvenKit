@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ScannerAbilities()
 		{
 			Abilities = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

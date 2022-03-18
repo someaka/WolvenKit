@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<SecuritySystemOutput>>();
 			set => SetPropertyValue<CHandle<SecuritySystemOutput>>(value);
 		}
+
+		public SecuritySystemOutputTaskData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

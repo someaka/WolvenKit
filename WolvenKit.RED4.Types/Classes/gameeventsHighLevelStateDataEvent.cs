@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CurrentHighLevelState = Enums.gamedataNPCHighLevelState.Invalid;
 			CurrentNPCEntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

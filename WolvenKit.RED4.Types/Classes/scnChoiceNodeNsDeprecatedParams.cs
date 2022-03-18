@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ActorId = new() { Id = 4294967295 };
 			PropId = new() { Id = 4294967295 };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

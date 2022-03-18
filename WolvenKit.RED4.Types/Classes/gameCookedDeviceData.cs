@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Parents = new();
 			Children = new();
 			NodePosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

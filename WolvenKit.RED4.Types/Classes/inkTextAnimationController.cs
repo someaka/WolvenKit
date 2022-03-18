@@ -60,5 +60,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CFloat>();
 			set => SetPropertyValue<CFloat>(value);
 		}
+
+		public inkTextAnimationController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -169,6 +169,10 @@ namespace WolvenKit.RED4.Types
 			RevealSlave = true;
 			Lifetime = -1.000000F;
 			DelayID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

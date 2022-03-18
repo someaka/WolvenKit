@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AIRotateToCommand()
 		{
 			Target = new() { WorldPosition = new() { X = new(), Y = new(), Z = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

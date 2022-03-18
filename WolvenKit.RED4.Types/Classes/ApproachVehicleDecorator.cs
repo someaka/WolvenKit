@@ -89,6 +89,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MountEntryPoint = new();
 			ActivationTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

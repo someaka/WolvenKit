@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			TimesToPlay = 1;
 			TimeScale = 1.000000F;
 			Timeline = new() { Items = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

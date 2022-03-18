@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemID = new();
 			SlotIndex = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

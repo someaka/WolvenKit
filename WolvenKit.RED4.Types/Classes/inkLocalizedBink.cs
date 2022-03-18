@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public inkLocalizedBink()
 		{
 			Binks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

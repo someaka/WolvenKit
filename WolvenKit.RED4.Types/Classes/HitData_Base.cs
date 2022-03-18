@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<HitShape_Type>>();
 			set => SetPropertyValue<CEnum<HitShape_Type>>(value);
 		}
+
+		public HitData_Base()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

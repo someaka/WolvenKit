@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiSetCharacterCreationDataRequest()
 		{
 			Attributes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

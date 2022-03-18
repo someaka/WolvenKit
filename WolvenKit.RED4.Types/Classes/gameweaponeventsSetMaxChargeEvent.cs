@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameweaponeventsSetMaxChargeEvent()
 		{
 			MaxCharge = 100.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

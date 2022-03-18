@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public WeakspotOnDestroyEvent()
 		{
 			WeakspotRecordData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

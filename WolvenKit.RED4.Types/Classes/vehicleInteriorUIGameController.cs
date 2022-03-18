@@ -213,6 +213,10 @@ namespace WolvenKit.RED4.Types
 			RpmGaugeForegroundWidget = new();
 			AutopilotTextWidget = new();
 			RpmGaugeMaxSize = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			InitialFwdVector = new() { Y = 1.000000F };
 			TargetPositionWs = new() { W = 1.000000F };
 			TargetDirectionWs = new() { Y = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

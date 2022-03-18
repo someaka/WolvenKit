@@ -80,6 +80,10 @@ namespace WolvenKit.RED4.Types
 		public SharedGameplayPS()
 		{
 			AuthorizationProperties = new() { IsAuthorizationModuleOn = true, AuthorizationDataEntry = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

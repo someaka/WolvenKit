@@ -79,6 +79,10 @@ namespace WolvenKit.RED4.Types
 			MagazineAmmoCapacity = new();
 			MagazineAmmoCount = new();
 			MagazineAmmoID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

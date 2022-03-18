@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameVisionModeSystemRevealIdentifier()
 		{
 			SourceEntityId = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

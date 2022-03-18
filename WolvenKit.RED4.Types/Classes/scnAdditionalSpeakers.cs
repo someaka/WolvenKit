@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public scnAdditionalSpeakers()
 		{
 			Speakers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

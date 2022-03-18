@@ -106,6 +106,10 @@ namespace WolvenKit.RED4.Types
 			NeedsCentreRaycast = true;
 			MinVelocityForFalling = -0.500000F;
 			SlopeCurveName = "slope_curve";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

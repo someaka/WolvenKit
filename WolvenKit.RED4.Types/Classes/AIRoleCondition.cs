@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EAIRole>>();
 			set => SetPropertyValue<CEnum<EAIRole>>(value);
 		}
+
+		public AIRoleCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

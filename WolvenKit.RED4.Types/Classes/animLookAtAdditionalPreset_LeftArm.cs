@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animLookAtAdditionalPreset_LeftArm()
 		{
 			SoftLimitAngle = 360.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

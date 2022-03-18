@@ -139,6 +139,10 @@ namespace WolvenKit.RED4.Types
 			Accent2BGHovered = new();
 			TopConnectionContainer = new();
 			BottomConnectionContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

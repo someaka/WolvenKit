@@ -4,5 +4,11 @@ namespace WolvenKit.RED4.Types
 	[REDMeta]
 	public partial class audioBaseAudioSquadHandler : RedBaseClass
 	{
+		public audioBaseAudioSquadHandler()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

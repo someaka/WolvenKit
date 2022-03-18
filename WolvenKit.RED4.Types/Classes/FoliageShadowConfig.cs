@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			FoliageShadowCascadeGradient = 0.100000F;
 			FoliageShadowCascadeFilterScale = 0.100000F;
 			FoliageShadowCascadeGradientDistanceRange = 50.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

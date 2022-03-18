@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EquipAreas = new();
 			EquipmentSets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

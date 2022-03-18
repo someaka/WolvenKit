@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			FactOnUse = new();
 			FactsOnUse = new();
 			AffectedComponents = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

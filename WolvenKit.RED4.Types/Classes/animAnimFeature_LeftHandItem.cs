@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public animAnimFeature_LeftHandItem()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

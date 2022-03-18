@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SlotId = -1;
 			OrientationEntitySpace = new() { R = 1.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

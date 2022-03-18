@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Name = "default";
 			ChunkMaterials = new();
 			Tags = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

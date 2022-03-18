@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LightStateImageWidget = new();
 			CautionStateImageWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

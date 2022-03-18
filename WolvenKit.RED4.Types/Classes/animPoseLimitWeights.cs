@@ -59,6 +59,10 @@ namespace WolvenKit.RED4.Types
 			Mid = 1.000000F;
 			Max = 1.000000F;
 			PoseTrackIndex = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -688,6 +688,10 @@ namespace WolvenKit.RED4.Types
 			QuickHackVulnerabilties = new();
 			WillingInvestigators = new();
 			IsInteractive = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			BottomElementName = "KeyboardHintItem_Bot";
 			Layout = new();
 			UIItems = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

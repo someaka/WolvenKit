@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public questSetInteractionVisualizerOverride()
 		{
 			ApplyOverride = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questETimeDilationOverride>>();
 			set => SetPropertyValue<CEnum<questETimeDilationOverride>>(value);
 		}
+
+		public questTimeDilation_Player()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

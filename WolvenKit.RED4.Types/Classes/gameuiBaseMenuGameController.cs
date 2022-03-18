@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiBaseMenuGameController()
 		{
 			PuppetSceneInfos = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

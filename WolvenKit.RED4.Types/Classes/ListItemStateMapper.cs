@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<inkWidget>>();
 			set => SetPropertyValue<CWeakHandle<inkWidget>>(value);
 		}
+
+		public ListItemStateMapper()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

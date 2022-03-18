@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public ModifyTelemetryVariable()
 		{
 			Value = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

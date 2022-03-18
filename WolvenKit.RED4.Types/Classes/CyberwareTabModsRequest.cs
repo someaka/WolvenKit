@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<CyberwareDisplayWrapper>>();
 			set => SetPropertyValue<CHandle<CyberwareDisplayWrapper>>(value);
 		}
+
+		public CyberwareTabModsRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

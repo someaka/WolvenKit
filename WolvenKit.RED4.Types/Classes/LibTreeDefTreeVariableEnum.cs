@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Id = 65535;
 			ReadableName = "TreeVar";
 			ExportAsProperty = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

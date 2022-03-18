@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<SignShape>>();
 			set => SetPropertyValue<CEnum<SignShape>>(value);
 		}
+
+		public InteractiveSignCustomData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

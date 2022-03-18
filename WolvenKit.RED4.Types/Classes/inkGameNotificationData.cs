@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			QueueName = "Default";
 			IntroAnimation = "__preload__";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

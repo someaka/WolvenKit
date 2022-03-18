@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public LibTreeDefTreeVariablesList()
 		{
 			List = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

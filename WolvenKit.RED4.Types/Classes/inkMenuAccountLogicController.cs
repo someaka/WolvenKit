@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			PlayerId = new();
 			ChangeAccountLabelTextRef = new();
 			InputDisplayControllerRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

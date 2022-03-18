@@ -50,6 +50,10 @@ namespace WolvenKit.RED4.Types
 			AdvertSoundNames = new();
 			MinSilenceTime = 1.000000F;
 			MaxSilenceTime = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

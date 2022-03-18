@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Stamp = new() { Name = 65535, Ordinal = 65535 };
 			Destinations = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

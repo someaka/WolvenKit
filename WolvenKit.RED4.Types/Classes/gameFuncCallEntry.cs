@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public gameFuncCallEntry()
 		{
 			CallTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

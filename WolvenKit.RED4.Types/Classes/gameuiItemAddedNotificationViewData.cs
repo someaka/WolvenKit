@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiItemAddedNotificationViewData()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

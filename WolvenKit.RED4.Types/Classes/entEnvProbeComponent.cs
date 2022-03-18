@@ -167,6 +167,10 @@ namespace WolvenKit.RED4.Types
 			NeighborMode = Enums.envUtilsNeighborMode.eONLY_SELF;
 			BrightnessEVClamp = 8;
 			Priority = 2;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<QuestItemController>>();
 			set => SetPropertyValue<CWeakHandle<QuestItemController>>(value);
 		}
+
+		public QuestTrackingEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

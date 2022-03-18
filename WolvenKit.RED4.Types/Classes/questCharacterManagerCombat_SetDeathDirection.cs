@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PuppetRef = new() { Names = new() };
 			Direction = Enums.gameeventsDeathDirection.Left;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

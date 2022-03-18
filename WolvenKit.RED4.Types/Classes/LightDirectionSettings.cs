@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Enable = true;
 			Direction = new() { TimeOfYearSeason = Enums.ETimeOfYearSeason.ETOYS_Summer };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			Wrapper = new();
 			StealthIndicatorDeadZoneAngle = 40.000000F;
 			SlowestFlashTime = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

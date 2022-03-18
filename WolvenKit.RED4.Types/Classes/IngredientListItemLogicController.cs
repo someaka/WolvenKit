@@ -139,6 +139,10 @@ namespace WolvenKit.RED4.Types
 			CountWrapper = new();
 			ItemRarity = new();
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

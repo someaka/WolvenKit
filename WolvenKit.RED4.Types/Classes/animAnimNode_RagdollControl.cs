@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Id = 4294967295;
 			InertializationBlendDuration = 1.000000F;
 			InputPoseNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameuiWidgetGameController>>();
 			set => SetPropertyValue<CWeakHandle<gameuiWidgetGameController>>(value);
 		}
+
+		public PlayerDevelopmentDataManager()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

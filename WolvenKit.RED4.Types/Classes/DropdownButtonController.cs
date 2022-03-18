@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Icon = new();
 			Frame = new();
 			Arrow = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 
 namespace WolvenKit.RED4.Types
 {
@@ -8,8 +6,8 @@ namespace WolvenKit.RED4.Types
     {
         public Type InnerType { get; }
 
-        public RedBaseClass GetValue();
-        public void SetValue(RedBaseClass cls);
+        public RedBaseClass? GetValue();
+        public void SetValue(RedBaseClass? cls);
     }
 
     public interface IRedBaseHandle<T> : IRedBaseHandle where T : RedBaseClass

@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			IsPlayer = true;
 			NodeRef1 = new() { Names = new() };
 			NodeRef2 = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<RenderSceneLayer>>();
 			set => SetPropertyValue<CEnum<RenderSceneLayer>>(value);
 		}
+
+		public questSetRenderLayer_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

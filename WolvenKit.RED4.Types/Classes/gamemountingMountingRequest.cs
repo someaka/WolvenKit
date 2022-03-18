@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			LowLevelMountingInfo = new() { ChildId = new(), ParentId = new(), SlotId = new() };
 			PreservePositionAfterMounting = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

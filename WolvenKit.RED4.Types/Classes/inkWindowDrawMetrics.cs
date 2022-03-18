@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			TextureTypeTotal = new();
 			MaxUsedTextureTypes = new();
 			DrawMetrics = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

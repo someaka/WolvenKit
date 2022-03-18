@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			RightHandItem = new();
 			LeftHandItem = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

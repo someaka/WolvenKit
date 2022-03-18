@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			Duration = -1.000000F;
 			Variation = 1;
 			ImpactDirection = -1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

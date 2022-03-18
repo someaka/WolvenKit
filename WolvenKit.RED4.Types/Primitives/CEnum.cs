@@ -8,9 +8,19 @@ namespace WolvenKit.RED4.Types
         public static IRedEnum Parse(Type enumType, string value)
         {
             var method = typeof(CEnum).GetMethod(nameof(Parse), BindingFlags.Public | BindingFlags.Static, null, new[] { typeof(string) }, null);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method CEnum.Parse<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(enumType);
 
-            return (IRedEnum)generic.Invoke(null, new object[] { value });
+            var result = generic.Invoke(null, new object[] { value });
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedEnum)result;
         }
 
         public static CEnum<T> Parse<T>(string value) where T : struct, Enum
@@ -28,7 +38,7 @@ namespace WolvenKit.RED4.Types
     public class CEnum<T> : IRedEnum<T>, IEquatable<CEnum<T>> where T : struct, Enum
     {
         public T? Value { get; init; }
-        public string StringValue { get; init; }
+        public string? StringValue { get; init; }
 
         public CEnum()
         {
@@ -55,15 +65,20 @@ namespace WolvenKit.RED4.Types
 
         public string ToEnumString()
         {
-            if (Value != null)
+            if (Value != null && Value.ToString() != null)
             {
-                return Value.ToString();
+                return Value.ToString()!;
             }
 
-            return StringValue;
+            if (StringValue != null)
+            {
+                return StringValue;
+            }
+
+            throw new NullReferenceException();
         }
 
-        public bool Equals(CEnum<T> other)
+        public bool Equals(CEnum<T>? other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -78,7 +93,7 @@ namespace WolvenKit.RED4.Types
             return Nullable.Equals(Value, other.Value) && StringValue == other.StringValue;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (ReferenceEquals(null, obj))
             {
@@ -100,6 +115,6 @@ namespace WolvenKit.RED4.Types
 
         public override int GetHashCode() => HashCode.Combine(Value, StringValue);
 
-        public override string ToString() => Value.ToString();
+        public override string ToString() => ToEnumString();
     }
 }

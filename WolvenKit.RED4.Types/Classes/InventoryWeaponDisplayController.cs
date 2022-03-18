@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 			SilencerIcon = new();
 			ScopeIcon = new();
 			WeaponAttachmentsDisplay = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			Spacing = 10.000000F;
 			LooseSpacing = 20.000000F;
 			RotateWithSegment = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

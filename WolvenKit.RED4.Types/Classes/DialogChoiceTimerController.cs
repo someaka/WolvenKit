@@ -90,6 +90,10 @@ namespace WolvenKit.RED4.Types
 			Bar = new();
 			TimerValue = new();
 			AnimOptions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

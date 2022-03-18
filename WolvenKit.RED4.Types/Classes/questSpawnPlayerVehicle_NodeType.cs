@@ -64,6 +64,10 @@ namespace WolvenKit.RED4.Types
 		public questSpawnPlayerVehicle_NodeType()
 		{
 			Offset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

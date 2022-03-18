@@ -110,6 +110,10 @@ namespace WolvenKit.RED4.Types
 			Shutter = 125.000000F;
 			Aperture = 8.000000F;
 			Lights = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

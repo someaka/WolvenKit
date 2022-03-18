@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Range = 10.000000F;
 			GlitchSFX = "dev_radio_ditraction_glitching";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

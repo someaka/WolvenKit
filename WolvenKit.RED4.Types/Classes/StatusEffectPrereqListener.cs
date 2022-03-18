@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<StatusEffectPrereqState>>();
 			set => SetPropertyValue<CWeakHandle<StatusEffectPrereqState>>(value);
 		}
+
+		public StatusEffectPrereqListener()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -36,6 +36,10 @@ namespace WolvenKit.RED4.Types
 			SurroundingAreaName = "surroundingArea";
 			TriggeredAlarmID = new();
 			BlinkInterval = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

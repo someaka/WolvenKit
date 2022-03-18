@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			Mappins = new();
 			IsEnabled = true;
 			DropPointSystemLocks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

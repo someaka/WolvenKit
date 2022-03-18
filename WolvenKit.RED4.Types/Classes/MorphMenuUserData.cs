@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameuiCharacterCustomizationEditTag>>();
 			set => SetPropertyValue<CEnum<gameuiCharacterCustomizationEditTag>>(value);
 		}
+
+		public MorphMenuUserData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

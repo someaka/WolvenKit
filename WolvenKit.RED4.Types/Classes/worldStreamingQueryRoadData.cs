@@ -58,6 +58,10 @@ namespace WolvenKit.RED4.Types
 			Transform = new() { Position = new(), Orientation = new() { R = 1.000000F } };
 			RoadGlobalNodeId = new();
 			ConnectedRoadsStartIndex = 65535;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

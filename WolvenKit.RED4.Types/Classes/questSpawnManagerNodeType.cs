@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<populationSpawnerObjectCtrlAction>>();
 			set => SetPropertyValue<CEnum<populationSpawnerObjectCtrlAction>>(value);
 		}
+
+		public questSpawnManagerNodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

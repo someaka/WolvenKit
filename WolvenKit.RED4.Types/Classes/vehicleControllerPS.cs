@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			VehicleDoors = new(6);
 			State = Enums.vehicleEState.Default;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

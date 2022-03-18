@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameIEffectParameter_StringEvaluator>>();
 			set => SetPropertyValue<CHandle<gameIEffectParameter_StringEvaluator>>(value);
 		}
+
+		public gameEffectInputParameter_String()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

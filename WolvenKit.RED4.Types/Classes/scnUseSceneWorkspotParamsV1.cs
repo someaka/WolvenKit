@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			WorkspotInstanceId = new() { Id = 4294967295 };
 			ItemOverride = new() { PropOverrides = new(), ItemOverrides = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

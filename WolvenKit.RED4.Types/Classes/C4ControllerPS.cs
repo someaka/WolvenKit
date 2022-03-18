@@ -20,6 +20,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 44966449988;
 			TweakDBDescriptionRecord = 97999174197;
 			ItemTweakDBString = "C4";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

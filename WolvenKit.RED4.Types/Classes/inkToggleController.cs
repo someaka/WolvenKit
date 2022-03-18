@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public inkToggleController()
 		{
 			ToggleChanged = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

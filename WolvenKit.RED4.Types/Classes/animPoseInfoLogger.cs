@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public animPoseInfoLogger()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

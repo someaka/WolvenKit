@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Flags = 8194;
 			ItemActions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

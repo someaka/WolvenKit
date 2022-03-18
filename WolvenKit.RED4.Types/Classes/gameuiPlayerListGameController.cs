@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			PlayerEntries = new();
 			Container = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

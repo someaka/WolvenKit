@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedeviceRequestType>>();
 			set => SetPropertyValue<CEnum<gamedeviceRequestType>>(value);
 		}
+
+		public RemoveActiveContextEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

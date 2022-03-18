@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameIBlackboard>>();
 			set => SetPropertyValue<CHandle<gameIBlackboard>>(value);
 		}
+
+		public SceneScreen()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<PuppetListener>>();
 			set => SetPropertyValue<CHandle<PuppetListener>>(value);
 		}
+
+		public NPCHitReactionTypePrereqState()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

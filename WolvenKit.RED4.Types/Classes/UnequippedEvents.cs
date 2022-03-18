@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public UnequippedEvents()
 		{
 			StateMachineInstanceData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

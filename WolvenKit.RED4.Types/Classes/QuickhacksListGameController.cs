@@ -620,6 +620,10 @@ namespace WolvenKit.RED4.Types
 			SelectedMemoryLoop = new();
 			LastCompiledTarget = new();
 			StatPoolListenersIndexes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

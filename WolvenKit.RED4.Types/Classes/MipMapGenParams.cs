@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CResourceAsyncReference<CBitmapTexture>>();
 			set => SetPropertyValue<CResourceAsyncReference<CBitmapTexture>>(value);
 		}
+
+		public MipMapGenParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

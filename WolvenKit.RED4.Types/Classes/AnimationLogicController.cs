@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AnimationLogicController()
 		{
 			ImageView = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

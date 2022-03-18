@@ -106,6 +106,10 @@ namespace WolvenKit.RED4.Types
 			SoftwareModsLabel = new();
 			SoftwareModsPush = new();
 			SoftwareModsContainer = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

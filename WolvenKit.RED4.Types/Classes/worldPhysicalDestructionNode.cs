@@ -93,6 +93,10 @@ namespace WolvenKit.RED4.Types
 			DestructionLevelData = new();
 			NavigationSetting = new() { NavmeshImpact = Enums.NavGenNavmeshImpact.Blocking };
 			UseMeshNavmeshSettings = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

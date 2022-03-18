@@ -76,6 +76,10 @@ namespace WolvenKit.RED4.Types
 			Assign = true;
 			SlotName = "seat_front_left";
 			EntrySlotName = "default";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

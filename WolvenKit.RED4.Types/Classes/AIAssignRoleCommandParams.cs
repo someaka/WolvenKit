@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIRole>>();
 			set => SetPropertyValue<CHandle<AIRole>>(value);
 		}
+
+		public AIAssignRoleCommandParams()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

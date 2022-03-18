@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<worldWeatherState>>();
 			set => SetPropertyValue<CHandle<worldWeatherState>>(value);
 		}
+
+		public worldWeatherStateTransition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

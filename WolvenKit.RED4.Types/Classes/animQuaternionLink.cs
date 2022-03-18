@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<animAnimNode_QuaternionValue>>();
 			set => SetPropertyValue<CWeakHandle<animAnimNode_QuaternionValue>>(value);
 		}
+
+		public animQuaternionLink()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

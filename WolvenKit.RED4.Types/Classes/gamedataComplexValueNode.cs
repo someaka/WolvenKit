@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NodeType = Enums.gamedataDataNodeType.ComplexValue;
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

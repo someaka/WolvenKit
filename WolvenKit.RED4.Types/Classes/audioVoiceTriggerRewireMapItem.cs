@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CBool>();
 			set => SetPropertyValue<CBool>(value);
 		}
+
+		public audioVoiceTriggerRewireMapItem()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public Stash()
 		{
 			ControllerTypeName = "StashController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

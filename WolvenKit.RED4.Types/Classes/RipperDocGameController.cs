@@ -503,6 +503,10 @@ namespace WolvenKit.RED4.Types
 			SortingButton = new();
 			SortingDropdown = new();
 			CybewareGrids = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

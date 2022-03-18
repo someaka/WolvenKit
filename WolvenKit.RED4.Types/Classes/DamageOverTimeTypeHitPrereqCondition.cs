@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataStatusEffectType>>();
 			set => SetPropertyValue<CEnum<gamedataStatusEffectType>>(value);
 		}
+
+		public DamageOverTimeTypeHitPrereqCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

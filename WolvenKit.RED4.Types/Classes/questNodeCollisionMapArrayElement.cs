@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public questNodeCollisionMapArrayElement()
 		{
 			ComponentsCollisionMapArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

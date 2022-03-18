@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			Icon = new();
 			BackgroundIcon = new();
 			TextGroup = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

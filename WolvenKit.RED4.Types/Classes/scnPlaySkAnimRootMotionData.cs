@@ -104,6 +104,10 @@ namespace WolvenKit.RED4.Types
 			VehicleChangePhysicsState = true;
 			VehicleEnabledPhysicsOnEnd = true;
 			TrajectoryLOD = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

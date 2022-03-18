@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inkEAnchor>>();
 			set => SetPropertyValue<CEnum<inkEAnchor>>(value);
 		}
+
+		public sampleUIAnchorButton()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

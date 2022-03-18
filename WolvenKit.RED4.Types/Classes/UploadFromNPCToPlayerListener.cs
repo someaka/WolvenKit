@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NpcSquad = new();
 			VariantHud = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

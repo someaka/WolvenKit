@@ -15,9 +15,9 @@ namespace WolvenKit.RED4.IO
     {
         protected readonly BinaryReader _reader;
 
-        protected Red4File _outputFile;
+        protected Red4File? _outputFile;
         protected List<CName> _namesList = new();
-        protected List<IRedImport> importsList = new();
+        protected List<IRedImport> _importsList = new();
 
         private bool _disposed;
 
@@ -50,7 +50,7 @@ namespace WolvenKit.RED4.IO
             set => BaseStream.Position = value;
         }
 
-        public List<IRedImport> ImportsList { get => importsList; set => importsList = value; }
+        public List<IRedImport> ImportsList { get => _importsList; set => _importsList = value; }
 
         protected CName GetStringValue(ushort index, bool isTypeInfo = true)
         {
@@ -61,10 +61,10 @@ namespace WolvenKit.RED4.IO
 
             if (CollectData)
             {
-                DataCollection.RawStringList.Remove(_namesList[index]);
+                DataCollection.RawStringList.Remove(_namesList[index]!);
                 if (!isTypeInfo)
                 {
-                    DataCollection.RawUsedStrings.Add(_namesList[index]);
+                    DataCollection.RawUsedStrings.Add(_namesList[index]!);
                 }
             }
 
@@ -113,7 +113,12 @@ namespace WolvenKit.RED4.IO
             var result = new CVariant();
 
             var typeName = GetStringValue(_reader.ReadUInt16());
-            var (type, flags) = RedReflection.GetCSTypeFromRedType(typeName);
+            if ((string)typeName! == null)
+            {
+                throw new NullReferenceException(nameof(ReadCVariant));
+            }
+
+            var (type, flags) = RedReflection.GetCSTypeFromRedType(typeName!);
             var size = _reader.ReadUInt32() - 4;
             if (size > 0)
             {
@@ -202,9 +207,19 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadMultiChannelCurve), Type.EmptyTypes);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadMultiChannelCurve<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedMultiChannelCurve)generic.Invoke(this, null);
+            var result = generic.Invoke(this, null);
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedMultiChannelCurve)result;
         }
 
         public virtual IRedMultiChannelCurve<T> ReadMultiChannelCurve<T>() where T : IRedType
@@ -227,17 +242,24 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCArray), new[] { typeof(uint) });
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCArray<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedArray)generic.Invoke(this, new object[] { size });
+            var result = generic.Invoke(this, new object[] { size });
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedArray)result;
         }
 
-        protected virtual IRedType ReadArrayItem(int index, Type type, Flags flags)
-        {
-            return Read(type, 0, flags);
-        }
+        protected virtual IRedType ReadArrayItem(int index, Type type, Flags flags) => Read(type, 0, flags);
 
-        public virtual IRedArray<T> ReadCArray<T>(uint size) where T : IRedType
+        public virtual IRedArray<T?> ReadCArray<T>(uint size) where T : IRedType
         {
             var array = new CArray<T>();
 
@@ -269,12 +291,22 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCArrayFixedSize), new[] { typeof(uint), typeof(Flags) });
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCArrayFixedSize<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedArrayFixedSize)generic.Invoke(this, new object[] { size, flags });
+            var result = generic.Invoke(this, new object[] { size, flags });
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedArrayFixedSize)result;
         }
 
-        public virtual IRedArrayFixedSize<T> ReadCArrayFixedSize<T>(uint size, Flags flags) where T : IRedType
+        public virtual IRedArrayFixedSize<T?> ReadCArrayFixedSize<T>(uint size, Flags flags) where T : IRedType
         {
             if (!flags.MoveNext())
             {
@@ -298,9 +330,19 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCBitField), Type.EmptyTypes);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCBitField<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedBitField)generic.Invoke(this, null);
+            var result = generic.Invoke(this, null);
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedBitField)result;
         }
 
         public virtual CBitField<T> ReadCBitField<T>() where T : struct, Enum
@@ -336,17 +378,31 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCEnum), Type.EmptyTypes);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCEnum<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedEnum)generic.Invoke(this, null);
+            var result = generic.Invoke(this, null);
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedEnum)result;
         }
 
         public virtual CEnum<T> ReadCEnum<T>() where T : struct, Enum
         {
             var index = _reader.ReadUInt16();
             var enumString = GetStringValue(index);
+            if ((string)enumString! == null)
+            {
+                throw new NullReferenceException(nameof(ReadCEnum));
+            }
 
-            return CEnum.Parse<T>(enumString);
+            return CEnum.Parse<T>(enumString!);
         }
 
         public virtual IRedHandle ReadCHandle(Type type)
@@ -354,9 +410,19 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCHandle), Type.EmptyTypes);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCHandle<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedHandle)generic.Invoke(this, null);
+            var result = generic.Invoke(this, null);
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedHandle)result;
         }
 
         protected Dictionary<int, List<IRedBaseHandle>> HandleQueue = new();
@@ -382,9 +448,19 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCLegacySingleChannelCurve), Type.EmptyTypes);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCLegacySingleChannelCurve<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedLegacySingleChannelCurve)generic.Invoke(this, null);
+            var result = generic.Invoke(this, null);
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedLegacySingleChannelCurve)result;
         }
 
         public virtual IRedLegacySingleChannelCurve<T> ReadCLegacySingleChannelCurve<T>() where T : IRedType
@@ -428,9 +504,19 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCResourceAsyncReference), Type.EmptyTypes);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCResourceAsyncReference<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedResourceAsyncReference)generic.Invoke(this, null);
+            var result = generic.Invoke(this, null);
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedResourceAsyncReference)result;
         }
 
         public virtual IRedResourceAsyncReference<T> ReadCResourceAsyncReference<T>() where T : RedBaseClass
@@ -441,8 +527,8 @@ namespace WolvenKit.RED4.IO
             {
                 return new CResourceAsyncReference<T>
                 {
-                    DepotPath = importsList[index - 1].DepotPath,
-                    Flags = importsList[index - 1].Flags
+                    DepotPath = _importsList[index - 1].DepotPath,
+                    Flags = _importsList[index - 1].Flags
                 };
             }
 
@@ -458,21 +544,31 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCResourceReference), Type.EmptyTypes);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCResourceReference<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedResourceReference)generic.Invoke(this, null);
+            var result = generic.Invoke(this, null);
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedResourceReference)result;
         }
 
         public virtual IRedResourceReference<T> ReadCResourceReference<T>() where T : RedBaseClass
         {
             var index = _reader.ReadUInt16();
 
-            if (index > 0 && index <= importsList.Count)
+            if (index > 0 && index <= _importsList.Count)
             {
                 return new CResourceReference<T>
                 {
-                    DepotPath = importsList[index - 1].DepotPath,
-                    Flags = importsList[index - 1].Flags
+                    DepotPath = _importsList[index - 1].DepotPath,
+                    Flags = _importsList[index - 1].Flags
                 };
             }
 
@@ -488,12 +584,22 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCStaticArray), new[] { typeof(uint), typeof(Flags) });
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCStaticArray<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedStatic)generic.Invoke(this, new object[] { size, flags });
+            var result = generic.Invoke(this, new object[] { size, flags });
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedStatic)result;
         }
 
-        public virtual IRedStatic<T> ReadCStaticArray<T>(uint size, Flags flags) where T : IRedType
+        public virtual IRedStatic<T?> ReadCStaticArray<T>(uint size, Flags flags) where T : IRedType
         {
             var elementCount = _reader.ReadUInt32();
 
@@ -516,9 +622,19 @@ namespace WolvenKit.RED4.IO
             var innerType = type.GetGenericArguments()[0];
 
             var method = typeof(Red4Reader).GetMethod(nameof(ReadCWeakHandle), Type.EmptyTypes);
+            if (method == null)
+            {
+                throw new MissingMethodException("Method Red4Reader.ReadCWeakHandle<T>() could not be found");
+            }
             var generic = method.MakeGenericMethod(innerType);
 
-            return (IRedWeakHandle)generic.Invoke(this, null);
+            var result = generic.Invoke(this, null);
+            if (result == null)
+            {
+                throw new Exception();
+            }
+
+            return (IRedWeakHandle)result;
         }
 
         public virtual IRedWeakHandle<T> ReadCWeakHandle<T>() where T : RedBaseClass
@@ -576,6 +692,11 @@ namespace WolvenKit.RED4.IO
             var instance = RedTypeManager.Create(type);
             foreach (var propertyInfo in typeInfo.GetWritableProperties())
             {
+                if (propertyInfo.RedName == null)
+                {
+                    throw new Exception($"Property \"{propertyInfo.Name}\" is missing a RedName");
+                }
+
                 var value = Read(propertyInfo.Type, 0, Flags.Empty);
                 instance.SetProperty(propertyInfo.RedName, value);
             }
@@ -583,7 +704,7 @@ namespace WolvenKit.RED4.IO
             return instance;
         }
 
-        public virtual IRedType Read(Type type, uint size = 0, Flags flags = null)
+        public virtual IRedType Read(Type type, uint size = 0, Flags? flags = null)
         {
             if (typeof(RedBaseClass).IsAssignableFrom(type))
             {
@@ -681,11 +802,11 @@ namespace WolvenKit.RED4.IO
                     return ReadGamedataLocKeyWrapper();
 
                 default:
-                    return ThrowNotSupported(type.Name);
+                    return ThrowNotSupported(type!.Name);
             }
         }
 
-        protected virtual IRedType ReadGeneric(Type type, uint size, Flags flags)
+        protected virtual IRedType ReadGeneric(Type type, uint size, Flags? flags)
         {
             switch (type.GetGenericTypeDefinition())
             {
@@ -693,6 +814,10 @@ namespace WolvenKit.RED4.IO
                     return ReadCArray(type, size);
 
                 case { } cType when cType == typeof(CArrayFixedSize<>):
+                    if (flags == null)
+                    {
+                        throw new ArgumentNullException(nameof(flags));
+                    }
                     return ReadCArrayFixedSize(type, size, flags);
 
                 case { } cType when cType == typeof(CBitField<>):
@@ -717,6 +842,10 @@ namespace WolvenKit.RED4.IO
                     return ReadCResourceReference(type);
 
                 case { } cType when cType == typeof(CStatic<>):
+                    if (flags == null)
+                    {
+                        throw new ArgumentNullException(nameof(flags));
+                    }
                     return ReadCStaticArray(type, size, flags);
 
                 case { } cType when cType == typeof(CWeakHandle<>):

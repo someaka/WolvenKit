@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<HighlightEditableData>>();
 			set => SetPropertyValue<CHandle<HighlightEditableData>>(value);
 		}
+
+		public SetDefaultHighlightEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

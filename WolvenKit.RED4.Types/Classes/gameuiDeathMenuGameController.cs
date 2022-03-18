@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public gameuiDeathMenuGameController()
 		{
 			ButtonHintsManagerRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

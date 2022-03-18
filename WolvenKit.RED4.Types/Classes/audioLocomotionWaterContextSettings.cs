@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			ImpulseStrength = 0.002500F;
 			ImpulseMinRadius = 0.040000F;
 			ImpulseMaxRadius = 0.050000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

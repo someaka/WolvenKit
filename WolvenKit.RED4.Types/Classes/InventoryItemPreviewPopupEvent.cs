@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<InventoryItemPreviewData>>();
 			set => SetPropertyValue<CHandle<InventoryItemPreviewData>>(value);
 		}
+
+		public InventoryItemPreviewPopupEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

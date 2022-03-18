@@ -115,6 +115,10 @@ namespace WolvenKit.RED4.Types
 			Attempt = new();
 			SelectedMinigameDef = new();
 			PersonalLinkStatus = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

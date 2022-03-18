@@ -114,6 +114,10 @@ namespace WolvenKit.RED4.Types
 			ParentRef = new() { Names = new() };
 			ChildRef = new() { Names = new() };
 			Role = Enums.gameMountingSlotRole.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -95,6 +95,10 @@ namespace WolvenKit.RED4.Types
 			ScrollWidget = new();
 			ContentWrapper = new();
 			NoEntrySelectedWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

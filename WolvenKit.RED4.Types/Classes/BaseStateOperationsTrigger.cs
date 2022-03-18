@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EDeviceStatus>>();
 			set => SetPropertyValue<CEnum<EDeviceStatus>>(value);
 		}
+
+		public BaseStateOperationsTrigger()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

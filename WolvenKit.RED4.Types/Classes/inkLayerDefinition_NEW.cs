@@ -84,5 +84,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public inkLayerDefinition_NEW()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

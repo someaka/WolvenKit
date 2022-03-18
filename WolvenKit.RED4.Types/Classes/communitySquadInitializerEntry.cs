@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public communitySquadInitializerEntry()
 		{
 			Type = Enums.communityESquadType.Unknown;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

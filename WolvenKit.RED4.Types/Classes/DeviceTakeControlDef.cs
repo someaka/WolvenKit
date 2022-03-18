@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			ActiveDevice = new();
 			IsDeviceWorking = new();
 			ChainLocked = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

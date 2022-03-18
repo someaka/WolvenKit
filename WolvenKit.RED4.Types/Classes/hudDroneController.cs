@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			Timer = new();
 			CameraID = new();
 			CurrentTime = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

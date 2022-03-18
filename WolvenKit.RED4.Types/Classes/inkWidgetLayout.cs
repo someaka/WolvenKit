@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			Margin = new();
 			AnchorPoint = new();
 			SizeCoefficient = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

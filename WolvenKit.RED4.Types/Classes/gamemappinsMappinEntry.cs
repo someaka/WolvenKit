@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Id = new();
 			WorldPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -230,6 +230,10 @@ namespace WolvenKit.RED4.Types
 			SceneSolutionHash = new() { SceneSolutionHash = new() };
 			SceneCategoryTag = Enums.scnSceneCategoryTag.other;
 			DebugSymbols = new() { PerformersDebugSymbols = new(), WorkspotsDebugSymbols = new(), SceneEventsDebugSymbols = new(), SceneNodesDebugSymbols = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

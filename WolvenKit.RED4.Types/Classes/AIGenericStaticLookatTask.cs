@@ -36,5 +36,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<Vector4>();
 			set => SetPropertyValue<Vector4>(value);
 		}
+
+		public AIGenericStaticLookatTask()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

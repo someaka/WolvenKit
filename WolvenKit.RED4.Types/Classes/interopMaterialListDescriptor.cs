@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 		{
 			AppearanceName = "default";
 			AvailableMaterials = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questFinalBoardsEnableSkipCredits_NodeType()
 		{
 			EnableSkipping = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -386,6 +386,10 @@ namespace WolvenKit.RED4.Types
 			LastEquipmentAreas = new();
 			CurrentHotkey = Enums.gameEHotkey.INVALID;
 			ItemDropQueue = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

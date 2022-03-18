@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public genLevelRandomizer()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

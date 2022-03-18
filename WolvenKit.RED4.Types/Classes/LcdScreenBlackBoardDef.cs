@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public LcdScreenBlackBoardDef()
 		{
 			MessegeData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

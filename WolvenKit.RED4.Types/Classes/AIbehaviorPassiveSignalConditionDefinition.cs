@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorPassiveSignalConditionDefinition()
 		{
 			DeactivateSignal = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EntityReference = new() { Names = new() };
 			RefLocalPlayer = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

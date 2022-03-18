@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public audioRadioStationMetadata()
 		{
 			Tracks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

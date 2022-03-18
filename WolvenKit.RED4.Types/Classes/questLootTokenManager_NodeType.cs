@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public questLootTokenManager_NodeType()
 		{
 			Params = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

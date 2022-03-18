@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public gameTransformAnimation_MoveOnSpline()
 		{
 			RotationMode = Enums.gameTransformAnimation_MoveOnSplineRotationMode.Yaw;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

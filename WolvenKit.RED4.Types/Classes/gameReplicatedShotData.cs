@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			TimeStamp = new() { MilliSecs = 18446744073709551615 };
 			TargetLocalOffset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

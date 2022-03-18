@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			VfxResource = new();
 			VfxEventNamesOnExplosion = new();
 			VfxResourceOnFirstHit = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

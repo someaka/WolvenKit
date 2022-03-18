@@ -763,6 +763,10 @@ namespace WolvenKit.RED4.Types
 			DefaultEmptyImageAtlas = "base\\gameplay\\gui\\fullscreen\\inventory\\inventory4_atlas.inkatlas";
 			NewItemsIDs = new();
 			HasAvailableItems = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			StoredClues = new();
 			IsDecriptionEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

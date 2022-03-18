@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			ToggleOperations = new();
 			VFXs = new();
 			FxInstances = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

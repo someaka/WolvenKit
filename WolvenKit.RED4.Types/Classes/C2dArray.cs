@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Headers = new();
 			Data = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

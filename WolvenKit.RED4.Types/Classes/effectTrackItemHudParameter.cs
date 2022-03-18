@@ -44,6 +44,10 @@ namespace WolvenKit.RED4.Types
 			GlitchParameter = new();
 			Scale1 = 1.000000F;
 			GlitchParameter1 = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -86,6 +86,10 @@ namespace WolvenKit.RED4.Types
 			ItemQualityBar = new();
 			ItemSelection = new();
 			ItemIcon = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

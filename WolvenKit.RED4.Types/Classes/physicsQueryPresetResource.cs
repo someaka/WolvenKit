@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public physicsQueryPresetResource()
 		{
 			Presets = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

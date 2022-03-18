@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CArray<CHandle<graphGraphSocketDefinition>>>();
 			set => SetPropertyValue<CArray<CHandle<graphGraphSocketDefinition>>>(value);
 		}
+
+		public graphGraphNodeDefinition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

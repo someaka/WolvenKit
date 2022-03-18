@@ -91,6 +91,10 @@ namespace WolvenKit.RED4.Types
 			ObjectOfInterest = new();
 			WhoBreached = new();
 			Reporter = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -88,6 +88,10 @@ namespace WolvenKit.RED4.Types
 		public AOEAreaSetup()
 		{
 			Duration = -1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

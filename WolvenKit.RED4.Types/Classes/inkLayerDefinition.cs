@@ -75,6 +75,10 @@ namespace WolvenKit.RED4.Types
 			UseGlobalStyleTheme = true;
 			IsAffectedByFadeout = true;
 			UseGameInput = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			ConstraintRadius = 1.000000F;
 			ConstraintScale1 = 1.000000F;
 			ConstraintScale2 = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

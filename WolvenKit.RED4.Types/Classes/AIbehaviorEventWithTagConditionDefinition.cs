@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorEventWithTagConditionDefinition()
 		{
 			ConsumeEvent = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

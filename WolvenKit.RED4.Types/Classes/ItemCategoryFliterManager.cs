@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			FiltersToCheck = new();
 			Filters = new();
 			SharedFiltersToCheck = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

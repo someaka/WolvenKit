@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<PSD_Detector>>();
 			set => SetPropertyValue<CHandle<PSD_Detector>>(value);
 		}
+
+		public Slave_Test()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

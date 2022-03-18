@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataEquipmentArea>>();
 			set => SetPropertyValue<CEnum<gamedataEquipmentArea>>(value);
 		}
+
+		public ClearItemAppearanceTaskData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

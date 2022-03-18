@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Range = -1.000000F;
 			Offset = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

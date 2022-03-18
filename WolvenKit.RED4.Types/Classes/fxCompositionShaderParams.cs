@@ -262,6 +262,10 @@ namespace WolvenKit.RED4.Types
 			UiLayer2Weight = 0.080000F;
 			UiLayer3Weight = 0.070000F;
 			UiLayer4Weight = 0.060000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

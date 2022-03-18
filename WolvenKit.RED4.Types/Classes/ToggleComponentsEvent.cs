@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ToggleComponentsEvent()
 		{
 			ComponentsData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

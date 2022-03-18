@@ -66,6 +66,10 @@ namespace WolvenKit.RED4.Types
 			PuppetRef = new() { Names = new() };
 			UpperBodyState = 1;
 			HighLevelState = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public BriefingScreen()
 		{
 			LogicControllerRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

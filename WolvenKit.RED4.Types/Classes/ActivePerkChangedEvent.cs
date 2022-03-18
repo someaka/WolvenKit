@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataPerkType>>();
 			set => SetPropertyValue<CEnum<gamedataPerkType>>(value);
 		}
+
+		public ActivePerkChangedEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

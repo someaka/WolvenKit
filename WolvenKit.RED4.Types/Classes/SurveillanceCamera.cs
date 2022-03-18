@@ -151,6 +151,10 @@ namespace WolvenKit.RED4.Types
 			ShouldRotate = true;
 			CanDetectIntruders = true;
 			TargetPosition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CName>();
 			set => SetPropertyValue<CName>(value);
 		}
+
+		public PlayerCombatControllerBlackboardListenersFunctions()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

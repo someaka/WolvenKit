@@ -65,6 +65,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Targets = new();
 			BoundingBox = new() { Min = new(), Max = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

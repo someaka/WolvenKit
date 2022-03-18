@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ClimbableColour = new();
 			NotClimbableColour = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

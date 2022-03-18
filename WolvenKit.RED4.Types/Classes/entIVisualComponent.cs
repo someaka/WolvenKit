@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CInt8>();
 			set => SetPropertyValue<CInt8>(value);
 		}
+
+		public entIVisualComponent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			FootTransformIndex = new();
 			PoleVectorRefTransformIndex = new();
 			EnableFootLockFloatTrack = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

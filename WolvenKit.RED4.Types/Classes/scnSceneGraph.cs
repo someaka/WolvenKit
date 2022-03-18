@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Graph = new();
 			StartNodes = new();
 			EndNodes = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

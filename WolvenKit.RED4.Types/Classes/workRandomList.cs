@@ -72,6 +72,10 @@ namespace WolvenKit.RED4.Types
 			Weights = new();
 			PauseBlendOutTime = 0.500000F;
 			DontRepeatLastAnims = 1;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			RootWidget = new();
 			ShapeWidget = new();
 			DataWidget = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

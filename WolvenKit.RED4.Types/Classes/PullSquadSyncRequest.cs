@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<AISquadType>>();
 			set => SetPropertyValue<CEnum<AISquadType>>(value);
 		}
+
+		public PullSquadSyncRequest()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

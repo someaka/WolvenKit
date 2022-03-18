@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MappinType = 169957907894;
 			Variant = Enums.gamedataMappinVariant.DefaultVariant;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

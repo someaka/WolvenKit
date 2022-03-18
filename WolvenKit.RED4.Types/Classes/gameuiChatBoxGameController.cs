@@ -109,6 +109,10 @@ namespace WolvenKit.RED4.Types
 			ChatHistory = new();
 			MaxChatsDisplayed = 7;
 			MaxChatHistory = 100;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

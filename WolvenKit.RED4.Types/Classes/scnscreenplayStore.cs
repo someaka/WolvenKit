@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Lines = new();
 			Options = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

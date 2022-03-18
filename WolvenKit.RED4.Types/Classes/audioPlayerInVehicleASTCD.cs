@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public audioPlayerInVehicleASTCD()
 		{
 			IsInside = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

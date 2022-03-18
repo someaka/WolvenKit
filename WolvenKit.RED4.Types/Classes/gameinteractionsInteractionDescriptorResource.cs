@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameinteractionsInteractionDescriptorResource()
 		{
 			Definition = new() { LayersDefinition = new() { null } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

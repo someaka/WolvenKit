@@ -145,6 +145,10 @@ namespace WolvenKit.RED4.Types
 			ImportControlMaps = true;
 			OverwriteTransformsOfExistingNodes = true;
 			DstPrefabNodePath = new() { Elements = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

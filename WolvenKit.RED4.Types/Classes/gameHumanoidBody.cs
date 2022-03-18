@@ -53,6 +53,10 @@ namespace WolvenKit.RED4.Types
 			BaseEyesHeightRatio = 0.950000F;
 			StanceAnimFeatureName = "stanceStyle";
 			AimAnimFeatureName = "aim";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

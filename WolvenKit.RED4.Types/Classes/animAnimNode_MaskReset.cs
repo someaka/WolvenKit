@@ -27,6 +27,10 @@ namespace WolvenKit.RED4.Types
 			InputLink = new();
 			WeightNode = new();
 			Transforms = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

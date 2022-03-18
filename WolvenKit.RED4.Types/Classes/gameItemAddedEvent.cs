@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameItemAddedEvent()
 		{
 			ItemID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

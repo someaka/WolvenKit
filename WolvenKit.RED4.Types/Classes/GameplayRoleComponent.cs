@@ -157,6 +157,10 @@ namespace WolvenKit.RED4.Types
 			ForcedMappinVisualState = Enums.EMappinVisualState.None;
 			Mappins = new();
 			OffsetValue = 0.040000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public SPresetTimetableEntry()
 		{
 			Time = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

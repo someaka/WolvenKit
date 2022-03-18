@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			SerializedVariables = new();
 			SerializedGroups = new();
 			Files = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<inkSelectionRule>>();
 			set => SetPropertyValue<CEnum<inkSelectionRule>>(value);
 		}
+
+		public LoopAnimationLogicController()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

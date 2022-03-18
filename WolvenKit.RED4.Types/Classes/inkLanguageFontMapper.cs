@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public inkLanguageFontMapper()
 		{
 			Mappings = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

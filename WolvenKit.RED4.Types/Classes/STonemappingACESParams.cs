@@ -94,6 +94,10 @@ namespace WolvenKit.RED4.Types
 			ToneCurveSaturation = 1.000000F;
 			AdjustWhitePoint = true;
 			DimSurround = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public AIbehaviorNodeStatusDebuggerCommand()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

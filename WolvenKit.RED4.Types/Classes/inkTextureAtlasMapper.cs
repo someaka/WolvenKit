@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ClippingRectInPixels = new();
 			ClippingRectInUVCoords = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

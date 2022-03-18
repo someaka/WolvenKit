@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EMeshStreamType>>();
 			set => SetPropertyValue<CEnum<EMeshStreamType>>(value);
 		}
+
+		public SMeshStream()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

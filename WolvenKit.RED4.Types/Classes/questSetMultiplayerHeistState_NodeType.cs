@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questMultiplayerHeistState>>();
 			set => SetPropertyValue<CEnum<questMultiplayerHeistState>>(value);
 		}
+
+		public questSetMultiplayerHeistState_NodeType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

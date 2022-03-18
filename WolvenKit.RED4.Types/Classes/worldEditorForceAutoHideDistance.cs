@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			MinAutoHideDistance = 1.000000F;
 			Multiplier = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

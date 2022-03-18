@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			TweakDBRecord = 98928467386;
 			TweakDBDescriptionRecord = 152448345865;
 			VendingTerminalSetup = new() { VendingBlacklist = new(), TimeToCompletePurchase = 3.000000F };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

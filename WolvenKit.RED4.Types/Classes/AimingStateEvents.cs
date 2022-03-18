@@ -200,6 +200,10 @@ namespace WolvenKit.RED4.Types
 		public AimingStateEvents()
 		{
 			MouseZoomLevel = 100000.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AlarmLight()
 		{
 			ControllerTypeName = "AlarmLightController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

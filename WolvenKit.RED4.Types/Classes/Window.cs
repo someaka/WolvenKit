@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public Window()
 		{
 			ControllerTypeName = "WindowController";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

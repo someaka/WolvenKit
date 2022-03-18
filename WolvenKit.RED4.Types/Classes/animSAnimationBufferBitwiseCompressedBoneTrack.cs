@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Position = new();
 			Orientation = new();
 			Scale = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

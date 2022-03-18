@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			FreezeAnimations = true;
 			Animations = new();
 			LookAtOrbitDistance = 3.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

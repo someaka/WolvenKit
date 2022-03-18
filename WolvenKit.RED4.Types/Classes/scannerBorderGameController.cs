@@ -436,6 +436,10 @@ namespace WolvenKit.RED4.Types
 			OriginalScannerBarFillSize = new();
 			Squares = new();
 			SquaresFilled = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

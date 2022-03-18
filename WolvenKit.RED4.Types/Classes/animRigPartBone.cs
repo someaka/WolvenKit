@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public animRigPartBone()
 		{
 			Weight = 1.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

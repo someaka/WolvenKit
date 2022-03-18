@@ -26,6 +26,10 @@ namespace WolvenKit.RED4.Types
 			Name = "Component";
 			HistoryLength = 30.000000F;
 			SamplesAmount = 60;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

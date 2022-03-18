@@ -106,6 +106,10 @@ namespace WolvenKit.RED4.Types
 			ChunkMask = 18446744073709551615;
 			IsEnabled = true;
 			Tags = new() { Tags = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

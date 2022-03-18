@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			Duration = 1.000000F;
 			PosKeysData = new();
 			RotKeysData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

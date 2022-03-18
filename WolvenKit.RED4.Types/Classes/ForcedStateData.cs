@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public ForcedStateData()
 		{
 			Savable = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

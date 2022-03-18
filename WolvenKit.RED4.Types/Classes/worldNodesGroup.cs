@@ -126,6 +126,10 @@ namespace WolvenKit.RED4.Types
 			ProxyMeshGroupBuildParams = new() { BuildParams = new() };
 			ProxyDistanceFactor = 1.000000F;
 			MetadataArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

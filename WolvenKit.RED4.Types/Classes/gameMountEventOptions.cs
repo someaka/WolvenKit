@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public gameMountEventOptions()
 		{
 			EntityID = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

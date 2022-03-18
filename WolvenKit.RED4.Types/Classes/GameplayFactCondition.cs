@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EntityID = new();
 			Description = "Quest progress";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

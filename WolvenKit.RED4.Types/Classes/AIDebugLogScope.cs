@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Index = 4294967295;
 			Id = 4294967295;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

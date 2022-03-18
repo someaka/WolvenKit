@@ -93,6 +93,10 @@ namespace WolvenKit.RED4.Types
 			HoldIndicatorContainerRef = new();
 			GamepadHoldIndicatorLibraryRef = new() { WidgetLibrary = new() };
 			KeyboardHoldIndicatorLibraryRef = new() { WidgetLibrary = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

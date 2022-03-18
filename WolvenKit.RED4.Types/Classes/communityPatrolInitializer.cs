@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AIPatrolRole>>();
 			set => SetPropertyValue<CHandle<AIPatrolRole>>(value);
 		}
+
+		public communityPatrolInitializer()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

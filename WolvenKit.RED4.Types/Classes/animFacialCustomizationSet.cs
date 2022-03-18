@@ -108,6 +108,10 @@ namespace WolvenKit.RED4.Types
 			PosesInfo = new() { Face = new(), Tongue = new(), Eyes = new() };
 			JointRegions = new();
 			UsedTransformIndices = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

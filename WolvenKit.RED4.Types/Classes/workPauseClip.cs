@@ -36,6 +36,10 @@ namespace WolvenKit.RED4.Types
 			TimeMin = 2.000000F;
 			TimeMax = 5.000000F;
 			BlendOutTime = 0.500000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

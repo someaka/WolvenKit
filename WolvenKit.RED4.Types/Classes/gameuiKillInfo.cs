@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gameKillType>>();
 			set => SetPropertyValue<CEnum<gameKillType>>(value);
 		}
+
+		public gameuiKillInfo()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

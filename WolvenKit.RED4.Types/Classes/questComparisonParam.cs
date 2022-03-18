@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			EntireCommunity = true;
 			ComparisonType = Enums.EComparisonType.Equal;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

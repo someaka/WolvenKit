@@ -43,6 +43,10 @@ namespace WolvenKit.RED4.Types
 			ToggleOperations = new();
 			Priority = Enums.EPriority.Medium;
 			RemovePreviousRequests = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ItemEquipped = new();
 			LastModifiedArea = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

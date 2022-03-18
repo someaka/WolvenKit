@@ -29,6 +29,10 @@ namespace WolvenKit.RED4.Types
 			CanTriggerStim = true;
 			TrueRecord = "TintGlass";
 			FalseRecord = "ClearGlass";
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

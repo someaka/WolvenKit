@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gameObjectSpawnParameter>>();
 			set => SetPropertyValue<CHandle<gameObjectSpawnParameter>>(value);
 		}
+
+		public populationSpawnModifier()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

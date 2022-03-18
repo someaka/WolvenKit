@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Interval = 5.000000F;
 			Elements = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

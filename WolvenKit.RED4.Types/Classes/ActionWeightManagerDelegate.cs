@@ -41,6 +41,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ActionsConditions = new();
 			ActionsWeights = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

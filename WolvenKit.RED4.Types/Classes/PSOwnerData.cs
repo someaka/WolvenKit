@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public PSOwnerData()
 		{
 			Id = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

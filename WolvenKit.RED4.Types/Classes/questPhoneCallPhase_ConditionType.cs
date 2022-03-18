@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<questPhoneCallPhase>>();
 			set => SetPropertyValue<CEnum<questPhoneCallPhase>>(value);
 		}
+
+		public questPhoneCallPhase_ConditionType()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

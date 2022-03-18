@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<ScriptableDeviceComponentPS>>();
 			set => SetPropertyValue<CWeakHandle<ScriptableDeviceComponentPS>>(value);
 		}
+
+		public DelayedTimetableEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

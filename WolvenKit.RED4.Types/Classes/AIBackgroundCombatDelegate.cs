@@ -121,6 +121,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Steps = new();
 			DesiredTarget = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

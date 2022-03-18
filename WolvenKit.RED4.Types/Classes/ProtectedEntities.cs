@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public ProtectedEntities()
 		{
 			ProtectedEntities_ = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

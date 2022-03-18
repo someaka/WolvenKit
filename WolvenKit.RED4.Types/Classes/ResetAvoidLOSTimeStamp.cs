@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<gameIBlackboard>>();
 			set => SetPropertyValue<CWeakHandle<gameIBlackboard>>(value);
 		}
+
+		public ResetAvoidLOSTimeStamp()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

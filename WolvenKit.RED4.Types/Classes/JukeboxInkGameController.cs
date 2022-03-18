@@ -57,6 +57,10 @@ namespace WolvenKit.RED4.Types
 		{
 			ActionsPanel = new();
 			PriceText = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

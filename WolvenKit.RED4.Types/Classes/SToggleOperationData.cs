@@ -28,5 +28,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EOperationClassType>>();
 			set => SetPropertyValue<CEnum<EOperationClassType>>(value);
 		}
+
+		public SToggleOperationData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

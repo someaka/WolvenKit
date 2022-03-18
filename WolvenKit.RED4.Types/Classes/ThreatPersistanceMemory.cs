@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Threats = new();
 			IsPersistent = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

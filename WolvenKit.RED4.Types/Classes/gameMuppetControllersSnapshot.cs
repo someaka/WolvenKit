@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameMuppetControllersSnapshot()
 		{
 			Controllers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -242,6 +242,10 @@ namespace WolvenKit.RED4.Types
 			HolocallHidingAnimationName = "avatarHolocallHidingAnimation";
 			Options = new();
 			Holder = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

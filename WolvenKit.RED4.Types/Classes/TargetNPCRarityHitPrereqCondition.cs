@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamedataNPCRarity>>();
 			set => SetPropertyValue<CEnum<gamedataNPCRarity>>(value);
 		}
+
+		public TargetNPCRarityHitPrereqCondition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

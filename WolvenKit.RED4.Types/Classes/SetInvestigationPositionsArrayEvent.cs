@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public SetInvestigationPositionsArrayEvent()
 		{
 			InvestigationPositionsArray = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

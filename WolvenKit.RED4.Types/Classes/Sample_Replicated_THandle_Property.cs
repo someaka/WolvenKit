@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<Sample_Replicated_Serializable>>();
 			set => SetPropertyValue<CHandle<Sample_Replicated_Serializable>>(value);
 		}
+
+		public Sample_Replicated_THandle_Property()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

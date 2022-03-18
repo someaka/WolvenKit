@@ -77,6 +77,10 @@ namespace WolvenKit.RED4.Types
 			BinkVideo = new();
 			BinkVideos = new();
 			VideoSummary = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			Image = new();
 			Border = new();
 			TranslateOnSelect = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -42,6 +42,10 @@ namespace WolvenKit.RED4.Types
 			EventNames = new();
 			WriteOnlyEventNames = new();
 			ReadOnlyEventNames = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

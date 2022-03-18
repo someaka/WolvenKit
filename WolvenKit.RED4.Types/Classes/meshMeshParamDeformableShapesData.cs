@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			OwnerIndex = new();
 			StartingPose = new();
 			FinalPose = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

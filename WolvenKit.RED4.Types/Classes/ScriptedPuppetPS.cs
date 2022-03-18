@@ -240,6 +240,10 @@ namespace WolvenKit.RED4.Types
 			GenericMeleeLoadout = new() { ItemID = new() };
 			GenericRangedLoadout = new() { ItemID = new() };
 			Transgressions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -111,6 +111,10 @@ namespace WolvenKit.RED4.Types
 			BlendAllTracks = true;
 			BlendTrackMode = Enums.animEBlendTracksMode.AGBT_Interpolate;
 			Tracks = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

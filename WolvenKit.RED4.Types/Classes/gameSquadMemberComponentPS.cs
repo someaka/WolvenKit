@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public gameSquadMemberComponentPS()
 		{
 			Entries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

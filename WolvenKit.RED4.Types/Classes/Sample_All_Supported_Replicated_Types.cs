@@ -155,6 +155,10 @@ namespace WolvenKit.RED4.Types
 			Struct = new();
 			DynamicArray = new();
 			StaticArray = new(0);
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

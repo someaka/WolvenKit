@@ -32,6 +32,10 @@ namespace WolvenKit.RED4.Types
 		public rendSLightFlickering()
 		{
 			FlickerPeriod = 0.200000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

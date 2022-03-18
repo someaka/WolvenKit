@@ -196,6 +196,10 @@ namespace WolvenKit.RED4.Types
 			CostReductionArrow = new();
 			CachedDescriptionSize = new();
 			DefaultMargin = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

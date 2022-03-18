@@ -24,6 +24,10 @@ namespace WolvenKit.RED4.Types
 		public RequestUIRefreshEvent()
 		{
 			Requester = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

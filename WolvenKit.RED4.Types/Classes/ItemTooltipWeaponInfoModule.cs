@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 			SilencerIndicator = new();
 			AmmoText = new();
 			AmmoWrapper = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

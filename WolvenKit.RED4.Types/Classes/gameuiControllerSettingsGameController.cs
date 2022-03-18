@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			SouthpawWidgets = new();
 			LegacyWidgets = new();
 			ButtonHintsManagerRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

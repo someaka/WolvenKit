@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public QuestAddTransition()
 		{
 			Transition = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -44,5 +44,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<AttributeData>>();
 			set => SetPropertyValue<CHandle<AttributeData>>(value);
 		}
+
+		public TraitTooltipData()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

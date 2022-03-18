@@ -217,6 +217,10 @@ namespace WolvenKit.RED4.Types
 		{
 			NpcOccupiedSlots = new();
 			PreviousInteractionState = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

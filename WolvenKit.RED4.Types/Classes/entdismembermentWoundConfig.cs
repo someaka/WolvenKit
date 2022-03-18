@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<entdismembermentResourceSetE>>();
 			set => SetPropertyValue<CEnum<entdismembermentResourceSetE>>(value);
 		}
+
+		public entdismembermentWoundConfig()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

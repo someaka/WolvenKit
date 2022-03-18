@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public vehicleChangeStateEvent()
 		{
 			State = Enums.vehicleEState.Default;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

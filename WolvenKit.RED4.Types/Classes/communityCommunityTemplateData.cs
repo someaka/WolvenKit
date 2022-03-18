@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Entries = new() { null };
 			CrowdEntries = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

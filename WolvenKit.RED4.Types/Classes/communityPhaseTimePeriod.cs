@@ -51,6 +51,10 @@ namespace WolvenKit.RED4.Types
 			Markings = new();
 			SpotNodeRefs = new();
 			Categories = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

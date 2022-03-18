@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			HeaderLabel = new();
 			DescLabel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

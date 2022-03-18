@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<IScriptable>>();
 			set => SetPropertyValue<CWeakHandle<IScriptable>>(value);
 		}
+
+		public gamestateMachineActionParameterWeakIScriptable()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public GenericHitPrereq()
 		{
 			Conditions = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

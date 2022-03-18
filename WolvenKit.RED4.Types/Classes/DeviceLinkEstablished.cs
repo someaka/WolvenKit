@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<DeviceLinkComponentPS>>();
 			set => SetPropertyValue<CWeakHandle<DeviceLinkComponentPS>>(value);
 		}
+
+		public DeviceLinkEstablished()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

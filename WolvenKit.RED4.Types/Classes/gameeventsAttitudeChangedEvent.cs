@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<EAIAttitude>>();
 			set => SetPropertyValue<CEnum<EAIAttitude>>(value);
 		}
+
+		public gameeventsAttitudeChangedEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

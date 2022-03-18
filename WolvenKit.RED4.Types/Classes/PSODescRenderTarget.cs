@@ -68,5 +68,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<PSODescBlendModeFactor>>();
 			set => SetPropertyValue<CEnum<PSODescBlendModeFactor>>(value);
 		}
+
+		public PSODescRenderTarget()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

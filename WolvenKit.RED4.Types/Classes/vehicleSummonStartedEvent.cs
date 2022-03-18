@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<vehicleSummonState>>();
 			set => SetPropertyValue<CEnum<vehicleSummonState>>(value);
 		}
+
+		public vehicleSummonStartedEvent()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

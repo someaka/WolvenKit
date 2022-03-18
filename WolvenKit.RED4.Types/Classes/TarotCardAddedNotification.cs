@@ -25,6 +25,10 @@ namespace WolvenKit.RED4.Types
 		{
 			CardImage = new();
 			CardNameLabel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

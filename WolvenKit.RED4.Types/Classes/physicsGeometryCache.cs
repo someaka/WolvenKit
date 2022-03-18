@@ -60,6 +60,10 @@ namespace WolvenKit.RED4.Types
 			SectorGeometries = new();
 			SectorCacheEntries = new();
 			AlwaysLoadedSector = new() { SectorBounds = new() { Min = new(), Max = new() } };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -137,6 +137,10 @@ namespace WolvenKit.RED4.Types
 		{
 			SaveVersion = 220;
 			GameVersion = 1500;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -48,6 +48,10 @@ namespace WolvenKit.RED4.Types
 		public FunctionalTestsDataMemoryPoolStaticData()
 		{
 			Children = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

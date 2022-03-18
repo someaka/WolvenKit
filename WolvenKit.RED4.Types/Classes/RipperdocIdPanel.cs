@@ -34,6 +34,10 @@ namespace WolvenKit.RED4.Types
 			FluffContainer = new();
 			NameLabel = new();
 			MoneyLabel = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

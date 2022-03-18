@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnSceneMarker()
 		{
 			Markers = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

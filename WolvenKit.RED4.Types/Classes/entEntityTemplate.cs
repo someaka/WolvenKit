@@ -119,6 +119,10 @@ namespace WolvenKit.RED4.Types
 			BackendDataOverrides = new();
 			ResolvedDependencies = new();
 			InplaceResources = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

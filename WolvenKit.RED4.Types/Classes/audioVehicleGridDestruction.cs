@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			BottomLayer = new() { BackLeft = new(), BackRight = new(), CenterBackLeft = new(), CenterBackRight = new(), CenterForwardLeft = new(), CenterForwardRight = new(), FrontLeft = new(), FrontRight = new() };
 			UpperLayer = new() { BackLeft = new(), BackRight = new(), CenterBackLeft = new(), CenterBackRight = new(), CenterForwardLeft = new(), CenterForwardRight = new(), FrontLeft = new(), FrontRight = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

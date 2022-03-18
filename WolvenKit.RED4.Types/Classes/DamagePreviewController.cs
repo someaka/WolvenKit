@@ -74,6 +74,10 @@ namespace WolvenKit.RED4.Types
 			FullBar = new();
 			StippedBar = new();
 			RootCanvas = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

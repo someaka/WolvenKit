@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CHandle<gamestateMachineFunctor>>();
 			set => SetPropertyValue<CHandle<gamestateMachineFunctor>>(value);
 		}
+
+		public gamestateMachineTransition()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

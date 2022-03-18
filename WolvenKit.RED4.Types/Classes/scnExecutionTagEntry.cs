@@ -20,5 +20,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CUInt8>();
 			set => SetPropertyValue<CUInt8>(value);
 		}
+
+		public scnExecutionTagEntry()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

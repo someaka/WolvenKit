@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public MediaResaveData()
 		{
 			MediaDeviceData = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

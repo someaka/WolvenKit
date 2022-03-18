@@ -52,6 +52,10 @@ namespace WolvenKit.RED4.Types
 			InputFloatTrack = new();
 			PoseInputNode = new();
 			FloatInputNode = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

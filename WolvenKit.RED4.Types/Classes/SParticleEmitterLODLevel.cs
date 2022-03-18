@@ -68,6 +68,10 @@ namespace WolvenKit.RED4.Types
 			BurstList = new();
 			LodSwitchDistance = 100.000000F;
 			IsEnabled = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

@@ -17,6 +17,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Name = "Component";
 			SnapToGround = true;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

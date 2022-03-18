@@ -83,6 +83,10 @@ namespace WolvenKit.RED4.Types
 			TextRef = new();
 			ActionLabelRef = new();
 			ActionRef = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

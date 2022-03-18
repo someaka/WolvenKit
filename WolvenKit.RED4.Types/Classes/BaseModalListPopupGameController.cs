@@ -97,6 +97,10 @@ namespace WolvenKit.RED4.Types
 		{
 			Content = new();
 			C_scrollInputThreshold = 0.750000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

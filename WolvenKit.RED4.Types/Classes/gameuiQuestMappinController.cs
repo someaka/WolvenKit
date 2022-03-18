@@ -33,6 +33,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DistanceText = new();
 			DisplayName = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

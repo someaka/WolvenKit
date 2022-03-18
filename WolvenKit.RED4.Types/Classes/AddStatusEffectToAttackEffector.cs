@@ -40,6 +40,10 @@ namespace WolvenKit.RED4.Types
 		public AddStatusEffectToAttackEffector()
 		{
 			StatusEffect = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

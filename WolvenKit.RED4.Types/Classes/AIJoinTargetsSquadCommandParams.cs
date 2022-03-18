@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public AIJoinTargetsSquadCommandParams()
 		{
 			TargetPuppetRef = new() { Names = new() };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

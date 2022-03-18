@@ -12,5 +12,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CWeakHandle<GenericHitPrereqState>>();
 			set => SetPropertyValue<CWeakHandle<GenericHitPrereqState>>(value);
 		}
+
+		public HitCallback()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

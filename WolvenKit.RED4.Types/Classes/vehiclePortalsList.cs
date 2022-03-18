@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public vehiclePortalsList()
 		{
 			ListPoints = new();
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

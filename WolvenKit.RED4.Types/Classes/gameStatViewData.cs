@@ -112,6 +112,10 @@ namespace WolvenKit.RED4.Types
 		public gameStatViewData()
 		{
 			Type = Enums.gamedataStatType.Invalid;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

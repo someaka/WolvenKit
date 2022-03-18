@@ -76,5 +76,12 @@ namespace WolvenKit.RED4.Types
 			get => GetPropertyValue<CEnum<gamePSMBodyCarryingStyle>>();
 			set => SetPropertyValue<CEnum<gamePSMBodyCarryingStyle>>(value);
 		}
+
+		public CarriedObjectEvents()
+		{
+			PostConstruct();
+		}
+
+		partial void PostConstruct();
 	}
 }

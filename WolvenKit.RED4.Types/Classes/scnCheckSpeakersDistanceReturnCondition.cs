@@ -16,6 +16,10 @@ namespace WolvenKit.RED4.Types
 		public scnCheckSpeakersDistanceReturnCondition()
 		{
 			Params = new() { Distance = 5.000000F, ComparisonType = Enums.EComparisonType.Less };
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

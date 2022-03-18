@@ -157,6 +157,10 @@ namespace WolvenKit.RED4.Types
 			NormalsEnable = true;
 			HierarchyDepth = 3;
 			QualityLevel = Enums.ESSAOQualityLevel.SSAOQUALITY_VeryHigh;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }

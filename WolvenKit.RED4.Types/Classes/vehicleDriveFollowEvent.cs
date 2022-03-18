@@ -49,6 +49,10 @@ namespace WolvenKit.RED4.Types
 		{
 			DistanceMin = 1.000000F;
 			DistanceMax = 2.000000F;
+
+			PostConstruct();
 		}
+
+		partial void PostConstruct();
 	}
 }
