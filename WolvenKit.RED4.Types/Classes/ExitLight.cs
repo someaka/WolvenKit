@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExitLight : ElectricLight
 {
-	[REDMeta]
-	public partial class ExitLight : ElectricLight
+	public ExitLight()
 	{
-		public ExitLight()
-		{
-			ControllerTypeName = "ExitLightController";
+		ControllerTypeName = "ExitLightController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

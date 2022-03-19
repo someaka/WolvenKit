@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearCustomObjectDescriptionEvent : redEvent
 {
-	[REDMeta]
-	public partial class ClearCustomObjectDescriptionEvent : redEvent
+	public ClearCustomObjectDescriptionEvent()
 	{
-		public ClearCustomObjectDescriptionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

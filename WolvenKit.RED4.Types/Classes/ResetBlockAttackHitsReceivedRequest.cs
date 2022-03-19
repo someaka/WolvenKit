@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetBlockAttackHitsReceivedRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ResetBlockAttackHitsReceivedRequest : gameScriptableSystemRequest
+	public ResetBlockAttackHitsReceivedRequest()
 	{
-		public ResetBlockAttackHitsReceivedRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

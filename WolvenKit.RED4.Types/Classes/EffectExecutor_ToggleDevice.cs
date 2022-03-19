@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectExecutor_ToggleDevice : EffectExecutor_Device
 {
-	[REDMeta]
-	public partial class EffectExecutor_ToggleDevice : EffectExecutor_Device
+	public EffectExecutor_ToggleDevice()
 	{
-		public EffectExecutor_ToggleDevice()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

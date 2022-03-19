@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SmokeMachineControllerPS : BasicDistractionDeviceControllerPS
 {
-	[REDMeta]
-	public partial class SmokeMachineControllerPS : BasicDistractionDeviceControllerPS
+	public SmokeMachineControllerPS()
 	{
-		public SmokeMachineControllerPS()
-		{
-			DeviceName = "LocKey#146";
-			TweakDBRecord = 89045576546;
-			TweakDBDescriptionRecord = 139901527839;
+		DeviceName = "LocKey#146";
+		TweakDBRecord = 89045576546;
+		TweakDBDescriptionRecord = 139901527839;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

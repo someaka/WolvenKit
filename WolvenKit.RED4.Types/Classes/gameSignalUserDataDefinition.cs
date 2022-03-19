@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSignalUserDataDefinition : ISerializable
 {
-	[REDMeta]
-	public partial class gameSignalUserDataDefinition : ISerializable
+	public gameSignalUserDataDefinition()
 	{
-		public gameSignalUserDataDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UIInGameNotificationRemoveEvent : redEvent
 {
-	[REDMeta]
-	public partial class UIInGameNotificationRemoveEvent : redEvent
+	public UIInGameNotificationRemoveEvent()
 	{
-		public UIInGameNotificationRemoveEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

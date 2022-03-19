@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkSystemServerRequesResult : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkSystemServerRequesResult : inkCallbackBase
+	public inkSystemServerRequesResult()
 	{
-		public inkSystemServerRequesResult()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

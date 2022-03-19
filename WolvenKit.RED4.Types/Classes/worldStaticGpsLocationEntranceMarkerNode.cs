@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldStaticGpsLocationEntranceMarkerNode : worldNode
 {
-	[REDMeta]
-	public partial class worldStaticGpsLocationEntranceMarkerNode : worldNode
+	public worldStaticGpsLocationEntranceMarkerNode()
 	{
-		public worldStaticGpsLocationEntranceMarkerNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

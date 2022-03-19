@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_PoseLsToMs : animAnimNode_OnePoseInput
 {
-	[REDMeta]
-	public partial class animAnimNode_PoseLsToMs : animAnimNode_OnePoseInput
+	public animAnimNode_PoseLsToMs()
 	{
-		public animAnimNode_PoseLsToMs()
-		{
-			Id = 4294967295;
-			InputLink = new();
+		Id = 4294967295;
+		InputLink = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

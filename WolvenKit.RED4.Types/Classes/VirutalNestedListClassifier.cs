@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VirutalNestedListClassifier : inkVirtualItemTemplateClassifierWrapper
 {
-	[REDMeta]
-	public partial class VirutalNestedListClassifier : inkVirtualItemTemplateClassifierWrapper
+	public VirutalNestedListClassifier()
 	{
-		public VirutalNestedListClassifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

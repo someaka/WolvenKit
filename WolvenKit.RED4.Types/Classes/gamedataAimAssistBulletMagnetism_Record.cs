@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAimAssistBulletMagnetism_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataAimAssistBulletMagnetism_Record : gamedataTweakDBRecord
+	public gamedataAimAssistBulletMagnetism_Record()
 	{
-		public gamedataAimAssistBulletMagnetism_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

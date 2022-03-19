@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HoloTableController : MediaDeviceController
 {
-	[REDMeta]
-	public partial class HoloTableController : MediaDeviceController
+	public HoloTableController()
 	{
-		public HoloTableController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

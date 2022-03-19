@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficPersistentLanePolygonResource : resStreamedResource
 {
-	[REDMeta]
-	public partial class worldTrafficPersistentLanePolygonResource : resStreamedResource
+	public worldTrafficPersistentLanePolygonResource()
 	{
-		public worldTrafficPersistentLanePolygonResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

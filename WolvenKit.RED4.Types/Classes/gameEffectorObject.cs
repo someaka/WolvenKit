@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectorObject : ISerializable
 {
-	[REDMeta]
-	public partial class gameEffectorObject : ISerializable
+	public gameEffectorObject()
 	{
-		public gameEffectorObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

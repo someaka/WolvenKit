@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NcartTimetableController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class NcartTimetableController : ScriptableDeviceComponent
+	public NcartTimetableController()
 	{
-		public NcartTimetableController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

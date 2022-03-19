@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldEffectNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldEffectNodeInstance : worldINodeInstance
+	public worldEffectNodeInstance()
 	{
-		public worldEffectNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

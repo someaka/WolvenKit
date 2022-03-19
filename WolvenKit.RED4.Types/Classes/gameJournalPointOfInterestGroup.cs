@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameJournalPointOfInterestGroup : gameJournalFileEntry
 {
-	[REDMeta]
-	public partial class gameJournalPointOfInterestGroup : gameJournalFileEntry
+	public gameJournalPointOfInterestGroup()
 	{
-		public gameJournalPointOfInterestGroup()
-		{
-			Entries = new();
+		Entries = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

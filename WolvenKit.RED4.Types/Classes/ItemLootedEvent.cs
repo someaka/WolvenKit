@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemLootedEvent : redEvent
 {
-	[REDMeta]
-	public partial class ItemLootedEvent : redEvent
+	public ItemLootedEvent()
 	{
-		public ItemLootedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsCustomPositionMappin : gamemappinsRuntimeMappin
 {
-	[REDMeta]
-	public partial class gamemappinsCustomPositionMappin : gamemappinsRuntimeMappin
+	public gamemappinsCustomPositionMappin()
 	{
-		public gamemappinsCustomPositionMappin()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EnterVehicle : AIVehicleTaskAbstract
 {
-	[REDMeta]
-	public partial class EnterVehicle : AIVehicleTaskAbstract
+	public EnterVehicle()
 	{
-		public EnterVehicle()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

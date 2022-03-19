@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficCompiledNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldTrafficCompiledNodeInstance : worldINodeInstance
+	public worldTrafficCompiledNodeInstance()
 	{
-		public worldTrafficCompiledNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

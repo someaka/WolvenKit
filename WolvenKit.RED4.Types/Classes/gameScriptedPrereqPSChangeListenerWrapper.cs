@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScriptedPrereqPSChangeListenerWrapper : IScriptable
 {
-	[REDMeta]
-	public partial class gameScriptedPrereqPSChangeListenerWrapper : IScriptable
+	public gameScriptedPrereqPSChangeListenerWrapper()
 	{
-		public gameScriptedPrereqPSChangeListenerWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

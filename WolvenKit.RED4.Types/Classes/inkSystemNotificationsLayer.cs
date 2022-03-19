@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkSystemNotificationsLayer : inkFullScreenLayer
 {
-	[REDMeta]
-	public partial class inkSystemNotificationsLayer : inkFullScreenLayer
+	public inkSystemNotificationsLayer()
 	{
-		public inkSystemNotificationsLayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

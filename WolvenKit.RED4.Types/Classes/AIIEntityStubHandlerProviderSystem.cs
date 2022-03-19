@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIIEntityStubHandlerProviderSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class AIIEntityStubHandlerProviderSystem : gameIGameSystem
+	public AIIEntityStubHandlerProviderSystem()
 	{
-		public AIIEntityStubHandlerProviderSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MinigameGenerationRulePredefinedBoard : gameuiMinigameGenerationRule
 {
-	[REDMeta]
-	public partial class MinigameGenerationRulePredefinedBoard : gameuiMinigameGenerationRule
+	public MinigameGenerationRulePredefinedBoard()
 	{
-		public MinigameGenerationRulePredefinedBoard()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

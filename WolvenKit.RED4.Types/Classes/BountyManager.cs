@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BountyManager : IScriptable
 {
-	[REDMeta]
-	public partial class BountyManager : IScriptable
+	public BountyManager()
 	{
-		public BountyManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeathWithoutAnimationCondition : AIDeathConditions
 {
-	[REDMeta]
-	public partial class DeathWithoutAnimationCondition : AIDeathConditions
+	public DeathWithoutAnimationCondition()
 	{
-		public DeathWithoutAnimationCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitDistanceCoveredPrereqState : GenericHitPrereqState
 {
-	[REDMeta]
-	public partial class HitDistanceCoveredPrereqState : GenericHitPrereqState
+	public HitDistanceCoveredPrereqState()
 	{
-		public HitDistanceCoveredPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

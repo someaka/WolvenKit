@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAcousticSectorNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldAcousticSectorNodeInstance : worldINodeInstance
+	public worldAcousticSectorNodeInstance()
 	{
-		public worldAcousticSectorNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

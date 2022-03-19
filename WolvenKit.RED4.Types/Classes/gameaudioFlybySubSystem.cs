@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameaudioFlybySubSystem : gameaudioISoundComponentSubSystem
 {
-	[REDMeta]
-	public partial class gameaudioFlybySubSystem : gameaudioISoundComponentSubSystem
+	public gameaudioFlybySubSystem()
 	{
-		public gameaudioFlybySubSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

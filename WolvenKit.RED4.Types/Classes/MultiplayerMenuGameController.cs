@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MultiplayerMenuGameController : PreGameSubMenuGameController
 {
-	[REDMeta]
-	public partial class MultiplayerMenuGameController : PreGameSubMenuGameController
+	public MultiplayerMenuGameController()
 	{
-		public MultiplayerMenuGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

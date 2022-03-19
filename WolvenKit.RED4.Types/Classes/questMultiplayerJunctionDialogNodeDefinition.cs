@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questMultiplayerJunctionDialogNodeDefinition : questDisableableNodeDefinition
 {
-	[REDMeta]
-	public partial class questMultiplayerJunctionDialogNodeDefinition : questDisableableNodeDefinition
+	public questMultiplayerJunctionDialogNodeDefinition()
 	{
-		public questMultiplayerJunctionDialogNodeDefinition()
-		{
-			Sockets = new();
-			Id = 65535;
+		Sockets = new();
+		Id = 65535;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

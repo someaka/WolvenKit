@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrenadeLookAtEvents : lookAtPresetItemBaseEvents
 {
-	[REDMeta]
-	public partial class GrenadeLookAtEvents : lookAtPresetItemBaseEvents
+	public GrenadeLookAtEvents()
 	{
-		public GrenadeLookAtEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

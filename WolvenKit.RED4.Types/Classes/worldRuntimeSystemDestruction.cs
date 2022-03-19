@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemDestruction : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemDestruction : worldIRuntimeSystem
+	public worldRuntimeSystemDestruction()
 	{
-		public worldRuntimeSystemDestruction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

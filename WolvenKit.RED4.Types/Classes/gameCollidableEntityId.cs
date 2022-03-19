@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCollidableEntityId : ISerializable
 {
-	[REDMeta]
-	public partial class gameCollidableEntityId : ISerializable
+	public gameCollidableEntityId()
 	{
-		public gameCollidableEntityId()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

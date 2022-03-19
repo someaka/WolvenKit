@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimationTimeline : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameTransformAnimationTimeline : RedBaseClass
+	[Ordinal(0)] 
+	[RED("items")] 
+	public CArray<gameTransformAnimationTrackItem> Items
 	{
-		[Ordinal(0)] 
-		[RED("items")] 
-		public CArray<gameTransformAnimationTrackItem> Items
-		{
-			get => GetPropertyValue<CArray<gameTransformAnimationTrackItem>>();
-			set => SetPropertyValue<CArray<gameTransformAnimationTrackItem>>(value);
-		}
-
-		public gameTransformAnimationTimeline()
-		{
-			Items = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<gameTransformAnimationTrackItem>>();
+		set => SetPropertyValue<CArray<gameTransformAnimationTrackItem>>(value);
 	}
+
+	public gameTransformAnimationTimeline()
+	{
+		Items = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

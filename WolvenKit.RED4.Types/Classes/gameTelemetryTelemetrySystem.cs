@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTelemetryTelemetrySystem : gameITelemetrySystem
 {
-	[REDMeta]
-	public partial class gameTelemetryTelemetrySystem : gameITelemetrySystem
+	public gameTelemetryTelemetrySystem()
 	{
-		public gameTelemetryTelemetrySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

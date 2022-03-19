@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameGameplayLogicPackageSystem : gameIGameplayLogicPackageSystem
 {
-	[REDMeta]
-	public partial class gameGameplayLogicPackageSystem : gameIGameplayLogicPackageSystem
+	public gameGameplayLogicPackageSystem()
 	{
-		public gameGameplayLogicPackageSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

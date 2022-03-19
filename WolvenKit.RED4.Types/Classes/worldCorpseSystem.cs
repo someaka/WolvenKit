@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldCorpseSystem : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldCorpseSystem : worldIRuntimeSystem
+	public worldCorpseSystem()
 	{
-		public worldCorpseSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

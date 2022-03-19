@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameJournalContactModifierEntry : gameJournalEntry
 {
-	[REDMeta]
-	public partial class gameJournalContactModifierEntry : gameJournalEntry
+	public gameJournalContactModifierEntry()
 	{
-		public gameJournalContactModifierEntry()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

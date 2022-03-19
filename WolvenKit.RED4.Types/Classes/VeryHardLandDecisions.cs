@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VeryHardLandDecisions : FailedLandingAbstractDecisions
 {
-	[REDMeta]
-	public partial class VeryHardLandDecisions : FailedLandingAbstractDecisions
+	public VeryHardLandDecisions()
 	{
-		public VeryHardLandDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

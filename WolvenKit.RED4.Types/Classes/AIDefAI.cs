@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIDefAI : AIResourceReference
 {
-	[REDMeta]
-	public partial class AIDefAI : AIResourceReference
+	public AIDefAI()
 	{
-		public AIDefAI()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

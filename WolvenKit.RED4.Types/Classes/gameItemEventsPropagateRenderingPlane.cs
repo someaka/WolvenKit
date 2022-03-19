@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameItemEventsPropagateRenderingPlane : redEvent
 {
-	[REDMeta]
-	public partial class gameItemEventsPropagateRenderingPlane : redEvent
+	public gameItemEventsPropagateRenderingPlane()
 	{
-		public gameItemEventsPropagateRenderingPlane()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

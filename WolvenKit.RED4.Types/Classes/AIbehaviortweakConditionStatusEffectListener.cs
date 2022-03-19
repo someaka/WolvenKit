@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviortweakConditionStatusEffectListener : gameIStatusEffectListener
 {
-	[REDMeta]
-	public partial class AIbehaviortweakConditionStatusEffectListener : gameIStatusEffectListener
+	public AIbehaviortweakConditionStatusEffectListener()
 	{
-		public AIbehaviortweakConditionStatusEffectListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

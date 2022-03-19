@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityAlarmController : MasterController
 {
-	[REDMeta]
-	public partial class SecurityAlarmController : MasterController
+	public SecurityAlarmController()
 	{
-		public SecurityAlarmController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

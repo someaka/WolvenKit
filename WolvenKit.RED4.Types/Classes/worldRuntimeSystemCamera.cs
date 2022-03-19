@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemCamera : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemCamera : worldIRuntimeSystem
+	public worldRuntimeSystemCamera()
 	{
-		public worldRuntimeSystemCamera()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ScriptConditionTypeBase : IScriptable
 {
-	[REDMeta]
-	public partial class ScriptConditionTypeBase : IScriptable
+	public ScriptConditionTypeBase()
 	{
-		public ScriptConditionTypeBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

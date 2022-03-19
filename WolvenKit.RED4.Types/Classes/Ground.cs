@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Ground : DefaultTransition
 {
-	[REDMeta]
-	public partial class Ground : DefaultTransition
+	public Ground()
 	{
-		public Ground()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

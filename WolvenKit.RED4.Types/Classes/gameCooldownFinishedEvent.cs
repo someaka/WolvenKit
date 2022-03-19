@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCooldownFinishedEvent : gameCooldownSystemEvent
 {
-	[REDMeta]
-	public partial class gameCooldownFinishedEvent : gameCooldownSystemEvent
+	public gameCooldownFinishedEvent()
 	{
-		public gameCooldownFinishedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

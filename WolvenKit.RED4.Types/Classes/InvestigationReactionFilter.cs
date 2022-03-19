@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InvestigationReactionFilter : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class InvestigationReactionFilter : gameEffectObjectSingleFilter_Scripted
+	public InvestigationReactionFilter()
 	{
-		public InvestigationReactionFilter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

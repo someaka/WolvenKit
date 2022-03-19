@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SyncAnimDeathTask : WithoutHitDataDeathTask
 {
-	[REDMeta]
-	public partial class SyncAnimDeathTask : WithoutHitDataDeathTask
+	public SyncAnimDeathTask()
 	{
-		public SyncAnimDeathTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EndOne : DefaultTest
 {
-	[REDMeta]
-	public partial class EndOne : DefaultTest
+	public EndOne()
 	{
-		public EndOne()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

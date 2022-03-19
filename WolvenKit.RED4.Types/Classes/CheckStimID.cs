@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckStimID : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class CheckStimID : AIbehaviorconditionScript
+	public CheckStimID()
 	{
-		public CheckStimID()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

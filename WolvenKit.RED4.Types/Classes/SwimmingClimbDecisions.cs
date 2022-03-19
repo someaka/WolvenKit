@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SwimmingClimbDecisions : LocomotionGroundDecisions
 {
-	[REDMeta]
-	public partial class SwimmingClimbDecisions : LocomotionGroundDecisions
+	public SwimmingClimbDecisions()
 	{
-		public SwimmingClimbDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

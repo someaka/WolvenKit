@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InspectionDecisions : HighLevelTransition
 {
-	[REDMeta]
-	public partial class InspectionDecisions : HighLevelTransition
+	public InspectionDecisions()
 	{
-		public InspectionDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

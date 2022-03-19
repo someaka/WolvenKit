@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeadBodyEvent : redEvent
 {
-	[REDMeta]
-	public partial class DeadBodyEvent : redEvent
+	public DeadBodyEvent()
 	{
-		public DeadBodyEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

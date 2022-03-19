@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ScriptableDeviceComponent : gameDeviceComponent
 {
-	[REDMeta]
-	public partial class ScriptableDeviceComponent : gameDeviceComponent
+	public ScriptableDeviceComponent()
 	{
-		public ScriptableDeviceComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

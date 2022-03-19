@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LowFPSSelectCoverMode : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class LowFPSSelectCoverMode : AIbehaviortaskScript
+	public LowFPSSelectCoverMode()
 	{
-		public LowFPSSelectCoverMode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

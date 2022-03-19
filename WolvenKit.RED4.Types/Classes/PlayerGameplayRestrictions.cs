@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerGameplayRestrictions : IScriptable
 {
-	[REDMeta]
-	public partial class PlayerGameplayRestrictions : IScriptable
+	public PlayerGameplayRestrictions()
 	{
-		public PlayerGameplayRestrictions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

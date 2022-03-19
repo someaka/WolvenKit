@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkFastTravelLoadingScreenData : inkILoadingScreenPersistentData
 {
-	[REDMeta]
-	public partial class inkFastTravelLoadingScreenData : inkILoadingScreenPersistentData
+	public inkFastTravelLoadingScreenData()
 	{
-		public inkFastTravelLoadingScreenData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

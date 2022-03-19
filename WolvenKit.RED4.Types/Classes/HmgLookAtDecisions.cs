@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HmgLookAtDecisions : lookAtPresetGunBaseDecisions
 {
-	[REDMeta]
-	public partial class HmgLookAtDecisions : lookAtPresetGunBaseDecisions
+	public HmgLookAtDecisions()
 	{
-		public HmgLookAtDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

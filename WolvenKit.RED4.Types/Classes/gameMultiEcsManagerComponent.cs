@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMultiEcsManagerComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameMultiEcsManagerComponent : entIComponent
+	public gameMultiEcsManagerComponent()
 	{
-		public gameMultiEcsManagerComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

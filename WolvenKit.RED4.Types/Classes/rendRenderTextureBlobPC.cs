@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class rendRenderTextureBlobPC : rendIRenderTextureBlob
 {
-	[REDMeta]
-	public partial class rendRenderTextureBlobPC : rendIRenderTextureBlob
+	public rendRenderTextureBlobPC()
 	{
-		public rendRenderTextureBlobPC()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

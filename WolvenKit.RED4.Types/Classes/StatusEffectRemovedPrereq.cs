@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StatusEffectRemovedPrereq : StatusEffectPrereq
 {
-	[REDMeta]
-	public partial class StatusEffectRemovedPrereq : StatusEffectPrereq
+	public StatusEffectRemovedPrereq()
 	{
-		public StatusEffectRemovedPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

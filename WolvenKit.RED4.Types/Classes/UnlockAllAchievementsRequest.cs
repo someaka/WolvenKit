@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnlockAllAchievementsRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UnlockAllAchievementsRequest : gameScriptableSystemRequest
+	public UnlockAllAchievementsRequest()
 	{
-		public UnlockAllAchievementsRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

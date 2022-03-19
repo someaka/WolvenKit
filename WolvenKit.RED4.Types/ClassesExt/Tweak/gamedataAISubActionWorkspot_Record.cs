@@ -1,14 +1,13 @@
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class gamedataAISubActionWorkspot_Record
 {
-	public partial class gamedataAISubActionWorkspot_Record
-	{
-		[RED("workspotObject")]
-		[REDProperty(IsIgnored = true)]
-		public TweakDBID WorkspotObject
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-	}
+    [RED("workspotObject")]
+    [REDProperty(IsIgnored = true)]
+    public TweakDBID WorkspotObject
+    {
+        get => GetPropertyValue<TweakDBID>();
+        set => SetPropertyValue<TweakDBID>(value);
+    }
 }

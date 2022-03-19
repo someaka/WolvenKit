@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleeParriedEvents : MeleeEventsTransition
 {
-	[REDMeta]
-	public partial class MeleeParriedEvents : MeleeEventsTransition
+	public MeleeParriedEvents()
 	{
-		public MeleeParriedEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

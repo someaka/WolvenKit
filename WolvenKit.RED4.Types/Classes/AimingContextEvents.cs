@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AimingContextEvents : InputContextTransitionEvents
 {
-	[REDMeta]
-	public partial class AimingContextEvents : InputContextTransitionEvents
+	public AimingContextEvents()
 	{
-		public AimingContextEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

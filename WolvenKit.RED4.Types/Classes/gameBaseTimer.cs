@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameBaseTimer : IScriptable
 {
-	[REDMeta]
-	public partial class gameBaseTimer : IScriptable
+	public gameBaseTimer()
 	{
-		public gameBaseTimer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

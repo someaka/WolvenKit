@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectDecalPlayData : effectPlacedTrackItemPlayData
 {
-	[REDMeta]
-	public partial class effectDecalPlayData : effectPlacedTrackItemPlayData
+	public effectDecalPlayData()
 	{
-		public effectDecalPlayData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

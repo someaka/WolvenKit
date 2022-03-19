@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisableAreaIndicatorEvent : redEvent
 {
-	[REDMeta]
-	public partial class DisableAreaIndicatorEvent : redEvent
+	public DisableAreaIndicatorEvent()
 	{
-		public DisableAreaIndicatorEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

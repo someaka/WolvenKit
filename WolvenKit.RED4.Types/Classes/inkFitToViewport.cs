@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkFitToViewport : inkUserData
 {
-	[REDMeta]
-	public partial class inkFitToViewport : inkUserData
+	public inkFitToViewport()
 	{
-		public inkFitToViewport()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

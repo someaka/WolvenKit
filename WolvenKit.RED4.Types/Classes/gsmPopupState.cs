@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmPopupState : gsmState
 {
-	[REDMeta]
-	public partial class gsmPopupState : gsmState
+	public gsmPopupState()
 	{
-		public gsmPopupState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

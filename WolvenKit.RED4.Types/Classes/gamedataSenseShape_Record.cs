@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataSenseShape_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataSenseShape_Record : gamedataTweakDBRecord
+	public gamedataSenseShape_Record()
 	{
-		public gamedataSenseShape_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

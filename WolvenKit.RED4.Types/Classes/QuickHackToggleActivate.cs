@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickHackToggleActivate : ToggleActivate
 {
-	[REDMeta]
-	public partial class QuickHackToggleActivate : ToggleActivate
+	public QuickHackToggleActivate()
 	{
-		public QuickHackToggleActivate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConfessionBoothController : BasicDistractionDeviceController
 {
-	[REDMeta]
-	public partial class ConfessionBoothController : BasicDistractionDeviceController
+	public ConfessionBoothController()
 	{
-		public ConfessionBoothController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

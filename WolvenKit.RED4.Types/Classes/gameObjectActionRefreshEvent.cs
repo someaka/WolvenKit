@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameObjectActionRefreshEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameObjectActionRefreshEvent : redEvent
+	public gameObjectActionRefreshEvent()
 	{
-		public gameObjectActionRefreshEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

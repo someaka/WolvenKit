@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScriptedPrereqAttitudeListenerWrapper : IScriptable
 {
-	[REDMeta]
-	public partial class gameScriptedPrereqAttitudeListenerWrapper : IScriptable
+	public gameScriptedPrereqAttitudeListenerWrapper()
 	{
-		public gameScriptedPrereqAttitudeListenerWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

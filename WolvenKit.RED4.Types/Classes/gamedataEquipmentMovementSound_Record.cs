@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataEquipmentMovementSound_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataEquipmentMovementSound_Record : gamedataTweakDBRecord
+	public gamedataEquipmentMovementSound_Record()
 	{
-		public gamedataEquipmentMovementSound_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsRuntimeInteractionMappinData : gamemappinsIRuntimeMappinData
 {
-	[REDMeta]
-	public partial class gamemappinsRuntimeInteractionMappinData : gamemappinsIRuntimeMappinData
+	public gamemappinsRuntimeInteractionMappinData()
 	{
-		public gamemappinsRuntimeInteractionMappinData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

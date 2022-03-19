@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitIsMovingPrereqState : GenericHitPrereqState
 {
-	[REDMeta]
-	public partial class HitIsMovingPrereqState : GenericHitPrereqState
+	public HitIsMovingPrereqState()
 	{
-		public HitIsMovingPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

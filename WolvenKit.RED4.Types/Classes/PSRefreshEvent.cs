@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PSRefreshEvent : redEvent
 {
-	[REDMeta]
-	public partial class PSRefreshEvent : redEvent
+	public PSRefreshEvent()
 	{
-		public PSRefreshEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

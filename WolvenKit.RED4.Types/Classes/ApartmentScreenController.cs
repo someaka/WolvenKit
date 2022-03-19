@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ApartmentScreenController : LcdScreenController
 {
-	[REDMeta]
-	public partial class ApartmentScreenController : LcdScreenController
+	public ApartmentScreenController()
 	{
-		public ApartmentScreenController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

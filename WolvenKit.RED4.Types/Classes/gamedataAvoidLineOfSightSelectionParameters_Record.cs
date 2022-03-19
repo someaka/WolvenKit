@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAvoidLineOfSightSelectionParameters_Record : gamedataCoverSelectionParameters_Record
 {
-	[REDMeta]
-	public partial class gamedataAvoidLineOfSightSelectionParameters_Record : gamedataCoverSelectionParameters_Record
+	public gamedataAvoidLineOfSightSelectionParameters_Record()
 	{
-		public gamedataAvoidLineOfSightSelectionParameters_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

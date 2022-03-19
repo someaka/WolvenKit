@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ScannerTargetChangedRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ScannerTargetChangedRequest : gameScriptableSystemRequest
+	[Ordinal(0)] 
+	[RED("scannerTarget")] 
+	public entEntityID ScannerTarget
 	{
-		[Ordinal(0)] 
-		[RED("scannerTarget")] 
-		public entEntityID ScannerTarget
-		{
-			get => GetPropertyValue<entEntityID>();
-			set => SetPropertyValue<entEntityID>(value);
-		}
-
-		public ScannerTargetChangedRequest()
-		{
-			ScannerTarget = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<entEntityID>();
+		set => SetPropertyValue<entEntityID>(value);
 	}
+
+	public ScannerTargetChangedRequest()
+	{
+		ScannerTarget = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

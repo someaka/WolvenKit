@@ -1,19 +1,16 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GoToFloor : ActionBool
 {
-	[REDMeta]
-	public partial class GoToFloor : ActionBool
+	public GoToFloor()
 	{
-		public GoToFloor()
-		{
-			RequesterID = new();
-			InteractionChoice = new() { CaptionParts = new() { Parts = new() }, Data = new(), ChoiceMetaData = new() { Type = new() }, LookAtDescriptor = new() { Offset = new(), OrbId = new() } };
-			ActionWidgetPackage = new() { DependendActions = new() };
-			CanTriggerStim = true;
+		RequesterID = new();
+		InteractionChoice = new() { CaptionParts = new() { Parts = new() }, Data = new(), ChoiceMetaData = new() { Type = new() }, LookAtDescriptor = new() { Offset = new(), OrbId = new() } };
+		ActionWidgetPackage = new() { DependendActions = new() };
+		CanTriggerStim = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

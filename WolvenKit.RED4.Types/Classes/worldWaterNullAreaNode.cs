@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldWaterNullAreaNode : worldAreaShapeNode
 {
-	[REDMeta]
-	public partial class worldWaterNullAreaNode : worldAreaShapeNode
+	public worldWaterNullAreaNode()
 	{
-		public worldWaterNullAreaNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MenuItemDelayedUpdate : redEvent
 {
-	[REDMeta]
-	public partial class MenuItemDelayedUpdate : redEvent
+	public MenuItemDelayedUpdate()
 	{
-		public MenuItemDelayedUpdate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

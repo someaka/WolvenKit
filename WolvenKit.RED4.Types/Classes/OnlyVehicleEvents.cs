@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnlyVehicleEvents : QuickSlotsReadyEvents
 {
-	[REDMeta]
-	public partial class OnlyVehicleEvents : QuickSlotsReadyEvents
+	public OnlyVehicleEvents()
 	{
-		public OnlyVehicleEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

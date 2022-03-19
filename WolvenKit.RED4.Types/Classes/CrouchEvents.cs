@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CrouchEvents : LocomotionGroundEvents
 {
-	[REDMeta]
-	public partial class CrouchEvents : LocomotionGroundEvents
+	public CrouchEvents()
 	{
-		public CrouchEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

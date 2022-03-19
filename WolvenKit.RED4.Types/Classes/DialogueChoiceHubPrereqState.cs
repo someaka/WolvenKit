@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DialogueChoiceHubPrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class DialogueChoiceHubPrereqState : gamePrereqState
+	public DialogueChoiceHubPrereqState()
 	{
-		public DialogueChoiceHubPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

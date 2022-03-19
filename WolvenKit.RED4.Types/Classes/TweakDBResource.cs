@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TweakDBResource : CResource
 {
-	[REDMeta]
-	public partial class TweakDBResource : CResource
+	public TweakDBResource()
 	{
-		public TweakDBResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

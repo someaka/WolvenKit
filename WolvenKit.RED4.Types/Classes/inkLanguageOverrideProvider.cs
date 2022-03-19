@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class inkLanguageOverrideProvider : inkUserData
 {
-	[REDMeta]
-	public partial class inkLanguageOverrideProvider : inkUserData
+	[Ordinal(0)] 
+	[RED("languageId")] 
+	public CEnum<inkLanguageId> LanguageId
 	{
-		[Ordinal(0)] 
-		[RED("languageId")] 
-		public CEnum<inkLanguageId> LanguageId
-		{
-			get => GetPropertyValue<CEnum<inkLanguageId>>();
-			set => SetPropertyValue<CEnum<inkLanguageId>>(value);
-		}
-
-		public inkLanguageOverrideProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<inkLanguageId>>();
+		set => SetPropertyValue<CEnum<inkLanguageId>>(value);
 	}
+
+	public inkLanguageOverrideProvider()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

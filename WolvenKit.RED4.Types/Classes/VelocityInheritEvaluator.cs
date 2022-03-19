@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VelocityInheritEvaluator : PhysicsParticleInitializer
 {
-	[REDMeta]
-	public partial class VelocityInheritEvaluator : PhysicsParticleInitializer
+	public VelocityInheritEvaluator()
 	{
-		public VelocityInheritEvaluator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

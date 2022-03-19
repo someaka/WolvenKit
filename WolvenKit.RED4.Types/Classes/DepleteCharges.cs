@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DepleteCharges : redEvent
 {
-	[REDMeta]
-	public partial class DepleteCharges : redEvent
+	public DepleteCharges()
 	{
-		public DepleteCharges()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

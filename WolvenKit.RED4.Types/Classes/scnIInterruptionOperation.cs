@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnIInterruptionOperation : ISerializable
 {
-	[REDMeta]
-	public partial class scnIInterruptionOperation : ISerializable
+	public scnIInterruptionOperation()
 	{
-		public scnIInterruptionOperation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

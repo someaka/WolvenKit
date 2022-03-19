@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameInputTriggerState : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameInputTriggerState : RedBaseClass
+	public gameInputTriggerState()
 	{
-		public gameInputTriggerState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

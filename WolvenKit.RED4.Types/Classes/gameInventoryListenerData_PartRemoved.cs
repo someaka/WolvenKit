@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameInventoryListenerData_PartRemoved : gameInventoryListenerData_Base
 {
-	[REDMeta]
-	public partial class gameInventoryListenerData_PartRemoved : gameInventoryListenerData_Base
+	public gameInventoryListenerData_PartRemoved()
 	{
-		public gameInventoryListenerData_PartRemoved()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

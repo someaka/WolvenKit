@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectDurationModifier_Scripted : gameEffectDurationModifier
 {
-	[REDMeta]
-	public partial class gameEffectDurationModifier_Scripted : gameEffectDurationModifier
+	public gameEffectDurationModifier_Scripted()
 	{
-		public gameEffectDurationModifier_Scripted()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

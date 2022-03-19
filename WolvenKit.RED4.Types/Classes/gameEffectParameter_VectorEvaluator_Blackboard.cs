@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectParameter_VectorEvaluator_Blackboard : gameIEffectParameter_VectorEvaluator
 {
-	[REDMeta]
-	public partial class gameEffectParameter_VectorEvaluator_Blackboard : gameIEffectParameter_VectorEvaluator
+	[Ordinal(0)] 
+	[RED("blackboardProperty")] 
+	public gameBlackboardPropertyBindingDefinition BlackboardProperty
 	{
-		[Ordinal(0)] 
-		[RED("blackboardProperty")] 
-		public gameBlackboardPropertyBindingDefinition BlackboardProperty
-		{
-			get => GetPropertyValue<gameBlackboardPropertyBindingDefinition>();
-			set => SetPropertyValue<gameBlackboardPropertyBindingDefinition>(value);
-		}
-
-		public gameEffectParameter_VectorEvaluator_Blackboard()
-		{
-			BlackboardProperty = new() { SerializableID = new(), PropertyPath = new() };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gameBlackboardPropertyBindingDefinition>();
+		set => SetPropertyValue<gameBlackboardPropertyBindingDefinition>(value);
 	}
+
+	public gameEffectParameter_VectorEvaluator_Blackboard()
+	{
+		BlackboardProperty = new() { SerializableID = new(), PropertyPath = new() };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

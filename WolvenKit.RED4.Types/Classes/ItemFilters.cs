@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemFilters : IScriptable
 {
-	[REDMeta]
-	public partial class ItemFilters : IScriptable
+	public ItemFilters()
 	{
-		public ItemFilters()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

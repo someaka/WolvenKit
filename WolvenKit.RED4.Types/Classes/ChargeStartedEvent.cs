@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChargeStartedEvent : redEvent
 {
-	[REDMeta]
-	public partial class ChargeStartedEvent : redEvent
+	public ChargeStartedEvent()
 	{
-		public ChargeStartedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

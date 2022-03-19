@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICAgent : gameComponent
 {
-	[REDMeta]
-	public partial class AICAgent : gameComponent
+	public AICAgent()
 	{
-		public AICAgent()
-		{
-			Name = "AIComponent";
+		Name = "AIComponent";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

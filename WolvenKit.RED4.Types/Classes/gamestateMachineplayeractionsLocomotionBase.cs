@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineplayeractionsLocomotionBase : gamestateMachineStateActionDefinition
 {
-	[REDMeta]
-	public partial class gamestateMachineplayeractionsLocomotionBase : gamestateMachineStateActionDefinition
+	public gamestateMachineplayeractionsLocomotionBase()
 	{
-		public gamestateMachineplayeractionsLocomotionBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

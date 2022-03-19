@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamegpsIGPSSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gamegpsIGPSSystem : gameIGameSystem
+	public gamegpsIGPSSystem()
 	{
-		public gamegpsIGPSSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CharacterDataPrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class CharacterDataPrereqState : gamePrereqState
+	public CharacterDataPrereqState()
 	{
-		public CharacterDataPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

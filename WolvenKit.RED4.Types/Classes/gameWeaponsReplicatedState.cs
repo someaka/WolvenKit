@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameWeaponsReplicatedState : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameWeaponsReplicatedState : RedBaseClass
+	public gameWeaponsReplicatedState()
 	{
-		public gameWeaponsReplicatedState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ToggleGlassTintHack : ToggleGlassTint
 {
-	[REDMeta]
-	public partial class ToggleGlassTintHack : ToggleGlassTint
+	public ToggleGlassTintHack()
 	{
-		public ToggleGlassTintHack()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ApplyJammer : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class ApplyJammer : gameEffectExecutor_Scripted
+	public ApplyJammer()
 	{
-		public ApplyJammer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

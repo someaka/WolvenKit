@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIAutonomousConditions : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class AIAutonomousConditions : AIbehaviorconditionScript
+	public AIAutonomousConditions()
 	{
-		public AIAutonomousConditions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleWindowState : ChangeStanceStateAbstract
 {
-	[REDMeta]
-	public partial class VehicleWindowState : ChangeStanceStateAbstract
+	public VehicleWindowState()
 	{
-		public VehicleWindowState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

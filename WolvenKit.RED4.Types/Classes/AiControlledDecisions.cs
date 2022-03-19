@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AiControlledDecisions : HighLevelTransition
 {
-	[REDMeta]
-	public partial class AiControlledDecisions : HighLevelTransition
+	public AiControlledDecisions()
 	{
-		public AiControlledDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

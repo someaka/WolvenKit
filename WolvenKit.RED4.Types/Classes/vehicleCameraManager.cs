@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleCameraManager : IScriptable
 {
-	[REDMeta]
-	public partial class vehicleCameraManager : IScriptable
+	public vehicleCameraManager()
 	{
-		public vehicleCameraManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

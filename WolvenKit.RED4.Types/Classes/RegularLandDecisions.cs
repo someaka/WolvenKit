@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RegularLandDecisions : AbstractLandDecisions
 {
-	[REDMeta]
-	public partial class RegularLandDecisions : AbstractLandDecisions
+	public RegularLandDecisions()
 	{
-		public RegularLandDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

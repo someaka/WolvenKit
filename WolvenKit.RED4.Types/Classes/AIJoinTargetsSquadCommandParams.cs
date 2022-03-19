@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIJoinTargetsSquadCommandParams : questScriptedAICommandParams
 {
-	[REDMeta]
-	public partial class AIJoinTargetsSquadCommandParams : questScriptedAICommandParams
+	[Ordinal(0)] 
+	[RED("targetPuppetRef")] 
+	public gameEntityReference TargetPuppetRef
 	{
-		[Ordinal(0)] 
-		[RED("targetPuppetRef")] 
-		public gameEntityReference TargetPuppetRef
-		{
-			get => GetPropertyValue<gameEntityReference>();
-			set => SetPropertyValue<gameEntityReference>(value);
-		}
-
-		public AIJoinTargetsSquadCommandParams()
-		{
-			TargetPuppetRef = new() { Names = new() };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gameEntityReference>();
+		set => SetPropertyValue<gameEntityReference>(value);
 	}
+
+	public AIJoinTargetsSquadCommandParams()
+	{
+		TargetPuppetRef = new() { Names = new() };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimFeatureEvent : RedBaseClass
 {
-	[REDMeta]
-	public partial class animAnimFeatureEvent : RedBaseClass
+	public animAnimFeatureEvent()
 	{
-		public animAnimFeatureEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

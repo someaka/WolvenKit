@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVehicleWheelDrivingSetup_2_Record : gamedataVehicleWheelDrivingSetup_Record
 {
-	[REDMeta]
-	public partial class gamedataVehicleWheelDrivingSetup_2_Record : gamedataVehicleWheelDrivingSetup_Record
+	public gamedataVehicleWheelDrivingSetup_2_Record()
 	{
-		public gamedataVehicleWheelDrivingSetup_2_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnsecureFootingFallDecisions : FallDecisions
 {
-	[REDMeta]
-	public partial class UnsecureFootingFallDecisions : FallDecisions
+	public UnsecureFootingFallDecisions()
 	{
-		public UnsecureFootingFallDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

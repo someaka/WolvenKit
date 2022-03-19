@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineplayeractionsWeaponStart : gamestateMachineplayeractionsWeaponActionBase
 {
-	[REDMeta]
-	public partial class gamestateMachineplayeractionsWeaponStart : gamestateMachineplayeractionsWeaponActionBase
+	public gamestateMachineplayeractionsWeaponStart()
 	{
-		public gamestateMachineplayeractionsWeaponStart()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

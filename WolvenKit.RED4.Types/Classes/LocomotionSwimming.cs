@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LocomotionSwimming : LocomotionTransition
 {
-	[REDMeta]
-	public partial class LocomotionSwimming : LocomotionTransition
+	public LocomotionSwimming()
 	{
-		public LocomotionSwimming()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

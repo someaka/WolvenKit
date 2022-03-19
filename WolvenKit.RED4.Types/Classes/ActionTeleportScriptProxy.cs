@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActionTeleportScriptProxy : CActionScriptProxy
 {
-	[REDMeta]
-	public partial class ActionTeleportScriptProxy : CActionScriptProxy
+	public ActionTeleportScriptProxy()
 	{
-		public ActionTeleportScriptProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

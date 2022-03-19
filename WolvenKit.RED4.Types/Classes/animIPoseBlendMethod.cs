@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animIPoseBlendMethod : ISerializable
 {
-	[REDMeta]
-	public partial class animIPoseBlendMethod : ISerializable
+	public animIPoseBlendMethod()
 	{
-		public animIPoseBlendMethod()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

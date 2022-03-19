@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiFinalBoardsGoToMainMenu : redEvent
 {
-	[REDMeta]
-	public partial class gameuiFinalBoardsGoToMainMenu : redEvent
+	public gameuiFinalBoardsGoToMainMenu()
 	{
-		public gameuiFinalBoardsGoToMainMenu()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BoothModeGameController : gameuiWidgetGameController
 {
-	[REDMeta]
-	public partial class BoothModeGameController : gameuiWidgetGameController
+	[Ordinal(2)] 
+	[RED("buttonRef")] 
+	public inkWidgetReference ButtonRef
 	{
-		[Ordinal(2)] 
-		[RED("buttonRef")] 
-		public inkWidgetReference ButtonRef
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		public BoothModeGameController()
-		{
-			ButtonRef = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	public BoothModeGameController()
+	{
+		ButtonRef = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActivatorController : MasterController
 {
-	[REDMeta]
-	public partial class ActivatorController : MasterController
+	public ActivatorController()
 	{
-		public ActivatorController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

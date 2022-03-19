@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectObjectProvider_VentilationAreaEntities : gameEffectObjectProvider_Scripted
 {
-	[REDMeta]
-	public partial class EffectObjectProvider_VentilationAreaEntities : gameEffectObjectProvider_Scripted
+	public EffectObjectProvider_VentilationAreaEntities()
 	{
-		public EffectObjectProvider_VentilationAreaEntities()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

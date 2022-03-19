@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiPhotoModeRegisaterCallbacksEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiPhotoModeRegisaterCallbacksEvent : redEvent
+	public gameuiPhotoModeRegisaterCallbacksEvent()
 	{
-		public gameuiPhotoModeRegisaterCallbacksEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

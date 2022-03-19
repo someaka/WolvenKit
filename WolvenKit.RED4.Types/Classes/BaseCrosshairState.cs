@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BaseCrosshairState : DefaultTransition
 {
-	[REDMeta]
-	public partial class BaseCrosshairState : DefaultTransition
+	public BaseCrosshairState()
 	{
-		public BaseCrosshairState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

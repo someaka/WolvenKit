@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProgressBarFinishedProccess : redEvent
 {
-	[REDMeta]
-	public partial class ProgressBarFinishedProccess : redEvent
+	public ProgressBarFinishedProccess()
 	{
-		public ProgressBarFinishedProccess()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

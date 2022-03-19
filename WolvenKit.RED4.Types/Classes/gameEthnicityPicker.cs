@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEthnicityPicker : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameEthnicityPicker : RedBaseClass
+	public gameEthnicityPicker()
 	{
-		public gameEthnicityPicker()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

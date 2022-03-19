@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VentilationEffectorController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class VentilationEffectorController : ScriptableDeviceComponent
+	public VentilationEffectorController()
 	{
-		public VentilationEffectorController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

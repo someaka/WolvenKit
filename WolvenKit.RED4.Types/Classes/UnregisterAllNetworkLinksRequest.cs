@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnregisterAllNetworkLinksRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UnregisterAllNetworkLinksRequest : gameScriptableSystemRequest
+	public UnregisterAllNetworkLinksRequest()
 	{
-		public UnregisterAllNetworkLinksRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

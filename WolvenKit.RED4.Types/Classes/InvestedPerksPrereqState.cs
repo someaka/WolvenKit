@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InvestedPerksPrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class InvestedPerksPrereqState : gamePrereqState
+	public InvestedPerksPrereqState()
 	{
-		public InvestedPerksPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectObjectFilter_PlayerIgnoreFriendlyAndAlive : gameEffectObjectGroupFilter
 {
-	[REDMeta]
-	public partial class gameEffectObjectFilter_PlayerIgnoreFriendlyAndAlive : gameEffectObjectGroupFilter
+	[Ordinal(0)] 
+	[RED("ignoreCharacterRecord")] 
+	public TweakDBID IgnoreCharacterRecord
 	{
-		[Ordinal(0)] 
-		[RED("ignoreCharacterRecord")] 
-		public TweakDBID IgnoreCharacterRecord
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-
-		public gameEffectObjectFilter_PlayerIgnoreFriendlyAndAlive()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<TweakDBID>();
+		set => SetPropertyValue<TweakDBID>(value);
 	}
+
+	public gameEffectObjectFilter_PlayerIgnoreFriendlyAndAlive()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldInvalidProxyMeshNode : worldPrefabProxyMeshNode
 {
-	[REDMeta]
-	public partial class worldInvalidProxyMeshNode : worldPrefabProxyMeshNode
+	public worldInvalidProxyMeshNode()
 	{
-		public worldInvalidProxyMeshNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questTriggerIconGeneration_NodeType : questIUIManagerNodeType
 {
-	[REDMeta]
-	public partial class questTriggerIconGeneration_NodeType : questIUIManagerNodeType
+	public questTriggerIconGeneration_NodeType()
 	{
-		public questTriggerIconGeneration_NodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

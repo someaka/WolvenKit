@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExplosiveDeviceHideDeviceEvent : redEvent
 {
-	[REDMeta]
-	public partial class ExplosiveDeviceHideDeviceEvent : redEvent
+	public ExplosiveDeviceHideDeviceEvent()
 	{
-		public ExplosiveDeviceHideDeviceEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InspectionEvents : HighLevelTransition
 {
-	[REDMeta]
-	public partial class InspectionEvents : HighLevelTransition
+	public InspectionEvents()
 	{
-		public InspectionEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

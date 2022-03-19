@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animIAnimNodeSourceChannel_Float : ISerializable
 {
-	[REDMeta]
-	public partial class animIAnimNodeSourceChannel_Float : ISerializable
+	public animIAnimNodeSourceChannel_Float()
 	{
-		public animIAnimNodeSourceChannel_Float()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

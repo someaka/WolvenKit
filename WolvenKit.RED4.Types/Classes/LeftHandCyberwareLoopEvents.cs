@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LeftHandCyberwareLoopEvents : LeftHandCyberwareEventsTransition
 {
-	[REDMeta]
-	public partial class LeftHandCyberwareLoopEvents : LeftHandCyberwareEventsTransition
+	public LeftHandCyberwareLoopEvents()
 	{
-		public LeftHandCyberwareLoopEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

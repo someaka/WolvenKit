@@ -1,34 +1,30 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayPauseActionWidgetController : NextPreviousActionWidgetController
 {
-	[REDMeta]
-	public partial class PlayPauseActionWidgetController : NextPreviousActionWidgetController
+	[Ordinal(33)] 
+	[RED("playContainer")] 
+	public inkWidgetReference PlayContainer
 	{
-		[Ordinal(33)] 
-		[RED("playContainer")] 
-		public inkWidgetReference PlayContainer
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		[Ordinal(34)] 
-		[RED("isPlaying")] 
-		public CBool IsPlaying
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public PlayPauseActionWidgetController()
-		{
-			PlayContainer = new();
-			IsPlaying = true;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	[Ordinal(34)] 
+	[RED("isPlaying")] 
+	public CBool IsPlaying
+	{
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
+	}
+
+	public PlayPauseActionWidgetController()
+	{
+		PlayContainer = new();
+		IsPlaying = true;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

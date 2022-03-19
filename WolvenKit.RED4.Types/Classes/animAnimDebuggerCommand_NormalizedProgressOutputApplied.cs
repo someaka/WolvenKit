@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimDebuggerCommand_NormalizedProgressOutputApplied : animIAnimDebuggerCommand
 {
-	[REDMeta]
-	public partial class animAnimDebuggerCommand_NormalizedProgressOutputApplied : animIAnimDebuggerCommand
+	public animAnimDebuggerCommand_NormalizedProgressOutputApplied()
 	{
-		public animAnimDebuggerCommand_NormalizedProgressOutputApplied()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

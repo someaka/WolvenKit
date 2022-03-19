@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SettingsMenuUserData : gameuiMenuGameController
 {
-	[REDMeta]
-	public partial class SettingsMenuUserData : gameuiMenuGameController
+	[Ordinal(3)] 
+	[RED("isDlcSettings")] 
+	public CBool IsDlcSettings
 	{
-		[Ordinal(3)] 
-		[RED("isDlcSettings")] 
-		public CBool IsDlcSettings
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public SettingsMenuUserData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public SettingsMenuUserData()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

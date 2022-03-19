@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SimpleTargetManager : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class SimpleTargetManager : gameScriptableComponent
+	public SimpleTargetManager()
 	{
-		public SimpleTargetManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

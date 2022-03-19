@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CPOMissionPlayerVoted : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class CPOMissionPlayerVoted : gameinteractionsInteractionScriptedCondition
+	public CPOMissionPlayerVoted()
 	{
-		public CPOMissionPlayerVoted()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

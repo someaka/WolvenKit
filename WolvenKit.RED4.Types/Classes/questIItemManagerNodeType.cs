@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIItemManagerNodeType : questObjectNodeType
 {
-	[REDMeta]
-	public partial class questIItemManagerNodeType : questObjectNodeType
+	public questIItemManagerNodeType()
 	{
-		public questIItemManagerNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

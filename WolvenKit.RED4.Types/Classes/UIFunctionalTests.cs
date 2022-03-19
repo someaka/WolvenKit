@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UIFunctionalTests : IScriptable
 {
-	[REDMeta]
-	public partial class UIFunctionalTests : IScriptable
+	public UIFunctionalTests()
 	{
-		public UIFunctionalTests()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

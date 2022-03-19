@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entVisualOffsetTransformComponent : entTransformComponent
 {
-	[REDMeta]
-	public partial class entVisualOffsetTransformComponent : entTransformComponent
+	public entVisualOffsetTransformComponent()
 	{
-		public entVisualOffsetTransformComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

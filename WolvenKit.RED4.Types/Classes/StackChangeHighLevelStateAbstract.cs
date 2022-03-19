@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StackChangeHighLevelStateAbstract : AIbehaviortaskStackScript
 {
-	[REDMeta]
-	public partial class StackChangeHighLevelStateAbstract : AIbehaviortaskStackScript
+	public StackChangeHighLevelStateAbstract()
 	{
-		public StackChangeHighLevelStateAbstract()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

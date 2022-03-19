@@ -1,46 +1,45 @@
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class gamedataAISquadSpatialForOwnTarget_Record
 {
-	public partial class gamedataAISquadSpatialForOwnTarget_Record
-	{
-		[RED("invert")]
-		[REDProperty(IsIgnored = true)]
-		public CBool Invert
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
+    [RED("invert")]
+    [REDProperty(IsIgnored = true)]
+    public CBool Invert
+    {
+        get => GetPropertyValue<CBool>();
+        set => SetPropertyValue<CBool>(value);
+    }
 		
-		[RED("resetMembers")]
-		[REDProperty(IsIgnored = true)]
-		public CBool ResetMembers
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
+    [RED("resetMembers")]
+    [REDProperty(IsIgnored = true)]
+    public CBool ResetMembers
+    {
+        get => GetPropertyValue<CBool>();
+        set => SetPropertyValue<CBool>(value);
+    }
 		
-		[RED("resetMembersIncludingUnwillings")]
-		[REDProperty(IsIgnored = true)]
-		public CBool ResetMembersIncludingUnwillings
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
+    [RED("resetMembersIncludingUnwillings")]
+    [REDProperty(IsIgnored = true)]
+    public CBool ResetMembersIncludingUnwillings
+    {
+        get => GetPropertyValue<CBool>();
+        set => SetPropertyValue<CBool>(value);
+    }
 		
-		[RED("skipSelfOnce")]
-		[REDProperty(IsIgnored = true)]
-		public CBool SkipSelfOnce
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
+    [RED("skipSelfOnce")]
+    [REDProperty(IsIgnored = true)]
+    public CBool SkipSelfOnce
+    {
+        get => GetPropertyValue<CBool>();
+        set => SetPropertyValue<CBool>(value);
+    }
 		
-		[RED("spatial")]
-		[REDProperty(IsIgnored = true)]
-		public TweakDBID Spatial
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-	}
+    [RED("spatial")]
+    [REDProperty(IsIgnored = true)]
+    public TweakDBID Spatial
+    {
+        get => GetPropertyValue<TweakDBID>();
+        set => SetPropertyValue<TweakDBID>(value);
+    }
 }

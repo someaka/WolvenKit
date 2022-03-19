@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameeventsUserLeftCoverEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameeventsUserLeftCoverEvent : redEvent
+	public gameeventsUserLeftCoverEvent()
 	{
-		public gameeventsUserLeftCoverEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

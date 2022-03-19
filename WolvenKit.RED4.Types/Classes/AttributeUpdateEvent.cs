@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AttributeUpdateEvent : redEvent
 {
-	[REDMeta]
-	public partial class AttributeUpdateEvent : redEvent
+	public AttributeUpdateEvent()
 	{
-		public AttributeUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

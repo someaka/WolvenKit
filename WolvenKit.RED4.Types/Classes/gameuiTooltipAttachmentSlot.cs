@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiTooltipAttachmentSlot : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class gameuiTooltipAttachmentSlot : inkWidgetLogicController
+	public gameuiTooltipAttachmentSlot()
 	{
-		public gameuiTooltipAttachmentSlot()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

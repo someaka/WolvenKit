@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StealthState : ChangeHighLevelStateAbstract
 {
-	[REDMeta]
-	public partial class StealthState : ChangeHighLevelStateAbstract
+	public StealthState()
 	{
-		public StealthState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldOffMeshConnectionNodeInstance : worldSplineNodeInstance
 {
-	[REDMeta]
-	public partial class worldOffMeshConnectionNodeInstance : worldSplineNodeInstance
+	public worldOffMeshConnectionNodeInstance()
 	{
-		public worldOffMeshConnectionNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

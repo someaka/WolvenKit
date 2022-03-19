@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnTalkInteractionListener : ISerializable
 {
-	[REDMeta]
-	public partial class scnTalkInteractionListener : ISerializable
+	public scnTalkInteractionListener()
 	{
-		public scnTalkInteractionListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

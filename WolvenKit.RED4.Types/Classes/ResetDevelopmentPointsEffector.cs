@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetDevelopmentPointsEffector : gameEffector
 {
-	[REDMeta]
-	public partial class ResetDevelopmentPointsEffector : gameEffector
+	public ResetDevelopmentPointsEffector()
 	{
-		public ResetDevelopmentPointsEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

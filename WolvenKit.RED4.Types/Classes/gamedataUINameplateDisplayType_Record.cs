@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataUINameplateDisplayType_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataUINameplateDisplayType_Record : gamedataTweakDBRecord
+	public gamedataUINameplateDisplayType_Record()
 	{
-		public gamedataUINameplateDisplayType_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

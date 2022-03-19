@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnInterruptFactConditionType : ISerializable
 {
-	[REDMeta]
-	public partial class scnInterruptFactConditionType : ISerializable
+	public scnInterruptFactConditionType()
 	{
-		public scnInterruptFactConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

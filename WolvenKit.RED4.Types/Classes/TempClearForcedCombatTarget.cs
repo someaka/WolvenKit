@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TempClearForcedCombatTarget : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class TempClearForcedCombatTarget : AIbehaviortaskScript
+	public TempClearForcedCombatTarget()
 	{
-		public TempClearForcedCombatTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChangeUpperBodyStateAbstract : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class ChangeUpperBodyStateAbstract : AIbehaviortaskScript
+	public ChangeUpperBodyStateAbstract()
 	{
-		public ChangeUpperBodyStateAbstract()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

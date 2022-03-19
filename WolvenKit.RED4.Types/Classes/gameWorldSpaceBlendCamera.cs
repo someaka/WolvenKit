@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameWorldSpaceBlendCamera : entBaseCameraComponent
 {
-	[REDMeta]
-	public partial class gameWorldSpaceBlendCamera : entBaseCameraComponent
+	public gameWorldSpaceBlendCamera()
 	{
-		public gameWorldSpaceBlendCamera()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

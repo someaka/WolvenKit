@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NotifiedSecSysAboutCombat : redEvent
 {
-	[REDMeta]
-	public partial class NotifiedSecSysAboutCombat : redEvent
+	public NotifiedSecSysAboutCombat()
 	{
-		public NotifiedSecSysAboutCombat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameprojectileParabolicTrajectoryParams : gameprojectileTrajectoryParams
 {
-	[REDMeta]
-	public partial class gameprojectileParabolicTrajectoryParams : gameprojectileTrajectoryParams
+	public gameprojectileParabolicTrajectoryParams()
 	{
-		public gameprojectileParabolicTrajectoryParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

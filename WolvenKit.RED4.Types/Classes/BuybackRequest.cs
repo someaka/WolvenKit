@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BuybackRequest : TransactionRequest
 {
-	[REDMeta]
-	public partial class BuybackRequest : TransactionRequest
+	public BuybackRequest()
 	{
-		public BuybackRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

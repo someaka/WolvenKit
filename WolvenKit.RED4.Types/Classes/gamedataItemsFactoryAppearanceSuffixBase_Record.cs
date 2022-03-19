@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataItemsFactoryAppearanceSuffixBase_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataItemsFactoryAppearanceSuffixBase_Record : gamedataTweakDBRecord
+	public gamedataItemsFactoryAppearanceSuffixBase_Record()
 	{
-		public gamedataItemsFactoryAppearanceSuffixBase_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

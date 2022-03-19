@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnISceneSystem : gameISceneSystem
 {
-	[REDMeta]
-	public partial class scnISceneSystem : gameISceneSystem
+	public scnISceneSystem()
 	{
-		public scnISceneSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

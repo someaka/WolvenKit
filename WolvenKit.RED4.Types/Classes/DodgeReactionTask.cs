@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DodgeReactionTask : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class DodgeReactionTask : AIbehaviortaskScript
+	public DodgeReactionTask()
 	{
-		public DodgeReactionTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

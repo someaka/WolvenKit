@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectData_MeleeWaterFx : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameEffectData_MeleeWaterFx : RedBaseClass
+	public gameEffectData_MeleeWaterFx()
 	{
-		public gameEffectData_MeleeWaterFx()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

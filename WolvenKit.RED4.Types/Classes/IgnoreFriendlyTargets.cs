@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IgnoreFriendlyTargets : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class IgnoreFriendlyTargets : gameEffectObjectSingleFilter_Scripted
+	public IgnoreFriendlyTargets()
 	{
-		public IgnoreFriendlyTargets()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

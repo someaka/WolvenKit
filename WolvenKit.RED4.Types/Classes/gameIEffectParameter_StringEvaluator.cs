@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIEffectParameter_StringEvaluator : ISerializable
 {
-	[REDMeta]
-	public partial class gameIEffectParameter_StringEvaluator : ISerializable
+	public gameIEffectParameter_StringEvaluator()
 	{
-		public gameIEffectParameter_StringEvaluator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

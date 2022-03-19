@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVehicleSurfaceBinding_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataVehicleSurfaceBinding_Record : gamedataTweakDBRecord
+	public gamedataVehicleSurfaceBinding_Record()
 	{
-		public gamedataVehicleSurfaceBinding_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

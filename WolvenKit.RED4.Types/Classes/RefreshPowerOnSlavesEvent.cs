@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RefreshPowerOnSlavesEvent : ProcessDevicesEvent
 {
-	[REDMeta]
-	public partial class RefreshPowerOnSlavesEvent : ProcessDevicesEvent
+	public RefreshPowerOnSlavesEvent()
 	{
-		public RefreshPowerOnSlavesEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

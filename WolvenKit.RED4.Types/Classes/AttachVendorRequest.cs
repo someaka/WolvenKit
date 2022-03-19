@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AttachVendorRequest : MarketSystemRequest
 {
-	[REDMeta]
-	public partial class AttachVendorRequest : MarketSystemRequest
+	public AttachVendorRequest()
 	{
-		public AttachVendorRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsHumanPrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class IsHumanPrereqState : gamePrereqState
+	public IsHumanPrereqState()
 	{
-		public IsHumanPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

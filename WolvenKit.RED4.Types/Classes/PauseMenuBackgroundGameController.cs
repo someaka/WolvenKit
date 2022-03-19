@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PauseMenuBackgroundGameController : gameuiWidgetGameController
 {
-	[REDMeta]
-	public partial class PauseMenuBackgroundGameController : gameuiWidgetGameController
+	public PauseMenuBackgroundGameController()
 	{
-		public PauseMenuBackgroundGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

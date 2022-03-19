@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnFocusLost : inkFocusEvent
 {
-	[REDMeta]
-	public partial class OnFocusLost : inkFocusEvent
+	public OnFocusLost()
 	{
-		public OnFocusLost()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

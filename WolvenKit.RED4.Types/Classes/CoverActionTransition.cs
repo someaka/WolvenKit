@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CoverActionTransition : LocomotionTransition
 {
-	[REDMeta]
-	public partial class CoverActionTransition : LocomotionTransition
+	public CoverActionTransition()
 	{
-		public CoverActionTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

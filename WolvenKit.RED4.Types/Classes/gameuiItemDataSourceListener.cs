@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiItemDataSourceListener : gameIInventoryListener
 {
-	[REDMeta]
-	public partial class gameuiItemDataSourceListener : gameIInventoryListener
+	public gameuiItemDataSourceListener()
 	{
-		public gameuiItemDataSourceListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

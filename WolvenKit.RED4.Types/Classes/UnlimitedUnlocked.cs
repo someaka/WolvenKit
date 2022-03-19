@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnlimitedUnlocked : redEvent
 {
-	[REDMeta]
-	public partial class UnlimitedUnlocked : redEvent
+	public UnlimitedUnlocked()
 	{
-		public UnlimitedUnlocked()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

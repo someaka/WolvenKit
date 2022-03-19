@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectPostAction_ProcessNearlyHitAgents : gameEffectPostAction
 {
-	[REDMeta]
-	public partial class gameEffectPostAction_ProcessNearlyHitAgents : gameEffectPostAction
+	public gameEffectPostAction_ProcessNearlyHitAgents()
 	{
-		public gameEffectPostAction_ProcessNearlyHitAgents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

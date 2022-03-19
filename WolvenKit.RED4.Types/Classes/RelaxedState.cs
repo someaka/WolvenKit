@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RelaxedState : ChangeHighLevelStateAbstract
 {
-	[REDMeta]
-	public partial class RelaxedState : ChangeHighLevelStateAbstract
+	public RelaxedState()
 	{
-		public RelaxedState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

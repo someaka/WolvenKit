@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecuritySystemEnabled : redEvent
 {
-	[REDMeta]
-	public partial class SecuritySystemEnabled : redEvent
+	public SecuritySystemEnabled()
 	{
-		public SecuritySystemEnabled()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

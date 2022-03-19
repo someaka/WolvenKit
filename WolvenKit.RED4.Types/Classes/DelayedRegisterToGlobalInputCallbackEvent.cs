@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DelayedRegisterToGlobalInputCallbackEvent : redEvent
 {
-	[REDMeta]
-	public partial class DelayedRegisterToGlobalInputCallbackEvent : redEvent
+	public DelayedRegisterToGlobalInputCallbackEvent()
 	{
-		public DelayedRegisterToGlobalInputCallbackEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimation_Movement_CurveSet : gameTransformAnimation_Movement
 {
-	[REDMeta]
-	public partial class gameTransformAnimation_Movement_CurveSet : gameTransformAnimation_Movement
+	public gameTransformAnimation_Movement_CurveSet()
 	{
-		public gameTransformAnimation_Movement_CurveSet()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

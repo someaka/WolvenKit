@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MagFieldHitEvent : redEvent
 {
-	[REDMeta]
-	public partial class MagFieldHitEvent : redEvent
+	public MagFieldHitEvent()
 	{
-		public MagFieldHitEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

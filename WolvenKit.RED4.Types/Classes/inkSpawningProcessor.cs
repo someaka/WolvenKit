@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkSpawningProcessor : ISerializable
 {
-	[REDMeta]
-	public partial class inkSpawningProcessor : ISerializable
+	public inkSpawningProcessor()
 	{
-		public inkSpawningProcessor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

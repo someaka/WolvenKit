@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MinutePassedEvent : redEvent
 {
-	[REDMeta]
-	public partial class MinutePassedEvent : redEvent
+	public MinutePassedEvent()
 	{
-		public MinutePassedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

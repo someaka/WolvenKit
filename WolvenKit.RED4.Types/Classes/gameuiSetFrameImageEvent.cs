@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiSetFrameImageEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiSetFrameImageEvent : redEvent
+	public gameuiSetFrameImageEvent()
 	{
-		public gameuiSetFrameImageEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

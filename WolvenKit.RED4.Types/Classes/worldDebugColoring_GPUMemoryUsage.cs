@@ -1,19 +1,16 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDebugColoring_GPUMemoryUsage : worldDebugColoring_MetricsUsageAbstractBase
 {
-	[REDMeta]
-	public partial class worldDebugColoring_GPUMemoryUsage : worldDebugColoring_MetricsUsageAbstractBase
+	public worldDebugColoring_GPUMemoryUsage()
 	{
-		public worldDebugColoring_GPUMemoryUsage()
-		{
-			MaxColor = new();
-			MinColor = new();
-			MinSize = 1;
-			MaxSize = 5000;
+		MaxColor = new();
+		MinColor = new();
+		MinSize = 1;
+		MaxSize = 5000;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

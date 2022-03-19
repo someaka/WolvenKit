@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UIVehicleRadioEvent : redEvent
 {
-	[REDMeta]
-	public partial class UIVehicleRadioEvent : redEvent
+	public UIVehicleRadioEvent()
 	{
-		public UIVehicleRadioEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ContainerStateInteractionCondition : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class ContainerStateInteractionCondition : gameinteractionsInteractionScriptedCondition
+	public ContainerStateInteractionCondition()
 	{
-		public ContainerStateInteractionCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

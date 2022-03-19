@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entReplicatedInputSetters : RedBaseClass
 {
-	[REDMeta]
-	public partial class entReplicatedInputSetters : RedBaseClass
+	[Ordinal(0)] 
+	[RED("serverReplicatedTime")] 
+	public netTime ServerReplicatedTime
 	{
-		[Ordinal(0)] 
-		[RED("serverReplicatedTime")] 
-		public netTime ServerReplicatedTime
-		{
-			get => GetPropertyValue<netTime>();
-			set => SetPropertyValue<netTime>(value);
-		}
-
-		public entReplicatedInputSetters()
-		{
-			ServerReplicatedTime = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<netTime>();
+		set => SetPropertyValue<netTime>(value);
 	}
+
+	public entReplicatedInputSetters()
+	{
+		ServerReplicatedTime = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

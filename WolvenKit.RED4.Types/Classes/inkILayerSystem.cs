@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkILayerSystem : IScriptable
 {
-	[REDMeta]
-	public partial class inkILayerSystem : IScriptable
+	public inkILayerSystem()
 	{
-		public inkILayerSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

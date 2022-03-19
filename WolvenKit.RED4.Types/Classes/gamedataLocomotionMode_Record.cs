@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataLocomotionMode_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataLocomotionMode_Record : gamedataTweakDBRecord
+	public gamedataLocomotionMode_Record()
 	{
-		public gamedataLocomotionMode_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

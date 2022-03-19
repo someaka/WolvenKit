@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DressPlayer : redEvent
 {
-	[REDMeta]
-	public partial class DressPlayer : redEvent
+	public DressPlayer()
 	{
-		public DressPlayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

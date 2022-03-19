@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QhackExecuted : redEvent
 {
-	[REDMeta]
-	public partial class QhackExecuted : redEvent
+	public QhackExecuted()
 	{
-		public QhackExecuted()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

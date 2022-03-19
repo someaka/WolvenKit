@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVideoLayerDefinition : inkLayerDefinition
 {
-	[REDMeta]
-	public partial class inkVideoLayerDefinition : inkLayerDefinition
+	public inkVideoLayerDefinition()
 	{
-		public inkVideoLayerDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

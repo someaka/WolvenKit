@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkDeleteRequestResult : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkDeleteRequestResult : inkCallbackBase
+	public inkDeleteRequestResult()
 	{
-		public inkDeleteRequestResult()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

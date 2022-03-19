@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimDebuggerCommand_HooksRegistered : animIAnimDebuggerCommand
 {
-	[REDMeta]
-	public partial class animAnimDebuggerCommand_HooksRegistered : animIAnimDebuggerCommand
+	public animAnimDebuggerCommand_HooksRegistered()
 	{
-		public animAnimDebuggerCommand_HooksRegistered()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

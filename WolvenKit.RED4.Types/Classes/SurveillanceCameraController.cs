@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SurveillanceCameraController : SensorDeviceController
 {
-	[REDMeta]
-	public partial class SurveillanceCameraController : SensorDeviceController
+	public SurveillanceCameraController()
 	{
-		public SurveillanceCameraController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

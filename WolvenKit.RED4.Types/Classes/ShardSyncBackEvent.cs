@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ShardSyncBackEvent : redEvent
 {
-	[REDMeta]
-	public partial class ShardSyncBackEvent : redEvent
+	public ShardSyncBackEvent()
 	{
-		public ShardSyncBackEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

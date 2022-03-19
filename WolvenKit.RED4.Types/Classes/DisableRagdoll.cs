@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisableRagdoll : RagdollTask
 {
-	[REDMeta]
-	public partial class DisableRagdoll : RagdollTask
+	public DisableRagdoll()
 	{
-		public DisableRagdoll()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

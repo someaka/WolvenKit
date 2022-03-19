@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitShieldEvent : redEvent
 {
-	[REDMeta]
-	public partial class HitShieldEvent : redEvent
+	public HitShieldEvent()
 	{
-		public HitShieldEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

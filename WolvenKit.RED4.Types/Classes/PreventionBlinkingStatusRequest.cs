@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PreventionBlinkingStatusRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class PreventionBlinkingStatusRequest : gameScriptableSystemRequest
+	public PreventionBlinkingStatusRequest()
 	{
-		public PreventionBlinkingStatusRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

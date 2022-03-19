@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISquadSpatialForOwnTarget_Record : gamedataAITicketFilter_Record
 {
-	[REDMeta]
-	public partial class gamedataAISquadSpatialForOwnTarget_Record : gamedataAITicketFilter_Record
+	public gamedataAISquadSpatialForOwnTarget_Record()
 	{
-		public gamedataAISquadSpatialForOwnTarget_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineplayeractionsActionChargeMax : gamestateMachineplayeractionsWeaponActionBase
 {
-	[REDMeta]
-	public partial class gamestateMachineplayeractionsActionChargeMax : gamestateMachineplayeractionsWeaponActionBase
+	public gamestateMachineplayeractionsActionChargeMax()
 	{
-		public gamestateMachineplayeractionsActionChargeMax()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

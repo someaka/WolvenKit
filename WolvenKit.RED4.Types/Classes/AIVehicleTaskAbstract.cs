@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIVehicleTaskAbstract : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AIVehicleTaskAbstract : AIbehaviortaskScript
+	public AIVehicleTaskAbstract()
 	{
-		public AIVehicleTaskAbstract()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

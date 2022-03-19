@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePuppet : gamePuppetBase
 {
-	[REDMeta]
-	public partial class gamePuppet : gamePuppetBase
+	public gamePuppet()
 	{
-		public gamePuppet()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiStickerEditorEnableCursorInputEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiStickerEditorEnableCursorInputEvent : redEvent
+	public gameuiStickerEditorEnableCursorInputEvent()
 	{
-		public gameuiStickerEditorEnableCursorInputEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

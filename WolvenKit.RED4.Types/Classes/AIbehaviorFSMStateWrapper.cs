@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorFSMStateWrapper : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviorFSMStateWrapper : RedBaseClass
+	public AIbehaviorFSMStateWrapper()
 	{
-		public AIbehaviorFSMStateWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

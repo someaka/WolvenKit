@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entIVelocityProvider : IScriptable
 {
-	[REDMeta]
-	public partial class entIVelocityProvider : IScriptable
+	public entIVelocityProvider()
 	{
-		public entIVelocityProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entEntitySpawnToken : IScriptable
 {
-	[REDMeta]
-	public partial class entEntitySpawnToken : IScriptable
+	public entEntitySpawnToken()
 	{
-		public entEntitySpawnToken()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

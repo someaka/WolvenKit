@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMenuInstanceImpl : inkMenuInstance
 {
-	[REDMeta]
-	public partial class inkMenuInstanceImpl : inkMenuInstance
+	public inkMenuInstanceImpl()
 	{
-		public inkMenuInstanceImpl()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

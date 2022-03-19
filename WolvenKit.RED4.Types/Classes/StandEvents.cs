@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StandEvents : LocomotionGroundEvents
 {
-	[REDMeta]
-	public partial class StandEvents : LocomotionGroundEvents
+	public StandEvents()
 	{
-		public StandEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

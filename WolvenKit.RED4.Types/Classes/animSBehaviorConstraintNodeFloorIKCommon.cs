@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animSBehaviorConstraintNodeFloorIKCommon : RedBaseClass
 {
-	[REDMeta]
-	public partial class animSBehaviorConstraintNodeFloorIKCommon : RedBaseClass
+	public animSBehaviorConstraintNodeFloorIKCommon()
 	{
-		public animSBehaviorConstraintNodeFloorIKCommon()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

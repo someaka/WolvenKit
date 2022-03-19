@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CSpeedTreeWindDataUpdater : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class CSpeedTreeWindDataUpdater : ISceneStorageCustomData
+	public CSpeedTreeWindDataUpdater()
 	{
-		public CSpeedTreeWindDataUpdater()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

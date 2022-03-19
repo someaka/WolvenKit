@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIUtilityLossCoverSelection : AICoverSelectionParameters
 {
-	[REDMeta]
-	public partial class AIUtilityLossCoverSelection : AICoverSelectionParameters
+	public AIUtilityLossCoverSelection()
 	{
-		public AIUtilityLossCoverSelection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SelectClosestPlayerThreat : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SelectClosestPlayerThreat : AIbehaviortaskScript
+	public SelectClosestPlayerThreat()
 	{
-		public SelectClosestPlayerThreat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

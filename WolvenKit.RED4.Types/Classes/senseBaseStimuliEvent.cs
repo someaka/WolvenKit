@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class senseBaseStimuliEvent : AIAIEvent
 {
-	[REDMeta]
-	public partial class senseBaseStimuliEvent : AIAIEvent
+	public senseBaseStimuliEvent()
 	{
-		public senseBaseStimuliEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

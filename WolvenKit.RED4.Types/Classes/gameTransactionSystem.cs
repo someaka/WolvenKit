@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransactionSystem : gameITransactionSystem
 {
-	[REDMeta]
-	public partial class gameTransactionSystem : gameITransactionSystem
+	public gameTransactionSystem()
 	{
-		public gameTransactionSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

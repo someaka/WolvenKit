@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldCrowdPortalNode : worldNode
 {
-	[REDMeta]
-	public partial class worldCrowdPortalNode : worldNode
+	public worldCrowdPortalNode()
 	{
-		public worldCrowdPortalNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

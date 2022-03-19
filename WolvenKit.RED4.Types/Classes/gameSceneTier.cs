@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSceneTier : senseStimuliData
 {
-	[REDMeta]
-	public partial class gameSceneTier : senseStimuliData
+	public gameSceneTier()
 	{
-		public gameSceneTier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

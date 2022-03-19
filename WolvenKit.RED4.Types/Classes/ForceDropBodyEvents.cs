@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceDropBodyEvents : CarriedObjectEvents
 {
-	[REDMeta]
-	public partial class ForceDropBodyEvents : CarriedObjectEvents
+	public ForceDropBodyEvents()
 	{
-		public ForceDropBodyEvents()
-		{
-			StyleName = "CarriedObject.Style";
-			ForceStyleName = "CarriedObject.ForcedStyle";
+		StyleName = "CarriedObject.Style";
+		ForceStyleName = "CarriedObject.ForcedStyle";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

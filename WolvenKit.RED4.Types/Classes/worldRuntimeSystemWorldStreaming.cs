@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemWorldStreaming : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemWorldStreaming : worldIRuntimeSystem
+	public worldRuntimeSystemWorldStreaming()
 	{
-		public worldRuntimeSystemWorldStreaming()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

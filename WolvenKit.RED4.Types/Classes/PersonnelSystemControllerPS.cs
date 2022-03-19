@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PersonnelSystemControllerPS : DeviceSystemBaseControllerPS
 {
-	[REDMeta]
-	public partial class PersonnelSystemControllerPS : DeviceSystemBaseControllerPS
+	public PersonnelSystemControllerPS()
 	{
-		public PersonnelSystemControllerPS()
-		{
-			DeviceName = "BaseDeviceSystemControllerPS";
-			TweakDBRecord = 100937546540;
-			TweakDBDescriptionRecord = 154457407903;
+		DeviceName = "BaseDeviceSystemControllerPS";
+		TweakDBRecord = 100937546540;
+		TweakDBDescriptionRecord = 154457407903;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

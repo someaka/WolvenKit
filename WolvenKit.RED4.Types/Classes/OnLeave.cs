@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnLeave : inkPointerEvent
 {
-	[REDMeta]
-	public partial class OnLeave : inkPointerEvent
+	public OnLeave()
 	{
-		public OnLeave()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISystemImpl : AIISystem
 {
-	[REDMeta]
-	public partial class AISystemImpl : AIISystem
+	public AISystemImpl()
 	{
-		public AISystemImpl()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

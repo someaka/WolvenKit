@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemMoverComponents : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemMoverComponents : worldIRuntimeSystem
+	public worldRuntimeSystemMoverComponents()
 	{
-		public worldRuntimeSystemMoverComponents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

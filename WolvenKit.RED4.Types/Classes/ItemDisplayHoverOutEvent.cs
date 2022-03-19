@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemDisplayHoverOutEvent : redEvent
 {
-	[REDMeta]
-	public partial class ItemDisplayHoverOutEvent : redEvent
+	public ItemDisplayHoverOutEvent()
 	{
-		public ItemDisplayHoverOutEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

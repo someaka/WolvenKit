@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animSBehaviorConstraintNodeFloorIKMaintainLookBone : RedBaseClass
 {
-	[REDMeta]
-	public partial class animSBehaviorConstraintNodeFloorIKMaintainLookBone : RedBaseClass
+	public animSBehaviorConstraintNodeFloorIKMaintainLookBone()
 	{
-		public animSBehaviorConstraintNodeFloorIKMaintainLookBone()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

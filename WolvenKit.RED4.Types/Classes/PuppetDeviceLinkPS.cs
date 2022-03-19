@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PuppetDeviceLinkPS : DeviceLinkComponentPS
 {
-	[REDMeta]
-	public partial class PuppetDeviceLinkPS : DeviceLinkComponentPS
+	[Ordinal(25)] 
+	[RED("securitySystemData")] 
+	public SecuritySystemData SecuritySystemData
 	{
-		[Ordinal(25)] 
-		[RED("securitySystemData")] 
-		public SecuritySystemData SecuritySystemData
-		{
-			get => GetPropertyValue<SecuritySystemData>();
-			set => SetPropertyValue<SecuritySystemData>(value);
-		}
-
-		public PuppetDeviceLinkPS()
-		{
-			SecuritySystemData = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<SecuritySystemData>();
+		set => SetPropertyValue<SecuritySystemData>(value);
 	}
+
+	public PuppetDeviceLinkPS()
+	{
+		SecuritySystemData = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiBaseUIData : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameuiBaseUIData : RedBaseClass
+	[Ordinal(0)] 
+	[RED("id")] 
+	public CInt64 Id
 	{
-		[Ordinal(0)] 
-		[RED("id")] 
-		public CInt64 Id
-		{
-			get => GetPropertyValue<CInt64>();
-			set => SetPropertyValue<CInt64>(value);
-		}
-
-		public gameuiBaseUIData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CInt64>();
+		set => SetPropertyValue<CInt64>(value);
 	}
+
+	public gameuiBaseUIData()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

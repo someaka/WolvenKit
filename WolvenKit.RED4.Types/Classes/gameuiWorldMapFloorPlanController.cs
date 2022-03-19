@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiWorldMapFloorPlanController : gameuiMinimapContainerController
 {
-	[REDMeta]
-	public partial class gameuiWorldMapFloorPlanController : gameuiMinimapContainerController
+	public gameuiWorldMapFloorPlanController()
 	{
-		public gameuiWorldMapFloorPlanController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

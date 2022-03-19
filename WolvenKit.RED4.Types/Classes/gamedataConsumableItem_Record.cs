@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataConsumableItem_Record : gamedataItem_Record
 {
-	[REDMeta]
-	public partial class gamedataConsumableItem_Record : gamedataItem_Record
+	public gamedataConsumableItem_Record()
 	{
-		public gamedataConsumableItem_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

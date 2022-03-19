@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectGenericTrackItemPlayData : effectTrackItemPlayData
 {
-	[REDMeta]
-	public partial class effectGenericTrackItemPlayData : effectTrackItemPlayData
+	public effectGenericTrackItemPlayData()
 	{
-		public effectGenericTrackItemPlayData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

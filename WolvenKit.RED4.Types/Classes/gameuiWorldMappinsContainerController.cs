@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiWorldMappinsContainerController : gameuiMappinsContainerController
 {
-	[REDMeta]
-	public partial class gameuiWorldMappinsContainerController : gameuiMappinsContainerController
+	public gameuiWorldMappinsContainerController()
 	{
-		public gameuiWorldMappinsContainerController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

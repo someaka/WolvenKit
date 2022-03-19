@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BodyInvestigatedEvent : redEvent
 {
-	[REDMeta]
-	public partial class BodyInvestigatedEvent : redEvent
+	public BodyInvestigatedEvent()
 	{
-		public BodyInvestigatedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

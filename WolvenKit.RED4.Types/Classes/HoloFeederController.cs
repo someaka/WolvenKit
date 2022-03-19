@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HoloFeederController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class HoloFeederController : ScriptableDeviceComponent
+	public HoloFeederController()
 	{
-		public HoloFeederController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

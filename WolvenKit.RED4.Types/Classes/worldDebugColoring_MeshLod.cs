@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDebugColoring_MeshLod : worldEditorDebugColoringSettings
 {
-	[REDMeta]
-	public partial class worldDebugColoring_MeshLod : worldEditorDebugColoringSettings
+	public worldDebugColoring_MeshLod()
 	{
-		public worldDebugColoring_MeshLod()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

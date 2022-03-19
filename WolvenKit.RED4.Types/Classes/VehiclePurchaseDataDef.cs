@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehiclePurchaseDataDef : gamebbScriptDefinition
 {
-	[REDMeta]
-	public partial class VehiclePurchaseDataDef : gamebbScriptDefinition
+	[Ordinal(0)] 
+	[RED("PurchasedVehicleRecordID")] 
+	public gamebbScriptID_Variant PurchasedVehicleRecordID
 	{
-		[Ordinal(0)] 
-		[RED("PurchasedVehicleRecordID")] 
-		public gamebbScriptID_Variant PurchasedVehicleRecordID
-		{
-			get => GetPropertyValue<gamebbScriptID_Variant>();
-			set => SetPropertyValue<gamebbScriptID_Variant>(value);
-		}
-
-		public VehiclePurchaseDataDef()
-		{
-			PurchasedVehicleRecordID = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gamebbScriptID_Variant>();
+		set => SetPropertyValue<gamebbScriptID_Variant>(value);
 	}
+
+	public VehiclePurchaseDataDef()
+	{
+		PurchasedVehicleRecordID = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

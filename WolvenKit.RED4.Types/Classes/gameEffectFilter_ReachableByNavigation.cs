@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectFilter_ReachableByNavigation : gameEffectObjectSingleFilter
 {
-	[REDMeta]
-	public partial class gameEffectFilter_ReachableByNavigation : gameEffectObjectSingleFilter
+	[Ordinal(0)] 
+	[RED("maxPathLength")] 
+	public gameEffectInputParameter_Float MaxPathLength
 	{
-		[Ordinal(0)] 
-		[RED("maxPathLength")] 
-		public gameEffectInputParameter_Float MaxPathLength
-		{
-			get => GetPropertyValue<gameEffectInputParameter_Float>();
-			set => SetPropertyValue<gameEffectInputParameter_Float>(value);
-		}
-
-		public gameEffectFilter_ReachableByNavigation()
-		{
-			MaxPathLength = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gameEffectInputParameter_Float>();
+		set => SetPropertyValue<gameEffectInputParameter_Float>(value);
 	}
+
+	public gameEffectFilter_ReachableByNavigation()
+	{
+		MaxPathLength = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

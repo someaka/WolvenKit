@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsCManager : gameinteractionsIManager
 {
-	[REDMeta]
-	public partial class gameinteractionsCManager : gameinteractionsIManager
+	public gameinteractionsCManager()
 	{
-		public gameinteractionsCManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

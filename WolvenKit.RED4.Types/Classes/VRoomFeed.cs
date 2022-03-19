@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VRoomFeed : redEvent
 {
-	[REDMeta]
-	public partial class VRoomFeed : redEvent
+	[Ordinal(0)] 
+	[RED("On")] 
+	public CBool On
 	{
-		[Ordinal(0)] 
-		[RED("On")] 
-		public CBool On
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public VRoomFeed()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public VRoomFeed()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEntityStubComponentPlacedProxy : entIPlacedComponent
 {
-	[REDMeta]
-	public partial class gameEntityStubComponentPlacedProxy : entIPlacedComponent
+	public gameEntityStubComponentPlacedProxy()
 	{
-		public gameEntityStubComponentPlacedProxy()
-		{
-			Name = "entityStubPlacedProxy";
-			LocalTransform = new() { Position = new() { X = new(), Y = new(), Z = new() }, Orientation = new() { R = 1.000000F } };
+		Name = "entityStubPlacedProxy";
+		LocalTransform = new() { Position = new() { X = new(), Y = new(), Z = new() }, Orientation = new() { R = 1.000000F } };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

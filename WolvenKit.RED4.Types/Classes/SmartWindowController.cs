@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SmartWindowController : ComputerController
 {
-	[REDMeta]
-	public partial class SmartWindowController : ComputerController
+	public SmartWindowController()
 	{
-		public SmartWindowController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

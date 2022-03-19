@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questObjectInventoryListener : gameIInventoryListener
 {
-	[REDMeta]
-	public partial class questObjectInventoryListener : gameIInventoryListener
+	public questObjectInventoryListener()
 	{
-		public questObjectInventoryListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

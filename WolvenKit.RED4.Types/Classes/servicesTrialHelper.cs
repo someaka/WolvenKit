@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class servicesTrialHelper : RedBaseClass
 {
-	[REDMeta]
-	public partial class servicesTrialHelper : RedBaseClass
+	public servicesTrialHelper()
 	{
-		public servicesTrialHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

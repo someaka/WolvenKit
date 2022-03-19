@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ToiletController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class ToiletController : ScriptableDeviceComponent
+	public ToiletController()
 	{
-		public ToiletController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

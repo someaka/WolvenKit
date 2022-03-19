@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIPhoneManagerNodeType : questIRetOutputNodeType
 {
-	[REDMeta]
-	public partial class questIPhoneManagerNodeType : questIRetOutputNodeType
+	public questIPhoneManagerNodeType()
 	{
-		public questIPhoneManagerNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

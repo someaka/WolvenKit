@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NPCStartingDetectionEvent : redEvent
 {
-	[REDMeta]
-	public partial class NPCStartingDetectionEvent : redEvent
+	public NPCStartingDetectionEvent()
 	{
-		public NPCStartingDetectionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

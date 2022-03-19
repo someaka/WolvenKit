@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetBusyEvent : redEvent
 {
-	[REDMeta]
-	public partial class SetBusyEvent : redEvent
+	public SetBusyEvent()
 	{
-		public SetBusyEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

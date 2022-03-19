@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TVController : MediaDeviceController
 {
-	[REDMeta]
-	public partial class TVController : MediaDeviceController
+	public TVController()
 	{
-		public TVController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIRewardManagerNodeType : ISerializable
 {
-	[REDMeta]
-	public partial class questIRewardManagerNodeType : ISerializable
+	public questIRewardManagerNodeType()
 	{
-		public questIRewardManagerNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChargebarStatsListener : gameScriptStatsListener
 {
-	[REDMeta]
-	public partial class ChargebarStatsListener : gameScriptStatsListener
+	[Ordinal(0)] 
+	[RED("controller")] 
+	public CWeakHandle<ChargebarController> Controller
 	{
-		[Ordinal(0)] 
-		[RED("controller")] 
-		public CWeakHandle<ChargebarController> Controller
-		{
-			get => GetPropertyValue<CWeakHandle<ChargebarController>>();
-			set => SetPropertyValue<CWeakHandle<ChargebarController>>(value);
-		}
-
-		public ChargebarStatsListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<ChargebarController>>();
+		set => SetPropertyValue<CWeakHandle<ChargebarController>>(value);
 	}
+
+	public ChargebarStatsListener()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

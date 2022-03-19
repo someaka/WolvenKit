@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PortalController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class PortalController : ScriptableDeviceComponent
+	public PortalController()
 	{
-		public PortalController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

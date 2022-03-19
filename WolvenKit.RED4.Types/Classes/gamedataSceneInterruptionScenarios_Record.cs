@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataSceneInterruptionScenarios_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataSceneInterruptionScenarios_Record : gamedataTweakDBRecord
+	public gamedataSceneInterruptionScenarios_Record()
 	{
-		public gamedataSceneInterruptionScenarios_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

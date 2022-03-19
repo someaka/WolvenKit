@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineplayeractionsLocomotionForceFreeze : gamestateMachineplayeractionsLocomotionBase
 {
-	[REDMeta]
-	public partial class gamestateMachineplayeractionsLocomotionForceFreeze : gamestateMachineplayeractionsLocomotionBase
+	public gamestateMachineplayeractionsLocomotionForceFreeze()
 	{
-		public gamestateMachineplayeractionsLocomotionForceFreeze()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

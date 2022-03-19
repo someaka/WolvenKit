@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetAttackBlockedBlackBoardValue : redEvent
 {
-	[REDMeta]
-	public partial class ResetAttackBlockedBlackBoardValue : redEvent
+	public ResetAttackBlockedBlackBoardValue()
 	{
-		public ResetAttackBlockedBlackBoardValue()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

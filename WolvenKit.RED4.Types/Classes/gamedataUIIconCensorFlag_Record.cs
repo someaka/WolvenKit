@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataUIIconCensorFlag_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataUIIconCensorFlag_Record : gamedataTweakDBRecord
+	public gamedataUIIconCensorFlag_Record()
 	{
-		public gamedataUIIconCensorFlag_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

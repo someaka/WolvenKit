@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerSquadInterface : PuppetSquadInterface
 {
-	[REDMeta]
-	public partial class PlayerSquadInterface : PuppetSquadInterface
+	public PlayerSquadInterface()
 	{
-		public PlayerSquadInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

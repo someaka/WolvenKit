@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiRequestResetContextEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiRequestResetContextEvent : redEvent
+	public gameuiRequestResetContextEvent()
 	{
-		public gameuiRequestResetContextEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameQuestOrSceneSetVehiclePhysicsActive : redEvent
 {
-	[REDMeta]
-	public partial class gameQuestOrSceneSetVehiclePhysicsActive : redEvent
+	public gameQuestOrSceneSetVehiclePhysicsActive()
 	{
-		public gameQuestOrSceneSetVehiclePhysicsActive()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

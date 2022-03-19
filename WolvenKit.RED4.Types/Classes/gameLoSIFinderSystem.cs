@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameLoSIFinderSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameLoSIFinderSystem : gameIGameSystem
+	public gameLoSIFinderSystem()
 	{
-		public gameLoSIFinderSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

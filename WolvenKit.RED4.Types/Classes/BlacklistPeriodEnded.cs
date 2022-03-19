@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BlacklistPeriodEnded : redEvent
 {
-	[REDMeta]
-	public partial class BlacklistPeriodEnded : redEvent
+	[Ordinal(0)] 
+	[RED("entityID")] 
+	public entEntityID EntityID
 	{
-		[Ordinal(0)] 
-		[RED("entityID")] 
-		public entEntityID EntityID
-		{
-			get => GetPropertyValue<entEntityID>();
-			set => SetPropertyValue<entEntityID>(value);
-		}
-
-		public BlacklistPeriodEnded()
-		{
-			EntityID = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<entEntityID>();
+		set => SetPropertyValue<entEntityID>(value);
 	}
+
+	public BlacklistPeriodEnded()
+	{
+		EntityID = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

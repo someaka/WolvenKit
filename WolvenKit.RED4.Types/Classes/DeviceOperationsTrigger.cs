@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeviceOperationsTrigger : IScriptable
 {
-	[REDMeta]
-	public partial class DeviceOperationsTrigger : IScriptable
+	public DeviceOperationsTrigger()
 	{
-		public DeviceOperationsTrigger()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

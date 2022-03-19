@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectPostAction_BeamVFX : gameEffectPostAction
 {
-	[REDMeta]
-	public partial class gameEffectPostAction_BeamVFX : gameEffectPostAction
+	public gameEffectPostAction_BeamVFX()
 	{
-		public gameEffectPostAction_BeamVFX()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

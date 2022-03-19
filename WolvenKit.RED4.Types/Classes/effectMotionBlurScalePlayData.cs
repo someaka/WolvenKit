@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectMotionBlurScalePlayData : effectCameraComponentTrackItemPlayData
 {
-	[REDMeta]
-	public partial class effectMotionBlurScalePlayData : effectCameraComponentTrackItemPlayData
+	public effectMotionBlurScalePlayData()
 	{
-		public effectMotionBlurScalePlayData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

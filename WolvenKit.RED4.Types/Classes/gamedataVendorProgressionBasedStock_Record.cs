@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVendorProgressionBasedStock_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataVendorProgressionBasedStock_Record : gamedataTweakDBRecord
+	public gamedataVendorProgressionBasedStock_Record()
 	{
-		public gamedataVendorProgressionBasedStock_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

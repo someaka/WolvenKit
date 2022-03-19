@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiTweakDBIconReference : inkIconReference
 {
-	[REDMeta]
-	public partial class gameuiTweakDBIconReference : inkIconReference
+	[Ordinal(0)] 
+	[RED("iconID")] 
+	public TweakDBID IconID
 	{
-		[Ordinal(0)] 
-		[RED("iconID")] 
-		public TweakDBID IconID
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-
-		public gameuiTweakDBIconReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<TweakDBID>();
+		set => SetPropertyValue<TweakDBID>(value);
 	}
+
+	public gameuiTweakDBIconReference()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

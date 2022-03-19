@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InitialDecisions : LocomotionGroundDecisions
 {
-	[REDMeta]
-	public partial class InitialDecisions : LocomotionGroundDecisions
+	public InitialDecisions()
 	{
-		public InitialDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

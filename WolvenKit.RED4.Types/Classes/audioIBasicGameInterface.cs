@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audioIBasicGameInterface : RedBaseClass
 {
-	[REDMeta]
-	public partial class audioIBasicGameInterface : RedBaseClass
+	public audioIBasicGameInterface()
 	{
-		public audioIBasicGameInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NPCNotMountedToVehiclePrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class NPCNotMountedToVehiclePrereq : gameIScriptablePrereq
+	public NPCNotMountedToVehiclePrereq()
 	{
-		public NPCNotMountedToVehiclePrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PreventionConditionAbstract : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class PreventionConditionAbstract : AIbehaviorconditionScript
+	public PreventionConditionAbstract()
 	{
-		public PreventionConditionAbstract()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

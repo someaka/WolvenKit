@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worlduiAdvertisementWidgetComponentWrapper : inkIAdvertisementWidgetComponentWrapper
 {
-	[REDMeta]
-	public partial class worlduiAdvertisementWidgetComponentWrapper : inkIAdvertisementWidgetComponentWrapper
+	public worlduiAdvertisementWidgetComponentWrapper()
 	{
-		public worlduiAdvertisementWidgetComponentWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

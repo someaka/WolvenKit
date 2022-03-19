@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineGameScriptInterface : gamestateMachineScriptInterface
 {
-	[REDMeta]
-	public partial class gamestateMachineGameScriptInterface : gamestateMachineScriptInterface
+	public gamestateMachineGameScriptInterface()
 	{
-		public gamestateMachineGameScriptInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsCrowdNPC : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class IsCrowdNPC : AIbehaviorconditionScript
+	public IsCrowdNPC()
 	{
-		public IsCrowdNPC()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

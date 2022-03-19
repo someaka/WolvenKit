@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleToggleBrokenTireEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleToggleBrokenTireEvent : redEvent
+	public vehicleToggleBrokenTireEvent()
 	{
-		public vehicleToggleBrokenTireEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDeviceInteractionManager : gameIDeviceInteractionManager
 {
-	[REDMeta]
-	public partial class gameDeviceInteractionManager : gameIDeviceInteractionManager
+	public gameDeviceInteractionManager()
 	{
-		public gameDeviceInteractionManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

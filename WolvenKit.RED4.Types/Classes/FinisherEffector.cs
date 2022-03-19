@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FinisherEffector : ApplyStatusEffectEffector
 {
-	[REDMeta]
-	public partial class FinisherEffector : ApplyStatusEffectEffector
+	public FinisherEffector()
 	{
-		public FinisherEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

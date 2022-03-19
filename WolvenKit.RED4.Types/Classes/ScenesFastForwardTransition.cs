@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ScenesFastForwardTransition : DefaultTransition
 {
-	[REDMeta]
-	public partial class ScenesFastForwardTransition : DefaultTransition
+	public ScenesFastForwardTransition()
 	{
-		public ScenesFastForwardTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

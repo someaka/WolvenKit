@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeathExitingDecisions : ExitingDecisions
 {
-	[REDMeta]
-	public partial class DeathExitingDecisions : ExitingDecisions
+	public DeathExitingDecisions()
 	{
-		public DeathExitingDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

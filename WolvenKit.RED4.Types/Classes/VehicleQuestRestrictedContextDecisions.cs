@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleQuestRestrictedContextDecisions : InputContextTransitionDecisions
 {
-	[REDMeta]
-	public partial class VehicleQuestRestrictedContextDecisions : InputContextTransitionDecisions
+	public VehicleQuestRestrictedContextDecisions()
 	{
-		public VehicleQuestRestrictedContextDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

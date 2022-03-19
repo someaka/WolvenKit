@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePuppetBase : gameTimeDilatable
 {
-	[REDMeta]
-	public partial class gamePuppetBase : gameTimeDilatable
+	public gamePuppetBase()
 	{
-		public gamePuppetBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

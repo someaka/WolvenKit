@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gametargetingTargetPartInfo : RedBaseClass
 {
-	[REDMeta]
-	public partial class gametargetingTargetPartInfo : RedBaseClass
+	public gametargetingTargetPartInfo()
 	{
-		public gametargetingTargetPartInfo()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

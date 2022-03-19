@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviortweakTweakActionSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class AIbehaviortweakTweakActionSystem : gameIGameSystem
+	public AIbehaviortweakTweakActionSystem()
 	{
-		public AIbehaviortweakTweakActionSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

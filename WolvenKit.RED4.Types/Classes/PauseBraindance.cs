@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PauseBraindance : redEvent
 {
-	[REDMeta]
-	public partial class PauseBraindance : redEvent
+	public PauseBraindance()
 	{
-		public PauseBraindance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

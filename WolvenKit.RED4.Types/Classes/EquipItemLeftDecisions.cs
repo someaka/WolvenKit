@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EquipItemLeftDecisions : DefaultTransition
 {
-	[REDMeta]
-	public partial class EquipItemLeftDecisions : DefaultTransition
+	public EquipItemLeftDecisions()
 	{
-		public EquipItemLeftDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

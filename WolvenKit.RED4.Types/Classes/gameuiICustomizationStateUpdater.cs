@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiICustomizationStateUpdater : IScriptable
 {
-	[REDMeta]
-	public partial class gameuiICustomizationStateUpdater : IScriptable
+	public gameuiICustomizationStateUpdater()
 	{
-		public gameuiICustomizationStateUpdater()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

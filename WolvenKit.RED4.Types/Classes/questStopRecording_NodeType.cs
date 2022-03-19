@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questStopRecording_NodeType : questIRecordingNodeType
 {
-	[REDMeta]
-	public partial class questStopRecording_NodeType : questIRecordingNodeType
+	public questStopRecording_NodeType()
 	{
-		public questStopRecording_NodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

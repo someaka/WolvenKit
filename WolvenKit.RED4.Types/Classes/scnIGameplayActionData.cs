@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnIGameplayActionData : ISerializable
 {
-	[REDMeta]
-	public partial class scnIGameplayActionData : ISerializable
+	public scnIGameplayActionData()
 	{
-		public scnIGameplayActionData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

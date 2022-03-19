@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiContraPlatformCollision : gameuiSideScrollerMiniGameCollisionLogicAdvanced
 {
-	[REDMeta]
-	public partial class gameuiContraPlatformCollision : gameuiSideScrollerMiniGameCollisionLogicAdvanced
+	public gameuiContraPlatformCollision()
 	{
-		public gameuiContraPlatformCollision()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

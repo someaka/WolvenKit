@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVideoWidgetReference : inkLeafWidgetReference
 {
-	[REDMeta]
-	public partial class inkVideoWidgetReference : inkLeafWidgetReference
+	public inkVideoWidgetReference()
 	{
-		public inkVideoWidgetReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

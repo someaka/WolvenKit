@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameeventsProjectedHitEvent : gameeventsHitEvent
 {
-	[REDMeta]
-	public partial class gameeventsProjectedHitEvent : gameeventsHitEvent
+	public gameeventsProjectedHitEvent()
 	{
-		public gameeventsProjectedHitEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

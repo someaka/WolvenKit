@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entFuncOrientationProvider : entIOrientationProvider
 {
-	[REDMeta]
-	public partial class entFuncOrientationProvider : entIOrientationProvider
+	public entFuncOrientationProvider()
 	{
-		public entFuncOrientationProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

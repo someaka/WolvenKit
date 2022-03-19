@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIPrereqManager : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIPrereqManager : gameIGameSystem
+	public gameIPrereqManager()
 	{
-		public gameIPrereqManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

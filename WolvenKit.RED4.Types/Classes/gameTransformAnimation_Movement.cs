@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimation_Movement : ISerializable
 {
-	[REDMeta]
-	public partial class gameTransformAnimation_Movement : ISerializable
+	public gameTransformAnimation_Movement()
 	{
-		public gameTransformAnimation_Movement()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

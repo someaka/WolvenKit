@@ -1,26 +1,22 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vgVectorGraphicShape_Rect : vgBaseVectorGraphicShape
 {
-	[REDMeta]
-	public partial class vgVectorGraphicShape_Rect : vgBaseVectorGraphicShape
+	[Ordinal(2)] 
+	[RED("mensions")] 
+	public Vector2 Mensions
 	{
-		[Ordinal(2)] 
-		[RED("mensions")] 
-		public Vector2 Mensions
-		{
-			get => GetPropertyValue<Vector2>();
-			set => SetPropertyValue<Vector2>(value);
-		}
-
-		public vgVectorGraphicShape_Rect()
-		{
-			CalTransform = new();
-			Mensions = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<Vector2>();
+		set => SetPropertyValue<Vector2>(value);
 	}
+
+	public vgVectorGraphicShape_Rect()
+	{
+		CalTransform = new();
+		Mensions = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

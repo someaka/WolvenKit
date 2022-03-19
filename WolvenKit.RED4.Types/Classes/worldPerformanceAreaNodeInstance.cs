@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldPerformanceAreaNodeInstance : worldTriggerAreaNodeInstance
 {
-	[REDMeta]
-	public partial class worldPerformanceAreaNodeInstance : worldTriggerAreaNodeInstance
+	public worldPerformanceAreaNodeInstance()
 	{
-		public worldPerformanceAreaNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

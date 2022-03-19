@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TriggerFearRunningVO : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class TriggerFearRunningVO : AIbehaviortaskScript
+	public TriggerFearRunningVO()
 	{
-		public TriggerFearRunningVO()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

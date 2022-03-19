@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DoorViabilityInterpreter : IScriptable
 {
-	[REDMeta]
-	public partial class DoorViabilityInterpreter : IScriptable
+	public DoorViabilityInterpreter()
 	{
-		public DoorViabilityInterpreter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

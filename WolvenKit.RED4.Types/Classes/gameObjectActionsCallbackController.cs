@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameObjectActionsCallbackController : IScriptable
 {
-	[REDMeta]
-	public partial class gameObjectActionsCallbackController : IScriptable
+	public gameObjectActionsCallbackController()
 	{
-		public gameObjectActionsCallbackController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

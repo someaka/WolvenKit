@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MineDispenser : gameweaponObject
 {
-	[REDMeta]
-	public partial class MineDispenser : gameweaponObject
+	public MineDispenser()
 	{
-		public MineDispenser()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

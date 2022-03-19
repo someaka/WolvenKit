@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNodeSourceChannel_SocketVector : animIAnimNodeSourceChannel_Vector
 {
-	[REDMeta]
-	public partial class animAnimNodeSourceChannel_SocketVector : animIAnimNodeSourceChannel_Vector
+	public animAnimNodeSourceChannel_SocketVector()
 	{
-		public animAnimNodeSourceChannel_SocketVector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

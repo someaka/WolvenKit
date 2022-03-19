@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsIMappinVolume : ISerializable
 {
-	[REDMeta]
-	public partial class gamemappinsIMappinVolume : ISerializable
+	public gamemappinsIMappinVolume()
 	{
-		public gamemappinsIMappinVolume()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

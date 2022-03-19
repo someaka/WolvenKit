@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorShouldFollowSlotDefinition : AIbehaviorVehicleExpressionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorShouldFollowSlotDefinition : AIbehaviorVehicleExpressionDefinition
+	public AIbehaviorShouldFollowSlotDefinition()
 	{
-		public AIbehaviorShouldFollowSlotDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

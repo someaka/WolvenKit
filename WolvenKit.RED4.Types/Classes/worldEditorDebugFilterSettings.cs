@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldEditorDebugFilterSettings : ISerializable
 {
-	[REDMeta]
-	public partial class worldEditorDebugFilterSettings : ISerializable
+	public worldEditorDebugFilterSettings()
 	{
-		public worldEditorDebugFilterSettings()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

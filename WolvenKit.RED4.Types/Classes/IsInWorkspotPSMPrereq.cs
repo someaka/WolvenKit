@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsInWorkspotPSMPrereq : PlayerStateMachinePrereq
 {
-	[REDMeta]
-	public partial class IsInWorkspotPSMPrereq : PlayerStateMachinePrereq
+	public IsInWorkspotPSMPrereq()
 	{
-		public IsInWorkspotPSMPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataItemQuery_Record : gamedataQuery_Record
 {
-	[REDMeta]
-	public partial class gamedataItemQuery_Record : gamedataQuery_Record
+	public gamedataItemQuery_Record()
 	{
-		public gamedataItemQuery_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

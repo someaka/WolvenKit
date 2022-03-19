@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IParticleModificator : IParticleInitializer
 {
-	[REDMeta]
-	public partial class IParticleModificator : IParticleInitializer
+	public IParticleModificator()
 	{
-		public IParticleModificator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

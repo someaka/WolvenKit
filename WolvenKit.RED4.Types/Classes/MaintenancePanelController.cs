@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MaintenancePanelController : MasterController
 {
-	[REDMeta]
-	public partial class MaintenancePanelController : MasterController
+	public MaintenancePanelController()
 	{
-		public MaintenancePanelController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

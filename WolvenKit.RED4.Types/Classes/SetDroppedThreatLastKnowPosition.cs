@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetDroppedThreatLastKnowPosition : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SetDroppedThreatLastKnowPosition : AIbehaviortaskScript
+	public SetDroppedThreatLastKnowPosition()
 	{
-		public SetDroppedThreatLastKnowPosition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

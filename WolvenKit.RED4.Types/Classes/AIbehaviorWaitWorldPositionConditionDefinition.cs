@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorWaitWorldPositionConditionDefinition : AIbehaviorConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorWaitWorldPositionConditionDefinition : AIbehaviorConditionDefinition
+	public AIbehaviorWaitWorldPositionConditionDefinition()
 	{
-		public AIbehaviorWaitWorldPositionConditionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IgnoreAlreadyAffectedEntities : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class IgnoreAlreadyAffectedEntities : gameEffectObjectSingleFilter_Scripted
+	public IgnoreAlreadyAffectedEntities()
 	{
-		public IgnoreAlreadyAffectedEntities()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

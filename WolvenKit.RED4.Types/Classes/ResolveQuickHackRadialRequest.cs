@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResolveQuickHackRadialRequest : HUDManagerRequest
 {
-	[REDMeta]
-	public partial class ResolveQuickHackRadialRequest : HUDManagerRequest
+	public ResolveQuickHackRadialRequest()
 	{
-		public ResolveQuickHackRadialRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

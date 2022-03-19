@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAudioSignpostTriggerNodeInstance : worldTriggerAreaNodeInstance
 {
-	[REDMeta]
-	public partial class worldAudioSignpostTriggerNodeInstance : worldTriggerAreaNodeInstance
+	public worldAudioSignpostTriggerNodeInstance()
 	{
-		public worldAudioSignpostTriggerNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

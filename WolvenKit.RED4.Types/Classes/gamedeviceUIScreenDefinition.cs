@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedeviceUIScreenDefinition : RedBaseClass
 {
-	[REDMeta]
-	public partial class gamedeviceUIScreenDefinition : RedBaseClass
+	[Ordinal(0)] 
+	[RED("screenType")] 
+	public TweakDBID ScreenType
 	{
-		[Ordinal(0)] 
-		[RED("screenType")] 
-		public TweakDBID ScreenType
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-
-		public gamedeviceUIScreenDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<TweakDBID>();
+		set => SetPropertyValue<TweakDBID>(value);
 	}
+
+	public gamedeviceUIScreenDefinition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

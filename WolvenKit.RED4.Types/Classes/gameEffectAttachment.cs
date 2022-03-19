@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectAttachment : entIAttachment
 {
-	[REDMeta]
-	public partial class gameEffectAttachment : entIAttachment
+	public gameEffectAttachment()
 	{
-		public gameEffectAttachment()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

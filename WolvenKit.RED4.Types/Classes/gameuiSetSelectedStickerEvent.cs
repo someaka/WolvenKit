@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiSetSelectedStickerEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiSetSelectedStickerEvent : redEvent
+	public gameuiSetSelectedStickerEvent()
 	{
-		public gameuiSetSelectedStickerEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

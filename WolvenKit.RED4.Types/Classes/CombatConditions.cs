@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CombatConditions : AIAutonomousConditions
 {
-	[REDMeta]
-	public partial class CombatConditions : AIAutonomousConditions
+	public CombatConditions()
 	{
-		public CombatConditions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

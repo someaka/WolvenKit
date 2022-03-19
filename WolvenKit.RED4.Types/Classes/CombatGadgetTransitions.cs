@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CombatGadgetTransitions : DefaultTransition
 {
-	[REDMeta]
-	public partial class CombatGadgetTransitions : DefaultTransition
+	public CombatGadgetTransitions()
 	{
-		public CombatGadgetTransitions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

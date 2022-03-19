@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnOffPrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class OnOffPrereqState : gamePrereqState
+	public OnOffPrereqState()
 	{
-		public OnOffPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

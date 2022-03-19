@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TonemappingModeLinear : ITonemappingMode
 {
-	[REDMeta]
-	public partial class TonemappingModeLinear : ITonemappingMode
+	public TonemappingModeLinear()
 	{
-		public TonemappingModeLinear()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

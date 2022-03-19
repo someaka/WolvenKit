@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemEntityAppearanceChanger : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemEntityAppearanceChanger : worldIRuntimeSystem
+	public worldRuntimeSystemEntityAppearanceChanger()
 	{
-		public worldRuntimeSystemEntityAppearanceChanger()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

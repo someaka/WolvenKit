@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workAnimObjectDebuggerCommandData : workDebuggerCommandData
 {
-	[REDMeta]
-	public partial class workAnimObjectDebuggerCommandData : workDebuggerCommandData
+	public workAnimObjectDebuggerCommandData()
 	{
-		public workAnimObjectDebuggerCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

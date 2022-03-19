@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class debugRuntimeSystemSpeedSplinePreview : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class debugRuntimeSystemSpeedSplinePreview : worldIRuntimeSystem
+	public debugRuntimeSystemSpeedSplinePreview()
 	{
-		public debugRuntimeSystemSpeedSplinePreview()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

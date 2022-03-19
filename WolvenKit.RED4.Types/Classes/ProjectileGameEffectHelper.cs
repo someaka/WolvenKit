@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProjectileGameEffectHelper : IScriptable
 {
-	[REDMeta]
-	public partial class ProjectileGameEffectHelper : IScriptable
+	public ProjectileGameEffectHelper()
 	{
-		public ProjectileGameEffectHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

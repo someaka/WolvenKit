@@ -1,15 +1,12 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+[REDClass(SerializeDefault = true)]
+public partial class gsmStateObserver_SessionAutomation : gsmIStateObserver
 {
-	[REDMeta]
-	[REDClass(SerializeDefault = true)]
-	public partial class gsmStateObserver_SessionAutomation : gsmIStateObserver
+	public gsmStateObserver_SessionAutomation()
 	{
-		public gsmStateObserver_SessionAutomation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

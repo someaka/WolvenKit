@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIEffectOutputParameter : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameIEffectOutputParameter : RedBaseClass
+	public gameIEffectOutputParameter()
 	{
-		public gameIEffectOutputParameter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

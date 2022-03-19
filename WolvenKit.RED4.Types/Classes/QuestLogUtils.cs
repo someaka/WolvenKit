@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestLogUtils : IScriptable
 {
-	[REDMeta]
-	public partial class QuestLogUtils : IScriptable
+	public QuestLogUtils()
 	{
-		public QuestLogUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISubActionShootWithWeapon_Record : gamedataAISubAction_Record
 {
-	[REDMeta]
-	public partial class gamedataAISubActionShootWithWeapon_Record : gamedataAISubAction_Record
+	public gamedataAISubActionShootWithWeapon_Record()
 	{
-		public gamedataAISubActionShootWithWeapon_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

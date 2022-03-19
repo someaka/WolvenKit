@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleeThrowReloadDecisions : MeleeTransition
 {
-	[REDMeta]
-	public partial class MeleeThrowReloadDecisions : MeleeTransition
+	public MeleeThrowReloadDecisions()
 	{
-		public MeleeThrowReloadDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

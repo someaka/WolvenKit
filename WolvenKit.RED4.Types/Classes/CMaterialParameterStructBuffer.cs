@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CMaterialParameterStructBuffer : CMaterialParameter
 {
-	[REDMeta]
-	public partial class CMaterialParameterStructBuffer : CMaterialParameter
+	public CMaterialParameterStructBuffer()
 	{
-		public CMaterialParameterStructBuffer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

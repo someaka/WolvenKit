@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WaitForPassengersToSpawnEvent : redEvent
 {
-	[REDMeta]
-	public partial class WaitForPassengersToSpawnEvent : redEvent
+	public WaitForPassengersToSpawnEvent()
 	{
-		public WaitForPassengersToSpawnEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

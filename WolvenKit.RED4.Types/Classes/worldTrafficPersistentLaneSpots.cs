@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficPersistentLaneSpots : RedBaseClass
 {
-	[REDMeta]
-	public partial class worldTrafficPersistentLaneSpots : RedBaseClass
+	[Ordinal(0)] 
+	[RED("spots")] 
+	public CArray<CHandle<worldTrafficSpotCompiled>> Spots
 	{
-		[Ordinal(0)] 
-		[RED("spots")] 
-		public CArray<CHandle<worldTrafficSpotCompiled>> Spots
-		{
-			get => GetPropertyValue<CArray<CHandle<worldTrafficSpotCompiled>>>();
-			set => SetPropertyValue<CArray<CHandle<worldTrafficSpotCompiled>>>(value);
-		}
-
-		public worldTrafficPersistentLaneSpots()
-		{
-			Spots = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<CHandle<worldTrafficSpotCompiled>>>();
+		set => SetPropertyValue<CArray<CHandle<worldTrafficSpotCompiled>>>(value);
 	}
+
+	public worldTrafficPersistentLaneSpots()
+	{
+		Spots = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

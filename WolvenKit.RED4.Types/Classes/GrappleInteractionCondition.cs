@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrappleInteractionCondition : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class GrappleInteractionCondition : gameinteractionsInteractionScriptedCondition
+	public GrappleInteractionCondition()
 	{
-		public GrappleInteractionCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

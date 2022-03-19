@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LaserDetectorControllerPS : ScriptableDeviceComponentPS
 {
-	[REDMeta]
-	public partial class LaserDetectorControllerPS : ScriptableDeviceComponentPS
+	public LaserDetectorControllerPS()
 	{
-		public LaserDetectorControllerPS()
-		{
-			DeviceName = "Gameplay-Devices-DisplayNames-LaserDetector";
+		DeviceName = "Gameplay-Devices-DisplayNames-LaserDetector";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

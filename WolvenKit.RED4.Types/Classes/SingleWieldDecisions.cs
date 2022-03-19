@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SingleWieldDecisions : UpperBodyTransition
 {
-	[REDMeta]
-	public partial class SingleWieldDecisions : UpperBodyTransition
+	public SingleWieldDecisions()
 	{
-		public SingleWieldDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

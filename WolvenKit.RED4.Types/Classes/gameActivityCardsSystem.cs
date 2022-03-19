@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameActivityCardsSystem : gameIActivityCardsSystem
 {
-	[REDMeta]
-	public partial class gameActivityCardsSystem : gameIActivityCardsSystem
+	public gameActivityCardsSystem()
 	{
-		public gameActivityCardsSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

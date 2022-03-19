@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questRadioAnnouncementPlayer : audioBaseRadioAnnouncementPlayer
 {
-	[REDMeta]
-	public partial class questRadioAnnouncementPlayer : audioBaseRadioAnnouncementPlayer
+	public questRadioAnnouncementPlayer()
 	{
-		public questRadioAnnouncementPlayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

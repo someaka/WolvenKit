@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RestoreRevealStateEvent : redEvent
 {
-	[REDMeta]
-	public partial class RestoreRevealStateEvent : redEvent
+	public RestoreRevealStateEvent()
 	{
-		public RestoreRevealStateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

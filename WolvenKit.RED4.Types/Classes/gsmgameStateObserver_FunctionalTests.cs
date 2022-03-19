@@ -1,15 +1,12 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+[REDClass(SerializeDefault = true)]
+public partial class gsmgameStateObserver_FunctionalTests : gsmIStateObserver
 {
-	[REDMeta]
-	[REDClass(SerializeDefault = true)]
-	public partial class gsmgameStateObserver_FunctionalTests : gsmIStateObserver
+	public gsmgameStateObserver_FunctionalTests()
 	{
-		public gsmgameStateObserver_FunctionalTests()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

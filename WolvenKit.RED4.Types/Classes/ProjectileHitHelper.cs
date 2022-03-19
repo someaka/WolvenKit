@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProjectileHitHelper : IScriptable
 {
-	[REDMeta]
-	public partial class ProjectileHitHelper : IScriptable
+	public ProjectileHitHelper()
 	{
-		public ProjectileHitHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

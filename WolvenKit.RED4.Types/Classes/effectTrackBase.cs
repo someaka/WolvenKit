@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectTrackBase : effectBaseItem
 {
-	[REDMeta]
-	public partial class effectTrackBase : effectBaseItem
+	public effectTrackBase()
 	{
-		public effectTrackBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

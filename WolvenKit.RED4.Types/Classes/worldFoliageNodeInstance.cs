@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldFoliageNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldFoliageNodeInstance : worldINodeInstance
+	public worldFoliageNodeInstance()
 	{
-		public worldFoliageNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TestConditon : workIScriptedCondition
 {
-	[REDMeta]
-	public partial class TestConditon : workIScriptedCondition
+	public TestConditon()
 	{
-		public TestConditon()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

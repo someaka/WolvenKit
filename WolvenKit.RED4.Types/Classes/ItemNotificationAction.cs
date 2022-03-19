@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemNotificationAction : GenericNotificationBaseAction
 {
-	[REDMeta]
-	public partial class ItemNotificationAction : GenericNotificationBaseAction
+	[Ordinal(0)] 
+	[RED("eventDispatcher")] 
+	public CWeakHandle<worlduiIWidgetGameController> EventDispatcher
 	{
-		[Ordinal(0)] 
-		[RED("eventDispatcher")] 
-		public CWeakHandle<worlduiIWidgetGameController> EventDispatcher
-		{
-			get => GetPropertyValue<CWeakHandle<worlduiIWidgetGameController>>();
-			set => SetPropertyValue<CWeakHandle<worlduiIWidgetGameController>>(value);
-		}
-
-		public ItemNotificationAction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<worlduiIWidgetGameController>>();
+		set => SetPropertyValue<CWeakHandle<worlduiIWidgetGameController>>(value);
 	}
+
+	public ItemNotificationAction()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

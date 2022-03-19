@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameLocationResource : CResource
 {
-	[REDMeta]
-	public partial class gameLocationResource : CResource
+	public gameLocationResource()
 	{
-		public gameLocationResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

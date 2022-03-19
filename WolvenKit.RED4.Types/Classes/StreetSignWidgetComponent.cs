@@ -1,61 +1,57 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StreetSignWidgetComponent : IWorldWidgetComponent
 {
-	[REDMeta]
-	public partial class StreetSignWidgetComponent : IWorldWidgetComponent
+	[Ordinal(12)] 
+	[RED("streetSignTDBID")] 
+	public TweakDBID StreetSignTDBID
 	{
-		[Ordinal(12)] 
-		[RED("streetSignTDBID")] 
-		public TweakDBID StreetSignTDBID
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-
-		[Ordinal(13)] 
-		[RED("isAStreetName")] 
-		public CBool IsAStreetName
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		[Ordinal(14)] 
-		[RED("streetNameSignTDBID")] 
-		public TweakDBID StreetNameSignTDBID
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-
-		[Ordinal(15)] 
-		[RED("signSelector")] 
-		public CHandle<inkTweakDBIDSelector> SignSelector
-		{
-			get => GetPropertyValue<CHandle<inkTweakDBIDSelector>>();
-			set => SetPropertyValue<CHandle<inkTweakDBIDSelector>>(value);
-		}
-
-		[Ordinal(16)] 
-		[RED("signVersion")] 
-		public CUInt32 SignVersion
-		{
-			get => GetPropertyValue<CUInt32>();
-			set => SetPropertyValue<CUInt32>(value);
-		}
-
-		public StreetSignWidgetComponent()
-		{
-			Name = "Component";
-			LocalTransform = new() { Position = new() { X = new(), Y = new(), Z = new() }, Orientation = new() { R = 1.000000F } };
-			TintColor = new();
-			ScreenAreaMultiplier = 1.000000F;
-			IsEnabled = true;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<TweakDBID>();
+		set => SetPropertyValue<TweakDBID>(value);
 	}
+
+	[Ordinal(13)] 
+	[RED("isAStreetName")] 
+	public CBool IsAStreetName
+	{
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
+	}
+
+	[Ordinal(14)] 
+	[RED("streetNameSignTDBID")] 
+	public TweakDBID StreetNameSignTDBID
+	{
+		get => GetPropertyValue<TweakDBID>();
+		set => SetPropertyValue<TweakDBID>(value);
+	}
+
+	[Ordinal(15)] 
+	[RED("signSelector")] 
+	public CHandle<inkTweakDBIDSelector> SignSelector
+	{
+		get => GetPropertyValue<CHandle<inkTweakDBIDSelector>>();
+		set => SetPropertyValue<CHandle<inkTweakDBIDSelector>>(value);
+	}
+
+	[Ordinal(16)] 
+	[RED("signVersion")] 
+	public CUInt32 SignVersion
+	{
+		get => GetPropertyValue<CUInt32>();
+		set => SetPropertyValue<CUInt32>(value);
+	}
+
+	public StreetSignWidgetComponent()
+	{
+		Name = "Component";
+		LocalTransform = new() { Position = new() { X = new(), Y = new(), Z = new() }, Orientation = new() { R = 1.000000F } };
+		TintColor = new();
+		ScreenAreaMultiplier = 1.000000F;
+		IsEnabled = true;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

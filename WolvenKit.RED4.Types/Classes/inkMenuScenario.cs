@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMenuScenario : IScriptable
 {
-	[REDMeta]
-	public partial class inkMenuScenario : IScriptable
+	public inkMenuScenario()
 	{
-		public inkMenuScenario()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ScavengeTarget : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class ScavengeTarget : AIbehaviortaskScript
+	public ScavengeTarget()
 	{
-		public ScavengeTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

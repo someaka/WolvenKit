@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataXPPoints_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataXPPoints_Record : gamedataTweakDBRecord
+	public gamedataXPPoints_Record()
 	{
-		public gamedataXPPoints_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

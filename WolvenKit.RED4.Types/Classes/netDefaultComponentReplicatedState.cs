@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class netDefaultComponentReplicatedState : netIComponentState
 {
-	[REDMeta]
-	public partial class netDefaultComponentReplicatedState : netIComponentState
+	public netDefaultComponentReplicatedState()
 	{
-		public netDefaultComponentReplicatedState()
-		{
-			Enabled = true;
+		Enabled = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

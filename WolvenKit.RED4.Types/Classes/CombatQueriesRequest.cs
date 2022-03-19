@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CombatQueriesRequest : gameSignalUserData
 {
-	[REDMeta]
-	public partial class CombatQueriesRequest : gameSignalUserData
+	public CombatQueriesRequest()
 	{
-		public CombatQueriesRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

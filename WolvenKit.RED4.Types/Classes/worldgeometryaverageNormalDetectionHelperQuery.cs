@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldgeometryaverageNormalDetectionHelperQuery : IScriptable
 {
-	[REDMeta]
-	public partial class worldgeometryaverageNormalDetectionHelperQuery : IScriptable
+	public worldgeometryaverageNormalDetectionHelperQuery()
 	{
-		public worldgeometryaverageNormalDetectionHelperQuery()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

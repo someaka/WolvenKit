@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIVehiclePanicCommand : AIVehicleCommand
 {
-	[REDMeta]
-	public partial class AIVehiclePanicCommand : AIVehicleCommand
+	public AIVehiclePanicCommand()
 	{
-		public AIVehiclePanicCommand()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

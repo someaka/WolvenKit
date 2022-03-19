@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IconsModule : HUDModule
 {
-	[REDMeta]
-	public partial class IconsModule : HUDModule
+	public IconsModule()
 	{
-		public IconsModule()
-		{
-			InstancesList = new();
+		InstancesList = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExhaustedDecisions : StaminaTransition
 {
-	[REDMeta]
-	public partial class ExhaustedDecisions : StaminaTransition
+	public ExhaustedDecisions()
 	{
-		public ExhaustedDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DebugGameEngine : CGameEngine
 {
-	[REDMeta]
-	public partial class DebugGameEngine : CGameEngine
+	public DebugGameEngine()
 	{
-		public DebugGameEngine()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

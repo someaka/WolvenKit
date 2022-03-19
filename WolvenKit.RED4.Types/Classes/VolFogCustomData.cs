@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VolFogCustomData : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class VolFogCustomData : ICameraStorageCustomData
+	public VolFogCustomData()
 	{
-		public VolFogCustomData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

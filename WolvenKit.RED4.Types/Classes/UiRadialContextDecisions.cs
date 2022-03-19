@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UiRadialContextDecisions : InputContextTransitionDecisions
 {
-	[REDMeta]
-	public partial class UiRadialContextDecisions : InputContextTransitionDecisions
+	public UiRadialContextDecisions()
 	{
-		public UiRadialContextDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

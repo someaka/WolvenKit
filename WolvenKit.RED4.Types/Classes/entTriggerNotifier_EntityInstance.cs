@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entTriggerNotifier_EntityInstance : worldITriggerAreaNotiferInstance
 {
-	[REDMeta]
-	public partial class entTriggerNotifier_EntityInstance : worldITriggerAreaNotiferInstance
+	public entTriggerNotifier_EntityInstance()
 	{
-		public entTriggerNotifier_EntityInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

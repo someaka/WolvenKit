@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSaveSanitizationForbiddenAreaSystem : gameISaveSanitizationForbiddenAreaSystem
 {
-	[REDMeta]
-	public partial class gameSaveSanitizationForbiddenAreaSystem : gameISaveSanitizationForbiddenAreaSystem
+	public gameSaveSanitizationForbiddenAreaSystem()
 	{
-		public gameSaveSanitizationForbiddenAreaSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

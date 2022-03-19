@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrenadeProximitySensorTargetAcquiredEvent : redEvent
 {
-	[REDMeta]
-	public partial class GrenadeProximitySensorTargetAcquiredEvent : redEvent
+	public GrenadeProximitySensorTargetAcquiredEvent()
 	{
-		public GrenadeProximitySensorTargetAcquiredEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

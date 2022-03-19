@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffector : IScriptable
 {
-	[REDMeta]
-	public partial class gameEffector : IScriptable
+	public gameEffector()
 	{
-		public gameEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

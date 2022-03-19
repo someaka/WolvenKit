@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InteractiveAdFinishedEvent : redEvent
 {
-	[REDMeta]
-	public partial class InteractiveAdFinishedEvent : redEvent
+	public InteractiveAdFinishedEvent()
 	{
-		public InteractiveAdFinishedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

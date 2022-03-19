@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workSetInfiniteSequenceCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workSetInfiniteSequenceCommandData : workIWorkspotCommandData
+	public workSetInfiniteSequenceCommandData()
 	{
-		public workSetInfiniteSequenceCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMuppetInputActionActivateScanning : gameIMuppetInputAction
 {
-	[REDMeta]
-	public partial class gameMuppetInputActionActivateScanning : gameIMuppetInputAction
+	public gameMuppetInputActionActivateScanning()
 	{
-		public gameMuppetInputActionActivateScanning()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

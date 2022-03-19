@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISquadItemPriorityFilter_Record : gamedataAITicketFilter_Record
 {
-	[REDMeta]
-	public partial class gamedataAISquadItemPriorityFilter_Record : gamedataAITicketFilter_Record
+	public gamedataAISquadItemPriorityFilter_Record()
 	{
-		public gamedataAISquadItemPriorityFilter_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

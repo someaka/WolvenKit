@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorDriveSummoningTreeNodeDefinition : AIbehaviorDriveTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorDriveSummoningTreeNodeDefinition : AIbehaviorDriveTreeNodeDefinition
+	public AIbehaviorDriveSummoningTreeNodeDefinition()
 	{
-		public AIbehaviorDriveSummoningTreeNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

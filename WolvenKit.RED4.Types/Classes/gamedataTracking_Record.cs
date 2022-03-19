@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataTracking_Record : gamedataProjectileLaunch_Record
 {
-	[REDMeta]
-	public partial class gamedataTracking_Record : gamedataProjectileLaunch_Record
+	public gamedataTracking_Record()
 	{
-		public gamedataTracking_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

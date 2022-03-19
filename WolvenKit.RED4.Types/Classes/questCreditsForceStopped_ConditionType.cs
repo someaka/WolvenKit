@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questCreditsForceStopped_ConditionType : questIUIConditionType
 {
-	[REDMeta]
-	public partial class questCreditsForceStopped_ConditionType : questIUIConditionType
+	public questCreditsForceStopped_ConditionType()
 	{
-		public questCreditsForceStopped_ConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

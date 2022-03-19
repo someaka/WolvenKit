@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiGameVersionTextController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class gameuiGameVersionTextController : inkWidgetLogicController
+	public gameuiGameVersionTextController()
 	{
-		public gameuiGameVersionTextController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

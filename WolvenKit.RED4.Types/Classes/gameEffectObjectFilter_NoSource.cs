@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectObjectFilter_NoSource : gameEffectObjectGroupFilter
 {
-	[REDMeta]
-	public partial class gameEffectObjectFilter_NoSource : gameEffectObjectGroupFilter
+	public gameEffectObjectFilter_NoSource()
 	{
-		public gameEffectObjectFilter_NoSource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

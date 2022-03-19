@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class populationModifier : ISerializable
 {
-	[REDMeta]
-	public partial class populationModifier : ISerializable
+	public populationModifier()
 	{
-		public populationModifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

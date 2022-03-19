@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectColorGradeV2PlayData : effectPlacedTrackItemPlayData
 {
-	[REDMeta]
-	public partial class effectColorGradeV2PlayData : effectPlacedTrackItemPlayData
+	public effectColorGradeV2PlayData()
 	{
-		public effectColorGradeV2PlayData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearBraindanceStateRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ClearBraindanceStateRequest : gameScriptableSystemRequest
+	public ClearBraindanceStateRequest()
 	{
-		public ClearBraindanceStateRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

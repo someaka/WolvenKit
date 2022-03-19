@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StopShortGlitchEvent : redEvent
 {
-	[REDMeta]
-	public partial class StopShortGlitchEvent : redEvent
+	public StopShortGlitchEvent()
 	{
-		public StopShortGlitchEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

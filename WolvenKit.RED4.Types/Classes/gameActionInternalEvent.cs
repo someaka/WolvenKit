@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameActionInternalEvent : IScriptable
 {
-	[REDMeta]
-	public partial class gameActionInternalEvent : IScriptable
+	public gameActionInternalEvent()
 	{
-		public gameActionInternalEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

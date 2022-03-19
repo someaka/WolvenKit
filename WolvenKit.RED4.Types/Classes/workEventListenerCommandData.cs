@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workEventListenerCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workEventListenerCommandData : workIWorkspotCommandData
+	public workEventListenerCommandData()
 	{
-		public workEventListenerCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

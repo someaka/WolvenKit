@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMuppetUpperBodyRequestsComponent : gameMuppetComponent
 {
-	[REDMeta]
-	public partial class gameMuppetUpperBodyRequestsComponent : gameMuppetComponent
+	public gameMuppetUpperBodyRequestsComponent()
 	{
-		public gameMuppetUpperBodyRequestsComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

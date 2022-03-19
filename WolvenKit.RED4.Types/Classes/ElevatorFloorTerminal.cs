@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ElevatorFloorTerminal : Terminal
 {
-	[REDMeta]
-	public partial class ElevatorFloorTerminal : Terminal
+	public ElevatorFloorTerminal()
 	{
-		public ElevatorFloorTerminal()
-		{
-			ControllerTypeName = "ElevatorFloorTerminalController";
+		ControllerTypeName = "ElevatorFloorTerminalController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

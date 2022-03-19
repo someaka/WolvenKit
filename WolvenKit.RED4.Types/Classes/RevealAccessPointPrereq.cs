@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RevealAccessPointPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class RevealAccessPointPrereq : gameIScriptablePrereq
+	public RevealAccessPointPrereq()
 	{
-		public RevealAccessPointPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

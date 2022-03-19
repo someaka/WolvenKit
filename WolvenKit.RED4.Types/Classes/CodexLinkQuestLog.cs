@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CodexLinkQuestLog : CodexImageButton
 {
-	[REDMeta]
-	public partial class CodexLinkQuestLog : CodexImageButton
+	public CodexLinkQuestLog()
 	{
-		public CodexLinkQuestLog()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

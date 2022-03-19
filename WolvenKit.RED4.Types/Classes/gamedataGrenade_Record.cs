@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataGrenade_Record : gamedataGadget_Record
 {
-	[REDMeta]
-	public partial class gamedataGrenade_Record : gamedataGadget_Record
+	public gamedataGrenade_Record()
 	{
-		public gamedataGrenade_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

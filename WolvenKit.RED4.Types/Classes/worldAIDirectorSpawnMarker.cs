@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAIDirectorSpawnMarker : worldIMarker
 {
-	[REDMeta]
-	public partial class worldAIDirectorSpawnMarker : worldIMarker
+	public worldAIDirectorSpawnMarker()
 	{
-		public worldAIDirectorSpawnMarker()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

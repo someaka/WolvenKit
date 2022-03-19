@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrenadeDespawnRequestEvent : redEvent
 {
-	[REDMeta]
-	public partial class GrenadeDespawnRequestEvent : redEvent
+	public GrenadeDespawnRequestEvent()
 	{
-		public GrenadeDespawnRequestEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

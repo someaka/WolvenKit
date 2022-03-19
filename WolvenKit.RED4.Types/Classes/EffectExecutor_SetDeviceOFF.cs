@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectExecutor_SetDeviceOFF : EffectExecutor_Device
 {
-	[REDMeta]
-	public partial class EffectExecutor_SetDeviceOFF : EffectExecutor_Device
+	public EffectExecutor_SetDeviceOFF()
 	{
-		public EffectExecutor_SetDeviceOFF()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

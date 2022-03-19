@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataRaceCheckpoint_Record : gamedataLCDScreen_Record
 {
-	[REDMeta]
-	public partial class gamedataRaceCheckpoint_Record : gamedataLCDScreen_Record
+	public gamedataRaceCheckpoint_Record()
 	{
-		public gamedataRaceCheckpoint_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemWeather : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemWeather : worldIRuntimeSystem
+	public worldRuntimeSystemWeather()
 	{
-		public worldRuntimeSystemWeather()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

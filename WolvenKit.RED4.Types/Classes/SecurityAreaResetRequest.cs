@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityAreaResetRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class SecurityAreaResetRequest : gameScriptableSystemRequest
+	public SecurityAreaResetRequest()
 	{
-		public SecurityAreaResetRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

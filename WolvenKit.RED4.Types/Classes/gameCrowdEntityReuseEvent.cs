@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCrowdEntityReuseEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameCrowdEntityReuseEvent : redEvent
+	public gameCrowdEntityReuseEvent()
 	{
-		public gameCrowdEntityReuseEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TeleportFailsafeHelper : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class TeleportFailsafeHelper : AIbehaviortaskScript
+	public TeleportFailsafeHelper()
 	{
-		public TeleportFailsafeHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

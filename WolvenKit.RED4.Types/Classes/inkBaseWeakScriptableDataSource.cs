@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkBaseWeakScriptableDataSource : inkAbstractDataSourceWrapper
 {
-	[REDMeta]
-	public partial class inkBaseWeakScriptableDataSource : inkAbstractDataSourceWrapper
+	public inkBaseWeakScriptableDataSource()
 	{
-		public inkBaseWeakScriptableDataSource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

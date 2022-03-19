@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BodyDisposalPSMPrereqState : PlayerStateMachinePrereqState
 {
-	[REDMeta]
-	public partial class BodyDisposalPSMPrereqState : PlayerStateMachinePrereqState
+	public BodyDisposalPSMPrereqState()
 	{
-		public BodyDisposalPSMPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

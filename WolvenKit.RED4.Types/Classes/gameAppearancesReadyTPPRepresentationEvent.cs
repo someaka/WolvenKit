@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAppearancesReadyTPPRepresentationEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameAppearancesReadyTPPRepresentationEvent : redEvent
+	public gameAppearancesReadyTPPRepresentationEvent()
 	{
-		public gameAppearancesReadyTPPRepresentationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectTrackItemMetadata : effectTrackItem
 {
-	[REDMeta]
-	public partial class effectTrackItemMetadata : effectTrackItem
+	public effectTrackItemMetadata()
 	{
-		public effectTrackItemMetadata()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

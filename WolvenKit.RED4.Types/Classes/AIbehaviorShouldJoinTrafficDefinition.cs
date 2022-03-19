@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorShouldJoinTrafficDefinition : AIbehaviorVehicleExpressionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorShouldJoinTrafficDefinition : AIbehaviorVehicleExpressionDefinition
+	public AIbehaviorShouldJoinTrafficDefinition()
 	{
-		public AIbehaviorShouldJoinTrafficDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

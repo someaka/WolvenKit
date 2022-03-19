@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BaseDestructibleController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class BaseDestructibleController : ScriptableDeviceComponent
+	public BaseDestructibleController()
 	{
-		public BaseDestructibleController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

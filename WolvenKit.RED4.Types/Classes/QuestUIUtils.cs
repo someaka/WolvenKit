@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestUIUtils : RedBaseClass
 {
-	[REDMeta]
-	public partial class QuestUIUtils : RedBaseClass
+	public QuestUIUtils()
 	{
-		public QuestUIUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

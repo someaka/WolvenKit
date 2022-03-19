@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimEvent_Slide : animAnimEvent
 {
-	[REDMeta]
-	public partial class animAnimEvent_Slide : animAnimEvent
+	public animAnimEvent_Slide()
 	{
-		public animAnimEvent_Slide()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

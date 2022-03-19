@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleSplineSlot_NonAnimSpline : RedBaseClass
 {
-	[REDMeta]
-	public partial class vehicleSplineSlot_NonAnimSpline : RedBaseClass
+	public vehicleSplineSlot_NonAnimSpline()
 	{
-		public vehicleSplineSlot_NonAnimSpline()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

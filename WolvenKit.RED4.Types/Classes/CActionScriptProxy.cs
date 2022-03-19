@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CActionScriptProxy : IScriptable
 {
-	[REDMeta]
-	public partial class CActionScriptProxy : IScriptable
+	public CActionScriptProxy()
 	{
-		public CActionScriptProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

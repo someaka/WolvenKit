@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DoorSystemController : BaseNetworkSystemController
 {
-	[REDMeta]
-	public partial class DoorSystemController : BaseNetworkSystemController
+	public DoorSystemController()
 	{
-		public DoorSystemController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

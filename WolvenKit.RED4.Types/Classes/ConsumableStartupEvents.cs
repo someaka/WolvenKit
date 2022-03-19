@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConsumableStartupEvents : ConsumableTransitions
 {
-	[REDMeta]
-	public partial class ConsumableStartupEvents : ConsumableTransitions
+	public ConsumableStartupEvents()
 	{
-		public ConsumableStartupEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

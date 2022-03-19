@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class AISetCombatPresetCommandParams : questScriptedAICommandParams
 {
-	[REDMeta]
-	public partial class AISetCombatPresetCommandParams : questScriptedAICommandParams
+	[Ordinal(0)] 
+	[RED("combatPreset")] 
+	public CEnum<EAICombatPreset> CombatPreset
 	{
-		[Ordinal(0)] 
-		[RED("combatPreset")] 
-		public CEnum<EAICombatPreset> CombatPreset
-		{
-			get => GetPropertyValue<CEnum<EAICombatPreset>>();
-			set => SetPropertyValue<CEnum<EAICombatPreset>>(value);
-		}
-
-		public AISetCombatPresetCommandParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<EAICombatPreset>>();
+		set => SetPropertyValue<CEnum<EAICombatPreset>>(value);
 	}
+
+	public AISetCombatPresetCommandParams()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Fuse : InteractiveMasterDevice
 {
-	[REDMeta]
-	public partial class Fuse : InteractiveMasterDevice
+	public Fuse()
 	{
-		public Fuse()
-		{
-			ControllerTypeName = "FuseController";
+		ControllerTypeName = "FuseController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

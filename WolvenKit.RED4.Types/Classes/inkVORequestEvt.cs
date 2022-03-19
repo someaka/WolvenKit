@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVORequestEvt : redEvent
 {
-	[REDMeta]
-	public partial class inkVORequestEvt : redEvent
+	public inkVORequestEvt()
 	{
-		public inkVORequestEvt()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

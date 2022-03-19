@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiSetCategoryEnabledEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiSetCategoryEnabledEvent : redEvent
+	public gameuiSetCategoryEnabledEvent()
 	{
-		public gameuiSetCategoryEnabledEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

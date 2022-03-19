@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DoorSystem : DeviceSystemBase
 {
-	[REDMeta]
-	public partial class DoorSystem : DeviceSystemBase
+	public DoorSystem()
 	{
-		public DoorSystem()
-		{
-			ControllerTypeName = "DoorSystemController";
+		ControllerTypeName = "DoorSystemController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

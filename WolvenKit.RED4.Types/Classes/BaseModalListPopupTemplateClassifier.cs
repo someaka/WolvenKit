@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BaseModalListPopupTemplateClassifier : inkVirtualItemTemplateClassifierWrapper
 {
-	[REDMeta]
-	public partial class BaseModalListPopupTemplateClassifier : inkVirtualItemTemplateClassifierWrapper
+	public BaseModalListPopupTemplateClassifier()
 	{
-		public BaseModalListPopupTemplateClassifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

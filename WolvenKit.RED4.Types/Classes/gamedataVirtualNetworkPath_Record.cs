@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVirtualNetworkPath_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataVirtualNetworkPath_Record : gamedataTweakDBRecord
+	public gamedataVirtualNetworkPath_Record()
 	{
-		public gamedataVirtualNetworkPath_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

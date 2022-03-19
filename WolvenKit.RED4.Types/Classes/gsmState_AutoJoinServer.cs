@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmState_AutoJoinServer : gsmMenuState
 {
-	[REDMeta]
-	public partial class gsmState_AutoJoinServer : gsmMenuState
+	public gsmState_AutoJoinServer()
 	{
-		public gsmState_AutoJoinServer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

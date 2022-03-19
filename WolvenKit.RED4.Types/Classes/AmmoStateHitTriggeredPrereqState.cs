@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AmmoStateHitTriggeredPrereqState : GenericHitPrereqState
 {
-	[REDMeta]
-	public partial class AmmoStateHitTriggeredPrereqState : GenericHitPrereqState
+	public AmmoStateHitTriggeredPrereqState()
 	{
-		public AmmoStateHitTriggeredPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

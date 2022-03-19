@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questStopRace_NodeType : questIVehicleManagerNodeType
 {
-	[REDMeta]
-	public partial class questStopRace_NodeType : questIVehicleManagerNodeType
+	public questStopRace_NodeType()
 	{
-		public questStopRace_NodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

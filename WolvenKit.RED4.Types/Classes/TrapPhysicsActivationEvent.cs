@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TrapPhysicsActivationEvent : redEvent
 {
-	[REDMeta]
-	public partial class TrapPhysicsActivationEvent : redEvent
+	public TrapPhysicsActivationEvent()
 	{
-		public TrapPhysicsActivationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

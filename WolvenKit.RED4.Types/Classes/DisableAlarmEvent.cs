@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisableAlarmEvent : redEvent
 {
-	[REDMeta]
-	public partial class DisableAlarmEvent : redEvent
+	public DisableAlarmEvent()
 	{
-		public DisableAlarmEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

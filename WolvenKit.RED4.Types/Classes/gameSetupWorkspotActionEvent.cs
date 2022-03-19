@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSetupWorkspotActionEvent : senseStimuliData
 {
-	[REDMeta]
-	public partial class gameSetupWorkspotActionEvent : senseStimuliData
+	public gameSetupWorkspotActionEvent()
 	{
-		public gameSetupWorkspotActionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameInCrowd : redEvent
 {
-	[REDMeta]
-	public partial class gameInCrowd : redEvent
+	public gameInCrowd()
 	{
-		public gameInCrowd()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

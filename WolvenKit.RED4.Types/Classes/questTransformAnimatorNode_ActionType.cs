@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questTransformAnimatorNode_ActionType : questIBaseNodeType
 {
-	[REDMeta]
-	public partial class questTransformAnimatorNode_ActionType : questIBaseNodeType
+	public questTransformAnimatorNode_ActionType()
 	{
-		public questTransformAnimatorNode_ActionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

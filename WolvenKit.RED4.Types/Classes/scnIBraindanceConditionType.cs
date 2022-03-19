@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnIBraindanceConditionType : questISceneConditionType
 {
-	[REDMeta]
-	public partial class scnIBraindanceConditionType : questISceneConditionType
+	public scnIBraindanceConditionType()
 	{
-		public scnIBraindanceConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

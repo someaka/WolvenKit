@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIGuardArea : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIGuardArea : RedBaseClass
+	public AIGuardArea()
 	{
-		public AIGuardArea()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

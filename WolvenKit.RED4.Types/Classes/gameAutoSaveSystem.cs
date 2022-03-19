@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAutoSaveSystem : gameIAutoSaveSystem
 {
-	[REDMeta]
-	public partial class gameAutoSaveSystem : gameIAutoSaveSystem
+	public gameAutoSaveSystem()
 	{
-		public gameAutoSaveSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

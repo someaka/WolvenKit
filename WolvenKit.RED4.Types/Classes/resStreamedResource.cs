@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class resStreamedResource : CResource
 {
-	[REDMeta]
-	public partial class resStreamedResource : CResource
+	public resStreamedResource()
 	{
-		public resStreamedResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

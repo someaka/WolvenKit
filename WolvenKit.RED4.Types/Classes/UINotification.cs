@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UINotification : GenericNotificationController
 {
-	[REDMeta]
-	public partial class UINotification : GenericNotificationController
+	public UINotification()
 	{
-		public UINotification()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

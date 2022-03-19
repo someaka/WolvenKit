@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NPCIsHumanoidPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class NPCIsHumanoidPrereq : gameIScriptablePrereq
+	public NPCIsHumanoidPrereq()
 	{
-		public NPCIsHumanoidPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

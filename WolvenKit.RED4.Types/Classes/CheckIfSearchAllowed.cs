@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckIfSearchAllowed : AIDebugConditions
 {
-	[REDMeta]
-	public partial class CheckIfSearchAllowed : AIDebugConditions
+	public CheckIfSearchAllowed()
 	{
-		public CheckIfSearchAllowed()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

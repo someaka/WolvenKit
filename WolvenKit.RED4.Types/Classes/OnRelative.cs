@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnRelative : inkPointerEvent
 {
-	[REDMeta]
-	public partial class OnRelative : inkPointerEvent
+	public OnRelative()
 	{
-		public OnRelative()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

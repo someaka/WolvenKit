@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuadRacerObstacleCollisionLogic : gameuiSideScrollerMiniGameCollisionLogic
 {
-	[REDMeta]
-	public partial class QuadRacerObstacleCollisionLogic : gameuiSideScrollerMiniGameCollisionLogic
+	public QuadRacerObstacleCollisionLogic()
 	{
-		public QuadRacerObstacleCollisionLogic()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

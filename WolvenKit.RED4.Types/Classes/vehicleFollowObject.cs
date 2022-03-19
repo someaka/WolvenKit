@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleFollowObject : RedBaseClass
 {
-	[REDMeta]
-	public partial class vehicleFollowObject : RedBaseClass
+	public vehicleFollowObject()
 	{
-		public vehicleFollowObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

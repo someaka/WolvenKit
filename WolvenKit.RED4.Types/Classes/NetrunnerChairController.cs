@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NetrunnerChairController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class NetrunnerChairController : ScriptableDeviceComponent
+	public NetrunnerChairController()
 	{
-		public NetrunnerChairController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTimeSkipFinishedEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameTimeSkipFinishedEvent : redEvent
+	public gameTimeSkipFinishedEvent()
 	{
-		public gameTimeSkipFinishedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

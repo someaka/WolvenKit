@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleStopDriveToPointEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleStopDriveToPointEvent : redEvent
+	public vehicleStopDriveToPointEvent()
 	{
-		public vehicleStopDriveToPointEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

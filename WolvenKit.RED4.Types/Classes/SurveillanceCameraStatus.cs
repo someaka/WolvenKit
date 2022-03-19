@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SurveillanceCameraStatus : BaseDeviceStatus
 {
-	[REDMeta]
-	public partial class SurveillanceCameraStatus : BaseDeviceStatus
+	public SurveillanceCameraStatus()
 	{
-		public SurveillanceCameraStatus()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

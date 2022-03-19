@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleAssignConvoyEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleAssignConvoyEvent : redEvent
+	public vehicleAssignConvoyEvent()
 	{
-		public vehicleAssignConvoyEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

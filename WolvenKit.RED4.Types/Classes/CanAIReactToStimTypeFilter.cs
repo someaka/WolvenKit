@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CanAIReactToStimTypeFilter : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class CanAIReactToStimTypeFilter : gameEffectObjectSingleFilter_Scripted
+	public CanAIReactToStimTypeFilter()
 	{
-		public CanAIReactToStimTypeFilter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

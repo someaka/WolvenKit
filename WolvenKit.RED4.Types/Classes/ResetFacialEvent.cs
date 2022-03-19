@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetFacialEvent : redEvent
 {
-	[REDMeta]
-	public partial class ResetFacialEvent : redEvent
+	public ResetFacialEvent()
 	{
-		public ResetFacialEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

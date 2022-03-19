@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickMeleeHitExecutor : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class QuickMeleeHitExecutor : gameEffectExecutor_Scripted
+	public QuickMeleeHitExecutor()
 	{
-		public QuickMeleeHitExecutor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

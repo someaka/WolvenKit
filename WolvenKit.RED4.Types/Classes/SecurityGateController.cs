@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityGateController : MasterController
 {
-	[REDMeta]
-	public partial class SecurityGateController : MasterController
+	public SecurityGateController()
 	{
-		public SecurityGateController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorUniqueActiveCommandList : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviorUniqueActiveCommandList : RedBaseClass
+	public AIbehaviorUniqueActiveCommandList()
 	{
-		public AIbehaviorUniqueActiveCommandList()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

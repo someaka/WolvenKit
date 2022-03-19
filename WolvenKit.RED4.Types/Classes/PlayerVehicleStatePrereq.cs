@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerVehicleStatePrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class PlayerVehicleStatePrereq : gameIScriptablePrereq
+	public PlayerVehicleStatePrereq()
 	{
-		public PlayerVehicleStatePrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnstablePlatform : BaseAnimatedDevice
 {
-	[REDMeta]
-	public partial class UnstablePlatform : BaseAnimatedDevice
+	public UnstablePlatform()
 	{
-		public UnstablePlatform()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

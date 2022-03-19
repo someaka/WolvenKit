@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class senseOnEnterShapeEvent : senseVisibilityEvent
 {
-	[REDMeta]
-	public partial class senseOnEnterShapeEvent : senseVisibilityEvent
+	public senseOnEnterShapeEvent()
 	{
-		public senseOnEnterShapeEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

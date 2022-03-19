@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePlayerReleaseControlAsChild : redEvent
 {
-	[REDMeta]
-	public partial class gamePlayerReleaseControlAsChild : redEvent
+	public gamePlayerReleaseControlAsChild()
 	{
-		public gamePlayerReleaseControlAsChild()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

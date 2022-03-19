@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamebbScriptID_EntityID : gamebbScriptID
 {
-	[REDMeta]
-	public partial class gamebbScriptID_EntityID : gamebbScriptID
+	public gamebbScriptID_EntityID()
 	{
-		public gamebbScriptID_EntityID()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

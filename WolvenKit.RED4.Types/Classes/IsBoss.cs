@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsBoss : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class IsBoss : AIbehaviorconditionScript
+	public IsBoss()
 	{
-		public IsBoss()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

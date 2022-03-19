@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IUpdatableSystem : IScriptable
 {
-	[REDMeta]
-	public partial class IUpdatableSystem : IScriptable
+	public IUpdatableSystem()
 	{
-		public IUpdatableSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

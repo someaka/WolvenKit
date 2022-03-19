@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TimeDilationFocusModeDecisions : TimeDilationTransitions
 {
-	[REDMeta]
-	public partial class TimeDilationFocusModeDecisions : TimeDilationTransitions
+	public TimeDilationFocusModeDecisions()
 	{
-		public TimeDilationFocusModeDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

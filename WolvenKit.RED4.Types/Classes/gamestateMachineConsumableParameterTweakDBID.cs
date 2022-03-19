@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineConsumableParameterTweakDBID : gamestateMachineActionParameterTweakDBID
 {
-	[REDMeta]
-	public partial class gamestateMachineConsumableParameterTweakDBID : gamestateMachineActionParameterTweakDBID
+	[Ordinal(2)] 
+	[RED("consumed")] 
+	public CBool Consumed
 	{
-		[Ordinal(2)] 
-		[RED("consumed")] 
-		public CBool Consumed
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public gamestateMachineConsumableParameterTweakDBID()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public gamestateMachineConsumableParameterTweakDBID()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

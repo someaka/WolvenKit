@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitIsInstigatorPlayerPrereq : GenericHitPrereq
 {
-	[REDMeta]
-	public partial class HitIsInstigatorPlayerPrereq : GenericHitPrereq
+	public HitIsInstigatorPlayerPrereq()
 	{
-		public HitIsInstigatorPlayerPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

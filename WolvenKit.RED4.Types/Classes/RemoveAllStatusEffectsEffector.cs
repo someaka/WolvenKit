@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RemoveAllStatusEffectsEffector : gameEffector
 {
-	[REDMeta]
-	public partial class RemoveAllStatusEffectsEffector : gameEffector
+	public RemoveAllStatusEffectsEffector()
 	{
-		public RemoveAllStatusEffectsEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

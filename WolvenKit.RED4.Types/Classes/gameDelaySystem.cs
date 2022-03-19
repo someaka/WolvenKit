@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDelaySystem : gameIDelaySystem
 {
-	[REDMeta]
-	public partial class gameDelaySystem : gameIDelaySystem
+	public gameDelaySystem()
 	{
-		public gameDelaySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

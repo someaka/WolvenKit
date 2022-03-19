@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiDynamicIconLogicController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class gameuiDynamicIconLogicController : inkWidgetLogicController
+	public gameuiDynamicIconLogicController()
 	{
-		public gameuiDynamicIconLogicController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

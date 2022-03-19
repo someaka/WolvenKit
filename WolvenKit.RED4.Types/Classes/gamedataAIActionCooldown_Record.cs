@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAIActionCooldown_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataAIActionCooldown_Record : gamedataTweakDBRecord
+	public gamedataAIActionCooldown_Record()
 	{
-		public gamedataAIActionCooldown_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

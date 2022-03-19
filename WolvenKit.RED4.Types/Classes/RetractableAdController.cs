@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RetractableAdController : BaseAnimatedDeviceController
 {
-	[REDMeta]
-	public partial class RetractableAdController : BaseAnimatedDeviceController
+	public RetractableAdController()
 	{
-		public RetractableAdController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

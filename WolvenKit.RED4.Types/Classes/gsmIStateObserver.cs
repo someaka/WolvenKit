@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmIStateObserver : RedBaseClass
 {
-	[REDMeta]
-	public partial class gsmIStateObserver : RedBaseClass
+	public gsmIStateObserver()
 	{
-		public gsmIStateObserver()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

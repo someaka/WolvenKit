@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiSetBackgroundEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiSetBackgroundEvent : redEvent
+	public gameuiSetBackgroundEvent()
 	{
-		public gameuiSetBackgroundEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

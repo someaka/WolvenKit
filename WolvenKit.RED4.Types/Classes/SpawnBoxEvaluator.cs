@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SpawnBoxEvaluator : PhysicsParticleInitializer
 {
-	[REDMeta]
-	public partial class SpawnBoxEvaluator : PhysicsParticleInitializer
+	public SpawnBoxEvaluator()
 	{
-		public SpawnBoxEvaluator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

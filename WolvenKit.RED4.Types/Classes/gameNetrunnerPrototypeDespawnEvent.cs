@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameNetrunnerPrototypeDespawnEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameNetrunnerPrototypeDespawnEvent : redEvent
+	public gameNetrunnerPrototypeDespawnEvent()
 	{
-		public gameNetrunnerPrototypeDespawnEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

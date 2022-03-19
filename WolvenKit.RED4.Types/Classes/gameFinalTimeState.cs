@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameFinalTimeState : gameITimeState
 {
-	[REDMeta]
-	public partial class gameFinalTimeState : gameITimeState
+	public gameFinalTimeState()
 	{
-		public gameFinalTimeState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

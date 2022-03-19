@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectData : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameEffectData : RedBaseClass
+	public gameEffectData()
 	{
-		public gameEffectData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

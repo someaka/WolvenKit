@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DestroyWeakspotDelayedEvent : redEvent
 {
-	[REDMeta]
-	public partial class DestroyWeakspotDelayedEvent : redEvent
+	public DestroyWeakspotDelayedEvent()
 	{
-		public DestroyWeakspotDelayedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

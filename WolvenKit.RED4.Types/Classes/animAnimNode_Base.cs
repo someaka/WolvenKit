@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_Base : ISerializable
 {
-	[REDMeta]
-	public partial class animAnimNode_Base : ISerializable
+	[Ordinal(0)] 
+	[RED("id")] 
+	public CUInt32 Id
 	{
-		[Ordinal(0)] 
-		[RED("id")] 
-		public CUInt32 Id
-		{
-			get => GetPropertyValue<CUInt32>();
-			set => SetPropertyValue<CUInt32>(value);
-		}
-
-		public animAnimNode_Base()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CUInt32>();
+		set => SetPropertyValue<CUInt32>(value);
 	}
+
+	public animAnimNode_Base()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

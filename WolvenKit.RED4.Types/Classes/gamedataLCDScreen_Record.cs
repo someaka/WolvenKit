@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataLCDScreen_Record : gamedataBaseSign_Record
 {
-	[REDMeta]
-	public partial class gamedataLCDScreen_Record : gamedataBaseSign_Record
+	public gamedataLCDScreen_Record()
 	{
-		public gamedataLCDScreen_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

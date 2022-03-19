@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GameTimeWrapper : RedBaseClass
 {
-	[REDMeta]
-	public partial class GameTimeWrapper : RedBaseClass
+	[Ordinal(0)] 
+	[RED("gameTime")] 
+	public GameTime GameTime
 	{
-		[Ordinal(0)] 
-		[RED("gameTime")] 
-		public GameTime GameTime
-		{
-			get => GetPropertyValue<GameTime>();
-			set => SetPropertyValue<GameTime>(value);
-		}
-
-		public GameTimeWrapper()
-		{
-			GameTime = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<GameTime>();
+		set => SetPropertyValue<GameTime>(value);
 	}
+
+	public GameTimeWrapper()
+	{
+		GameTime = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

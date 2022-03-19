@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AlarmLightController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class AlarmLightController : ScriptableDeviceComponent
+	public AlarmLightController()
 	{
-		public AlarmLightController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

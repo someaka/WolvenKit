@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BillboardDeviceController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class BillboardDeviceController : ScriptableDeviceComponent
+	public BillboardDeviceController()
 	{
-		public BillboardDeviceController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

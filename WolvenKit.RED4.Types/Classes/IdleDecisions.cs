@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IdleDecisions : VehicleTransition
 {
-	[REDMeta]
-	public partial class IdleDecisions : VehicleTransition
+	public IdleDecisions()
 	{
-		public IdleDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

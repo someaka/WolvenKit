@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class parameterRequestEquip : IScriptable
 {
-	[REDMeta]
-	public partial class parameterRequestEquip : IScriptable
+	[Ordinal(0)] 
+	[RED("valid")] 
+	public CBool Valid
 	{
-		[Ordinal(0)] 
-		[RED("valid")] 
-		public CBool Valid
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("itemID")] 
-		public gameItemID ItemID
-		{
-			get => GetPropertyValue<gameItemID>();
-			set => SetPropertyValue<gameItemID>(value);
-		}
-
-		public parameterRequestEquip()
-		{
-			ItemID = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("itemID")] 
+	public gameItemID ItemID
+	{
+		get => GetPropertyValue<gameItemID>();
+		set => SetPropertyValue<gameItemID>(value);
+	}
+
+	public parameterRequestEquip()
+	{
+		ItemID = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

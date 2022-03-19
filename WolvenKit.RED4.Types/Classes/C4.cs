@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class C4 : ExplosiveDevice
 {
-	[REDMeta]
-	public partial class C4 : ExplosiveDevice
+	public C4()
 	{
-		public C4()
-		{
-			ControllerTypeName = "C4Controller";
+		ControllerTypeName = "C4Controller";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

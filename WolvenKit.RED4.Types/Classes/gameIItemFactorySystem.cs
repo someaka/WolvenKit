@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIItemFactorySystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIItemFactorySystem : gameIGameSystem
+	public gameIItemFactorySystem()
 	{
-		public gameIItemFactorySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

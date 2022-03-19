@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIRelatedComponents : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class AIRelatedComponents : gameScriptableComponent
+	public AIRelatedComponents()
 	{
-		public AIRelatedComponents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

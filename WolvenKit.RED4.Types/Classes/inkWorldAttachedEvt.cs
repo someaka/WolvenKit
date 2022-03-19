@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkWorldAttachedEvt : redEvent
 {
-	[REDMeta]
-	public partial class inkWorldAttachedEvt : redEvent
+	public inkWorldAttachedEvt()
 	{
-		public inkWorldAttachedEvt()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

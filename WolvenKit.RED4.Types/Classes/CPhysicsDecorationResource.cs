@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CPhysicsDecorationResource : CMesh
 {
-	[REDMeta]
-	public partial class CPhysicsDecorationResource : CMesh
+	public CPhysicsDecorationResource()
 	{
-		public CPhysicsDecorationResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class KeyboardHoldIndicatorGameController : gameuiHoldIndicatorGameController
 {
-	[REDMeta]
-	public partial class KeyboardHoldIndicatorGameController : gameuiHoldIndicatorGameController
+	[Ordinal(6)] 
+	[RED("progress")] 
+	public inkImageWidgetReference Progress
 	{
-		[Ordinal(6)] 
-		[RED("progress")] 
-		public inkImageWidgetReference Progress
-		{
-			get => GetPropertyValue<inkImageWidgetReference>();
-			set => SetPropertyValue<inkImageWidgetReference>(value);
-		}
-
-		public KeyboardHoldIndicatorGameController()
-		{
-			Progress = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkImageWidgetReference>();
+		set => SetPropertyValue<inkImageWidgetReference>(value);
 	}
+
+	public KeyboardHoldIndicatorGameController()
+	{
+		Progress = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

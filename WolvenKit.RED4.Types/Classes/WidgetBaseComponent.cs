@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WidgetBaseComponent : entIPlacedComponent
 {
-	[REDMeta]
-	public partial class WidgetBaseComponent : entIPlacedComponent
+	public WidgetBaseComponent()
 	{
-		public WidgetBaseComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

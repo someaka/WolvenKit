@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDebugCheatsSystem : gameIDebugCheatsSystem
 {
-	[REDMeta]
-	public partial class gameDebugCheatsSystem : gameIDebugCheatsSystem
+	public gameDebugCheatsSystem()
 	{
-		public gameDebugCheatsSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

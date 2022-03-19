@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameItemEventsUnequippedFromObject : redEvent
 {
-	[REDMeta]
-	public partial class gameItemEventsUnequippedFromObject : redEvent
+	public gameItemEventsUnequippedFromObject()
 	{
-		public gameItemEventsUnequippedFromObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

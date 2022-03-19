@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldPrefabMetadata : IScriptable
 {
-	[REDMeta]
-	public partial class worldPrefabMetadata : IScriptable
+	public worldPrefabMetadata()
 	{
-		public worldPrefabMetadata()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FastForwardUnavailableDecisions : ScenesFastForwardTransition
 {
-	[REDMeta]
-	public partial class FastForwardUnavailableDecisions : ScenesFastForwardTransition
+	public FastForwardUnavailableDecisions()
 	{
-		public FastForwardUnavailableDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TurretBurstShootingDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class TurretBurstShootingDelayEvent : redEvent
+	public TurretBurstShootingDelayEvent()
 	{
-		public TurretBurstShootingDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

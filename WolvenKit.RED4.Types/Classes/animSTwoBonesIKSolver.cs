@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animSTwoBonesIKSolver : RedBaseClass
 {
-	[REDMeta]
-	public partial class animSTwoBonesIKSolver : RedBaseClass
+	public animSTwoBonesIKSolver()
 	{
-		public animSTwoBonesIKSolver()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

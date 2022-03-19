@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetLookatReactionEvent : redEvent
 {
-	[REDMeta]
-	public partial class ResetLookatReactionEvent : redEvent
+	public ResetLookatReactionEvent()
 	{
-		public ResetLookatReactionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

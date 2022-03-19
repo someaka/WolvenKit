@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkLeafWidget : inkWidget
 {
-	[REDMeta]
-	public partial class inkLeafWidget : inkWidget
+	public inkLeafWidget()
 	{
-		public inkLeafWidget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

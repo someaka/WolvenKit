@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WindowController : DoorController
 {
-	[REDMeta]
-	public partial class WindowController : DoorController
+	public WindowController()
 	{
-		public WindowController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

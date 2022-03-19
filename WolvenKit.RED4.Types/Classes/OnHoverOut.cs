@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnHoverOut : inkPointerEvent
 {
-	[REDMeta]
-	public partial class OnHoverOut : inkPointerEvent
+	public OnHoverOut()
 	{
-		public OnHoverOut()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

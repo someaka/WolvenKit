@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleDeviceLinkPS : DeviceLinkComponentPS
 {
-	[REDMeta]
-	public partial class VehicleDeviceLinkPS : DeviceLinkComponentPS
+	public VehicleDeviceLinkPS()
 	{
-		public VehicleDeviceLinkPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

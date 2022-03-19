@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProximityDetectorControllerPS : ScriptableDeviceComponentPS
 {
-	[REDMeta]
-	public partial class ProximityDetectorControllerPS : ScriptableDeviceComponentPS
+	public ProximityDetectorControllerPS()
 	{
-		public ProximityDetectorControllerPS()
-		{
-			DeviceName = "Gameplay-Devices-DisplayNames-LaserDetector";
+		DeviceName = "Gameplay-Devices-DisplayNames-LaserDetector";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

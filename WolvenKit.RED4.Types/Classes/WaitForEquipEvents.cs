@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WaitForEquipEvents : UpperBodyEventsTransition
 {
-	[REDMeta]
-	public partial class WaitForEquipEvents : UpperBodyEventsTransition
+	public WaitForEquipEvents()
 	{
-		public WaitForEquipEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

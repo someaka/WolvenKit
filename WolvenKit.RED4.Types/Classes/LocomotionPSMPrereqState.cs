@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LocomotionPSMPrereqState : PlayerStateMachinePrereqState
 {
-	[REDMeta]
-	public partial class LocomotionPSMPrereqState : PlayerStateMachinePrereqState
+	public LocomotionPSMPrereqState()
 	{
-		public LocomotionPSMPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

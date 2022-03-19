@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiMappinControllerCustomData : IScriptable
 {
-	[REDMeta]
-	public partial class gameuiMappinControllerCustomData : IScriptable
+	public gameuiMappinControllerCustomData()
 	{
-		public gameuiMappinControllerCustomData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

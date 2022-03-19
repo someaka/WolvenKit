@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GlitchedTurretController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class GlitchedTurretController : ScriptableDeviceComponent
+	public GlitchedTurretController()
 	{
-		public GlitchedTurretController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

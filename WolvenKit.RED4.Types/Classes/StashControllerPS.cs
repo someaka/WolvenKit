@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StashControllerPS : ScriptableDeviceComponentPS
 {
-	[REDMeta]
-	public partial class StashControllerPS : ScriptableDeviceComponentPS
+	public StashControllerPS()
 	{
-		public StashControllerPS()
-		{
-			ShouldScannerShowStatus = false;
-			ShouldScannerShowNetwork = false;
+		ShouldScannerShowStatus = false;
+		ShouldScannerShowNetwork = false;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

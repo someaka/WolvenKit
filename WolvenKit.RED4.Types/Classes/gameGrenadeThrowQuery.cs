@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameGrenadeThrowQuery : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameGrenadeThrowQuery : RedBaseClass
+	public gameGrenadeThrowQuery()
 	{
-		public gameGrenadeThrowQuery()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

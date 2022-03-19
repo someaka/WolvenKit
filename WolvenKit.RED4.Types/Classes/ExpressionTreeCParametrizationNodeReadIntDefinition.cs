@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExpressionTreeCParametrizationNodeReadIntDefinition : ExpressionTreeCParametrizationNodeDefinition
 {
-	[REDMeta]
-	public partial class ExpressionTreeCParametrizationNodeReadIntDefinition : ExpressionTreeCParametrizationNodeDefinition
+	public ExpressionTreeCParametrizationNodeReadIntDefinition()
 	{
-		public ExpressionTreeCParametrizationNodeReadIntDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CycleRoundDecisions : WeaponTransition
 {
-	[REDMeta]
-	public partial class CycleRoundDecisions : WeaponTransition
+	public CycleRoundDecisions()
 	{
-		public CycleRoundDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

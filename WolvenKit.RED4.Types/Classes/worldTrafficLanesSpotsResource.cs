@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficLanesSpotsResource : resStreamedResource
 {
-	[REDMeta]
-	public partial class worldTrafficLanesSpotsResource : resStreamedResource
+	public worldTrafficLanesSpotsResource()
 	{
-		public worldTrafficLanesSpotsResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

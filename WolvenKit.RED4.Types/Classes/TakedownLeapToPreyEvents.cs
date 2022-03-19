@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TakedownLeapToPreyEvents : LocomotionTakedownEvents
 {
-	[REDMeta]
-	public partial class TakedownLeapToPreyEvents : LocomotionTakedownEvents
+	public TakedownLeapToPreyEvents()
 	{
-		public TakedownLeapToPreyEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

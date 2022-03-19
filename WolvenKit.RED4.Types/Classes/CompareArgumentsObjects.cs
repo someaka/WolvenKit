@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CompareArgumentsObjects : CompareArguments
 {
-	[REDMeta]
-	public partial class CompareArgumentsObjects : CompareArguments
+	public CompareArgumentsObjects()
 	{
-		public CompareArgumentsObjects()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

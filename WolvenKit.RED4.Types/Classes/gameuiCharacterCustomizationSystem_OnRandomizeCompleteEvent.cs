@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiCharacterCustomizationSystem_OnRandomizeCompleteEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiCharacterCustomizationSystem_OnRandomizeCompleteEvent : redEvent
+	public gameuiCharacterCustomizationSystem_OnRandomizeCompleteEvent()
 	{
-		public gameuiCharacterCustomizationSystem_OnRandomizeCompleteEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorDistanceToTargetObjectConditionDefinition : AIbehaviorDistanceToTargetConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorDistanceToTargetObjectConditionDefinition : AIbehaviorDistanceToTargetConditionDefinition
+	public AIbehaviorDistanceToTargetObjectConditionDefinition()
 	{
-		public AIbehaviorDistanceToTargetObjectConditionDefinition()
-		{
-			ComparisonOperator = Enums.EComparisonType.LessOrEqual;
+		ComparisonOperator = Enums.EComparisonType.LessOrEqual;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

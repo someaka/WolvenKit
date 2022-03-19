@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIOwnerDistanceCoverSelection : AICoverSelectionParameters
 {
-	[REDMeta]
-	public partial class AIOwnerDistanceCoverSelection : AICoverSelectionParameters
+	public AIOwnerDistanceCoverSelection()
 	{
-		public AIOwnerDistanceCoverSelection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemSmartObjects : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemSmartObjects : worldIRuntimeSystem
+	public worldRuntimeSystemSmartObjects()
 	{
-		public worldRuntimeSystemSmartObjects()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleToggleQuestWeaponEnabledEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleToggleQuestWeaponEnabledEvent : redEvent
+	public vehicleToggleQuestWeaponEnabledEvent()
 	{
-		public vehicleToggleQuestWeaponEnabledEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

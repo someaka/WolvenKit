@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehiclePersistentData : gameComponent
 {
-	[REDMeta]
-	public partial class vehiclePersistentData : gameComponent
+	public vehiclePersistentData()
 	{
-		public vehiclePersistentData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

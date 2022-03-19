@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CandleDevice : InteractiveDevice
 {
-	[REDMeta]
-	public partial class CandleDevice : InteractiveDevice
+	public CandleDevice()
 	{
-		public CandleDevice()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

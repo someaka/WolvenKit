@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayStartupLocoFearAnimation : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class PlayStartupLocoFearAnimation : AIbehaviorconditionScript
+	public PlayStartupLocoFearAnimation()
 	{
-		public PlayStartupLocoFearAnimation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

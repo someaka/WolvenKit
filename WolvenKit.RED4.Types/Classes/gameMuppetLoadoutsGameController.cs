@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMuppetLoadoutsGameController : gameuiHUDGameController
 {
-	[REDMeta]
-	public partial class gameMuppetLoadoutsGameController : gameuiHUDGameController
+	public gameMuppetLoadoutsGameController()
 	{
-		public gameMuppetLoadoutsGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

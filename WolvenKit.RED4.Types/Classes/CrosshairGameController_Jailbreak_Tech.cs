@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CrosshairGameController_Jailbreak_Tech : gameuiCrosshairBaseGameController
 {
-	[REDMeta]
-	public partial class CrosshairGameController_Jailbreak_Tech : gameuiCrosshairBaseGameController
+	public CrosshairGameController_Jailbreak_Tech()
 	{
-		public CrosshairGameController_Jailbreak_Tech()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

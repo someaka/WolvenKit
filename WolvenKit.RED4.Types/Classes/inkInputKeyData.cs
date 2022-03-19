@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkInputKeyData : RedBaseClass
 {
-	[REDMeta]
-	public partial class inkInputKeyData : RedBaseClass
+	public inkInputKeyData()
 	{
-		public inkInputKeyData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

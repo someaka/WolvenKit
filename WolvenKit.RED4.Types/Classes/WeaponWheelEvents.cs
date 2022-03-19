@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WeaponWheelEvents : QuickSlotsHoldEvents
 {
-	[REDMeta]
-	public partial class WeaponWheelEvents : QuickSlotsHoldEvents
+	public WeaponWheelEvents()
 	{
-		public WeaponWheelEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

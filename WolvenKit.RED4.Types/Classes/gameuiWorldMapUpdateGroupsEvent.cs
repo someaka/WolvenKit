@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiWorldMapUpdateGroupsEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiWorldMapUpdateGroupsEvent : redEvent
+	public gameuiWorldMapUpdateGroupsEvent()
 	{
-		public gameuiWorldMapUpdateGroupsEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

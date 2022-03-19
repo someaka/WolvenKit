@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CyberwareUtility : IScriptable
 {
-	[REDMeta]
-	public partial class CyberwareUtility : IScriptable
+	public CyberwareUtility()
 	{
-		public CyberwareUtility()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

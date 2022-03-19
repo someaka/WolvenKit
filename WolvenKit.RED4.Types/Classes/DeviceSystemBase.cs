@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeviceSystemBase : InteractiveMasterDevice
 {
-	[REDMeta]
-	public partial class DeviceSystemBase : InteractiveMasterDevice
+	public DeviceSystemBase()
 	{
-		public DeviceSystemBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

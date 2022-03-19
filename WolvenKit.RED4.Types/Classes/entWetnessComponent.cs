@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entWetnessComponent : entIComponent
 {
-	[REDMeta]
-	public partial class entWetnessComponent : entIComponent
+	public entWetnessComponent()
 	{
-		public entWetnessComponent()
-		{
-			Name = "wetness";
+		Name = "wetness";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePrereqStateChangedEvent : redEvent
 {
-	[REDMeta]
-	public partial class gamePrereqStateChangedEvent : redEvent
+	public gamePrereqStateChangedEvent()
 	{
-		public gamePrereqStateChangedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

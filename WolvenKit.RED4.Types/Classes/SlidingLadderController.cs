@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SlidingLadderController : BaseAnimatedDeviceController
 {
-	[REDMeta]
-	public partial class SlidingLadderController : BaseAnimatedDeviceController
+	public SlidingLadderController()
 	{
-		public SlidingLadderController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

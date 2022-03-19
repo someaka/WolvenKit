@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HubMenuUtils : IScriptable
 {
-	[REDMeta]
-	public partial class HubMenuUtils : IScriptable
+	public HubMenuUtils()
 	{
-		public HubMenuUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

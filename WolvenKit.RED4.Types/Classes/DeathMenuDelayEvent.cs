@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeathMenuDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class DeathMenuDelayEvent : redEvent
+	public DeathMenuDelayEvent()
 	{
-		public DeathMenuDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

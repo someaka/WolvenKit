@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RemoveCachedStatusEffectFXEvent : redEvent
 {
-	[REDMeta]
-	public partial class RemoveCachedStatusEffectFXEvent : redEvent
+	public RemoveCachedStatusEffectFXEvent()
 	{
-		public RemoveCachedStatusEffectFXEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

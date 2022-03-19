@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIIArchetypeManager : gameIGameSystem
 {
-	[REDMeta]
-	public partial class AIIArchetypeManager : gameIGameSystem
+	public AIIArchetypeManager()
 	{
-		public AIIArchetypeManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

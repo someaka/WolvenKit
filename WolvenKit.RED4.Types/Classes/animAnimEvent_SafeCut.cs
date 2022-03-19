@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimEvent_SafeCut : animAnimEvent
 {
-	[REDMeta]
-	public partial class animAnimEvent_SafeCut : animAnimEvent
+	public animAnimEvent_SafeCut()
 	{
-		public animAnimEvent_SafeCut()
-		{
-			EventName = "safe_cut";
+		EventName = "safe_cut";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

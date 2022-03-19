@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InspectableItemObject : gameItemObject
 {
-	[REDMeta]
-	public partial class InspectableItemObject : gameItemObject
+	[Ordinal(38)] 
+	[RED("inspectableClues")] 
+	public CArray<SInspectableClue> InspectableClues
 	{
-		[Ordinal(38)] 
-		[RED("inspectableClues")] 
-		public CArray<SInspectableClue> InspectableClues
-		{
-			get => GetPropertyValue<CArray<SInspectableClue>>();
-			set => SetPropertyValue<CArray<SInspectableClue>>(value);
-		}
-
-		public InspectableItemObject()
-		{
-			InspectableClues = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<SInspectableClue>>();
+		set => SetPropertyValue<CArray<SInspectableClue>>(value);
 	}
+
+	public InspectableItemObject()
+	{
+		InspectableClues = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

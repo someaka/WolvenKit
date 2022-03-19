@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StealthZonesGameController : gameuiHUDGameController
 {
-	[REDMeta]
-	public partial class StealthZonesGameController : gameuiHUDGameController
+	public StealthZonesGameController()
 	{
-		public StealthZonesGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

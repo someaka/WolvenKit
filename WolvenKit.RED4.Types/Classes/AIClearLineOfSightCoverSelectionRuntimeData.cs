@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIClearLineOfSightCoverSelectionRuntimeData : AICoverSelectionRuntimeData
 {
-	[REDMeta]
-	public partial class AIClearLineOfSightCoverSelectionRuntimeData : AICoverSelectionRuntimeData
+	public AIClearLineOfSightCoverSelectionRuntimeData()
 	{
-		public AIClearLineOfSightCoverSelectionRuntimeData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

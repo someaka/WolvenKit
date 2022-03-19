@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class HitFlagPrereq : GenericHitPrereq
 {
-	[REDMeta]
-	public partial class HitFlagPrereq : GenericHitPrereq
+	[Ordinal(5)] 
+	[RED("flag")] 
+	public CEnum<hitFlag> Flag
 	{
-		[Ordinal(5)] 
-		[RED("flag")] 
-		public CEnum<hitFlag> Flag
-		{
-			get => GetPropertyValue<CEnum<hitFlag>>();
-			set => SetPropertyValue<CEnum<hitFlag>>(value);
-		}
-
-		public HitFlagPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<hitFlag>>();
+		set => SetPropertyValue<CEnum<hitFlag>>(value);
 	}
+
+	public HitFlagPrereq()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

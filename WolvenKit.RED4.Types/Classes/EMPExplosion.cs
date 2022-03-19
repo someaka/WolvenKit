@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EMPExplosion : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class EMPExplosion : gameEffectExecutor_Scripted
+	public EMPExplosion()
 	{
-		public EMPExplosion()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animIMotionExtraction : ISerializable
 {
-	[REDMeta]
-	public partial class animIMotionExtraction : ISerializable
+	public animIMotionExtraction()
 	{
-		public animIMotionExtraction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

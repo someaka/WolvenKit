@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldSaveSanitizationForbiddenAreaNodeInstance : worldTriggerAreaNodeInstance
 {
-	[REDMeta]
-	public partial class worldSaveSanitizationForbiddenAreaNodeInstance : worldTriggerAreaNodeInstance
+	public worldSaveSanitizationForbiddenAreaNodeInstance()
 	{
-		public worldSaveSanitizationForbiddenAreaNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnSystemSharedState : RedBaseClass
 {
-	[REDMeta]
-	public partial class scnSystemSharedState : RedBaseClass
+	public scnSystemSharedState()
 	{
-		public scnSystemSharedState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

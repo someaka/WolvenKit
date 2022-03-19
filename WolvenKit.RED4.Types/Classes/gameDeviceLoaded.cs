@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDeviceLoaded : redEvent
 {
-	[REDMeta]
-	public partial class gameDeviceLoaded : redEvent
+	public gameDeviceLoaded()
 	{
-		public gameDeviceLoaded()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

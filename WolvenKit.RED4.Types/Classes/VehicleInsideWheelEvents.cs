@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleInsideWheelEvents : QuickSlotsHoldEvents
 {
-	[REDMeta]
-	public partial class VehicleInsideWheelEvents : QuickSlotsHoldEvents
+	public VehicleInsideWheelEvents()
 	{
-		public VehicleInsideWheelEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

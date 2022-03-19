@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameStatsBundle : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameStatsBundle : RedBaseClass
+	public gameStatsBundle()
 	{
-		public gameStatsBundle()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

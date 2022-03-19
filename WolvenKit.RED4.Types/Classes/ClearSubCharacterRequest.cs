@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearSubCharacterRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ClearSubCharacterRequest : gameScriptableSystemRequest
+	public ClearSubCharacterRequest()
 	{
-		public ClearSubCharacterRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

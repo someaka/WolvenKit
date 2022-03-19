@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entTriggerDestructionEvent : redEvent
 {
-	[REDMeta]
-	public partial class entTriggerDestructionEvent : redEvent
+	public entTriggerDestructionEvent()
 	{
-		public entTriggerDestructionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

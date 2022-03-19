@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AdHocAnimationDecisions : UpperBodyEventsTransition
 {
-	[REDMeta]
-	public partial class AdHocAnimationDecisions : UpperBodyEventsTransition
+	public AdHocAnimationDecisions()
 	{
-		public AdHocAnimationDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

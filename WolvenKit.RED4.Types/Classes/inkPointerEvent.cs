@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkPointerEvent : inkInputEvent
 {
-	[REDMeta]
-	public partial class inkPointerEvent : inkInputEvent
+	public inkPointerEvent()
 	{
-		public inkPointerEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityTurretOffline : redEvent
 {
-	[REDMeta]
-	public partial class SecurityTurretOffline : redEvent
+	public SecurityTurretOffline()
 	{
-		public SecurityTurretOffline()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

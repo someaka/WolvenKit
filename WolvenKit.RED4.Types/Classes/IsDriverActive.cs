@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsDriverActive : AIVehicleConditionAbstract
 {
-	[REDMeta]
-	public partial class IsDriverActive : AIVehicleConditionAbstract
+	public IsDriverActive()
 	{
-		public IsDriverActive()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WeaponVendingMachineController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class WeaponVendingMachineController : ScriptableDeviceComponent
+	public WeaponVendingMachineController()
 	{
-		public WeaponVendingMachineController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

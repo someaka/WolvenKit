@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISafeAreaManager : AIISafeAreaManager
 {
-	[REDMeta]
-	public partial class AISafeAreaManager : AIISafeAreaManager
+	public AISafeAreaManager()
 	{
-		public AISafeAreaManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

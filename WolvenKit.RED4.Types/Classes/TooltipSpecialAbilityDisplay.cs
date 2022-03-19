@@ -1,43 +1,39 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TooltipSpecialAbilityDisplay : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class TooltipSpecialAbilityDisplay : inkWidgetLogicController
+	[Ordinal(1)] 
+	[RED("AbilityIcon")] 
+	public inkImageWidgetReference AbilityIcon
 	{
-		[Ordinal(1)] 
-		[RED("AbilityIcon")] 
-		public inkImageWidgetReference AbilityIcon
-		{
-			get => GetPropertyValue<inkImageWidgetReference>();
-			set => SetPropertyValue<inkImageWidgetReference>(value);
-		}
-
-		[Ordinal(2)] 
-		[RED("AbilityDescription")] 
-		public inkTextWidgetReference AbilityDescription
-		{
-			get => GetPropertyValue<inkTextWidgetReference>();
-			set => SetPropertyValue<inkTextWidgetReference>(value);
-		}
-
-		[Ordinal(3)] 
-		[RED("QualityRoot")] 
-		public inkWidgetReference QualityRoot
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		public TooltipSpecialAbilityDisplay()
-		{
-			AbilityIcon = new();
-			AbilityDescription = new();
-			QualityRoot = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkImageWidgetReference>();
+		set => SetPropertyValue<inkImageWidgetReference>(value);
 	}
+
+	[Ordinal(2)] 
+	[RED("AbilityDescription")] 
+	public inkTextWidgetReference AbilityDescription
+	{
+		get => GetPropertyValue<inkTextWidgetReference>();
+		set => SetPropertyValue<inkTextWidgetReference>(value);
+	}
+
+	[Ordinal(3)] 
+	[RED("QualityRoot")] 
+	public inkWidgetReference QualityRoot
+	{
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
+	}
+
+	public TooltipSpecialAbilityDisplay()
+	{
+		AbilityIcon = new();
+		AbilityDescription = new();
+		QualityRoot = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

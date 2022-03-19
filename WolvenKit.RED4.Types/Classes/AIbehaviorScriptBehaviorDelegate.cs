@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorScriptBehaviorDelegate : AIbehaviorBehaviorDelegate
 {
-	[REDMeta]
-	public partial class AIbehaviorScriptBehaviorDelegate : AIbehaviorBehaviorDelegate
+	public AIbehaviorScriptBehaviorDelegate()
 	{
-		public AIbehaviorScriptBehaviorDelegate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

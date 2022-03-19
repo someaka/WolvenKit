@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISignalHandlerComponent : entIComponent
 {
-	[REDMeta]
-	public partial class AISignalHandlerComponent : entIComponent
+	public AISignalHandlerComponent()
 	{
-		public AISignalHandlerComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

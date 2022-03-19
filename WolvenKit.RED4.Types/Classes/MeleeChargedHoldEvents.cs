@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleeChargedHoldEvents : MeleeEventsTransition
 {
-	[REDMeta]
-	public partial class MeleeChargedHoldEvents : MeleeEventsTransition
+	[Ordinal(1)] 
+	[RED("clearWeaponCharge")] 
+	public CBool ClearWeaponCharge
 	{
-		[Ordinal(1)] 
-		[RED("clearWeaponCharge")] 
-		public CBool ClearWeaponCharge
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public MeleeChargedHoldEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public MeleeChargedHoldEvents()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

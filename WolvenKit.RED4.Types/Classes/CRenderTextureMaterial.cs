@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CRenderTextureMaterial : IDynamicTextureGenerator
 {
-	[REDMeta]
-	public partial class CRenderTextureMaterial : IDynamicTextureGenerator
+	public CRenderTextureMaterial()
 	{
-		public CRenderTextureMaterial()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

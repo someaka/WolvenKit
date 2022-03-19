@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class servicesGameServices : servicesGameServicesGalaxy
 {
-	[REDMeta]
-	public partial class servicesGameServices : servicesGameServicesGalaxy
+	public servicesGameServices()
 	{
-		public servicesGameServices()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

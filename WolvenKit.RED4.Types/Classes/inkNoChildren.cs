@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkNoChildren : inkChildren
 {
-	[REDMeta]
-	public partial class inkNoChildren : inkChildren
+	public inkNoChildren()
 	{
-		public inkNoChildren()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

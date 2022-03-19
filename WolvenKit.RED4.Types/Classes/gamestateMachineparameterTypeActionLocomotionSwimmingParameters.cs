@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineparameterTypeActionLocomotionSwimmingParameters : gamestateMachineparameterTypeActionLocomotionParameters
 {
-	[REDMeta]
-	public partial class gamestateMachineparameterTypeActionLocomotionSwimmingParameters : gamestateMachineparameterTypeActionLocomotionParameters
+	public gamestateMachineparameterTypeActionLocomotionSwimmingParameters()
 	{
-		public gamestateMachineparameterTypeActionLocomotionSwimmingParameters()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

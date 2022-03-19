@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workWorkspotInstance : ISerializable
 {
-	[REDMeta]
-	public partial class workWorkspotInstance : ISerializable
+	public workWorkspotInstance()
 	{
-		public workWorkspotInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePreventionVehicleSpawnLogic : RedBaseClass
 {
-	[REDMeta]
-	public partial class gamePreventionVehicleSpawnLogic : RedBaseClass
+	public gamePreventionVehicleSpawnLogic()
 	{
-		public gamePreventionVehicleSpawnLogic()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

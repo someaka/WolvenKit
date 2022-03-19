@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameRequestStats : redEvent
 {
-	[REDMeta]
-	public partial class gameRequestStats : redEvent
+	public gameRequestStats()
 	{
-		public gameRequestStats()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

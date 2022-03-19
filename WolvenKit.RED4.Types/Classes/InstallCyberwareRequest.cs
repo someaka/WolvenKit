@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InstallCyberwareRequest : gameEquipRequest
 {
-	[REDMeta]
-	public partial class InstallCyberwareRequest : gameEquipRequest
+	public InstallCyberwareRequest()
 	{
-		public InstallCyberwareRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

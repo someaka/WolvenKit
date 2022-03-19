@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectPreAction_PreAttack_WithFriendlyFire : EffectPreAction_PreAttack
 {
-	[REDMeta]
-	public partial class EffectPreAction_PreAttack_WithFriendlyFire : EffectPreAction_PreAttack
+	public EffectPreAction_PreAttack_WithFriendlyFire()
 	{
-		public EffectPreAction_PreAttack_WithFriendlyFire()
-		{
-			WithFriendlyFire = true;
-			WithSelfDamage = true;
+		WithFriendlyFire = true;
+		WithSelfDamage = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

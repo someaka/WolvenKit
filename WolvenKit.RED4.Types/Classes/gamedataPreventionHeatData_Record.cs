@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataPreventionHeatData_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataPreventionHeatData_Record : gamedataTweakDBRecord
+	public gamedataPreventionHeatData_Record()
 	{
-		public gamedataPreventionHeatData_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

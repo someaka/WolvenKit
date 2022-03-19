@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleHornOffDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class VehicleHornOffDelayEvent : redEvent
+	public VehicleHornOffDelayEvent()
 	{
-		public VehicleHornOffDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

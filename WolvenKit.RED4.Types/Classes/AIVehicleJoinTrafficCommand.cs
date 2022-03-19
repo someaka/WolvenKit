@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIVehicleJoinTrafficCommand : AIVehicleCommand
 {
-	[REDMeta]
-	public partial class AIVehicleJoinTrafficCommand : AIVehicleCommand
+	public AIVehicleJoinTrafficCommand()
 	{
-		public AIVehicleJoinTrafficCommand()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

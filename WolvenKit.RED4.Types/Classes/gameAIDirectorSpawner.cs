@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAIDirectorSpawner : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameAIDirectorSpawner : RedBaseClass
+	public gameAIDirectorSpawner()
 	{
-		public gameAIDirectorSpawner()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

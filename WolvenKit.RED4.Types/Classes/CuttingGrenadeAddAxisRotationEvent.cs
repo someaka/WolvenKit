@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CuttingGrenadeAddAxisRotationEvent : redEvent
 {
-	[REDMeta]
-	public partial class CuttingGrenadeAddAxisRotationEvent : redEvent
+	public CuttingGrenadeAddAxisRotationEvent()
 	{
-		public CuttingGrenadeAddAxisRotationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

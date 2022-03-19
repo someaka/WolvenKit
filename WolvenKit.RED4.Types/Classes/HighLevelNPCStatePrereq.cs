@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class HighLevelNPCStatePrereq : NPCStatePrereq
 {
-	[REDMeta]
-	public partial class HighLevelNPCStatePrereq : NPCStatePrereq
+	[Ordinal(3)] 
+	[RED("valueToListen")] 
+	public CEnum<gamedataNPCHighLevelState> ValueToListen
 	{
-		[Ordinal(3)] 
-		[RED("valueToListen")] 
-		public CEnum<gamedataNPCHighLevelState> ValueToListen
-		{
-			get => GetPropertyValue<CEnum<gamedataNPCHighLevelState>>();
-			set => SetPropertyValue<CEnum<gamedataNPCHighLevelState>>(value);
-		}
-
-		public HighLevelNPCStatePrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<gamedataNPCHighLevelState>>();
+		set => SetPropertyValue<CEnum<gamedataNPCHighLevelState>>(value);
 	}
+
+	public HighLevelNPCStatePrereq()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

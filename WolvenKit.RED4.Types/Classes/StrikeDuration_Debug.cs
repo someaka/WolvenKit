@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StrikeDuration_Debug : gameEffectDurationModifier_Scripted
 {
-	[REDMeta]
-	public partial class StrikeDuration_Debug : gameEffectDurationModifier_Scripted
+	public StrikeDuration_Debug()
 	{
-		public StrikeDuration_Debug()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

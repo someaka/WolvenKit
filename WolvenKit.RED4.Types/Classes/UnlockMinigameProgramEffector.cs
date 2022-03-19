@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnlockMinigameProgramEffector : gameEffector
 {
-	[REDMeta]
-	public partial class UnlockMinigameProgramEffector : gameEffector
+	[Ordinal(0)] 
+	[RED("minigameProgram")] 
+	public gameuiMinigameProgramData MinigameProgram
 	{
-		[Ordinal(0)] 
-		[RED("minigameProgram")] 
-		public gameuiMinigameProgramData MinigameProgram
-		{
-			get => GetPropertyValue<gameuiMinigameProgramData>();
-			set => SetPropertyValue<gameuiMinigameProgramData>(value);
-		}
-
-		public UnlockMinigameProgramEffector()
-		{
-			MinigameProgram = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gameuiMinigameProgramData>();
+		set => SetPropertyValue<gameuiMinigameProgramData>(value);
 	}
+
+	public UnlockMinigameProgramEffector()
+	{
+		MinigameProgram = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

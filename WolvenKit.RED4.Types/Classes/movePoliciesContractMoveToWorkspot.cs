@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class movePoliciesContractMoveToWorkspot : movePoliciesContract
 {
-	[REDMeta]
-	public partial class movePoliciesContractMoveToWorkspot : movePoliciesContract
+	public movePoliciesContractMoveToWorkspot()
 	{
-		public movePoliciesContractMoveToWorkspot()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

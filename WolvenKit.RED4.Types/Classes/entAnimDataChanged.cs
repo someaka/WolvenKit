@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAnimDataChanged : redEvent
 {
-	[REDMeta]
-	public partial class entAnimDataChanged : redEvent
+	public entAnimDataChanged()
 	{
-		public entAnimDataChanged()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

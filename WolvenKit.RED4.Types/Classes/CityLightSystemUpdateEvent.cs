@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CityLightSystemUpdateEvent : redEvent
 {
-	[REDMeta]
-	public partial class CityLightSystemUpdateEvent : redEvent
+	public CityLightSystemUpdateEvent()
 	{
-		public CityLightSystemUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

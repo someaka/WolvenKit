@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSceneTierDataMotionConstrained : gameSceneTierData
 {
-	[REDMeta]
-	public partial class gameSceneTierDataMotionConstrained : gameSceneTierData
+	[Ordinal(3)] 
+	[RED("params")] 
+	public gameMotionConstrainedTierDataParams Params
 	{
-		[Ordinal(3)] 
-		[RED("params")] 
-		public gameMotionConstrainedTierDataParams Params
-		{
-			get => GetPropertyValue<gameMotionConstrainedTierDataParams>();
-			set => SetPropertyValue<gameMotionConstrainedTierDataParams>(value);
-		}
-
-		public gameSceneTierDataMotionConstrained()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gameMotionConstrainedTierDataParams>();
+		set => SetPropertyValue<gameMotionConstrainedTierDataParams>(value);
 	}
+
+	public gameSceneTierDataMotionConstrained()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

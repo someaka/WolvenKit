@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkWidgetsSet : IScriptable
 {
-	[REDMeta]
-	public partial class inkWidgetsSet : IScriptable
+	public inkWidgetsSet()
 	{
-		public inkWidgetsSet()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataMeleeAttackDirection_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataMeleeAttackDirection_Record : gamedataTweakDBRecord
+	public gamedataMeleeAttackDirection_Record()
 	{
-		public gamedataMeleeAttackDirection_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

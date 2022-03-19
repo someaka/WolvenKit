@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StillageController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class StillageController : ScriptableDeviceComponent
+	public StillageController()
 	{
-		public StillageController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIClientEntitySpawnSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIClientEntitySpawnSystem : gameIGameSystem
+	public gameIClientEntitySpawnSystem()
 	{
-		public gameIClientEntitySpawnSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

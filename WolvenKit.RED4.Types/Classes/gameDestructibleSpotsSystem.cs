@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDestructibleSpotsSystem : worldIDestructibleSpotsSystem
 {
-	[REDMeta]
-	public partial class gameDestructibleSpotsSystem : worldIDestructibleSpotsSystem
+	public gameDestructibleSpotsSystem()
 	{
-		public gameDestructibleSpotsSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

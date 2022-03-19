@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entIMoverComponent : entIComponent
 {
-	[REDMeta]
-	public partial class entIMoverComponent : entIComponent
+	public entIMoverComponent()
 	{
-		public entIMoverComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

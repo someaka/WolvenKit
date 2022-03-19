@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entGarmentSkinnedMeshComponent : entSkinnedMeshComponent
 {
-	[REDMeta]
-	public partial class entGarmentSkinnedMeshComponent : entSkinnedMeshComponent
+	public entGarmentSkinnedMeshComponent()
 	{
-		public entGarmentSkinnedMeshComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SettingsSelectorControllerListString : SettingsSelectorControllerList
 {
-	[REDMeta]
-	public partial class SettingsSelectorControllerListString : SettingsSelectorControllerList
+	public SettingsSelectorControllerListString()
 	{
-		public SettingsSelectorControllerListString()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

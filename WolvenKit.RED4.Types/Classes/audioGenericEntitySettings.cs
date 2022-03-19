@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audioGenericEntitySettings : audioEntitySettings
 {
-	[REDMeta]
-	public partial class audioGenericEntitySettings : audioEntitySettings
+	public audioGenericEntitySettings()
 	{
-		public audioGenericEntitySettings()
-		{
-			CommonSettings = new() { StopAllSoundsOnDetach = true };
-			ScanningSettings = new();
-			AuxiliaryMetadata = new();
+		CommonSettings = new() { StopAllSoundsOnDetach = true };
+		ScanningSettings = new();
+		AuxiliaryMetadata = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamegraphCNode : ISerializable
 {
-	[REDMeta]
-	public partial class gamegraphCNode : ISerializable
+	public gamegraphCNode()
 	{
-		public gamegraphCNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

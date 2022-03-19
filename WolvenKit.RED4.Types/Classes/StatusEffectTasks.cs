@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StatusEffectTasks : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class StatusEffectTasks : AIbehaviortaskScript
+	public StatusEffectTasks()
 	{
-		public StatusEffectTasks()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

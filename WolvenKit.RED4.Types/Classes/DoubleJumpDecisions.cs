@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DoubleJumpDecisions : JumpDecisions
 {
-	[REDMeta]
-	public partial class DoubleJumpDecisions : JumpDecisions
+	public DoubleJumpDecisions()
 	{
-		public DoubleJumpDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

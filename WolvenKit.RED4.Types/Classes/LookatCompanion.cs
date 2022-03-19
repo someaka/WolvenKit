@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LookatCompanion : AIGenericAdvancedLookatTask
 {
-	[REDMeta]
-	public partial class LookatCompanion : AIGenericAdvancedLookatTask
+	public LookatCompanion()
 	{
-		public LookatCompanion()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

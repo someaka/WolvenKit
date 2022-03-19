@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DropPointController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class DropPointController : ScriptableDeviceComponent
+	public DropPointController()
 	{
-		public DropPointController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

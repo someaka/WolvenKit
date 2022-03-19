@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMovingPlatformBeforeArrivedAt : redEvent
 {
-	[REDMeta]
-	public partial class gameMovingPlatformBeforeArrivedAt : redEvent
+	public gameMovingPlatformBeforeArrivedAt()
 	{
-		public gameMovingPlatformBeforeArrivedAt()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

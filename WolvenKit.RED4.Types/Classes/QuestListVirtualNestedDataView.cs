@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestListVirtualNestedDataView : VirtualNestedListDataView
 {
-	[REDMeta]
-	public partial class QuestListVirtualNestedDataView : VirtualNestedListDataView
+	public QuestListVirtualNestedDataView()
 	{
-		public QuestListVirtualNestedDataView()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

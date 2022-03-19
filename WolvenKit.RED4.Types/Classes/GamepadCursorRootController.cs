@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GamepadCursorRootController : CursorRootController
 {
-	[REDMeta]
-	public partial class GamepadCursorRootController : CursorRootController
+	public GamepadCursorRootController()
 	{
-		public GamepadCursorRootController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

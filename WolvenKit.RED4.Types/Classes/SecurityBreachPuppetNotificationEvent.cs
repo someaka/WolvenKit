@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityBreachPuppetNotificationEvent : SecuritySystemInput
 {
-	[REDMeta]
-	public partial class SecurityBreachPuppetNotificationEvent : SecuritySystemInput
+	public SecurityBreachPuppetNotificationEvent()
 	{
-		public SecurityBreachPuppetNotificationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

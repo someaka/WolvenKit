@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class redTOMLBaseValue : ISerializable
 {
-	[REDMeta]
-	public partial class redTOMLBaseValue : ISerializable
+	public redTOMLBaseValue()
 	{
-		public redTOMLBaseValue()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

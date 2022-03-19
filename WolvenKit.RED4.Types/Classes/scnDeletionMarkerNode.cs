@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnDeletionMarkerNode : scnSceneGraphNode
 {
-	[REDMeta]
-	public partial class scnDeletionMarkerNode : scnSceneGraphNode
+	public scnDeletionMarkerNode()
 	{
-		public scnDeletionMarkerNode()
-		{
-			NodeId = new() { Id = 4294967295 };
-			OutputSockets = new();
+		NodeId = new() { Id = 4294967295 };
+		OutputSockets = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameOnScannableBraindanceClueEnabledEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameOnScannableBraindanceClueEnabledEvent : redEvent
+	public gameOnScannableBraindanceClueEnabledEvent()
 	{
-		public gameOnScannableBraindanceClueEnabledEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAdvertisementNodeInstance : worldStaticMeshNodeInstance
 {
-	[REDMeta]
-	public partial class worldAdvertisementNodeInstance : worldStaticMeshNodeInstance
+	public worldAdvertisementNodeInstance()
 	{
-		public worldAdvertisementNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleRacingSystem : vehicleIRacingSystem
 {
-	[REDMeta]
-	public partial class vehicleRacingSystem : vehicleIRacingSystem
+	public vehicleRacingSystem()
 	{
-		public vehicleRacingSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

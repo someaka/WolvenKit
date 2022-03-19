@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkDebugSystemAccessor : inkILayerSystemAccesor
 {
-	[REDMeta]
-	public partial class inkDebugSystemAccessor : inkILayerSystemAccesor
+	public inkDebugSystemAccessor()
 	{
-		public inkDebugSystemAccessor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

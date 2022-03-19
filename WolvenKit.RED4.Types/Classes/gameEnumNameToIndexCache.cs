@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEnumNameToIndexCache : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameEnumNameToIndexCache : RedBaseClass
+	public gameEnumNameToIndexCache()
 	{
-		public gameEnumNameToIndexCache()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

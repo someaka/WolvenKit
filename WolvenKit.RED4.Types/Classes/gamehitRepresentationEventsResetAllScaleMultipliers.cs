@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamehitRepresentationEventsResetAllScaleMultipliers : redEvent
 {
-	[REDMeta]
-	public partial class gamehitRepresentationEventsResetAllScaleMultipliers : redEvent
+	public gamehitRepresentationEventsResetAllScaleMultipliers()
 	{
-		public gamehitRepresentationEventsResetAllScaleMultipliers()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

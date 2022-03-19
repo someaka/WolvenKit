@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCarriedObjectDestroy : redEvent
 {
-	[REDMeta]
-	public partial class gameCarriedObjectDestroy : redEvent
+	public gameCarriedObjectDestroy()
 	{
-		public gameCarriedObjectDestroy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

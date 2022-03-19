@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataProgressionBuild_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataProgressionBuild_Record : gamedataTweakDBRecord
+	public gamedataProgressionBuild_Record()
 	{
-		public gamedataProgressionBuild_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

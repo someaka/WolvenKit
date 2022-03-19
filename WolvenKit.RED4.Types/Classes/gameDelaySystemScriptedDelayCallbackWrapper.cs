@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDelaySystemScriptedDelayCallbackWrapper : IScriptable
 {
-	[REDMeta]
-	public partial class gameDelaySystemScriptedDelayCallbackWrapper : IScriptable
+	public gameDelaySystemScriptedDelayCallbackWrapper()
 	{
-		public gameDelaySystemScriptedDelayCallbackWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

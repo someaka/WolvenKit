@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExplosiveTriggerDeviceController : ExplosiveDeviceController
 {
-	[REDMeta]
-	public partial class ExplosiveTriggerDeviceController : ExplosiveDeviceController
+	public ExplosiveTriggerDeviceController()
 	{
-		public ExplosiveTriggerDeviceController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

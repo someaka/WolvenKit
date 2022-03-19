@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeathDecisionsWithResurrection : HighLevelTransition
 {
-	[REDMeta]
-	public partial class DeathDecisionsWithResurrection : HighLevelTransition
+	public DeathDecisionsWithResurrection()
 	{
-		public DeathDecisionsWithResurrection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

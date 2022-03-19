@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnequipWardrobeSetRequest : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UnequipWardrobeSetRequest : gamePlayerScriptableSystemRequest
+	public UnequipWardrobeSetRequest()
 	{
-		public UnequipWardrobeSetRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

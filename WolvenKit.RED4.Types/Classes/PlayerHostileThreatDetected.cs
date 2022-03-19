@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerHostileThreatDetected : AIHostileThreatDetected
 {
-	[REDMeta]
-	public partial class PlayerHostileThreatDetected : AIHostileThreatDetected
+	public PlayerHostileThreatDetected()
 	{
-		public PlayerHostileThreatDetected()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

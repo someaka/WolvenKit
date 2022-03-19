@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entEntityResolveComponentsInterface : RedBaseClass
 {
-	[REDMeta]
-	public partial class entEntityResolveComponentsInterface : RedBaseClass
+	public entEntityResolveComponentsInterface()
 	{
-		public entEntityResolveComponentsInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

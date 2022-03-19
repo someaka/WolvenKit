@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataWorldMapFilter_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataWorldMapFilter_Record : gamedataTweakDBRecord
+	public gamedataWorldMapFilter_Record()
 	{
-		public gamedataWorldMapFilter_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnCheckMountedVehicleImpactInterruptCondition : scnIInterruptCondition
 {
-	[REDMeta]
-	public partial class scnCheckMountedVehicleImpactInterruptCondition : scnIInterruptCondition
+	public scnCheckMountedVehicleImpactInterruptCondition()
 	{
-		public scnCheckMountedVehicleImpactInterruptCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

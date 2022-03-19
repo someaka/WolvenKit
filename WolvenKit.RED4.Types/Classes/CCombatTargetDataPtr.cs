@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CCombatTargetDataPtr : RedBaseClass
 {
-	[REDMeta]
-	public partial class CCombatTargetDataPtr : RedBaseClass
+	public CCombatTargetDataPtr()
 	{
-		public CCombatTargetDataPtr()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

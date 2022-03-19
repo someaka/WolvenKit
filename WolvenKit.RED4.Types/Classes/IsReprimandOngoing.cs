@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsReprimandOngoing : AIAutonomousConditions
 {
-	[REDMeta]
-	public partial class IsReprimandOngoing : AIAutonomousConditions
+	public IsReprimandOngoing()
 	{
-		public IsReprimandOngoing()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

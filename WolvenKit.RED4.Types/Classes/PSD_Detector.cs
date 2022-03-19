@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PSD_Detector : gameDeviceComponent
 {
-	[REDMeta]
-	public partial class PSD_Detector : gameDeviceComponent
+	public PSD_Detector()
 	{
-		public PSD_Detector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

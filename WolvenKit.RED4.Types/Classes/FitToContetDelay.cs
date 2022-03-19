@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FitToContetDelay : redEvent
 {
-	[REDMeta]
-	public partial class FitToContetDelay : redEvent
+	public FitToContetDelay()
 	{
-		public FitToContetDelay()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

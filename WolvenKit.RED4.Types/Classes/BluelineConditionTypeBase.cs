@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BluelineConditionTypeBase : ScriptConditionTypeBase
 {
-	[REDMeta]
-	public partial class BluelineConditionTypeBase : ScriptConditionTypeBase
+	public BluelineConditionTypeBase()
 	{
-		public BluelineConditionTypeBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckLastTriggeredStimuli : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class CheckLastTriggeredStimuli : AIbehaviorconditionScript
+	public CheckLastTriggeredStimuli()
 	{
-		public CheckLastTriggeredStimuli()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

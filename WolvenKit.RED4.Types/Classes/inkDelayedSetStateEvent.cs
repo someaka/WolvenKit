@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkDelayedSetStateEvent : redEvent
 {
-	[REDMeta]
-	public partial class inkDelayedSetStateEvent : redEvent
+	public inkDelayedSetStateEvent()
 	{
-		public inkDelayedSetStateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

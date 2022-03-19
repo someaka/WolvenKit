@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorHasPendingForcedBehaviorConditionDefinition : AIbehaviorConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorHasPendingForcedBehaviorConditionDefinition : AIbehaviorConditionDefinition
+	public AIbehaviorHasPendingForcedBehaviorConditionDefinition()
 	{
-		public AIbehaviorHasPendingForcedBehaviorConditionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

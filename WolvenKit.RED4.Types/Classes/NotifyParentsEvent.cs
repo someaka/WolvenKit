@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NotifyParentsEvent : redEvent
 {
-	[REDMeta]
-	public partial class NotifyParentsEvent : redEvent
+	public NotifyParentsEvent()
 	{
-		public NotifyParentsEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

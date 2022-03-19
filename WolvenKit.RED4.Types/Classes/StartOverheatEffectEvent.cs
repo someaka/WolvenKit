@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StartOverheatEffectEvent : redEvent
 {
-	[REDMeta]
-	public partial class StartOverheatEffectEvent : redEvent
+	public StartOverheatEffectEvent()
 	{
-		public StartOverheatEffectEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

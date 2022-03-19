@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AssualtRifleLookAtEvents : lookAtPresetGunBaseEvents
 {
-	[REDMeta]
-	public partial class AssualtRifleLookAtEvents : lookAtPresetGunBaseEvents
+	public AssualtRifleLookAtEvents()
 	{
-		public AssualtRifleLookAtEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SpiderbotOrderCompletedEvent : redEvent
 {
-	[REDMeta]
-	public partial class SpiderbotOrderCompletedEvent : redEvent
+	public SpiderbotOrderCompletedEvent()
 	{
-		public SpiderbotOrderCompletedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SinglePlayerPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class SinglePlayerPrereq : gameIScriptablePrereq
+	public SinglePlayerPrereq()
 	{
-		public SinglePlayerPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

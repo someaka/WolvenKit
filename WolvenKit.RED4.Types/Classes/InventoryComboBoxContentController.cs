@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InventoryComboBoxContentController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class InventoryComboBoxContentController : inkWidgetLogicController
+	public InventoryComboBoxContentController()
 	{
-		public InventoryComboBoxContentController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

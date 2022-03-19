@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnregisterAllMappinsEvent : redEvent
 {
-	[REDMeta]
-	public partial class UnregisterAllMappinsEvent : redEvent
+	public UnregisterAllMappinsEvent()
 	{
-		public UnregisterAllMappinsEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

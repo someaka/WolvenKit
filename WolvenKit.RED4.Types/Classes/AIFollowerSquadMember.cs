@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIFollowerSquadMember : AISquadNPCMember
 {
-	[REDMeta]
-	public partial class AIFollowerSquadMember : AISquadNPCMember
+	public AIFollowerSquadMember()
 	{
-		public AIFollowerSquadMember()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

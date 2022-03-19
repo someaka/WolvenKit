@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDebugContextUserData : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameDebugContextUserData : RedBaseClass
+	public gameDebugContextUserData()
 	{
-		public gameDebugContextUserData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

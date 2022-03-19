@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiHolocallStartEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiHolocallStartEvent : redEvent
+	public gameuiHolocallStartEvent()
 	{
-		public gameuiHolocallStartEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

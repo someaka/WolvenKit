@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsPublisherBaseEvent : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameinteractionsPublisherBaseEvent : RedBaseClass
+	public gameinteractionsPublisherBaseEvent()
 	{
-		public gameinteractionsPublisherBaseEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

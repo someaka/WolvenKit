@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConveyorController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class ConveyorController : ScriptableDeviceComponent
+	public ConveyorController()
 	{
-		public ConveyorController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

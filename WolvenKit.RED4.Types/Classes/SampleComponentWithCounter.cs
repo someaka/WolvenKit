@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SampleComponentWithCounter : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class SampleComponentWithCounter : gameScriptableComponent
+	public SampleComponentWithCounter()
 	{
-		public SampleComponentWithCounter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

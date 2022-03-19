@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class prvFunctionalTestsTrigger : IScriptable
 {
-	[REDMeta]
-	public partial class prvFunctionalTestsTrigger : IScriptable
+	public prvFunctionalTestsTrigger()
 	{
-		public prvFunctionalTestsTrigger()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

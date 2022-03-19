@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LiftController : MasterController
 {
-	[REDMeta]
-	public partial class LiftController : MasterController
+	public LiftController()
 	{
-		public LiftController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

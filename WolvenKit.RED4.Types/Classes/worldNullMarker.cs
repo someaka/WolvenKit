@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldNullMarker : worldIMarker
 {
-	[REDMeta]
-	public partial class worldNullMarker : worldIMarker
+	public worldNullMarker()
 	{
-		public worldNullMarker()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

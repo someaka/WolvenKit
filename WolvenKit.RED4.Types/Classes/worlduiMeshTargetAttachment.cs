@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worlduiMeshTargetAttachment : entIAttachment
 {
-	[REDMeta]
-	public partial class worlduiMeshTargetAttachment : entIAttachment
+	public worlduiMeshTargetAttachment()
 	{
-		public worlduiMeshTargetAttachment()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

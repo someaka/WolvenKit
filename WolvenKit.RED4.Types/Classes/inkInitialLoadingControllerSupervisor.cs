@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkInitialLoadingControllerSupervisor : gameuiOnscreenVOPlayerController
 {
-	[REDMeta]
-	public partial class inkInitialLoadingControllerSupervisor : gameuiOnscreenVOPlayerController
+	public inkInitialLoadingControllerSupervisor()
 	{
-		public inkInitialLoadingControllerSupervisor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

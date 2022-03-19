@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldINodeInstance : ISerializable
 {
-	[REDMeta]
-	public partial class worldINodeInstance : ISerializable
+	public worldINodeInstance()
 	{
-		public worldINodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

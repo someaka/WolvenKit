@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HealthCollisionLogic : BonusCollisionLogic
 {
-	[REDMeta]
-	public partial class HealthCollisionLogic : BonusCollisionLogic
+	public HealthCollisionLogic()
 	{
-		public HealthCollisionLogic()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

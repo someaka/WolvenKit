@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StatusEffectAbsentPrereqState : StatusEffectPrereqState
 {
-	[REDMeta]
-	public partial class StatusEffectAbsentPrereqState : StatusEffectPrereqState
+	public StatusEffectAbsentPrereqState()
 	{
-		public StatusEffectAbsentPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

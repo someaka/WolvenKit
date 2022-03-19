@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FunctionalTestsIRuntimeSystem : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class FunctionalTestsIRuntimeSystem : worldIRuntimeSystem
+	public FunctionalTestsIRuntimeSystem()
 	{
-		public FunctionalTestsIRuntimeSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

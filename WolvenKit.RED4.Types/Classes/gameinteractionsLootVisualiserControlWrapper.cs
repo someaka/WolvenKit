@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsLootVisualiserControlWrapper : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameinteractionsLootVisualiserControlWrapper : RedBaseClass
+	public gameinteractionsLootVisualiserControlWrapper()
 	{
-		public gameinteractionsLootVisualiserControlWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questRadioSongNodeType : questIAudioNodeType
 {
-	[REDMeta]
-	public partial class questRadioSongNodeType : questIAudioNodeType
+	[Ordinal(0)] 
+	[RED("radioStationEvents")] 
+	public CArray<audioRadioStationSongEventStruct> RadioStationEvents
 	{
-		[Ordinal(0)] 
-		[RED("radioStationEvents")] 
-		public CArray<audioRadioStationSongEventStruct> RadioStationEvents
-		{
-			get => GetPropertyValue<CArray<audioRadioStationSongEventStruct>>();
-			set => SetPropertyValue<CArray<audioRadioStationSongEventStruct>>(value);
-		}
-
-		public questRadioSongNodeType()
-		{
-			RadioStationEvents = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<audioRadioStationSongEventStruct>>();
+		set => SetPropertyValue<CArray<audioRadioStationSongEventStruct>>(value);
 	}
+
+	public questRadioSongNodeType()
+	{
+		RadioStationEvents = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

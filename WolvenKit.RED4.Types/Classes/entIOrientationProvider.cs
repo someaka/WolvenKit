@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entIOrientationProvider : IScriptable
 {
-	[REDMeta]
-	public partial class entIOrientationProvider : IScriptable
+	public entIOrientationProvider()
 	{
-		public entIOrientationProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

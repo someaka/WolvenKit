@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BraindanceControlsTransition : DefaultTransition
 {
-	[REDMeta]
-	public partial class BraindanceControlsTransition : DefaultTransition
+	public BraindanceControlsTransition()
 	{
-		public BraindanceControlsTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

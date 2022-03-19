@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSetAggressiveMask : redEvent
 {
-	[REDMeta]
-	public partial class gameSetAggressiveMask : redEvent
+	public gameSetAggressiveMask()
 	{
-		public gameSetAggressiveMask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

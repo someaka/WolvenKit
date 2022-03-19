@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GTFManager : IScriptable
 {
-	[REDMeta]
-	public partial class GTFManager : IScriptable
+	public GTFManager()
 	{
-		public GTFManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

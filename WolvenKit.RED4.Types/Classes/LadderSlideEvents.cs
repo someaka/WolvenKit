@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LadderSlideEvents : LadderEvents
 {
-	[REDMeta]
-	public partial class LadderSlideEvents : LadderEvents
+	public LadderSlideEvents()
 	{
-		public LadderSlideEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

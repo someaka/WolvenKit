@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class JamWeaponE3HackEvent : redEvent
 {
-	[REDMeta]
-	public partial class JamWeaponE3HackEvent : redEvent
+	public JamWeaponE3HackEvent()
 	{
-		public JamWeaponE3HackEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

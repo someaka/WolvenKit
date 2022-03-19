@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAudioTagNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldAudioTagNodeInstance : worldINodeInstance
+	public worldAudioTagNodeInstance()
 	{
-		public worldAudioTagNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

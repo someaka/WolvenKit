@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WaterCustomData : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class WaterCustomData : ICameraStorageCustomData
+	public WaterCustomData()
 	{
-		public WaterCustomData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

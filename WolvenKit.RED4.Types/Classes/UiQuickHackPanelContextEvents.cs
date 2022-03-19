@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UiQuickHackPanelContextEvents : InputContextTransitionEvents
 {
-	[REDMeta]
-	public partial class UiQuickHackPanelContextEvents : InputContextTransitionEvents
+	public UiQuickHackPanelContextEvents()
 	{
-		public UiQuickHackPanelContextEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

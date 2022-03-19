@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workFastForwardData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workFastForwardData : workIWorkspotCommandData
+	public workFastForwardData()
 	{
-		public workFastForwardData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

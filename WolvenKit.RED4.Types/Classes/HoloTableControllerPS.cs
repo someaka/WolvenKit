@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HoloTableControllerPS : MediaDeviceControllerPS
 {
-	[REDMeta]
-	public partial class HoloTableControllerPS : MediaDeviceControllerPS
+	public HoloTableControllerPS()
 	{
-		public HoloTableControllerPS()
-		{
-			DeviceName = "LocKey#17851";
-			TweakDBRecord = 76235139184;
-			TweakDBDescriptionRecord = 128182655022;
+		DeviceName = "LocKey#17851";
+		TweakDBRecord = 76235139184;
+		TweakDBDescriptionRecord = 128182655022;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

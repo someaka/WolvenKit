@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkHUDLayer : inkFullScreenLayer
 {
-	[REDMeta]
-	public partial class inkHUDLayer : inkFullScreenLayer
+	public inkHUDLayer()
 	{
-		public inkHUDLayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class meshMeshParameter : ISerializable
 {
-	[REDMeta]
-	public partial class meshMeshParameter : ISerializable
+	public meshMeshParameter()
 	{
-		public meshMeshParameter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

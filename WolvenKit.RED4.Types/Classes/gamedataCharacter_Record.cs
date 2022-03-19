@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataCharacter_Record : gamedataSpawnableObject_Record
 {
-	[REDMeta]
-	public partial class gamedataCharacter_Record : gamedataSpawnableObject_Record
+	public gamedataCharacter_Record()
 	{
-		public gamedataCharacter_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameChatterHelper : IScriptable
 {
-	[REDMeta]
-	public partial class gameChatterHelper : IScriptable
+	public gameChatterHelper()
 	{
-		public gameChatterHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

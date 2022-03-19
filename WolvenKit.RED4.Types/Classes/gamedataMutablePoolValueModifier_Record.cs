@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataMutablePoolValueModifier_Record : gamedataPoolValueModifier_Record
 {
-	[REDMeta]
-	public partial class gamedataMutablePoolValueModifier_Record : gamedataPoolValueModifier_Record
+	public gamedataMutablePoolValueModifier_Record()
 	{
-		public gamedataMutablePoolValueModifier_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

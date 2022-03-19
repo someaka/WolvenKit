@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NPCAfterDeathOrDefeatEvent : redEvent
 {
-	[REDMeta]
-	public partial class NPCAfterDeathOrDefeatEvent : redEvent
+	public NPCAfterDeathOrDefeatEvent()
 	{
-		public NPCAfterDeathOrDefeatEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

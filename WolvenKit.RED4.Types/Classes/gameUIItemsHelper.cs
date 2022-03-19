@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameUIItemsHelper : IScriptable
 {
-	[REDMeta]
-	public partial class gameUIItemsHelper : IScriptable
+	public gameUIItemsHelper()
 	{
-		public gameUIItemsHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

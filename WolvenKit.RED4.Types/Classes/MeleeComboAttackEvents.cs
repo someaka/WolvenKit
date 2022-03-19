@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleeComboAttackEvents : MeleeAttackGenericEvents
 {
-	[REDMeta]
-	public partial class MeleeComboAttackEvents : MeleeAttackGenericEvents
+	public MeleeComboAttackEvents()
 	{
-		public MeleeComboAttackEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

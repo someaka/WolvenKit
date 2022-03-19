@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePhotoModeAutoFocusPositionProvider : entIPositionProvider
 {
-	[REDMeta]
-	public partial class gamePhotoModeAutoFocusPositionProvider : entIPositionProvider
+	public gamePhotoModeAutoFocusPositionProvider()
 	{
-		public gamePhotoModeAutoFocusPositionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

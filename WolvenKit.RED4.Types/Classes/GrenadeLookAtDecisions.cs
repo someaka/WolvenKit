@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrenadeLookAtDecisions : lookAtPresetItemBaseDecisions
 {
-	[REDMeta]
-	public partial class GrenadeLookAtDecisions : lookAtPresetItemBaseDecisions
+	public GrenadeLookAtDecisions()
 	{
-		public GrenadeLookAtDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

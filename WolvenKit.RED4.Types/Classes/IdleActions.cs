@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IdleActions : TweakAIActionSmartComposite
 {
-	[REDMeta]
-	public partial class IdleActions : TweakAIActionSmartComposite
+	public IdleActions()
 	{
-		public IdleActions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

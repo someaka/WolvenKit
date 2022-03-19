@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FastForwardSelfRemovalEvents : ScenesFastForwardTransition
 {
-	[REDMeta]
-	public partial class FastForwardSelfRemovalEvents : ScenesFastForwardTransition
+	public FastForwardSelfRemovalEvents()
 	{
-		public FastForwardSelfRemovalEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

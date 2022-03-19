@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkPoolIdentifier : inkUserData
 {
-	[REDMeta]
-	public partial class inkPoolIdentifier : inkUserData
+	public inkPoolIdentifier()
 	{
-		public inkPoolIdentifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

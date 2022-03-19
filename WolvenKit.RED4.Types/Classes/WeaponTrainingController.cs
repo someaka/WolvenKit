@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WeaponTrainingController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class WeaponTrainingController : ScriptableDeviceComponent
+	public WeaponTrainingController()
 	{
-		public WeaponTrainingController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

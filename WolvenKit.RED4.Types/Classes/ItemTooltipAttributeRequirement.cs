@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemTooltipAttributeRequirement : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class ItemTooltipAttributeRequirement : inkWidgetLogicController
+	[Ordinal(1)] 
+	[RED("labelRef")] 
+	public inkTextWidgetReference LabelRef
 	{
-		[Ordinal(1)] 
-		[RED("labelRef")] 
-		public inkTextWidgetReference LabelRef
-		{
-			get => GetPropertyValue<inkTextWidgetReference>();
-			set => SetPropertyValue<inkTextWidgetReference>(value);
-		}
-
-		public ItemTooltipAttributeRequirement()
-		{
-			LabelRef = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkTextWidgetReference>();
+		set => SetPropertyValue<inkTextWidgetReference>(value);
 	}
+
+	public ItemTooltipAttributeRequirement()
+	{
+		LabelRef = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

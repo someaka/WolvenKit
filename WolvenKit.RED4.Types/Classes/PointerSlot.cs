@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PointerSlot : RadialSlot
 {
-	[REDMeta]
-	public partial class PointerSlot : RadialSlot
+	public PointerSlot()
 	{
-		public PointerSlot()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

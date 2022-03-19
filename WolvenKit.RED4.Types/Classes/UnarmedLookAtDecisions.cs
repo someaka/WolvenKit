@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnarmedLookAtDecisions : LookAtPresetBaseDecisions
 {
-	[REDMeta]
-	public partial class UnarmedLookAtDecisions : LookAtPresetBaseDecisions
+	public UnarmedLookAtDecisions()
 	{
-		public UnarmedLookAtDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

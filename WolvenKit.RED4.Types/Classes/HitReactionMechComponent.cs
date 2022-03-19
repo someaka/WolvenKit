@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitReactionMechComponent : HitReactionComponent
 {
-	[REDMeta]
-	public partial class HitReactionMechComponent : HitReactionComponent
+	public HitReactionMechComponent()
 	{
-		public HitReactionMechComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

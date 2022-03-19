@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameBinkMeshTargetAttachment : entIAttachment
 {
-	[REDMeta]
-	public partial class gameBinkMeshTargetAttachment : entIAttachment
+	public gameBinkMeshTargetAttachment()
 	{
-		public gameBinkMeshTargetAttachment()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

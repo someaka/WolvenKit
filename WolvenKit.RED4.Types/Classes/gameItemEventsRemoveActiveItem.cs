@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameItemEventsRemoveActiveItem : redEvent
 {
-	[REDMeta]
-	public partial class gameItemEventsRemoveActiveItem : redEvent
+	public gameItemEventsRemoveActiveItem()
 	{
-		public gameItemEventsRemoveActiveItem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

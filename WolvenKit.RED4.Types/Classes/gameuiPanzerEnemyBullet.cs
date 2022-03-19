@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiPanzerEnemyBullet : gameuiPanzerBullet
 {
-	[REDMeta]
-	public partial class gameuiPanzerEnemyBullet : gameuiPanzerBullet
+	public gameuiPanzerEnemyBullet()
 	{
-		public gameuiPanzerEnemyBullet()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

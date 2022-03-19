@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemEntityTransactor : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemEntityTransactor : worldIRuntimeSystem
+	public worldRuntimeSystemEntityTransactor()
 	{
-		public worldRuntimeSystemEntityTransactor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

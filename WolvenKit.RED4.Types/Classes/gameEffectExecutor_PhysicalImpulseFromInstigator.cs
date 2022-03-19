@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectExecutor_PhysicalImpulseFromInstigator : gameEffectExecutor
 {
-	[REDMeta]
-	public partial class gameEffectExecutor_PhysicalImpulseFromInstigator : gameEffectExecutor
+	public gameEffectExecutor_PhysicalImpulseFromInstigator()
 	{
-		public gameEffectExecutor_PhysicalImpulseFromInstigator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

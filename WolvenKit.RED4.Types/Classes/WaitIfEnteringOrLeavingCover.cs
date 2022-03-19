@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WaitIfEnteringOrLeavingCover : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class WaitIfEnteringOrLeavingCover : AIbehaviortaskScript
+	public WaitIfEnteringOrLeavingCover()
 	{
-		public WaitIfEnteringOrLeavingCover()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

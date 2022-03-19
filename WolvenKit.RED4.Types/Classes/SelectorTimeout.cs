@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SelectorTimeout : AITimeoutCondition
 {
-	[REDMeta]
-	public partial class SelectorTimeout : AITimeoutCondition
+	public SelectorTimeout()
 	{
-		public SelectorTimeout()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,52 +1,48 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SettingsSelectorControllerRange : inkSettingsSelectorController
 {
-	[REDMeta]
-	public partial class SettingsSelectorControllerRange : inkSettingsSelectorController
+	[Ordinal(15)] 
+	[RED("ValueText")] 
+	public inkTextWidgetReference ValueText
 	{
-		[Ordinal(15)] 
-		[RED("ValueText")] 
-		public inkTextWidgetReference ValueText
-		{
-			get => GetPropertyValue<inkTextWidgetReference>();
-			set => SetPropertyValue<inkTextWidgetReference>(value);
-		}
-
-		[Ordinal(16)] 
-		[RED("LeftArrow")] 
-		public inkWidgetReference LeftArrow
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		[Ordinal(17)] 
-		[RED("RightArrow")] 
-		public inkWidgetReference RightArrow
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		[Ordinal(18)] 
-		[RED("ProgressBar")] 
-		public inkWidgetReference ProgressBar
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		public SettingsSelectorControllerRange()
-		{
-			ValueText = new();
-			LeftArrow = new();
-			RightArrow = new();
-			ProgressBar = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkTextWidgetReference>();
+		set => SetPropertyValue<inkTextWidgetReference>(value);
 	}
+
+	[Ordinal(16)] 
+	[RED("LeftArrow")] 
+	public inkWidgetReference LeftArrow
+	{
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
+	}
+
+	[Ordinal(17)] 
+	[RED("RightArrow")] 
+	public inkWidgetReference RightArrow
+	{
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
+	}
+
+	[Ordinal(18)] 
+	[RED("ProgressBar")] 
+	public inkWidgetReference ProgressBar
+	{
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
+	}
+
+	public SettingsSelectorControllerRange()
+	{
+		ValueText = new();
+		LeftArrow = new();
+		RightArrow = new();
+		ProgressBar = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

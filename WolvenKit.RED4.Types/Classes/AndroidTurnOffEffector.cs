@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AndroidTurnOffEffector : gameEffector
 {
-	[REDMeta]
-	public partial class AndroidTurnOffEffector : gameEffector
+	public AndroidTurnOffEffector()
 	{
-		public AndroidTurnOffEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

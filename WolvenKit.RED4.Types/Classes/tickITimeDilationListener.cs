@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class tickITimeDilationListener : IScriptable
 {
-	[REDMeta]
-	public partial class tickITimeDilationListener : IScriptable
+	public tickITimeDilationListener()
 	{
-		public tickITimeDilationListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

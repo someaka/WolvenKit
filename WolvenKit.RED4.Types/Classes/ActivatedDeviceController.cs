@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActivatedDeviceController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class ActivatedDeviceController : ScriptableDeviceComponent
+	public ActivatedDeviceController()
 	{
-		public ActivatedDeviceController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

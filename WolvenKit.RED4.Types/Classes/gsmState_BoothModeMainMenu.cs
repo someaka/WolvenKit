@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmState_BoothModeMainMenu : gsmMenuState
 {
-	[REDMeta]
-	public partial class gsmState_BoothModeMainMenu : gsmMenuState
+	public gsmState_BoothModeMainMenu()
 	{
-		public gsmState_BoothModeMainMenu()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

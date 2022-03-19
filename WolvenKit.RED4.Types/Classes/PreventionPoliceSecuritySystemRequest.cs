@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PreventionPoliceSecuritySystemRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class PreventionPoliceSecuritySystemRequest : gameScriptableSystemRequest
+	[Ordinal(0)] 
+	[RED("securitySystemID")] 
+	public gamePersistentID SecuritySystemID
 	{
-		[Ordinal(0)] 
-		[RED("securitySystemID")] 
-		public gamePersistentID SecuritySystemID
-		{
-			get => GetPropertyValue<gamePersistentID>();
-			set => SetPropertyValue<gamePersistentID>(value);
-		}
-
-		public PreventionPoliceSecuritySystemRequest()
-		{
-			SecuritySystemID = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gamePersistentID>();
+		set => SetPropertyValue<gamePersistentID>(value);
 	}
+
+	public PreventionPoliceSecuritySystemRequest()
+	{
+		SecuritySystemID = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

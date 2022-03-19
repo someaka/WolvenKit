@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CrowdWalkAwayAfterCombat : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class CrowdWalkAwayAfterCombat : AIbehaviortaskScript
+	public CrowdWalkAwayAfterCombat()
 	{
-		public CrowdWalkAwayAfterCombat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

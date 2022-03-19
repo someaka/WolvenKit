@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiCharacterCustomizationOptionImpl : gameuiCharacterCustomizationOption
 {
-	[REDMeta]
-	public partial class gameuiCharacterCustomizationOptionImpl : gameuiCharacterCustomizationOption
+	public gameuiCharacterCustomizationOptionImpl()
 	{
-		public gameuiCharacterCustomizationOptionImpl()
-		{
-			PrevIndex = 4294967295;
-			CurrIndex = 4294967295;
+		PrevIndex = 4294967295;
+		CurrIndex = 4294967295;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

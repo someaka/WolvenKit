@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemountingMountableComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gamemountingMountableComponent : entIComponent
+	public gamemountingMountableComponent()
 	{
-		public gamemountingMountableComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

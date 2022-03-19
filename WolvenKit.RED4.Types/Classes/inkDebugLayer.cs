@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkDebugLayer : inkFullScreenLayer
 {
-	[REDMeta]
-	public partial class inkDebugLayer : inkFullScreenLayer
+	public inkDebugLayer()
 	{
-		public inkDebugLayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

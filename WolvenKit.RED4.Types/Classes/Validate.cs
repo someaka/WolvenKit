@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Validate : redEvent
 {
-	[REDMeta]
-	public partial class Validate : redEvent
+	public Validate()
 	{
-		public Validate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

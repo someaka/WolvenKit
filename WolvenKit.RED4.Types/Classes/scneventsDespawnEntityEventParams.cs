@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scneventsDespawnEntityEventParams : RedBaseClass
 {
-	[REDMeta]
-	public partial class scneventsDespawnEntityEventParams : RedBaseClass
+	[Ordinal(0)] 
+	[RED("performer")] 
+	public scnPerformerId Performer
 	{
-		[Ordinal(0)] 
-		[RED("performer")] 
-		public scnPerformerId Performer
-		{
-			get => GetPropertyValue<scnPerformerId>();
-			set => SetPropertyValue<scnPerformerId>(value);
-		}
-
-		public scneventsDespawnEntityEventParams()
-		{
-			Performer = new() { Id = 4294967040 };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<scnPerformerId>();
+		set => SetPropertyValue<scnPerformerId>(value);
 	}
+
+	public scneventsDespawnEntityEventParams()
+	{
+		Performer = new() { Id = 4294967040 };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

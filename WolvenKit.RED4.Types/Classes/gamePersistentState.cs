@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePersistentState : IScriptable
 {
-	[REDMeta]
-	public partial class gamePersistentState : IScriptable
+	public gamePersistentState()
 	{
-		public gamePersistentState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

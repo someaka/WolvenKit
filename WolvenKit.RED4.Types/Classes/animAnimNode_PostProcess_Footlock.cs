@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_PostProcess_Footlock : animIAnimNode_PostProcess
 {
-	[REDMeta]
-	public partial class animAnimNode_PostProcess_Footlock : animIAnimNode_PostProcess
+	public animAnimNode_PostProcess_Footlock()
 	{
-		public animAnimNode_PostProcess_Footlock()
-		{
-			IsEnabled = true;
+		IsEnabled = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

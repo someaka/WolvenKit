@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnDummyAlwaysTrueReturnCondition : scnIReturnCondition
 {
-	[REDMeta]
-	public partial class scnDummyAlwaysTrueReturnCondition : scnIReturnCondition
+	public scnDummyAlwaysTrueReturnCondition()
 	{
-		public scnDummyAlwaysTrueReturnCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

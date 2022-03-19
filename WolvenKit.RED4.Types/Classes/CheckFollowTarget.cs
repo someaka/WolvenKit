@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckFollowTarget : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class CheckFollowTarget : AIbehaviorconditionScript
+	public CheckFollowTarget()
 	{
-		public CheckFollowTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

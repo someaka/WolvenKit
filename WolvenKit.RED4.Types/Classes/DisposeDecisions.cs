@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisposeDecisions : CarriedObject
 {
-	[REDMeta]
-	public partial class DisposeDecisions : CarriedObject
+	public DisposeDecisions()
 	{
-		public DisposeDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

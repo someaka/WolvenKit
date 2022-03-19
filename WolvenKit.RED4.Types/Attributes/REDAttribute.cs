@@ -1,162 +1,117 @@
 using System;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+/// <summary>
+/// Marks a field as serializable for redengine files.
+/// </summary>
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false)]
+public class REDAttribute : Attribute
 {
-    public enum EREDMetaInfo
+    #region Constructors
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="REDAttribute"/> class.
+    /// </summary>
+    /// <param name="flags">
+    /// Values needed for types such as <see cref="TDynArray{T}"/>, <see cref="Static{T}"/>, or <see cref="Array"/>.
+    /// </param>
+    public REDAttribute(params int[] flags)
     {
-        REDStruct,
-        REDPrimitive,
-        //REDComplex,
+        Flags = flags;
     }
 
     /// <summary>
-    /// Marks a field as serializable for redengine files.
+    /// Initializes a new instance of the <see cref="REDAttribute"/> class.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false)]
-    public class REDAttribute : Attribute
+    /// <param name="name">
+    /// Custom name to use in place of the default name.
+    /// </param>
+    /// <param name="flags">
+    /// Values needed for types such as <see cref="TDynArray{T}"/>, <see cref="Static{T}"/>, or <see cref="Array"/>.
+    /// </param>
+    public REDAttribute(string name, params int[] flags)
     {
-        #region Constructors
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="REDAttribute"/> class.
-        /// </summary>
-        /// <param name="flags">
-        /// Values needed for types such as <see cref="TDynArray{T}"/>, <see cref="Static{T}"/>, or <see cref="Array"/>.
-        /// </param>
-        public REDAttribute(params int[] flags)
-        {
-            Flags = flags;
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="REDAttribute"/> class.
-        /// </summary>
-        /// <param name="name">
-        /// Custom name to use in place of the default name.
-        /// </param>
-        /// <param name="flags">
-        /// Values needed for types such as <see cref="TDynArray{T}"/>, <see cref="Static{T}"/>, or <see cref="Array"/>.
-        /// </param>
-        public REDAttribute(string name, params int[] flags)
-        {
-            Name = name;
-            Flags = flags;
-        }
-
-        #endregion Constructors
-
-        #region Properties
-
-        public int[] Flags { get; }
-        public string? Name { get; }
-
-        #endregion Properties
-
-        #region Methods
-
-        public override string ToString()
-        {
-            //return $"{Name} [{string.Join(",", Flags)}]";
-            return $"{Name}";
-        }
-
-        #endregion Methods
+        Name = name;
+        Flags = flags;
     }
+
+    #endregion Constructors
+
+    #region Properties
+
+    public int[] Flags { get; }
+    public string? Name { get; }
+
+    #endregion Properties
+
+    #region Methods
+
+    public override string ToString()
+    {
+        //return $"{Name} [{string.Join(",", Flags)}]";
+        return $"{Name}";
+    }
+
+    #endregion Methods
+}
+
+/// <summary>
+/// Marks a field as a compressed buffer for cr2w IO.
+/// </summary>
+[AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
+public sealed class REDBufferAttribute : REDAttribute
+{
+    #region Constructors
 
     /// <summary>
-    /// Marks a field as a compressed buffer for cr2w IO.
+    /// Initializes a new instance of the <see cref="REDBufferAttribute"/> class.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
-    public sealed class REDBufferAttribute : REDAttribute
+    internal REDBufferAttribute(bool isIgnored = false)
     {
-        #region Constructors
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="REDBufferAttribute"/> class.
-        /// </summary>
-        internal REDBufferAttribute(bool isIgnored = false)
-        {
-            IsIgnored = isIgnored;
-        }
-
-        #endregion Constructors
-
-        #region Properties
-
-        public bool IsIgnored { get; private set; }
-
-        #endregion Properties
-
-        #region Methods
-
-        public override string ToString()
-        {
-            return String.Format($"{IsIgnored}");
-        }
-
-        #endregion Methods
+        IsIgnored = isIgnored;
     }
 
-    /// <summary>
-    /// Marks a class as serializable for redengine files.
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    public sealed class REDMetaAttribute : Attribute
+    #endregion Constructors
+
+    #region Properties
+
+    public bool IsIgnored { get; private set; }
+
+    #endregion Properties
+
+    #region Methods
+
+    public override string ToString()
     {
-        #region Constructors
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="REDMetaAttribute"/> class.
-        /// </summary>
-        /// <param name="keywords">
-        /// Meta values registered in the rtti and additional information for parsing such as enumtype, fixedlayout classes etc.
-        /// </param>
-        internal REDMetaAttribute(params EREDMetaInfo[] keywords)
-        {
-            Keywords = keywords;
-        }
-
-        #endregion Constructors
-
-        #region Properties
-
-        public EREDMetaInfo[] Keywords { get; private set; }
-
-        #endregion Properties
-
-        #region Methods
-
-        public override string ToString()
-        {
-            return String.Format("{0}", String.Join(",", Keywords));
-        }
-
-        #endregion Methods
+        return String.Format($"{IsIgnored}");
     }
 
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    public sealed class REDClassAttribute : Attribute
-    {
-        internal REDClassAttribute() { }
+    #endregion Methods
+}
 
-        public bool SerializeDefault { get; set; } = false;
-        public int ChildLevel { get; set; } = 0;
-    }
+[AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
+public sealed class REDClassAttribute : Attribute
+{
+    internal REDClassAttribute() { }
 
-    [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
-    public sealed class REDPropertyAttribute : Attribute
-    {
-        internal REDPropertyAttribute() { }
+    public bool SerializeDefault { get; set; } = false;
+    public int ChildLevel { get; set; } = 0;
+}
 
-        public bool SerializeDefault { get; set; } = false;
-        public bool IsIgnored { get; set; } = false;
-    }
+[AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
+public sealed class REDPropertyAttribute : Attribute
+{
+    internal REDPropertyAttribute() { }
 
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    public sealed class REDTypeAttribute : Attribute
-    {
-        internal REDTypeAttribute() { }
+    public bool SerializeDefault { get; set; } = false;
+    public bool IsIgnored { get; set; } = false;
+}
 
-        public bool IsValueType { get; set; }
-    }
+[AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
+public sealed class REDTypeAttribute : Attribute
+{
+    internal REDTypeAttribute() { }
+
+    public bool IsValueType { get; set; }
 }

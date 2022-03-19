@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrappleForceShovePreyEvents : LocomotionTakedownEvents
 {
-	[REDMeta]
-	public partial class GrappleForceShovePreyEvents : LocomotionTakedownEvents
+	[Ordinal(7)] 
+	[RED("unmountCalled")] 
+	public CBool UnmountCalled
 	{
-		[Ordinal(7)] 
-		[RED("unmountCalled")] 
-		public CBool UnmountCalled
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public GrappleForceShovePreyEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public GrappleForceShovePreyEvents()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

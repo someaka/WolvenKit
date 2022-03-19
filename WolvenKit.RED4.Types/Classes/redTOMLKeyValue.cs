@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class redTOMLKeyValue : redTOMLBaseValue
 {
-	[REDMeta]
-	public partial class redTOMLKeyValue : redTOMLBaseValue
+	public redTOMLKeyValue()
 	{
-		public redTOMLKeyValue()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

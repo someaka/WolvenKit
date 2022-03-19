@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InteractiveSignController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class InteractiveSignController : ScriptableDeviceComponent
+	public InteractiveSignController()
 	{
-		public InteractiveSignController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

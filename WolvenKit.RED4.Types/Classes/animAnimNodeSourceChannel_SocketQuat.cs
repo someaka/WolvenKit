@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNodeSourceChannel_SocketQuat : animIAnimNodeSourceChannel_Quat
 {
-	[REDMeta]
-	public partial class animAnimNodeSourceChannel_SocketQuat : animIAnimNodeSourceChannel_Quat
+	public animAnimNodeSourceChannel_SocketQuat()
 	{
-		public animAnimNodeSourceChannel_SocketQuat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

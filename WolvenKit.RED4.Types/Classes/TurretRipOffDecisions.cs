@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TurretRipOffDecisions : TurretTransition
 {
-	[REDMeta]
-	public partial class TurretRipOffDecisions : TurretTransition
+	public TurretRipOffDecisions()
 	{
-		public TurretRipOffDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

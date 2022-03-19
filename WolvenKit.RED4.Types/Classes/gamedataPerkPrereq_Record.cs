@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataPerkPrereq_Record : gamedataIPrereq_Record
 {
-	[REDMeta]
-	public partial class gamedataPerkPrereq_Record : gamedataIPrereq_Record
+	public gamedataPerkPrereq_Record()
 	{
-		public gamedataPerkPrereq_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

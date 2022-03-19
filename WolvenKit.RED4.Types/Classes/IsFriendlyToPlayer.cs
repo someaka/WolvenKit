@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsFriendlyToPlayer : AIAutonomousConditions
 {
-	[REDMeta]
-	public partial class IsFriendlyToPlayer : AIAutonomousConditions
+	public IsFriendlyToPlayer()
 	{
-		public IsFriendlyToPlayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

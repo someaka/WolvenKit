@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkIgnoresCursorState : inkUserData
 {
-	[REDMeta]
-	public partial class inkIgnoresCursorState : inkUserData
+	public inkIgnoresCursorState()
 	{
-		public inkIgnoresCursorState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

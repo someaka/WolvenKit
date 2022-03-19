@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameVisionModePrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class gameVisionModePrereqState : gamePrereqState
+	public gameVisionModePrereqState()
 	{
-		public gameVisionModePrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

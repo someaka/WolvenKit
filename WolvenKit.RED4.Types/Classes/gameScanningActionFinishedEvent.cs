@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScanningActionFinishedEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameScanningActionFinishedEvent : redEvent
+	public gameScanningActionFinishedEvent()
 	{
-		public gameScanningActionFinishedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

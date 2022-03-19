@@ -1,25 +1,23 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class CoderControllerPS : BasicDistractionDeviceControllerPS
 {
-	[REDMeta]
-	public partial class CoderControllerPS : BasicDistractionDeviceControllerPS
+	[Ordinal(109)] 
+	[RED("providedAuthorizationLevel")] 
+	public CEnum<ESecurityAccessLevel> ProvidedAuthorizationLevel
 	{
-		[Ordinal(109)] 
-		[RED("providedAuthorizationLevel")] 
-		public CEnum<ESecurityAccessLevel> ProvidedAuthorizationLevel
-		{
-			get => GetPropertyValue<CEnum<ESecurityAccessLevel>>();
-			set => SetPropertyValue<CEnum<ESecurityAccessLevel>>(value);
-		}
-
-		public CoderControllerPS()
-		{
-			ProvidedAuthorizationLevel = Enums.ESecurityAccessLevel.ESL_4;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<ESecurityAccessLevel>>();
+		set => SetPropertyValue<CEnum<ESecurityAccessLevel>>(value);
 	}
+
+	public CoderControllerPS()
+	{
+		ProvidedAuthorizationLevel = Enums.ESecurityAccessLevel.ESL_4;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

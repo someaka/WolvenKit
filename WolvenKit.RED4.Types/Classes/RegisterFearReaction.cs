@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RegisterFearReaction : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class RegisterFearReaction : AIbehaviortaskScript
+	public RegisterFearReaction()
 	{
-		public RegisterFearReaction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

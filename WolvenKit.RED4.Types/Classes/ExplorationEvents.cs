@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExplorationEvents : HighLevelTransition
 {
-	[REDMeta]
-	public partial class ExplorationEvents : HighLevelTransition
+	public ExplorationEvents()
 	{
-		public ExplorationEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityTurretController : SensorDeviceController
 {
-	[REDMeta]
-	public partial class SecurityTurretController : SensorDeviceController
+	public SecurityTurretController()
 	{
-		public SecurityTurretController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

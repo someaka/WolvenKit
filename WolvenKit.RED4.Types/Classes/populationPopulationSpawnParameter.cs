@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class populationPopulationSpawnParameter : gameObjectSpawnParameter
 {
-	[REDMeta]
-	public partial class populationPopulationSpawnParameter : gameObjectSpawnParameter
+	public populationPopulationSpawnParameter()
 	{
-		public populationPopulationSpawnParameter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

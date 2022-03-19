@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiMinimapSecurityAreaInitData : gameuiMappinControllerCustomData
 {
-	[REDMeta]
-	public partial class gameuiMinimapSecurityAreaInitData : gameuiMappinControllerCustomData
+	public gameuiMinimapSecurityAreaInitData()
 	{
-		public gameuiMinimapSecurityAreaInitData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

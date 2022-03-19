@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ContainerObjectSingleItemPS : gameLootContainerBasePS
 {
-	[REDMeta]
-	public partial class ContainerObjectSingleItemPS : gameLootContainerBasePS
+	public ContainerObjectSingleItemPS()
 	{
-		public ContainerObjectSingleItemPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AutoplayVideoController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class AutoplayVideoController : inkWidgetLogicController
+	public AutoplayVideoController()
 	{
-		public AutoplayVideoController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

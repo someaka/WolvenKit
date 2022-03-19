@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entReplicatedInputSetterInt : entReplicatedInputSetterBase
 {
-	[REDMeta]
-	public partial class entReplicatedInputSetterInt : entReplicatedInputSetterBase
+	[Ordinal(2)] 
+	[RED("value")] 
+	public CInt32 Value
 	{
-		[Ordinal(2)] 
-		[RED("value")] 
-		public CInt32 Value
-		{
-			get => GetPropertyValue<CInt32>();
-			set => SetPropertyValue<CInt32>(value);
-		}
-
-		public entReplicatedInputSetterInt()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CInt32>();
+		set => SetPropertyValue<CInt32>(value);
 	}
+
+	public entReplicatedInputSetterInt()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

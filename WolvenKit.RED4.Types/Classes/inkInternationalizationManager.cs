@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkInternationalizationManager : ISerializable
 {
-	[REDMeta]
-	public partial class inkInternationalizationManager : ISerializable
+	public inkInternationalizationManager()
 	{
-		public inkInternationalizationManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

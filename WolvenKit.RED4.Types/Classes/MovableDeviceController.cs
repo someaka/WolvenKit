@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MovableDeviceController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class MovableDeviceController : ScriptableDeviceComponent
+	public MovableDeviceController()
 	{
-		public MovableDeviceController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

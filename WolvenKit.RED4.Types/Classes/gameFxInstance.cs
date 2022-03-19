@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameFxInstance : IScriptable
 {
-	[REDMeta]
-	public partial class gameFxInstance : IScriptable
+	public gameFxInstance()
 	{
-		public gameFxInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

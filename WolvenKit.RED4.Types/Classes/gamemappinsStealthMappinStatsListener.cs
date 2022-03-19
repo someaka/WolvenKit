@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsStealthMappinStatsListener : gameIStatsListener
 {
-	[REDMeta]
-	public partial class gamemappinsStealthMappinStatsListener : gameIStatsListener
+	public gamemappinsStealthMappinStatsListener()
 	{
-		public gamemappinsStealthMappinStatsListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

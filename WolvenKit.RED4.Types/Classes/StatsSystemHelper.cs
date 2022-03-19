@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StatsSystemHelper : IScriptable
 {
-	[REDMeta]
-	public partial class StatsSystemHelper : IScriptable
+	public StatsSystemHelper()
 	{
-		public StatsSystemHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

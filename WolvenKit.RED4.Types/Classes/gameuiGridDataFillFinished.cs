@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiGridDataFillFinished : redEvent
 {
-	[REDMeta]
-	public partial class gameuiGridDataFillFinished : redEvent
+	public gameuiGridDataFillFinished()
 	{
-		public gameuiGridDataFillFinished()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

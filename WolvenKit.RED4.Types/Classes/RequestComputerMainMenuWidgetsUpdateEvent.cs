@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RequestComputerMainMenuWidgetsUpdateEvent : RequestWidgetUpdateEvent
 {
-	[REDMeta]
-	public partial class RequestComputerMainMenuWidgetsUpdateEvent : RequestWidgetUpdateEvent
+	public RequestComputerMainMenuWidgetsUpdateEvent()
 	{
-		public RequestComputerMainMenuWidgetsUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

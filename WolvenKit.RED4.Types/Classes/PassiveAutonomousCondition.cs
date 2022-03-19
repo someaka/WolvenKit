@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PassiveAutonomousCondition : AIbehaviorexpressionScript
 {
-	[REDMeta]
-	public partial class PassiveAutonomousCondition : AIbehaviorexpressionScript
+	public PassiveAutonomousCondition()
 	{
-		public PassiveAutonomousCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

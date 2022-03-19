@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkCursorContextCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkCursorContextCallback : inkCallbackBase
+	public inkCursorContextCallback()
 	{
-		public inkCursorContextCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAudioAttractAreaNotifierInstance : worldITriggerAreaNotiferInstance
 {
-	[REDMeta]
-	public partial class worldAudioAttractAreaNotifierInstance : worldITriggerAreaNotiferInstance
+	public worldAudioAttractAreaNotifierInstance()
 	{
-		public worldAudioAttractAreaNotifierInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

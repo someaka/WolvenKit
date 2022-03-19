@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkanimToggleVisibilityEvent : inkanimEvent
 {
-	[REDMeta]
-	public partial class inkanimToggleVisibilityEvent : inkanimEvent
+	public inkanimToggleVisibilityEvent()
 	{
-		public inkanimToggleVisibilityEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

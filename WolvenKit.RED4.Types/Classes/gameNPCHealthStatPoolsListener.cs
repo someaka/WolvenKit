@@ -1,15 +1,12 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+[REDClass(SerializeDefault = true)]
+public partial class gameNPCHealthStatPoolsListener : gamePuppetStatPoolsListener
 {
-	[REDMeta]
-	[REDClass(SerializeDefault = true)]
-	public partial class gameNPCHealthStatPoolsListener : gamePuppetStatPoolsListener
+	public gameNPCHealthStatPoolsListener()
 	{
-		public gameNPCHealthStatPoolsListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

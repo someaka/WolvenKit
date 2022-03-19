@@ -1,14 +1,13 @@
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class gamedataScreenMessagesList_Record
 {
-	public partial class gamedataScreenMessagesList_Record
-	{
-		[RED("messages")]
-		[REDProperty(IsIgnored = true)]
-		public CArray<TweakDBID> Messages
-		{
-			get => GetPropertyValue<CArray<TweakDBID>>();
-			set => SetPropertyValue<CArray<TweakDBID>>(value);
-		}
-	}
+    [RED("messages")]
+    [REDProperty(IsIgnored = true)]
+    public CArray<TweakDBID> Messages
+    {
+        get => GetPropertyValue<CArray<TweakDBID>>();
+        set => SetPropertyValue<CArray<TweakDBID>>(value);
+    }
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorWaitingNotMountedCommandConditionDefinition : AIbehaviorConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorWaitingNotMountedCommandConditionDefinition : AIbehaviorConditionDefinition
+	public AIbehaviorWaitingNotMountedCommandConditionDefinition()
 	{
-		public AIbehaviorWaitingNotMountedCommandConditionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

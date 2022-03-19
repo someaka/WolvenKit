@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SwitchSeatsDecisions : VehicleTransition
 {
-	[REDMeta]
-	public partial class SwitchSeatsDecisions : VehicleTransition
+	public SwitchSeatsDecisions()
 	{
-		public SwitchSeatsDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

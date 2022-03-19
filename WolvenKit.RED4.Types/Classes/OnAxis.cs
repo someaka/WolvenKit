@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnAxis : inkPointerEvent
 {
-	[REDMeta]
-	public partial class OnAxis : inkPointerEvent
+	public OnAxis()
 	{
-		public OnAxis()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

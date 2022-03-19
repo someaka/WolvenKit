@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsFollowTargetInCombat : AIAutonomousConditions
 {
-	[REDMeta]
-	public partial class IsFollowTargetInCombat : AIAutonomousConditions
+	public IsFollowTargetInCombat()
 	{
-		public IsFollowTargetInCombat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

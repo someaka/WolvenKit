@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SlideFallDecisions : LocomotionAirDecisions
 {
-	[REDMeta]
-	public partial class SlideFallDecisions : LocomotionAirDecisions
+	public SlideFallDecisions()
 	{
-		public SlideFallDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BlindManagerTask : StatusEffectTasks
 {
-	[REDMeta]
-	public partial class BlindManagerTask : StatusEffectTasks
+	public BlindManagerTask()
 	{
-		public BlindManagerTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

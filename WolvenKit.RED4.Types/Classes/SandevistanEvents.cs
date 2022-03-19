@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SandevistanEvents : TimeDilationEventsTransitions
 {
-	[REDMeta]
-	public partial class SandevistanEvents : TimeDilationEventsTransitions
+	public SandevistanEvents()
 	{
-		public SandevistanEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

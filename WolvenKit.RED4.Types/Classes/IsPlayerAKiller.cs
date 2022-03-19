@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsPlayerAKiller : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class IsPlayerAKiller : AIbehaviorconditionScript
+	public IsPlayerAKiller()
 	{
-		public IsPlayerAKiller()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

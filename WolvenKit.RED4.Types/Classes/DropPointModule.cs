@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DropPointModule : Device
 {
-	[REDMeta]
-	public partial class DropPointModule : Device
+	public DropPointModule()
 	{
-		public DropPointModule()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

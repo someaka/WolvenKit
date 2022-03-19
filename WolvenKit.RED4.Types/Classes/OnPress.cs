@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnPress : inkPointerEvent
 {
-	[REDMeta]
-	public partial class OnPress : inkPointerEvent
+	public OnPress()
 	{
-		public OnPress()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WindowBlindersController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class WindowBlindersController : ScriptableDeviceComponent
+	public WindowBlindersController()
 	{
-		public WindowBlindersController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

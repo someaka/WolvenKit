@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_TransformValue : animAnimNode_Base
 {
-	[REDMeta]
-	public partial class animAnimNode_TransformValue : animAnimNode_Base
+	public animAnimNode_TransformValue()
 	{
-		public animAnimNode_TransformValue()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UIObjectsLoaderSystemListener : gameuiIUIObjectsLoaderSystemListener
 {
-	[REDMeta]
-	public partial class UIObjectsLoaderSystemListener : gameuiIUIObjectsLoaderSystemListener
+	public UIObjectsLoaderSystemListener()
 	{
-		public UIObjectsLoaderSystemListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

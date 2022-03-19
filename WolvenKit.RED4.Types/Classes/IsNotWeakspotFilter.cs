@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsNotWeakspotFilter : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class IsNotWeakspotFilter : gameEffectObjectSingleFilter_Scripted
+	public IsNotWeakspotFilter()
 	{
-		public IsNotWeakspotFilter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

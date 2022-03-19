@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorIsBeingSummonedDefinition : AIbehaviorVehicleExpressionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorIsBeingSummonedDefinition : AIbehaviorVehicleExpressionDefinition
+	public AIbehaviorIsBeingSummonedDefinition()
 	{
-		public AIbehaviorIsBeingSummonedDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CrowdCombatConditions : AIAutonomousConditions
 {
-	[REDMeta]
-	public partial class CrowdCombatConditions : AIAutonomousConditions
+	public CrowdCombatConditions()
 	{
-		public CrowdCombatConditions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

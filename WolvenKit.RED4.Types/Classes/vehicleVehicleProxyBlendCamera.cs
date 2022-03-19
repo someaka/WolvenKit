@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleVehicleProxyBlendCamera : gameCameraComponent
 {
-	[REDMeta]
-	public partial class vehicleVehicleProxyBlendCamera : gameCameraComponent
+	public vehicleVehicleProxyBlendCamera()
 	{
-		public vehicleVehicleProxyBlendCamera()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

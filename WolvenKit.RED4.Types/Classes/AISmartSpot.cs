@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISmartSpot : AISpot
 {
-	[REDMeta]
-	public partial class AISmartSpot : AISpot
+	public AISmartSpot()
 	{
-		public AISmartSpot()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

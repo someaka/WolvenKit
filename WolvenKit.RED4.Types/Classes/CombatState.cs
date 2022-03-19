@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CombatState : ChangeHighLevelStateAbstract
 {
-	[REDMeta]
-	public partial class CombatState : ChangeHighLevelStateAbstract
+	public CombatState()
 	{
-		public CombatState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

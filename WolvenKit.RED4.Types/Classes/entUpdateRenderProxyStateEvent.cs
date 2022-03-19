@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entUpdateRenderProxyStateEvent : redEvent
 {
-	[REDMeta]
-	public partial class entUpdateRenderProxyStateEvent : redEvent
+	public entUpdateRenderProxyStateEvent()
 	{
-		public entUpdateRenderProxyStateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

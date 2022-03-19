@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class communitySpawnInitializer : ISerializable
 {
-	[REDMeta]
-	public partial class communitySpawnInitializer : ISerializable
+	public communitySpawnInitializer()
 	{
-		public communitySpawnInitializer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

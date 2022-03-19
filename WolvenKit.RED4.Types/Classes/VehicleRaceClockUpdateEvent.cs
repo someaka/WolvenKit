@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleRaceClockUpdateEvent : gameTickableEvent
 {
-	[REDMeta]
-	public partial class VehicleRaceClockUpdateEvent : gameTickableEvent
+	public VehicleRaceClockUpdateEvent()
 	{
-		public VehicleRaceClockUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDebugColoring_StreamingPriority : worldEditorDebugColoringSettings
 {
-	[REDMeta]
-	public partial class worldDebugColoring_StreamingPriority : worldEditorDebugColoringSettings
+	public worldDebugColoring_StreamingPriority()
 	{
-		public worldDebugColoring_StreamingPriority()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnRelease : inkPointerEvent
 {
-	[REDMeta]
-	public partial class OnRelease : inkPointerEvent
+	public OnRelease()
 	{
-		public OnRelease()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

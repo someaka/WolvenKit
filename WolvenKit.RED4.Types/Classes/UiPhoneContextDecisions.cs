@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UiPhoneContextDecisions : InputContextTransitionDecisions
 {
-	[REDMeta]
-	public partial class UiPhoneContextDecisions : InputContextTransitionDecisions
+	public UiPhoneContextDecisions()
 	{
-		public UiPhoneContextDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

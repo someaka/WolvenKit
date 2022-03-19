@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameStatsBundleHandler : IScriptable
 {
-	[REDMeta]
-	public partial class gameStatsBundleHandler : IScriptable
+	public gameStatsBundleHandler()
 	{
-		public gameStatsBundleHandler()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

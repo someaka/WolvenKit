@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UIInGameNotificationViewData : gameuiGenericNotificationViewData
 {
-	[REDMeta]
-	public partial class UIInGameNotificationViewData : gameuiGenericNotificationViewData
+	public UIInGameNotificationViewData()
 	{
-		public UIInGameNotificationViewData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

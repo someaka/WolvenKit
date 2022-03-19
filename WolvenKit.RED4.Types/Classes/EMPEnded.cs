@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EMPEnded : redEvent
 {
-	[REDMeta]
-	public partial class EMPEnded : redEvent
+	public EMPEnded()
 	{
-		public EMPEnded()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

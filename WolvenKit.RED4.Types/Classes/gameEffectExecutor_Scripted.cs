@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectExecutor_Scripted : gameEffectExecutor
 {
-	[REDMeta]
-	public partial class gameEffectExecutor_Scripted : gameEffectExecutor
+	public gameEffectExecutor_Scripted()
 	{
-		public gameEffectExecutor_Scripted()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

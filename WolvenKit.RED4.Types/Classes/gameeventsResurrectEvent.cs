@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameeventsResurrectEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameeventsResurrectEvent : redEvent
+	public gameeventsResurrectEvent()
 	{
-		public gameeventsResurrectEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

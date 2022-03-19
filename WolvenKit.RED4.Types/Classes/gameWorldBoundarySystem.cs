@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameWorldBoundarySystem : gameIWorldBoundarySystem
 {
-	[REDMeta]
-	public partial class gameWorldBoundarySystem : gameIWorldBoundarySystem
+	public gameWorldBoundarySystem()
 	{
-		public gameWorldBoundarySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

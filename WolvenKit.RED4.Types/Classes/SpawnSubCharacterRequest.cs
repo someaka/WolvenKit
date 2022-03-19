@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SpawnSubCharacterRequest : SpawnUniqueSubCharacterRequest
 {
-	[REDMeta]
-	public partial class SpawnSubCharacterRequest : SpawnUniqueSubCharacterRequest
+	public SpawnSubCharacterRequest()
 	{
-		public SpawnSubCharacterRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

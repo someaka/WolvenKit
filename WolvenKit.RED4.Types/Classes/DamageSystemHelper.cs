@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DamageSystemHelper : IScriptable
 {
-	[REDMeta]
-	public partial class DamageSystemHelper : IScriptable
+	public DamageSystemHelper()
 	{
-		public DamageSystemHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

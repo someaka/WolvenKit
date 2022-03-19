@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckIfPatrolAllowed : AIDebugConditions
 {
-	[REDMeta]
-	public partial class CheckIfPatrolAllowed : AIDebugConditions
+	public CheckIfPatrolAllowed()
 	{
-		public CheckIfPatrolAllowed()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

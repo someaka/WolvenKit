@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RandomChancePrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class RandomChancePrereqState : gamePrereqState
+	public RandomChancePrereqState()
 	{
-		public RandomChancePrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

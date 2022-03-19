@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GroundDeathEvents : DeathEvents
 {
-	[REDMeta]
-	public partial class GroundDeathEvents : DeathEvents
+	public GroundDeathEvents()
 	{
-		public GroundDeathEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

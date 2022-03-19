@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldCollisionNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldCollisionNodeInstance : worldINodeInstance
+	public worldCollisionNodeInstance()
 	{
-		public worldCollisionNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

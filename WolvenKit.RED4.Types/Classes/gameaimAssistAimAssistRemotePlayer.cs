@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameaimAssistAimAssistRemotePlayer : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameaimAssistAimAssistRemotePlayer : RedBaseClass
+	public gameaimAssistAimAssistRemotePlayer()
 	{
-		public gameaimAssistAimAssistRemotePlayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

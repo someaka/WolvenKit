@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScriptedDamageSystemListener : gameIDamageSystemListener
 {
-	[REDMeta]
-	public partial class gameScriptedDamageSystemListener : gameIDamageSystemListener
+	public gameScriptedDamageSystemListener()
 	{
-		public gameScriptedDamageSystemListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

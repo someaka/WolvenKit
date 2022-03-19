@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SampleDeviceClass : gameObject
 {
-	[REDMeta]
-	public partial class SampleDeviceClass : gameObject
+	public SampleDeviceClass()
 	{
-		public SampleDeviceClass()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

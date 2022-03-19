@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorSelectorTreeNodeDefinition : AIbehaviorCompositeTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorSelectorTreeNodeDefinition : AIbehaviorCompositeTreeNodeDefinition
+	public AIbehaviorSelectorTreeNodeDefinition()
 	{
-		public AIbehaviorSelectorTreeNodeDefinition()
-		{
-			Children = new();
+		Children = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

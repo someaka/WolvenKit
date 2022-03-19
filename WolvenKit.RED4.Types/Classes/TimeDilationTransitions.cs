@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TimeDilationTransitions : DefaultTransition
 {
-	[REDMeta]
-	public partial class TimeDilationTransitions : DefaultTransition
+	public TimeDilationTransitions()
 	{
-		public TimeDilationTransitions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

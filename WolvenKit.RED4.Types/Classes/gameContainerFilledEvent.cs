@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameContainerFilledEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameContainerFilledEvent : redEvent
+	public gameContainerFilledEvent()
 	{
-		public gameContainerFilledEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

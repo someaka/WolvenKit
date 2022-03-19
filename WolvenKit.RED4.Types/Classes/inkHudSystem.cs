@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkHudSystem : inkIHudSystem
 {
-	[REDMeta]
-	public partial class inkHudSystem : inkIHudSystem
+	public inkHudSystem()
 	{
-		public inkHudSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

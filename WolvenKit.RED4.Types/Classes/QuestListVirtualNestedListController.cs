@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestListVirtualNestedListController : VirtualNestedListController
 {
-	[REDMeta]
-	public partial class QuestListVirtualNestedListController : VirtualNestedListController
+	public QuestListVirtualNestedListController()
 	{
-		public QuestListVirtualNestedListController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

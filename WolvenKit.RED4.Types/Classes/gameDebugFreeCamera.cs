@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDebugFreeCamera : gameObject
 {
-	[REDMeta]
-	public partial class gameDebugFreeCamera : gameObject
+	public gameDebugFreeCamera()
 	{
-		public gameDebugFreeCamera()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

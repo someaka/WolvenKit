@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SpatialQueriesHelper : IScriptable
 {
-	[REDMeta]
-	public partial class SpatialQueriesHelper : IScriptable
+	public SpatialQueriesHelper()
 	{
-		public SpatialQueriesHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

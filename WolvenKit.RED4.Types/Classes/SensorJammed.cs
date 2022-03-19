@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SensorJammed : redEvent
 {
-	[REDMeta]
-	public partial class SensorJammed : redEvent
+	[Ordinal(0)] 
+	[RED("sensor")] 
+	public CWeakHandle<SensorDevice> Sensor
 	{
-		[Ordinal(0)] 
-		[RED("sensor")] 
-		public CWeakHandle<SensorDevice> Sensor
-		{
-			get => GetPropertyValue<CWeakHandle<SensorDevice>>();
-			set => SetPropertyValue<CWeakHandle<SensorDevice>>(value);
-		}
-
-		public SensorJammed()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<SensorDevice>>();
+		set => SetPropertyValue<CWeakHandle<SensorDevice>>(value);
 	}
+
+	public SensorJammed()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

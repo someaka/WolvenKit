@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RipperdocFilterToggleController : ToggleController
 {
-	[REDMeta]
-	public partial class RipperdocFilterToggleController : ToggleController
+	public RipperdocFilterToggleController()
 	{
-		public RipperdocFilterToggleController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

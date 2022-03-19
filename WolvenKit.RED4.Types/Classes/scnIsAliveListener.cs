@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnIsAliveListener : gameIStatPoolsListener
 {
-	[REDMeta]
-	public partial class scnIsAliveListener : gameIStatPoolsListener
+	public scnIsAliveListener()
 	{
-		public scnIsAliveListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

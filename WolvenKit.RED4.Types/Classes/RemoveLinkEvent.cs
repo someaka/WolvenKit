@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RemoveLinkEvent : redEvent
 {
-	[REDMeta]
-	public partial class RemoveLinkEvent : redEvent
+	public RemoveLinkEvent()
 	{
-		public RemoveLinkEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

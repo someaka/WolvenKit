@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HUDButtonHints : gameuiWidgetGameController
 {
-	[REDMeta]
-	public partial class HUDButtonHints : gameuiWidgetGameController
+	public HUDButtonHints()
 	{
-		public HUDButtonHints()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

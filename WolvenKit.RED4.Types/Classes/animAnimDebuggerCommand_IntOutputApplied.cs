@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimDebuggerCommand_IntOutputApplied : animIAnimDebuggerCommand
 {
-	[REDMeta]
-	public partial class animAnimDebuggerCommand_IntOutputApplied : animIAnimDebuggerCommand
+	public animAnimDebuggerCommand_IntOutputApplied()
 	{
-		public animAnimDebuggerCommand_IntOutputApplied()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

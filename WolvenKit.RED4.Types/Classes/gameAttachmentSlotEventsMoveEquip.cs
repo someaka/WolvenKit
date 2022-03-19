@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAttachmentSlotEventsMoveEquip : gameAttachmentSlotEventsAttachmentSlotEvent
 {
-	[REDMeta]
-	public partial class gameAttachmentSlotEventsMoveEquip : gameAttachmentSlotEventsAttachmentSlotEvent
+	public gameAttachmentSlotEventsMoveEquip()
 	{
-		public gameAttachmentSlotEventsMoveEquip()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

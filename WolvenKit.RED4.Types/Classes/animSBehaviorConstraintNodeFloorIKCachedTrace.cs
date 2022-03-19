@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animSBehaviorConstraintNodeFloorIKCachedTrace : RedBaseClass
 {
-	[REDMeta]
-	public partial class animSBehaviorConstraintNodeFloorIKCachedTrace : RedBaseClass
+	public animSBehaviorConstraintNodeFloorIKCachedTrace()
 	{
-		public animSBehaviorConstraintNodeFloorIKCachedTrace()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

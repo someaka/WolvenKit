@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EngineeringSkillCheck : SkillCheckBase
 {
-	[REDMeta]
-	public partial class EngineeringSkillCheck : SkillCheckBase
+	public EngineeringSkillCheck()
 	{
-		public EngineeringSkillCheck()
-		{
-			SkillToCheck = Enums.EDeviceChallengeSkill.Engineering;
+		SkillToCheck = Enums.EDeviceChallengeSkill.Engineering;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

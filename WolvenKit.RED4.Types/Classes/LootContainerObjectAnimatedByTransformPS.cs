@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LootContainerObjectAnimatedByTransformPS : gameLootContainerBasePS
 {
-	[REDMeta]
-	public partial class LootContainerObjectAnimatedByTransformPS : gameLootContainerBasePS
+	public LootContainerObjectAnimatedByTransformPS()
 	{
-		public LootContainerObjectAnimatedByTransformPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

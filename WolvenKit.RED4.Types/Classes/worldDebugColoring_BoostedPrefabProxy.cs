@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDebugColoring_BoostedPrefabProxy : worldEditorDebugColoringSettings
 {
-	[REDMeta]
-	public partial class worldDebugColoring_BoostedPrefabProxy : worldEditorDebugColoringSettings
+	public worldDebugColoring_BoostedPrefabProxy()
 	{
-		public worldDebugColoring_BoostedPrefabProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

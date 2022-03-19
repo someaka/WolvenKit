@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataSubstat_Record : gamedataStat_Record
 {
-	[REDMeta]
-	public partial class gamedataSubstat_Record : gamedataStat_Record
+	public gamedataSubstat_Record()
 	{
-		public gamedataSubstat_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

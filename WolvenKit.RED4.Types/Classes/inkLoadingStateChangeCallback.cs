@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkLoadingStateChangeCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkLoadingStateChangeCallback : inkCallbackBase
+	public inkLoadingStateChangeCallback()
 	{
-		public inkLoadingStateChangeCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

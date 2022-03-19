@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIDistance : ISerializable
 {
-	[REDMeta]
-	public partial class questIDistance : ISerializable
+	public questIDistance()
 	{
-		public questIDistance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDeactivateTriggerDestructionComponentEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameDeactivateTriggerDestructionComponentEvent : redEvent
+	public gameDeactivateTriggerDestructionComponentEvent()
 	{
-		public gameDeactivateTriggerDestructionComponentEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

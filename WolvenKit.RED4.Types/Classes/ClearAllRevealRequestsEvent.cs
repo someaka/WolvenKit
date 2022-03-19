@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearAllRevealRequestsEvent : redEvent
 {
-	[REDMeta]
-	public partial class ClearAllRevealRequestsEvent : redEvent
+	public ClearAllRevealRequestsEvent()
 	{
-		public ClearAllRevealRequestsEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

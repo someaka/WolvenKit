@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animMotionWrapper : RedBaseClass
 {
-	[REDMeta]
-	public partial class animMotionWrapper : RedBaseClass
+	public animMotionWrapper()
 	{
-		public animMotionWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

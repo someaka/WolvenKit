@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StackAlertedState : StackChangeHighLevelStateAbstract
 {
-	[REDMeta]
-	public partial class StackAlertedState : StackChangeHighLevelStateAbstract
+	public StackAlertedState()
 	{
-		public StackAlertedState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAudioClueObject : gameObject
 {
-	[REDMeta]
-	public partial class gameAudioClueObject : gameObject
+	public gameAudioClueObject()
 	{
-		public gameAudioClueObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

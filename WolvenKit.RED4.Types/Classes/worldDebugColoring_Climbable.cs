@@ -1,34 +1,30 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDebugColoring_Climbable : worldEditorDebugColoringSettings
 {
-	[REDMeta]
-	public partial class worldDebugColoring_Climbable : worldEditorDebugColoringSettings
+	[Ordinal(0)] 
+	[RED("climbableColour")] 
+	public CColor ClimbableColour
 	{
-		[Ordinal(0)] 
-		[RED("climbableColour")] 
-		public CColor ClimbableColour
-		{
-			get => GetPropertyValue<CColor>();
-			set => SetPropertyValue<CColor>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("notClimbableColour")] 
-		public CColor NotClimbableColour
-		{
-			get => GetPropertyValue<CColor>();
-			set => SetPropertyValue<CColor>(value);
-		}
-
-		public worldDebugColoring_Climbable()
-		{
-			ClimbableColour = new();
-			NotClimbableColour = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CColor>();
+		set => SetPropertyValue<CColor>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("notClimbableColour")] 
+	public CColor NotClimbableColour
+	{
+		get => GetPropertyValue<CColor>();
+		set => SetPropertyValue<CColor>(value);
+	}
+
+	public worldDebugColoring_Climbable()
+	{
+		ClimbableColour = new();
+		NotClimbableColour = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HUDPhoneElement : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class HUDPhoneElement : inkWidgetLogicController
+	[Ordinal(1)] 
+	[RED("RootWidget")] 
+	public CWeakHandle<inkWidget> RootWidget
 	{
-		[Ordinal(1)] 
-		[RED("RootWidget")] 
-		public CWeakHandle<inkWidget> RootWidget
-		{
-			get => GetPropertyValue<CWeakHandle<inkWidget>>();
-			set => SetPropertyValue<CWeakHandle<inkWidget>>(value);
-		}
-
-		public HUDPhoneElement()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<inkWidget>>();
+		set => SetPropertyValue<CWeakHandle<inkWidget>>(value);
 	}
+
+	public HUDPhoneElement()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

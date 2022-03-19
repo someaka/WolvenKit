@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AlwaysTruePrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class AlwaysTruePrereq : gameIScriptablePrereq
+	public AlwaysTruePrereq()
 	{
-		public AlwaysTruePrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

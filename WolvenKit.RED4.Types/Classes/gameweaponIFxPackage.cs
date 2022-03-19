@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameweaponIFxPackage : IScriptable
 {
-	[REDMeta]
-	public partial class gameweaponIFxPackage : IScriptable
+	public gameweaponIFxPackage()
 	{
-		public gameweaponIFxPackage()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleToggleQuestForceBrakingEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleToggleQuestForceBrakingEvent : redEvent
+	public vehicleToggleQuestForceBrakingEvent()
 	{
-		public vehicleToggleQuestForceBrakingEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

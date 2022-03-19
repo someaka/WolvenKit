@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameJournalInternetRectangle : gameJournalInternetBase
 {
-	[REDMeta]
-	public partial class gameJournalInternetRectangle : gameJournalInternetBase
+	public gameJournalInternetRectangle()
 	{
-		public gameJournalInternetRectangle()
-		{
-			TintColor = new();
-			HoverTintColor = new();
+		TintColor = new();
+		HoverTintColor = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

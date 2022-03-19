@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StatusEffectActions : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class StatusEffectActions : AIbehaviortaskScript
+	public StatusEffectActions()
 	{
-		public StatusEffectActions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

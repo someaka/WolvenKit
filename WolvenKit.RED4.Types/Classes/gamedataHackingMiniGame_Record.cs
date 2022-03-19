@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataHackingMiniGame_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataHackingMiniGame_Record : gamedataTweakDBRecord
+	public gamedataHackingMiniGame_Record()
 	{
-		public gamedataHackingMiniGame_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

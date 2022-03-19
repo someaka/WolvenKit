@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMuppetInputActionQuickMelee : gameIMuppetInputAction
 {
-	[REDMeta]
-	public partial class gameMuppetInputActionQuickMelee : gameIMuppetInputAction
+	public gameMuppetInputActionQuickMelee()
 	{
-		public gameMuppetInputActionQuickMelee()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

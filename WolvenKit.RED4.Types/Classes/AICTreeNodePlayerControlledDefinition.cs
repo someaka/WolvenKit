@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICTreeNodePlayerControlledDefinition : AICTreeNodeAtomicDefinition
 {
-	[REDMeta]
-	public partial class AICTreeNodePlayerControlledDefinition : AICTreeNodeAtomicDefinition
+	public AICTreeNodePlayerControlledDefinition()
 	{
-		public AICTreeNodePlayerControlledDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

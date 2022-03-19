@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldVehicleForbiddenAreaNodeInstance : worldTriggerAreaNodeInstance
 {
-	[REDMeta]
-	public partial class worldVehicleForbiddenAreaNodeInstance : worldTriggerAreaNodeInstance
+	public worldVehicleForbiddenAreaNodeInstance()
 	{
-		public worldVehicleForbiddenAreaNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

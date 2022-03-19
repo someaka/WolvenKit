@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVideoInstanceDoneCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkVideoInstanceDoneCallback : inkCallbackBase
+	public inkVideoInstanceDoneCallback()
 	{
-		public inkVideoInstanceDoneCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineFunctor : IScriptable
 {
-	[REDMeta]
-	public partial class gamestateMachineFunctor : IScriptable
+	public gamestateMachineFunctor()
 	{
-		public gamestateMachineFunctor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

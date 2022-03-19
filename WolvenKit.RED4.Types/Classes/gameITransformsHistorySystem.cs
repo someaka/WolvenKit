@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameITransformsHistorySystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameITransformsHistorySystem : gameIGameSystem
+	public gameITransformsHistorySystem()
 	{
-		public gameITransformsHistorySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entSimpleSkinningAttachment : entISkinningAttachment
 {
-	[REDMeta]
-	public partial class entSimpleSkinningAttachment : entISkinningAttachment
+	public entSimpleSkinningAttachment()
 	{
-		public entSimpleSkinningAttachment()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

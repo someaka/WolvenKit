@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entRagdollPutToSleepEvent : redEvent
 {
-	[REDMeta]
-	public partial class entRagdollPutToSleepEvent : redEvent
+	public entRagdollPutToSleepEvent()
 	{
-		public entRagdollPutToSleepEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

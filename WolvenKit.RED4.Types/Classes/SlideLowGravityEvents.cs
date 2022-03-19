@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SlideLowGravityEvents : CrouchLowGravityEvents
 {
-	[REDMeta]
-	public partial class SlideLowGravityEvents : CrouchLowGravityEvents
+	public SlideLowGravityEvents()
 	{
-		public SlideLowGravityEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

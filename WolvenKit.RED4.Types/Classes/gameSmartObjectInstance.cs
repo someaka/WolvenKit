@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSmartObjectInstance : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameSmartObjectInstance : RedBaseClass
+	public gameSmartObjectInstance()
 	{
-		public gameSmartObjectInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

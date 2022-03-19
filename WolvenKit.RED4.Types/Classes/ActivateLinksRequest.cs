@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActivateLinksRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ActivateLinksRequest : gameScriptableSystemRequest
+	[Ordinal(0)] 
+	[RED("linksIDs")] 
+	public CArray<CInt32> LinksIDs
 	{
-		[Ordinal(0)] 
-		[RED("linksIDs")] 
-		public CArray<CInt32> LinksIDs
-		{
-			get => GetPropertyValue<CArray<CInt32>>();
-			set => SetPropertyValue<CArray<CInt32>>(value);
-		}
-
-		public ActivateLinksRequest()
-		{
-			LinksIDs = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<CInt32>>();
+		set => SetPropertyValue<CArray<CInt32>>(value);
 	}
+
+	public ActivateLinksRequest()
+	{
+		LinksIDs = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

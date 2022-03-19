@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameeventsEndTakedownEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameeventsEndTakedownEvent : redEvent
+	public gameeventsEndTakedownEvent()
 	{
-		public gameeventsEndTakedownEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

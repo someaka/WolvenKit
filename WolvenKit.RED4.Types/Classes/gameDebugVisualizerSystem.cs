@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDebugVisualizerSystem : gameIDebugVisualizerSystem
 {
-	[REDMeta]
-	public partial class gameDebugVisualizerSystem : gameIDebugVisualizerSystem
+	public gameDebugVisualizerSystem()
 	{
-		public gameDebugVisualizerSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

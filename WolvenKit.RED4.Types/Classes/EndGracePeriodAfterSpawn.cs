@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EndGracePeriodAfterSpawn : redEvent
 {
-	[REDMeta]
-	public partial class EndGracePeriodAfterSpawn : redEvent
+	public EndGracePeriodAfterSpawn()
 	{
-		public EndGracePeriodAfterSpawn()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

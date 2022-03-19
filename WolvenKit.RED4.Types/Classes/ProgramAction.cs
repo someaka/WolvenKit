@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProgramAction : ActionBool
 {
-	[REDMeta]
-	public partial class ProgramAction : ActionBool
+	public ProgramAction()
 	{
-		public ProgramAction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

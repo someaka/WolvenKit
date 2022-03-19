@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OneTimeCollisionLogic : QuadRacerBonusCollisionLogic
 {
-	[REDMeta]
-	public partial class OneTimeCollisionLogic : QuadRacerBonusCollisionLogic
+	public OneTimeCollisionLogic()
 	{
-		public OneTimeCollisionLogic()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

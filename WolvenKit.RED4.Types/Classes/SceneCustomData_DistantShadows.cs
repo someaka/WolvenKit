@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SceneCustomData_DistantShadows : SceneCustomData_DistantShadowsCommon
 {
-	[REDMeta]
-	public partial class SceneCustomData_DistantShadows : SceneCustomData_DistantShadowsCommon
+	public SceneCustomData_DistantShadows()
 	{
-		public SceneCustomData_DistantShadows()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

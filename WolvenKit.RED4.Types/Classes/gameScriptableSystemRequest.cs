@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScriptableSystemRequest : IScriptable
 {
-	[REDMeta]
-	public partial class gameScriptableSystemRequest : IScriptable
+	public gameScriptableSystemRequest()
 	{
-		public gameScriptableSystemRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

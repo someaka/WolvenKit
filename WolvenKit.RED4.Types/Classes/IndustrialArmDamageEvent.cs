@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IndustrialArmDamageEvent : redEvent
 {
-	[REDMeta]
-	public partial class IndustrialArmDamageEvent : redEvent
+	public IndustrialArmDamageEvent()
 	{
-		public IndustrialArmDamageEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

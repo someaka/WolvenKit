@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InjectAttackInstigatorAsThreat : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class InjectAttackInstigatorAsThreat : AIbehaviortaskScript
+	public InjectAttackInstigatorAsThreat()
 	{
-		public InjectAttackInstigatorAsThreat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

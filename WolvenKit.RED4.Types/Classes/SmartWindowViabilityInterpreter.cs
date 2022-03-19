@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SmartWindowViabilityInterpreter : IScriptable
 {
-	[REDMeta]
-	public partial class SmartWindowViabilityInterpreter : IScriptable
+	public SmartWindowViabilityInterpreter()
 	{
-		public SmartWindowViabilityInterpreter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

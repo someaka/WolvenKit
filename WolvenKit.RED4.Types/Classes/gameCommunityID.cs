@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCommunityID : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameCommunityID : RedBaseClass
+	[Ordinal(0)] 
+	[RED("entityId")] 
+	public entEntityID EntityId
 	{
-		[Ordinal(0)] 
-		[RED("entityId")] 
-		public entEntityID EntityId
-		{
-			get => GetPropertyValue<entEntityID>();
-			set => SetPropertyValue<entEntityID>(value);
-		}
-
-		public gameCommunityID()
-		{
-			EntityId = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<entEntityID>();
+		set => SetPropertyValue<entEntityID>(value);
 	}
+
+	public gameCommunityID()
+	{
+		EntityId = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

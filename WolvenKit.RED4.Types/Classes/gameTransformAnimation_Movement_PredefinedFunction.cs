@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimation_Movement_PredefinedFunction : gameTransformAnimation_Movement
 {
-	[REDMeta]
-	public partial class gameTransformAnimation_Movement_PredefinedFunction : gameTransformAnimation_Movement
+	[Ordinal(0)] 
+	[RED("function")] 
+	public EasingFunction Function
 	{
-		[Ordinal(0)] 
-		[RED("function")] 
-		public EasingFunction Function
-		{
-			get => GetPropertyValue<EasingFunction>();
-			set => SetPropertyValue<EasingFunction>(value);
-		}
-
-		public gameTransformAnimation_Movement_PredefinedFunction()
-		{
-			Function = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<EasingFunction>();
+		set => SetPropertyValue<EasingFunction>(value);
 	}
+
+	public gameTransformAnimation_Movement_PredefinedFunction()
+	{
+		Function = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

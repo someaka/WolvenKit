@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LookAtPresetBaseDecisions : DefaultTransition
 {
-	[REDMeta]
-	public partial class LookAtPresetBaseDecisions : DefaultTransition
+	public LookAtPresetBaseDecisions()
 	{
-		public LookAtPresetBaseDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

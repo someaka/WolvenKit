@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FunctionalTestsState_FunctionalTests : gsmState
 {
-	[REDMeta]
-	public partial class FunctionalTestsState_FunctionalTests : gsmState
+	public FunctionalTestsState_FunctionalTests()
 	{
-		public FunctionalTestsState_FunctionalTests()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

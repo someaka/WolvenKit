@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entPreloadAllEffectsEvent : redEvent
 {
-	[REDMeta]
-	public partial class entPreloadAllEffectsEvent : redEvent
+	public entPreloadAllEffectsEvent()
 	{
-		public entPreloadAllEffectsEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

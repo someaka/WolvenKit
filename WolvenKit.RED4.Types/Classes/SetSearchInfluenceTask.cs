@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetSearchInfluenceTask : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SetSearchInfluenceTask : AIbehaviortaskScript
+	public SetSearchInfluenceTask()
 	{
-		public SetSearchInfluenceTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

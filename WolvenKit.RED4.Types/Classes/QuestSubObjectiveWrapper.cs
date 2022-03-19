@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestSubObjectiveWrapper : ABaseQuestObjectiveWrapper
 {
-	[REDMeta]
-	public partial class QuestSubObjectiveWrapper : ABaseQuestObjectiveWrapper
+	public QuestSubObjectiveWrapper()
 	{
-		public QuestSubObjectiveWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

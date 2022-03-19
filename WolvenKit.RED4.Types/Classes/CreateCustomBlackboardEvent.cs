@@ -1,31 +1,27 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CreateCustomBlackboardEvent : redEvent
 {
-	[REDMeta]
-	public partial class CreateCustomBlackboardEvent : redEvent
+	[Ordinal(0)] 
+	[RED("blackboardDef")] 
+	public CHandle<CustomBlackboardDef> BlackboardDef
 	{
-		[Ordinal(0)] 
-		[RED("blackboardDef")] 
-		public CHandle<CustomBlackboardDef> BlackboardDef
-		{
-			get => GetPropertyValue<CHandle<CustomBlackboardDef>>();
-			set => SetPropertyValue<CHandle<CustomBlackboardDef>>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("blackboard")] 
-		public CWeakHandle<gameIBlackboard> Blackboard
-		{
-			get => GetPropertyValue<CWeakHandle<gameIBlackboard>>();
-			set => SetPropertyValue<CWeakHandle<gameIBlackboard>>(value);
-		}
-
-		public CreateCustomBlackboardEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<CustomBlackboardDef>>();
+		set => SetPropertyValue<CHandle<CustomBlackboardDef>>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("blackboard")] 
+	public CWeakHandle<gameIBlackboard> Blackboard
+	{
+		get => GetPropertyValue<CWeakHandle<gameIBlackboard>>();
+		set => SetPropertyValue<CWeakHandle<gameIBlackboard>>(value);
+	}
+
+	public CreateCustomBlackboardEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

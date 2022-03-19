@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HasPatrolAction : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class HasPatrolAction : AIbehaviorconditionScript
+	public HasPatrolAction()
 	{
-		public HasPatrolAction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

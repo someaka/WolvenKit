@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SquadTask : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SquadTask : AIbehaviortaskScript
+	public SquadTask()
 	{
-		public SquadTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameaudioMeleeAudioSubSystem : gameaudioIWeaponAudioComponentSubSystem
 {
-	[REDMeta]
-	public partial class gameaudioMeleeAudioSubSystem : gameaudioIWeaponAudioComponentSubSystem
+	public gameaudioMeleeAudioSubSystem()
 	{
-		public gameaudioMeleeAudioSubSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_FloatValue : animAnimNode_Base
 {
-	[REDMeta]
-	public partial class animAnimNode_FloatValue : animAnimNode_Base
+	public animAnimNode_FloatValue()
 	{
-		public animAnimNode_FloatValue()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

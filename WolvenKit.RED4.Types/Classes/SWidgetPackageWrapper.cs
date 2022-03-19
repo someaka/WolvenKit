@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SWidgetPackageWrapper : IScriptable
 {
-	[REDMeta]
-	public partial class SWidgetPackageWrapper : IScriptable
+	[Ordinal(0)] 
+	[RED("WidgetPackage")] 
+	public SWidgetPackage WidgetPackage
 	{
-		[Ordinal(0)] 
-		[RED("WidgetPackage")] 
-		public SWidgetPackage WidgetPackage
-		{
-			get => GetPropertyValue<SWidgetPackage>();
-			set => SetPropertyValue<SWidgetPackage>(value);
-		}
-
-		public SWidgetPackageWrapper()
-		{
-			WidgetPackage = new() { OwnerID = new() };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<SWidgetPackage>();
+		set => SetPropertyValue<SWidgetPackage>(value);
 	}
+
+	public SWidgetPackageWrapper()
+	{
+		WidgetPackage = new() { OwnerID = new() };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

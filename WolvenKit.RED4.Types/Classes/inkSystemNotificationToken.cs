@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkSystemNotificationToken : IScriptable
 {
-	[REDMeta]
-	public partial class inkSystemNotificationToken : IScriptable
+	public inkSystemNotificationToken()
 	{
-		public inkSystemNotificationToken()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

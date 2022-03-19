@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class KatanaLookAtEvents : LookAtPresetMeleeBaseEvents
 {
-	[REDMeta]
-	public partial class KatanaLookAtEvents : LookAtPresetMeleeBaseEvents
+	public KatanaLookAtEvents()
 	{
-		public KatanaLookAtEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

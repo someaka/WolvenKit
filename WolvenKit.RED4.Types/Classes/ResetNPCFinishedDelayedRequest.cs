@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetNPCFinishedDelayedRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ResetNPCFinishedDelayedRequest : gameScriptableSystemRequest
+	public ResetNPCFinishedDelayedRequest()
 	{
-		public ResetNPCFinishedDelayedRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

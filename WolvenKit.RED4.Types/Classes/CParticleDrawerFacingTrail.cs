@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CParticleDrawerFacingTrail : CParticleDrawerTrail
 {
-	[REDMeta]
-	public partial class CParticleDrawerFacingTrail : CParticleDrawerTrail
+	public CParticleDrawerFacingTrail()
 	{
-		public CParticleDrawerFacingTrail()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

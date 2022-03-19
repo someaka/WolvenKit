@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIEnemy : ISerializable
 {
-	[REDMeta]
-	public partial class AIEnemy : ISerializable
+	public AIEnemy()
 	{
-		public AIEnemy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

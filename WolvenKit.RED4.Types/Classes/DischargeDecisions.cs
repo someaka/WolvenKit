@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DischargeDecisions : WeaponTransition
 {
-	[REDMeta]
-	public partial class DischargeDecisions : WeaponTransition
+	public DischargeDecisions()
 	{
-		public DischargeDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

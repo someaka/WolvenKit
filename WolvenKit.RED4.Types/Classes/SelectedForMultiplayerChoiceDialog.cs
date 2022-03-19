@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SelectedForMultiplayerChoiceDialog : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class SelectedForMultiplayerChoiceDialog : gameIScriptablePrereq
+	public SelectedForMultiplayerChoiceDialog()
 	{
-		public SelectedForMultiplayerChoiceDialog()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

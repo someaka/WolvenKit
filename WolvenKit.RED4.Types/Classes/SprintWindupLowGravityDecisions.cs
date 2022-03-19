@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SprintWindupLowGravityDecisions : SprintLowGravityDecisions
 {
-	[REDMeta]
-	public partial class SprintWindupLowGravityDecisions : SprintLowGravityDecisions
+	public SprintWindupLowGravityDecisions()
 	{
-		public SprintWindupLowGravityDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimation_Rotation_InitialRotation : gameTransformAnimation_Rotation
 {
-	[REDMeta]
-	public partial class gameTransformAnimation_Rotation_InitialRotation : gameTransformAnimation_Rotation
+	public gameTransformAnimation_Rotation_InitialRotation()
 	{
-		public gameTransformAnimation_Rotation_InitialRotation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

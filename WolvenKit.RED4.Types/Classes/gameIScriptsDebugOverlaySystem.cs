@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIScriptsDebugOverlaySystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIScriptsDebugOverlaySystem : gameIGameSystem
+	public gameIScriptsDebugOverlaySystem()
 	{
-		public gameIScriptsDebugOverlaySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

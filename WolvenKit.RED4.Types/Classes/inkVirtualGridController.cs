@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVirtualGridController : inkVirtualListController
 {
-	[REDMeta]
-	public partial class inkVirtualGridController : inkVirtualListController
+	public inkVirtualGridController()
 	{
-		public inkVirtualGridController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

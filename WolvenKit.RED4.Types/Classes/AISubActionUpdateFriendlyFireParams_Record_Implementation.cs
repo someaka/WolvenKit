@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISubActionUpdateFriendlyFireParams_Record_Implementation : IScriptable
 {
-	[REDMeta]
-	public partial class AISubActionUpdateFriendlyFireParams_Record_Implementation : IScriptable
+	public AISubActionUpdateFriendlyFireParams_Record_Implementation()
 	{
-		public AISubActionUpdateFriendlyFireParams_Record_Implementation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

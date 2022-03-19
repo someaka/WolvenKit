@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameItemDropStorageManager : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameItemDropStorageManager : RedBaseClass
+	public gameItemDropStorageManager()
 	{
-		public gameItemDropStorageManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

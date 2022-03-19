@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickSlotsBusyEvents : QuickSlotsEvents
 {
-	[REDMeta]
-	public partial class QuickSlotsBusyEvents : QuickSlotsEvents
+	public QuickSlotsBusyEvents()
 	{
-		public QuickSlotsBusyEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

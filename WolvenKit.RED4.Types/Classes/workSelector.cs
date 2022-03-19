@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workSelector : workRandomList
 {
-	[REDMeta]
-	public partial class workSelector : workRandomList
+	public workSelector()
 	{
-		public workSelector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

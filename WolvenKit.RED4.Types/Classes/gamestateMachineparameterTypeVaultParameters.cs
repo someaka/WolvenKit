@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineparameterTypeVaultParameters : gamestateMachineparameterTypeClimbParametersBase
 {
-	[REDMeta]
-	public partial class gamestateMachineparameterTypeVaultParameters : gamestateMachineparameterTypeClimbParametersBase
+	public gamestateMachineparameterTypeVaultParameters()
 	{
-		public gamestateMachineparameterTypeVaultParameters()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

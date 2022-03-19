@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MotorcycleComponent : VehicleComponent
 {
-	[REDMeta]
-	public partial class MotorcycleComponent : VehicleComponent
+	public MotorcycleComponent()
 	{
-		public MotorcycleComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

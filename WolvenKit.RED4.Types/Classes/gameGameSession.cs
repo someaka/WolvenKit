@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameGameSession : gameBaseGameSession
 {
-	[REDMeta]
-	public partial class gameGameSession : gameBaseGameSession
+	public gameGameSession()
 	{
-		public gameGameSession()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

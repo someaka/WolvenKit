@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class graphIGraphNodeCondition : ISerializable
 {
-	[REDMeta]
-	public partial class graphIGraphNodeCondition : ISerializable
+	public graphIGraphNodeCondition()
 	{
-		public graphIGraphNodeCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

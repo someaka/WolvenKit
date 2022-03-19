@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnIInterruptionScenarioOperation : ISerializable
 {
-	[REDMeta]
-	public partial class scnIInterruptionScenarioOperation : ISerializable
+	public scnIInterruptionScenarioOperation()
 	{
-		public scnIInterruptionScenarioOperation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

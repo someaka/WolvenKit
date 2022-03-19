@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkIStreetNameSignLogicController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class inkIStreetNameSignLogicController : inkWidgetLogicController
+	public inkIStreetNameSignLogicController()
 	{
-		public inkIStreetNameSignLogicController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

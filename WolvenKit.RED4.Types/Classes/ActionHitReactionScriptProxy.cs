@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActionHitReactionScriptProxy : CActionScriptProxy
 {
-	[REDMeta]
-	public partial class ActionHitReactionScriptProxy : CActionScriptProxy
+	public ActionHitReactionScriptProxy()
 	{
-		public ActionHitReactionScriptProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

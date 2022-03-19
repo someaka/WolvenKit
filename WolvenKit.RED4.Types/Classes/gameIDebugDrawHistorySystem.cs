@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIDebugDrawHistorySystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIDebugDrawHistorySystem : gameIGameSystem
+	public gameIDebugDrawHistorySystem()
 	{
-		public gameIDebugDrawHistorySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

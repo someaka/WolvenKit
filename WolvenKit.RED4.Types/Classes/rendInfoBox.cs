@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class rendInfoBox : IScriptable
 {
-	[REDMeta]
-	public partial class rendInfoBox : IScriptable
+	public rendInfoBox()
 	{
-		public rendInfoBox()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

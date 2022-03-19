@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PachinkoMachineController : ArcadeMachineController
 {
-	[REDMeta]
-	public partial class PachinkoMachineController : ArcadeMachineController
+	public PachinkoMachineController()
 	{
-		public PachinkoMachineController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

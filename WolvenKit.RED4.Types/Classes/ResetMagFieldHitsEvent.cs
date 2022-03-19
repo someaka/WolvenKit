@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetMagFieldHitsEvent : redEvent
 {
-	[REDMeta]
-	public partial class ResetMagFieldHitsEvent : redEvent
+	public ResetMagFieldHitsEvent()
 	{
-		public ResetMagFieldHitsEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

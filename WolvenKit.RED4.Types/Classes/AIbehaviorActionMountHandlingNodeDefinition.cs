@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorActionMountHandlingNodeDefinition : AIbehaviorActionTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorActionMountHandlingNodeDefinition : AIbehaviorActionTreeNodeDefinition
+	public AIbehaviorActionMountHandlingNodeDefinition()
 	{
-		public AIbehaviorActionMountHandlingNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

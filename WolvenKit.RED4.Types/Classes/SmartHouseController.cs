@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SmartHouseController : MasterController
 {
-	[REDMeta]
-	public partial class SmartHouseController : MasterController
+	public SmartHouseController()
 	{
-		public SmartHouseController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

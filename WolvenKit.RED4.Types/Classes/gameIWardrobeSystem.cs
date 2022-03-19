@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIWardrobeSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIWardrobeSystem : gameIGameSystem
+	public gameIWardrobeSystem()
 	{
-		public gameIWardrobeSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

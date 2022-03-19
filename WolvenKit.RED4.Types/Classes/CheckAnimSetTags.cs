@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckAnimSetTags : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class CheckAnimSetTags : AIbehaviorconditionScript
+	[Ordinal(0)] 
+	[RED("animsetTagToCompare")] 
+	public CArray<CName> AnimsetTagToCompare
 	{
-		[Ordinal(0)] 
-		[RED("animsetTagToCompare")] 
-		public CArray<CName> AnimsetTagToCompare
-		{
-			get => GetPropertyValue<CArray<CName>>();
-			set => SetPropertyValue<CArray<CName>>(value);
-		}
-
-		public CheckAnimSetTags()
-		{
-			AnimsetTagToCompare = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<CName>>();
+		set => SetPropertyValue<CArray<CName>>(value);
 	}
+
+	public CheckAnimSetTags()
+	{
+		AnimsetTagToCompare = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

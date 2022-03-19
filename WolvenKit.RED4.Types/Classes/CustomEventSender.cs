@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CustomEventSender : AISignalSenderTask
 {
-	[REDMeta]
-	public partial class CustomEventSender : AISignalSenderTask
+	public CustomEventSender()
 	{
-		public CustomEventSender()
-		{
-			Tags = new();
-			Flags = new();
+		Tags = new();
+		Flags = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

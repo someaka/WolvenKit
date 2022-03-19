@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleToggleDoorOpenEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleToggleDoorOpenEvent : redEvent
+	public vehicleToggleDoorOpenEvent()
 	{
-		public vehicleToggleDoorOpenEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

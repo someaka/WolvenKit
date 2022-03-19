@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RagdollTask : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class RagdollTask : AIbehaviortaskScript
+	public RagdollTask()
 	{
-		public RagdollTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

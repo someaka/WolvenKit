@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EnableTimeCallbacks : redEvent
 {
-	[REDMeta]
-	public partial class EnableTimeCallbacks : redEvent
+	public EnableTimeCallbacks()
 	{
-		public EnableTimeCallbacks()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

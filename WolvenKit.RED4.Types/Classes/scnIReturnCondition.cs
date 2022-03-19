@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnIReturnCondition : ISerializable
 {
-	[REDMeta]
-	public partial class scnIReturnCondition : ISerializable
+	public scnIReturnCondition()
 	{
-		public scnIReturnCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

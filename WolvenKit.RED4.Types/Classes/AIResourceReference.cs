@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIResourceReference : LibTreeCTreeReference
 {
-	[REDMeta]
-	public partial class AIResourceReference : LibTreeCTreeReference
+	public AIResourceReference()
 	{
-		public AIResourceReference()
-		{
-			Parameters = new() { Parameters = new() };
+		Parameters = new() { Parameters = new() };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

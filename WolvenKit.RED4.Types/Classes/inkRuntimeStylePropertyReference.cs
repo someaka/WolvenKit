@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkRuntimeStylePropertyReference : RedBaseClass
 {
-	[REDMeta]
-	public partial class inkRuntimeStylePropertyReference : RedBaseClass
+	public inkRuntimeStylePropertyReference()
 	{
-		public inkRuntimeStylePropertyReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

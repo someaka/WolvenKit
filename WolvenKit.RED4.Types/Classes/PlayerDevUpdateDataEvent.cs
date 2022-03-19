@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerDevUpdateDataEvent : redEvent
 {
-	[REDMeta]
-	public partial class PlayerDevUpdateDataEvent : redEvent
+	public PlayerDevUpdateDataEvent()
 	{
-		public PlayerDevUpdateDataEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

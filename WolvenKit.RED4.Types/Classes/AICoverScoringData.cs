@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICoverScoringData : RedBaseClass
 {
-	[REDMeta]
-	public partial class AICoverScoringData : RedBaseClass
+	public AICoverScoringData()
 	{
-		public AICoverScoringData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PhoneMessageHidePopupEvent : redEvent
 {
-	[REDMeta]
-	public partial class PhoneMessageHidePopupEvent : redEvent
+	public PhoneMessageHidePopupEvent()
 	{
-		public PhoneMessageHidePopupEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

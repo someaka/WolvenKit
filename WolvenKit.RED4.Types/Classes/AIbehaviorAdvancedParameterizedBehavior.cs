@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorAdvancedParameterizedBehavior : AIbehaviorParameterizedBehavior
 {
-	[REDMeta]
-	public partial class AIbehaviorAdvancedParameterizedBehavior : AIbehaviorParameterizedBehavior
+	public AIbehaviorAdvancedParameterizedBehavior()
 	{
-		public AIbehaviorAdvancedParameterizedBehavior()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

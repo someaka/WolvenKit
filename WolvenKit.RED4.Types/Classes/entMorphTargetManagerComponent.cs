@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entMorphTargetManagerComponent : entExternalComponent
 {
-	[REDMeta]
-	public partial class entMorphTargetManagerComponent : entExternalComponent
+	public entMorphTargetManagerComponent()
 	{
-		public entMorphTargetManagerComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

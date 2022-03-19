@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RefreshItemPlayerScalingEvent : redEvent
 {
-	[REDMeta]
-	public partial class RefreshItemPlayerScalingEvent : redEvent
+	public RefreshItemPlayerScalingEvent()
 	{
-		public RefreshItemPlayerScalingEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

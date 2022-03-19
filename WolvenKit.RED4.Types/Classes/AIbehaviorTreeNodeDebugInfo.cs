@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorTreeNodeDebugInfo : AIbehaviorDebugInfoBase
 {
-	[REDMeta]
-	public partial class AIbehaviorTreeNodeDebugInfo : AIbehaviorDebugInfoBase
+	public AIbehaviorTreeNodeDebugInfo()
 	{
-		public AIbehaviorTreeNodeDebugInfo()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

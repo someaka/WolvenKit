@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LeftHandCyberwareWaitForUnequipDecisions : LeftHandCyberwareTransition
 {
-	[REDMeta]
-	public partial class LeftHandCyberwareWaitForUnequipDecisions : LeftHandCyberwareTransition
+	public LeftHandCyberwareWaitForUnequipDecisions()
 	{
-		public LeftHandCyberwareWaitForUnequipDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

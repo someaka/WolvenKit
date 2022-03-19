@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisassembleOwnedJunkEffector : gameEffector
 {
-	[REDMeta]
-	public partial class DisassembleOwnedJunkEffector : gameEffector
+	public DisassembleOwnedJunkEffector()
 	{
-		public DisassembleOwnedJunkEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

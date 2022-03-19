@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehiclePassengerContextDecisions : VehicleGameplayContextDecisions
 {
-	[REDMeta]
-	public partial class VehiclePassengerContextDecisions : VehicleGameplayContextDecisions
+	public VehiclePassengerContextDecisions()
 	{
-		public VehiclePassengerContextDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

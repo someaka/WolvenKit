@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HaveScavengeTargets : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class HaveScavengeTargets : AIbehaviorconditionScript
+	public HaveScavengeTargets()
 	{
-		public HaveScavengeTargets()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

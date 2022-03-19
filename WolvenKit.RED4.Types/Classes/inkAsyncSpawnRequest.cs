@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkAsyncSpawnRequest : IScriptable
 {
-	[REDMeta]
-	public partial class inkAsyncSpawnRequest : IScriptable
+	public inkAsyncSpawnRequest()
 	{
-		public inkAsyncSpawnRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

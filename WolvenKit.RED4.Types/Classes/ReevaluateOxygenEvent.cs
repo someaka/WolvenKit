@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReevaluateOxygenEvent : redEvent
 {
-	[REDMeta]
-	public partial class ReevaluateOxygenEvent : redEvent
+	public ReevaluateOxygenEvent()
 	{
-		public ReevaluateOxygenEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UILocalizationHelper : IScriptable
 {
-	[REDMeta]
-	public partial class UILocalizationHelper : IScriptable
+	public UILocalizationHelper()
 	{
-		public UILocalizationHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

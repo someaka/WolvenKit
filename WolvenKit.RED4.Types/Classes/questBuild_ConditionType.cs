@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questBuild_ConditionType : questIStatsScriptConditionType
 {
-	[REDMeta]
-	public partial class questBuild_ConditionType : questIStatsScriptConditionType
+	public questBuild_ConditionType()
 	{
-		public questBuild_ConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

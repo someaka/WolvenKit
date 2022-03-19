@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RefreshClueScanningDataEvent : redEvent
 {
-	[REDMeta]
-	public partial class RefreshClueScanningDataEvent : redEvent
+	public RefreshClueScanningDataEvent()
 	{
-		public RefreshClueScanningDataEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

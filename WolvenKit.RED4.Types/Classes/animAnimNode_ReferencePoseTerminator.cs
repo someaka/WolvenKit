@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_ReferencePoseTerminator : animAnimNode_Base
 {
-	[REDMeta]
-	public partial class animAnimNode_ReferencePoseTerminator : animAnimNode_Base
+	public animAnimNode_ReferencePoseTerminator()
 	{
-		public animAnimNode_ReferencePoseTerminator()
-		{
-			Id = 4294967295;
+		Id = 4294967295;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

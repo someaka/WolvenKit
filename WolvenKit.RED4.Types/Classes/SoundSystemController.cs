@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SoundSystemController : MasterController
 {
-	[REDMeta]
-	public partial class SoundSystemController : MasterController
+	public SoundSystemController()
 	{
-		public SoundSystemController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

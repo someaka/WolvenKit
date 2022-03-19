@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldPhysicalDestructionNodeInstance : worldSnappableNodeInstance
 {
-	[REDMeta]
-	public partial class worldPhysicalDestructionNodeInstance : worldSnappableNodeInstance
+	public worldPhysicalDestructionNodeInstance()
 	{
-		public worldPhysicalDestructionNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

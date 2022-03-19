@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecuritySystemUIPS : SurveillanceSystemUIPS
 {
-	[REDMeta]
-	public partial class SecuritySystemUIPS : SurveillanceSystemUIPS
+	public SecuritySystemUIPS()
 	{
-		public SecuritySystemUIPS()
-		{
-			DeviceName = "LocKey#50988";
+		DeviceName = "LocKey#50988";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

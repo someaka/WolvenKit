@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NetworkMoneySiphoned : redEvent
 {
-	[REDMeta]
-	public partial class NetworkMoneySiphoned : redEvent
+	public NetworkMoneySiphoned()
 	{
-		public NetworkMoneySiphoned()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

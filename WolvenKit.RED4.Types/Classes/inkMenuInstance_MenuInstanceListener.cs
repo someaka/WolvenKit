@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMenuInstance_MenuInstanceListener : redEvent
 {
-	[REDMeta]
-	public partial class inkMenuInstance_MenuInstanceListener : redEvent
+	public inkMenuInstance_MenuInstanceListener()
 	{
-		public inkMenuInstance_MenuInstanceListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

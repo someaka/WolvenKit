@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StaminaEventsTransition : StaminaTransition
 {
-	[REDMeta]
-	public partial class StaminaEventsTransition : StaminaTransition
+	public StaminaEventsTransition()
 	{
-		public StaminaEventsTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

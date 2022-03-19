@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIRandomTasks : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AIRandomTasks : AIbehaviortaskScript
+	public AIRandomTasks()
 	{
-		public AIRandomTasks()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

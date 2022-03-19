@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkInitEngineState : inkIStateMachineState
 {
-	[REDMeta]
-	public partial class inkInitEngineState : inkIStateMachineState
+	public inkInitEngineState()
 	{
-		public inkInitEngineState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

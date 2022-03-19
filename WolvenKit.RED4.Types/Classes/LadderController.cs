@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LadderController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class LadderController : ScriptableDeviceComponent
+	public LadderController()
 	{
-		public LadderController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

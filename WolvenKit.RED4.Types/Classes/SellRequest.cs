@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SellRequest : TransactionRequest
 {
-	[REDMeta]
-	public partial class SellRequest : TransactionRequest
+	public SellRequest()
 	{
-		public SellRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

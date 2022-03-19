@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAreaResource : CResource
 {
-	[REDMeta]
-	public partial class gameAreaResource : CResource
+	[Ordinal(1)] 
+	[RED("cookedData")] 
+	public CArray<gameCookedAreaData> CookedData
 	{
-		[Ordinal(1)] 
-		[RED("cookedData")] 
-		public CArray<gameCookedAreaData> CookedData
-		{
-			get => GetPropertyValue<CArray<gameCookedAreaData>>();
-			set => SetPropertyValue<CArray<gameCookedAreaData>>(value);
-		}
-
-		public gameAreaResource()
-		{
-			CookedData = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<gameCookedAreaData>>();
+		set => SetPropertyValue<CArray<gameCookedAreaData>>(value);
 	}
+
+	public gameAreaResource()
+	{
+		CookedData = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

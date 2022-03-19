@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DelayedComDeviceClose : redEvent
 {
-	[REDMeta]
-	public partial class DelayedComDeviceClose : redEvent
+	public DelayedComDeviceClose()
 	{
-		public DelayedComDeviceClose()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

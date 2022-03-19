@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InventoryUtils : IScriptable
 {
-	[REDMeta]
-	public partial class InventoryUtils : IScriptable
+	public InventoryUtils()
 	{
-		public InventoryUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

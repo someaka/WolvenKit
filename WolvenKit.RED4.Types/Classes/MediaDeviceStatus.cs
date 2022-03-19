@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MediaDeviceStatus : BaseDeviceStatus
 {
-	[REDMeta]
-	public partial class MediaDeviceStatus : BaseDeviceStatus
+	public MediaDeviceStatus()
 	{
-		public MediaDeviceStatus()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

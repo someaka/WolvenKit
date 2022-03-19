@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIITargetTrackingListener : IScriptable
 {
-	[REDMeta]
-	public partial class AIITargetTrackingListener : IScriptable
+	public AIITargetTrackingListener()
 	{
-		public AIITargetTrackingListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

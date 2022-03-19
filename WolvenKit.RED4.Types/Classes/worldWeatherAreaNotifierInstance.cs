@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldWeatherAreaNotifierInstance : worldITriggerAreaNotiferInstance
 {
-	[REDMeta]
-	public partial class worldWeatherAreaNotifierInstance : worldITriggerAreaNotiferInstance
+	public worldWeatherAreaNotifierInstance()
 	{
-		public worldWeatherAreaNotifierInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

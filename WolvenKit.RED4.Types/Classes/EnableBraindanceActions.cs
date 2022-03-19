@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EnableBraindanceActions : redEvent
 {
-	[REDMeta]
-	public partial class EnableBraindanceActions : redEvent
+	[Ordinal(0)] 
+	[RED("actionMask")] 
+	public SBraindanceInputMask ActionMask
 	{
-		[Ordinal(0)] 
-		[RED("actionMask")] 
-		public SBraindanceInputMask ActionMask
-		{
-			get => GetPropertyValue<SBraindanceInputMask>();
-			set => SetPropertyValue<SBraindanceInputMask>(value);
-		}
-
-		public EnableBraindanceActions()
-		{
-			ActionMask = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<SBraindanceInputMask>();
+		set => SetPropertyValue<SBraindanceInputMask>(value);
 	}
+
+	public EnableBraindanceActions()
+	{
+		ActionMask = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

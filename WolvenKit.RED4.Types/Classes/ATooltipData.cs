@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ATooltipData : IScriptable
 {
-	[REDMeta]
-	public partial class ATooltipData : IScriptable
+	public ATooltipData()
 	{
-		public ATooltipData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

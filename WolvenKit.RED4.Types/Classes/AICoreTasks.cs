@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICoreTasks : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AICoreTasks : AIbehaviortaskScript
+	public AICoreTasks()
 	{
-		public AICoreTasks()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

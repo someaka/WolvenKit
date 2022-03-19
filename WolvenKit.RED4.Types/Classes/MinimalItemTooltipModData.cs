@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MinimalItemTooltipModData : IScriptable
 {
-	[REDMeta]
-	public partial class MinimalItemTooltipModData : IScriptable
+	public MinimalItemTooltipModData()
 	{
-		public MinimalItemTooltipModData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,34 +1,30 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerListEntryLogicController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class PlayerListEntryLogicController : inkWidgetLogicController
+	[Ordinal(1)] 
+	[RED("playerNameLabel")] 
+	public inkWidgetReference PlayerNameLabel
 	{
-		[Ordinal(1)] 
-		[RED("playerNameLabel")] 
-		public inkWidgetReference PlayerNameLabel
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		[Ordinal(2)] 
-		[RED("playerClassIcon")] 
-		public inkImageWidgetReference PlayerClassIcon
-		{
-			get => GetPropertyValue<inkImageWidgetReference>();
-			set => SetPropertyValue<inkImageWidgetReference>(value);
-		}
-
-		public PlayerListEntryLogicController()
-		{
-			PlayerNameLabel = new();
-			PlayerClassIcon = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	[Ordinal(2)] 
+	[RED("playerClassIcon")] 
+	public inkImageWidgetReference PlayerClassIcon
+	{
+		get => GetPropertyValue<inkImageWidgetReference>();
+		set => SetPropertyValue<inkImageWidgetReference>(value);
+	}
+
+	public PlayerListEntryLogicController()
+	{
+		PlayerNameLabel = new();
+		PlayerClassIcon = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

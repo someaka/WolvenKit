@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MenuScenario_FindServers : MenuScenario_PreGameSubMenu
 {
-	[REDMeta]
-	public partial class MenuScenario_FindServers : MenuScenario_PreGameSubMenu
+	public MenuScenario_FindServers()
 	{
-		public MenuScenario_FindServers()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

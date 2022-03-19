@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PUPPET_ACtor : gameHudActor
 {
-	[REDMeta]
-	public partial class PUPPET_ACtor : gameHudActor
+	public PUPPET_ACtor()
 	{
-		public PUPPET_ACtor()
-		{
-			Type = Enums.HUDActorType.PUPPET;
+		Type = Enums.HUDActorType.PUPPET;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IgnoreMoveCommandInCombatCondition : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class IgnoreMoveCommandInCombatCondition : AIbehaviorconditionScript
+	public IgnoreMoveCommandInCombatCondition()
 	{
-		public IgnoreMoveCommandInCombatCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

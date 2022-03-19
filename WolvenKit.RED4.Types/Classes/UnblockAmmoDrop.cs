@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnblockAmmoDrop : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UnblockAmmoDrop : gameScriptableSystemRequest
+	public UnblockAmmoDrop()
 	{
-		public UnblockAmmoDrop()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

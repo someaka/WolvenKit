@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animSApplyRotationIKSolverData : RedBaseClass
 {
-	[REDMeta]
-	public partial class animSApplyRotationIKSolverData : RedBaseClass
+	[Ordinal(0)] 
+	[RED("bone")] 
+	public animTransformIndex Bone
 	{
-		[Ordinal(0)] 
-		[RED("bone")] 
-		public animTransformIndex Bone
-		{
-			get => GetPropertyValue<animTransformIndex>();
-			set => SetPropertyValue<animTransformIndex>(value);
-		}
-
-		public animSApplyRotationIKSolverData()
-		{
-			Bone = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<animTransformIndex>();
+		set => SetPropertyValue<animTransformIndex>(value);
 	}
+
+	public animSApplyRotationIKSolverData()
+	{
+		Bone = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

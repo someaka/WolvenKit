@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameJournalOnscreensStructuredGroup : IScriptable
 {
-	[REDMeta]
-	public partial class gameJournalOnscreensStructuredGroup : IScriptable
+	public gameJournalOnscreensStructuredGroup()
 	{
-		public gameJournalOnscreensStructuredGroup()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

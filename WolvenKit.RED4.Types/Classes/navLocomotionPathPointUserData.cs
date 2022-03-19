@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class navLocomotionPathPointUserData : ISerializable
 {
-	[REDMeta]
-	public partial class navLocomotionPathPointUserData : ISerializable
+	public navLocomotionPathPointUserData()
 	{
-		public navLocomotionPathPointUserData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

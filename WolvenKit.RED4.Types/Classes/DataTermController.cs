@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DataTermController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class DataTermController : ScriptableDeviceComponent
+	public DataTermController()
 	{
-		public DataTermController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

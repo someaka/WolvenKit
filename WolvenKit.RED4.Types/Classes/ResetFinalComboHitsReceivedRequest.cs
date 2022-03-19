@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetFinalComboHitsReceivedRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ResetFinalComboHitsReceivedRequest : gameScriptableSystemRequest
+	public ResetFinalComboHitsReceivedRequest()
 	{
-		public ResetFinalComboHitsReceivedRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

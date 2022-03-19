@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmState : IScriptable
 {
-	[REDMeta]
-	public partial class gsmState : IScriptable
+	public gsmState()
 	{
-		public gsmState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

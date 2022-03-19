@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleToggleRadioReceiverEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleToggleRadioReceiverEvent : redEvent
+	public vehicleToggleRadioReceiverEvent()
 	{
-		public vehicleToggleRadioReceiverEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

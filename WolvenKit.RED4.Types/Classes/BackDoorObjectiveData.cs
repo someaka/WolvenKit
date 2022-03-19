@@ -1,19 +1,16 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BackDoorObjectiveData : GemplayObjectiveData
 {
-	[REDMeta]
-	public partial class BackDoorObjectiveData : GemplayObjectiveData
+	public BackDoorObjectiveData()
 	{
-		public BackDoorObjectiveData()
-		{
-			QuestUniqueId = "NETWORK";
-			QuestTitle = "NETWORK";
-			ObjectiveDescription = "Hack backdoor in order to get access to the network";
-			UniqueIdPrefix = "backdoor";
+		QuestUniqueId = "NETWORK";
+		QuestTitle = "NETWORK";
+		ObjectiveDescription = "Hack backdoor in order to get access to the network";
+		UniqueIdPrefix = "backdoor";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

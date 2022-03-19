@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questCharacterEquippedItemListener : gameIAttachmentSlotsListener
 {
-	[REDMeta]
-	public partial class questCharacterEquippedItemListener : gameIAttachmentSlotsListener
+	public questCharacterEquippedItemListener()
 	{
-		public questCharacterEquippedItemListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

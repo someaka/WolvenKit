@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TimeSkipCursorInitFinishedEvent : redEvent
 {
-	[REDMeta]
-	public partial class TimeSkipCursorInitFinishedEvent : redEvent
+	public TimeSkipCursorInitFinishedEvent()
 	{
-		public TimeSkipCursorInitFinishedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

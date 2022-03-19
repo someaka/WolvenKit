@@ -1,39 +1,37 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class scnBraindancePlaying_ConditionType : scnIBraindanceConditionType
 {
-	[REDMeta]
-	public partial class scnBraindancePlaying_ConditionType : scnIBraindanceConditionType
+	[Ordinal(0)] 
+	[RED("speed")] 
+	public CEnum<scnBraindanceSpeed> Speed
 	{
-		[Ordinal(0)] 
-		[RED("speed")] 
-		public CEnum<scnBraindanceSpeed> Speed
-		{
-			get => GetPropertyValue<CEnum<scnBraindanceSpeed>>();
-			set => SetPropertyValue<CEnum<scnBraindanceSpeed>>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("sceneFile")] 
-		public CResourceAsyncReference<scnSceneResource> SceneFile
-		{
-			get => GetPropertyValue<CResourceAsyncReference<scnSceneResource>>();
-			set => SetPropertyValue<CResourceAsyncReference<scnSceneResource>>(value);
-		}
-
-		[Ordinal(2)] 
-		[RED("SceneVersion")] 
-		public CEnum<scnSceneVersionCheck> SceneVersion
-		{
-			get => GetPropertyValue<CEnum<scnSceneVersionCheck>>();
-			set => SetPropertyValue<CEnum<scnSceneVersionCheck>>(value);
-		}
-
-		public scnBraindancePlaying_ConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<scnBraindanceSpeed>>();
+		set => SetPropertyValue<CEnum<scnBraindanceSpeed>>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("sceneFile")] 
+	public CResourceAsyncReference<scnSceneResource> SceneFile
+	{
+		get => GetPropertyValue<CResourceAsyncReference<scnSceneResource>>();
+		set => SetPropertyValue<CResourceAsyncReference<scnSceneResource>>(value);
+	}
+
+	[Ordinal(2)] 
+	[RED("SceneVersion")] 
+	public CEnum<scnSceneVersionCheck> SceneVersion
+	{
+		get => GetPropertyValue<CEnum<scnSceneVersionCheck>>();
+		set => SetPropertyValue<CEnum<scnSceneVersionCheck>>(value);
+	}
+
+	public scnBraindancePlaying_ConditionType()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

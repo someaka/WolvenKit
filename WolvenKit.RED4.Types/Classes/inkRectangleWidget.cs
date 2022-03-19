@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkRectangleWidget : inkBaseShapeWidget
 {
-	[REDMeta]
-	public partial class inkRectangleWidget : inkBaseShapeWidget
+	public inkRectangleWidget()
 	{
-		public inkRectangleWidget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

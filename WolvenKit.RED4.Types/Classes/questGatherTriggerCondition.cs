@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questGatherTriggerCondition : questTriggerCondition
 {
-	[REDMeta]
-	public partial class questGatherTriggerCondition : questTriggerCondition
+	public questGatherTriggerCondition()
 	{
-		public questGatherTriggerCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

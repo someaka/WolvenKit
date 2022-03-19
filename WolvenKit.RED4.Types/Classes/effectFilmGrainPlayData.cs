@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectFilmGrainPlayData : effectPlacedTrackItemPlayData
 {
-	[REDMeta]
-	public partial class effectFilmGrainPlayData : effectPlacedTrackItemPlayData
+	public effectFilmGrainPlayData()
 	{
-		public effectFilmGrainPlayData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RefreshBuyQueueEvent : redEvent
 {
-	[REDMeta]
-	public partial class RefreshBuyQueueEvent : redEvent
+	public RefreshBuyQueueEvent()
 	{
-		public RefreshBuyQueueEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

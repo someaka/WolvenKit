@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UpdateNetworkVisualisationRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UpdateNetworkVisualisationRequest : gameScriptableSystemRequest
+	public UpdateNetworkVisualisationRequest()
 	{
-		public UpdateNetworkVisualisationRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

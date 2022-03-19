@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BountyResetRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class BountyResetRequest : gameScriptableSystemRequest
+	public BountyResetRequest()
 	{
-		public BountyResetRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

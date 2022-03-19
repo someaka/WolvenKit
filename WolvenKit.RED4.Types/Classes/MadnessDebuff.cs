@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MadnessDebuff : redEvent
 {
-	[REDMeta]
-	public partial class MadnessDebuff : redEvent
+	[Ordinal(0)] 
+	[RED("object")] 
+	public CWeakHandle<gameObject> Object
 	{
-		[Ordinal(0)] 
-		[RED("object")] 
-		public CWeakHandle<gameObject> Object
-		{
-			get => GetPropertyValue<CWeakHandle<gameObject>>();
-			set => SetPropertyValue<CWeakHandle<gameObject>>(value);
-		}
-
-		public MadnessDebuff()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<gameObject>>();
+		set => SetPropertyValue<CWeakHandle<gameObject>>(value);
 	}
+
+	public MadnessDebuff()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

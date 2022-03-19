@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMenuLayer : inkFullScreenLayer
 {
-	[REDMeta]
-	public partial class inkMenuLayer : inkFullScreenLayer
+	public inkMenuLayer()
 	{
-		public inkMenuLayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

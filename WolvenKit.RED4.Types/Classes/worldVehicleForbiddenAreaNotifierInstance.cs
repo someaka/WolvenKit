@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldVehicleForbiddenAreaNotifierInstance : worldITriggerAreaNotiferInstance
 {
-	[REDMeta]
-	public partial class worldVehicleForbiddenAreaNotifierInstance : worldITriggerAreaNotiferInstance
+	public worldVehicleForbiddenAreaNotifierInstance()
 	{
-		public worldVehicleForbiddenAreaNotifierInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

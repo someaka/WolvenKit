@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorCTreeNodeControlledByQuestNodeDefinition : AIbehaviorActionTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorCTreeNodeControlledByQuestNodeDefinition : AIbehaviorActionTreeNodeDefinition
+	public AIbehaviorCTreeNodeControlledByQuestNodeDefinition()
 	{
-		public AIbehaviorCTreeNodeControlledByQuestNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

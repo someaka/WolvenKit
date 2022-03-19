@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameStatModifierHandle : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameStatModifierHandle : RedBaseClass
+	public gameStatModifierHandle()
 	{
-		public gameStatModifierHandle()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

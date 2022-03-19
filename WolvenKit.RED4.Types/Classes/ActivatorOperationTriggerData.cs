@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActivatorOperationTriggerData : DeviceOperationTriggerData
 {
-	[REDMeta]
-	public partial class ActivatorOperationTriggerData : DeviceOperationTriggerData
+	public ActivatorOperationTriggerData()
 	{
-		public ActivatorOperationTriggerData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

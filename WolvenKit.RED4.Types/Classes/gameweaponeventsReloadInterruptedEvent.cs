@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameweaponeventsReloadInterruptedEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameweaponeventsReloadInterruptedEvent : redEvent
+	public gameweaponeventsReloadInterruptedEvent()
 	{
-		public gameweaponeventsReloadInterruptedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

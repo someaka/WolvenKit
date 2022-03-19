@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FistsLookAtEvents : LookAtPresetMeleeBaseEvents
 {
-	[REDMeta]
-	public partial class FistsLookAtEvents : LookAtPresetMeleeBaseEvents
+	public FistsLookAtEvents()
 	{
-		public FistsLookAtEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

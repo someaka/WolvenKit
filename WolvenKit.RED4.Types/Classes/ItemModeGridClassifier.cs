@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemModeGridClassifier : inkVirtualItemTemplateClassifierWrapper
 {
-	[REDMeta]
-	public partial class ItemModeGridClassifier : inkVirtualItemTemplateClassifierWrapper
+	public ItemModeGridClassifier()
 	{
-		public ItemModeGridClassifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

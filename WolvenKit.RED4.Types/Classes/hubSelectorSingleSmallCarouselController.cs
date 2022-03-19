@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class hubSelectorSingleSmallCarouselController : hubSelectorSingleCarouselController
 {
-	[REDMeta]
-	public partial class hubSelectorSingleSmallCarouselController : hubSelectorSingleCarouselController
+	public hubSelectorSingleSmallCarouselController()
 	{
-		public hubSelectorSingleSmallCarouselController()
-		{
-			NUMBER_OF_WIDGETS = 5;
+		NUMBER_OF_WIDGETS = 5;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

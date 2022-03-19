@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldPopulationSpawnerNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldPopulationSpawnerNodeInstance : worldINodeInstance
+	public worldPopulationSpawnerNodeInstance()
 	{
-		public worldPopulationSpawnerNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

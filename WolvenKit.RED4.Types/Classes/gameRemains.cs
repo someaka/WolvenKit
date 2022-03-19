@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameRemains : gameObject
 {
-	[REDMeta]
-	public partial class gameRemains : gameObject
+	public gameRemains()
 	{
-		public gameRemains()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

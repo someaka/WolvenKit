@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SwimmingLadderEvents : LadderEvents
 {
-	[REDMeta]
-	public partial class SwimmingLadderEvents : LadderEvents
+	public SwimmingLadderEvents()
 	{
-		public SwimmingLadderEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

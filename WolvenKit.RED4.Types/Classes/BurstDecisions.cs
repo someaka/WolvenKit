@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BurstDecisions : WeaponTransition
 {
-	[REDMeta]
-	public partial class BurstDecisions : WeaponTransition
+	public BurstDecisions()
 	{
-		public BurstDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

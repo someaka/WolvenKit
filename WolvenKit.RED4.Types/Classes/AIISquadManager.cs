@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIISquadManager : gameIGameSystem
 {
-	[REDMeta]
-	public partial class AIISquadManager : gameIGameSystem
+	public AIISquadManager()
 	{
-		public AIISquadManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScriptsDebugOverlaySink : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameScriptsDebugOverlaySink : RedBaseClass
+	public gameScriptsDebugOverlaySink()
 	{
-		public gameScriptsDebugOverlaySink()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

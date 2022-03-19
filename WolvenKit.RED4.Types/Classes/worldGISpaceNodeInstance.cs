@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldGISpaceNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldGISpaceNodeInstance : worldINodeInstance
+	public worldGISpaceNodeInstance()
 	{
-		public worldGISpaceNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

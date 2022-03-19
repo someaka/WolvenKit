@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PatrolAction : TweakAIActionSmartComposite
 {
-	[REDMeta]
-	public partial class PatrolAction : TweakAIActionSmartComposite
+	public PatrolAction()
 	{
-		public PatrolAction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

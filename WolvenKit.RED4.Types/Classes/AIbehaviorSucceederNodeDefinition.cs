@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorSucceederNodeDefinition : AIbehaviorLeafTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorSucceederNodeDefinition : AIbehaviorLeafTreeNodeDefinition
+	public AIbehaviorSucceederNodeDefinition()
 	{
-		public AIbehaviorSucceederNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldCompiledSmartObjectsNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldCompiledSmartObjectsNodeInstance : worldINodeInstance
+	public worldCompiledSmartObjectsNodeInstance()
 	{
-		public worldCompiledSmartObjectsNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

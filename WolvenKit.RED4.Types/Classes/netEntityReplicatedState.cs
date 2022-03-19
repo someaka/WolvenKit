@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class netEntityReplicatedState : netIEntityState
 {
-	[REDMeta]
-	public partial class netEntityReplicatedState : netIEntityState
+	public netEntityReplicatedState()
 	{
-		public netEntityReplicatedState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

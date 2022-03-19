@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePlayerProximityPrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class gamePlayerProximityPrereqState : gamePrereqState
+	public gamePlayerProximityPrereqState()
 	{
-		public gamePlayerProximityPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

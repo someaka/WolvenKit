@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AddUserEvent : redEvent
 {
-	[REDMeta]
-	public partial class AddUserEvent : redEvent
+	[Ordinal(0)] 
+	[RED("userEntry")] 
+	public SecuritySystemClearanceEntry UserEntry
 	{
-		[Ordinal(0)] 
-		[RED("userEntry")] 
-		public SecuritySystemClearanceEntry UserEntry
-		{
-			get => GetPropertyValue<SecuritySystemClearanceEntry>();
-			set => SetPropertyValue<SecuritySystemClearanceEntry>(value);
-		}
-
-		public AddUserEvent()
-		{
-			UserEntry = new() { User = new() };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<SecuritySystemClearanceEntry>();
+		set => SetPropertyValue<SecuritySystemClearanceEntry>(value);
 	}
+
+	public AddUserEvent()
+	{
+		UserEntry = new() { User = new() };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIFindPositionAroundTarget : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AIFindPositionAroundTarget : AIbehaviortaskScript
+	public AIFindPositionAroundTarget()
 	{
-		public AIFindPositionAroundTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

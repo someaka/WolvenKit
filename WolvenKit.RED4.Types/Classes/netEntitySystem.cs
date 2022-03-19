@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class netEntitySystem : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class netEntitySystem : worldIRuntimeSystem
+	public netEntitySystem()
 	{
-		public netEntitySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

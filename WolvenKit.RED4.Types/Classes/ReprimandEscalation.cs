@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReprimandEscalation : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class ReprimandEscalation : AIbehaviortaskScript
+	public ReprimandEscalation()
 	{
-		public ReprimandEscalation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

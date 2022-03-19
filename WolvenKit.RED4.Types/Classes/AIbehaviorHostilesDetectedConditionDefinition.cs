@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorHostilesDetectedConditionDefinition : AIbehaviorConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorHostilesDetectedConditionDefinition : AIbehaviorConditionDefinition
+	public AIbehaviorHostilesDetectedConditionDefinition()
 	{
-		public AIbehaviorHostilesDetectedConditionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

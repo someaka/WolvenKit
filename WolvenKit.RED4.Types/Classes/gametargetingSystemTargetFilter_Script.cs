@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gametargetingSystemTargetFilter_Script : gametargetingSystemTargetFilter
 {
-	[REDMeta]
-	public partial class gametargetingSystemTargetFilter_Script : gametargetingSystemTargetFilter
+	public gametargetingSystemTargetFilter_Script()
 	{
-		public gametargetingSystemTargetFilter_Script()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

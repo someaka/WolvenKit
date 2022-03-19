@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkAudioHandlerUserData : inkUserData
 {
-	[REDMeta]
-	public partial class inkAudioHandlerUserData : inkUserData
+	public inkAudioHandlerUserData()
 	{
-		public inkAudioHandlerUserData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

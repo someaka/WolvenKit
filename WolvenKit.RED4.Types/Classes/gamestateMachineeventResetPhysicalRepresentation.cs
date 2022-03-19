@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineeventResetPhysicalRepresentation : redEvent
 {
-	[REDMeta]
-	public partial class gamestateMachineeventResetPhysicalRepresentation : redEvent
+	public gamestateMachineeventResetPhysicalRepresentation()
 	{
-		public gamestateMachineeventResetPhysicalRepresentation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

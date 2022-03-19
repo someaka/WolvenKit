@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animIDyngConstraint : ISerializable
 {
-	[REDMeta]
-	public partial class animIDyngConstraint : ISerializable
+	public animIDyngConstraint()
 	{
-		public animIDyngConstraint()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

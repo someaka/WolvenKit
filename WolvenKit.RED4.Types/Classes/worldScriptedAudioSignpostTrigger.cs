@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldScriptedAudioSignpostTrigger : IScriptable
 {
-	[REDMeta]
-	public partial class worldScriptedAudioSignpostTrigger : IScriptable
+	public worldScriptedAudioSignpostTrigger()
 	{
-		public worldScriptedAudioSignpostTrigger()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

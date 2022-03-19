@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IntercomController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class IntercomController : ScriptableDeviceComponent
+	public IntercomController()
 	{
-		public IntercomController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

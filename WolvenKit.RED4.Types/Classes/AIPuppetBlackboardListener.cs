@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIPuppetBlackboardListener : ISerializable
 {
-	[REDMeta]
-	public partial class AIPuppetBlackboardListener : ISerializable
+	public AIPuppetBlackboardListener()
 	{
-		public AIPuppetBlackboardListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

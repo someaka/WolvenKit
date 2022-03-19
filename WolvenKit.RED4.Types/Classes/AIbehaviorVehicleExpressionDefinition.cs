@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorVehicleExpressionDefinition : AIbehaviorPassiveExpressionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorVehicleExpressionDefinition : AIbehaviorPassiveExpressionDefinition
+	public AIbehaviorVehicleExpressionDefinition()
 	{
-		public AIbehaviorVehicleExpressionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

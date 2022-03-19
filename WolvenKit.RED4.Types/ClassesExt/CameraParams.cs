@@ -1,7 +1,6 @@
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public class CameraParams : RedBaseClass
 {
-    public class CameraParams : RedBaseClass
-    {
         
-    }
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StatPoolEffector : gameEffector
 {
-	[REDMeta]
-	public partial class StatPoolEffector : gameEffector
+	public StatPoolEffector()
 	{
-		public StatPoolEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

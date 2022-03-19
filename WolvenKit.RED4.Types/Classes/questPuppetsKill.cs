@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questPuppetsKill : questPuppetsEffector
 {
-	[REDMeta]
-	public partial class questPuppetsKill : questPuppetsEffector
+	public questPuppetsKill()
 	{
-		public questPuppetsKill()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

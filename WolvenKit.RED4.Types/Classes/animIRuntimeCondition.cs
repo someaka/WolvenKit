@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animIRuntimeCondition : ISerializable
 {
-	[REDMeta]
-	public partial class animIRuntimeCondition : ISerializable
+	public animIRuntimeCondition()
 	{
-		public animIRuntimeCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

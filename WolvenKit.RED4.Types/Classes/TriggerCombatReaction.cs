@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TriggerCombatReaction : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class TriggerCombatReaction : AIbehaviortaskScript
+	public TriggerCombatReaction()
 	{
-		public TriggerCombatReaction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class gamestateMachineeventPostponedParameterBase : gamestateMachineeventBaseEvent
 {
-	[REDMeta]
-	public partial class gamestateMachineeventPostponedParameterBase : gamestateMachineeventBaseEvent
+	[Ordinal(1)] 
+	[RED("aspect")] 
+	public CEnum<gamestateMachineParameterAspect> Aspect
 	{
-		[Ordinal(1)] 
-		[RED("aspect")] 
-		public CEnum<gamestateMachineParameterAspect> Aspect
-		{
-			get => GetPropertyValue<CEnum<gamestateMachineParameterAspect>>();
-			set => SetPropertyValue<CEnum<gamestateMachineParameterAspect>>(value);
-		}
-
-		public gamestateMachineeventPostponedParameterBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<gamestateMachineParameterAspect>>();
+		set => SetPropertyValue<CEnum<gamestateMachineParameterAspect>>(value);
 	}
+
+	public gamestateMachineeventPostponedParameterBase()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class rendRenderMultilayerMaskBlobPS4 : rendRenderMultilayerMaskBlob
 {
-	[REDMeta]
-	public partial class rendRenderMultilayerMaskBlobPS4 : rendRenderMultilayerMaskBlob
+	public rendRenderMultilayerMaskBlobPS4()
 	{
-		public rendRenderMultilayerMaskBlobPS4()
-		{
-			Header = new();
+		Header = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

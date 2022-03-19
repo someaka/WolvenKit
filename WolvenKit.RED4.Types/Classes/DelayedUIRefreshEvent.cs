@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DelayedUIRefreshEvent : redEvent
 {
-	[REDMeta]
-	public partial class DelayedUIRefreshEvent : redEvent
+	public DelayedUIRefreshEvent()
 	{
-		public DelayedUIRefreshEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

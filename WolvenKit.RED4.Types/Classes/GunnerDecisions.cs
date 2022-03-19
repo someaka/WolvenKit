@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GunnerDecisions : VehicleTransition
 {
-	[REDMeta]
-	public partial class GunnerDecisions : VehicleTransition
+	public GunnerDecisions()
 	{
-		public GunnerDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

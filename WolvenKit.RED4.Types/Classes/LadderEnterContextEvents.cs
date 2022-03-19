@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LadderEnterContextEvents : InputContextTransitionEvents
 {
-	[REDMeta]
-	public partial class LadderEnterContextEvents : InputContextTransitionEvents
+	public LadderEnterContextEvents()
 	{
-		public LadderEnterContextEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

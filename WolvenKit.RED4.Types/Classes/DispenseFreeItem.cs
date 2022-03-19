@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DispenseFreeItem : redEvent
 {
-	[REDMeta]
-	public partial class DispenseFreeItem : redEvent
+	public DispenseFreeItem()
 	{
-		public DispenseFreeItem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

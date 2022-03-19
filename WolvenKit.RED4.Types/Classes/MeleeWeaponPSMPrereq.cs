@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleeWeaponPSMPrereq : PlayerStateMachinePrereq
 {
-	[REDMeta]
-	public partial class MeleeWeaponPSMPrereq : PlayerStateMachinePrereq
+	public MeleeWeaponPSMPrereq()
 	{
-		public MeleeWeaponPSMPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

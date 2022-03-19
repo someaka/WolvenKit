@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMenuInstance_SwitchToScenario : redEvent
 {
-	[REDMeta]
-	public partial class inkMenuInstance_SwitchToScenario : redEvent
+	public inkMenuInstance_SwitchToScenario()
 	{
-		public inkMenuInstance_SwitchToScenario()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

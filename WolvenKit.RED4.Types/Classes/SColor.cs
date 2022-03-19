@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SColor : RedBaseClass
 {
-	[REDMeta]
-	public partial class SColor : RedBaseClass
+	public SColor()
 	{
-		public SColor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

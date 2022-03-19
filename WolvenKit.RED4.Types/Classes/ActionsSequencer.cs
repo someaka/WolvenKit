@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActionsSequencer : InteractiveMasterDevice
 {
-	[REDMeta]
-	public partial class ActionsSequencer : InteractiveMasterDevice
+	public ActionsSequencer()
 	{
-		public ActionsSequencer()
-		{
-			ControllerTypeName = "ActionsSequencerController";
+		ControllerTypeName = "ActionsSequencerController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

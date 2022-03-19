@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LibTreeINodeDefinition : ISerializable
 {
-	[REDMeta]
-	public partial class LibTreeINodeDefinition : ISerializable
+	public LibTreeINodeDefinition()
 	{
-		public LibTreeINodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

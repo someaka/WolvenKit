@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeathLandDecisions : FailedLandingAbstractDecisions
 {
-	[REDMeta]
-	public partial class DeathLandDecisions : FailedLandingAbstractDecisions
+	public DeathLandDecisions()
 	{
-		public DeathLandDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerHasNanoWiresEquippedPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class PlayerHasNanoWiresEquippedPrereq : gameIScriptablePrereq
+	public PlayerHasNanoWiresEquippedPrereq()
 	{
-		public PlayerHasNanoWiresEquippedPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

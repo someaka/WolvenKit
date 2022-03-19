@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimationEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameTransformAnimationEvent : redEvent
+	[Ordinal(0)] 
+	[RED("animationName")] 
+	public CName AnimationName
 	{
-		[Ordinal(0)] 
-		[RED("animationName")] 
-		public CName AnimationName
-		{
-			get => GetPropertyValue<CName>();
-			set => SetPropertyValue<CName>(value);
-		}
-
-		public gameTransformAnimationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CName>();
+		set => SetPropertyValue<CName>(value);
 	}
+
+	public gameTransformAnimationEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

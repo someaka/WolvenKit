@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EscalateProvoke : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class EscalateProvoke : AIbehaviorconditionScript
+	public EscalateProvoke()
 	{
-		public EscalateProvoke()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

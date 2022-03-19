@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TrapComponent : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class TrapComponent : gameScriptableComponent
+	public TrapComponent()
 	{
-		public TrapComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

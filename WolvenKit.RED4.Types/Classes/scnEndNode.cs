@@ -1,26 +1,24 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class scnEndNode : scnSceneGraphNode
 {
-	[REDMeta]
-	public partial class scnEndNode : scnSceneGraphNode
+	[Ordinal(3)] 
+	[RED("type")] 
+	public CEnum<scnEndNodeNsType> Type
 	{
-		[Ordinal(3)] 
-		[RED("type")] 
-		public CEnum<scnEndNodeNsType> Type
-		{
-			get => GetPropertyValue<CEnum<scnEndNodeNsType>>();
-			set => SetPropertyValue<CEnum<scnEndNodeNsType>>(value);
-		}
-
-		public scnEndNode()
-		{
-			NodeId = new() { Id = 4294967295 };
-			OutputSockets = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<scnEndNodeNsType>>();
+		set => SetPropertyValue<CEnum<scnEndNodeNsType>>(value);
 	}
+
+	public scnEndNode()
+	{
+		NodeId = new() { Id = 4294967295 };
+		OutputSockets = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

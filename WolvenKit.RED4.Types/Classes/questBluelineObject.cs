@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questBluelineObject : IScriptable
 {
-	[REDMeta]
-	public partial class questBluelineObject : IScriptable
+	public questBluelineObject()
 	{
-		public questBluelineObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

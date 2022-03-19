@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIReturnToRestrictMovementAreaCondition : RestrictedMovementAreaCondition
 {
-	[REDMeta]
-	public partial class AIReturnToRestrictMovementAreaCondition : RestrictedMovementAreaCondition
+	public AIReturnToRestrictMovementAreaCondition()
 	{
-		public AIReturnToRestrictMovementAreaCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

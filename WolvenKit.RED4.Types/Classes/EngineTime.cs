@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EngineTime : RedBaseClass
 {
-	[REDMeta]
-	public partial class EngineTime : RedBaseClass
+	public EngineTime()
 	{
-		public EngineTime()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ControlsActiveDecisions : BraindanceControlsTransition
 {
-	[REDMeta]
-	public partial class ControlsActiveDecisions : BraindanceControlsTransition
+	public ControlsActiveDecisions()
 	{
-		public ControlsActiveDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

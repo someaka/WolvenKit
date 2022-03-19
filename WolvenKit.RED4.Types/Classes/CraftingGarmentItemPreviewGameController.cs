@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CraftingGarmentItemPreviewGameController : gameuiBaseGarmentItemPreviewGameController
 {
-	[REDMeta]
-	public partial class CraftingGarmentItemPreviewGameController : gameuiBaseGarmentItemPreviewGameController
+	public CraftingGarmentItemPreviewGameController()
 	{
-		public CraftingGarmentItemPreviewGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

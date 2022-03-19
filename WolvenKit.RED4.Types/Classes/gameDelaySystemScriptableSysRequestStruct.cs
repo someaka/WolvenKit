@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDelaySystemScriptableSysRequestStruct : gameDelaySystemDelayStruct
 {
-	[REDMeta]
-	public partial class gameDelaySystemScriptableSysRequestStruct : gameDelaySystemDelayStruct
+	public gameDelaySystemScriptableSysRequestStruct()
 	{
-		public gameDelaySystemScriptableSysRequestStruct()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

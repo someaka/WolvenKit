@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIObjectSelectionManager : AIObjectSelectionManagerInterface
 {
-	[REDMeta]
-	public partial class AIObjectSelectionManager : AIObjectSelectionManagerInterface
+	public AIObjectSelectionManager()
 	{
-		public AIObjectSelectionManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

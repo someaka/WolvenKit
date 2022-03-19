@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TogglePlayerFlashlightEffector : gameEffector
 {
-	[REDMeta]
-	public partial class TogglePlayerFlashlightEffector : gameEffector
+	public TogglePlayerFlashlightEffector()
 	{
-		public TogglePlayerFlashlightEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

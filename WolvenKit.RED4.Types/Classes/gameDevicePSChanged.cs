@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDevicePSChanged : redEvent
 {
-	[REDMeta]
-	public partial class gameDevicePSChanged : redEvent
+	public gameDevicePSChanged()
 	{
-		public gameDevicePSChanged()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

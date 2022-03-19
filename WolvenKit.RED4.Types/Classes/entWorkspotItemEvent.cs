@@ -1,15 +1,12 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+[REDClass(SerializeDefault = true)]
+public partial class entWorkspotItemEvent : redEvent
 {
-	[REDMeta]
-	[REDClass(SerializeDefault = true)]
-	public partial class entWorkspotItemEvent : redEvent
+	public entWorkspotItemEvent()
 	{
-		public entWorkspotItemEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

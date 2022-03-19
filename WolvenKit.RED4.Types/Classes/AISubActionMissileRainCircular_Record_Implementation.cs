@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISubActionMissileRainCircular_Record_Implementation : IScriptable
 {
-	[REDMeta]
-	public partial class AISubActionMissileRainCircular_Record_Implementation : IScriptable
+	public AISubActionMissileRainCircular_Record_Implementation()
 	{
-		public AISubActionMissileRainCircular_Record_Implementation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

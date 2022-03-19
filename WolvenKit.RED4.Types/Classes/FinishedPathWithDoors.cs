@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FinishedPathWithDoors : redEvent
 {
-	[REDMeta]
-	public partial class FinishedPathWithDoors : redEvent
+	public FinishedPathWithDoors()
 	{
-		public FinishedPathWithDoors()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

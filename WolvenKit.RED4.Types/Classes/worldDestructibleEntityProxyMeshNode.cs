@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDestructibleEntityProxyMeshNode : worldEntityProxyMeshNode
 {
-	[REDMeta]
-	public partial class worldDestructibleEntityProxyMeshNode : worldEntityProxyMeshNode
+	public worldDestructibleEntityProxyMeshNode()
 	{
-		public worldDestructibleEntityProxyMeshNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

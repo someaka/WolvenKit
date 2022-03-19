@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkControllerProcessor : ISerializable
 {
-	[REDMeta]
-	public partial class inkControllerProcessor : ISerializable
+	public inkControllerProcessor()
 	{
-		public inkControllerProcessor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WaitingForSceneEvents : VehicleTransition
 {
-	[REDMeta]
-	public partial class WaitingForSceneEvents : VehicleTransition
+	public WaitingForSceneEvents()
 	{
-		public WaitingForSceneEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

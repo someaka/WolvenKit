@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ShouldNPCContinueInAlerted : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class ShouldNPCContinueInAlerted : AIbehaviorconditionScript
+	public ShouldNPCContinueInAlerted()
 	{
-		public ShouldNPCContinueInAlerted()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

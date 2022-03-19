@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataDetectionCurve_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataDetectionCurve_Record : gamedataTweakDBRecord
+	public gamedataDetectionCurve_Record()
 	{
-		public gamedataDetectionCurve_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

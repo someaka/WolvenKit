@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectObjectFilter_HitRepresentation_Sphere : gameEffectObjectFilter_HitRepresentation
 {
-	[REDMeta]
-	public partial class gameEffectObjectFilter_HitRepresentation_Sphere : gameEffectObjectFilter_HitRepresentation
+	public gameEffectObjectFilter_HitRepresentation_Sphere()
 	{
-		public gameEffectObjectFilter_HitRepresentation_Sphere()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

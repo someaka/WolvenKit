@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnChoiceNodeNsLookAtParams : ISerializable
 {
-	[REDMeta]
-	public partial class scnChoiceNodeNsLookAtParams : ISerializable
+	public scnChoiceNodeNsLookAtParams()
 	{
-		public scnChoiceNodeNsLookAtParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

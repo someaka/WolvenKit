@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataTweakDBRecord : IScriptable
 {
-	[REDMeta]
-	public partial class gamedataTweakDBRecord : IScriptable
+	public gamedataTweakDBRecord()
 	{
-		public gamedataTweakDBRecord()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

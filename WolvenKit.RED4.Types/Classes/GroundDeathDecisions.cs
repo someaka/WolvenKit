@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GroundDeathDecisions : DeathDecisionsWithResurrection
 {
-	[REDMeta]
-	public partial class GroundDeathDecisions : DeathDecisionsWithResurrection
+	public GroundDeathDecisions()
 	{
-		public GroundDeathDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

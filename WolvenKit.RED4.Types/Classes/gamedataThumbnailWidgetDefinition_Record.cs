@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataThumbnailWidgetDefinition_Record : gamedataWidgetDefinition_Record
 {
-	[REDMeta]
-	public partial class gamedataThumbnailWidgetDefinition_Record : gamedataWidgetDefinition_Record
+	public gamedataThumbnailWidgetDefinition_Record()
 	{
-		public gamedataThumbnailWidgetDefinition_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

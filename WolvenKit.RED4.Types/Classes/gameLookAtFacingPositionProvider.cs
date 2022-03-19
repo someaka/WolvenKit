@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameLookAtFacingPositionProvider : entIPositionProvider
 {
-	[REDMeta]
-	public partial class gameLookAtFacingPositionProvider : entIPositionProvider
+	public gameLookAtFacingPositionProvider()
 	{
-		public gameLookAtFacingPositionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

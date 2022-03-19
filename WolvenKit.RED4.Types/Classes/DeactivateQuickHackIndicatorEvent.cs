@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeactivateQuickHackIndicatorEvent : redEvent
 {
-	[REDMeta]
-	public partial class DeactivateQuickHackIndicatorEvent : redEvent
+	public DeactivateQuickHackIndicatorEvent()
 	{
-		public DeactivateQuickHackIndicatorEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

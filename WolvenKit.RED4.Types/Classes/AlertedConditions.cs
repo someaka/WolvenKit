@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AlertedConditions : AIAutonomousConditions
 {
-	[REDMeta]
-	public partial class AlertedConditions : AIAutonomousConditions
+	public AlertedConditions()
 	{
-		public AlertedConditions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WorldMapPoliceTooltipController : WorldMapTooltipController
 {
-	[REDMeta]
-	public partial class WorldMapPoliceTooltipController : WorldMapTooltipController
+	public WorldMapPoliceTooltipController()
 	{
-		public WorldMapPoliceTooltipController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

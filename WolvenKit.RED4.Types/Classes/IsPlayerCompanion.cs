@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsPlayerCompanion : AIAutonomousConditions
 {
-	[REDMeta]
-	public partial class IsPlayerCompanion : AIAutonomousConditions
+	public IsPlayerCompanion()
 	{
-		public IsPlayerCompanion()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

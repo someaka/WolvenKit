@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class rendRenderTextureBlobProspero : rendIRenderTextureBlob
 {
-	[REDMeta]
-	public partial class rendRenderTextureBlobProspero : rendIRenderTextureBlob
+	public rendRenderTextureBlobProspero()
 	{
-		public rendRenderTextureBlobProspero()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

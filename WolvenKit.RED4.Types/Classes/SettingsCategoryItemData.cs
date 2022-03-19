@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SettingsCategoryItemData : ListItemData
 {
-	[REDMeta]
-	public partial class SettingsCategoryItemData : ListItemData
+	public SettingsCategoryItemData()
 	{
-		public SettingsCategoryItemData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

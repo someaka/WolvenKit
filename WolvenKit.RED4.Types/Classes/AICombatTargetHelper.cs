@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICombatTargetHelper : IScriptable
 {
-	[REDMeta]
-	public partial class AICombatTargetHelper : IScriptable
+	public AICombatTargetHelper()
 	{
-		public AICombatTargetHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

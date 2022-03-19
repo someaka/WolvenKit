@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_FPPCameraSharedVar : animAnimNode_FloatValue
 {
-	[REDMeta]
-	public partial class animAnimNode_FPPCameraSharedVar : animAnimNode_FloatValue
+	public animAnimNode_FPPCameraSharedVar()
 	{
-		public animAnimNode_FPPCameraSharedVar()
-		{
-			Id = 4294967295;
+		Id = 4294967295;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

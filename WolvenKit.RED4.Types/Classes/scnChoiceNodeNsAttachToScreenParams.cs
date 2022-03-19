@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnChoiceNodeNsAttachToScreenParams : RedBaseClass
 {
-	[REDMeta]
-	public partial class scnChoiceNodeNsAttachToScreenParams : RedBaseClass
+	public scnChoiceNodeNsAttachToScreenParams()
 	{
-		public scnChoiceNodeNsAttachToScreenParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CGameEngine : BaseGameEngine
 {
-	[REDMeta]
-	public partial class CGameEngine : BaseGameEngine
+	public CGameEngine()
 	{
-		public CGameEngine()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

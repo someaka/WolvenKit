@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class redTOMLArrayFloat : redTOMLBaseValue
 {
-	[REDMeta]
-	public partial class redTOMLArrayFloat : redTOMLBaseValue
+	public redTOMLArrayFloat()
 	{
-		public redTOMLArrayFloat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorFailerNodeDefinition : AIbehaviorLeafTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorFailerNodeDefinition : AIbehaviorLeafTreeNodeDefinition
+	public AIbehaviorFailerNodeDefinition()
 	{
-		public AIbehaviorFailerNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

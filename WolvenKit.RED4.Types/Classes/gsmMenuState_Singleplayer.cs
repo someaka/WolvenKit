@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmMenuState_Singleplayer : gsmMenuState
 {
-	[REDMeta]
-	public partial class gsmMenuState_Singleplayer : gsmMenuState
+	public gsmMenuState_Singleplayer()
 	{
-		public gsmMenuState_Singleplayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

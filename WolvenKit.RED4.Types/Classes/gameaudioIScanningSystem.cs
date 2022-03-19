@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameaudioIScanningSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameaudioIScanningSystem : gameIGameSystem
+	public gameaudioIScanningSystem()
 	{
-		public gameaudioIScanningSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

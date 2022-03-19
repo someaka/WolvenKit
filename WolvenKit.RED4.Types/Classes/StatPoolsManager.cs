@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StatPoolsManager : IScriptable
 {
-	[REDMeta]
-	public partial class StatPoolsManager : IScriptable
+	public StatPoolsManager()
 	{
-		public StatPoolsManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

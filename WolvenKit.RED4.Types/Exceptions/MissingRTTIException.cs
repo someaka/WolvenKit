@@ -1,22 +1,21 @@
 using System;
 
-namespace WolvenKit.RED4.Types.Exceptions
-{
-    public class MissingRTTIException : Exception
-    {
-        public MissingRTTIException(string vartype) : base($"Missing in wolven rtti: ({vartype})")
-        {
-        }
+namespace WolvenKit.RED4.Types.Exceptions;
 
-        public MissingRTTIException(string varname, string vartype, string parenttype) : base($"Missing in wolven rtti: ({vartype}){varname} in {parenttype}")
-        {
-        }
+public class MissingRTTIException : Exception
+{
+    public MissingRTTIException(string vartype) : base($"Missing in wolven rtti: ({vartype})")
+    {
     }
 
-    public class InvalidRTTIException : Exception
+    public MissingRTTIException(string varname, string vartype, string parenttype) : base($"Missing in wolven rtti: ({vartype}){varname} in {parenttype}")
     {
-        public InvalidRTTIException(string propName, Type expectedType, Type actualType) : base($"Invalid in wolven rtti:\"{propName}\" [Expected: \"{expectedType.Name}\" | Got: \"{actualType.Name}\"]")
-        {
-        }
+    }
+}
+
+public class InvalidRTTIException : Exception
+{
+    public InvalidRTTIException(string propName, Type expectedType, Type actualType) : base($"Invalid in wolven rtti:\"{propName}\" [Expected: \"{expectedType.Name}\" | Got: \"{actualType.Name}\"]")
+    {
     }
 }

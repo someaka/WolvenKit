@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OneHandedClubLookAtEvents : LookAtPresetMeleeBaseEvents
 {
-	[REDMeta]
-	public partial class OneHandedClubLookAtEvents : LookAtPresetMeleeBaseEvents
+	public OneHandedClubLookAtEvents()
 	{
-		public OneHandedClubLookAtEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

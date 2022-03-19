@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnFocusReceived : inkFocusEvent
 {
-	[REDMeta]
-	public partial class OnFocusReceived : inkFocusEvent
+	public OnFocusReceived()
 	{
-		public OnFocusReceived()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

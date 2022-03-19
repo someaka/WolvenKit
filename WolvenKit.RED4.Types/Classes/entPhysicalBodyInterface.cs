@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entPhysicalBodyInterface : IScriptable
 {
-	[REDMeta]
-	public partial class entPhysicalBodyInterface : IScriptable
+	public entPhysicalBodyInterface()
 	{
-		public entPhysicalBodyInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

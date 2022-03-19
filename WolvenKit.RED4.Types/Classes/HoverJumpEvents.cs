@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HoverJumpEvents : LocomotionAirEvents
 {
-	[REDMeta]
-	public partial class HoverJumpEvents : LocomotionAirEvents
+	public HoverJumpEvents()
 	{
-		public HoverJumpEvents()
-		{
-			UpdateInputToggles = true;
+		UpdateInputToggles = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

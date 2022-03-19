@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldOffMeshUserData : ISerializable
 {
-	[REDMeta]
-	public partial class worldOffMeshUserData : ISerializable
+	public worldOffMeshUserData()
 	{
-		public worldOffMeshUserData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

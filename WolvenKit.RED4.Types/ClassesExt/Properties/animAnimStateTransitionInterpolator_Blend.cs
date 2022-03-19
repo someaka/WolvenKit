@@ -1,19 +1,18 @@
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class animAnimStateTransitionInterpolator_Blend
 {
-    public partial class animAnimStateTransitionInterpolator_Blend
+    [Ordinal(999)]
+    [RED("visTransitionDuration")]
+    public CFloat VisTransitionDuration
     {
-        [Ordinal(999)]
-        [RED("visTransitionDuration")]
-        public CFloat VisTransitionDuration
-        {
-            get => GetPropertyValue<CFloat>();
-            set => SetPropertyValue<CFloat>(value);
-        }
+        get => GetPropertyValue<CFloat>();
+        set => SetPropertyValue<CFloat>(value);
+    }
 
 
-        partial void PostConstruct()
-        {
-            VisTransitionDuration = 1F;
-        }
+    partial void PostConstruct()
+    {
+        VisTransitionDuration = 1F;
     }
 }

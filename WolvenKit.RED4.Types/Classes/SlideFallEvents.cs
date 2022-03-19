@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SlideFallEvents : LocomotionAirEvents
 {
-	[REDMeta]
-	public partial class SlideFallEvents : LocomotionAirEvents
+	public SlideFallEvents()
 	{
-		public SlideFallEvents()
-		{
-			UpdateInputToggles = true;
+		UpdateInputToggles = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

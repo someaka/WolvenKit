@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questRootInstance : questPhaseInstance
 {
-	[REDMeta]
-	public partial class questRootInstance : questPhaseInstance
+	public questRootInstance()
 	{
-		public questRootInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workSlowExitCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workSlowExitCommandData : workIWorkspotCommandData
+	public workSlowExitCommandData()
 	{
-		public workSlowExitCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

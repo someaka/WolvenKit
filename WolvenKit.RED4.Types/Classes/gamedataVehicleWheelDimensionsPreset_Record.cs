@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVehicleWheelDimensionsPreset_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataVehicleWheelDimensionsPreset_Record : gamedataTweakDBRecord
+	public gamedataVehicleWheelDimensionsPreset_Record()
 	{
-		public gamedataVehicleWheelDimensionsPreset_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

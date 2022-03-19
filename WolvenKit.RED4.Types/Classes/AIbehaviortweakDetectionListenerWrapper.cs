@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviortweakDetectionListenerWrapper : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviortweakDetectionListenerWrapper : RedBaseClass
+	public AIbehaviortweakDetectionListenerWrapper()
 	{
-		public AIbehaviortweakDetectionListenerWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SceneCustomData_ReflectionAtlas : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class SceneCustomData_ReflectionAtlas : ISceneStorageCustomData
+	public SceneCustomData_ReflectionAtlas()
 	{
-		public SceneCustomData_ReflectionAtlas()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

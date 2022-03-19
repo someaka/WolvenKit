@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIntervalTimer : gameBaseTimer
 {
-	[REDMeta]
-	public partial class gameIntervalTimer : gameBaseTimer
+	public gameIntervalTimer()
 	{
-		public gameIntervalTimer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

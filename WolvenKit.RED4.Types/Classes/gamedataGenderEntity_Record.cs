@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataGenderEntity_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataGenderEntity_Record : gamedataTweakDBRecord
+	public gamedataGenderEntity_Record()
 	{
-		public gamedataGenderEntity_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

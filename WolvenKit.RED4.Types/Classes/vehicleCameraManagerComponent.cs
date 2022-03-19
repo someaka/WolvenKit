@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleCameraManagerComponent : gameComponent
 {
-	[REDMeta]
-	public partial class vehicleCameraManagerComponent : gameComponent
+	public vehicleCameraManagerComponent()
 	{
-		public vehicleCameraManagerComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

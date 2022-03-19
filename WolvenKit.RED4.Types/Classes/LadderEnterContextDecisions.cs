@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LadderEnterContextDecisions : InputContextTransitionDecisions
 {
-	[REDMeta]
-	public partial class LadderEnterContextDecisions : InputContextTransitionDecisions
+	public LadderEnterContextDecisions()
 	{
-		public LadderEnterContextDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

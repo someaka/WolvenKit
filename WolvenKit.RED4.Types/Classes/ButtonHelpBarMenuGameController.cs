@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ButtonHelpBarMenuGameController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class ButtonHelpBarMenuGameController : inkWidgetLogicController
+	public ButtonHelpBarMenuGameController()
 	{
-		public ButtonHelpBarMenuGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

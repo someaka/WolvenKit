@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questTimeCondition : questTypedCondition
 {
-	[REDMeta]
-	public partial class questTimeCondition : questTypedCondition
+	[Ordinal(0)] 
+	[RED("type")] 
+	public CHandle<questITimeConditionType> Type
 	{
-		[Ordinal(0)] 
-		[RED("type")] 
-		public CHandle<questITimeConditionType> Type
-		{
-			get => GetPropertyValue<CHandle<questITimeConditionType>>();
-			set => SetPropertyValue<CHandle<questITimeConditionType>>(value);
-		}
-
-		public questTimeCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<questITimeConditionType>>();
+		set => SetPropertyValue<CHandle<questITimeConditionType>>(value);
 	}
+
+	public questTimeCondition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

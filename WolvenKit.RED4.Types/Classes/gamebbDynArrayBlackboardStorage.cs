@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamebbDynArrayBlackboardStorage : RedBaseClass
 {
-	[REDMeta]
-	public partial class gamebbDynArrayBlackboardStorage : RedBaseClass
+	public gamebbDynArrayBlackboardStorage()
 	{
-		public gamebbDynArrayBlackboardStorage()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

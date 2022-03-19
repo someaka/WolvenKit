@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questAudioFocusNodeType : questIAudioNodeType
 {
-	[REDMeta]
-	public partial class questAudioFocusNodeType : questIAudioNodeType
+	public questAudioFocusNodeType()
 	{
-		public questAudioFocusNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

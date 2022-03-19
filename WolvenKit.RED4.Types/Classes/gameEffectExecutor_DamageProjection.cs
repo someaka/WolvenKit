@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectExecutor_DamageProjection : gameEffectExecutor
 {
-	[REDMeta]
-	public partial class gameEffectExecutor_DamageProjection : gameEffectExecutor
+	public gameEffectExecutor_DamageProjection()
 	{
-		public gameEffectExecutor_DamageProjection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WidgetHudComponent : WidgetHudComponentInterface
 {
-	[REDMeta]
-	public partial class WidgetHudComponent : WidgetHudComponentInterface
+	public WidgetHudComponent()
 	{
-		public WidgetHudComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

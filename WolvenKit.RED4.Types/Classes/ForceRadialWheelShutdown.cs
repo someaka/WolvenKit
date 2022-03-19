@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceRadialWheelShutdown : redEvent
 {
-	[REDMeta]
-	public partial class ForceRadialWheelShutdown : redEvent
+	public ForceRadialWheelShutdown()
 	{
-		public ForceRadialWheelShutdown()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameInnerItemData : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameInnerItemData : RedBaseClass
+	public gameInnerItemData()
 	{
-		public gameInnerItemData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectDurationModifierScriptContext : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameEffectDurationModifierScriptContext : RedBaseClass
+	public gameEffectDurationModifierScriptContext()
 	{
-		public gameEffectDurationModifierScriptContext()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

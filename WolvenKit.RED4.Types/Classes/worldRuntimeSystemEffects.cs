@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemEffects : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemEffects : worldIRuntimeSystem
+	public worldRuntimeSystemEffects()
 	{
-		public worldRuntimeSystemEffects()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

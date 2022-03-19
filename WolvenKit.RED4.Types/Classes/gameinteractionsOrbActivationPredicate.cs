@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsOrbActivationPredicate : gameinteractionsIPredicateType
 {
-	[REDMeta]
-	public partial class gameinteractionsOrbActivationPredicate : gameinteractionsIPredicateType
+	public gameinteractionsOrbActivationPredicate()
 	{
-		public gameinteractionsOrbActivationPredicate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

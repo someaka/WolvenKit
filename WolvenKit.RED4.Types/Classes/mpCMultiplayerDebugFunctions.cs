@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class mpCMultiplayerDebugFunctions : RedBaseClass
 {
-	[REDMeta]
-	public partial class mpCMultiplayerDebugFunctions : RedBaseClass
+	public mpCMultiplayerDebugFunctions()
 	{
-		public mpCMultiplayerDebugFunctions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

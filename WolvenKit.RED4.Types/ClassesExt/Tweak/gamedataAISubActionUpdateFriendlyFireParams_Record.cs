@@ -1,14 +1,13 @@
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class gamedataAISubActionUpdateFriendlyFireParams_Record
 {
-	public partial class gamedataAISubActionUpdateFriendlyFireParams_Record
-	{
-		[RED("updateOnDeactivate")]
-		[REDProperty(IsIgnored = true)]
-		public CBool UpdateOnDeactivate
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-	}
+    [RED("updateOnDeactivate")]
+    [REDProperty(IsIgnored = true)]
+    public CBool UpdateOnDeactivate
+    {
+        get => GetPropertyValue<CBool>();
+        set => SetPropertyValue<CBool>(value);
+    }
 }

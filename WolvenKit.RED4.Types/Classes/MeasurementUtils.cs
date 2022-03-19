@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeasurementUtils : RedBaseClass
 {
-	[REDMeta]
-	public partial class MeasurementUtils : RedBaseClass
+	public MeasurementUtils()
 	{
-		public MeasurementUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameaudioeventsPickUpBodyBreathingEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameaudioeventsPickUpBodyBreathingEvent : redEvent
+	public gameaudioeventsPickUpBodyBreathingEvent()
 	{
-		public gameaudioeventsPickUpBodyBreathingEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

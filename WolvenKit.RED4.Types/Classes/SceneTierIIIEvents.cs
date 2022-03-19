@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SceneTierIIIEvents : SceneTierAbstractEvents
 {
-	[REDMeta]
-	public partial class SceneTierIIIEvents : SceneTierAbstractEvents
+	public SceneTierIIIEvents()
 	{
-		public SceneTierIIIEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameReplAnimTransformRequestBase : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameReplAnimTransformRequestBase : RedBaseClass
+	[Ordinal(0)] 
+	[RED("applyServerTime")] 
+	public netTime ApplyServerTime
 	{
-		[Ordinal(0)] 
-		[RED("applyServerTime")] 
-		public netTime ApplyServerTime
-		{
-			get => GetPropertyValue<netTime>();
-			set => SetPropertyValue<netTime>(value);
-		}
-
-		public gameReplAnimTransformRequestBase()
-		{
-			ApplyServerTime = new() { MilliSecs = 18446744073709551615 };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<netTime>();
+		set => SetPropertyValue<netTime>(value);
 	}
+
+	public gameReplAnimTransformRequestBase()
+	{
+		ApplyServerTime = new() { MilliSecs = 18446744073709551615 };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

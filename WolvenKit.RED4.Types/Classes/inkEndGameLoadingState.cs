@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkEndGameLoadingState : inkIStateMachineState
 {
-	[REDMeta]
-	public partial class inkEndGameLoadingState : inkIStateMachineState
+	public inkEndGameLoadingState()
 	{
-		public inkEndGameLoadingState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

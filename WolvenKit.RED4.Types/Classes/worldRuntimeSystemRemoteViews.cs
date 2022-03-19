@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemRemoteViews : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemRemoteViews : worldIRuntimeSystem
+	public worldRuntimeSystemRemoteViews()
 	{
-		public worldRuntimeSystemRemoteViews()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldNavigationScriptObstacle : IScriptable
 {
-	[REDMeta]
-	public partial class worldNavigationScriptObstacle : IScriptable
+	public worldNavigationScriptObstacle()
 	{
-		public worldNavigationScriptObstacle()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

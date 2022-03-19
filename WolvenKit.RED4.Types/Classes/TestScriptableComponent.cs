@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TestScriptableComponent : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class TestScriptableComponent : gameScriptableComponent
+	public TestScriptableComponent()
 	{
-		public TestScriptableComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

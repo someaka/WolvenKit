@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TestStackScript : AIbehaviortaskStackScript
 {
-	[REDMeta]
-	public partial class TestStackScript : AIbehaviortaskStackScript
+	public TestStackScript()
 	{
-		public TestStackScript()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

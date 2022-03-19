@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CandleController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class CandleController : ScriptableDeviceComponent
+	public CandleController()
 	{
-		public CandleController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

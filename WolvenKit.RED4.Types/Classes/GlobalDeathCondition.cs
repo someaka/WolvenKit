@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GlobalDeathCondition : AIDeathConditions
 {
-	[REDMeta]
-	public partial class GlobalDeathCondition : AIDeathConditions
+	public GlobalDeathCondition()
 	{
-		public GlobalDeathCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

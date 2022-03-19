@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameJournalPrimaryFolderEntry : gameJournalFolderEntry
 {
-	[REDMeta]
-	public partial class gameJournalPrimaryFolderEntry : gameJournalFolderEntry
+	public gameJournalPrimaryFolderEntry()
 	{
-		public gameJournalPrimaryFolderEntry()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

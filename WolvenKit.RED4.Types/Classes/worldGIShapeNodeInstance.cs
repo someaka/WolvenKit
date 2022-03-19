@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldGIShapeNodeInstance : worldGeometryShapeNodeInstance
 {
-	[REDMeta]
-	public partial class worldGIShapeNodeInstance : worldGeometryShapeNodeInstance
+	public worldGIShapeNodeInstance()
 	{
-		public worldGIShapeNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

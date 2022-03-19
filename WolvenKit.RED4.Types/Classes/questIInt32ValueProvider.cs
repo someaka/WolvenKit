@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIInt32ValueProvider : ISerializable
 {
-	[REDMeta]
-	public partial class questIInt32ValueProvider : ISerializable
+	public questIInt32ValueProvider()
 	{
-		public questIInt32ValueProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

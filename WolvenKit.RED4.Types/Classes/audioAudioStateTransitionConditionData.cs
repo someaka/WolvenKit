@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audioAudioStateTransitionConditionData : audioAudioMetadata
 {
-	[REDMeta]
-	public partial class audioAudioStateTransitionConditionData : audioAudioMetadata
+	public audioAudioStateTransitionConditionData()
 	{
-		public audioAudioStateTransitionConditionData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

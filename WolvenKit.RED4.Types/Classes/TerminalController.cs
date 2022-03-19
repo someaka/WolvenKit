@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TerminalController : MasterController
 {
-	[REDMeta]
-	public partial class TerminalController : MasterController
+	public TerminalController()
 	{
-		public TerminalController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

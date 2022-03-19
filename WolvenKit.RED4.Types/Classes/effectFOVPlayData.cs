@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectFOVPlayData : effectPlacedTrackItemPlayData
 {
-	[REDMeta]
-	public partial class effectFOVPlayData : effectPlacedTrackItemPlayData
+	public effectFOVPlayData()
 	{
-		public effectFOVPlayData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

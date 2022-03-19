@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ElectricLightController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class ElectricLightController : ScriptableDeviceComponent
+	public ElectricLightController()
 	{
-		public ElectricLightController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

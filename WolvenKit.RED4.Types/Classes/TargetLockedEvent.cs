@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TargetLockedEvent : redEvent
 {
-	[REDMeta]
-	public partial class TargetLockedEvent : redEvent
+	public TargetLockedEvent()
 	{
-		public TargetLockedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

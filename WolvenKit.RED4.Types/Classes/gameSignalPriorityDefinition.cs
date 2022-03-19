@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSignalPriorityDefinition : ISerializable
 {
-	[REDMeta]
-	public partial class gameSignalPriorityDefinition : ISerializable
+	[Ordinal(0)] 
+	[RED("defaultPriority")] 
+	public CUInt16 DefaultPriority
 	{
-		[Ordinal(0)] 
-		[RED("defaultPriority")] 
-		public CUInt16 DefaultPriority
-		{
-			get => GetPropertyValue<CUInt16>();
-			set => SetPropertyValue<CUInt16>(value);
-		}
-
-		public gameSignalPriorityDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CUInt16>();
+		set => SetPropertyValue<CUInt16>(value);
 	}
+
+	public gameSignalPriorityDefinition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

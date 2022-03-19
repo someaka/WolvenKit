@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StanceNPCStatePrereqState : NPCStatePrereqState
 {
-	[REDMeta]
-	public partial class StanceNPCStatePrereqState : NPCStatePrereqState
+	public StanceNPCStatePrereqState()
 	{
-		public StanceNPCStatePrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

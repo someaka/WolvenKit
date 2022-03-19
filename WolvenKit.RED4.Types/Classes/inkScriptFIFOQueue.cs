@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkScriptFIFOQueue : IScriptable
 {
-	[REDMeta]
-	public partial class inkScriptFIFOQueue : IScriptable
+	public inkScriptFIFOQueue()
 	{
-		public inkScriptFIFOQueue()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

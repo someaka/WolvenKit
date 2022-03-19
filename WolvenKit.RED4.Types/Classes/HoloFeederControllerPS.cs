@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HoloFeederControllerPS : ScriptableDeviceComponentPS
 {
-	[REDMeta]
-	public partial class HoloFeederControllerPS : ScriptableDeviceComponentPS
+	public HoloFeederControllerPS()
 	{
-		public HoloFeederControllerPS()
-		{
-			DeviceName = "LocKey#95";
-			TweakDBRecord = 77660230936;
-			TweakDBDescriptionRecord = 131405305371;
+		DeviceName = "LocKey#95";
+		TweakDBRecord = 77660230936;
+		TweakDBDescriptionRecord = 131405305371;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

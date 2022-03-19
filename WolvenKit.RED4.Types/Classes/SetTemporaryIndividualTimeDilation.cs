@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetTemporaryIndividualTimeDilation : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class SetTemporaryIndividualTimeDilation : gameEffectExecutor_Scripted
+	public SetTemporaryIndividualTimeDilation()
 	{
-		public SetTemporaryIndividualTimeDilation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

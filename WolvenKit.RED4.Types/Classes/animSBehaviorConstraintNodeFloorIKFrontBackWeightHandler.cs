@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animSBehaviorConstraintNodeFloorIKFrontBackWeightHandler : RedBaseClass
 {
-	[REDMeta]
-	public partial class animSBehaviorConstraintNodeFloorIKFrontBackWeightHandler : RedBaseClass
+	public animSBehaviorConstraintNodeFloorIKFrontBackWeightHandler()
 	{
-		public animSBehaviorConstraintNodeFloorIKFrontBackWeightHandler()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

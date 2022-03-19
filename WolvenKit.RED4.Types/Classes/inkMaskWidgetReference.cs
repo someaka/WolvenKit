@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMaskWidgetReference : inkLeafWidgetReference
 {
-	[REDMeta]
-	public partial class inkMaskWidgetReference : inkLeafWidgetReference
+	public inkMaskWidgetReference()
 	{
-		public inkMaskWidgetReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

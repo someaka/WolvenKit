@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IEvaluator : ISerializable
 {
-	[REDMeta]
-	public partial class IEvaluator : ISerializable
+	public IEvaluator()
 	{
-		public IEvaluator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

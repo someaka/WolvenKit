@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RequestThumbnailWidgetsUpdateEvent : RequestWidgetUpdateEvent
 {
-	[REDMeta]
-	public partial class RequestThumbnailWidgetsUpdateEvent : RequestWidgetUpdateEvent
+	public RequestThumbnailWidgetsUpdateEvent()
 	{
-		public RequestThumbnailWidgetsUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

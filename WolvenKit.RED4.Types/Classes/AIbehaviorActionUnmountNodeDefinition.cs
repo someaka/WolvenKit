@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorActionUnmountNodeDefinition : AIbehaviorActionMountHandlingNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorActionUnmountNodeDefinition : AIbehaviorActionMountHandlingNodeDefinition
+	[Ordinal(1)] 
+	[RED("mountData")] 
+	public CHandle<AIArgumentMapping> MountData
 	{
-		[Ordinal(1)] 
-		[RED("mountData")] 
-		public CHandle<AIArgumentMapping> MountData
-		{
-			get => GetPropertyValue<CHandle<AIArgumentMapping>>();
-			set => SetPropertyValue<CHandle<AIArgumentMapping>>(value);
-		}
-
-		public AIbehaviorActionUnmountNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<AIArgumentMapping>>();
+		set => SetPropertyValue<CHandle<AIArgumentMapping>>(value);
 	}
+
+	public AIbehaviorActionUnmountNodeDefinition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

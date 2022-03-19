@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnIScalingData : ISerializable
 {
-	[REDMeta]
-	public partial class scnIScalingData : ISerializable
+	public scnIScalingData()
 	{
-		public scnIScalingData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

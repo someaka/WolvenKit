@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAINetStateComponent : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class gameAINetStateComponent : gameScriptableComponent
+	public gameAINetStateComponent()
 	{
-		public gameAINetStateComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

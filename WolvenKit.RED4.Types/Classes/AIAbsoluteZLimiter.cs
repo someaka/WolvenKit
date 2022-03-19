@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIAbsoluteZLimiter : AICoverSelectionParameters
 {
-	[REDMeta]
-	public partial class AIAbsoluteZLimiter : AICoverSelectionParameters
+	public AIAbsoluteZLimiter()
 	{
-		public AIAbsoluteZLimiter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

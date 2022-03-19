@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePlayerSocket : RedBaseClass
 {
-	[REDMeta]
-	public partial class gamePlayerSocket : RedBaseClass
+	public gamePlayerSocket()
 	{
-		public gamePlayerSocket()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IDisplayData : IScriptable
 {
-	[REDMeta]
-	public partial class IDisplayData : IScriptable
+	public IDisplayData()
 	{
-		public IDisplayData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

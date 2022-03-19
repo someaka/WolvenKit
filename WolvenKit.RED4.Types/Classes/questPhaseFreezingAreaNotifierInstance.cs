@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questPhaseFreezingAreaNotifierInstance : worldITriggerAreaNotiferInstance
 {
-	[REDMeta]
-	public partial class questPhaseFreezingAreaNotifierInstance : worldITriggerAreaNotiferInstance
+	public questPhaseFreezingAreaNotifierInstance()
 	{
-		public questPhaseFreezingAreaNotifierInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

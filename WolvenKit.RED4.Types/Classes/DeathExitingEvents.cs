@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeathExitingEvents : ImmediateExitWithForceEvents
 {
-	[REDMeta]
-	public partial class DeathExitingEvents : ImmediateExitWithForceEvents
+	public DeathExitingEvents()
 	{
-		public DeathExitingEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BasicViabilityInterpreter : IScriptable
 {
-	[REDMeta]
-	public partial class BasicViabilityInterpreter : IScriptable
+	public BasicViabilityInterpreter()
 	{
-		public BasicViabilityInterpreter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVehicleWheelsFrictionPreset_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataVehicleWheelsFrictionPreset_Record : gamedataTweakDBRecord
+	public gamedataVehicleWheelsFrictionPreset_Record()
 	{
-		public gamedataVehicleWheelsFrictionPreset_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

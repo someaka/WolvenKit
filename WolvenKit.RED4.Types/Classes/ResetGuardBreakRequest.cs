@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetGuardBreakRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ResetGuardBreakRequest : gameScriptableSystemRequest
+	public ResetGuardBreakRequest()
 	{
-		public ResetGuardBreakRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

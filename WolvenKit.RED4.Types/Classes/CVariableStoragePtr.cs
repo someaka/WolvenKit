@@ -1,15 +1,12 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+[REDClass(SerializeDefault = true)]
+public partial class CVariableStoragePtr : RedBaseClass
 {
-	[REDMeta]
-	[REDClass(SerializeDefault = true)]
-	public partial class CVariableStoragePtr : RedBaseClass
+	public CVariableStoragePtr()
 	{
-		public CVariableStoragePtr()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

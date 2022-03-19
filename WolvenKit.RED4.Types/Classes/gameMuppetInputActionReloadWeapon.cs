@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMuppetInputActionReloadWeapon : gameIMuppetInputAction
 {
-	[REDMeta]
-	public partial class gameMuppetInputActionReloadWeapon : gameIMuppetInputAction
+	public gameMuppetInputActionReloadWeapon()
 	{
-		public gameMuppetInputActionReloadWeapon()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

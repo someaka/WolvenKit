@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkGameNotificationEvt : redEvent
 {
-	[REDMeta]
-	public partial class inkGameNotificationEvt : redEvent
+	public inkGameNotificationEvt()
 	{
-		public inkGameNotificationEvt()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

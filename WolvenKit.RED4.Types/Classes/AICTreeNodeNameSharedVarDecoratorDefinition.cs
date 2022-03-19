@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICTreeNodeNameSharedVarDecoratorDefinition : AICTreeNodeSingleSharedVarDecoratorDefinition
 {
-	[REDMeta]
-	public partial class AICTreeNodeNameSharedVarDecoratorDefinition : AICTreeNodeSingleSharedVarDecoratorDefinition
+	public AICTreeNodeNameSharedVarDecoratorDefinition()
 	{
-		public AICTreeNodeNameSharedVarDecoratorDefinition()
-		{
-			SharedVarName = new();
+		SharedVarName = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

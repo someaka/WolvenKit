@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questTriggerNotifier_QuestInstance : worldITriggerAreaNotiferInstance
 {
-	[REDMeta]
-	public partial class questTriggerNotifier_QuestInstance : worldITriggerAreaNotiferInstance
+	public questTriggerNotifier_QuestInstance()
 	{
-		public questTriggerNotifier_QuestInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

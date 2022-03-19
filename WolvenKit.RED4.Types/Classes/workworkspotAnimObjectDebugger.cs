@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workworkspotAnimObjectDebugger : workDebuggingTool
 {
-	[REDMeta]
-	public partial class workworkspotAnimObjectDebugger : workDebuggingTool
+	public workworkspotAnimObjectDebugger()
 	{
-		public workworkspotAnimObjectDebugger()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

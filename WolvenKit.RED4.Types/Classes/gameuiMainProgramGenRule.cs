@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiMainProgramGenRule : gameuiMinigameGenerationRule
 {
-	[REDMeta]
-	public partial class gameuiMainProgramGenRule : gameuiMinigameGenerationRule
+	public gameuiMainProgramGenRule()
 	{
-		public gameuiMainProgramGenRule()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animPoseInfoLoggerEntry : ISerializable
 {
-	[REDMeta]
-	public partial class animPoseInfoLoggerEntry : ISerializable
+	public animPoseInfoLoggerEntry()
 	{
-		public animPoseInfoLoggerEntry()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

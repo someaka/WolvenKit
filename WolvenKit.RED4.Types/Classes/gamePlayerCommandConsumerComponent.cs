@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePlayerCommandConsumerComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gamePlayerCommandConsumerComponent : entIComponent
+	public gamePlayerCommandConsumerComponent()
 	{
-		public gamePlayerCommandConsumerComponent()
-		{
-			Name = "PlayerCommandConsumer";
+		Name = "PlayerCommandConsumer";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

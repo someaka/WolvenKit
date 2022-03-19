@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FilterStimTargets : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class FilterStimTargets : gameEffectObjectSingleFilter_Scripted
+	public FilterStimTargets()
 	{
-		public FilterStimTargets()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

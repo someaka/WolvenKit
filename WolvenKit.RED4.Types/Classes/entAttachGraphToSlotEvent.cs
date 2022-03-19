@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAttachGraphToSlotEvent : redEvent
 {
-	[REDMeta]
-	public partial class entAttachGraphToSlotEvent : redEvent
+	public entAttachGraphToSlotEvent()
 	{
-		public entAttachGraphToSlotEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

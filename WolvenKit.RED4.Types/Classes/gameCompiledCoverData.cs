@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCompiledCoverData : gameCompiledSmartObjectData
 {
-	[REDMeta]
-	public partial class gameCompiledCoverData : gameCompiledSmartObjectData
+	public gameCompiledCoverData()
 	{
-		public gameCompiledCoverData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

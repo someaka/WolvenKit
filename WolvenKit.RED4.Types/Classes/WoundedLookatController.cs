@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WoundedLookatController : AIGenericEntityLookatTask
 {
-	[REDMeta]
-	public partial class WoundedLookatController : AIGenericEntityLookatTask
+	public WoundedLookatController()
 	{
-		public WoundedLookatController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

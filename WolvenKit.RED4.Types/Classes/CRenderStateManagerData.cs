@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CRenderStateManagerData : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class CRenderStateManagerData : ICameraStorageCustomData
+	public CRenderStateManagerData()
 	{
-		public CRenderStateManagerData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

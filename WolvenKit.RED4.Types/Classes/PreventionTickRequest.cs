@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PreventionTickRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class PreventionTickRequest : gameScriptableSystemRequest
+	public PreventionTickRequest()
 	{
-		public PreventionTickRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

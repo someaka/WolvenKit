@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIJoinTrafficEvent : AIAIEvent
 {
-	[REDMeta]
-	public partial class AIJoinTrafficEvent : AIAIEvent
+	public AIJoinTrafficEvent()
 	{
-		public AIJoinTrafficEvent()
-		{
-			Name = "runAwayOnTraffic";
+		Name = "runAwayOnTraffic";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

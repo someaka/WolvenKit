@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldWeatherScriptInterface : IScriptable
 {
-	[REDMeta]
-	public partial class worldWeatherScriptInterface : IScriptable
+	public worldWeatherScriptInterface()
 	{
-		public worldWeatherScriptInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

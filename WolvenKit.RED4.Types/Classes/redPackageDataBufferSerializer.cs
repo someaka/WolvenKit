@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class redPackageDataBufferSerializer : redPackageCustomTypeSerializer
 {
-	[REDMeta]
-	public partial class redPackageDataBufferSerializer : redPackageCustomTypeSerializer
+	public redPackageDataBufferSerializer()
 	{
-		public redPackageDataBufferSerializer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

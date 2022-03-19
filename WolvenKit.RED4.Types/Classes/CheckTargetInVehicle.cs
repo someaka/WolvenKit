@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckTargetInVehicle : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class CheckTargetInVehicle : AIbehaviorconditionScript
+	public CheckTargetInVehicle()
 	{
-		public CheckTargetInVehicle()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

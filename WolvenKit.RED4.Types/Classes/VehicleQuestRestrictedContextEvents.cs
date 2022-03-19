@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleQuestRestrictedContextEvents : VehicleNoDriveContextEvents
 {
-	[REDMeta]
-	public partial class VehicleQuestRestrictedContextEvents : VehicleNoDriveContextEvents
+	public VehicleQuestRestrictedContextEvents()
 	{
-		public VehicleQuestRestrictedContextEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

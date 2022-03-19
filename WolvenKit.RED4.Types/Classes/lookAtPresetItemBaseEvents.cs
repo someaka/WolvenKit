@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class lookAtPresetItemBaseEvents : LookAtPresetBaseEvents
 {
-	[REDMeta]
-	public partial class lookAtPresetItemBaseEvents : LookAtPresetBaseEvents
+	public lookAtPresetItemBaseEvents()
 	{
-		public lookAtPresetItemBaseEvents()
-		{
-			LookAtEvents = new();
+		LookAtEvents = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

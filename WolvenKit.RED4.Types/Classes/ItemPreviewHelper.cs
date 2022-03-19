@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemPreviewHelper : IScriptable
 {
-	[REDMeta]
-	public partial class ItemPreviewHelper : IScriptable
+	public ItemPreviewHelper()
 	{
-		public ItemPreviewHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleHealthStatPoolListener : gameCustomValueStatPoolsListener
 {
-	[REDMeta]
-	public partial class VehicleHealthStatPoolListener : gameCustomValueStatPoolsListener
+	[Ordinal(0)] 
+	[RED("owner")] 
+	public CWeakHandle<vehicleBaseObject> Owner
 	{
-		[Ordinal(0)] 
-		[RED("owner")] 
-		public CWeakHandle<vehicleBaseObject> Owner
-		{
-			get => GetPropertyValue<CWeakHandle<vehicleBaseObject>>();
-			set => SetPropertyValue<CWeakHandle<vehicleBaseObject>>(value);
-		}
-
-		public VehicleHealthStatPoolListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<vehicleBaseObject>>();
+		set => SetPropertyValue<CWeakHandle<vehicleBaseObject>>(value);
 	}
+
+	public VehicleHealthStatPoolListener()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

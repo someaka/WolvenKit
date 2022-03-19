@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkAdvertisementsLayerDefinition : inkLayerDefinition
 {
-	[REDMeta]
-	public partial class inkAdvertisementsLayerDefinition : inkLayerDefinition
+	public inkAdvertisementsLayerDefinition()
 	{
-		public inkAdvertisementsLayerDefinition()
-		{
-			ActiveByDefault = true;
+		ActiveByDefault = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

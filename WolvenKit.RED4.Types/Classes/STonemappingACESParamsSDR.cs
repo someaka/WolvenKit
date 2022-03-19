@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class STonemappingACESParamsSDR : STonemappingACESParams
 {
-	[REDMeta]
-	public partial class STonemappingACESParamsSDR : STonemappingACESParams
+	public STonemappingACESParamsSDR()
 	{
-		public STonemappingACESParamsSDR()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

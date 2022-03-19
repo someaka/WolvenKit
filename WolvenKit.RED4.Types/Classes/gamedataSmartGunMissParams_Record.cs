@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataSmartGunMissParams_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataSmartGunMissParams_Record : gamedataTweakDBRecord
+	public gamedataSmartGunMissParams_Record()
 	{
-		public gamedataSmartGunMissParams_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

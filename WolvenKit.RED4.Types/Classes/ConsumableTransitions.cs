@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConsumableTransitions : DefaultTransition
 {
-	[REDMeta]
-	public partial class ConsumableTransitions : DefaultTransition
+	public ConsumableTransitions()
 	{
-		public ConsumableTransitions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

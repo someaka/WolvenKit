@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class graphGraphDefinition : graphIGraphObjectDefinition
 {
-	[REDMeta]
-	public partial class graphGraphDefinition : graphIGraphObjectDefinition
+	[Ordinal(0)] 
+	[RED("nodes")] 
+	public CArray<CHandle<graphGraphNodeDefinition>> Nodes
 	{
-		[Ordinal(0)] 
-		[RED("nodes")] 
-		public CArray<CHandle<graphGraphNodeDefinition>> Nodes
-		{
-			get => GetPropertyValue<CArray<CHandle<graphGraphNodeDefinition>>>();
-			set => SetPropertyValue<CArray<CHandle<graphGraphNodeDefinition>>>(value);
-		}
-
-		public graphGraphDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<CHandle<graphGraphNodeDefinition>>>();
+		set => SetPropertyValue<CArray<CHandle<graphGraphNodeDefinition>>>(value);
 	}
+
+	public graphGraphDefinition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiMappinUIUtils : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameuiMappinUIUtils : RedBaseClass
+	public gameuiMappinUIUtils()
 	{
-		public gameuiMappinUIUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkDefaultCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkDefaultCallback : inkCallbackBase
+	public inkDefaultCallback()
 	{
-		public inkDefaultCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

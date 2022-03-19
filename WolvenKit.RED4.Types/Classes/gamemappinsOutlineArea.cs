@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsOutlineArea : gamemappinsIArea
 {
-	[REDMeta]
-	public partial class gamemappinsOutlineArea : gamemappinsIArea
+	public gamemappinsOutlineArea()
 	{
-		public gamemappinsOutlineArea()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

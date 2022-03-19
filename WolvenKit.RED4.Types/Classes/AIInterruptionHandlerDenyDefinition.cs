@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIInterruptionHandlerDenyDefinition : AIInterruptionHandlerDefinition
 {
-	[REDMeta]
-	public partial class AIInterruptionHandlerDenyDefinition : AIInterruptionHandlerDefinition
+	public AIInterruptionHandlerDenyDefinition()
 	{
-		public AIInterruptionHandlerDenyDefinition()
-		{
-			Signal = new() { Importance = Enums.AIEInterruptionImportance.Casual };
+		Signal = new() { Importance = Enums.AIEInterruptionImportance.Casual };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

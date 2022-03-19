@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISmartObjectManager : AIISmartObjectManager
 {
-	[REDMeta]
-	public partial class AISmartObjectManager : AIISmartObjectManager
+	public AISmartObjectManager()
 	{
-		public AISmartObjectManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

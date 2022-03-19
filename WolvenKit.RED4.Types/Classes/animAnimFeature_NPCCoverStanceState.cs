@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimFeature_NPCCoverStanceState : animAnimFeature_NPCState
 {
-	[REDMeta]
-	public partial class animAnimFeature_NPCCoverStanceState : animAnimFeature_NPCState
+	public animAnimFeature_NPCCoverStanceState()
 	{
-		public animAnimFeature_NPCCoverStanceState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

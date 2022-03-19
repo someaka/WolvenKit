@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animLookAtParams_Remove : ISerializable
 {
-	[REDMeta]
-	public partial class animLookAtParams_Remove : ISerializable
+	public animLookAtParams_Remove()
 	{
-		public animLookAtParams_Remove()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

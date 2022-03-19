@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorJoinFollowerSquadWithTargetDefinition : AIbehaviorTaskDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorJoinFollowerSquadWithTargetDefinition : AIbehaviorTaskDefinition
+	[Ordinal(1)] 
+	[RED("follower")] 
+	public CHandle<AIArgumentMapping> Follower
 	{
-		[Ordinal(1)] 
-		[RED("follower")] 
-		public CHandle<AIArgumentMapping> Follower
-		{
-			get => GetPropertyValue<CHandle<AIArgumentMapping>>();
-			set => SetPropertyValue<CHandle<AIArgumentMapping>>(value);
-		}
-
-		public AIbehaviorJoinFollowerSquadWithTargetDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<AIArgumentMapping>>();
+		set => SetPropertyValue<CHandle<AIArgumentMapping>>(value);
 	}
+
+	public AIbehaviorJoinFollowerSquadWithTargetDefinition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIStopCoverCommandParams : questScriptedAICommandParams
 {
-	[REDMeta]
-	public partial class AIStopCoverCommandParams : questScriptedAICommandParams
+	public AIStopCoverCommandParams()
 	{
-		public AIStopCoverCommandParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

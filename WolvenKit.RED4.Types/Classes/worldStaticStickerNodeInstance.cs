@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldStaticStickerNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldStaticStickerNodeInstance : worldINodeInstance
+	public worldStaticStickerNodeInstance()
 	{
-		public worldStaticStickerNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

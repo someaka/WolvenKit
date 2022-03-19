@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePlayerObstacleSystem : IScriptable
 {
-	[REDMeta]
-	public partial class gamePlayerObstacleSystem : IScriptable
+	public gamePlayerObstacleSystem()
 	{
-		public gamePlayerObstacleSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

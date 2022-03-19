@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AVComponent : VehicleComponent
 {
-	[REDMeta]
-	public partial class AVComponent : VehicleComponent
+	public AVComponent()
 	{
-		public AVComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

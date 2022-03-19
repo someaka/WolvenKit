@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimation_Effects : gameTransformAnimationTrackItemImpl
 {
-	[REDMeta]
-	public partial class gameTransformAnimation_Effects : gameTransformAnimationTrackItemImpl
+	public gameTransformAnimation_Effects()
 	{
-		public gameTransformAnimation_Effects()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

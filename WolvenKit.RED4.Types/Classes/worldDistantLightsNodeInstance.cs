@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDistantLightsNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldDistantLightsNodeInstance : worldINodeInstance
+	public worldDistantLightsNodeInstance()
 	{
-		public worldDistantLightsNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

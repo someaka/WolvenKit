@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TrafficZebra : TrafficLight
 {
-	[REDMeta]
-	public partial class TrafficZebra : TrafficLight
+	public TrafficZebra()
 	{
-		public TrafficZebra()
-		{
-			ControllerTypeName = "TrafficZebraController";
+		ControllerTypeName = "TrafficZebraController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

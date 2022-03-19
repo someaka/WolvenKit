@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DoorSystemControllerPS : BaseNetworkSystemControllerPS
 {
-	[REDMeta]
-	public partial class DoorSystemControllerPS : BaseNetworkSystemControllerPS
+	public DoorSystemControllerPS()
 	{
-		public DoorSystemControllerPS()
-		{
-			TweakDBRecord = 79792717846;
-			TweakDBDescriptionRecord = 129263239957;
+		TweakDBRecord = 79792717846;
+		TweakDBDescriptionRecord = 129263239957;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

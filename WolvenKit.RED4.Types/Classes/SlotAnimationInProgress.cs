@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SlotAnimationInProgress : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class SlotAnimationInProgress : AIbehaviorconditionScript
+	public SlotAnimationInProgress()
 	{
-		public SlotAnimationInProgress()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

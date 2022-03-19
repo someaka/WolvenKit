@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAIVelocityDotCond_Record : gamedataAIActionSubCondition_Record
 {
-	[REDMeta]
-	public partial class gamedataAIVelocityDotCond_Record : gamedataAIActionSubCondition_Record
+	public gamedataAIVelocityDotCond_Record()
 	{
-		public gamedataAIVelocityDotCond_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,34 +1,30 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RequestBreadCrumbBarUpdateEvent : redEvent
 {
-	[REDMeta]
-	public partial class RequestBreadCrumbBarUpdateEvent : redEvent
+	[Ordinal(0)] 
+	[RED("requester")] 
+	public gamePersistentID Requester
 	{
-		[Ordinal(0)] 
-		[RED("requester")] 
-		public gamePersistentID Requester
-		{
-			get => GetPropertyValue<gamePersistentID>();
-			set => SetPropertyValue<gamePersistentID>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("breadCrumbData")] 
-		public SBreadCrumbUpdateData BreadCrumbData
-		{
-			get => GetPropertyValue<SBreadCrumbUpdateData>();
-			set => SetPropertyValue<SBreadCrumbUpdateData>(value);
-		}
-
-		public RequestBreadCrumbBarUpdateEvent()
-		{
-			Requester = new();
-			BreadCrumbData = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gamePersistentID>();
+		set => SetPropertyValue<gamePersistentID>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("breadCrumbData")] 
+	public SBreadCrumbUpdateData BreadCrumbData
+	{
+		get => GetPropertyValue<SBreadCrumbUpdateData>();
+		set => SetPropertyValue<SBreadCrumbUpdateData>(value);
+	}
+
+	public RequestBreadCrumbBarUpdateEvent()
+	{
+		Requester = new();
+		BreadCrumbData = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

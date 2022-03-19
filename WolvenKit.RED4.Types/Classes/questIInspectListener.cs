@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIInspectListener : IScriptable
 {
-	[REDMeta]
-	public partial class questIInspectListener : IScriptable
+	public questIInspectListener()
 	{
-		public questIInspectListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

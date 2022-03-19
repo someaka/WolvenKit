@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MenuScenario_Vendor : MenuScenario_BaseMenu
 {
-	[REDMeta]
-	public partial class MenuScenario_Vendor : MenuScenario_BaseMenu
+	public MenuScenario_Vendor()
 	{
-		public MenuScenario_Vendor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

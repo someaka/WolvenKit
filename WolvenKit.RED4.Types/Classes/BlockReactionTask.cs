@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BlockReactionTask : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class BlockReactionTask : AIbehaviortaskScript
+	public BlockReactionTask()
 	{
-		public BlockReactionTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

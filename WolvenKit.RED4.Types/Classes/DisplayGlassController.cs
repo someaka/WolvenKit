@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisplayGlassController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class DisplayGlassController : ScriptableDeviceComponent
+	public DisplayGlassController()
 	{
-		public DisplayGlassController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

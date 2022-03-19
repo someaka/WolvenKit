@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceUpdateDefaultHighlightEvent : redEvent
 {
-	[REDMeta]
-	public partial class ForceUpdateDefaultHighlightEvent : redEvent
+	public ForceUpdateDefaultHighlightEvent()
 	{
-		public ForceUpdateDefaultHighlightEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

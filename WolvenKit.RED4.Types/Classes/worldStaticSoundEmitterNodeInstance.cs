@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldStaticSoundEmitterNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldStaticSoundEmitterNodeInstance : worldINodeInstance
+	public worldStaticSoundEmitterNodeInstance()
 	{
-		public worldStaticSoundEmitterNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LibTreeCMetanodeDefinition : LibTreeINodeDefinition
 {
-	[REDMeta]
-	public partial class LibTreeCMetanodeDefinition : LibTreeINodeDefinition
+	public LibTreeCMetanodeDefinition()
 	{
-		public LibTreeCMetanodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMuppetStates : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameMuppetStates : RedBaseClass
+	public gameMuppetStates()
 	{
-		public gameMuppetStates()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

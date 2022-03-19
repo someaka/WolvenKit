@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleBlockInputContextEvents : InputContextTransitionEvents
 {
-	[REDMeta]
-	public partial class VehicleBlockInputContextEvents : InputContextTransitionEvents
+	public VehicleBlockInputContextEvents()
 	{
-		public VehicleBlockInputContextEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

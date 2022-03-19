@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audiouiAudioHandler : IScriptable
 {
-	[REDMeta]
-	public partial class audiouiAudioHandler : IScriptable
+	public audiouiAudioHandler()
 	{
-		public audiouiAudioHandler()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

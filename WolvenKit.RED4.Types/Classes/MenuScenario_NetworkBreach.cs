@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MenuScenario_NetworkBreach : MenuScenario_BaseMenu
 {
-	[REDMeta]
-	public partial class MenuScenario_NetworkBreach : MenuScenario_BaseMenu
+	public MenuScenario_NetworkBreach()
 	{
-		public MenuScenario_NetworkBreach()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

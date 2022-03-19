@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animIKTargetParams_Remove : ISerializable
 {
-	[REDMeta]
-	public partial class animIKTargetParams_Remove : ISerializable
+	public animIKTargetParams_Remove()
 	{
-		public animIKTargetParams_Remove()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

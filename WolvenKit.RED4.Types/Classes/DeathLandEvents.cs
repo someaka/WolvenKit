@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeathLandEvents : FailedLandingAbstractEvents
 {
-	[REDMeta]
-	public partial class DeathLandEvents : FailedLandingAbstractEvents
+	public DeathLandEvents()
 	{
-		public DeathLandEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

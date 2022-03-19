@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WorldMapFiltersList : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class WorldMapFiltersList : inkWidgetLogicController
+	public WorldMapFiltersList()
 	{
-		public WorldMapFiltersList()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

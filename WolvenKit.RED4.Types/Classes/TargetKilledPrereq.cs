@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TargetKilledPrereq : GenericHitPrereq
 {
-	[REDMeta]
-	public partial class TargetKilledPrereq : GenericHitPrereq
+	public TargetKilledPrereq()
 	{
-		public TargetKilledPrereq()
-		{
-			PipelineStage = Enums.gameDamagePipelineStage.PostProcess;
+		PipelineStage = Enums.gameDamagePipelineStage.PostProcess;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

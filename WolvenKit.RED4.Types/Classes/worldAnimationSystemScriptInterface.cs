@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAnimationSystemScriptInterface : IScriptable
 {
-	[REDMeta]
-	public partial class worldAnimationSystemScriptInterface : IScriptable
+	public worldAnimationSystemScriptInterface()
 	{
-		public worldAnimationSystemScriptInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

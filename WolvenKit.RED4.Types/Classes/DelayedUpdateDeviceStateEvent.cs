@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DelayedUpdateDeviceStateEvent : redEvent
 {
-	[REDMeta]
-	public partial class DelayedUpdateDeviceStateEvent : redEvent
+	public DelayedUpdateDeviceStateEvent()
 	{
-		public DelayedUpdateDeviceStateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

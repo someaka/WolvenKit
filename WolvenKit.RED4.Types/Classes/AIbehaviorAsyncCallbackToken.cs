@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorAsyncCallbackToken : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviorAsyncCallbackToken : RedBaseClass
+	public AIbehaviorAsyncCallbackToken()
 	{
-		public AIbehaviorAsyncCallbackToken()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

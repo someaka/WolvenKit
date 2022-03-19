@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WakeUpFromRestartEvent : redEvent
 {
-	[REDMeta]
-	public partial class WakeUpFromRestartEvent : redEvent
+	public WakeUpFromRestartEvent()
 	{
-		public WakeUpFromRestartEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

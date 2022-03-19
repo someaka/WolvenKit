@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnHold : inkPointerEvent
 {
-	[REDMeta]
-	public partial class OnHold : inkPointerEvent
+	public OnHold()
 	{
-		public OnHold()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

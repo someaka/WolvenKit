@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetBackOffAnimFeature : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SetBackOffAnimFeature : AIbehaviortaskScript
+	public SetBackOffAnimFeature()
 	{
-		public SetBackOffAnimFeature()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

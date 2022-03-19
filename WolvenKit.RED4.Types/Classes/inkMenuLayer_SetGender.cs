@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMenuLayer_SetGender : redEvent
 {
-	[REDMeta]
-	public partial class inkMenuLayer_SetGender : redEvent
+	public inkMenuLayer_SetGender()
 	{
-		public inkMenuLayer_SetGender()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

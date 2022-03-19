@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActionNodeRef : ScriptableDeviceAction
 {
-	[REDMeta]
-	public partial class ActionNodeRef : ScriptableDeviceAction
+	public ActionNodeRef()
 	{
-		public ActionNodeRef()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameActionsReplicationBuffer : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameActionsReplicationBuffer : RedBaseClass
+	public gameActionsReplicationBuffer()
 	{
-		public gameActionsReplicationBuffer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

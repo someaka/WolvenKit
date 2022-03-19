@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DoorController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class DoorController : ScriptableDeviceComponent
+	public DoorController()
 	{
-		public DoorController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

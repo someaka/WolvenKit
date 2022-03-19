@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ComputerFullBannerWidgetController : ComputerBannerWidgetController
 {
-	[REDMeta]
-	public partial class ComputerFullBannerWidgetController : ComputerBannerWidgetController
+	[Ordinal(12)] 
+	[RED("closeButtonWidget")] 
+	public inkWidgetReference CloseButtonWidget
 	{
-		[Ordinal(12)] 
-		[RED("closeButtonWidget")] 
-		public inkWidgetReference CloseButtonWidget
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		public ComputerFullBannerWidgetController()
-		{
-			CloseButtonWidget = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	public ComputerFullBannerWidgetController()
+	{
+		CloseButtonWidget = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

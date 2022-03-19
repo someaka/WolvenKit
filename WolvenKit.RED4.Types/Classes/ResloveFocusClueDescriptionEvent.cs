@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResloveFocusClueDescriptionEvent : redEvent
 {
-	[REDMeta]
-	public partial class ResloveFocusClueDescriptionEvent : redEvent
+	public ResloveFocusClueDescriptionEvent()
 	{
-		public ResloveFocusClueDescriptionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

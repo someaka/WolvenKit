@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NPCRevealedPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class NPCRevealedPrereq : gameIScriptablePrereq
+	public NPCRevealedPrereq()
 	{
-		public NPCRevealedPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

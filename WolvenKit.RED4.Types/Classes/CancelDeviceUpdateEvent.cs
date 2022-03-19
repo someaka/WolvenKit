@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CancelDeviceUpdateEvent : redEvent
 {
-	[REDMeta]
-	public partial class CancelDeviceUpdateEvent : redEvent
+	public CancelDeviceUpdateEvent()
 	{
-		public CancelDeviceUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

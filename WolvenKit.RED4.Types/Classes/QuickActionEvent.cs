@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickActionEvent : redEvent
 {
-	[REDMeta]
-	public partial class QuickActionEvent : redEvent
+	public QuickActionEvent()
 	{
-		public QuickActionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

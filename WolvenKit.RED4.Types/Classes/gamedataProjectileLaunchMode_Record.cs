@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataProjectileLaunchMode_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataProjectileLaunchMode_Record : gamedataTweakDBRecord
+	public gamedataProjectileLaunchMode_Record()
 	{
-		public gamedataProjectileLaunchMode_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workWorkspotSystem : worldIWorkspotSystem
 {
-	[REDMeta]
-	public partial class workWorkspotSystem : worldIWorkspotSystem
+	public workWorkspotSystem()
 	{
-		public workWorkspotSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questInputNodeDefinition : questIONodeDefinition
 {
-	[REDMeta]
-	public partial class questInputNodeDefinition : questIONodeDefinition
+	public questInputNodeDefinition()
 	{
-		public questInputNodeDefinition()
-		{
-			Sockets = new();
-			Id = 65535;
+		Sockets = new();
+		Id = 65535;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

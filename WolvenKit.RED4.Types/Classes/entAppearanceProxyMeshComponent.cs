@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAppearanceProxyMeshComponent : entPhysicalMeshComponent
 {
-	[REDMeta]
-	public partial class entAppearanceProxyMeshComponent : entPhysicalMeshComponent
+	public entAppearanceProxyMeshComponent()
 	{
-		public entAppearanceProxyMeshComponent()
-		{
-			Name = "";
+		Name = "";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

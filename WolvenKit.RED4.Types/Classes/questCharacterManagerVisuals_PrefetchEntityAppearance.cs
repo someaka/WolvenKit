@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questCharacterManagerVisuals_PrefetchEntityAppearance : questCharacterManagerVisuals_EntityAppearanceOperationBase
 {
-	[REDMeta]
-	public partial class questCharacterManagerVisuals_PrefetchEntityAppearance : questCharacterManagerVisuals_EntityAppearanceOperationBase
+	public questCharacterManagerVisuals_PrefetchEntityAppearance()
 	{
-		public questCharacterManagerVisuals_PrefetchEntityAppearance()
-		{
-			AppearanceEntries = new() { new() { PuppetRef = new() { Names = new() } } };
+		AppearanceEntries = new() { new() { PuppetRef = new() { Names = new() } } };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

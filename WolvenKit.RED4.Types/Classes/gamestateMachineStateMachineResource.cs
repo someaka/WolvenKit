@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineStateMachineResource : graphGraphResource
 {
-	[REDMeta]
-	public partial class gamestateMachineStateMachineResource : graphGraphResource
+	public gamestateMachineStateMachineResource()
 	{
-		public gamestateMachineStateMachineResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ThrowingKnifeReloadFinishedCrosshairEvent : redEvent
 {
-	[REDMeta]
-	public partial class ThrowingKnifeReloadFinishedCrosshairEvent : redEvent
+	public ThrowingKnifeReloadFinishedCrosshairEvent()
 	{
-		public ThrowingKnifeReloadFinishedCrosshairEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

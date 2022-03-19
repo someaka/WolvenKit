@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FindClosestScavengeTarget : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class FindClosestScavengeTarget : AIbehaviortaskScript
+	public FindClosestScavengeTarget()
 	{
-		public FindClosestScavengeTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataParticleDamage_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataParticleDamage_Record : gamedataTweakDBRecord
+	public gamedataParticleDamage_Record()
 	{
-		public gamedataParticleDamage_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

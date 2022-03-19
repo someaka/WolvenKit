@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetDoorState : redEvent
 {
-	[REDMeta]
-	public partial class ResetDoorState : redEvent
+	public ResetDoorState()
 	{
-		public ResetDoorState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

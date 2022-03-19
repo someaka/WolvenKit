@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_GraphSlotInput : animAnimNode_Base
 {
-	[REDMeta]
-	public partial class animAnimNode_GraphSlotInput : animAnimNode_Base
+	public animAnimNode_GraphSlotInput()
 	{
-		public animAnimNode_GraphSlotInput()
-		{
-			Id = 4294967295;
+		Id = 4294967295;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

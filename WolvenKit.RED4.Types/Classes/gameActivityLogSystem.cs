@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameActivityLogSystem : gameIActivityLogSystem
 {
-	[REDMeta]
-	public partial class gameActivityLogSystem : gameIActivityLogSystem
+	public gameActivityLogSystem()
 	{
-		public gameActivityLogSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

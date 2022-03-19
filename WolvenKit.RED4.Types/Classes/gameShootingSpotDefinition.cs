@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameShootingSpotDefinition : gameCoverDefinition
 {
-	[REDMeta]
-	public partial class gameShootingSpotDefinition : gameCoverDefinition
+	public gameShootingSpotDefinition()
 	{
-		public gameShootingSpotDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

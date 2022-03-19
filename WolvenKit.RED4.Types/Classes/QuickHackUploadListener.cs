@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickHackUploadListener : ActionUploadListener
 {
-	[REDMeta]
-	public partial class QuickHackUploadListener : ActionUploadListener
+	public QuickHackUploadListener()
 	{
-		public QuickHackUploadListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

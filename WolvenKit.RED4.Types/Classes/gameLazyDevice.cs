@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameLazyDevice : IScriptable
 {
-	[REDMeta]
-	public partial class gameLazyDevice : IScriptable
+	public gameLazyDevice()
 	{
-		public gameLazyDevice()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

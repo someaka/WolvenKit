@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questPuppetsEffector : ISerializable
 {
-	[REDMeta]
-	public partial class questPuppetsEffector : ISerializable
+	public questPuppetsEffector()
 	{
-		public questPuppetsEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

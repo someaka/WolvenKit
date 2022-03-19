@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkanimStopVideoEvent : inkanimEvent
 {
-	[REDMeta]
-	public partial class inkanimStopVideoEvent : inkanimEvent
+	public inkanimStopVideoEvent()
 	{
-		public inkanimStopVideoEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

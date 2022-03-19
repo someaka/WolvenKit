@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TakedownUtils : IScriptable
 {
-	[REDMeta]
-	public partial class TakedownUtils : IScriptable
+	public TakedownUtils()
 	{
-		public TakedownUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

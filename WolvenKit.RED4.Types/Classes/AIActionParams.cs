@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIActionParams : IScriptable
 {
-	[REDMeta]
-	public partial class AIActionParams : IScriptable
+	public AIActionParams()
 	{
-		public AIActionParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

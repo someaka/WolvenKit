@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimDatabaseCollection : RedBaseClass
 {
-	[REDMeta]
-	public partial class animAnimDatabaseCollection : RedBaseClass
+	[Ordinal(0)] 
+	[RED("animDatabases")] 
+	public CArray<animAnimDatabaseCollectionEntry> AnimDatabases
 	{
-		[Ordinal(0)] 
-		[RED("animDatabases")] 
-		public CArray<animAnimDatabaseCollectionEntry> AnimDatabases
-		{
-			get => GetPropertyValue<CArray<animAnimDatabaseCollectionEntry>>();
-			set => SetPropertyValue<CArray<animAnimDatabaseCollectionEntry>>(value);
-		}
-
-		public animAnimDatabaseCollection()
-		{
-			AnimDatabases = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<animAnimDatabaseCollectionEntry>>();
+		set => SetPropertyValue<CArray<animAnimDatabaseCollectionEntry>>(value);
 	}
+
+	public animAnimDatabaseCollection()
+	{
+		AnimDatabases = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

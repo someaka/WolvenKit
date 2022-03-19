@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataPassiveProficiencyBonus_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataPassiveProficiencyBonus_Record : gamedataTweakDBRecord
+	public gamedataPassiveProficiencyBonus_Record()
 	{
-		public gamedataPassiveProficiencyBonus_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

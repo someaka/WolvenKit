@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DefaultActionsParametersHolder : IScriptable
 {
-	[REDMeta]
-	public partial class DefaultActionsParametersHolder : IScriptable
+	public DefaultActionsParametersHolder()
 	{
-		public DefaultActionsParametersHolder()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

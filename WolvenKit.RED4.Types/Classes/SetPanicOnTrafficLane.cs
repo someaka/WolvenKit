@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetPanicOnTrafficLane : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SetPanicOnTrafficLane : AIbehaviortaskScript
+	public SetPanicOnTrafficLane()
 	{
-		public SetPanicOnTrafficLane()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

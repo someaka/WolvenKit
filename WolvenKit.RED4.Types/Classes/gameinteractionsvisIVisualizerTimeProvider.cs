@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsvisIVisualizerTimeProvider : IScriptable
 {
-	[REDMeta]
-	public partial class gameinteractionsvisIVisualizerTimeProvider : IScriptable
+	public gameinteractionsvisIVisualizerTimeProvider()
 	{
-		public gameinteractionsvisIVisualizerTimeProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

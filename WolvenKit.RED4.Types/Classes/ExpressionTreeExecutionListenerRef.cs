@@ -1,15 +1,12 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+[REDClass(SerializeDefault = true)]
+public partial class ExpressionTreeExecutionListenerRef : RedBaseClass
 {
-	[REDMeta]
-	[REDClass(SerializeDefault = true)]
-	public partial class ExpressionTreeExecutionListenerRef : RedBaseClass
+	public ExpressionTreeExecutionListenerRef()
 	{
-		public ExpressionTreeExecutionListenerRef()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

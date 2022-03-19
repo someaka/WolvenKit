@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TestCaseBase_Backend : IScriptable
 {
-	[REDMeta]
-	public partial class TestCaseBase_Backend : IScriptable
+	public TestCaseBase_Backend()
 	{
-		public TestCaseBase_Backend()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

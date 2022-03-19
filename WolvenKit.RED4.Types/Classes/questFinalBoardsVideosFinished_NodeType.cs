@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questFinalBoardsVideosFinished_NodeType : questIUIManagerNodeType
 {
-	[REDMeta]
-	public partial class questFinalBoardsVideosFinished_NodeType : questIUIManagerNodeType
+	public questFinalBoardsVideosFinished_NodeType()
 	{
-		public questFinalBoardsVideosFinished_NodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

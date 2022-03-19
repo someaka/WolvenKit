@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameLoSFinderParams : IScriptable
 {
-	[REDMeta]
-	public partial class gameLoSFinderParams : IScriptable
+	public gameLoSFinderParams()
 	{
-		public gameLoSFinderParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class KatanaLookAtDecisions : LookAtPresetMeleeBaseDecisions
 {
-	[REDMeta]
-	public partial class KatanaLookAtDecisions : LookAtPresetMeleeBaseDecisions
+	public KatanaLookAtDecisions()
 	{
-		public KatanaLookAtDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

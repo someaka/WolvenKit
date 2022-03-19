@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldBakedDestructionNodeInstance : worldMeshNodeInstance
 {
-	[REDMeta]
-	public partial class worldBakedDestructionNodeInstance : worldMeshNodeInstance
+	public worldBakedDestructionNodeInstance()
 	{
-		public worldBakedDestructionNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

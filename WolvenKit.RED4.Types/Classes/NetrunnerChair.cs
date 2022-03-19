@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NetrunnerChair : InteractiveDevice
 {
-	[REDMeta]
-	public partial class NetrunnerChair : InteractiveDevice
+	public NetrunnerChair()
 	{
-		public NetrunnerChair()
-		{
-			ControllerTypeName = "NetrunnerChairController";
+		ControllerTypeName = "NetrunnerChairController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

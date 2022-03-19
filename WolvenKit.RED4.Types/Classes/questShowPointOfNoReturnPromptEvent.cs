@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questShowPointOfNoReturnPromptEvent : redEvent
 {
-	[REDMeta]
-	public partial class questShowPointOfNoReturnPromptEvent : redEvent
+	public questShowPointOfNoReturnPromptEvent()
 	{
-		public questShowPointOfNoReturnPromptEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

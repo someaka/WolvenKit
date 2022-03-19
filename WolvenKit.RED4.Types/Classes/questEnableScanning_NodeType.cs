@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questEnableScanning_NodeType : questIVisionModeNodeType
 {
-	[REDMeta]
-	public partial class questEnableScanning_NodeType : questIVisionModeNodeType
+	[Ordinal(0)] 
+	[RED("objectRef")] 
+	public gameEntityReference ObjectRef
 	{
-		[Ordinal(0)] 
-		[RED("objectRef")] 
-		public gameEntityReference ObjectRef
-		{
-			get => GetPropertyValue<gameEntityReference>();
-			set => SetPropertyValue<gameEntityReference>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("enable")] 
-		public CBool Enable
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public questEnableScanning_NodeType()
-		{
-			ObjectRef = new() { Names = new() };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gameEntityReference>();
+		set => SetPropertyValue<gameEntityReference>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("enable")] 
+	public CBool Enable
+	{
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
+	}
+
+	public questEnableScanning_NodeType()
+	{
+		ObjectRef = new() { Names = new() };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UsePhoneRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UsePhoneRequest : gameScriptableSystemRequest
+	public UsePhoneRequest()
 	{
-		public UsePhoneRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectPostAction_MeleeWaterEffects : gameEffectPostAction
 {
-	[REDMeta]
-	public partial class gameEffectPostAction_MeleeWaterEffects : gameEffectPostAction
+	public gameEffectPostAction_MeleeWaterEffects()
 	{
-		public gameEffectPostAction_MeleeWaterEffects()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

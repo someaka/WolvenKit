@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectObjectProvider_ProjectileHitEvent : gameEffectObjectProvider
 {
-	[REDMeta]
-	public partial class gameEffectObjectProvider_ProjectileHitEvent : gameEffectObjectProvider
+	public gameEffectObjectProvider_ProjectileHitEvent()
 	{
-		public gameEffectObjectProvider_ProjectileHitEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

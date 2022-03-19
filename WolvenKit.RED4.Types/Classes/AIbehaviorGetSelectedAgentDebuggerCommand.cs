@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorGetSelectedAgentDebuggerCommand : AIbehaviorIDebuggerCommand
 {
-	[REDMeta]
-	public partial class AIbehaviorGetSelectedAgentDebuggerCommand : AIbehaviorIDebuggerCommand
+	public AIbehaviorGetSelectedAgentDebuggerCommand()
 	{
-		public AIbehaviorGetSelectedAgentDebuggerCommand()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

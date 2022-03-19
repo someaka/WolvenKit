@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataNPCEquipmentGroup_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataNPCEquipmentGroup_Record : gamedataTweakDBRecord
+	public gamedataNPCEquipmentGroup_Record()
 	{
-		public gamedataNPCEquipmentGroup_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

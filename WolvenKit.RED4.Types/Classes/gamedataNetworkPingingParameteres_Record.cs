@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataNetworkPingingParameteres_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataNetworkPingingParameteres_Record : gamedataTweakDBRecord
+	public gamedataNetworkPingingParameteres_Record()
 	{
-		public gamedataNetworkPingingParameteres_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

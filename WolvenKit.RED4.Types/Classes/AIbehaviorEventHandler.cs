@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorEventHandler : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviorEventHandler : RedBaseClass
+	public AIbehaviorEventHandler()
 	{
-		public AIbehaviorEventHandler()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

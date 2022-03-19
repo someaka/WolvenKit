@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISquadHelper : IScriptable
 {
-	[REDMeta]
-	public partial class AISquadHelper : IScriptable
+	public AISquadHelper()
 	{
-		public AISquadHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

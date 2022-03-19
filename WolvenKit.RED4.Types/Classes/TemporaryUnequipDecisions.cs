@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TemporaryUnequipDecisions : UpperBodyTransition
 {
-	[REDMeta]
-	public partial class TemporaryUnequipDecisions : UpperBodyTransition
+	public TemporaryUnequipDecisions()
 	{
-		public TemporaryUnequipDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

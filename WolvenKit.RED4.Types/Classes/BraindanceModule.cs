@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BraindanceModule : HUDModule
 {
-	[REDMeta]
-	public partial class BraindanceModule : HUDModule
+	public BraindanceModule()
 	{
-		public BraindanceModule()
-		{
-			InstancesList = new();
+		InstancesList = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerCanTakeCPOMissionDataPrereq : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class PlayerCanTakeCPOMissionDataPrereq : gameinteractionsInteractionScriptedCondition
+	public PlayerCanTakeCPOMissionDataPrereq()
 	{
-		public PlayerCanTakeCPOMissionDataPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

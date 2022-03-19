@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIThreatBeliefPositionProvider : AIThreatPositionProvider
 {
-	[REDMeta]
-	public partial class AIThreatBeliefPositionProvider : AIThreatPositionProvider
+	public AIThreatBeliefPositionProvider()
 	{
-		public AIThreatBeliefPositionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

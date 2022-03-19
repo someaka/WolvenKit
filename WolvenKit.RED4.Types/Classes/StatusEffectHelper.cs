@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StatusEffectHelper : IScriptable
 {
-	[REDMeta]
-	public partial class StatusEffectHelper : IScriptable
+	public StatusEffectHelper()
 	{
-		public StatusEffectHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

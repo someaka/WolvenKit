@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIVehicleConditionType : questIConditionType
 {
-	[REDMeta]
-	public partial class questIVehicleConditionType : questIConditionType
+	public questIVehicleConditionType()
 	{
-		public questIVehicleConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

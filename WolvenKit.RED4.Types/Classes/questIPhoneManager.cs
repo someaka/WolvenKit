@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIPhoneManager : gameIGameSystem
 {
-	[REDMeta]
-	public partial class questIPhoneManager : gameIGameSystem
+	public questIPhoneManager()
 	{
-		public questIPhoneManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

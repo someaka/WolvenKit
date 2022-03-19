@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameWasScannedPrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class gameWasScannedPrereqState : gamePrereqState
+	public gameWasScannedPrereqState()
 	{
-		public gameWasScannedPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CameraCustomData_RenderProxyData : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class CameraCustomData_RenderProxyData : ICameraStorageCustomData
+	public CameraCustomData_RenderProxyData()
 	{
-		public CameraCustomData_RenderProxyData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

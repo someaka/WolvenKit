@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TimeOfDayVisibilityResource : CResource
 {
-	[REDMeta]
-	public partial class TimeOfDayVisibilityResource : CResource
+	public TimeOfDayVisibilityResource()
 	{
-		public TimeOfDayVisibilityResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MessengerUtils : IScriptable
 {
-	[REDMeta]
-	public partial class MessengerUtils : IScriptable
+	public MessengerUtils()
 	{
-		public MessengerUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

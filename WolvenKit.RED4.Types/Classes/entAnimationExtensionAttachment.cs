@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAnimationExtensionAttachment : entIAttachment
 {
-	[REDMeta]
-	public partial class entAnimationExtensionAttachment : entIAttachment
+	public entAnimationExtensionAttachment()
 	{
-		public entAnimationExtensionAttachment()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

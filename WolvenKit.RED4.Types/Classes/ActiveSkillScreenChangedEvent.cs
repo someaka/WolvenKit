@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActiveSkillScreenChangedEvent : redEvent
 {
-	[REDMeta]
-	public partial class ActiveSkillScreenChangedEvent : redEvent
+	public ActiveSkillScreenChangedEvent()
 	{
-		public ActiveSkillScreenChangedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

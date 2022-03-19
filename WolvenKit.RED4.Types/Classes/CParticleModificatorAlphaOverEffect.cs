@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CParticleModificatorAlphaOverEffect : IParticleModificator
 {
-	[REDMeta]
-	public partial class CParticleModificatorAlphaOverEffect : IParticleModificator
+	public CParticleModificatorAlphaOverEffect()
 	{
-		public CParticleModificatorAlphaOverEffect()
-		{
-			EditorName = "Effect alpha";
-			EditorGroup = "Material";
-			IsEnabled = true;
+		EditorName = "Effect alpha";
+		EditorGroup = "Material";
+		IsEnabled = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

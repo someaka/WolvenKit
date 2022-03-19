@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnarmedLookAtEvents : LookAtPresetBaseEvents
 {
-	[REDMeta]
-	public partial class UnarmedLookAtEvents : LookAtPresetBaseEvents
+	public UnarmedLookAtEvents()
 	{
-		public UnarmedLookAtEvents()
-		{
-			LookAtEvents = new();
+		LookAtEvents = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

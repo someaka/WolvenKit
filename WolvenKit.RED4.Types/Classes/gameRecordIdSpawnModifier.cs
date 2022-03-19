@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameRecordIdSpawnModifier : populationModifier
 {
-	[REDMeta]
-	public partial class gameRecordIdSpawnModifier : populationModifier
+	public gameRecordIdSpawnModifier()
 	{
-		public gameRecordIdSpawnModifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

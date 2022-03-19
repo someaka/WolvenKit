@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIAngleDistanceCoverSelectionRuntimeData : AICoverSelectionRuntimeData
 {
-	[REDMeta]
-	public partial class AIAngleDistanceCoverSelectionRuntimeData : AICoverSelectionRuntimeData
+	public AIAngleDistanceCoverSelectionRuntimeData()
 	{
-		public AIAngleDistanceCoverSelectionRuntimeData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

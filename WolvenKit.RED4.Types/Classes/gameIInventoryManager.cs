@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIInventoryManager : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIInventoryManager : gameIGameSystem
+	public gameIInventoryManager()
 	{
-		public gameIInventoryManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MainframeController : BaseAnimatedDeviceController
 {
-	[REDMeta]
-	public partial class MainframeController : BaseAnimatedDeviceController
+	public MainframeController()
 	{
-		public MainframeController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

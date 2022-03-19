@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiHideCustomTooltipEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiHideCustomTooltipEvent : redEvent
+	public gameuiHideCustomTooltipEvent()
 	{
-		public gameuiHideCustomTooltipEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

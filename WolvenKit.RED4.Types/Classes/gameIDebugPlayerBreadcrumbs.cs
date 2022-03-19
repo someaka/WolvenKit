@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIDebugPlayerBreadcrumbs : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIDebugPlayerBreadcrumbs : gameIGameSystem
+	public gameIDebugPlayerBreadcrumbs()
 	{
-		public gameIDebugPlayerBreadcrumbs()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

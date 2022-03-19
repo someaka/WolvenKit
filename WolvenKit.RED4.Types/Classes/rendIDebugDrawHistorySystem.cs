@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class rendIDebugDrawHistorySystem : RedBaseClass
 {
-	[REDMeta]
-	public partial class rendIDebugDrawHistorySystem : RedBaseClass
+	public rendIDebugDrawHistorySystem()
 	{
-		public rendIDebugDrawHistorySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

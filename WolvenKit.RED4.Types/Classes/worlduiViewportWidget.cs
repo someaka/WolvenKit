@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worlduiViewportWidget : inkCanvasWidget
 {
-	[REDMeta]
-	public partial class worlduiViewportWidget : inkCanvasWidget
+	public worlduiViewportWidget()
 	{
-		public worlduiViewportWidget()
-		{
-			IsInteractive = true;
+		IsInteractive = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

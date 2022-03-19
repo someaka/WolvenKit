@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemPrefabInstancing : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemPrefabInstancing : worldIRuntimeSystem
+	public worldRuntimeSystemPrefabInstancing()
 	{
-		public worldRuntimeSystemPrefabInstancing()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTriggerAreaNodeInstance : worldAreaShapeNodeInstance
 {
-	[REDMeta]
-	public partial class worldTriggerAreaNodeInstance : worldAreaShapeNodeInstance
+	public worldTriggerAreaNodeInstance()
 	{
-		public worldTriggerAreaNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

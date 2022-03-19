@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class enteventsSetPlaneSetting : redEvent
 {
-	[REDMeta]
-	public partial class enteventsSetPlaneSetting : redEvent
+	public enteventsSetPlaneSetting()
 	{
-		public enteventsSetPlaneSetting()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

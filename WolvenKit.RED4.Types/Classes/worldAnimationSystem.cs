@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAnimationSystem : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldAnimationSystem : worldIRuntimeSystem
+	public worldAnimationSystem()
 	{
-		public worldAnimationSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

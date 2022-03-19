@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClothingSetIconsPopupOpenData : inkGameNotificationData
 {
-	[REDMeta]
-	public partial class ClothingSetIconsPopupOpenData : inkGameNotificationData
+	public ClothingSetIconsPopupOpenData()
 	{
-		public ClothingSetIconsPopupOpenData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

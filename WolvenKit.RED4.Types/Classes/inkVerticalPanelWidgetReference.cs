@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVerticalPanelWidgetReference : inkBasePanelWidgetReference
 {
-	[REDMeta]
-	public partial class inkVerticalPanelWidgetReference : inkBasePanelWidgetReference
+	public inkVerticalPanelWidgetReference()
 	{
-		public inkVerticalPanelWidgetReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

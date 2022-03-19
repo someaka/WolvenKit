@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class userSettingsVarInt : userSettingsVar
 {
-	[REDMeta]
-	public partial class userSettingsVarInt : userSettingsVar
+	public userSettingsVarInt()
 	{
-		public userSettingsVarInt()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LootPickupScriptedCondition : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class LootPickupScriptedCondition : gameinteractionsInteractionScriptedCondition
+	public LootPickupScriptedCondition()
 	{
-		public LootPickupScriptedCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

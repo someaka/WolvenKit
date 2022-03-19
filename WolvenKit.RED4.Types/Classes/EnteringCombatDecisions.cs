@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EnteringCombatDecisions : VehicleTransition
 {
-	[REDMeta]
-	public partial class EnteringCombatDecisions : VehicleTransition
+	public EnteringCombatDecisions()
 	{
-		public EnteringCombatDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

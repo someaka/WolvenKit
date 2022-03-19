@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldNodeInstanceRegistry : worldINodeInstanceRegistry
 {
-	[REDMeta]
-	public partial class worldNodeInstanceRegistry : worldINodeInstanceRegistry
+	public worldNodeInstanceRegistry()
 	{
-		public worldNodeInstanceRegistry()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

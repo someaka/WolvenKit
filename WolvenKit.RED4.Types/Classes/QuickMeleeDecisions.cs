@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickMeleeDecisions : WeaponTransition
 {
-	[REDMeta]
-	public partial class QuickMeleeDecisions : WeaponTransition
+	public QuickMeleeDecisions()
 	{
-		public QuickMeleeDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

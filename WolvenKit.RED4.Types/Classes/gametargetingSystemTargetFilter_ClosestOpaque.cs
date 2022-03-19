@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gametargetingSystemTargetFilter_ClosestOpaque : gametargetingSystemTargetFilter_Closest
 {
-	[REDMeta]
-	public partial class gametargetingSystemTargetFilter_ClosestOpaque : gametargetingSystemTargetFilter_Closest
+	public gametargetingSystemTargetFilter_ClosestOpaque()
 	{
-		public gametargetingSystemTargetFilter_ClosestOpaque()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

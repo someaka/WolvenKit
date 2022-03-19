@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VirtualMasterDevice : Device
 {
-	[REDMeta]
-	public partial class VirtualMasterDevice : Device
+	public VirtualMasterDevice()
 	{
-		public VirtualMasterDevice()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

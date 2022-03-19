@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameActionRotateToState : gameActionRotateBaseState
 {
-	[REDMeta]
-	public partial class gameActionRotateToState : gameActionRotateBaseState
+	public gameActionRotateToState()
 	{
-		public gameActionRotateToState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

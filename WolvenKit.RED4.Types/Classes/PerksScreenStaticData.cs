@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PerksScreenStaticData : IScriptable
 {
-	[REDMeta]
-	public partial class PerksScreenStaticData : IScriptable
+	public PerksScreenStaticData()
 	{
-		public PerksScreenStaticData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

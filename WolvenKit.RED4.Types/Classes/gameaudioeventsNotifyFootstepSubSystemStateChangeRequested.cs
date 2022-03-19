@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameaudioeventsNotifyFootstepSubSystemStateChangeRequested : redEvent
 {
-	[REDMeta]
-	public partial class gameaudioeventsNotifyFootstepSubSystemStateChangeRequested : redEvent
+	public gameaudioeventsNotifyFootstepSubSystemStateChangeRequested()
 	{
-		public gameaudioeventsNotifyFootstepSubSystemStateChangeRequested()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

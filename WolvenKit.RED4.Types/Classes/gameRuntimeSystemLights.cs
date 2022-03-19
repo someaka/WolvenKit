@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameRuntimeSystemLights : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class gameRuntimeSystemLights : worldIRuntimeSystem
+	public gameRuntimeSystemLights()
 	{
-		public gameRuntimeSystemLights()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TerminateReactionLookatEvent : redEvent
 {
-	[REDMeta]
-	public partial class TerminateReactionLookatEvent : redEvent
+	public TerminateReactionLookatEvent()
 	{
-		public TerminateReactionLookatEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

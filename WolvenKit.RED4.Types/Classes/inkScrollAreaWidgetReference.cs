@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkScrollAreaWidgetReference : inkCompoundWidgetReference
 {
-	[REDMeta]
-	public partial class inkScrollAreaWidgetReference : inkCompoundWidgetReference
+	public inkScrollAreaWidgetReference()
 	{
-		public inkScrollAreaWidgetReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

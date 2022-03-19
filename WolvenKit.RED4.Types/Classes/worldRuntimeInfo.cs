@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeInfo : IScriptable
 {
-	[REDMeta]
-	public partial class worldRuntimeInfo : IScriptable
+	public worldRuntimeInfo()
 	{
-		public worldRuntimeInfo()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

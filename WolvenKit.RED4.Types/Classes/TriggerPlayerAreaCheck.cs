@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TriggerPlayerAreaCheck : redEvent
 {
-	[REDMeta]
-	public partial class TriggerPlayerAreaCheck : redEvent
+	public TriggerPlayerAreaCheck()
 	{
-		public TriggerPlayerAreaCheck()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

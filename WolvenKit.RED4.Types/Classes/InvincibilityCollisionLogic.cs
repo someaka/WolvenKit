@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InvincibilityCollisionLogic : BonusCollisionLogic
 {
-	[REDMeta]
-	public partial class InvincibilityCollisionLogic : BonusCollisionLogic
+	public InvincibilityCollisionLogic()
 	{
-		public InvincibilityCollisionLogic()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

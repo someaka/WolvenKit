@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkStreetSignsLayer : inkWorldFluffLayer
 {
-	[REDMeta]
-	public partial class inkStreetSignsLayer : inkWorldFluffLayer
+	public inkStreetSignsLayer()
 	{
-		public inkStreetSignsLayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

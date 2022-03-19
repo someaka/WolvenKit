@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineplayeractionsVehicleExiting : gamestateMachineStateActionDefinition
 {
-	[REDMeta]
-	public partial class gamestateMachineplayeractionsVehicleExiting : gamestateMachineStateActionDefinition
+	public gamestateMachineplayeractionsVehicleExiting()
 	{
-		public gamestateMachineplayeractionsVehicleExiting()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

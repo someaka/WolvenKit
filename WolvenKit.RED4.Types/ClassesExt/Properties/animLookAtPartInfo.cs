@@ -1,19 +1,18 @@
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class animLookAtPartInfo
 {
-    public partial class animLookAtPartInfo
+    [Ordinal(1002)]
+    [RED("debugDrawingEnabled")]
+    public CBool DebugDrawingEnabled
     {
-        [Ordinal(1002)]
-        [RED("debugDrawingEnabled")]
-        public CBool DebugDrawingEnabled
-        {
-            get => GetPropertyValue<CBool>();
-            set => SetPropertyValue<CBool>(value);
-        }
+        get => GetPropertyValue<CBool>();
+        set => SetPropertyValue<CBool>(value);
+    }
 
 
-        partial void PostConstruct()
-        {
-            DebugDrawingEnabled = true;
-        }
+    partial void PostConstruct()
+    {
+        DebugDrawingEnabled = true;
     }
 }

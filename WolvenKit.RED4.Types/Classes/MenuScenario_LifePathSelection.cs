@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MenuScenario_LifePathSelection : MenuScenario_PreGameSubMenu
 {
-	[REDMeta]
-	public partial class MenuScenario_LifePathSelection : MenuScenario_PreGameSubMenu
+	public MenuScenario_LifePathSelection()
 	{
-		public MenuScenario_LifePathSelection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

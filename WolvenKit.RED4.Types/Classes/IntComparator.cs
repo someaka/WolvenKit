@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IntComparator : IScriptable
 {
-	[REDMeta]
-	public partial class IntComparator : IScriptable
+	public IntComparator()
 	{
-		public IntComparator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

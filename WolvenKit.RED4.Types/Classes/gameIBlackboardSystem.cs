@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIBlackboardSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIBlackboardSystem : gameIGameSystem
+	public gameIBlackboardSystem()
 	{
-		public gameIBlackboardSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

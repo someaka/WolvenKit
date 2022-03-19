@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameObjectCarrierComponentDetached : redEvent
 {
-	[REDMeta]
-	public partial class gameObjectCarrierComponentDetached : redEvent
+	public gameObjectCarrierComponentDetached()
 	{
-		public gameObjectCarrierComponentDetached()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

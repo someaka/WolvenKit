@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineeventTeleport : redEvent
 {
-	[REDMeta]
-	public partial class gamestateMachineeventTeleport : redEvent
+	public gamestateMachineeventTeleport()
 	{
-		public gamestateMachineeventTeleport()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

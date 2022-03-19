@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectExecutor_MuteBubble : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class EffectExecutor_MuteBubble : gameEffectExecutor_Scripted
+	public EffectExecutor_MuteBubble()
 	{
-		public EffectExecutor_MuteBubble()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

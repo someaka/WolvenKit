@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmMenuState_InGamePause : gsmMenuState
 {
-	[REDMeta]
-	public partial class gsmMenuState_InGamePause : gsmMenuState
+	public gsmMenuState_InGamePause()
 	{
-		public gsmMenuState_InGamePause()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

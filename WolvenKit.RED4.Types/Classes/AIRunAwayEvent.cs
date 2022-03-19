@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIRunAwayEvent : AIAIEvent
 {
-	[REDMeta]
-	public partial class AIRunAwayEvent : AIAIEvent
+	public AIRunAwayEvent()
 	{
-		public AIRunAwayEvent()
-		{
-			Name = "runAwayOnNavmesh";
+		Name = "runAwayOnNavmesh";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

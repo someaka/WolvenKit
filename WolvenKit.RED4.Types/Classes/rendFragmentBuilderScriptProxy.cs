@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class rendFragmentBuilderScriptProxy : RedBaseClass
 {
-	[REDMeta]
-	public partial class rendFragmentBuilderScriptProxy : RedBaseClass
+	public rendFragmentBuilderScriptProxy()
 	{
-		public rendFragmentBuilderScriptProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

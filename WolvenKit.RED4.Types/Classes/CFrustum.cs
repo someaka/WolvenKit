@@ -1,15 +1,12 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+[REDClass(SerializeDefault = true)]
+public partial class CFrustum : RedBaseClass
 {
-	[REDMeta]
-	[REDClass(SerializeDefault = true)]
-	public partial class CFrustum : RedBaseClass
+	public CFrustum()
 	{
-		public CFrustum()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

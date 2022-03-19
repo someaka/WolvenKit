@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MinigameGenerationRulePredefinedBoardWithTraps : gameuiMinigameGenerationRule
 {
-	[REDMeta]
-	public partial class MinigameGenerationRulePredefinedBoardWithTraps : gameuiMinigameGenerationRule
+	public MinigameGenerationRulePredefinedBoardWithTraps()
 	{
-		public MinigameGenerationRulePredefinedBoardWithTraps()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

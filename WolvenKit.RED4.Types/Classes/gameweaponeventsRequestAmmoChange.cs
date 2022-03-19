@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameweaponeventsRequestAmmoChange : redEvent
 {
-	[REDMeta]
-	public partial class gameweaponeventsRequestAmmoChange : redEvent
+	public gameweaponeventsRequestAmmoChange()
 	{
-		public gameweaponeventsRequestAmmoChange()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

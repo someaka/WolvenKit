@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NetworkMinigameBasicProgramController : NetworkMinigameProgramController
 {
-	[REDMeta]
-	public partial class NetworkMinigameBasicProgramController : NetworkMinigameProgramController
+	public NetworkMinigameBasicProgramController()
 	{
-		public NetworkMinigameBasicProgramController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

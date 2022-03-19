@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetWeaponOwnerEvent : redEvent
 {
-	[REDMeta]
-	public partial class SetWeaponOwnerEvent : redEvent
+	public SetWeaponOwnerEvent()
 	{
-		public SetWeaponOwnerEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemPositionProvider : inkItemPositionProviderWrapper
 {
-	[REDMeta]
-	public partial class ItemPositionProvider : inkItemPositionProviderWrapper
+	public ItemPositionProvider()
 	{
-		public ItemPositionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

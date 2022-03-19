@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiSpawnNewFeedEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiSpawnNewFeedEvent : redEvent
+	public gameuiSpawnNewFeedEvent()
 	{
-		public gameuiSpawnNewFeedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

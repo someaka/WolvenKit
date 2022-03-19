@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CycleObjectiveDecisions : QuickSlotsTapDecisions
 {
-	[REDMeta]
-	public partial class CycleObjectiveDecisions : QuickSlotsTapDecisions
+	public CycleObjectiveDecisions()
 	{
-		public CycleObjectiveDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

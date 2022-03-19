@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIGenericLookatTask : AILookatTask
 {
-	[REDMeta]
-	public partial class AIGenericLookatTask : AILookatTask
+	public AIGenericLookatTask()
 	{
-		public AIGenericLookatTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class JournalEntriesListController : inkListController
 {
-	[REDMeta]
-	public partial class JournalEntriesListController : inkListController
+	public JournalEntriesListController()
 	{
-		public JournalEntriesListController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

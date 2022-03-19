@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ToggleDoorInteractionEvent : redEvent
 {
-	[REDMeta]
-	public partial class ToggleDoorInteractionEvent : redEvent
+	public ToggleDoorInteractionEvent()
 	{
-		public ToggleDoorInteractionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

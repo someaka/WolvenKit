@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiWorldMapPlayerMappinController : gameuiBaseWorldMapMappinController
 {
-	[REDMeta]
-	public partial class gameuiWorldMapPlayerMappinController : gameuiBaseWorldMapMappinController
+	[Ordinal(28)] 
+	[RED("coneIconWidget")] 
+	public inkImageWidgetReference ConeIconWidget
 	{
-		[Ordinal(28)] 
-		[RED("coneIconWidget")] 
-		public inkImageWidgetReference ConeIconWidget
-		{
-			get => GetPropertyValue<inkImageWidgetReference>();
-			set => SetPropertyValue<inkImageWidgetReference>(value);
-		}
-
-		public gameuiWorldMapPlayerMappinController()
-		{
-			ConeIconWidget = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkImageWidgetReference>();
+		set => SetPropertyValue<inkImageWidgetReference>(value);
 	}
+
+	public gameuiWorldMapPlayerMappinController()
+	{
+		ConeIconWidget = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

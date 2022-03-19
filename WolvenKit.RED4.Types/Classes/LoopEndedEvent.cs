@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LoopEndedEvent : redEvent
 {
-	[REDMeta]
-	public partial class LoopEndedEvent : redEvent
+	public LoopEndedEvent()
 	{
-		public LoopEndedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

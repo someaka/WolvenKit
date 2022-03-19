@@ -1,26 +1,22 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questGameManagerNodeDefinition : questTypedSignalStoppingNodeDefinition
 {
-	[REDMeta]
-	public partial class questGameManagerNodeDefinition : questTypedSignalStoppingNodeDefinition
+	[Ordinal(2)] 
+	[RED("type")] 
+	public CHandle<questIGameManagerNodeType> Type
 	{
-		[Ordinal(2)] 
-		[RED("type")] 
-		public CHandle<questIGameManagerNodeType> Type
-		{
-			get => GetPropertyValue<CHandle<questIGameManagerNodeType>>();
-			set => SetPropertyValue<CHandle<questIGameManagerNodeType>>(value);
-		}
-
-		public questGameManagerNodeDefinition()
-		{
-			Sockets = new();
-			Id = 65535;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<questIGameManagerNodeType>>();
+		set => SetPropertyValue<CHandle<questIGameManagerNodeType>>(value);
 	}
+
+	public questGameManagerNodeDefinition()
+	{
+		Sockets = new();
+		Id = 65535;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

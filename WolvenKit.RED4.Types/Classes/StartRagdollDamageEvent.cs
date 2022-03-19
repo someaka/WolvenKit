@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StartRagdollDamageEvent : redEvent
 {
-	[REDMeta]
-	public partial class StartRagdollDamageEvent : redEvent
+	public StartRagdollDamageEvent()
 	{
-		public StartRagdollDamageEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

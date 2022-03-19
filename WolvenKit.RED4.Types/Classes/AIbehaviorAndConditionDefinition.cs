@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorAndConditionDefinition : AIbehaviorCompositeConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorAndConditionDefinition : AIbehaviorCompositeConditionDefinition
+	public AIbehaviorAndConditionDefinition()
 	{
-		public AIbehaviorAndConditionDefinition()
-		{
-			Conditions = new();
+		Conditions = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

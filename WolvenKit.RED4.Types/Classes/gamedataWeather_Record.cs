@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataWeather_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataWeather_Record : gamedataTweakDBRecord
+	public gamedataWeather_Record()
 	{
-		public gamedataWeather_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsIShapeDefinition : ISerializable
 {
-	[REDMeta]
-	public partial class gameinteractionsIShapeDefinition : ISerializable
+	public gameinteractionsIShapeDefinition()
 	{
-		public gameinteractionsIShapeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DodgeDecisions : LocomotionGroundDecisions
 {
-	[REDMeta]
-	public partial class DodgeDecisions : LocomotionGroundDecisions
+	public DodgeDecisions()
 	{
-		public DodgeDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataSubStatModifier_Record : gamedataStatModifier_Record
 {
-	[REDMeta]
-	public partial class gamedataSubStatModifier_Record : gamedataStatModifier_Record
+	public gamedataSubStatModifier_Record()
 	{
-		public gamedataSubStatModifier_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

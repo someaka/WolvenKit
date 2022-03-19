@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DamageTypePrereqState : GenericHitPrereqState
 {
-	[REDMeta]
-	public partial class DamageTypePrereqState : GenericHitPrereqState
+	public DamageTypePrereqState()
 	{
-		public DamageTypePrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class graphIGraphObjectDefinition : ISerializable
 {
-	[REDMeta]
-	public partial class graphIGraphObjectDefinition : ISerializable
+	public graphIGraphObjectDefinition()
 	{
-		public graphIGraphObjectDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

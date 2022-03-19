@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineIStateMachineBody : ISerializable
 {
-	[REDMeta]
-	public partial class gamestateMachineIStateMachineBody : ISerializable
+	public gamestateMachineIStateMachineBody()
 	{
-		public gamestateMachineIStateMachineBody()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

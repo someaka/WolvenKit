@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UpdateDyingStimSource : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class UpdateDyingStimSource : AIbehaviortaskScript
+	public UpdateDyingStimSource()
 	{
-		public UpdateDyingStimSource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

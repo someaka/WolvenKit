@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAIActionSecurityNotificationType_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataAIActionSecurityNotificationType_Record : gamedataTweakDBRecord
+	public gamedataAIActionSecurityNotificationType_Record()
 	{
-		public gamedataAIActionSecurityNotificationType_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsvisDialogVisualizerLogic : gameinteractionsvisIGroupedVisualizerLogic
 {
-	[REDMeta]
-	public partial class gameinteractionsvisDialogVisualizerLogic : gameinteractionsvisIGroupedVisualizerLogic
+	public gameinteractionsvisDialogVisualizerLogic()
 	{
-		public gameinteractionsvisDialogVisualizerLogic()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

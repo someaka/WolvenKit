@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GameTimeUtils : RedBaseClass
 {
-	[REDMeta]
-	public partial class GameTimeUtils : RedBaseClass
+	public GameTimeUtils()
 	{
-		public GameTimeUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

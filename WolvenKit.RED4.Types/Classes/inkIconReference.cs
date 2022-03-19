@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkIconReference : IScriptable
 {
-	[REDMeta]
-	public partial class inkIconReference : IScriptable
+	public inkIconReference()
 	{
-		public inkIconReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

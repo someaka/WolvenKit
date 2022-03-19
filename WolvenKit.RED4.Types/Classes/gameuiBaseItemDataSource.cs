@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiBaseItemDataSource : inkAbstractDataSourceWrapper
 {
-	[REDMeta]
-	public partial class gameuiBaseItemDataSource : inkAbstractDataSourceWrapper
+	public gameuiBaseItemDataSource()
 	{
-		public gameuiBaseItemDataSource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

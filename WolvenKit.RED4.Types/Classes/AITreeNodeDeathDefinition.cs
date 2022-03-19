@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AITreeNodeDeathDefinition : AICTreeNodeActionDefinition
 {
-	[REDMeta]
-	public partial class AITreeNodeDeathDefinition : AICTreeNodeActionDefinition
+	public AITreeNodeDeathDefinition()
 	{
-		public AITreeNodeDeathDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

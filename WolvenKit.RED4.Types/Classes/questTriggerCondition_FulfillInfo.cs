@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questTriggerCondition_FulfillInfo : RedBaseClass
 {
-	[REDMeta]
-	public partial class questTriggerCondition_FulfillInfo : RedBaseClass
+	public questTriggerCondition_FulfillInfo()
 	{
-		public questTriggerCondition_FulfillInfo()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

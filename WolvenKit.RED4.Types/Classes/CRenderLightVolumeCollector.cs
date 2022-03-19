@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CRenderLightVolumeCollector : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class CRenderLightVolumeCollector : ICameraStorageCustomData
+	public CRenderLightVolumeCollector()
 	{
-		public CRenderLightVolumeCollector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

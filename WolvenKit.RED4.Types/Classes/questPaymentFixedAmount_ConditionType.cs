@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questPaymentFixedAmount_ConditionType : questIPayment_ConditionType
 {
-	[REDMeta]
-	public partial class questPaymentFixedAmount_ConditionType : questIPayment_ConditionType
+	public questPaymentFixedAmount_ConditionType()
 	{
-		public questPaymentFixedAmount_ConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

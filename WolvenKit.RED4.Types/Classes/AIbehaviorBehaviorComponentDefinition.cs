@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorBehaviorComponentDefinition : ISerializable
 {
-	[REDMeta]
-	public partial class AIbehaviorBehaviorComponentDefinition : ISerializable
+	public AIbehaviorBehaviorComponentDefinition()
 	{
-		public AIbehaviorBehaviorComponentDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

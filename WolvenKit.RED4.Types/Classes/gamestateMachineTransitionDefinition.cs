@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineTransitionDefinition : graphGraphConnectionDefinition
 {
-	[REDMeta]
-	public partial class gamestateMachineTransitionDefinition : graphGraphConnectionDefinition
+	[Ordinal(2)] 
+	[RED("priority")] 
+	public CFloat Priority
 	{
-		[Ordinal(2)] 
-		[RED("priority")] 
-		public CFloat Priority
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public gamestateMachineTransitionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public gamestateMachineTransitionDefinition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

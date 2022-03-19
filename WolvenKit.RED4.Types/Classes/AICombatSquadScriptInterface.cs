@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICombatSquadScriptInterface : AISquadScriptInterface
 {
-	[REDMeta]
-	public partial class AICombatSquadScriptInterface : AISquadScriptInterface
+	public AICombatSquadScriptInterface()
 	{
-		public AICombatSquadScriptInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CVisualDebug : IScriptable
 {
-	[REDMeta]
-	public partial class CVisualDebug : IScriptable
+	public CVisualDebug()
 	{
-		public CVisualDebug()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

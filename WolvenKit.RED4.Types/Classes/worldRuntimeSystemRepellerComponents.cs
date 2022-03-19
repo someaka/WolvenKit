@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemRepellerComponents : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemRepellerComponents : worldIRuntimeSystem
+	public worldRuntimeSystemRepellerComponents()
 	{
-		public worldRuntimeSystemRepellerComponents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

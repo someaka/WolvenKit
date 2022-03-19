@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FunctionalTestsRuntimeSystem : FunctionalTestsIRuntimeSystem
 {
-	[REDMeta]
-	public partial class FunctionalTestsRuntimeSystem : FunctionalTestsIRuntimeSystem
+	public FunctionalTestsRuntimeSystem()
 	{
-		public FunctionalTestsRuntimeSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

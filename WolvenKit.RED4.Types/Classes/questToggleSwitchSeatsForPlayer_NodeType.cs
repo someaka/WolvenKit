@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questToggleSwitchSeatsForPlayer_NodeType : questIVehicleManagerNodeType
 {
-	[REDMeta]
-	public partial class questToggleSwitchSeatsForPlayer_NodeType : questIVehicleManagerNodeType
+	public questToggleSwitchSeatsForPlayer_NodeType()
 	{
-		public questToggleSwitchSeatsForPlayer_NodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

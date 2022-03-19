@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePlayerAttachRequest : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class gamePlayerAttachRequest : gamePlayerScriptableSystemRequest
+	public gamePlayerAttachRequest()
 	{
-		public gamePlayerAttachRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

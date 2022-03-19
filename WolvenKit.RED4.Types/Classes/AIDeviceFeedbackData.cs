@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIDeviceFeedbackData : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AIDeviceFeedbackData : AIbehaviortaskScript
+	public AIDeviceFeedbackData()
 	{
-		public AIDeviceFeedbackData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

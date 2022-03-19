@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitStatPoolPrereqState : GenericHitPrereqState
 {
-	[REDMeta]
-	public partial class HitStatPoolPrereqState : GenericHitPrereqState
+	public HitStatPoolPrereqState()
 	{
-		public HitStatPoolPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

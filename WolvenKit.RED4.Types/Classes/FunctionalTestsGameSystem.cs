@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FunctionalTestsGameSystem : FunctionalTestsIGameSystem
 {
-	[REDMeta]
-	public partial class FunctionalTestsGameSystem : FunctionalTestsIGameSystem
+	public FunctionalTestsGameSystem()
 	{
-		public FunctionalTestsGameSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

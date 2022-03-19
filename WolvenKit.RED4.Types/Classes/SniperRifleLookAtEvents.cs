@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SniperRifleLookAtEvents : lookAtPresetGunBaseEvents
 {
-	[REDMeta]
-	public partial class SniperRifleLookAtEvents : lookAtPresetGunBaseEvents
+	public SniperRifleLookAtEvents()
 	{
-		public SniperRifleLookAtEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

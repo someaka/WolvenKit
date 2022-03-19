@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InSwimStanceState : AINPCStanceStateCheck
 {
-	[REDMeta]
-	public partial class InSwimStanceState : AINPCStanceStateCheck
+	public InSwimStanceState()
 	{
-		public InSwimStanceState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

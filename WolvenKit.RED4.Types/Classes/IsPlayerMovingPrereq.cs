@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsPlayerMovingPrereq : PlayerStateMachinePrereq
 {
-	[REDMeta]
-	public partial class IsPlayerMovingPrereq : PlayerStateMachinePrereq
+	public IsPlayerMovingPrereq()
 	{
-		public IsPlayerMovingPrereq()
-		{
-			SkipWhenApplied = true;
+		SkipWhenApplied = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

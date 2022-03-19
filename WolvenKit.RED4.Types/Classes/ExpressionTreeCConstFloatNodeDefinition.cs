@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExpressionTreeCConstFloatNodeDefinition : ExpressionTreeCGeneralNodeDefinition
 {
-	[REDMeta]
-	public partial class ExpressionTreeCConstFloatNodeDefinition : ExpressionTreeCGeneralNodeDefinition
+	[Ordinal(0)] 
+	[RED("value")] 
+	public CFloat Value
 	{
-		[Ordinal(0)] 
-		[RED("value")] 
-		public CFloat Value
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public ExpressionTreeCConstFloatNodeDefinition()
-		{
-			Value = -1.000000F;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public ExpressionTreeCConstFloatNodeDefinition()
+	{
+		Value = -1.000000F;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameOnInventoryEmptyEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameOnInventoryEmptyEvent : redEvent
+	public gameOnInventoryEmptyEvent()
 	{
-		public gameOnInventoryEmptyEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

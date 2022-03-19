@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemMarkers : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemMarkers : worldIRuntimeSystem
+	public worldRuntimeSystemMarkers()
 	{
-		public worldRuntimeSystemMarkers()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

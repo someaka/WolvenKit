@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PickupBodyWorkspotDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class PickupBodyWorkspotDelayEvent : redEvent
+	public PickupBodyWorkspotDelayEvent()
 	{
-		public PickupBodyWorkspotDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

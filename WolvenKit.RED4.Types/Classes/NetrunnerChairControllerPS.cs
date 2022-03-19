@@ -1,28 +1,24 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NetrunnerChairControllerPS : ScriptableDeviceComponentPS
 {
-	[REDMeta]
-	public partial class NetrunnerChairControllerPS : ScriptableDeviceComponentPS
+	[Ordinal(104)] 
+	[RED("killDelay")] 
+	public CFloat KillDelay
 	{
-		[Ordinal(104)] 
-		[RED("killDelay")] 
-		public CFloat KillDelay
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public NetrunnerChairControllerPS()
-		{
-			DeviceName = "LocKey#17884";
-			TweakDBRecord = 95884201829;
-			TweakDBDescriptionRecord = 149097016357;
-			KillDelay = 1.000000F;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public NetrunnerChairControllerPS()
+	{
+		DeviceName = "LocKey#17884";
+		TweakDBRecord = 95884201829;
+		TweakDBDescriptionRecord = 149097016357;
+		KillDelay = 1.000000F;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

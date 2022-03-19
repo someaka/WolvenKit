@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleVisualPerception : RedBaseClass
 {
-	[REDMeta]
-	public partial class vehicleVisualPerception : RedBaseClass
+	public vehicleVisualPerception()
 	{
-		public vehicleVisualPerception()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTagSpawParameter : gameObjectSpawnParameter
 {
-	[REDMeta]
-	public partial class gameTagSpawParameter : gameObjectSpawnParameter
+	[Ordinal(0)] 
+	[RED("tags")] 
+	public CArray<CName> Tags
 	{
-		[Ordinal(0)] 
-		[RED("tags")] 
-		public CArray<CName> Tags
-		{
-			get => GetPropertyValue<CArray<CName>>();
-			set => SetPropertyValue<CArray<CName>>(value);
-		}
-
-		public gameTagSpawParameter()
-		{
-			Tags = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<CName>>();
+		set => SetPropertyValue<CArray<CName>>(value);
 	}
+
+	public gameTagSpawParameter()
+	{
+		Tags = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

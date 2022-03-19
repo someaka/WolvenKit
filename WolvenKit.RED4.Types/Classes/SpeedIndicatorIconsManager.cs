@@ -1,34 +1,30 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SpeedIndicatorIconsManager : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class SpeedIndicatorIconsManager : inkWidgetLogicController
+	[Ordinal(1)] 
+	[RED("speedIndicator")] 
+	public inkImageWidgetReference SpeedIndicator
 	{
-		[Ordinal(1)] 
-		[RED("speedIndicator")] 
-		public inkImageWidgetReference SpeedIndicator
-		{
-			get => GetPropertyValue<inkImageWidgetReference>();
-			set => SetPropertyValue<inkImageWidgetReference>(value);
-		}
-
-		[Ordinal(2)] 
-		[RED("mirroredSpeedIndicator")] 
-		public inkImageWidgetReference MirroredSpeedIndicator
-		{
-			get => GetPropertyValue<inkImageWidgetReference>();
-			set => SetPropertyValue<inkImageWidgetReference>(value);
-		}
-
-		public SpeedIndicatorIconsManager()
-		{
-			SpeedIndicator = new();
-			MirroredSpeedIndicator = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkImageWidgetReference>();
+		set => SetPropertyValue<inkImageWidgetReference>(value);
 	}
+
+	[Ordinal(2)] 
+	[RED("mirroredSpeedIndicator")] 
+	public inkImageWidgetReference MirroredSpeedIndicator
+	{
+		get => GetPropertyValue<inkImageWidgetReference>();
+		set => SetPropertyValue<inkImageWidgetReference>(value);
+	}
+
+	public SpeedIndicatorIconsManager()
+	{
+		SpeedIndicator = new();
+		MirroredSpeedIndicator = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

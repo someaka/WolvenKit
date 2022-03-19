@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetAllFearWrappers : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class ResetAllFearWrappers : AIbehaviortaskScript
+	public ResetAllFearWrappers()
 	{
-		public ResetAllFearWrappers()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

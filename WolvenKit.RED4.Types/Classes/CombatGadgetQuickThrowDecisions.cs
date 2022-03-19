@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CombatGadgetQuickThrowDecisions : CombatGadgetTransitions
 {
-	[REDMeta]
-	public partial class CombatGadgetQuickThrowDecisions : CombatGadgetTransitions
+	public CombatGadgetQuickThrowDecisions()
 	{
-		public CombatGadgetQuickThrowDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

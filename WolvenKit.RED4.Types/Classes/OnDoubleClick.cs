@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnDoubleClick : inkPointerEvent
 {
-	[REDMeta]
-	public partial class OnDoubleClick : inkPointerEvent
+	public OnDoubleClick()
 	{
-		public OnDoubleClick()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

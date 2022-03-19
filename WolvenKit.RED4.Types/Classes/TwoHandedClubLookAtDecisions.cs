@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TwoHandedClubLookAtDecisions : LookAtPresetMeleeBaseDecisions
 {
-	[REDMeta]
-	public partial class TwoHandedClubLookAtDecisions : LookAtPresetMeleeBaseDecisions
+	public TwoHandedClubLookAtDecisions()
 	{
-		public TwoHandedClubLookAtDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

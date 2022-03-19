@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ShardsNestedListDataView : VirtualNestedListDataView
 {
-	[REDMeta]
-	public partial class ShardsNestedListDataView : VirtualNestedListDataView
+	public ShardsNestedListDataView()
 	{
-		public ShardsNestedListDataView()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

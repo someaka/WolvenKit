@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class ScannerArchetype : ScannerChunk
 {
-	[REDMeta]
-	public partial class ScannerArchetype : ScannerChunk
+	[Ordinal(0)] 
+	[RED("archetype")] 
+	public CEnum<gamedataArchetypeType> Archetype
 	{
-		[Ordinal(0)] 
-		[RED("archetype")] 
-		public CEnum<gamedataArchetypeType> Archetype
-		{
-			get => GetPropertyValue<CEnum<gamedataArchetypeType>>();
-			set => SetPropertyValue<CEnum<gamedataArchetypeType>>(value);
-		}
-
-		public ScannerArchetype()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<gamedataArchetypeType>>();
+		set => SetPropertyValue<CEnum<gamedataArchetypeType>>(value);
 	}
+
+	public ScannerArchetype()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

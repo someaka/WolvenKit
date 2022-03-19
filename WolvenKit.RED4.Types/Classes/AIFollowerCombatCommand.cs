@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIFollowerCombatCommand : AIFollowerCommand
 {
-	[REDMeta]
-	public partial class AIFollowerCombatCommand : AIFollowerCommand
+	public AIFollowerCombatCommand()
 	{
-		public AIFollowerCombatCommand()
-		{
-			CombatCommand = true;
+		CombatCommand = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

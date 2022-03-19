@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleChangeRadioReceiverStationEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleChangeRadioReceiverStationEvent : redEvent
+	public vehicleChangeRadioReceiverStationEvent()
 	{
-		public vehicleChangeRadioReceiverStationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

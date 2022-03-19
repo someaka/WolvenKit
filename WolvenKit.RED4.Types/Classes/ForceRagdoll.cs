@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceRagdoll : RagdollTask
 {
-	[REDMeta]
-	public partial class ForceRagdoll : RagdollTask
+	public ForceRagdoll()
 	{
-		public ForceRagdoll()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

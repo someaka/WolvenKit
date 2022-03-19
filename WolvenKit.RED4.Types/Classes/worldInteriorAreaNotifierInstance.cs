@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldInteriorAreaNotifierInstance : worldITriggerAreaNotiferInstance
 {
-	[REDMeta]
-	public partial class worldInteriorAreaNotifierInstance : worldITriggerAreaNotiferInstance
+	public worldInteriorAreaNotifierInstance()
 	{
-		public worldInteriorAreaNotifierInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

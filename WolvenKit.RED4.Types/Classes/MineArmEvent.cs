@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MineArmEvent : redEvent
 {
-	[REDMeta]
-	public partial class MineArmEvent : redEvent
+	public MineArmEvent()
 	{
-		public MineArmEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

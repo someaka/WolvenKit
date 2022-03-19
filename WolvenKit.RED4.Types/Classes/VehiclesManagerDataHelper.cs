@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehiclesManagerDataHelper : IScriptable
 {
-	[REDMeta]
-	public partial class VehiclesManagerDataHelper : IScriptable
+	public VehiclesManagerDataHelper()
 	{
-		public VehiclesManagerDataHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

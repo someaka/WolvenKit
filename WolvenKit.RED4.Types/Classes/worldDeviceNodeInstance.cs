@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDeviceNodeInstance : worldEntityNodeInstance
 {
-	[REDMeta]
-	public partial class worldDeviceNodeInstance : worldEntityNodeInstance
+	public worldDeviceNodeInstance()
 	{
-		public worldDeviceNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

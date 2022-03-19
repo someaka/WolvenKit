@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workRegisterCleanupCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workRegisterCleanupCommandData : workIWorkspotCommandData
+	public workRegisterCleanupCommandData()
 	{
-		public workRegisterCleanupCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

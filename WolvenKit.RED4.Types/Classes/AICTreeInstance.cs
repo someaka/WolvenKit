@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICTreeInstance : RedBaseClass
 {
-	[REDMeta]
-	public partial class AICTreeInstance : RedBaseClass
+	public AICTreeInstance()
 	{
-		public AICTreeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

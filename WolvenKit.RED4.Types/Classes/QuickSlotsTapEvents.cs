@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickSlotsTapEvents : QuickSlotsEvents
 {
-	[REDMeta]
-	public partial class QuickSlotsTapEvents : QuickSlotsEvents
+	public QuickSlotsTapEvents()
 	{
-		public QuickSlotsTapEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

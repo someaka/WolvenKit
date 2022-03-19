@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCActionAIProxy : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameCActionAIProxy : RedBaseClass
+	public gameCActionAIProxy()
 	{
-		public gameCActionAIProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

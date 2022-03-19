@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleeComboAttackDecisions : MeleeAttackGenericDecisions
 {
-	[REDMeta]
-	public partial class MeleeComboAttackDecisions : MeleeAttackGenericDecisions
+	public MeleeComboAttackDecisions()
 	{
-		public MeleeComboAttackDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

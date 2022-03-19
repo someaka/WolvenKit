@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckArgumentObjectSet : CheckArguments
 {
-	[REDMeta]
-	public partial class CheckArgumentObjectSet : CheckArguments
+	public CheckArgumentObjectSet()
 	{
-		public CheckArgumentObjectSet()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

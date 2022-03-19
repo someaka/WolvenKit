@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RenderProxyCustomData_Garment : IRenderProxyCustomData
 {
-	[REDMeta]
-	public partial class RenderProxyCustomData_Garment : IRenderProxyCustomData
+	public RenderProxyCustomData_Garment()
 	{
-		public RenderProxyCustomData_Garment()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

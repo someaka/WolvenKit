@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleMoveSystemStopEvent : gameActionEvent
 {
-	[REDMeta]
-	public partial class vehicleMoveSystemStopEvent : gameActionEvent
+	public vehicleMoveSystemStopEvent()
 	{
-		public vehicleMoveSystemStopEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

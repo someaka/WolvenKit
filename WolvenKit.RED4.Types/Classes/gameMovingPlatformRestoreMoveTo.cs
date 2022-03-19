@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMovingPlatformRestoreMoveTo : gameMovingPlatformMoveTo
 {
-	[REDMeta]
-	public partial class gameMovingPlatformRestoreMoveTo : gameMovingPlatformMoveTo
+	public gameMovingPlatformRestoreMoveTo()
 	{
-		public gameMovingPlatformRestoreMoveTo()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

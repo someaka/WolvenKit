@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIHitShape : ISerializable
 {
-	[REDMeta]
-	public partial class gameIHitShape : ISerializable
+	public gameIHitShape()
 	{
-		public gameIHitShape()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

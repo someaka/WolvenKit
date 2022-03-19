@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TestEffector : gameEffector
 {
-	[REDMeta]
-	public partial class TestEffector : gameEffector
+	public TestEffector()
 	{
-		public TestEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

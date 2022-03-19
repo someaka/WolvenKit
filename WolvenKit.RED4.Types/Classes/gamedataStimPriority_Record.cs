@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataStimPriority_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataStimPriority_Record : gamedataTweakDBRecord
+	public gamedataStimPriority_Record()
 	{
-		public gamedataStimPriority_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

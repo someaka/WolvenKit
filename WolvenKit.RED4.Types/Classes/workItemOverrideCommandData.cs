@@ -1,15 +1,12 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+[REDClass(SerializeDefault = true)]
+public partial class workItemOverrideCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	[REDClass(SerializeDefault = true)]
-	public partial class workItemOverrideCommandData : workIWorkspotCommandData
+	public workItemOverrideCommandData()
 	{
-		public workItemOverrideCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

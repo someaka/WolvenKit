@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StopCritHealthRumble : redEvent
 {
-	[REDMeta]
-	public partial class StopCritHealthRumble : redEvent
+	public StopCritHealthRumble()
 	{
-		public StopCritHealthRumble()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

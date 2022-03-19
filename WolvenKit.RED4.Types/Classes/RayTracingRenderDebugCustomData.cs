@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RayTracingRenderDebugCustomData : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class RayTracingRenderDebugCustomData : ICameraStorageCustomData
+	public RayTracingRenderDebugCustomData()
 	{
-		public RayTracingRenderDebugCustomData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

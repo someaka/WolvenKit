@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiSaveHandlingController : gameuiMenuGameController
 {
-	[REDMeta]
-	public partial class gameuiSaveHandlingController : gameuiMenuGameController
+	public gameuiSaveHandlingController()
 	{
-		public gameuiSaveHandlingController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

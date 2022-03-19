@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckPuppetRagdollStateEvent : redEvent
 {
-	[REDMeta]
-	public partial class CheckPuppetRagdollStateEvent : redEvent
+	public CheckPuppetRagdollStateEvent()
 	{
-		public CheckPuppetRagdollStateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

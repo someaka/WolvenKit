@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerNotInBraindancePrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class PlayerNotInBraindancePrereq : gameIScriptablePrereq
+	public PlayerNotInBraindancePrereq()
 	{
-		public PlayerNotInBraindancePrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

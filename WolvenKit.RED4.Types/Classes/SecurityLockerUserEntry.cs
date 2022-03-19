@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityLockerUserEntry : RedBaseClass
 {
-	[REDMeta]
-	public partial class SecurityLockerUserEntry : RedBaseClass
+	public SecurityLockerUserEntry()
 	{
-		public SecurityLockerUserEntry()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

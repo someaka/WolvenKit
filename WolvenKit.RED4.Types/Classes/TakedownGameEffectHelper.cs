@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TakedownGameEffectHelper : IScriptable
 {
-	[REDMeta]
-	public partial class TakedownGameEffectHelper : IScriptable
+	public TakedownGameEffectHelper()
 	{
-		public TakedownGameEffectHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

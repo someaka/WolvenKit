@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVendorCraftable_Record : gamedataVendorWare_Record
 {
-	[REDMeta]
-	public partial class gamedataVendorCraftable_Record : gamedataVendorWare_Record
+	public gamedataVendorCraftable_Record()
 	{
-		public gamedataVendorCraftable_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

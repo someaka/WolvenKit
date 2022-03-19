@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RadioController : MediaDeviceController
 {
-	[REDMeta]
-	public partial class RadioController : MediaDeviceController
+	public RadioController()
 	{
-		public RadioController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

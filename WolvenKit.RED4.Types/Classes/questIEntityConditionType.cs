@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIEntityConditionType : questIConditionType
 {
-	[REDMeta]
-	public partial class questIEntityConditionType : questIConditionType
+	public questIEntityConditionType()
 	{
-		public questIEntityConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

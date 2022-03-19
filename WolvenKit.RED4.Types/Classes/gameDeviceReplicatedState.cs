@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDeviceReplicatedState : IScriptable
 {
-	[REDMeta]
-	public partial class gameDeviceReplicatedState : IScriptable
+	public gameDeviceReplicatedState()
 	{
-		public gameDeviceReplicatedState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

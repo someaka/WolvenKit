@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class attrDynamicChoice : attrAttribute
 {
-	[REDMeta]
-	public partial class attrDynamicChoice : attrAttribute
+	public attrDynamicChoice()
 	{
-		public attrDynamicChoice()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

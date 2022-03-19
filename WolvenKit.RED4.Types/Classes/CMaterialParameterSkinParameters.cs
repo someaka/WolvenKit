@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CMaterialParameterSkinParameters : CMaterialParameter
 {
-	[REDMeta]
-	public partial class CMaterialParameterSkinParameters : CMaterialParameter
+	[Ordinal(2)] 
+	[RED("skinProfile")] 
+	public CResourceReference<CSkinProfile> SkinProfile
 	{
-		[Ordinal(2)] 
-		[RED("skinProfile")] 
-		public CResourceReference<CSkinProfile> SkinProfile
-		{
-			get => GetPropertyValue<CResourceReference<CSkinProfile>>();
-			set => SetPropertyValue<CResourceReference<CSkinProfile>>(value);
-		}
-
-		public CMaterialParameterSkinParameters()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CResourceReference<CSkinProfile>>();
+		set => SetPropertyValue<CResourceReference<CSkinProfile>>(value);
 	}
+
+	public CMaterialParameterSkinParameters()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

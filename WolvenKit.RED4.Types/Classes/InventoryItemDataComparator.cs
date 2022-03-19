@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InventoryItemDataComparator : IScriptable
 {
-	[REDMeta]
-	public partial class InventoryItemDataComparator : IScriptable
+	public InventoryItemDataComparator()
 	{
-		public InventoryItemDataComparator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

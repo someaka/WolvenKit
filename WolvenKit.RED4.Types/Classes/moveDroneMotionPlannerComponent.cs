@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class moveDroneMotionPlannerComponent : moveMotionPlannerComponent
 {
-	[REDMeta]
-	public partial class moveDroneMotionPlannerComponent : moveMotionPlannerComponent
+	public moveDroneMotionPlannerComponent()
 	{
-		public moveDroneMotionPlannerComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

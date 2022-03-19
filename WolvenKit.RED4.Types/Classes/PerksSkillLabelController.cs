@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PerksSkillLabelController : HubMenuLabelController
 {
-	[REDMeta]
-	public partial class PerksSkillLabelController : HubMenuLabelController
+	public PerksSkillLabelController()
 	{
-		public PerksSkillLabelController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

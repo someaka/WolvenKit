@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RefreshPlayerAuthorizationEvent : redEvent
 {
-	[REDMeta]
-	public partial class RefreshPlayerAuthorizationEvent : redEvent
+	public RefreshPlayerAuthorizationEvent()
 	{
-		public RefreshPlayerAuthorizationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

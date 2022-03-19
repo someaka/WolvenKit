@@ -1,19 +1,16 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestForceJuryrigTrapArmed : ActionBool
 {
-	[REDMeta]
-	public partial class QuestForceJuryrigTrapArmed : ActionBool
+	public QuestForceJuryrigTrapArmed()
 	{
-		public QuestForceJuryrigTrapArmed()
-		{
-			RequesterID = new();
-			InteractionChoice = new() { CaptionParts = new() { Parts = new() }, Data = new(), ChoiceMetaData = new() { Type = new() }, LookAtDescriptor = new() { Offset = new(), OrbId = new() } };
-			ActionWidgetPackage = new() { DependendActions = new() };
-			CanTriggerStim = true;
+		RequesterID = new();
+		InteractionChoice = new() { CaptionParts = new() { Parts = new() }, Data = new(), ChoiceMetaData = new() { Type = new() }, LookAtDescriptor = new() { Offset = new(), OrbId = new() } };
+		ActionWidgetPackage = new() { DependendActions = new() };
+		CanTriggerStim = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

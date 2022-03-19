@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrappleStruggleEvents : GrappleStandEvents
 {
-	[REDMeta]
-	public partial class GrappleStruggleEvents : GrappleStandEvents
+	public GrappleStruggleEvents()
 	{
-		public GrappleStruggleEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

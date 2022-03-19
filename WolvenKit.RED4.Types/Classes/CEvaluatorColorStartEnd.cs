@@ -1,34 +1,30 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CEvaluatorColorStartEnd : IEvaluatorColor
 {
-	[REDMeta]
-	public partial class CEvaluatorColorStartEnd : IEvaluatorColor
+	[Ordinal(0)] 
+	[RED("start")] 
+	public CColor Start
 	{
-		[Ordinal(0)] 
-		[RED("start")] 
-		public CColor Start
-		{
-			get => GetPropertyValue<CColor>();
-			set => SetPropertyValue<CColor>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("end")] 
-		public CColor End
-		{
-			get => GetPropertyValue<CColor>();
-			set => SetPropertyValue<CColor>(value);
-		}
-
-		public CEvaluatorColorStartEnd()
-		{
-			Start = new();
-			End = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CColor>();
+		set => SetPropertyValue<CColor>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("end")] 
+	public CColor End
+	{
+		get => GetPropertyValue<CColor>();
+		set => SetPropertyValue<CColor>(value);
+	}
+
+	public CEvaluatorColorStartEnd()
+	{
+		Start = new();
+		End = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

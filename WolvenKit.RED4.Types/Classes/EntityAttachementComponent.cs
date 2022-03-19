@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EntityAttachementComponent : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class EntityAttachementComponent : gameScriptableComponent
+	[Ordinal(5)] 
+	[RED("parentAttachementData")] 
+	public EntityAttachementData ParentAttachementData
 	{
-		[Ordinal(5)] 
-		[RED("parentAttachementData")] 
-		public EntityAttachementData ParentAttachementData
-		{
-			get => GetPropertyValue<EntityAttachementData>();
-			set => SetPropertyValue<EntityAttachementData>(value);
-		}
-
-		public EntityAttachementComponent()
-		{
-			ParentAttachementData = new() { AttachementComponentName = "EntityAttachementComponent", OwnerID = new() };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<EntityAttachementData>();
+		set => SetPropertyValue<EntityAttachementData>(value);
 	}
+
+	public EntityAttachementComponent()
+	{
+		ParentAttachementData = new() { AttachementComponentName = "EntityAttachementComponent", OwnerID = new() };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

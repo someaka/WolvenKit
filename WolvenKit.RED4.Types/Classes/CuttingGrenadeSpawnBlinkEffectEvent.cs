@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CuttingGrenadeSpawnBlinkEffectEvent : redEvent
 {
-	[REDMeta]
-	public partial class CuttingGrenadeSpawnBlinkEffectEvent : redEvent
+	public CuttingGrenadeSpawnBlinkEffectEvent()
 	{
-		public CuttingGrenadeSpawnBlinkEffectEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

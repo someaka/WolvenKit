@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldEffectBlackboard : IScriptable
 {
-	[REDMeta]
-	public partial class worldEffectBlackboard : IScriptable
+	public worldEffectBlackboard()
 	{
-		public worldEffectBlackboard()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

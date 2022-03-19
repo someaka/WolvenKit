@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerDamageFromDataEvent : gameTickableEvent
 {
-	[REDMeta]
-	public partial class PlayerDamageFromDataEvent : gameTickableEvent
+	public PlayerDamageFromDataEvent()
 	{
-		public PlayerDamageFromDataEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

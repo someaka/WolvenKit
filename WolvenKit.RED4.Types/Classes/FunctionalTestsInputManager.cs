@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FunctionalTestsInputManager : RedBaseClass
 {
-	[REDMeta]
-	public partial class FunctionalTestsInputManager : RedBaseClass
+	public FunctionalTestsInputManager()
 	{
-		public FunctionalTestsInputManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

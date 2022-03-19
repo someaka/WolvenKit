@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckHitReactionStimID : CheckStimID
 {
-	[REDMeta]
-	public partial class CheckHitReactionStimID : CheckStimID
+	public CheckHitReactionStimID()
 	{
-		public CheckHitReactionStimID()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorCreateAlertedInfluenceMapTaskDefinition : AIbehaviorTaskDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorCreateAlertedInfluenceMapTaskDefinition : AIbehaviorTaskDefinition
+	public AIbehaviorCreateAlertedInfluenceMapTaskDefinition()
 	{
-		public AIbehaviorCreateAlertedInfluenceMapTaskDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

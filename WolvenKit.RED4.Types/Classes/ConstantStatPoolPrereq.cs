@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConstantStatPoolPrereq : StatPoolPrereq
 {
-	[REDMeta]
-	public partial class ConstantStatPoolPrereq : StatPoolPrereq
+	public ConstantStatPoolPrereq()
 	{
-		public ConstantStatPoolPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

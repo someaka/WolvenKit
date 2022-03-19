@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorFreeReservedWorkspotNodeDefinition : AIbehaviorDecoratorNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorFreeReservedWorkspotNodeDefinition : AIbehaviorDecoratorNodeDefinition
+	public AIbehaviorFreeReservedWorkspotNodeDefinition()
 	{
-		public AIbehaviorFreeReservedWorkspotNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

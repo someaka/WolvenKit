@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIRandomCoverSelection : AICoverSelectionParameters
 {
-	[REDMeta]
-	public partial class AIRandomCoverSelection : AICoverSelectionParameters
+	public AIRandomCoverSelection()
 	{
-		public AIRandomCoverSelection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

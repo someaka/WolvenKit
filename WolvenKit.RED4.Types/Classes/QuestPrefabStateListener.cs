@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestPrefabStateListener : worldIQuestPrefabStateListener
 {
-	[REDMeta]
-	public partial class QuestPrefabStateListener : worldIQuestPrefabStateListener
+	public QuestPrefabStateListener()
 	{
-		public QuestPrefabStateListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

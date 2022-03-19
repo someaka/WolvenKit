@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleInsideWheelDecisions : QuickSlotsHoldDecisions
 {
-	[REDMeta]
-	public partial class VehicleInsideWheelDecisions : QuickSlotsHoldDecisions
+	public VehicleInsideWheelDecisions()
 	{
-		public VehicleInsideWheelDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

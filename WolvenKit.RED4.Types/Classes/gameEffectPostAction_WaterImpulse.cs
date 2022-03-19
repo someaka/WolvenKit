@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectPostAction_WaterImpulse : gameEffectPostAction
 {
-	[REDMeta]
-	public partial class gameEffectPostAction_WaterImpulse : gameEffectPostAction
+	public gameEffectPostAction_WaterImpulse()
 	{
-		public gameEffectPostAction_WaterImpulse()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

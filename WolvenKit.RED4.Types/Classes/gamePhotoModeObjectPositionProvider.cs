@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePhotoModeObjectPositionProvider : entIPositionProvider
 {
-	[REDMeta]
-	public partial class gamePhotoModeObjectPositionProvider : entIPositionProvider
+	public gamePhotoModeObjectPositionProvider()
 	{
-		public gamePhotoModeObjectPositionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

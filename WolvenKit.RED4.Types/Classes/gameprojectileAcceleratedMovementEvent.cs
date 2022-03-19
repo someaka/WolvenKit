@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameprojectileAcceleratedMovementEvent : gameprojectileLinearMovementEvent
 {
-	[REDMeta]
-	public partial class gameprojectileAcceleratedMovementEvent : gameprojectileLinearMovementEvent
+	public gameprojectileAcceleratedMovementEvent()
 	{
-		public gameprojectileAcceleratedMovementEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

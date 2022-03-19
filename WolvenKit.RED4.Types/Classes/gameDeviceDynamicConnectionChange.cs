@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDeviceDynamicConnectionChange : redEvent
 {
-	[REDMeta]
-	public partial class gameDeviceDynamicConnectionChange : redEvent
+	public gameDeviceDynamicConnectionChange()
 	{
-		public gameDeviceDynamicConnectionChange()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

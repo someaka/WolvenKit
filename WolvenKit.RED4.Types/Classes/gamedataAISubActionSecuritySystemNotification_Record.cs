@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISubActionSecuritySystemNotification_Record : gamedataAISubAction_Record
 {
-	[REDMeta]
-	public partial class gamedataAISubActionSecuritySystemNotification_Record : gamedataAISubAction_Record
+	public gamedataAISubActionSecuritySystemNotification_Record()
 	{
-		public gamedataAISubActionSecuritySystemNotification_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

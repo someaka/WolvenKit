@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldGINodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldGINodeInstance : worldINodeInstance
+	public worldGINodeInstance()
 	{
-		public worldGINodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

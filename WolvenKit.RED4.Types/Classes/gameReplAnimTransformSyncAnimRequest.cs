@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameReplAnimTransformSyncAnimRequest : gameReplAnimTransformRequestBase
 {
-	[REDMeta]
-	public partial class gameReplAnimTransformSyncAnimRequest : gameReplAnimTransformRequestBase
+	public gameReplAnimTransformSyncAnimRequest()
 	{
-		public gameReplAnimTransformSyncAnimRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

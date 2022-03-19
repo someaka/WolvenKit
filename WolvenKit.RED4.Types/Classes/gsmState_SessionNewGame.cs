@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmState_SessionNewGame : gsmState
 {
-	[REDMeta]
-	public partial class gsmState_SessionNewGame : gsmState
+	public gsmState_SessionNewGame()
 	{
-		public gsmState_SessionNewGame()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

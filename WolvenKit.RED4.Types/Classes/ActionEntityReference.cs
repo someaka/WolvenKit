@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActionEntityReference : ScriptableDeviceAction
 {
-	[REDMeta]
-	public partial class ActionEntityReference : ScriptableDeviceAction
+	public ActionEntityReference()
 	{
-		public ActionEntityReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

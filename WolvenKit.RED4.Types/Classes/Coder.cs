@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Coder : BasicDistractionDevice
 {
-	[REDMeta]
-	public partial class Coder : BasicDistractionDevice
+	public Coder()
 	{
-		public Coder()
-		{
-			ControllerTypeName = "CoderController";
+		ControllerTypeName = "CoderController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

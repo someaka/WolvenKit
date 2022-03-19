@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StandDecisions : LocomotionGroundDecisions
 {
-	[REDMeta]
-	public partial class StandDecisions : LocomotionGroundDecisions
+	public StandDecisions()
 	{
-		public StandDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EquipmentBaseTransition : DefaultTransition
 {
-	[REDMeta]
-	public partial class EquipmentBaseTransition : DefaultTransition
+	public EquipmentBaseTransition()
 	{
-		public EquipmentBaseTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

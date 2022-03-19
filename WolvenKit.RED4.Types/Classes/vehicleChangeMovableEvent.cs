@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleChangeMovableEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleChangeMovableEvent : redEvent
+	public vehicleChangeMovableEvent()
 	{
-		public vehicleChangeMovableEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

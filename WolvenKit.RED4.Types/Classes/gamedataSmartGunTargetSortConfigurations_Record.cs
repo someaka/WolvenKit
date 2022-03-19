@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataSmartGunTargetSortConfigurations_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataSmartGunTargetSortConfigurations_Record : gamedataTweakDBRecord
+	public gamedataSmartGunTargetSortConfigurations_Record()
 	{
-		public gamedataSmartGunTargetSortConfigurations_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AnimFeatureCustom : animAnimFeature
 {
-	[REDMeta]
-	public partial class AnimFeatureCustom : animAnimFeature
+	public AnimFeatureCustom()
 	{
-		public AnimFeatureCustom()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

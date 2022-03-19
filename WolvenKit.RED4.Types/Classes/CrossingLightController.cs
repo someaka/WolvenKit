@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CrossingLightController : TrafficLightController
 {
-	[REDMeta]
-	public partial class CrossingLightController : TrafficLightController
+	public CrossingLightController()
 	{
-		public CrossingLightController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitTriggeredPrereq : GenericHitPrereq
 {
-	[REDMeta]
-	public partial class HitTriggeredPrereq : GenericHitPrereq
+	public HitTriggeredPrereq()
 	{
-		public HitTriggeredPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

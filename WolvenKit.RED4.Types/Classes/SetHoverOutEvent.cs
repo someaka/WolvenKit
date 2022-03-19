@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetHoverOutEvent : redEvent
 {
-	[REDMeta]
-	public partial class SetHoverOutEvent : redEvent
+	public SetHoverOutEvent()
 	{
-		public SetHoverOutEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

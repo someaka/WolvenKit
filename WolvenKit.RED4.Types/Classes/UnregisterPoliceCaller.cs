@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnregisterPoliceCaller : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UnregisterPoliceCaller : gameScriptableSystemRequest
+	public UnregisterPoliceCaller()
 	{
-		public UnregisterPoliceCaller()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

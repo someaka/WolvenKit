@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SceneExitingDecisions : VehicleTransition
 {
-	[REDMeta]
-	public partial class SceneExitingDecisions : VehicleTransition
+	public SceneExitingDecisions()
 	{
-		public SceneExitingDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

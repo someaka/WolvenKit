@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMenuEventDispatcher : IScriptable
 {
-	[REDMeta]
-	public partial class inkMenuEventDispatcher : IScriptable
+	public inkMenuEventDispatcher()
 	{
-		public inkMenuEventDispatcher()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

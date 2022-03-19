@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RangedWeaponPSMPrereqState : PlayerStateMachinePrereqState
 {
-	[REDMeta]
-	public partial class RangedWeaponPSMPrereqState : PlayerStateMachinePrereqState
+	public RangedWeaponPSMPrereqState()
 	{
-		public RangedWeaponPSMPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

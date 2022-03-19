@@ -1,58 +1,54 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GOGProfileGameController : gameuiBaseGOGProfileController
 {
-	[REDMeta]
-	public partial class GOGProfileGameController : gameuiBaseGOGProfileController
+	[Ordinal(2)] 
+	[RED("retryButton")] 
+	public inkWidgetReference RetryButton
 	{
-		[Ordinal(2)] 
-		[RED("retryButton")] 
-		public inkWidgetReference RetryButton
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		[Ordinal(3)] 
-		[RED("parentContainerWidget")] 
-		public inkWidgetReference ParentContainerWidget
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		[Ordinal(4)] 
-		[RED("isFirstLogin")] 
-		public CBool IsFirstLogin
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		[Ordinal(5)] 
-		[RED("showingFirstLogin")] 
-		public CBool ShowingFirstLogin
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		[Ordinal(6)] 
-		[RED("canRetry")] 
-		public CBool CanRetry
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public GOGProfileGameController()
-		{
-			RetryButton = new();
-			ParentContainerWidget = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	[Ordinal(3)] 
+	[RED("parentContainerWidget")] 
+	public inkWidgetReference ParentContainerWidget
+	{
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
+	}
+
+	[Ordinal(4)] 
+	[RED("isFirstLogin")] 
+	public CBool IsFirstLogin
+	{
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
+	}
+
+	[Ordinal(5)] 
+	[RED("showingFirstLogin")] 
+	public CBool ShowingFirstLogin
+	{
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
+	}
+
+	[Ordinal(6)] 
+	[RED("canRetry")] 
+	public CBool CanRetry
+	{
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
+	}
+
+	public GOGProfileGameController()
+	{
+		RetryButton = new();
+		ParentContainerWidget = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChargeReadyDecisions : WeaponTransition
 {
-	[REDMeta]
-	public partial class ChargeReadyDecisions : WeaponTransition
+	public ChargeReadyDecisions()
 	{
-		public ChargeReadyDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

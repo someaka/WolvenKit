@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRenderingScriptInterface : IScriptable
 {
-	[REDMeta]
-	public partial class worldRenderingScriptInterface : IScriptable
+	public worldRenderingScriptInterface()
 	{
-		public worldRenderingScriptInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

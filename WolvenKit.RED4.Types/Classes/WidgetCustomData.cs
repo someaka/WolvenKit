@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WidgetCustomData : IScriptable
 {
-	[REDMeta]
-	public partial class WidgetCustomData : IScriptable
+	public WidgetCustomData()
 	{
-		public WidgetCustomData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

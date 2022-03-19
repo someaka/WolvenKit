@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameForceResetAmmoEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameForceResetAmmoEvent : redEvent
+	public gameForceResetAmmoEvent()
 	{
-		public gameForceResetAmmoEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

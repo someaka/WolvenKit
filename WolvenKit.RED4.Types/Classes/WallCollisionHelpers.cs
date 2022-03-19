@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WallCollisionHelpers : IScriptable
 {
-	[REDMeta]
-	public partial class WallCollisionHelpers : IScriptable
+	public WallCollisionHelpers()
 	{
-		public WallCollisionHelpers()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

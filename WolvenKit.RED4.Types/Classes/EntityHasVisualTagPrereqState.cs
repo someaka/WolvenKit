@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EntityHasVisualTagPrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class EntityHasVisualTagPrereqState : gamePrereqState
+	public EntityHasVisualTagPrereqState()
 	{
-		public EntityHasVisualTagPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

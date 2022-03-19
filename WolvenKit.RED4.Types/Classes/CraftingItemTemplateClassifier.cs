@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CraftingItemTemplateClassifier : inkVirtualItemTemplateClassifierWrapper
 {
-	[REDMeta]
-	public partial class CraftingItemTemplateClassifier : inkVirtualItemTemplateClassifierWrapper
+	public CraftingItemTemplateClassifier()
 	{
-		public CraftingItemTemplateClassifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

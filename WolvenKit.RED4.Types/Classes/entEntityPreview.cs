@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entEntityPreview : entEntity
 {
-	[REDMeta]
-	public partial class entEntityPreview : entEntity
+	public entEntityPreview()
 	{
-		public entEntityPreview()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

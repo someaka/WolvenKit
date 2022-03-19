@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeviceUpdateEvent : gameTickableEvent
 {
-	[REDMeta]
-	public partial class DeviceUpdateEvent : gameTickableEvent
+	public DeviceUpdateEvent()
 	{
-		public DeviceUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

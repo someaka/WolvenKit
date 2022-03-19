@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameStatusComboSystem : gameIStatusComboSystem
 {
-	[REDMeta]
-	public partial class gameStatusComboSystem : gameIStatusComboSystem
+	public gameStatusComboSystem()
 	{
-		public gameStatusComboSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

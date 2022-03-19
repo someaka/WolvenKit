@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PingSystemMappinController : gameuiInteractionMappinController
 {
-	[REDMeta]
-	public partial class PingSystemMappinController : gameuiInteractionMappinController
+	public PingSystemMappinController()
 	{
-		public PingSystemMappinController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

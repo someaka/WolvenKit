@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inputInputSystemNullInterface : inputIInputSystem
 {
-	[REDMeta]
-	public partial class inputInputSystemNullInterface : inputIInputSystem
+	public inputInputSystemNullInterface()
 	{
-		public inputInputSystemNullInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

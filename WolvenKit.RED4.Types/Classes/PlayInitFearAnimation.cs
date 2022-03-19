@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayInitFearAnimation : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class PlayInitFearAnimation : AIbehaviorconditionScript
+	public PlayInitFearAnimation()
 	{
-		public PlayInitFearAnimation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

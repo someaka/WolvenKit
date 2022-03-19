@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TargetKilledPrereqState : GenericHitPrereqState
 {
-	[REDMeta]
-	public partial class TargetKilledPrereqState : GenericHitPrereqState
+	public TargetKilledPrereqState()
 	{
-		public TargetKilledPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

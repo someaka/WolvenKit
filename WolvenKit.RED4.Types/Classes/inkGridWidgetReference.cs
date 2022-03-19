@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkGridWidgetReference : inkCompoundWidgetReference
 {
-	[REDMeta]
-	public partial class inkGridWidgetReference : inkCompoundWidgetReference
+	public inkGridWidgetReference()
 	{
-		public inkGridWidgetReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

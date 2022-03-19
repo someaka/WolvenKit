@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICustomComponents : AIRelatedComponents
 {
-	[REDMeta]
-	public partial class AICustomComponents : AIRelatedComponents
+	public AICustomComponents()
 	{
-		public AICustomComponents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

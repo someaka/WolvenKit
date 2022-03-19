@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmState_TrialVersionUpgrade : gsmState
 {
-	[REDMeta]
-	public partial class gsmState_TrialVersionUpgrade : gsmState
+	public gsmState_TrialVersionUpgrade()
 	{
-		public gsmState_TrialVersionUpgrade()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

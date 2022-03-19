@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleForwardRaceClockUpdateEvent : redEvent
 {
-	[REDMeta]
-	public partial class VehicleForwardRaceClockUpdateEvent : redEvent
+	public VehicleForwardRaceClockUpdateEvent()
 	{
-		public VehicleForwardRaceClockUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

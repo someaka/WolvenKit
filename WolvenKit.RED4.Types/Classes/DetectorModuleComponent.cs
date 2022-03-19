@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DetectorModuleComponent : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class DetectorModuleComponent : gameScriptableComponent
+	public DetectorModuleComponent()
 	{
-		public DetectorModuleComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

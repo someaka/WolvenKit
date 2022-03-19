@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SceneTierIIDecisions : SceneTierAbstractDecisions
 {
-	[REDMeta]
-	public partial class SceneTierIIDecisions : SceneTierAbstractDecisions
+	public SceneTierIIDecisions()
 	{
-		public SceneTierIIDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

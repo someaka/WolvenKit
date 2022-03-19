@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UpdateHDRCalibrationScreenEvt : redEvent
 {
-	[REDMeta]
-	public partial class UpdateHDRCalibrationScreenEvt : redEvent
+	public UpdateHDRCalibrationScreenEvt()
 	{
-		public UpdateHDRCalibrationScreenEvt()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

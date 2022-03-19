@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workDebuggingTool : RedBaseClass
 {
-	[REDMeta]
-	public partial class workDebuggingTool : RedBaseClass
+	public workDebuggingTool()
 	{
-		public workDebuggingTool()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

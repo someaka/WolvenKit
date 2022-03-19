@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmState_ReconnectController : gsmState
 {
-	[REDMeta]
-	public partial class gsmState_ReconnectController : gsmState
+	public gsmState_ReconnectController()
 	{
-		public gsmState_ReconnectController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

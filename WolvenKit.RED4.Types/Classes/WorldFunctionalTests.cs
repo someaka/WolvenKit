@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WorldFunctionalTests : IScriptable
 {
-	[REDMeta]
-	public partial class WorldFunctionalTests : IScriptable
+	public WorldFunctionalTests()
 	{
-		public WorldFunctionalTests()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

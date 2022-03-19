@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTimeDilatable : gameObject
 {
-	[REDMeta]
-	public partial class gameTimeDilatable : gameObject
+	public gameTimeDilatable()
 	{
-		public gameTimeDilatable()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

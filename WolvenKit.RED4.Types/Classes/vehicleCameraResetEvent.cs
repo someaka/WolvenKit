@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleCameraResetEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleCameraResetEvent : redEvent
+	public vehicleCameraResetEvent()
 	{
-		public vehicleCameraResetEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

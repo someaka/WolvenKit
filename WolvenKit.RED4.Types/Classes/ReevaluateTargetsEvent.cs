@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReevaluateTargetsEvent : redEvent
 {
-	[REDMeta]
-	public partial class ReevaluateTargetsEvent : redEvent
+	public ReevaluateTargetsEvent()
 	{
-		public ReevaluateTargetsEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

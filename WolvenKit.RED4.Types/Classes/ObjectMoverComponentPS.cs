@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ObjectMoverComponentPS : gameComponentPS
 {
-	[REDMeta]
-	public partial class ObjectMoverComponentPS : gameComponentPS
+	public ObjectMoverComponentPS()
 	{
-		public ObjectMoverComponentPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkWaitingSignLayer : inkFullScreenLayer
 {
-	[REDMeta]
-	public partial class inkWaitingSignLayer : inkFullScreenLayer
+	public inkWaitingSignLayer()
 	{
-		public inkWaitingSignLayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

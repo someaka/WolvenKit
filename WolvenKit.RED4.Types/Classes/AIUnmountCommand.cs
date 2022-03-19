@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIUnmountCommand : AIBaseMountCommand
 {
-	[REDMeta]
-	public partial class AIUnmountCommand : AIBaseMountCommand
+	public AIUnmountCommand()
 	{
-		public AIUnmountCommand()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

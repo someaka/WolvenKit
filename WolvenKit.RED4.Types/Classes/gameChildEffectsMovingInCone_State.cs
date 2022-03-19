@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameChildEffectsMovingInCone_State : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameChildEffectsMovingInCone_State : RedBaseClass
+	public gameChildEffectsMovingInCone_State()
 	{
-		public gameChildEffectsMovingInCone_State()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

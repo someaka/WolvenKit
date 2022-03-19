@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIRenderFxManagerNodeType : questINodeType
 {
-	[REDMeta]
-	public partial class questIRenderFxManagerNodeType : questINodeType
+	public questIRenderFxManagerNodeType()
 	{
-		public questIRenderFxManagerNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

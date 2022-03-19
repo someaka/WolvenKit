@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EmptyHandsEvents : UpperBodyEventsTransition
 {
-	[REDMeta]
-	public partial class EmptyHandsEvents : UpperBodyEventsTransition
+	public EmptyHandsEvents()
 	{
-		public EmptyHandsEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

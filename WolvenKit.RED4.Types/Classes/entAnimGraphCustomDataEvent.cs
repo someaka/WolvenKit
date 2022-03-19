@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAnimGraphCustomDataEvent : redEvent
 {
-	[REDMeta]
-	public partial class entAnimGraphCustomDataEvent : redEvent
+	public entAnimGraphCustomDataEvent()
 	{
-		public entAnimGraphCustomDataEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

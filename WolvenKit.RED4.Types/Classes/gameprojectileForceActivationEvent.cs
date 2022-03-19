@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameprojectileForceActivationEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameprojectileForceActivationEvent : redEvent
+	public gameprojectileForceActivationEvent()
 	{
-		public gameprojectileForceActivationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

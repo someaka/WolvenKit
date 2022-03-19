@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerStaminaHelpers : IScriptable
 {
-	[REDMeta]
-	public partial class PlayerStaminaHelpers : IScriptable
+	public PlayerStaminaHelpers()
 	{
-		public PlayerStaminaHelpers()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

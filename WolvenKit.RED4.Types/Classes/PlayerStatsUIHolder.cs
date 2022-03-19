@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerStatsUIHolder : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class PlayerStatsUIHolder : inkWidgetLogicController
+	public PlayerStatsUIHolder()
 	{
-		public PlayerStatsUIHolder()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

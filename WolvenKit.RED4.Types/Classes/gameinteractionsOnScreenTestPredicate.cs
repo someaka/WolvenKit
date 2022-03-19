@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsOnScreenTestPredicate : gameinteractionsIPredicateType
 {
-	[REDMeta]
-	public partial class gameinteractionsOnScreenTestPredicate : gameinteractionsIPredicateType
+	public gameinteractionsOnScreenTestPredicate()
 	{
-		public gameinteractionsOnScreenTestPredicate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

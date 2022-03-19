@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConsumableUseDecisions : ConsumableTransitions
 {
-	[REDMeta]
-	public partial class ConsumableUseDecisions : ConsumableTransitions
+	public ConsumableUseDecisions()
 	{
-		public ConsumableUseDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ShotgunLookAtEvents : lookAtPresetGunBaseEvents
 {
-	[REDMeta]
-	public partial class ShotgunLookAtEvents : lookAtPresetGunBaseEvents
+	public ShotgunLookAtEvents()
 	{
-		public ShotgunLookAtEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

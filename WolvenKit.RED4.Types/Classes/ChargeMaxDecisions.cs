@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChargeMaxDecisions : WeaponTransition
 {
-	[REDMeta]
-	public partial class ChargeMaxDecisions : WeaponTransition
+	public ChargeMaxDecisions()
 	{
-		public ChargeMaxDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

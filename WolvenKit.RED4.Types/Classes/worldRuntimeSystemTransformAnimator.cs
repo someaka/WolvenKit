@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemTransformAnimator : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemTransformAnimator : worldIRuntimeSystem
+	public worldRuntimeSystemTransformAnimator()
 	{
-		public worldRuntimeSystemTransformAnimator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

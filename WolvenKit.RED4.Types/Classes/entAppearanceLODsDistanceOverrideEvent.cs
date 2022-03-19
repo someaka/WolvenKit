@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAppearanceLODsDistanceOverrideEvent : redEvent
 {
-	[REDMeta]
-	public partial class entAppearanceLODsDistanceOverrideEvent : redEvent
+	public entAppearanceLODsDistanceOverrideEvent()
 	{
-		public entAppearanceLODsDistanceOverrideEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

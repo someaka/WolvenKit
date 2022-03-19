@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemStreamingQuery : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemStreamingQuery : worldIRuntimeSystem
+	public worldRuntimeSystemStreamingQuery()
 	{
-		public worldRuntimeSystemStreamingQuery()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

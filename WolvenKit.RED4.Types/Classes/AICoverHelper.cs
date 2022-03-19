@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICoverHelper : IScriptable
 {
-	[REDMeta]
-	public partial class AICoverHelper : IScriptable
+	public AICoverHelper()
 	{
-		public AICoverHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1918,7 +1918,7 @@ public class CBitFieldConverter : JsonConverter<IRedBitField>, ICustomRedConvert
         return CBitField.Parse(enumType, str);
     }
 
-    public override void Write(Utf8JsonWriter writer, IRedBitField value, JsonSerializerOptions options) => writer.WriteStringValue(value.ToBitFieldString());
+    public override void Write(Utf8JsonWriter writer, IRedBitField value, JsonSerializerOptions options) => writer.WriteStringValue(value.ToString());
 }
 
 public class CEnumConverter : JsonConverter<IRedEnum>, ICustomRedConverter
@@ -1947,7 +1947,7 @@ public class CEnumConverter : JsonConverter<IRedEnum>, ICustomRedConverter
         return CEnum.Parse(enumType, str);
     }
 
-    public override void Write(Utf8JsonWriter writer, IRedEnum value, JsonSerializerOptions options) => writer.WriteStringValue(value.ToEnumString());
+    public override void Write(Utf8JsonWriter writer, IRedEnum value, JsonSerializerOptions options) => writer.WriteStringValue(value.ToString());
 }
 
 #endregion EnumConverter

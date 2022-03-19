@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AutocraftEndCycleRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class AutocraftEndCycleRequest : gameScriptableSystemRequest
+	public AutocraftEndCycleRequest()
 	{
-		public AutocraftEndCycleRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

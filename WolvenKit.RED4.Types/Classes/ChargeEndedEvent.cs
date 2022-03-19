@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChargeEndedEvent : redEvent
 {
-	[REDMeta]
-	public partial class ChargeEndedEvent : redEvent
+	public ChargeEndedEvent()
 	{
-		public ChargeEndedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

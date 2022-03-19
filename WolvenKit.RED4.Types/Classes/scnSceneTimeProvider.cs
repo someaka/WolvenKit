@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnSceneTimeProvider : gameinteractionsvisIVisualizerTimeProvider
 {
-	[REDMeta]
-	public partial class scnSceneTimeProvider : gameinteractionsvisIVisualizerTimeProvider
+	public scnSceneTimeProvider()
 	{
-		public scnSceneTimeProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

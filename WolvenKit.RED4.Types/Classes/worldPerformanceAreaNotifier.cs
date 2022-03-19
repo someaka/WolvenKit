@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldPerformanceAreaNotifier : worldITriggerAreaNotifer
 {
-	[REDMeta]
-	public partial class worldPerformanceAreaNotifier : worldITriggerAreaNotifer
+	public worldPerformanceAreaNotifier()
 	{
-		public worldPerformanceAreaNotifier()
-		{
-			IsEnabled = true;
-			IncludeChannels = Enums.TriggerChannel.TC_Player;
+		IsEnabled = true;
+		IncludeChannels = Enums.TriggerChannel.TC_Player;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HasMeleeWeaponEquippedCondition : workIScriptedCondition
 {
-	[REDMeta]
-	public partial class HasMeleeWeaponEquippedCondition : workIScriptedCondition
+	public HasMeleeWeaponEquippedCondition()
 	{
-		public HasMeleeWeaponEquippedCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

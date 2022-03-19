@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class movePoliciesSystem : moveIPoliciesSystem
 {
-	[REDMeta]
-	public partial class movePoliciesSystem : moveIPoliciesSystem
+	public movePoliciesSystem()
 	{
-		public movePoliciesSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

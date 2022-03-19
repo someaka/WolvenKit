@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animSApplyRotationIKSolver : RedBaseClass
 {
-	[REDMeta]
-	public partial class animSApplyRotationIKSolver : RedBaseClass
+	public animSApplyRotationIKSolver()
 	{
-		public animSApplyRotationIKSolver()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

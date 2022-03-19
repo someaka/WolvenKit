@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DelaySpawning : redEvent
 {
-	[REDMeta]
-	public partial class DelaySpawning : redEvent
+	public DelaySpawning()
 	{
-		public DelaySpawning()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

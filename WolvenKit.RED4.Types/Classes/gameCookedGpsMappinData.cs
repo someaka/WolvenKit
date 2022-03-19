@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCookedGpsMappinData : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameCookedGpsMappinData : RedBaseClass
+	[Ordinal(0)] 
+	[RED("journalPathHash")] 
+	public CUInt32 JournalPathHash
 	{
-		[Ordinal(0)] 
-		[RED("journalPathHash")] 
-		public CUInt32 JournalPathHash
-		{
-			get => GetPropertyValue<CUInt32>();
-			set => SetPropertyValue<CUInt32>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("positions")] 
-		public CArray<Vector3> Positions
-		{
-			get => GetPropertyValue<CArray<Vector3>>();
-			set => SetPropertyValue<CArray<Vector3>>(value);
-		}
-
-		public gameCookedGpsMappinData()
-		{
-			Positions = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CUInt32>();
+		set => SetPropertyValue<CUInt32>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("positions")] 
+	public CArray<Vector3> Positions
+	{
+		get => GetPropertyValue<CArray<Vector3>>();
+		set => SetPropertyValue<CArray<Vector3>>(value);
+	}
+
+	public gameCookedGpsMappinData()
+	{
+		Positions = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

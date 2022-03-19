@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WallScreenController : TVController
 {
-	[REDMeta]
-	public partial class WallScreenController : TVController
+	public WallScreenController()
 	{
-		public WallScreenController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

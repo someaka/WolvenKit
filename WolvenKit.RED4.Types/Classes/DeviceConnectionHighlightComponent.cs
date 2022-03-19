@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeviceConnectionHighlightComponent : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class DeviceConnectionHighlightComponent : gameScriptableComponent
+	public DeviceConnectionHighlightComponent()
 	{
-		public DeviceConnectionHighlightComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

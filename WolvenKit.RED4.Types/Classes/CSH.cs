@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CSH : IScriptable
 {
-	[REDMeta]
-	public partial class CSH : IScriptable
+	public CSH()
 	{
-		public CSH()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

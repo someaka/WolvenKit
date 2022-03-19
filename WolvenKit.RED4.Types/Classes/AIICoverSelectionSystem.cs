@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIICoverSelectionSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class AIICoverSelectionSystem : gameIGameSystem
+	public AIICoverSelectionSystem()
 	{
-		public AIICoverSelectionSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

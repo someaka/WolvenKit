@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiSetPhotoModeKeyEnabledCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class gameuiSetPhotoModeKeyEnabledCallback : inkCallbackBase
+	public gameuiSetPhotoModeKeyEnabledCallback()
 	{
-		public gameuiSetPhotoModeKeyEnabledCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

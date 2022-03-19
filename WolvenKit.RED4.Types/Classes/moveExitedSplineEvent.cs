@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class moveExitedSplineEvent : redEvent
 {
-	[REDMeta]
-	public partial class moveExitedSplineEvent : redEvent
+	public moveExitedSplineEvent()
 	{
-		public moveExitedSplineEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

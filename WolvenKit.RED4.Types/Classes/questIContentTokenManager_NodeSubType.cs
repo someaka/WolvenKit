@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIContentTokenManager_NodeSubType : ISerializable
 {
-	[REDMeta]
-	public partial class questIContentTokenManager_NodeSubType : ISerializable
+	public questIContentTokenManager_NodeSubType()
 	{
-		public questIContentTokenManager_NodeSubType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

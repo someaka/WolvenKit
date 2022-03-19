@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleForwardRaceCheckpointFactEvent : redEvent
 {
-	[REDMeta]
-	public partial class VehicleForwardRaceCheckpointFactEvent : redEvent
+	public VehicleForwardRaceCheckpointFactEvent()
 	{
-		public VehicleForwardRaceCheckpointFactEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

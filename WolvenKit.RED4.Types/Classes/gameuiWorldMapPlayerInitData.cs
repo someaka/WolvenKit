@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiWorldMapPlayerInitData : gameuiMappinControllerCustomData
 {
-	[REDMeta]
-	public partial class gameuiWorldMapPlayerInitData : gameuiMappinControllerCustomData
+	public gameuiWorldMapPlayerInitData()
 	{
-		public gameuiWorldMapPlayerInitData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

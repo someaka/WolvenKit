@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAISpotNodeInstance : worldSocketNodeInstance
 {
-	[REDMeta]
-	public partial class worldAISpotNodeInstance : worldSocketNodeInstance
+	public worldAISpotNodeInstance()
 	{
-		public worldAISpotNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

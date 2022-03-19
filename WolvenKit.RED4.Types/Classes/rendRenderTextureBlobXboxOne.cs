@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class rendRenderTextureBlobXboxOne : rendIRenderTextureBlob
 {
-	[REDMeta]
-	public partial class rendRenderTextureBlobXboxOne : rendIRenderTextureBlob
+	public rendRenderTextureBlobXboxOne()
 	{
-		public rendRenderTextureBlobXboxOne()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

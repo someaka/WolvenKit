@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entIPositionProvider : IScriptable
 {
-	[REDMeta]
-	public partial class entIPositionProvider : IScriptable
+	public entIPositionProvider()
 	{
-		public entIPositionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

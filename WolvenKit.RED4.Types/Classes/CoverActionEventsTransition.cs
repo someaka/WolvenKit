@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CoverActionEventsTransition : CoverActionTransition
 {
-	[REDMeta]
-	public partial class CoverActionEventsTransition : CoverActionTransition
+	public CoverActionEventsTransition()
 	{
-		public CoverActionEventsTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

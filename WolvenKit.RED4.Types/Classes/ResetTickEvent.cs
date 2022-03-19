@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetTickEvent : gameTickableEvent
 {
-	[REDMeta]
-	public partial class ResetTickEvent : gameTickableEvent
+	public ResetTickEvent()
 	{
-		public ResetTickEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

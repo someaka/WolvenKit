@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CycleTriggerModeEvents : WeaponEventsTransition
 {
-	[REDMeta]
-	public partial class CycleTriggerModeEvents : WeaponEventsTransition
+	public CycleTriggerModeEvents()
 	{
-		public CycleTriggerModeEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DelayedHandleQuickLoadEvent : redEvent
 {
-	[REDMeta]
-	public partial class DelayedHandleQuickLoadEvent : redEvent
+	public DelayedHandleQuickLoadEvent()
 	{
-		public DelayedHandleQuickLoadEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

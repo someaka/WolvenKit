@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMuppetInputHandlerComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameMuppetInputHandlerComponent : entIComponent
+	public gameMuppetInputHandlerComponent()
 	{
-		public gameMuppetInputHandlerComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

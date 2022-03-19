@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AOEEffectorController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class AOEEffectorController : ScriptableDeviceComponent
+	public AOEEffectorController()
 	{
-		public AOEEffectorController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

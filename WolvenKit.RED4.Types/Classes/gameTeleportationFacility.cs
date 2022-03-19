@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTeleportationFacility : gameITeleportationFacility
 {
-	[REDMeta]
-	public partial class gameTeleportationFacility : gameITeleportationFacility
+	public gameTeleportationFacility()
 	{
-		public gameTeleportationFacility()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

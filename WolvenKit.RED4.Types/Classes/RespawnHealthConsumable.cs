@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RespawnHealthConsumable : redEvent
 {
-	[REDMeta]
-	public partial class RespawnHealthConsumable : redEvent
+	public RespawnHealthConsumable()
 	{
-		public RespawnHealthConsumable()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

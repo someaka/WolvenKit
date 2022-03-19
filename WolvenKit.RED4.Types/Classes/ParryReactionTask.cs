@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ParryReactionTask : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class ParryReactionTask : AIbehaviortaskScript
+	public ParryReactionTask()
 	{
-		public ParryReactionTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

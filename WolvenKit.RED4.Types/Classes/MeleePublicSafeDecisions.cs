@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleePublicSafeDecisions : MeleeTransition
 {
-	[REDMeta]
-	public partial class MeleePublicSafeDecisions : MeleeTransition
+	public MeleePublicSafeDecisions()
 	{
-		public MeleePublicSafeDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

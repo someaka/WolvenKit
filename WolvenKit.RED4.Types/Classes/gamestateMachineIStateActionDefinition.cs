@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineIStateActionDefinition : ISerializable
 {
-	[REDMeta]
-	public partial class gamestateMachineIStateActionDefinition : ISerializable
+	public gamestateMachineIStateActionDefinition()
 	{
-		public gamestateMachineIStateActionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

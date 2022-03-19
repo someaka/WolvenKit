@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiMinimapQuestAreaMappinController : gameuiBaseMinimapMappinController
 {
-	[REDMeta]
-	public partial class gameuiMinimapQuestAreaMappinController : gameuiBaseMinimapMappinController
+	[Ordinal(14)] 
+	[RED("areaShapeWidget")] 
+	public inkShapeWidgetReference AreaShapeWidget
 	{
-		[Ordinal(14)] 
-		[RED("areaShapeWidget")] 
-		public inkShapeWidgetReference AreaShapeWidget
-		{
-			get => GetPropertyValue<inkShapeWidgetReference>();
-			set => SetPropertyValue<inkShapeWidgetReference>(value);
-		}
-
-		public gameuiMinimapQuestAreaMappinController()
-		{
-			AreaShapeWidget = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkShapeWidgetReference>();
+		set => SetPropertyValue<inkShapeWidgetReference>(value);
 	}
+
+	public gameuiMinimapQuestAreaMappinController()
+	{
+		AreaShapeWidget = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkOffscreenLayer : inkLayer
 {
-	[REDMeta]
-	public partial class inkOffscreenLayer : inkLayer
+	public inkOffscreenLayer()
 	{
-		public inkOffscreenLayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

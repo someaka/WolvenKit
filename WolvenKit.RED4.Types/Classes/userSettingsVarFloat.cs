@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class userSettingsVarFloat : userSettingsVar
 {
-	[REDMeta]
-	public partial class userSettingsVarFloat : userSettingsVar
+	public userSettingsVarFloat()
 	{
-		public userSettingsVarFloat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemTooltipEquippedModule : ItemTooltipModuleController
 {
-	[REDMeta]
-	public partial class ItemTooltipEquippedModule : ItemTooltipModuleController
+	public ItemTooltipEquippedModule()
 	{
-		public ItemTooltipEquippedModule()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

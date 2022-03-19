@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MenuScenario_Idle : inkMenuScenario
 {
-	[REDMeta]
-	public partial class MenuScenario_Idle : inkMenuScenario
+	public MenuScenario_Idle()
 	{
-		public MenuScenario_Idle()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FinishedVendettaTimeEvent : redEvent
 {
-	[REDMeta]
-	public partial class FinishedVendettaTimeEvent : redEvent
+	public FinishedVendettaTimeEvent()
 	{
-		public FinishedVendettaTimeEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

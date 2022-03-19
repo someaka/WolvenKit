@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkOnscreenVOHandler : RedBaseClass
 {
-	[REDMeta]
-	public partial class inkOnscreenVOHandler : RedBaseClass
+	public inkOnscreenVOHandler()
 	{
-		public inkOnscreenVOHandler()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

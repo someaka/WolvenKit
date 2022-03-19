@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PSD_MasterPS : gameDeviceComponentPS
 {
-	[REDMeta]
-	public partial class PSD_MasterPS : gameDeviceComponentPS
+	public PSD_MasterPS()
 	{
-		public PSD_MasterPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

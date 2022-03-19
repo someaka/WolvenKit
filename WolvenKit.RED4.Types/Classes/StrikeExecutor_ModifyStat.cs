@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StrikeExecutor_ModifyStat : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class StrikeExecutor_ModifyStat : gameEffectExecutor_Scripted
+	public StrikeExecutor_ModifyStat()
 	{
-		public StrikeExecutor_ModifyStat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

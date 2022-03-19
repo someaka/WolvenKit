@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuicksortInventoryItemData : IScriptable
 {
-	[REDMeta]
-	public partial class QuicksortInventoryItemData : IScriptable
+	public QuicksortInventoryItemData()
 	{
-		public QuicksortInventoryItemData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

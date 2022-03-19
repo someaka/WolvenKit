@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceFreezeEvents : LocomotionGroundEvents
 {
-	[REDMeta]
-	public partial class ForceFreezeEvents : LocomotionGroundEvents
+	public ForceFreezeEvents()
 	{
-		public ForceFreezeEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

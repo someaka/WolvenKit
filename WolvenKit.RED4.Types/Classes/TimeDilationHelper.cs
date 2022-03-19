@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TimeDilationHelper : IScriptable
 {
-	[REDMeta]
-	public partial class TimeDilationHelper : IScriptable
+	public TimeDilationHelper()
 	{
-		public TimeDilationHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

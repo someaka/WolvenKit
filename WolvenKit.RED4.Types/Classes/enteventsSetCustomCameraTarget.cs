@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class enteventsSetCustomCameraTarget : redEvent
 {
-	[REDMeta]
-	public partial class enteventsSetCustomCameraTarget : redEvent
+	public enteventsSetCustomCameraTarget()
 	{
-		public enteventsSetCustomCameraTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VaultEvents : LocomotionGroundEvents
 {
-	[REDMeta]
-	public partial class VaultEvents : LocomotionGroundEvents
+	public VaultEvents()
 	{
-		public VaultEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

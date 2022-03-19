@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCActionsFactory : gameIActionsFactory
 {
-	[REDMeta]
-	public partial class gameCActionsFactory : gameIActionsFactory
+	public gameCActionsFactory()
 	{
-		public gameCActionsFactory()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

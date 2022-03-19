@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsWorkspotReaction : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class IsWorkspotReaction : AIbehaviorconditionScript
+	public IsWorkspotReaction()
 	{
-		public IsWorkspotReaction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

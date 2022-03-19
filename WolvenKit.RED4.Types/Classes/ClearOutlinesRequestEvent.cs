@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearOutlinesRequestEvent : redEvent
 {
-	[REDMeta]
-	public partial class ClearOutlinesRequestEvent : redEvent
+	public ClearOutlinesRequestEvent()
 	{
-		public ClearOutlinesRequestEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

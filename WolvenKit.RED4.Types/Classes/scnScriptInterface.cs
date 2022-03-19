@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnScriptInterface : IScriptable
 {
-	[REDMeta]
-	public partial class scnScriptInterface : IScriptable
+	public scnScriptInterface()
 	{
-		public scnScriptInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

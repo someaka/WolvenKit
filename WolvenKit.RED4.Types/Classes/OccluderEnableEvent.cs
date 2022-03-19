@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OccluderEnableEvent : redEvent
 {
-	[REDMeta]
-	public partial class OccluderEnableEvent : redEvent
+	public OccluderEnableEvent()
 	{
-		public OccluderEnableEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

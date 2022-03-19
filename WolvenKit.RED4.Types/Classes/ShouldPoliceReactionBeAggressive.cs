@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ShouldPoliceReactionBeAggressive : PreventionConditionAbstract
 {
-	[REDMeta]
-	public partial class ShouldPoliceReactionBeAggressive : PreventionConditionAbstract
+	public ShouldPoliceReactionBeAggressive()
 	{
-		public ShouldPoliceReactionBeAggressive()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

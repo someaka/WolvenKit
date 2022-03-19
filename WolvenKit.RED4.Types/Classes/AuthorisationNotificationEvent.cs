@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class AuthorisationNotificationEvent : redEvent
 {
-	[REDMeta]
-	public partial class AuthorisationNotificationEvent : redEvent
+	[Ordinal(0)] 
+	[RED("type")] 
+	public CEnum<gameuiAuthorisationNotificationType> Type
 	{
-		[Ordinal(0)] 
-		[RED("type")] 
-		public CEnum<gameuiAuthorisationNotificationType> Type
-		{
-			get => GetPropertyValue<CEnum<gameuiAuthorisationNotificationType>>();
-			set => SetPropertyValue<CEnum<gameuiAuthorisationNotificationType>>(value);
-		}
-
-		public AuthorisationNotificationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<gameuiAuthorisationNotificationType>>();
+		set => SetPropertyValue<CEnum<gameuiAuthorisationNotificationType>>(value);
 	}
+
+	public AuthorisationNotificationEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

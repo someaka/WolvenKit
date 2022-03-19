@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsDeviceTargetValidFilter : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class IsDeviceTargetValidFilter : gameEffectObjectSingleFilter_Scripted
+	public IsDeviceTargetValidFilter()
 	{
-		public IsDeviceTargetValidFilter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

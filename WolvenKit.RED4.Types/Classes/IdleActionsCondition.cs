@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IdleActionsCondition : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class IdleActionsCondition : AIbehaviorconditionScript
+	public IdleActionsCondition()
 	{
-		public IdleActionsCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

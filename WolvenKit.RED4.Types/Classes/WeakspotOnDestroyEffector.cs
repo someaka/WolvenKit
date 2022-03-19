@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WeakspotOnDestroyEffector : gameEffector
 {
-	[REDMeta]
-	public partial class WeakspotOnDestroyEffector : gameEffector
+	public WeakspotOnDestroyEffector()
 	{
-		public WeakspotOnDestroyEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

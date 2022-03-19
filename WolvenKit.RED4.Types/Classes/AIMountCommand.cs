@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIMountCommand : AIBaseMountCommand
 {
-	[REDMeta]
-	public partial class AIMountCommand : AIBaseMountCommand
+	public AIMountCommand()
 	{
-		public AIMountCommand()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animSyncMethodByProgress : animISyncMethod
 {
-	[REDMeta]
-	public partial class animSyncMethodByProgress : animISyncMethod
+	public animSyncMethodByProgress()
 	{
-		public animSyncMethodByProgress()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

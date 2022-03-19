@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class cpConveyorSetupEvent : redEvent
 {
-	[REDMeta]
-	public partial class cpConveyorSetupEvent : redEvent
+	public cpConveyorSetupEvent()
 	{
-		public cpConveyorSetupEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

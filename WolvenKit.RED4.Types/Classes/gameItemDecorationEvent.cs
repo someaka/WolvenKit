@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameItemDecorationEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameItemDecorationEvent : redEvent
+	public gameItemDecorationEvent()
 	{
-		public gameItemDecorationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

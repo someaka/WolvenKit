@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICArchetypeManager : AIIArchetypeManager
 {
-	[REDMeta]
-	public partial class AICArchetypeManager : AIIArchetypeManager
+	public AICArchetypeManager()
 	{
-		public AICArchetypeManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

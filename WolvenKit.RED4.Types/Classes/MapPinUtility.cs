@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MapPinUtility : IScriptable
 {
-	[REDMeta]
-	public partial class MapPinUtility : IScriptable
+	public MapPinUtility()
 	{
-		public MapPinUtility()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

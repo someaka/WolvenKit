@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameExternalMovementCameraDataEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameExternalMovementCameraDataEvent : redEvent
+	public gameExternalMovementCameraDataEvent()
 	{
-		public gameExternalMovementCameraDataEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

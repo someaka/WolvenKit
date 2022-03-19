@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workReactionFinishedEvent : redEvent
 {
-	[REDMeta]
-	public partial class workReactionFinishedEvent : redEvent
+	public workReactionFinishedEvent()
 	{
-		public workReactionFinishedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

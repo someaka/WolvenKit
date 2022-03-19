@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickSlotsTransition : DefaultTransition
 {
-	[REDMeta]
-	public partial class QuickSlotsTransition : DefaultTransition
+	public QuickSlotsTransition()
 	{
-		public QuickSlotsTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PreventionDelayedZeroRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class PreventionDelayedZeroRequest : gameScriptableSystemRequest
+	public PreventionDelayedZeroRequest()
 	{
-		public PreventionDelayedZeroRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

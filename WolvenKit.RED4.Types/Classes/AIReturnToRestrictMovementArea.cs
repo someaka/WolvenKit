@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIReturnToRestrictMovementArea : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AIReturnToRestrictMovementArea : AIbehaviortaskScript
+	public AIReturnToRestrictMovementArea()
 	{
-		public AIReturnToRestrictMovementArea()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

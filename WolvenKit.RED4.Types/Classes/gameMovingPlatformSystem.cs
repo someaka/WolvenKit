@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMovingPlatformSystem : gameIMovingPlatformSystem
 {
-	[REDMeta]
-	public partial class gameMovingPlatformSystem : gameIMovingPlatformSystem
+	public gameMovingPlatformSystem()
 	{
-		public gameMovingPlatformSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

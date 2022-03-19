@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeviceControlContextEvents : InputContextTransitionEvents
 {
-	[REDMeta]
-	public partial class DeviceControlContextEvents : InputContextTransitionEvents
+	public DeviceControlContextEvents()
 	{
-		public DeviceControlContextEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

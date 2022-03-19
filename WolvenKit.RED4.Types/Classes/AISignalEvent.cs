@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISignalEvent : AITaggedAIEvent
 {
-	[REDMeta]
-	public partial class AISignalEvent : AITaggedAIEvent
+	public AISignalEvent()
 	{
-		public AISignalEvent()
-		{
-			Name = "Behavior.Signal";
+		Name = "Behavior.Signal";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

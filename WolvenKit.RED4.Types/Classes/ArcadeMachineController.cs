@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ArcadeMachineController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class ArcadeMachineController : ScriptableDeviceComponent
+	public ArcadeMachineController()
 	{
-		public ArcadeMachineController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

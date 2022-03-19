@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CameraCustomData_Histogram : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class CameraCustomData_Histogram : ICameraStorageCustomData
+	public CameraCustomData_Histogram()
 	{
-		public CameraCustomData_Histogram()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

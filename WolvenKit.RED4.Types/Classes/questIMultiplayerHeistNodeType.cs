@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIMultiplayerHeistNodeType : questINodeType
 {
-	[REDMeta]
-	public partial class questIMultiplayerHeistNodeType : questINodeType
+	public questIMultiplayerHeistNodeType()
 	{
-		public questIMultiplayerHeistNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

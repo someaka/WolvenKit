@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkChildren : ISerializable
 {
-	[REDMeta]
-	public partial class inkChildren : ISerializable
+	public inkChildren()
 	{
-		public inkChildren()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

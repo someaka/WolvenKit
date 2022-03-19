@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiAugmentedRealitySignGameController : gameuiWidgetGameController
 {
-	[REDMeta]
-	public partial class gameuiAugmentedRealitySignGameController : gameuiWidgetGameController
+	public gameuiAugmentedRealitySignGameController()
 	{
-		public gameuiAugmentedRealitySignGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

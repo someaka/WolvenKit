@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldStaticVectorFieldNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldStaticVectorFieldNodeInstance : worldINodeInstance
+	public worldStaticVectorFieldNodeInstance()
 	{
-		public worldStaticVectorFieldNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

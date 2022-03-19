@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SysDebuggerEvent : gameTickableEvent
 {
-	[REDMeta]
-	public partial class SysDebuggerEvent : gameTickableEvent
+	public SysDebuggerEvent()
 	{
-		public SysDebuggerEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

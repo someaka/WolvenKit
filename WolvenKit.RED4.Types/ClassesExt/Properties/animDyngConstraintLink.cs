@@ -1,20 +1,19 @@
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+// TODO: Check Ordinal
+public partial class animDyngConstraintLink
 {
-    // TODO: Check Ordinal
-    public partial class animDyngConstraintLink
+    [Ordinal(0)]
+    [RED("isDebugEnabled")]
+    public CBool IsDebugEnabled
     {
-        [Ordinal(0)]
-        [RED("isDebugEnabled")]
-        public CBool IsDebugEnabled
-        {
-            get => GetPropertyValue<CBool>();
-            set => SetPropertyValue<CBool>(value);
-        }
+        get => GetPropertyValue<CBool>();
+        set => SetPropertyValue<CBool>(value);
+    }
 
 
-        partial void PostConstruct()
-        {
-            IsDebugEnabled = true;
-        }
+    partial void PostConstruct()
+    {
+        IsDebugEnabled = true;
     }
 }

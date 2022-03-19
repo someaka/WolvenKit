@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceWalkDecisions : LocomotionGroundDecisions
 {
-	[REDMeta]
-	public partial class ForceWalkDecisions : LocomotionGroundDecisions
+	public ForceWalkDecisions()
 	{
-		public ForceWalkDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

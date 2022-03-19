@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiPanzerScoreBonus : gameuiPanzerBonus
 {
-	[REDMeta]
-	public partial class gameuiPanzerScoreBonus : gameuiPanzerBonus
+	public gameuiPanzerScoreBonus()
 	{
-		public gameuiPanzerScoreBonus()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

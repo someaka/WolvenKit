@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animRigIkLeftFootSetup : animRigIk2Setup
 {
-	[REDMeta]
-	public partial class animRigIkLeftFootSetup : animRigIk2Setup
+	public animRigIkLeftFootSetup()
 	{
-		public animRigIkLeftFootSetup()
-		{
-			Name = "LeftFoot";
+		Name = "LeftFoot";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

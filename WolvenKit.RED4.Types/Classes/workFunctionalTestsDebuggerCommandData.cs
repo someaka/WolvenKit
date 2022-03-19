@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workFunctionalTestsDebuggerCommandData : workDebuggerCommandData
 {
-	[REDMeta]
-	public partial class workFunctionalTestsDebuggerCommandData : workDebuggerCommandData
+	public workFunctionalTestsDebuggerCommandData()
 	{
-		public workFunctionalTestsDebuggerCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

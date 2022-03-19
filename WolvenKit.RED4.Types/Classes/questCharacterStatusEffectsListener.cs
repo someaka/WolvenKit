@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questCharacterStatusEffectsListener : gameIStatusEffectListener
 {
-	[REDMeta]
-	public partial class questCharacterStatusEffectsListener : gameIStatusEffectListener
+	public questCharacterStatusEffectsListener()
 	{
-		public questCharacterStatusEffectsListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

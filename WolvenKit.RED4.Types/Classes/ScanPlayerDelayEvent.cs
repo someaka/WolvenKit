@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ScanPlayerDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class ScanPlayerDelayEvent : redEvent
+	public ScanPlayerDelayEvent()
 	{
-		public ScanPlayerDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

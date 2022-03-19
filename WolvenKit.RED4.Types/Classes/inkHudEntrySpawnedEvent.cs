@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkHudEntrySpawnedEvent : redEvent
 {
-	[REDMeta]
-	public partial class inkHudEntrySpawnedEvent : redEvent
+	public inkHudEntrySpawnedEvent()
 	{
-		public inkHudEntrySpawnedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

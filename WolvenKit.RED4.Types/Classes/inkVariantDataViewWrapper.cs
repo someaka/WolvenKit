@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVariantDataViewWrapper : inkBaseVariantDataSource
 {
-	[REDMeta]
-	public partial class inkVariantDataViewWrapper : inkBaseVariantDataSource
+	public inkVariantDataViewWrapper()
 	{
-		public inkVariantDataViewWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

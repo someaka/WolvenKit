@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimEvent_SimpleDuration : animAnimEvent
 {
-	[REDMeta]
-	public partial class animAnimEvent_SimpleDuration : animAnimEvent
+	public animAnimEvent_SimpleDuration()
 	{
-		public animAnimEvent_SimpleDuration()
-		{
-			DurationInFrames = 15;
+		DurationInFrames = 15;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

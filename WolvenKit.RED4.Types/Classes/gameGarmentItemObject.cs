@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameGarmentItemObject : gameItemObject
 {
-	[REDMeta]
-	public partial class gameGarmentItemObject : gameItemObject
+	public gameGarmentItemObject()
 	{
-		public gameGarmentItemObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

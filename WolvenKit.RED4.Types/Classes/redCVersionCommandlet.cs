@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class redCVersionCommandlet : redICommandlet
 {
-	[REDMeta]
-	public partial class redCVersionCommandlet : redICommandlet
+	public redCVersionCommandlet()
 	{
-		public redCVersionCommandlet()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

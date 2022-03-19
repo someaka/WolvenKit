@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectDuration_Infinite : gameEffectDurationModifier
 {
-	[REDMeta]
-	public partial class gameEffectDuration_Infinite : gameEffectDurationModifier
+	public gameEffectDuration_Infinite()
 	{
-		public gameEffectDuration_Infinite()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

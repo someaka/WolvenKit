@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questPhaseInstance : ISerializable
 {
-	[REDMeta]
-	public partial class questPhaseInstance : ISerializable
+	public questPhaseInstance()
 	{
-		public questPhaseInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

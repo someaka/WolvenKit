@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SortComparatorTemplate : IScriptable
 {
-	[REDMeta]
-	public partial class SortComparatorTemplate : IScriptable
+	public SortComparatorTemplate()
 	{
-		public SortComparatorTemplate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

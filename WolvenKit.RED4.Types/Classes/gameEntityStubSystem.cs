@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEntityStubSystem : gameIEntityStubSystem
 {
-	[REDMeta]
-	public partial class gameEntityStubSystem : gameIEntityStubSystem
+	public gameEntityStubSystem()
 	{
-		public gameEntityStubSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

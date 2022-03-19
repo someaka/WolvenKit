@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIBaseNodeType : ISerializable
 {
-	[REDMeta]
-	public partial class questIBaseNodeType : ISerializable
+	public questIBaseNodeType()
 	{
-		public questIBaseNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

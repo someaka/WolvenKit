@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class attrCommand : attrAttribute
 {
-	[REDMeta]
-	public partial class attrCommand : attrAttribute
+	public attrCommand()
 	{
-		public attrCommand()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestCombatActionAreaNotification : redEvent
 {
-	[REDMeta]
-	public partial class QuestCombatActionAreaNotification : redEvent
+	[Ordinal(0)] 
+	[RED("revealPlayerSettings")] 
+	public RevealPlayerSettings RevealPlayerSettings
 	{
-		[Ordinal(0)] 
-		[RED("revealPlayerSettings")] 
-		public RevealPlayerSettings RevealPlayerSettings
-		{
-			get => GetPropertyValue<RevealPlayerSettings>();
-			set => SetPropertyValue<RevealPlayerSettings>(value);
-		}
-
-		public QuestCombatActionAreaNotification()
-		{
-			RevealPlayerSettings = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<RevealPlayerSettings>();
+		set => SetPropertyValue<RevealPlayerSettings>(value);
 	}
+
+	public QuestCombatActionAreaNotification()
+	{
+		RevealPlayerSettings = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

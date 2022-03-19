@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TCSTakeOverControlDeactivate : redEvent
 {
-	[REDMeta]
-	public partial class TCSTakeOverControlDeactivate : redEvent
+	public TCSTakeOverControlDeactivate()
 	{
-		public TCSTakeOverControlDeactivate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

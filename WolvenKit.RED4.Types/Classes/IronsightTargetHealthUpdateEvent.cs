@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IronsightTargetHealthUpdateEvent : redEvent
 {
-	[REDMeta]
-	public partial class IronsightTargetHealthUpdateEvent : redEvent
+	public IronsightTargetHealthUpdateEvent()
 	{
-		public IronsightTargetHealthUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkProcessLoadingScreenDelayedEvent : redEvent
 {
-	[REDMeta]
-	public partial class inkProcessLoadingScreenDelayedEvent : redEvent
+	public inkProcessLoadingScreenDelayedEvent()
 	{
-		public inkProcessLoadingScreenDelayedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

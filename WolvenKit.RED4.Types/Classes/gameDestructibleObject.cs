@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDestructibleObject : gameObject
 {
-	[REDMeta]
-	public partial class gameDestructibleObject : gameObject
+	[Ordinal(35)] 
+	[RED("recordID")] 
+	public TweakDBID RecordID
 	{
-		[Ordinal(35)] 
-		[RED("recordID")] 
-		public TweakDBID RecordID
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-
-		public gameDestructibleObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<TweakDBID>();
+		set => SetPropertyValue<TweakDBID>(value);
 	}
+
+	public gameDestructibleObject()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

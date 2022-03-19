@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReflectorController : BlindingLightController
 {
-	[REDMeta]
-	public partial class ReflectorController : BlindingLightController
+	public ReflectorController()
 	{
-		public ReflectorController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

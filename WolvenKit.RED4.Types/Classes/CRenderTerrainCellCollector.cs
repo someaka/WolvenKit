@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CRenderTerrainCellCollector : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class CRenderTerrainCellCollector : ISceneStorageCustomData
+	public CRenderTerrainCellCollector()
 	{
-		public CRenderTerrainCellCollector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

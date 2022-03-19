@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RequestReleaseControl : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class RequestReleaseControl : gameScriptableSystemRequest
+	public RequestReleaseControl()
 	{
-		public RequestReleaseControl()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

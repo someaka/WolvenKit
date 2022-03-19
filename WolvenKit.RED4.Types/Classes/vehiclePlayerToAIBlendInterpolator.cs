@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehiclePlayerToAIBlendInterpolator : RedBaseClass
 {
-	[REDMeta]
-	public partial class vehiclePlayerToAIBlendInterpolator : RedBaseClass
+	public vehiclePlayerToAIBlendInterpolator()
 	{
-		public vehiclePlayerToAIBlendInterpolator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

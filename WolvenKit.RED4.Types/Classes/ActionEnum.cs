@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActionEnum : ActionInt
 {
-	[REDMeta]
-	public partial class ActionEnum : ActionInt
+	public ActionEnum()
 	{
-		public ActionEnum()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

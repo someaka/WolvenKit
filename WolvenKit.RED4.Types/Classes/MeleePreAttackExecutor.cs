@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleePreAttackExecutor : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class MeleePreAttackExecutor : gameEffectExecutor_Scripted
+	public MeleePreAttackExecutor()
 	{
-		public MeleePreAttackExecutor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

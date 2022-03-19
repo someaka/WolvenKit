@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HudMeshComponent : entMeshComponent
 {
-	[REDMeta]
-	public partial class HudMeshComponent : entMeshComponent
+	public HudMeshComponent()
 	{
-		public HudMeshComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

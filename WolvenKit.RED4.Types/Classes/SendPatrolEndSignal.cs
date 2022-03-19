@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SendPatrolEndSignal : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SendPatrolEndSignal : AIbehaviortaskScript
+	public SendPatrolEndSignal()
 	{
-		public SendPatrolEndSignal()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

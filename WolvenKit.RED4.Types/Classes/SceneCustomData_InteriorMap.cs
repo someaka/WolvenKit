@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SceneCustomData_InteriorMap : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class SceneCustomData_InteriorMap : ISceneStorageCustomData
+	public SceneCustomData_InteriorMap()
 	{
-		public SceneCustomData_InteriorMap()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

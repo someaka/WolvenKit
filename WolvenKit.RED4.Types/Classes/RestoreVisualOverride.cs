@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RestoreVisualOverride : redEvent
 {
-	[REDMeta]
-	public partial class RestoreVisualOverride : redEvent
+	public RestoreVisualOverride()
 	{
-		public RestoreVisualOverride()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

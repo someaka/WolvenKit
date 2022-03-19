@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIAudioNodeType : ISerializable
 {
-	[REDMeta]
-	public partial class questIAudioNodeType : ISerializable
+	public questIAudioNodeType()
 	{
-		public questIAudioNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

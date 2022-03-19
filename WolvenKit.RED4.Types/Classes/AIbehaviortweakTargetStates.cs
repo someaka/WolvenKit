@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviortweakTargetStates : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviortweakTargetStates : RedBaseClass
+	public AIbehaviortweakTargetStates()
 	{
-		public AIbehaviortweakTargetStates()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

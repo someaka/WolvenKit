@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleDumpBodyCloseTrunkEvent : redEvent
 {
-	[REDMeta]
-	public partial class VehicleDumpBodyCloseTrunkEvent : redEvent
+	public VehicleDumpBodyCloseTrunkEvent()
 	{
-		public VehicleDumpBodyCloseTrunkEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

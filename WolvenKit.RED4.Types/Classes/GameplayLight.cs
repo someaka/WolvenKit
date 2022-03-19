@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GameplayLight : InteractiveDevice
 {
-	[REDMeta]
-	public partial class GameplayLight : InteractiveDevice
+	public GameplayLight()
 	{
-		public GameplayLight()
-		{
-			ControllerTypeName = "GameplayLightController";
+		ControllerTypeName = "GameplayLightController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

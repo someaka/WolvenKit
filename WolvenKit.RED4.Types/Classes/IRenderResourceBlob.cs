@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IRenderResourceBlob : ISerializable
 {
-	[REDMeta]
-	public partial class IRenderResourceBlob : ISerializable
+	public IRenderResourceBlob()
 	{
-		public IRenderResourceBlob()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

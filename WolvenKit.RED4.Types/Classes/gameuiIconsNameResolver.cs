@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiIconsNameResolver : IScriptable
 {
-	[REDMeta]
-	public partial class gameuiIconsNameResolver : IScriptable
+	public gameuiIconsNameResolver()
 	{
-		public gameuiIconsNameResolver()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

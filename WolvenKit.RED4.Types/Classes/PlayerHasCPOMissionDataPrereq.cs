@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerHasCPOMissionDataPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class PlayerHasCPOMissionDataPrereq : gameIScriptablePrereq
+	public PlayerHasCPOMissionDataPrereq()
 	{
-		public PlayerHasCPOMissionDataPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectVectorEvaluator : ISerializable
 {
-	[REDMeta]
-	public partial class gameEffectVectorEvaluator : ISerializable
+	[Ordinal(0)] 
+	[RED("modifier")] 
+	public CFloat Modifier
 	{
-		[Ordinal(0)] 
-		[RED("modifier")] 
-		public CFloat Modifier
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public gameEffectVectorEvaluator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public gameEffectVectorEvaluator()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

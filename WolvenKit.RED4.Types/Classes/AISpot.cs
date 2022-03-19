@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISpot : ISerializable
 {
-	[REDMeta]
-	public partial class AISpot : ISerializable
+	public AISpot()
 	{
-		public AISpot()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

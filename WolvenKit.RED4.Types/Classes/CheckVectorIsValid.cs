@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckVectorIsValid : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class CheckVectorIsValid : AIbehaviorconditionScript
+	[Ordinal(0)] 
+	[RED("actionTweakIDMapping")] 
+	public CHandle<AIArgumentMapping> ActionTweakIDMapping
 	{
-		[Ordinal(0)] 
-		[RED("actionTweakIDMapping")] 
-		public CHandle<AIArgumentMapping> ActionTweakIDMapping
-		{
-			get => GetPropertyValue<CHandle<AIArgumentMapping>>();
-			set => SetPropertyValue<CHandle<AIArgumentMapping>>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("value")] 
-		public Vector4 Value
-		{
-			get => GetPropertyValue<Vector4>();
-			set => SetPropertyValue<Vector4>(value);
-		}
-
-		public CheckVectorIsValid()
-		{
-			Value = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<AIArgumentMapping>>();
+		set => SetPropertyValue<CHandle<AIArgumentMapping>>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("value")] 
+	public Vector4 Value
+	{
+		get => GetPropertyValue<Vector4>();
+		set => SetPropertyValue<Vector4>(value);
+	}
+
+	public CheckVectorIsValid()
+	{
+		Value = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CPOMissionDataUpdateEvent : redEvent
 {
-	[REDMeta]
-	public partial class CPOMissionDataUpdateEvent : redEvent
+	public CPOMissionDataUpdateEvent()
 	{
-		public CPOMissionDataUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

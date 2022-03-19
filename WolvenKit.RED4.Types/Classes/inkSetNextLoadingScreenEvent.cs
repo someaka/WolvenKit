@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkSetNextLoadingScreenEvent : redEvent
 {
-	[REDMeta]
-	public partial class inkSetNextLoadingScreenEvent : redEvent
+	public inkSetNextLoadingScreenEvent()
 	{
-		public inkSetNextLoadingScreenEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

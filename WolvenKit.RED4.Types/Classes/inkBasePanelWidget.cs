@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkBasePanelWidget : inkCompoundWidget
 {
-	[REDMeta]
-	public partial class inkBasePanelWidget : inkCompoundWidget
+	public inkBasePanelWidget()
 	{
-		public inkBasePanelWidget()
-		{
-			FitToContent = true;
+		FitToContent = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

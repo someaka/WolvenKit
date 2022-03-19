@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmStateObserver_RichPresence : gsmIStateObserver
 {
-	[REDMeta]
-	public partial class gsmStateObserver_RichPresence : gsmIStateObserver
+	public gsmStateObserver_RichPresence()
 	{
-		public gsmStateObserver_RichPresence()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

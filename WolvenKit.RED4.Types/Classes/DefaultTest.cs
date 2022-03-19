@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DefaultTest : gamestateMachineFunctor
 {
-	[REDMeta]
-	public partial class DefaultTest : gamestateMachineFunctor
+	public DefaultTest()
 	{
-		public DefaultTest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

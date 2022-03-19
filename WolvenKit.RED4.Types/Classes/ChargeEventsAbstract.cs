@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChargeEventsAbstract : WeaponEventsTransition
 {
-	[REDMeta]
-	public partial class ChargeEventsAbstract : WeaponEventsTransition
+	[Ordinal(3)] 
+	[RED("layerId")] 
+	public CUInt32 LayerId
 	{
-		[Ordinal(3)] 
-		[RED("layerId")] 
-		public CUInt32 LayerId
-		{
-			get => GetPropertyValue<CUInt32>();
-			set => SetPropertyValue<CUInt32>(value);
-		}
-
-		public ChargeEventsAbstract()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CUInt32>();
+		set => SetPropertyValue<CUInt32>(value);
 	}
+
+	public ChargeEventsAbstract()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PhoneTimeoutRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class PhoneTimeoutRequest : gameScriptableSystemRequest
+	public PhoneTimeoutRequest()
 	{
-		public PhoneTimeoutRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

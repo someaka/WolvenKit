@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WillDieSoonEvent : redEvent
 {
-	[REDMeta]
-	public partial class WillDieSoonEvent : redEvent
+	public WillDieSoonEvent()
 	{
-		public WillDieSoonEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

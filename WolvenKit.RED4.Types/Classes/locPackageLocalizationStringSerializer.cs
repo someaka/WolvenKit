@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class locPackageLocalizationStringSerializer : redPackageCustomTypeSerializer
 {
-	[REDMeta]
-	public partial class locPackageLocalizationStringSerializer : redPackageCustomTypeSerializer
+	public locPackageLocalizationStringSerializer()
 	{
-		public locPackageLocalizationStringSerializer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

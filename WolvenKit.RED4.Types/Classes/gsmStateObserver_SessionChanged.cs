@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmStateObserver_SessionChanged : gsmIStateObserver
 {
-	[REDMeta]
-	public partial class gsmStateObserver_SessionChanged : gsmIStateObserver
+	public gsmStateObserver_SessionChanged()
 	{
-		public gsmStateObserver_SessionChanged()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

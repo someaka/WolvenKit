@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EndThree : DefaultTransition
 {
-	[REDMeta]
-	public partial class EndThree : DefaultTransition
+	public EndThree()
 	{
-		public EndThree()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

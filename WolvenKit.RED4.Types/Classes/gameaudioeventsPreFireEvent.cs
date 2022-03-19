@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameaudioeventsPreFireEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameaudioeventsPreFireEvent : redEvent
+	public gameaudioeventsPreFireEvent()
 	{
-		public gameaudioeventsPreFireEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

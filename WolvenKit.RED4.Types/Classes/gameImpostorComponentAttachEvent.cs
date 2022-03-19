@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameImpostorComponentAttachEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameImpostorComponentAttachEvent : redEvent
+	public gameImpostorComponentAttachEvent()
 	{
-		public gameImpostorComponentAttachEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

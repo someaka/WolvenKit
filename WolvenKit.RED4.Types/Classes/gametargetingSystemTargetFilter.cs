@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gametargetingSystemTargetFilter : IScriptable
 {
-	[REDMeta]
-	public partial class gametargetingSystemTargetFilter : IScriptable
+	public gametargetingSystemTargetFilter()
 	{
-		public gametargetingSystemTargetFilter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIFriendlyFireSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIFriendlyFireSystem : gameIGameSystem
+	public gameIFriendlyFireSystem()
 	{
-		public gameIFriendlyFireSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

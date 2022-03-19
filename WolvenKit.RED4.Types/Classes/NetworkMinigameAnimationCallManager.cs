@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NetworkMinigameAnimationCallManager : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class NetworkMinigameAnimationCallManager : inkWidgetLogicController
+	public NetworkMinigameAnimationCallManager()
 	{
-		public NetworkMinigameAnimationCallManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

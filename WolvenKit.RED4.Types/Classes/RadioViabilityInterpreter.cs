@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RadioViabilityInterpreter : IScriptable
 {
-	[REDMeta]
-	public partial class RadioViabilityInterpreter : IScriptable
+	public RadioViabilityInterpreter()
 	{
-		public RadioViabilityInterpreter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

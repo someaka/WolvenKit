@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DestroyLink : redEvent
 {
-	[REDMeta]
-	public partial class DestroyLink : redEvent
+	public DestroyLink()
 	{
-		public DestroyLink()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

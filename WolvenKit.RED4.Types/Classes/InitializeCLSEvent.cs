@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InitializeCLSEvent : redEvent
 {
-	[REDMeta]
-	public partial class InitializeCLSEvent : redEvent
+	public InitializeCLSEvent()
 	{
-		public InitializeCLSEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

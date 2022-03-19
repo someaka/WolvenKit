@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workSyncMasterEntryAnim : workEntryAnim
 {
-	[REDMeta]
-	public partial class workSyncMasterEntryAnim : workEntryAnim
+	public workSyncMasterEntryAnim()
 	{
-		public workSyncMasterEntryAnim()
-		{
-			IsSynchronized = true;
+		IsSynchronized = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

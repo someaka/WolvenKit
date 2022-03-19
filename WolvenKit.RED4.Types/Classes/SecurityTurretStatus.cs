@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityTurretStatus : BaseDeviceStatus
 {
-	[REDMeta]
-	public partial class SecurityTurretStatus : BaseDeviceStatus
+	public SecurityTurretStatus()
 	{
-		public SecurityTurretStatus()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

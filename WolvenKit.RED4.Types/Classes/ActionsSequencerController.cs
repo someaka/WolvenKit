@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActionsSequencerController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class ActionsSequencerController : ScriptableDeviceComponent
+	public ActionsSequencerController()
 	{
-		public ActionsSequencerController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

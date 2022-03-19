@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameweaponeventsShootEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameweaponeventsShootEvent : redEvent
+	public gameweaponeventsShootEvent()
 	{
-		public gameweaponeventsShootEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

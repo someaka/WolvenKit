@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficCollisionDebugResource : CResource
 {
-	[REDMeta]
-	public partial class worldTrafficCollisionDebugResource : CResource
+	[Ordinal(1)] 
+	[RED("data")] 
+	public CHandle<worldTrafficCollisionDebug> Data
 	{
-		[Ordinal(1)] 
-		[RED("data")] 
-		public CHandle<worldTrafficCollisionDebug> Data
-		{
-			get => GetPropertyValue<CHandle<worldTrafficCollisionDebug>>();
-			set => SetPropertyValue<CHandle<worldTrafficCollisionDebug>>(value);
-		}
-
-		public worldTrafficCollisionDebugResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<worldTrafficCollisionDebug>>();
+		set => SetPropertyValue<CHandle<worldTrafficCollisionDebug>>(value);
 	}
+
+	public worldTrafficCollisionDebugResource()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

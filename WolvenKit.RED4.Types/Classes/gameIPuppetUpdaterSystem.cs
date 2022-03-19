@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIPuppetUpdaterSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIPuppetUpdaterSystem : gameIGameSystem
+	public gameIPuppetUpdaterSystem()
 	{
-		public gameIPuppetUpdaterSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

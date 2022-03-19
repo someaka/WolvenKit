@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CombatGadgetInactiveDecisions : CombatGadgetTransitions
 {
-	[REDMeta]
-	public partial class CombatGadgetInactiveDecisions : CombatGadgetTransitions
+	public CombatGadgetInactiveDecisions()
 	{
-		public CombatGadgetInactiveDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

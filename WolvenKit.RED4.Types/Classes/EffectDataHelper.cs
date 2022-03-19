@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectDataHelper : IScriptable
 {
-	[REDMeta]
-	public partial class EffectDataHelper : IScriptable
+	public EffectDataHelper()
 	{
-		public EffectDataHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

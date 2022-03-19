@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questTransformAnimatorNode_Action_Pause : questTransformAnimatorNode_ActionType
 {
-	[REDMeta]
-	public partial class questTransformAnimatorNode_Action_Pause : questTransformAnimatorNode_ActionType
+	public questTransformAnimatorNode_Action_Pause()
 	{
-		public questTransformAnimatorNode_Action_Pause()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

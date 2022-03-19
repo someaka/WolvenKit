@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleReadyInteractionDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class VehicleReadyInteractionDelayEvent : redEvent
+	public VehicleReadyInteractionDelayEvent()
 	{
-		public VehicleReadyInteractionDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

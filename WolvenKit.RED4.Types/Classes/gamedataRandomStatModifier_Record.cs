@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataRandomStatModifier_Record : gamedataStatModifier_Record
 {
-	[REDMeta]
-	public partial class gamedataRandomStatModifier_Record : gamedataStatModifier_Record
+	public gamedataRandomStatModifier_Record()
 	{
-		public gamedataRandomStatModifier_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

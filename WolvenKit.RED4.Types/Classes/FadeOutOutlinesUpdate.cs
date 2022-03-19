@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FadeOutOutlinesUpdate : gameTickableEvent
 {
-	[REDMeta]
-	public partial class FadeOutOutlinesUpdate : gameTickableEvent
+	public FadeOutOutlinesUpdate()
 	{
-		public FadeOutOutlinesUpdate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

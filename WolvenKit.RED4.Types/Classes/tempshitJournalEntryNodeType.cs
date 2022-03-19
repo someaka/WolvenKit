@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class tempshitJournalEntryNodeType : tempshitIJournalNodeType
 {
-	[REDMeta]
-	public partial class tempshitJournalEntryNodeType : tempshitIJournalNodeType
+	public tempshitJournalEntryNodeType()
 	{
-		public tempshitJournalEntryNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

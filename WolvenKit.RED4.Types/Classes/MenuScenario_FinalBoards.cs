@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MenuScenario_FinalBoards : MenuScenario_BaseMenu
 {
-	[REDMeta]
-	public partial class MenuScenario_FinalBoards : MenuScenario_BaseMenu
+	public MenuScenario_FinalBoards()
 	{
-		public MenuScenario_FinalBoards()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

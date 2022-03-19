@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiMinimapHazardWarningMappinController : gameuiBaseMinimapMappinController
 {
-	[REDMeta]
-	public partial class gameuiMinimapHazardWarningMappinController : gameuiBaseMinimapMappinController
+	public gameuiMinimapHazardWarningMappinController()
 	{
-		public gameuiMinimapHazardWarningMappinController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,26 +1,22 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questAchievementManagerNodeDefinition : questDisableableNodeDefinition
 {
-	[REDMeta]
-	public partial class questAchievementManagerNodeDefinition : questDisableableNodeDefinition
+	[Ordinal(2)] 
+	[RED("type")] 
+	public CHandle<questIAchievementManagerNodeType> Type
 	{
-		[Ordinal(2)] 
-		[RED("type")] 
-		public CHandle<questIAchievementManagerNodeType> Type
-		{
-			get => GetPropertyValue<CHandle<questIAchievementManagerNodeType>>();
-			set => SetPropertyValue<CHandle<questIAchievementManagerNodeType>>(value);
-		}
-
-		public questAchievementManagerNodeDefinition()
-		{
-			Sockets = new();
-			Id = 65535;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<questIAchievementManagerNodeType>>();
+		set => SetPropertyValue<CHandle<questIAchievementManagerNodeType>>(value);
 	}
+
+	public questAchievementManagerNodeDefinition()
+	{
+		Sockets = new();
+		Id = 65535;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

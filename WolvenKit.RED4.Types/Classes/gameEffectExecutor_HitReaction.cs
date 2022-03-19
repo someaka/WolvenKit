@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectExecutor_HitReaction : gameEffectExecutor
 {
-	[REDMeta]
-	public partial class gameEffectExecutor_HitReaction : gameEffectExecutor
+	public gameEffectExecutor_HitReaction()
 	{
-		public gameEffectExecutor_HitReaction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ABaseWrapper : IScriptable
 {
-	[REDMeta]
-	public partial class ABaseWrapper : IScriptable
+	public ABaseWrapper()
 	{
-		public ABaseWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

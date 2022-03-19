@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiUIIconsGeneratorSystem : gameuiIUIIconsGeneratorSystem
 {
-	[REDMeta]
-	public partial class gameuiUIIconsGeneratorSystem : gameuiIUIIconsGeneratorSystem
+	public gameuiUIIconsGeneratorSystem()
 	{
-		public gameuiUIIconsGeneratorSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

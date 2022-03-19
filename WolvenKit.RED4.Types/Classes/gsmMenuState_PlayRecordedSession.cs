@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmMenuState_PlayRecordedSession : gsmMenuState
 {
-	[REDMeta]
-	public partial class gsmMenuState_PlayRecordedSession : gsmMenuState
+	public gsmMenuState_PlayRecordedSession()
 	{
-		public gsmMenuState_PlayRecordedSession()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

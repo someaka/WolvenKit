@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIUtilsCombatSpaceHelper : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIUtilsCombatSpaceHelper : RedBaseClass
+	public AIUtilsCombatSpaceHelper()
 	{
-		public AIUtilsCombatSpaceHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIEffectTriggerSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIEffectTriggerSystem : gameIGameSystem
+	public gameIEffectTriggerSystem()
 	{
-		public gameIEffectTriggerSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

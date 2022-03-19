@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AlertedAnimWrapper : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AlertedAnimWrapper : AIbehaviortaskScript
+	public AlertedAnimWrapper()
 	{
-		public AlertedAnimWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

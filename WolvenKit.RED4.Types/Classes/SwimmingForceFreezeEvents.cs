@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SwimmingForceFreezeEvents : LocomotionSwimmingEvents
 {
-	[REDMeta]
-	public partial class SwimmingForceFreezeEvents : LocomotionSwimmingEvents
+	public SwimmingForceFreezeEvents()
 	{
-		public SwimmingForceFreezeEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

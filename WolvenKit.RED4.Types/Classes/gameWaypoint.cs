@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameWaypoint : worldIMarker
 {
-	[REDMeta]
-	public partial class gameWaypoint : worldIMarker
+	public gameWaypoint()
 	{
-		public gameWaypoint()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

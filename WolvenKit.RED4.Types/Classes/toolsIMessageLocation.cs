@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class toolsIMessageLocation : ISerializable
 {
-	[REDMeta]
-	public partial class toolsIMessageLocation : ISerializable
+	public toolsIMessageLocation()
 	{
-		public toolsIMessageLocation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIDynamicEntityIDSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIDynamicEntityIDSystem : gameIGameSystem
+	public gameIDynamicEntityIDSystem()
 	{
-		public gameIDynamicEntityIDSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

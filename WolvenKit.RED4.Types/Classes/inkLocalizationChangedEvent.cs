@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkLocalizationChangedEvent : inkEvent
 {
-	[REDMeta]
-	public partial class inkLocalizationChangedEvent : inkEvent
+	public inkLocalizationChangedEvent()
 	{
-		public inkLocalizationChangedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

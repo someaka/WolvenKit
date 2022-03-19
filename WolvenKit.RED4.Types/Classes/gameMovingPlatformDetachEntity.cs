@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMovingPlatformDetachEntity : redEvent
 {
-	[REDMeta]
-	public partial class gameMovingPlatformDetachEntity : redEvent
+	[Ordinal(0)] 
+	[RED("entity")] 
+	public CWeakHandle<entEntity> Entity
 	{
-		[Ordinal(0)] 
-		[RED("entity")] 
-		public CWeakHandle<entEntity> Entity
-		{
-			get => GetPropertyValue<CWeakHandle<entEntity>>();
-			set => SetPropertyValue<CWeakHandle<entEntity>>(value);
-		}
-
-		public gameMovingPlatformDetachEntity()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<entEntity>>();
+		set => SetPropertyValue<CWeakHandle<entEntity>>(value);
 	}
+
+	public gameMovingPlatformDetachEntity()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

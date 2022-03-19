@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AutoSaveRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class AutoSaveRequest : gameScriptableSystemRequest
+	public AutoSaveRequest()
 	{
-		public AutoSaveRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

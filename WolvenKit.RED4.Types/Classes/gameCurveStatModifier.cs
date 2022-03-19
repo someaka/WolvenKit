@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCurveStatModifier : gameStatModifierBase
 {
-	[REDMeta]
-	public partial class gameCurveStatModifier : gameStatModifierBase
+	public gameCurveStatModifier()
 	{
-		public gameCurveStatModifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

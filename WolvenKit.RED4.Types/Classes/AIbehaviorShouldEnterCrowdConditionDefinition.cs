@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorShouldEnterCrowdConditionDefinition : AIbehaviorConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorShouldEnterCrowdConditionDefinition : AIbehaviorConditionDefinition
+	public AIbehaviorShouldEnterCrowdConditionDefinition()
 	{
-		public AIbehaviorShouldEnterCrowdConditionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

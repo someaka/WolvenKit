@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CrowdMemberBaseComponent : gameCrowdMemberComponent
 {
-	[REDMeta]
-	public partial class CrowdMemberBaseComponent : gameCrowdMemberComponent
+	public CrowdMemberBaseComponent()
 	{
-		public CrowdMemberBaseComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

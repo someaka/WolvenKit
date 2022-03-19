@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiIronsightGameController : gameuiWidgetGameController
 {
-	[REDMeta]
-	public partial class gameuiIronsightGameController : gameuiWidgetGameController
+	public gameuiIronsightGameController()
 	{
-		public gameuiIronsightGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

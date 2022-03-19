@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkanimProxy : IScriptable
 {
-	[REDMeta]
-	public partial class inkanimProxy : IScriptable
+	public inkanimProxy()
 	{
-		public inkanimProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

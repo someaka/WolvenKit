@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISubActionChangeCoverSelectionPreset_Record : gamedataAISubAction_Record
 {
-	[REDMeta]
-	public partial class gamedataAISubActionChangeCoverSelectionPreset_Record : gamedataAISubAction_Record
+	public gamedataAISubActionChangeCoverSelectionPreset_Record()
 	{
-		public gamedataAISubActionChangeCoverSelectionPreset_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

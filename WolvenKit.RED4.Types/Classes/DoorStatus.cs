@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DoorStatus : BaseDeviceStatus
 {
-	[REDMeta]
-	public partial class DoorStatus : BaseDeviceStatus
+	public DoorStatus()
 	{
-		public DoorStatus()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

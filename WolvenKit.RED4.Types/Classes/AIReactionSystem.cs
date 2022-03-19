@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIReactionSystem : AIIReactionSystem
 {
-	[REDMeta]
-	public partial class AIReactionSystem : AIIReactionSystem
+	public AIReactionSystem()
 	{
-		public AIReactionSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

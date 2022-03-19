@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAmbientPaletteExclusionAreaNodeInstance : worldAreaShapeNodeInstance
 {
-	[REDMeta]
-	public partial class worldAmbientPaletteExclusionAreaNodeInstance : worldAreaShapeNodeInstance
+	public worldAmbientPaletteExclusionAreaNodeInstance()
 	{
-		public worldAmbientPaletteExclusionAreaNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

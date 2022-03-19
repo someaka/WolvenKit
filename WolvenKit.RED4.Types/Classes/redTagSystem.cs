@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class redTagSystem : RedBaseClass
 {
-	[REDMeta]
-	public partial class redTagSystem : RedBaseClass
+	public redTagSystem()
 	{
-		public redTagSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

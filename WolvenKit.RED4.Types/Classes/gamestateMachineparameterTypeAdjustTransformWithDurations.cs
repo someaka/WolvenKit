@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineparameterTypeAdjustTransformWithDurations : gamestateMachineparameterTypeAdjustTransform
 {
-	[REDMeta]
-	public partial class gamestateMachineparameterTypeAdjustTransformWithDurations : gamestateMachineparameterTypeAdjustTransform
+	public gamestateMachineparameterTypeAdjustTransformWithDurations()
 	{
-		public gamestateMachineparameterTypeAdjustTransformWithDurations()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

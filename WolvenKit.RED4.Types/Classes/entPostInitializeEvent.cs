@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entPostInitializeEvent : redEvent
 {
-	[REDMeta]
-	public partial class entPostInitializeEvent : redEvent
+	public entPostInitializeEvent()
 	{
-		public entPostInitializeEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

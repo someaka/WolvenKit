@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ScriptReentrantRWLock : RedBaseClass
 {
-	[REDMeta]
-	public partial class ScriptReentrantRWLock : RedBaseClass
+	public ScriptReentrantRWLock()
 	{
-		public ScriptReentrantRWLock()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

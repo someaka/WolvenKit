@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleCrystalDomeOffDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class VehicleCrystalDomeOffDelayEvent : redEvent
+	public VehicleCrystalDomeOffDelayEvent()
 	{
-		public VehicleCrystalDomeOffDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

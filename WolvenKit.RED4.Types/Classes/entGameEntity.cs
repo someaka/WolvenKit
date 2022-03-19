@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entGameEntity : entEntity
 {
-	[REDMeta]
-	public partial class entGameEntity : entEntity
+	public entGameEntity()
 	{
-		public entGameEntity()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActivatedDeviceCover : ActivatedDeviceTransfromAnim
 {
-	[REDMeta]
-	public partial class ActivatedDeviceCover : ActivatedDeviceTransfromAnim
+	[Ordinal(95)] 
+	[RED("offMeshConnection")] 
+	public CHandle<AIOffMeshConnectionComponent> OffMeshConnection
 	{
-		[Ordinal(95)] 
-		[RED("offMeshConnection")] 
-		public CHandle<AIOffMeshConnectionComponent> OffMeshConnection
-		{
-			get => GetPropertyValue<CHandle<AIOffMeshConnectionComponent>>();
-			set => SetPropertyValue<CHandle<AIOffMeshConnectionComponent>>(value);
-		}
-
-		public ActivatedDeviceCover()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<AIOffMeshConnectionComponent>>();
+		set => SetPropertyValue<CHandle<AIOffMeshConnectionComponent>>(value);
 	}
+
+	public ActivatedDeviceCover()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

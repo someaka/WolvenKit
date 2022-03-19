@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataFacialPreset_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataFacialPreset_Record : gamedataTweakDBRecord
+	public gamedataFacialPreset_Record()
 	{
-		public gamedataFacialPreset_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

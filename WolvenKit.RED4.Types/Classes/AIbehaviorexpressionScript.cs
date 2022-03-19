@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorexpressionScript : AIbehaviorScriptBase
 {
-	[REDMeta]
-	public partial class AIbehaviorexpressionScript : AIbehaviorScriptBase
+	public AIbehaviorexpressionScript()
 	{
-		public AIbehaviorexpressionScript()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

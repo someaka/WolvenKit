@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MinigameEvents : HighLevelTransition
 {
-	[REDMeta]
-	public partial class MinigameEvents : HighLevelTransition
+	public MinigameEvents()
 	{
-		public MinigameEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinfluenceIAgent : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameinfluenceIAgent : RedBaseClass
+	public gameinfluenceIAgent()
 	{
-		public gameinfluenceIAgent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

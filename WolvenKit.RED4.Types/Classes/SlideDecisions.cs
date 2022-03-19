@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SlideDecisions : CrouchDecisions
 {
-	[REDMeta]
-	public partial class SlideDecisions : CrouchDecisions
+	public SlideDecisions()
 	{
-		public SlideDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

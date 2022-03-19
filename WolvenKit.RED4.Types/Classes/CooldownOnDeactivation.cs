@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CooldownOnDeactivation : AICooldown
 {
-	[REDMeta]
-	public partial class CooldownOnDeactivation : AICooldown
+	public CooldownOnDeactivation()
 	{
-		public CooldownOnDeactivation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

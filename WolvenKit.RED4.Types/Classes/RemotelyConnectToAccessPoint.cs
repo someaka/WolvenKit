@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RemotelyConnectToAccessPoint : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class RemotelyConnectToAccessPoint : gameEffectExecutor_Scripted
+	public RemotelyConnectToAccessPoint()
 	{
-		public RemotelyConnectToAccessPoint()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataHandbrakeFrictionModifier_Record : gamedataDriveHelper_Record
 {
-	[REDMeta]
-	public partial class gamedataHandbrakeFrictionModifier_Record : gamedataDriveHelper_Record
+	public gamedataHandbrakeFrictionModifier_Record()
 	{
-		public gamedataHandbrakeFrictionModifier_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

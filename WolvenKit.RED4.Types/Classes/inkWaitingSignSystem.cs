@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkWaitingSignSystem : inkIWaitingSignSystem
 {
-	[REDMeta]
-	public partial class inkWaitingSignSystem : inkIWaitingSignSystem
+	public inkWaitingSignSystem()
 	{
-		public inkWaitingSignSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

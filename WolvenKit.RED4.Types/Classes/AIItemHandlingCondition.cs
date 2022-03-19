@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIItemHandlingCondition : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class AIItemHandlingCondition : AIbehaviorconditionScript
+	public AIItemHandlingCondition()
 	{
-		public AIItemHandlingCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RefreshPerkAreas : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class RefreshPerkAreas : gamePlayerScriptableSystemRequest
+	public RefreshPerkAreas()
 	{
-		public RefreshPerkAreas()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

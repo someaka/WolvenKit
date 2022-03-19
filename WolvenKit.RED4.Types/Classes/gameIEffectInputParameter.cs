@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIEffectInputParameter : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameIEffectInputParameter : RedBaseClass
+	public gameIEffectInputParameter()
 	{
-		public gameIEffectInputParameter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BaseAnimatedDeviceController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class BaseAnimatedDeviceController : ScriptableDeviceComponent
+	public BaseAnimatedDeviceController()
 	{
-		public BaseAnimatedDeviceController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

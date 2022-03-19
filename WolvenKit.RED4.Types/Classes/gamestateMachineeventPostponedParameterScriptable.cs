@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineeventPostponedParameterScriptable : gamestateMachineeventPostponedParameterBase
 {
-	[REDMeta]
-	public partial class gamestateMachineeventPostponedParameterScriptable : gamestateMachineeventPostponedParameterBase
+	[Ordinal(2)] 
+	[RED("value")] 
+	public CHandle<IScriptable> Value
 	{
-		[Ordinal(2)] 
-		[RED("value")] 
-		public CHandle<IScriptable> Value
-		{
-			get => GetPropertyValue<CHandle<IScriptable>>();
-			set => SetPropertyValue<CHandle<IScriptable>>(value);
-		}
-
-		public gamestateMachineeventPostponedParameterScriptable()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<IScriptable>>();
+		set => SetPropertyValue<CHandle<IScriptable>>(value);
 	}
+
+	public gamestateMachineeventPostponedParameterScriptable()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

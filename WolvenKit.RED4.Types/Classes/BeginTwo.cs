@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BeginTwo : DefaultTest
 {
-	[REDMeta]
-	public partial class BeginTwo : DefaultTest
+	public BeginTwo()
 	{
-		public BeginTwo()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

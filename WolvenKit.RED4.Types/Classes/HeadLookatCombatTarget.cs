@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HeadLookatCombatTarget : LookatCombatTarget
 {
-	[REDMeta]
-	public partial class HeadLookatCombatTarget : LookatCombatTarget
+	public HeadLookatCombatTarget()
 	{
-		public HeadLookatCombatTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICTreeNodeActionReloadWeaponDefinition : AICTreeNodeActionDefinition
 {
-	[REDMeta]
-	public partial class AICTreeNodeActionReloadWeaponDefinition : AICTreeNodeActionDefinition
+	public AICTreeNodeActionReloadWeaponDefinition()
 	{
-		public AICTreeNodeActionReloadWeaponDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

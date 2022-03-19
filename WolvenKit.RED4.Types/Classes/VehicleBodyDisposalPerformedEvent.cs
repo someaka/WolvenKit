@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleBodyDisposalPerformedEvent : redEvent
 {
-	[REDMeta]
-	public partial class VehicleBodyDisposalPerformedEvent : redEvent
+	public VehicleBodyDisposalPerformedEvent()
 	{
-		public VehicleBodyDisposalPerformedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

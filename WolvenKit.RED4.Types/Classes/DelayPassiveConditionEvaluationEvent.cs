@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DelayPassiveConditionEvaluationEvent : redEvent
 {
-	[REDMeta]
-	public partial class DelayPassiveConditionEvaluationEvent : redEvent
+	public DelayPassiveConditionEvaluationEvent()
 	{
-		public DelayPassiveConditionEvaluationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

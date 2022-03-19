@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HighlightModule : HUDModule
 {
-	[REDMeta]
-	public partial class HighlightModule : HUDModule
+	public HighlightModule()
 	{
-		public HighlightModule()
-		{
-			InstancesList = new();
+		InstancesList = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

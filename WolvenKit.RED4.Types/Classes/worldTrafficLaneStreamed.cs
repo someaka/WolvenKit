@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficLaneStreamed : RedBaseClass
 {
-	[REDMeta]
-	public partial class worldTrafficLaneStreamed : RedBaseClass
+	public worldTrafficLaneStreamed()
 	{
-		public worldTrafficLaneStreamed()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

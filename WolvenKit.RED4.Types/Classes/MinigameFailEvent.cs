@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MinigameFailEvent : redEvent
 {
-	[REDMeta]
-	public partial class MinigameFailEvent : redEvent
+	public MinigameFailEvent()
 	{
-		public MinigameFailEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

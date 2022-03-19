@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entSceneAnimSetEvent : redEvent
 {
-	[REDMeta]
-	public partial class entSceneAnimSetEvent : redEvent
+	public entSceneAnimSetEvent()
 	{
-		public entSceneAnimSetEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

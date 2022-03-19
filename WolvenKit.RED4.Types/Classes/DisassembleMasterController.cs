@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisassembleMasterController : MasterController
 {
-	[REDMeta]
-	public partial class DisassembleMasterController : MasterController
+	public DisassembleMasterController()
 	{
-		public DisassembleMasterController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

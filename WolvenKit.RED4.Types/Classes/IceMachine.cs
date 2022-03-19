@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IceMachine : VendingMachine
 {
-	[REDMeta]
-	public partial class IceMachine : VendingMachine
+	public IceMachine()
 	{
-		public IceMachine()
-		{
-			ControllerTypeName = "IceMachineController";
+		ControllerTypeName = "IceMachineController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

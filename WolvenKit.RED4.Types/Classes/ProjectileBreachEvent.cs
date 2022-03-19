@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProjectileBreachEvent : redEvent
 {
-	[REDMeta]
-	public partial class ProjectileBreachEvent : redEvent
+	public ProjectileBreachEvent()
 	{
-		public ProjectileBreachEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

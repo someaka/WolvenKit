@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BasicInteractionInterpreter : IScriptable
 {
-	[REDMeta]
-	public partial class BasicInteractionInterpreter : IScriptable
+	public BasicInteractionInterpreter()
 	{
-		public BasicInteractionInterpreter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

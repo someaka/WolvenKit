@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataTerminalScreenType_Record : gamedataDeviceScreenType_Record
 {
-	[REDMeta]
-	public partial class gamedataTerminalScreenType_Record : gamedataDeviceScreenType_Record
+	public gamedataTerminalScreenType_Record()
 	{
-		public gamedataTerminalScreenType_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

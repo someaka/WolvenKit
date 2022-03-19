@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataTPPCameraSetup_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataTPPCameraSetup_Record : gamedataTweakDBRecord
+	public gamedataTPPCameraSetup_Record()
 	{
-		public gamedataTPPCameraSetup_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

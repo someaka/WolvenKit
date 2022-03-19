@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameRichPresenceSystem : gameIRichPresenceSystem
 {
-	[REDMeta]
-	public partial class gameRichPresenceSystem : gameIRichPresenceSystem
+	public gameRichPresenceSystem()
 	{
-		public gameRichPresenceSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

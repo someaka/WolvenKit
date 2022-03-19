@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuicksortTemplate : IScriptable
 {
-	[REDMeta]
-	public partial class QuicksortTemplate : IScriptable
+	public QuicksortTemplate()
 	{
-		public QuicksortTemplate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

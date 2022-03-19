@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class userSettingsNotificationListener : IScriptable
 {
-	[REDMeta]
-	public partial class userSettingsNotificationListener : IScriptable
+	public userSettingsNotificationListener()
 	{
-		public userSettingsNotificationListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

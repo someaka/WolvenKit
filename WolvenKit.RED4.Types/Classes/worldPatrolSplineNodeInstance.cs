@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldPatrolSplineNodeInstance : worldSplineNodeInstance
 {
-	[REDMeta]
-	public partial class worldPatrolSplineNodeInstance : worldSplineNodeInstance
+	public worldPatrolSplineNodeInstance()
 	{
-		public worldPatrolSplineNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

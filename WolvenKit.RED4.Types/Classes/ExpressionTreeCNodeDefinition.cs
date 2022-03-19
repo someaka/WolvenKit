@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExpressionTreeCNodeDefinition : LibTreeINodeDefinition
 {
-	[REDMeta]
-	public partial class ExpressionTreeCNodeDefinition : LibTreeINodeDefinition
+	public ExpressionTreeCNodeDefinition()
 	{
-		public ExpressionTreeCNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

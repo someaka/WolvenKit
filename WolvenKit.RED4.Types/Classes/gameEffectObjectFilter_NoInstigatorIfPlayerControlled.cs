@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectObjectFilter_NoInstigatorIfPlayerControlled : gameEffectObjectSingleFilter
 {
-	[REDMeta]
-	public partial class gameEffectObjectFilter_NoInstigatorIfPlayerControlled : gameEffectObjectSingleFilter
+	public gameEffectObjectFilter_NoInstigatorIfPlayerControlled()
 	{
-		public gameEffectObjectFilter_NoInstigatorIfPlayerControlled()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

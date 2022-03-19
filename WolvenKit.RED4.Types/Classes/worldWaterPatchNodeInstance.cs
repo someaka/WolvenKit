@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldWaterPatchNodeInstance : worldMeshNodeInstance
 {
-	[REDMeta]
-	public partial class worldWaterPatchNodeInstance : worldMeshNodeInstance
+	public worldWaterPatchNodeInstance()
 	{
-		public worldWaterPatchNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NetrunnerControlPanelController : BasicDistractionDeviceController
 {
-	[REDMeta]
-	public partial class NetrunnerControlPanelController : BasicDistractionDeviceController
+	public NetrunnerControlPanelController()
 	{
-		public NetrunnerControlPanelController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

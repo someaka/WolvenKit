@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AccessPointIsBlocked : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class AccessPointIsBlocked : gameIScriptablePrereq
+	public AccessPointIsBlocked()
 	{
-		public AccessPointIsBlocked()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

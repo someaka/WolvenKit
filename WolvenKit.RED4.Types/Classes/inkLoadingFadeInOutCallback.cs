@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkLoadingFadeInOutCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkLoadingFadeInOutCallback : inkCallbackBase
+	public inkLoadingFadeInOutCallback()
 	{
-		public inkLoadingFadeInOutCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

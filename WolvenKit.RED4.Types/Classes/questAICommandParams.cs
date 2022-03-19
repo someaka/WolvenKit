@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questAICommandParams : scnAICommandFactory
 {
-	[REDMeta]
-	public partial class questAICommandParams : scnAICommandFactory
+	public questAICommandParams()
 	{
-		public questAICommandParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

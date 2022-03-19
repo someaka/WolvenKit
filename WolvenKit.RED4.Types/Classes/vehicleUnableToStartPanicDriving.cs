@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleUnableToStartPanicDriving : redEvent
 {
-	[REDMeta]
-	public partial class vehicleUnableToStartPanicDriving : redEvent
+	public vehicleUnableToStartPanicDriving()
 	{
-		public vehicleUnableToStartPanicDriving()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

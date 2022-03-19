@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PatrolControllerTask : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class PatrolControllerTask : AIbehaviortaskScript
+	public PatrolControllerTask()
 	{
-		public PatrolControllerTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

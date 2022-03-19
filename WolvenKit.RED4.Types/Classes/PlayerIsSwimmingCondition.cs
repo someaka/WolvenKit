@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerIsSwimmingCondition : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class PlayerIsSwimmingCondition : gameinteractionsInteractionScriptedCondition
+	public PlayerIsSwimmingCondition()
 	{
-		public PlayerIsSwimmingCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

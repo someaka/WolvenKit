@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TCSUpdate : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class TCSUpdate : gameScriptableSystemRequest
+	public TCSUpdate()
 	{
-		public TCSUpdate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

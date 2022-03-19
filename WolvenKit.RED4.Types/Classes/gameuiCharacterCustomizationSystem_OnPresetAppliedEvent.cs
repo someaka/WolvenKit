@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiCharacterCustomizationSystem_OnPresetAppliedEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiCharacterCustomizationSystem_OnPresetAppliedEvent : redEvent
+	public gameuiCharacterCustomizationSystem_OnPresetAppliedEvent()
 	{
-		public gameuiCharacterCustomizationSystem_OnPresetAppliedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

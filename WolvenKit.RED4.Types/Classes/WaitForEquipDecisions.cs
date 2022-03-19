@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WaitForEquipDecisions : UpperBodyTransition
 {
-	[REDMeta]
-	public partial class WaitForEquipDecisions : UpperBodyTransition
+	public WaitForEquipDecisions()
 	{
-		public WaitForEquipDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

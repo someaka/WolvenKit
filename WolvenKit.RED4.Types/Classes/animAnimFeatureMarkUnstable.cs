@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimFeatureMarkUnstable : animAnimFeature
 {
-	[REDMeta]
-	public partial class animAnimFeatureMarkUnstable : animAnimFeature
+	public animAnimFeatureMarkUnstable()
 	{
-		public animAnimFeatureMarkUnstable()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

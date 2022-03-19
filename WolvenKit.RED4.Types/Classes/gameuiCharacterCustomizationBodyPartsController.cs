@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiCharacterCustomizationBodyPartsController : gameuiICharacterCustomizationBodyPartsController
 {
-	[REDMeta]
-	public partial class gameuiCharacterCustomizationBodyPartsController : gameuiICharacterCustomizationBodyPartsController
+	[Ordinal(3)] 
+	[RED("isHiddenInFpp")] 
+	public CBool IsHiddenInFpp
 	{
-		[Ordinal(3)] 
-		[RED("isHiddenInFpp")] 
-		public CBool IsHiddenInFpp
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public gameuiCharacterCustomizationBodyPartsController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public gameuiCharacterCustomizationBodyPartsController()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

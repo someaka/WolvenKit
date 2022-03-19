@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NotInDefeated : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class NotInDefeated : gameEffectObjectSingleFilter_Scripted
+	public NotInDefeated()
 	{
-		public NotInDefeated()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

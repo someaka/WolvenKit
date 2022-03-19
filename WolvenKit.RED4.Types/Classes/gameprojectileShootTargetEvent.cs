@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameprojectileShootTargetEvent : gameprojectileShootEvent
 {
-	[REDMeta]
-	public partial class gameprojectileShootTargetEvent : gameprojectileShootEvent
+	public gameprojectileShootTargetEvent()
 	{
-		public gameprojectileShootTargetEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

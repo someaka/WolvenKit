@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimEvent_TrajectoryAdjustment : animAnimEvent
 {
-	[REDMeta]
-	public partial class animAnimEvent_TrajectoryAdjustment : animAnimEvent
+	public animAnimEvent_TrajectoryAdjustment()
 	{
-		public animAnimEvent_TrajectoryAdjustment()
-		{
-			DurationInFrames = 15;
+		DurationInFrames = 15;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

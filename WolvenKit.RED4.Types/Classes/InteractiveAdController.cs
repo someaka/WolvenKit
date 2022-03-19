@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InteractiveAdController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class InteractiveAdController : ScriptableDeviceComponent
+	public InteractiveAdController()
 	{
-		public InteractiveAdController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

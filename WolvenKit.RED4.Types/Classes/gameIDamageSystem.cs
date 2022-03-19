@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIDamageSystem : gameIReplicatedGameSystem
 {
-	[REDMeta]
-	public partial class gameIDamageSystem : gameIReplicatedGameSystem
+	public gameIDamageSystem()
 	{
-		public gameIDamageSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

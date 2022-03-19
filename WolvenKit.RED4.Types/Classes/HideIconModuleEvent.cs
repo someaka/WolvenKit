@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HideIconModuleEvent : redEvent
 {
-	[REDMeta]
-	public partial class HideIconModuleEvent : redEvent
+	public HideIconModuleEvent()
 	{
-		public HideIconModuleEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

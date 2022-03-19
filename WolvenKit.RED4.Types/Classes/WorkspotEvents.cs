@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WorkspotEvents : LocomotionGroundEvents
 {
-	[REDMeta]
-	public partial class WorkspotEvents : LocomotionGroundEvents
+	public WorkspotEvents()
 	{
-		public WorkspotEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

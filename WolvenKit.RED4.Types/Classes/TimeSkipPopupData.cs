@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TimeSkipPopupData : inkGameNotificationData
 {
-	[REDMeta]
-	public partial class TimeSkipPopupData : inkGameNotificationData
+	public TimeSkipPopupData()
 	{
-		public TimeSkipPopupData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

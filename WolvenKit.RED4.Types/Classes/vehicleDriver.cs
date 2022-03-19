@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleDriver : RedBaseClass
 {
-	[REDMeta]
-	public partial class vehicleDriver : RedBaseClass
+	public vehicleDriver()
 	{
-		public vehicleDriver()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BarbedWireController : ActivatedDeviceController
 {
-	[REDMeta]
-	public partial class BarbedWireController : ActivatedDeviceController
+	public BarbedWireController()
 	{
-		public BarbedWireController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

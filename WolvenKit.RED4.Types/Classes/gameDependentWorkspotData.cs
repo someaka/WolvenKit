@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDependentWorkspotData : ISerializable
 {
-	[REDMeta]
-	public partial class gameDependentWorkspotData : ISerializable
+	public gameDependentWorkspotData()
 	{
-		public gameDependentWorkspotData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

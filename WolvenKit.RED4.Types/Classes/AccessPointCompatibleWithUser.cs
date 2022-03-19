@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AccessPointCompatibleWithUser : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class AccessPointCompatibleWithUser : gameinteractionsInteractionScriptedCondition
+	public AccessPointCompatibleWithUser()
 	{
-		public AccessPointCompatibleWithUser()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

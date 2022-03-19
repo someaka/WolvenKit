@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PopupStateUtils : IScriptable
 {
-	[REDMeta]
-	public partial class PopupStateUtils : IScriptable
+	public PopupStateUtils()
 	{
-		public PopupStateUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectExecutor_TriggerDestruction : gameEffectExecutor
 {
-	[REDMeta]
-	public partial class gameEffectExecutor_TriggerDestruction : gameEffectExecutor
+	public gameEffectExecutor_TriggerDestruction()
 	{
-		public gameEffectExecutor_TriggerDestruction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

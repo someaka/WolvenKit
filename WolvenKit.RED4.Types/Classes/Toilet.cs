@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Toilet : InteractiveDevice
 {
-	[REDMeta]
-	public partial class Toilet : InteractiveDevice
+	public Toilet()
 	{
-		public Toilet()
-		{
-			ControllerTypeName = "ToiletController";
+		ControllerTypeName = "ToiletController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

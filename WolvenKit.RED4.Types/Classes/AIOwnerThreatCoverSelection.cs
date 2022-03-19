@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIOwnerThreatCoverSelection : AICoverSelectionParameters
 {
-	[REDMeta]
-	public partial class AIOwnerThreatCoverSelection : AICoverSelectionParameters
+	public AIOwnerThreatCoverSelection()
 	{
-		public AIOwnerThreatCoverSelection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

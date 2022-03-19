@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIWorldStateSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class questIWorldStateSystem : gameIGameSystem
+	public questIWorldStateSystem()
 	{
-		public questIWorldStateSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

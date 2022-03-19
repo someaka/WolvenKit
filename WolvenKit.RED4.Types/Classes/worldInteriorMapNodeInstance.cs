@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldInteriorMapNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldInteriorMapNodeInstance : worldINodeInstance
+	public worldInteriorMapNodeInstance()
 	{
-		public worldInteriorMapNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

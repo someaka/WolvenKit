@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataCompoundSelectionPreset_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataCompoundSelectionPreset_Record : gamedataTweakDBRecord
+	public gamedataCompoundSelectionPreset_Record()
 	{
-		public gamedataCompoundSelectionPreset_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

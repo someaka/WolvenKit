@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EnableColliderDelayEvent : DelayEvent
 {
-	[REDMeta]
-	public partial class EnableColliderDelayEvent : DelayEvent
+	public EnableColliderDelayEvent()
 	{
-		public EnableColliderDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

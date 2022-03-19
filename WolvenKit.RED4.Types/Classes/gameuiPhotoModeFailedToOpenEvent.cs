@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiPhotoModeFailedToOpenEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiPhotoModeFailedToOpenEvent : redEvent
+	public gameuiPhotoModeFailedToOpenEvent()
 	{
-		public gameuiPhotoModeFailedToOpenEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

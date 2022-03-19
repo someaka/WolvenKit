@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataFastTravelPoint_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataFastTravelPoint_Record : gamedataTweakDBRecord
+	public gamedataFastTravelPoint_Record()
 	{
-		public gamedataFastTravelPoint_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

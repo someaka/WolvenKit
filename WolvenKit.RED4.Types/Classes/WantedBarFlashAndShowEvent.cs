@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WantedBarFlashAndShowEvent : redEvent
 {
-	[REDMeta]
-	public partial class WantedBarFlashAndShowEvent : redEvent
+	public WantedBarFlashAndShowEvent()
 	{
-		public WantedBarFlashAndShowEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

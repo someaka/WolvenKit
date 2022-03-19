@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GenericNotificationBaseAction : IScriptable
 {
-	[REDMeta]
-	public partial class GenericNotificationBaseAction : IScriptable
+	public GenericNotificationBaseAction()
 	{
-		public GenericNotificationBaseAction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

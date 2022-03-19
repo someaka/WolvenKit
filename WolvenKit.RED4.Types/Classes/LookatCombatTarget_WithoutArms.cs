@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LookatCombatTarget_WithoutArms : AIGenericEntityLookatTask
 {
-	[REDMeta]
-	public partial class LookatCombatTarget_WithoutArms : AIGenericEntityLookatTask
+	public LookatCombatTarget_WithoutArms()
 	{
-		public LookatCombatTarget_WithoutArms()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

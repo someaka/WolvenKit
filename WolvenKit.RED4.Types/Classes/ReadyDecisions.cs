@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReadyDecisions : WeaponReadyListenerTransition
 {
-	[REDMeta]
-	public partial class ReadyDecisions : WeaponReadyListenerTransition
+	public ReadyDecisions()
 	{
-		public ReadyDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

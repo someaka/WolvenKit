@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataCurrencyReward_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataCurrencyReward_Record : gamedataTweakDBRecord
+	public gamedataCurrencyReward_Record()
 	{
-		public gamedataCurrencyReward_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

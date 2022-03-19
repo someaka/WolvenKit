@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GlitchedTurretControllerPS : ScriptableDeviceComponentPS
 {
-	[REDMeta]
-	public partial class GlitchedTurretControllerPS : ScriptableDeviceComponentPS
+	public GlitchedTurretControllerPS()
 	{
-		public GlitchedTurretControllerPS()
-		{
-			DeviceName = "LocKey#121";
-			TweakDBRecord = 96702420141;
-			TweakDBDescriptionRecord = 147741407213;
+		DeviceName = "LocKey#121";
+		TweakDBRecord = 96702420141;
+		TweakDBDescriptionRecord = 147741407213;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

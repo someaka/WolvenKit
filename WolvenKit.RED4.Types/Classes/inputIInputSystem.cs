@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inputIInputSystem : RedBaseClass
 {
-	[REDMeta]
-	public partial class inputIInputSystem : RedBaseClass
+	public inputIInputSystem()
 	{
-		public inputIInputSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

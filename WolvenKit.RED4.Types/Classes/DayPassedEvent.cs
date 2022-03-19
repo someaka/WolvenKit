@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DayPassedEvent : redEvent
 {
-	[REDMeta]
-	public partial class DayPassedEvent : redEvent
+	public DayPassedEvent()
 	{
-		public DayPassedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

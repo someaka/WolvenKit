@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class lookAtPresetGunBaseDecisions : LookAtPresetBaseDecisions
 {
-	[REDMeta]
-	public partial class lookAtPresetGunBaseDecisions : LookAtPresetBaseDecisions
+	public lookAtPresetGunBaseDecisions()
 	{
-		public lookAtPresetGunBaseDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

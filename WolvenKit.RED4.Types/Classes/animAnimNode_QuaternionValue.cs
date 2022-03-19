@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_QuaternionValue : animAnimNode_Base
 {
-	[REDMeta]
-	public partial class animAnimNode_QuaternionValue : animAnimNode_Base
+	public animAnimNode_QuaternionValue()
 	{
-		public animAnimNode_QuaternionValue()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

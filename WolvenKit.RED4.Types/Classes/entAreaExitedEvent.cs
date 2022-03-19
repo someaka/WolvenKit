@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAreaExitedEvent : entTriggerEvent
 {
-	[REDMeta]
-	public partial class entAreaExitedEvent : entTriggerEvent
+	public entAreaExitedEvent()
 	{
-		public entAreaExitedEvent()
-		{
-			TriggerID = new();
-			Activator = new();
-			WorldPosition = new() { W = 1.000000F };
+		TriggerID = new();
+		Activator = new();
+		WorldPosition = new() { W = 1.000000F };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

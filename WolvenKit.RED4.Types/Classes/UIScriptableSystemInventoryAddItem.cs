@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UIScriptableSystemInventoryAddItem : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UIScriptableSystemInventoryAddItem : gameScriptableSystemRequest
+	[Ordinal(0)] 
+	[RED("itemID")] 
+	public gameItemID ItemID
 	{
-		[Ordinal(0)] 
-		[RED("itemID")] 
-		public gameItemID ItemID
-		{
-			get => GetPropertyValue<gameItemID>();
-			set => SetPropertyValue<gameItemID>(value);
-		}
-
-		public UIScriptableSystemInventoryAddItem()
-		{
-			ItemID = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gameItemID>();
+		set => SetPropertyValue<gameItemID>(value);
 	}
+
+	public UIScriptableSystemInventoryAddItem()
+	{
+		ItemID = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

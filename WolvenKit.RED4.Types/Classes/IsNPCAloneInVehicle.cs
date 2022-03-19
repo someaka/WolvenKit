@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsNPCAloneInVehicle : AIVehicleConditionAbstract
 {
-	[REDMeta]
-	public partial class IsNPCAloneInVehicle : AIVehicleConditionAbstract
+	public IsNPCAloneInVehicle()
 	{
-		public IsNPCAloneInVehicle()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

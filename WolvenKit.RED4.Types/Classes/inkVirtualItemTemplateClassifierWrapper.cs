@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVirtualItemTemplateClassifierWrapper : IScriptable
 {
-	[REDMeta]
-	public partial class inkVirtualItemTemplateClassifierWrapper : IScriptable
+	public inkVirtualItemTemplateClassifierWrapper()
 	{
-		public inkVirtualItemTemplateClassifierWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

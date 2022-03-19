@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeviceDirectInteractionCondition : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class DeviceDirectInteractionCondition : gameinteractionsInteractionScriptedCondition
+	public DeviceDirectInteractionCondition()
 	{
-		public DeviceDirectInteractionCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

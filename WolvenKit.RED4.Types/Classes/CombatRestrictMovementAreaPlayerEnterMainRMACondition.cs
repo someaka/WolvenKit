@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CombatRestrictMovementAreaPlayerEnterMainRMACondition : AICombatGuardAreaScriptCondition
 {
-	[REDMeta]
-	public partial class CombatRestrictMovementAreaPlayerEnterMainRMACondition : AICombatGuardAreaScriptCondition
+	public CombatRestrictMovementAreaPlayerEnterMainRMACondition()
 	{
-		public CombatRestrictMovementAreaPlayerEnterMainRMACondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

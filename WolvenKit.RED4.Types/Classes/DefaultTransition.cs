@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DefaultTransition : gamestateMachineFunctor
 {
-	[REDMeta]
-	public partial class DefaultTransition : gamestateMachineFunctor
+	public DefaultTransition()
 	{
-		public DefaultTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

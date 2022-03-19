@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkPauseMenuState : inkIStateMachineState
 {
-	[REDMeta]
-	public partial class inkPauseMenuState : inkIStateMachineState
+	public inkPauseMenuState()
 	{
-		public inkPauseMenuState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

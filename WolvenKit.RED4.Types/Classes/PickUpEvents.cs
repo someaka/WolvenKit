@@ -1,27 +1,23 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PickUpEvents : CarriedObjectEvents
 {
-	[REDMeta]
-	public partial class PickUpEvents : CarriedObjectEvents
+	[Ordinal(9)] 
+	[RED("stateMachineInstanceData")] 
+	public gamestateMachineStateMachineInstanceData StateMachineInstanceData
 	{
-		[Ordinal(9)] 
-		[RED("stateMachineInstanceData")] 
-		public gamestateMachineStateMachineInstanceData StateMachineInstanceData
-		{
-			get => GetPropertyValue<gamestateMachineStateMachineInstanceData>();
-			set => SetPropertyValue<gamestateMachineStateMachineInstanceData>(value);
-		}
-
-		public PickUpEvents()
-		{
-			StyleName = "CarriedObject.Style";
-			ForceStyleName = "CarriedObject.ForcedStyle";
-			StateMachineInstanceData = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gamestateMachineStateMachineInstanceData>();
+		set => SetPropertyValue<gamestateMachineStateMachineInstanceData>(value);
 	}
+
+	public PickUpEvents()
+	{
+		StyleName = "CarriedObject.Style";
+		ForceStyleName = "CarriedObject.ForcedStyle";
+		StateMachineInstanceData = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiInGameCharacterCustomizationPuppetAttachmentSlotsListener : gameIAttachmentSlotsListener
 {
-	[REDMeta]
-	public partial class gameuiInGameCharacterCustomizationPuppetAttachmentSlotsListener : gameIAttachmentSlotsListener
+	public gameuiInGameCharacterCustomizationPuppetAttachmentSlotsListener()
 	{
-		public gameuiInGameCharacterCustomizationPuppetAttachmentSlotsListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

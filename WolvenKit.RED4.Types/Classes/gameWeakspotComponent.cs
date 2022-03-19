@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameWeakspotComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameWeakspotComponent : entIComponent
+	public gameWeakspotComponent()
 	{
-		public gameWeakspotComponent()
-		{
-			Name = "Component";
-			IsReplicable = true;
+		Name = "Component";
+		IsReplicable = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

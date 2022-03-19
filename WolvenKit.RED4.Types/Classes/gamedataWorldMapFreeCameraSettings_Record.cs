@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataWorldMapFreeCameraSettings_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataWorldMapFreeCameraSettings_Record : gamedataTweakDBRecord
+	public gamedataWorldMapFreeCameraSettings_Record()
 	{
-		public gamedataWorldMapFreeCameraSettings_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

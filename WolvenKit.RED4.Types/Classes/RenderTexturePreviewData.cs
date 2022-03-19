@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RenderTexturePreviewData : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class RenderTexturePreviewData : ISceneStorageCustomData
+	public RenderTexturePreviewData()
 	{
-		public RenderTexturePreviewData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

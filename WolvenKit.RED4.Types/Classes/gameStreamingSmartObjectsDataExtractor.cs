@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameStreamingSmartObjectsDataExtractor : resIStreamedResourceDataExtractor
 {
-	[REDMeta]
-	public partial class gameStreamingSmartObjectsDataExtractor : resIStreamedResourceDataExtractor
+	public gameStreamingSmartObjectsDataExtractor()
 	{
-		public gameStreamingSmartObjectsDataExtractor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

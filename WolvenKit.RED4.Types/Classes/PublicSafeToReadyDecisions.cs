@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PublicSafeToReadyDecisions : WeaponTransition
 {
-	[REDMeta]
-	public partial class PublicSafeToReadyDecisions : WeaponTransition
+	public PublicSafeToReadyDecisions()
 	{
-		public PublicSafeToReadyDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TCSInputCameraZoom : redEvent
 {
-	[REDMeta]
-	public partial class TCSInputCameraZoom : redEvent
+	public TCSInputCameraZoom()
 	{
-		public TCSInputCameraZoom()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

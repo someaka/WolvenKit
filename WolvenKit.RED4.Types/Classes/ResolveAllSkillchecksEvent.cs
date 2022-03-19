@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResolveAllSkillchecksEvent : redEvent
 {
-	[REDMeta]
-	public partial class ResolveAllSkillchecksEvent : redEvent
+	public ResolveAllSkillchecksEvent()
 	{
-		public ResolveAllSkillchecksEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

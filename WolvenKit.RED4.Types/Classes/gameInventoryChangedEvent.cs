@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameInventoryChangedEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameInventoryChangedEvent : redEvent
+	public gameInventoryChangedEvent()
 	{
-		public gameInventoryChangedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

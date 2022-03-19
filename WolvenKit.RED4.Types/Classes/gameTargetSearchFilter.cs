@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTargetSearchFilter : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameTargetSearchFilter : RedBaseClass
+	public gameTargetSearchFilter()
 	{
-		public gameTargetSearchFilter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

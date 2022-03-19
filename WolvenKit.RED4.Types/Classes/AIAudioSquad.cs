@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIAudioSquad : AISquadBase
 {
-	[REDMeta]
-	public partial class AIAudioSquad : AISquadBase
+	public AIAudioSquad()
 	{
-		public AIAudioSquad()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WeaponStateMachinePrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class WeaponStateMachinePrereqState : gamePrereqState
+	public WeaponStateMachinePrereqState()
 	{
-		public WeaponStateMachinePrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

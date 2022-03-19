@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameBinkMeshTargetBinding : entISourceBinding
 {
-	[REDMeta]
-	public partial class gameBinkMeshTargetBinding : entISourceBinding
+	public gameBinkMeshTargetBinding()
 	{
-		public gameBinkMeshTargetBinding()
-		{
-			Enabled = true;
-			EnableMask = new() { HardTags = new() { Tags = new() }, SoftTags = new() { Tags = new() }, ExcludedTags = new() { Tags = new() { "NoBinding" } } };
+		Enabled = true;
+		EnableMask = new() { HardTags = new() { Tags = new() }, SoftTags = new() { Tags = new() }, ExcludedTags = new() { Tags = new() { "NoBinding" } } };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

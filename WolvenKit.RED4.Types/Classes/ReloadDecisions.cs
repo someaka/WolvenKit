@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReloadDecisions : WeaponTransition
 {
-	[REDMeta]
-	public partial class ReloadDecisions : WeaponTransition
+	public ReloadDecisions()
 	{
-		public ReloadDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

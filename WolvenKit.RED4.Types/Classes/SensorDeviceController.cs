@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SensorDeviceController : ExplosiveDeviceController
 {
-	[REDMeta]
-	public partial class SensorDeviceController : ExplosiveDeviceController
+	public SensorDeviceController()
 	{
-		public SensorDeviceController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

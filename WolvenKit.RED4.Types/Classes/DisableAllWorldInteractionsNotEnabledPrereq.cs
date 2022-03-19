@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisableAllWorldInteractionsNotEnabledPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class DisableAllWorldInteractionsNotEnabledPrereq : gameIScriptablePrereq
+	public DisableAllWorldInteractionsNotEnabledPrereq()
 	{
-		public DisableAllWorldInteractionsNotEnabledPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

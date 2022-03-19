@@ -1,20 +1,17 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickHackToggleOpen : ActionBool
 {
-	[REDMeta]
-	public partial class QuickHackToggleOpen : ActionBool
+	public QuickHackToggleOpen()
 	{
-		public QuickHackToggleOpen()
-		{
-			RequesterID = new();
-			InteractionChoice = new() { CaptionParts = new() { Parts = new() }, Data = new(), ChoiceMetaData = new() { Type = new() }, LookAtDescriptor = new() { Offset = new(), OrbId = new() } };
-			ActionWidgetPackage = new() { DependendActions = new() };
-			CanTriggerStim = true;
-			IsQuickHack = true;
+		RequesterID = new();
+		InteractionChoice = new() { CaptionParts = new() { Parts = new() }, Data = new(), ChoiceMetaData = new() { Type = new() }, LookAtDescriptor = new() { Offset = new(), OrbId = new() } };
+		ActionWidgetPackage = new() { DependendActions = new() };
+		CanTriggerStim = true;
+		IsQuickHack = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

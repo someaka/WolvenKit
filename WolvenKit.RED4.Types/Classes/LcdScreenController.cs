@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LcdScreenController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class LcdScreenController : ScriptableDeviceComponent
+	public LcdScreenController()
 	{
-		public LcdScreenController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

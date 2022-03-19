@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerFunctionalTests : IScriptable
 {
-	[REDMeta]
-	public partial class PlayerFunctionalTests : IScriptable
+	public PlayerFunctionalTests()
 	{
-		public PlayerFunctionalTests()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

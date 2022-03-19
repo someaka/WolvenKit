@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AccessBreachListener : QuickHackUploadListener
 {
-	[REDMeta]
-	public partial class AccessBreachListener : QuickHackUploadListener
+	public AccessBreachListener()
 	{
-		public AccessBreachListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkNullIconAtlas : inkIIconAtlas
 {
-	[REDMeta]
-	public partial class inkNullIconAtlas : inkIIconAtlas
+	public inkNullIconAtlas()
 	{
-		public inkNullIconAtlas()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

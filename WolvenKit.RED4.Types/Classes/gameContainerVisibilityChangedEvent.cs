@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameContainerVisibilityChangedEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameContainerVisibilityChangedEvent : redEvent
+	public gameContainerVisibilityChangedEvent()
 	{
-		public gameContainerVisibilityChangedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

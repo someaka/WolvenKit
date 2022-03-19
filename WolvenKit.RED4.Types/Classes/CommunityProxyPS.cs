@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CommunityProxyPS : MasterControllerPS
 {
-	[REDMeta]
-	public partial class CommunityProxyPS : MasterControllerPS
+	public CommunityProxyPS()
 	{
-		public CommunityProxyPS()
-		{
-			RevealDevicesGrid = false;
-			HasNetworkBackdoor = true;
+		RevealDevicesGrid = false;
+		HasNetworkBackdoor = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

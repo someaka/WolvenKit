@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkIWorldWidgetComponentWrapper : RedBaseClass
 {
-	[REDMeta]
-	public partial class inkIWorldWidgetComponentWrapper : RedBaseClass
+	public inkIWorldWidgetComponentWrapper()
 	{
-		public inkIWorldWidgetComponentWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

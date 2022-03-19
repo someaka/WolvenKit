@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CyberwareTemplateClassifier : inkVirtualItemTemplateClassifierWrapper
 {
-	[REDMeta]
-	public partial class CyberwareTemplateClassifier : inkVirtualItemTemplateClassifierWrapper
+	public CyberwareTemplateClassifier()
 	{
-		public CyberwareTemplateClassifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

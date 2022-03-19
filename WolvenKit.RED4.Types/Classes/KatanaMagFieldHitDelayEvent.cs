@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class KatanaMagFieldHitDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class KatanaMagFieldHitDelayEvent : redEvent
+	public KatanaMagFieldHitDelayEvent()
 	{
-		public KatanaMagFieldHitDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

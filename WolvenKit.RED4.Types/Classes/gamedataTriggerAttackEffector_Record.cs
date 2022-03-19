@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataTriggerAttackEffector_Record : gamedataEffector_Record
 {
-	[REDMeta]
-	public partial class gamedataTriggerAttackEffector_Record : gamedataEffector_Record
+	public gamedataTriggerAttackEffector_Record()
 	{
-		public gamedataTriggerAttackEffector_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

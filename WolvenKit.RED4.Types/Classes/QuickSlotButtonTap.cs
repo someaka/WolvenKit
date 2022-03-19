@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class QuickSlotButtonTap : redEvent
 {
-	[REDMeta]
-	public partial class QuickSlotButtonTap : redEvent
+	[Ordinal(0)] 
+	[RED("dPadItemDirection")] 
+	public CEnum<EDPadSlot> DPadItemDirection
 	{
-		[Ordinal(0)] 
-		[RED("dPadItemDirection")] 
-		public CEnum<EDPadSlot> DPadItemDirection
-		{
-			get => GetPropertyValue<CEnum<EDPadSlot>>();
-			set => SetPropertyValue<CEnum<EDPadSlot>>(value);
-		}
-
-		public QuickSlotButtonTap()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<EDPadSlot>>();
+		set => SetPropertyValue<CEnum<EDPadSlot>>(value);
 	}
+
+	public QuickSlotButtonTap()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

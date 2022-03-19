@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PhoneOnDecisions : ComDeviceTransition
 {
-	[REDMeta]
-	public partial class PhoneOnDecisions : ComDeviceTransition
+	public PhoneOnDecisions()
 	{
-		public PhoneOnDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

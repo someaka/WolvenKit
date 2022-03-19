@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCameraCurveSet : CurveSet
 {
-	[REDMeta]
-	public partial class gameCameraCurveSet : CurveSet
+	public gameCameraCurveSet()
 	{
-		public gameCameraCurveSet()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

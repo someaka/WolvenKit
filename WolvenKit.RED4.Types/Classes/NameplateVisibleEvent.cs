@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NameplateVisibleEvent : redEvent
 {
-	[REDMeta]
-	public partial class NameplateVisibleEvent : redEvent
+	[Ordinal(0)] 
+	[RED("isNameplateVisible")] 
+	public CBool IsNameplateVisible
 	{
-		[Ordinal(0)] 
-		[RED("isNameplateVisible")] 
-		public CBool IsNameplateVisible
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("entityID")] 
-		public entEntityID EntityID
-		{
-			get => GetPropertyValue<entEntityID>();
-			set => SetPropertyValue<entEntityID>(value);
-		}
-
-		public NameplateVisibleEvent()
-		{
-			EntityID = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("entityID")] 
+	public entEntityID EntityID
+	{
+		get => GetPropertyValue<entEntityID>();
+		set => SetPropertyValue<entEntityID>(value);
+	}
+
+	public NameplateVisibleEvent()
+	{
+		EntityID = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

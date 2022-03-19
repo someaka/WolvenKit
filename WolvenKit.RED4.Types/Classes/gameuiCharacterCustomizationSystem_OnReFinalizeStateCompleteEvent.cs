@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiCharacterCustomizationSystem_OnReFinalizeStateCompleteEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiCharacterCustomizationSystem_OnReFinalizeStateCompleteEvent : redEvent
+	public gameuiCharacterCustomizationSystem_OnReFinalizeStateCompleteEvent()
 	{
-		public gameuiCharacterCustomizationSystem_OnReFinalizeStateCompleteEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

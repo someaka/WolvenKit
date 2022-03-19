@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class senseOnDetectedEvent : senseVisibilityEvent
 {
-	[REDMeta]
-	public partial class senseOnDetectedEvent : senseVisibilityEvent
+	public senseOnDetectedEvent()
 	{
-		public senseOnDetectedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

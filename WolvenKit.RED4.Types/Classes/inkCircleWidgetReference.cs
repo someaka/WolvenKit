@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkCircleWidgetReference : inkLeafWidgetReference
 {
-	[REDMeta]
-	public partial class inkCircleWidgetReference : inkLeafWidgetReference
+	public inkCircleWidgetReference()
 	{
-		public inkCircleWidgetReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

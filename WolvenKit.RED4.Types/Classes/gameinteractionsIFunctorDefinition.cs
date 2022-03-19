@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsIFunctorDefinition : ISerializable
 {
-	[REDMeta]
-	public partial class gameinteractionsIFunctorDefinition : ISerializable
+	public gameinteractionsIFunctorDefinition()
 	{
-		public gameinteractionsIFunctorDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SwimmingDivingDecisions : LocomotionSwimming
 {
-	[REDMeta]
-	public partial class SwimmingDivingDecisions : LocomotionSwimming
+	public SwimmingDivingDecisions()
 	{
-		public SwimmingDivingDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISquadFurthestToSectorCheck_Record : gamedataAISquadDistanceRelationToSectorCheck_Record
 {
-	[REDMeta]
-	public partial class gamedataAISquadFurthestToSectorCheck_Record : gamedataAISquadDistanceRelationToSectorCheck_Record
+	public gamedataAISquadFurthestToSectorCheck_Record()
 	{
-		public gamedataAISquadFurthestToSectorCheck_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

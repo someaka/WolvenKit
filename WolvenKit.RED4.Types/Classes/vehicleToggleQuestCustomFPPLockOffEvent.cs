@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleToggleQuestCustomFPPLockOffEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleToggleQuestCustomFPPLockOffEvent : redEvent
+	public vehicleToggleQuestCustomFPPLockOffEvent()
 	{
-		public vehicleToggleQuestCustomFPPLockOffEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

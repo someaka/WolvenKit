@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiSideScrollerSpawnerAdvanced : IScriptable
 {
-	[REDMeta]
-	public partial class gameuiSideScrollerSpawnerAdvanced : IScriptable
+	public gameuiSideScrollerSpawnerAdvanced()
 	{
-		public gameuiSideScrollerSpawnerAdvanced()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

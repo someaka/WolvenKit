@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIStreamingMonitorSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIStreamingMonitorSystem : gameIGameSystem
+	public gameIStreamingMonitorSystem()
 	{
-		public gameIStreamingMonitorSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

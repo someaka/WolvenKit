@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LeftHandCyberwareChargeActionEvents : LeftHandCyberwareActionAbstractEvents
 {
-	[REDMeta]
-	public partial class LeftHandCyberwareChargeActionEvents : LeftHandCyberwareActionAbstractEvents
+	public LeftHandCyberwareChargeActionEvents()
 	{
-		public LeftHandCyberwareChargeActionEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

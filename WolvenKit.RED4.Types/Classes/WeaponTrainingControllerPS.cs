@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WeaponTrainingControllerPS : ScriptableDeviceComponentPS
 {
-	[REDMeta]
-	public partial class WeaponTrainingControllerPS : ScriptableDeviceComponentPS
+	public WeaponTrainingControllerPS()
 	{
-		public WeaponTrainingControllerPS()
-		{
-			DeviceName = "LocKey#79367";
-			ShouldScannerShowStatus = false;
+		DeviceName = "LocKey#79367";
+		ShouldScannerShowStatus = false;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

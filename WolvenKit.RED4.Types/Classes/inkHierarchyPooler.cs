@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkHierarchyPooler : RedBaseClass
 {
-	[REDMeta]
-	public partial class inkHierarchyPooler : RedBaseClass
+	public inkHierarchyPooler()
 	{
-		public inkHierarchyPooler()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

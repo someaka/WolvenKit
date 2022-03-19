@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TryStopMovingOnTrafficLane : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class TryStopMovingOnTrafficLane : AIbehaviortaskScript
+	public TryStopMovingOnTrafficLane()
 	{
-		public TryStopMovingOnTrafficLane()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

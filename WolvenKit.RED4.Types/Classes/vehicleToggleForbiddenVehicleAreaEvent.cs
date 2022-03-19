@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleToggleForbiddenVehicleAreaEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleToggleForbiddenVehicleAreaEvent : redEvent
+	public vehicleToggleForbiddenVehicleAreaEvent()
 	{
-		public vehicleToggleForbiddenVehicleAreaEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

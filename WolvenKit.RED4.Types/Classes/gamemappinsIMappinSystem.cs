@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsIMappinSystem : gameIReplicatedGameSystem
 {
-	[REDMeta]
-	public partial class gamemappinsIMappinSystem : gameIReplicatedGameSystem
+	public gamemappinsIMappinSystem()
 	{
-		public gamemappinsIMappinSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

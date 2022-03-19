@@ -1,31 +1,27 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entISkinTargetComponent : entIVisualComponent
 {
-	[REDMeta]
-	public partial class entISkinTargetComponent : entIVisualComponent
+	[Ordinal(8)] 
+	[RED("skinning")] 
+	public CHandle<entSkinningBinding> Skinning
 	{
-		[Ordinal(8)] 
-		[RED("skinning")] 
-		public CHandle<entSkinningBinding> Skinning
-		{
-			get => GetPropertyValue<CHandle<entSkinningBinding>>();
-			set => SetPropertyValue<CHandle<entSkinningBinding>>(value);
-		}
-
-		[Ordinal(9)] 
-		[RED("useSkinningLOD")] 
-		public CBool UseSkinningLOD
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public entISkinTargetComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<entSkinningBinding>>();
+		set => SetPropertyValue<CHandle<entSkinningBinding>>(value);
 	}
+
+	[Ordinal(9)] 
+	[RED("useSkinningLOD")] 
+	public CBool UseSkinningLOD
+	{
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
+	}
+
+	public entISkinTargetComponent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

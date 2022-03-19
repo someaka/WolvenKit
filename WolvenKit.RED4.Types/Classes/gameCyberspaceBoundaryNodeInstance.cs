@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCyberspaceBoundaryNodeInstance : worldTriggerAreaNodeInstance
 {
-	[REDMeta]
-	public partial class gameCyberspaceBoundaryNodeInstance : worldTriggerAreaNodeInstance
+	public gameCyberspaceBoundaryNodeInstance()
 	{
-		public gameCyberspaceBoundaryNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

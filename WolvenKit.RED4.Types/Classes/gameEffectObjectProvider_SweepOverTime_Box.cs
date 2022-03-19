@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectObjectProvider_SweepOverTime_Box : gameEffectObjectProvider_SweepOverTime
 {
-	[REDMeta]
-	public partial class gameEffectObjectProvider_SweepOverTime_Box : gameEffectObjectProvider_SweepOverTime
+	public gameEffectObjectProvider_SweepOverTime_Box()
 	{
-		public gameEffectObjectProvider_SweepOverTime_Box()
-		{
-			QueryPreset = new();
+		QueryPreset = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

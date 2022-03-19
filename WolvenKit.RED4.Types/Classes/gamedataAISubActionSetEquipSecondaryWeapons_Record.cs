@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISubActionSetEquipSecondaryWeapons_Record : gamedataAISubActionCharacterRecordEquip_Record
 {
-	[REDMeta]
-	public partial class gamedataAISubActionSetEquipSecondaryWeapons_Record : gamedataAISubActionCharacterRecordEquip_Record
+	public gamedataAISubActionSetEquipSecondaryWeapons_Record()
 	{
-		public gamedataAISubActionSetEquipSecondaryWeapons_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

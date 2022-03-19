@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SwimmingDeathDecisions : DeathDecisionsWithResurrection
 {
-	[REDMeta]
-	public partial class SwimmingDeathDecisions : DeathDecisionsWithResurrection
+	public SwimmingDeathDecisions()
 	{
-		public SwimmingDeathDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

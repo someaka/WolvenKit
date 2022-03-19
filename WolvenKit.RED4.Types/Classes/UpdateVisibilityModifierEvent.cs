@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UpdateVisibilityModifierEvent : redEvent
 {
-	[REDMeta]
-	public partial class UpdateVisibilityModifierEvent : redEvent
+	public UpdateVisibilityModifierEvent()
 	{
-		public UpdateVisibilityModifierEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

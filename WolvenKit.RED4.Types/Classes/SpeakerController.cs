@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SpeakerController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class SpeakerController : ScriptableDeviceComponent
+	public SpeakerController()
 	{
-		public SpeakerController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiLootVisualizer : gameuiIChoiceVisualizer
 {
-	[REDMeta]
-	public partial class gameuiLootVisualizer : gameuiIChoiceVisualizer
+	public gameuiLootVisualizer()
 	{
-		public gameuiLootVisualizer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

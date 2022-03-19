@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VirtualQuestListController : inkVirtualCompoundItemController
 {
-	[REDMeta]
-	public partial class VirtualQuestListController : inkVirtualCompoundItemController
+	[Ordinal(15)] 
+	[RED("questList")] 
+	public inkWidgetReference QuestList
 	{
-		[Ordinal(15)] 
-		[RED("questList")] 
-		public inkWidgetReference QuestList
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		public VirtualQuestListController()
-		{
-			QuestList = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	public VirtualQuestListController()
+	{
+		QuestList = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

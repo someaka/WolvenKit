@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldCrowdParkingSpaceNode : worldNode
 {
-	[REDMeta]
-	public partial class worldCrowdParkingSpaceNode : worldNode
+	public worldCrowdParkingSpaceNode()
 	{
-		public worldCrowdParkingSpaceNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

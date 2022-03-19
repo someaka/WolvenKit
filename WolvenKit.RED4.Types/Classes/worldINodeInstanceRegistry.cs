@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldINodeInstanceRegistry : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldINodeInstanceRegistry : worldIRuntimeSystem
+	public worldINodeInstanceRegistry()
 	{
-		public worldINodeInstanceRegistry()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

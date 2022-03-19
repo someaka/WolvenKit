@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldStaticFogVolumeNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldStaticFogVolumeNodeInstance : worldINodeInstance
+	public worldStaticFogVolumeNodeInstance()
 	{
-		public worldStaticFogVolumeNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

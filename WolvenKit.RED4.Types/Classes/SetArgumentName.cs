@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetArgumentName : SetArguments
 {
-	[REDMeta]
-	public partial class SetArgumentName : SetArguments
+	[Ordinal(1)] 
+	[RED("customVar")] 
+	public CName CustomVar
 	{
-		[Ordinal(1)] 
-		[RED("customVar")] 
-		public CName CustomVar
-		{
-			get => GetPropertyValue<CName>();
-			set => SetPropertyValue<CName>(value);
-		}
-
-		public SetArgumentName()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CName>();
+		set => SetPropertyValue<CName>(value);
 	}
+
+	public SetArgumentName()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

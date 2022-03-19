@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ScriptGameInstance : RedBaseClass
 {
-	[REDMeta]
-	public partial class ScriptGameInstance : RedBaseClass
+	public ScriptGameInstance()
 	{
-		public ScriptGameInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

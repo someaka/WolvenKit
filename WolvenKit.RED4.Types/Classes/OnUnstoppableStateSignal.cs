@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnUnstoppableStateSignal : gameTaggedSignalUserData
 {
-	[REDMeta]
-	public partial class OnUnstoppableStateSignal : gameTaggedSignalUserData
+	public OnUnstoppableStateSignal()
 	{
-		public OnUnstoppableStateSignal()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

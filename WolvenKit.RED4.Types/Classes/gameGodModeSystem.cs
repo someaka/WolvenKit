@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameGodModeSystem : gameIGodModeSystem
 {
-	[REDMeta]
-	public partial class gameGodModeSystem : gameIGodModeSystem
+	public gameGodModeSystem()
 	{
-		public gameGodModeSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

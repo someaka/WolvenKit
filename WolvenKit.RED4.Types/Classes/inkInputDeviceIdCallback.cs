@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkInputDeviceIdCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkInputDeviceIdCallback : inkCallbackBase
+	public inkInputDeviceIdCallback()
 	{
-		public inkInputDeviceIdCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

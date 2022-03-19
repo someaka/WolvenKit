@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ArcadeMachineBlackboardDef : DeviceBaseBlackboardDef
 {
-	[REDMeta]
-	public partial class ArcadeMachineBlackboardDef : DeviceBaseBlackboardDef
+	public ArcadeMachineBlackboardDef()
 	{
-		public ArcadeMachineBlackboardDef()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

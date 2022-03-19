@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeviceRemoteInteractionCondition : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class DeviceRemoteInteractionCondition : gameinteractionsInteractionScriptedCondition
+	public DeviceRemoteInteractionCondition()
 	{
-		public DeviceRemoteInteractionCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

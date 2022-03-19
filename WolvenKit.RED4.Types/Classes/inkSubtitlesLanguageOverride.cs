@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkSubtitlesLanguageOverride : inkUserData
 {
-	[REDMeta]
-	public partial class inkSubtitlesLanguageOverride : inkUserData
+	public inkSubtitlesLanguageOverride()
 	{
-		public inkSubtitlesLanguageOverride()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

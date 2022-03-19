@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MasterController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class MasterController : ScriptableDeviceComponent
+	public MasterController()
 	{
-		public MasterController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

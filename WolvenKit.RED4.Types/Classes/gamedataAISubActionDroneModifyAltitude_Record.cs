@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISubActionDroneModifyAltitude_Record : gamedataAISubAction_Record
 {
-	[REDMeta]
-	public partial class gamedataAISubActionDroneModifyAltitude_Record : gamedataAISubAction_Record
+	public gamedataAISubActionDroneModifyAltitude_Record()
 	{
-		public gamedataAISubActionDroneModifyAltitude_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

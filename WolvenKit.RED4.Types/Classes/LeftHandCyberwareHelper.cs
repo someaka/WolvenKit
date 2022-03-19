@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LeftHandCyberwareHelper : IScriptable
 {
-	[REDMeta]
-	public partial class LeftHandCyberwareHelper : IScriptable
+	public LeftHandCyberwareHelper()
 	{
-		public LeftHandCyberwareHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

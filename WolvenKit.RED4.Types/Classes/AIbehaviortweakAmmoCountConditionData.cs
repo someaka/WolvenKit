@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviortweakAmmoCountConditionData : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviortweakAmmoCountConditionData : RedBaseClass
+	public AIbehaviortweakAmmoCountConditionData()
 	{
-		public AIbehaviortweakAmmoCountConditionData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ScriptableVirtualCameraViewComponent : entVirtualCameraViewComponent
 {
-	[REDMeta]
-	public partial class ScriptableVirtualCameraViewComponent : entVirtualCameraViewComponent
+	public ScriptableVirtualCameraViewComponent()
 	{
-		public ScriptableVirtualCameraViewComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

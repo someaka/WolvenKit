@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questBriefingSequencePlayerEvent : redEvent
 {
-	[REDMeta]
-	public partial class questBriefingSequencePlayerEvent : redEvent
+	public questBriefingSequencePlayerEvent()
 	{
-		public questBriefingSequencePlayerEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

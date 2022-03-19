@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questAudioCharacterManagerBreathing_NodeSubType : questIAudioCharacterManager_NodeSubType
 {
-	[REDMeta]
-	public partial class questAudioCharacterManagerBreathing_NodeSubType : questIAudioCharacterManager_NodeSubType
+	public questAudioCharacterManagerBreathing_NodeSubType()
 	{
-		public questAudioCharacterManagerBreathing_NodeSubType()
-		{
-			CharacterEntries = new() { new() };
+		CharacterEntries = new() { new() };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

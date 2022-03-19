@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameObjectPoolSystem : gameIObjectPoolSystem
 {
-	[REDMeta]
-	public partial class gameObjectPoolSystem : gameIObjectPoolSystem
+	public gameObjectPoolSystem()
 	{
-		public gameObjectPoolSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

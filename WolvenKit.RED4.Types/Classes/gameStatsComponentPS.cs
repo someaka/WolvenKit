@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameStatsComponentPS : gameComponentPS
 {
-	[REDMeta]
-	public partial class gameStatsComponentPS : gameComponentPS
+	public gameStatsComponentPS()
 	{
-		public gameStatsComponentPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

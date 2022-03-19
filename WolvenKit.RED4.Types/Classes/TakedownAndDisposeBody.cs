@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TakedownAndDisposeBody : ActionDisposal
 {
-	[REDMeta]
-	public partial class TakedownAndDisposeBody : ActionDisposal
+	public TakedownAndDisposeBody()
 	{
-		public TakedownAndDisposeBody()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

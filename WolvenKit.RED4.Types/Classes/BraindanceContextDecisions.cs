@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BraindanceContextDecisions : InputContextTransitionDecisions
 {
-	[REDMeta]
-	public partial class BraindanceContextDecisions : InputContextTransitionDecisions
+	public BraindanceContextDecisions()
 	{
-		public BraindanceContextDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

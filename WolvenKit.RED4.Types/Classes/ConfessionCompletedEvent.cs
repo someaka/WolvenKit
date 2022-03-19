@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConfessionCompletedEvent : redEvent
 {
-	[REDMeta]
-	public partial class ConfessionCompletedEvent : redEvent
+	public ConfessionCompletedEvent()
 	{
-		public ConfessionCompletedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TurnOnVisibilitySenseComponent : redEvent
 {
-	[REDMeta]
-	public partial class TurnOnVisibilitySenseComponent : redEvent
+	public TurnOnVisibilitySenseComponent()
 	{
-		public TurnOnVisibilitySenseComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

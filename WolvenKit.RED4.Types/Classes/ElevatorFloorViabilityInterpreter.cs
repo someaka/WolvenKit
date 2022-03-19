@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ElevatorFloorViabilityInterpreter : IScriptable
 {
-	[REDMeta]
-	public partial class ElevatorFloorViabilityInterpreter : IScriptable
+	public ElevatorFloorViabilityInterpreter()
 	{
-		public ElevatorFloorViabilityInterpreter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BroadcastCombatHitStim : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class BroadcastCombatHitStim : AIbehaviortaskScript
+	public BroadcastCombatHitStim()
 	{
-		public BroadcastCombatHitStim()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

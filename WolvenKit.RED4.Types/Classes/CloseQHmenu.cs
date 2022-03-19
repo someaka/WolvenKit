@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CloseQHmenu : redEvent
 {
-	[REDMeta]
-	public partial class CloseQHmenu : redEvent
+	public CloseQHmenu()
 	{
-		public CloseQHmenu()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScriptableSystemsContainer : gameIScriptableSystemsContainer
 {
-	[REDMeta]
-	public partial class gameScriptableSystemsContainer : gameIScriptableSystemsContainer
+	public gameScriptableSystemsContainer()
 	{
-		public gameScriptableSystemsContainer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

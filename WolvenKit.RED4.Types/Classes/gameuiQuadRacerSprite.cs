@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiQuadRacerSprite : gameuiSideScrollerMiniGameDynObjectLogic
 {
-	[REDMeta]
-	public partial class gameuiQuadRacerSprite : gameuiSideScrollerMiniGameDynObjectLogic
+	public gameuiQuadRacerSprite()
 	{
-		public gameuiQuadRacerSprite()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

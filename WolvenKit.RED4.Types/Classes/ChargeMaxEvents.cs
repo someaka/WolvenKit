@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChargeMaxEvents : ChargeEventsAbstract
 {
-	[REDMeta]
-	public partial class ChargeMaxEvents : ChargeEventsAbstract
+	public ChargeMaxEvents()
 	{
-		public ChargeMaxEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

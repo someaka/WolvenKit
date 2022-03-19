@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnequippedWaitingForExternalFactorsEvents : EquipmentBaseEvents
 {
-	[REDMeta]
-	public partial class UnequippedWaitingForExternalFactorsEvents : EquipmentBaseEvents
+	public UnequippedWaitingForExternalFactorsEvents()
 	{
-		public UnequippedWaitingForExternalFactorsEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SnapToTargetExecutor : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class SnapToTargetExecutor : gameEffectExecutor_Scripted
+	public SnapToTargetExecutor()
 	{
-		public SnapToTargetExecutor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

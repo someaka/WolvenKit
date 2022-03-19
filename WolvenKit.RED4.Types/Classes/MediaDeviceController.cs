@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MediaDeviceController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class MediaDeviceController : ScriptableDeviceComponent
+	public MediaDeviceController()
 	{
-		public MediaDeviceController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

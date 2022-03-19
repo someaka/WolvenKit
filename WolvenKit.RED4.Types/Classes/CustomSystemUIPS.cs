@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CustomSystemUIPS : VirtualSystemPS
 {
-	[REDMeta]
-	public partial class CustomSystemUIPS : VirtualSystemPS
+	public CustomSystemUIPS()
 	{
-		public CustomSystemUIPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

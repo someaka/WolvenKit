@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiICharacterCustomizationComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameuiICharacterCustomizationComponent : entIComponent
+	public gameuiICharacterCustomizationComponent()
 	{
-		public gameuiICharacterCustomizationComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

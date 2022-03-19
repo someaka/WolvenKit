@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimationPauseEvent : gameTransformAnimationEvent
 {
-	[REDMeta]
-	public partial class gameTransformAnimationPauseEvent : gameTransformAnimationEvent
+	public gameTransformAnimationPauseEvent()
 	{
-		public gameTransformAnimationPauseEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

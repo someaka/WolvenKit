@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ZoomLevelScanEvents : ZoomEventsTransition
 {
-	[REDMeta]
-	public partial class ZoomLevelScanEvents : ZoomEventsTransition
+	public ZoomLevelScanEvents()
 	{
-		public ZoomLevelScanEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

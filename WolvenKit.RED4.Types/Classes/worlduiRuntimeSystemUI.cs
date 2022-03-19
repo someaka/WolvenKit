@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worlduiRuntimeSystemUI : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worlduiRuntimeSystemUI : worldIRuntimeSystem
+	public worlduiRuntimeSystemUI()
 	{
-		public worlduiRuntimeSystemUI()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

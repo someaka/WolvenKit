@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityLockerController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class SecurityLockerController : ScriptableDeviceComponent
+	public SecurityLockerController()
 	{
-		public SecurityLockerController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

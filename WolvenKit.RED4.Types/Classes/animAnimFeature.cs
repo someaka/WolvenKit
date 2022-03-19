@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimFeature : IScriptable
 {
-	[REDMeta]
-	public partial class animAnimFeature : IScriptable
+	public animAnimFeature()
 	{
-		public animAnimFeature()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

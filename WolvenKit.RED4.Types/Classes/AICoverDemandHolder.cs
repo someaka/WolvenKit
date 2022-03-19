@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICoverDemandHolder : IScriptable
 {
-	[REDMeta]
-	public partial class AICoverDemandHolder : IScriptable
+	public AICoverDemandHolder()
 	{
-		public AICoverDemandHolder()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

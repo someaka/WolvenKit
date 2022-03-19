@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIPhoneConditionType : questIUIConditionType
 {
-	[REDMeta]
-	public partial class questIPhoneConditionType : questIUIConditionType
+	[Ordinal(0)] 
+	[RED("inverted")] 
+	public CBool Inverted
 	{
-		[Ordinal(0)] 
-		[RED("inverted")] 
-		public CBool Inverted
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public questIPhoneConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public questIPhoneConditionType()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

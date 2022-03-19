@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisableVisualOverride : redEvent
 {
-	[REDMeta]
-	public partial class DisableVisualOverride : redEvent
+	public DisableVisualOverride()
 	{
-		public DisableVisualOverride()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

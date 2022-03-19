@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceAnimationOffScreen : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class ForceAnimationOffScreen : AIbehaviortaskScript
+	public ForceAnimationOffScreen()
 	{
-		public ForceAnimationOffScreen()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

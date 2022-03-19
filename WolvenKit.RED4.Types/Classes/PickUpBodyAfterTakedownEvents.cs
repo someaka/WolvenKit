@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PickUpBodyAfterTakedownEvents : LocomotionTakedownEvents
 {
-	[REDMeta]
-	public partial class PickUpBodyAfterTakedownEvents : LocomotionTakedownEvents
+	public PickUpBodyAfterTakedownEvents()
 	{
-		public PickUpBodyAfterTakedownEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

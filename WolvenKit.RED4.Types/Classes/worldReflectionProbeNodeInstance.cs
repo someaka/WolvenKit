@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldReflectionProbeNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldReflectionProbeNodeInstance : worldINodeInstance
+	public worldReflectionProbeNodeInstance()
 	{
-		public worldReflectionProbeNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TakedownExecuteTakedownDecisions : LocomotionTakedownDecisions
 {
-	[REDMeta]
-	public partial class TakedownExecuteTakedownDecisions : LocomotionTakedownDecisions
+	public TakedownExecuteTakedownDecisions()
 	{
-		public TakedownExecuteTakedownDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

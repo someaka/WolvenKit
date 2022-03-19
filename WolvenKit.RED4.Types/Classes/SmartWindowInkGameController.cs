@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SmartWindowInkGameController : ComputerInkGameController
 {
-	[REDMeta]
-	public partial class SmartWindowInkGameController : ComputerInkGameController
+	public SmartWindowInkGameController()
 	{
-		public SmartWindowInkGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

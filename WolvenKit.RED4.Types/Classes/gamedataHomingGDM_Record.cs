@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataHomingGDM_Record : gamedataGrenadeDeliveryMethod_Record
 {
-	[REDMeta]
-	public partial class gamedataHomingGDM_Record : gamedataGrenadeDeliveryMethod_Record
+	public gamedataHomingGDM_Record()
 	{
-		public gamedataHomingGDM_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

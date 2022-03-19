@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TDB : gamedataTweakDBInterface
 {
-	[REDMeta]
-	public partial class TDB : gamedataTweakDBInterface
+	public TDB()
 	{
-		public TDB()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

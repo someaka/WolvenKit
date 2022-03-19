@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmState_SessionActive : gsmState_SessionStreamingAware
 {
-	[REDMeta]
-	public partial class gsmState_SessionActive : gsmState_SessionStreamingAware
+	public gsmState_SessionActive()
 	{
-		public gsmState_SessionActive()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

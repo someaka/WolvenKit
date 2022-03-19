@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDelayedTimer : gameBaseTimer
 {
-	[REDMeta]
-	public partial class gameDelayedTimer : gameBaseTimer
+	public gameDelayedTimer()
 	{
-		public gameDelayedTimer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

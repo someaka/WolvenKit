@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrenadeTriggerSmartTrajectoryEvent : redEvent
 {
-	[REDMeta]
-	public partial class GrenadeTriggerSmartTrajectoryEvent : redEvent
+	public GrenadeTriggerSmartTrajectoryEvent()
 	{
-		public GrenadeTriggerSmartTrajectoryEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearFearOnHitEvent : redEvent
 {
-	[REDMeta]
-	public partial class ClearFearOnHitEvent : redEvent
+	public ClearFearOnHitEvent()
 	{
-		public ClearFearOnHitEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RequestBannerWidgetUpdateEvent : RequestWidgetUpdateEvent
 {
-	[REDMeta]
-	public partial class RequestBannerWidgetUpdateEvent : RequestWidgetUpdateEvent
+	public RequestBannerWidgetUpdateEvent()
 	{
-		public RequestBannerWidgetUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

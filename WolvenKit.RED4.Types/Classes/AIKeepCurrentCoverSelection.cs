@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIKeepCurrentCoverSelection : AICoverSelectionParameters
 {
-	[REDMeta]
-	public partial class AIKeepCurrentCoverSelection : AICoverSelectionParameters
+	public AIKeepCurrentCoverSelection()
 	{
-		public AIKeepCurrentCoverSelection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UndelectAllItemsDelayedEvent : redEvent
 {
-	[REDMeta]
-	public partial class UndelectAllItemsDelayedEvent : redEvent
+	public UndelectAllItemsDelayedEvent()
 	{
-		public UndelectAllItemsDelayedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

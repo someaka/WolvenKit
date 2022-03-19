@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Debug_CheckIfShouldReturnToSpawn : AIDebugConditions
 {
-	[REDMeta]
-	public partial class Debug_CheckIfShouldReturnToSpawn : AIDebugConditions
+	public Debug_CheckIfShouldReturnToSpawn()
 	{
-		public Debug_CheckIfShouldReturnToSpawn()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

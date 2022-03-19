@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RadioStationsDataView : inkScriptableDataViewWrapper
 {
-	[REDMeta]
-	public partial class RadioStationsDataView : inkScriptableDataViewWrapper
+	public RadioStationsDataView()
 	{
-		public RadioStationsDataView()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

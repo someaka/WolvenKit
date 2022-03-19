@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsAccessPointFilter : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class IsAccessPointFilter : gameEffectObjectSingleFilter_Scripted
+	public IsAccessPointFilter()
 	{
-		public IsAccessPointFilter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questPhoneManager : questIPhoneManager
 {
-	[REDMeta]
-	public partial class questPhoneManager : questIPhoneManager
+	public questPhoneManager()
 	{
-		public questPhoneManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

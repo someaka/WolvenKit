@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimEvent_Phase : animAnimEvent
 {
-	[REDMeta]
-	public partial class animAnimEvent_Phase : animAnimEvent
+	public animAnimEvent_Phase()
 	{
-		public animAnimEvent_Phase()
-		{
-			DurationInFrames = 15;
+		DurationInFrames = 15;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

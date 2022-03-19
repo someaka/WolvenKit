@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AddTargetToHighlightEvent : redEvent
 {
-	[REDMeta]
-	public partial class AddTargetToHighlightEvent : redEvent
+	[Ordinal(0)] 
+	[RED("target")] 
+	public CombatTarget Target
 	{
-		[Ordinal(0)] 
-		[RED("target")] 
-		public CombatTarget Target
-		{
-			get => GetPropertyValue<CombatTarget>();
-			set => SetPropertyValue<CombatTarget>(value);
-		}
-
-		public AddTargetToHighlightEvent()
-		{
-			Target = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CombatTarget>();
+		set => SetPropertyValue<CombatTarget>(value);
 	}
+
+	public AddTargetToHighlightEvent()
+	{
+		Target = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

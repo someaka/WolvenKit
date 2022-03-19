@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class toolsIResolverUserContext : ISerializable
 {
-	[REDMeta]
-	public partial class toolsIResolverUserContext : ISerializable
+	public toolsIResolverUserContext()
 	{
-		public toolsIResolverUserContext()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiPanzerBonus : gameuiSideScrollerMiniGameDynObjectLogicAdvanced
 {
-	[REDMeta]
-	public partial class gameuiPanzerBonus : gameuiSideScrollerMiniGameDynObjectLogicAdvanced
+	[Ordinal(1)] 
+	[RED("fallingSpeed")] 
+	public CFloat FallingSpeed
 	{
-		[Ordinal(1)] 
-		[RED("fallingSpeed")] 
-		public CFloat FallingSpeed
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public gameuiPanzerBonus()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public gameuiPanzerBonus()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

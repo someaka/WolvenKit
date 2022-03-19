@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BackgroundDisplayVirtualController : inkVirtualCompoundBackgroundController
 {
-	[REDMeta]
-	public partial class BackgroundDisplayVirtualController : inkVirtualCompoundBackgroundController
+	public BackgroundDisplayVirtualController()
 	{
-		public BackgroundDisplayVirtualController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

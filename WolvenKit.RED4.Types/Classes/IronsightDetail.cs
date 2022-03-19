@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IronsightDetail : IScriptable
 {
-	[REDMeta]
-	public partial class IronsightDetail : IScriptable
+	public IronsightDetail()
 	{
-		public IronsightDetail()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,22 +1,19 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActionHacking : ActionSkillCheck
 {
-	[REDMeta]
-	public partial class ActionHacking : ActionSkillCheck
+	public ActionHacking()
 	{
-		public ActionHacking()
-		{
-			RequesterID = new();
-			InteractionChoice = new() { CaptionParts = new() { Parts = new() }, Data = new(), ChoiceMetaData = new() { Type = new() }, LookAtDescriptor = new() { Offset = new(), OrbId = new() } };
-			ActionWidgetPackage = new() { DependendActions = new() };
-			CanTriggerStim = true;
-			SkillCheckName = Enums.EDeviceChallengeSkill.Hacking;
-			LocalizedName = "LocKey#22278";
-			SkillcheckDescription = new() { AdditionalRequirements = new(), OwnerID = new() };
+		RequesterID = new();
+		InteractionChoice = new() { CaptionParts = new() { Parts = new() }, Data = new(), ChoiceMetaData = new() { Type = new() }, LookAtDescriptor = new() { Offset = new(), OrbId = new() } };
+		ActionWidgetPackage = new() { DependendActions = new() };
+		CanTriggerStim = true;
+		SkillCheckName = Enums.EDeviceChallengeSkill.Hacking;
+		LocalizedName = "LocKey#22278";
+		SkillcheckDescription = new() { AdditionalRequirements = new(), OwnerID = new() };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

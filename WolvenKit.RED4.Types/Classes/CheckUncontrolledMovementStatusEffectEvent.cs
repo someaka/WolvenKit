@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckUncontrolledMovementStatusEffectEvent : redEvent
 {
-	[REDMeta]
-	public partial class CheckUncontrolledMovementStatusEffectEvent : redEvent
+	public CheckUncontrolledMovementStatusEffectEvent()
 	{
-		public CheckUncontrolledMovementStatusEffectEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

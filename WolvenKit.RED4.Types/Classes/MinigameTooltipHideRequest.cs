@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MinigameTooltipHideRequest : redEvent
 {
-	[REDMeta]
-	public partial class MinigameTooltipHideRequest : redEvent
+	public MinigameTooltipHideRequest()
 	{
-		public MinigameTooltipHideRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

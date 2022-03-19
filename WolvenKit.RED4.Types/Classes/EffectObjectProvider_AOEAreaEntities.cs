@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectObjectProvider_AOEAreaEntities : gameEffectObjectProvider_Scripted
 {
-	[REDMeta]
-	public partial class EffectObjectProvider_AOEAreaEntities : gameEffectObjectProvider_Scripted
+	public EffectObjectProvider_AOEAreaEntities()
 	{
-		public EffectObjectProvider_AOEAreaEntities()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

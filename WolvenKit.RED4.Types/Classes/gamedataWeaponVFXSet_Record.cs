@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataWeaponVFXSet_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataWeaponVFXSet_Record : gamedataTweakDBRecord
+	public gamedataWeaponVFXSet_Record()
 	{
-		public gamedataWeaponVFXSet_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

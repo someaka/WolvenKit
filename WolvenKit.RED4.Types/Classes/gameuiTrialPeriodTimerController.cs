@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiTrialPeriodTimerController : inkGenericSystemNotificationLogicController
 {
-	[REDMeta]
-	public partial class gameuiTrialPeriodTimerController : inkGenericSystemNotificationLogicController
+	[Ordinal(9)] 
+	[RED("timerText")] 
+	public inkTextWidgetReference TimerText
 	{
-		[Ordinal(9)] 
-		[RED("timerText")] 
-		public inkTextWidgetReference TimerText
-		{
-			get => GetPropertyValue<inkTextWidgetReference>();
-			set => SetPropertyValue<inkTextWidgetReference>(value);
-		}
-
-		public gameuiTrialPeriodTimerController()
-		{
-			TimerText = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkTextWidgetReference>();
+		set => SetPropertyValue<inkTextWidgetReference>(value);
 	}
+
+	public gameuiTrialPeriodTimerController()
+	{
+		TimerText = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

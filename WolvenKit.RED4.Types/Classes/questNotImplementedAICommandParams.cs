@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questNotImplementedAICommandParams : questAICommandParams
 {
-	[REDMeta]
-	public partial class questNotImplementedAICommandParams : questAICommandParams
+	public questNotImplementedAICommandParams()
 	{
-		public questNotImplementedAICommandParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

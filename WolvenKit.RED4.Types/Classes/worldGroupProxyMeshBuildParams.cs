@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldGroupProxyMeshBuildParams : worldProxyMeshBuildParams
 {
-	[REDMeta]
-	public partial class worldGroupProxyMeshBuildParams : worldProxyMeshBuildParams
+	public worldGroupProxyMeshBuildParams()
 	{
-		public worldGroupProxyMeshBuildParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

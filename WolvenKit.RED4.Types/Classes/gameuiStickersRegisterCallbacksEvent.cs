@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiStickersRegisterCallbacksEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiStickersRegisterCallbacksEvent : redEvent
+	public gameuiStickersRegisterCallbacksEvent()
 	{
-		public gameuiStickersRegisterCallbacksEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

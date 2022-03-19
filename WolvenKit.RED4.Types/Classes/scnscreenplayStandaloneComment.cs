@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnscreenplayStandaloneComment : RedBaseClass
 {
-	[REDMeta]
-	public partial class scnscreenplayStandaloneComment : RedBaseClass
+	[Ordinal(0)] 
+	[RED("itemId")] 
+	public scnscreenplayItemId ItemId
 	{
-		[Ordinal(0)] 
-		[RED("itemId")] 
-		public scnscreenplayItemId ItemId
-		{
-			get => GetPropertyValue<scnscreenplayItemId>();
-			set => SetPropertyValue<scnscreenplayItemId>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("comment")] 
-		public CString Comment
-		{
-			get => GetPropertyValue<CString>();
-			set => SetPropertyValue<CString>(value);
-		}
-
-		public scnscreenplayStandaloneComment()
-		{
-			ItemId = new() { Id = 4294967040 };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<scnscreenplayItemId>();
+		set => SetPropertyValue<scnscreenplayItemId>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("comment")] 
+	public CString Comment
+	{
+		get => GetPropertyValue<CString>();
+		set => SetPropertyValue<CString>(value);
+	}
+
+	public scnscreenplayStandaloneComment()
+	{
+		ItemId = new() { Id = 4294967040 };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

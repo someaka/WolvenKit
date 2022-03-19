@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScriptedPrereqSceneInspectionListenerWrapper : IScriptable
 {
-	[REDMeta]
-	public partial class gameScriptedPrereqSceneInspectionListenerWrapper : IScriptable
+	public gameScriptedPrereqSceneInspectionListenerWrapper()
 	{
-		public gameScriptedPrereqSceneInspectionListenerWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

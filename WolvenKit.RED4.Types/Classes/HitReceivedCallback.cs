@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitReceivedCallback : HitCallback
 {
-	[REDMeta]
-	public partial class HitReceivedCallback : HitCallback
+	public HitReceivedCallback()
 	{
-		public HitReceivedCallback()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

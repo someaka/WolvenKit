@@ -1,12 +1,11 @@
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class AccessPoint
 {
-    public partial class AccessPoint
+    [RED("baseActionOperations")]
+    public CHandle<BaseActionOperations> BaseActionOperations
     {
-        [RED("baseActionOperations")]
-        public CHandle<BaseActionOperations> BaseActionOperations
-        {
-            get => GetPropertyValue<CHandle<BaseActionOperations>>();
-            set => SetPropertyValue<CHandle<BaseActionOperations>>(value);
-        }
+        get => GetPropertyValue<CHandle<BaseActionOperations>>();
+        set => SetPropertyValue<CHandle<BaseActionOperations>>(value);
     }
 }

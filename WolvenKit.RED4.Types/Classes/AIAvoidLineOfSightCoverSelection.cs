@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIAvoidLineOfSightCoverSelection : AICoverSelectionParameters
 {
-	[REDMeta]
-	public partial class AIAvoidLineOfSightCoverSelection : AICoverSelectionParameters
+	public AIAvoidLineOfSightCoverSelection()
 	{
-		public AIAvoidLineOfSightCoverSelection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

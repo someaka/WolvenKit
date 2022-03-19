@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsDeviceFilter : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class IsDeviceFilter : gameEffectObjectSingleFilter_Scripted
+	public IsDeviceFilter()
 	{
-		public IsDeviceFilter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

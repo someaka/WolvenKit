@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class sampleVisClueMaster : gameObject
 {
-	[REDMeta]
-	public partial class sampleVisClueMaster : gameObject
+	[Ordinal(35)] 
+	[RED("dependableEntities")] 
+	public CArray<NodeRef> DependableEntities
 	{
-		[Ordinal(35)] 
-		[RED("dependableEntities")] 
-		public CArray<NodeRef> DependableEntities
-		{
-			get => GetPropertyValue<CArray<NodeRef>>();
-			set => SetPropertyValue<CArray<NodeRef>>(value);
-		}
-
-		public sampleVisClueMaster()
-		{
-			DependableEntities = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<NodeRef>>();
+		set => SetPropertyValue<CArray<NodeRef>>(value);
 	}
+
+	public sampleVisClueMaster()
+	{
+		DependableEntities = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

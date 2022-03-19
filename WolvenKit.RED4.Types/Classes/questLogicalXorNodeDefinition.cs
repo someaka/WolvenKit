@@ -1,19 +1,16 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questLogicalXorNodeDefinition : questLogicalBaseNodeDefinition
 {
-	[REDMeta]
-	public partial class questLogicalXorNodeDefinition : questLogicalBaseNodeDefinition
+	public questLogicalXorNodeDefinition()
 	{
-		public questLogicalXorNodeDefinition()
-		{
-			Sockets = new();
-			Id = 65535;
-			InputSocketCount = 2;
-			OutputSocketCount = 1;
+		Sockets = new();
+		Id = 65535;
+		InputSocketCount = 2;
+		OutputSocketCount = 1;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Attack_Beam : gameAttack_Continuous
 {
-	[REDMeta]
-	public partial class Attack_Beam : gameAttack_Continuous
+	public Attack_Beam()
 	{
-		public Attack_Beam()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

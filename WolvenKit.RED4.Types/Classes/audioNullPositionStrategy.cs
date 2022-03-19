@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audioNullPositionStrategy : audioApplySoundPositionStrategy
 {
-	[REDMeta]
-	public partial class audioNullPositionStrategy : audioApplySoundPositionStrategy
+	public audioNullPositionStrategy()
 	{
-		public audioNullPositionStrategy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

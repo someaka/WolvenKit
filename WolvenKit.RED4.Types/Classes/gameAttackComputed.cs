@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAttackComputed : IScriptable
 {
-	[REDMeta]
-	public partial class gameAttackComputed : IScriptable
+	public gameAttackComputed()
 	{
-		public gameAttackComputed()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

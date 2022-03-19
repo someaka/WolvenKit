@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questINodeType : questIBaseNodeType
 {
-	[REDMeta]
-	public partial class questINodeType : questIBaseNodeType
+	public questINodeType()
 	{
-		public questINodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

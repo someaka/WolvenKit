@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SwimmingDecisions : HighLevelTransition
 {
-	[REDMeta]
-	public partial class SwimmingDecisions : HighLevelTransition
+	public SwimmingDecisions()
 	{
-		public SwimmingDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

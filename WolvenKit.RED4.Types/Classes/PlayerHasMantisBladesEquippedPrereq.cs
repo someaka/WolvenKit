@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerHasMantisBladesEquippedPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class PlayerHasMantisBladesEquippedPrereq : gameIScriptablePrereq
+	public PlayerHasMantisBladesEquippedPrereq()
 	{
-		public PlayerHasMantisBladesEquippedPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

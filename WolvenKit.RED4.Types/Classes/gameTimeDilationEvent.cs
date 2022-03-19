@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTimeDilationEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameTimeDilationEvent : redEvent
+	public gameTimeDilationEvent()
 	{
-		public gameTimeDilationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

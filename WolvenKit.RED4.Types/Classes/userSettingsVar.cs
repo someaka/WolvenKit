@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class userSettingsVar : IScriptable
 {
-	[REDMeta]
-	public partial class userSettingsVar : IScriptable
+	public userSettingsVar()
 	{
-		public userSettingsVar()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

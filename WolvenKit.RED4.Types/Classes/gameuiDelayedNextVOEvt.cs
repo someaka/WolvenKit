@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiDelayedNextVOEvt : redEvent
 {
-	[REDMeta]
-	public partial class gameuiDelayedNextVOEvt : redEvent
+	public gameuiDelayedNextVOEvt()
 	{
-		public gameuiDelayedNextVOEvt()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

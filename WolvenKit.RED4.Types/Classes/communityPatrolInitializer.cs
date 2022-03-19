@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class communityPatrolInitializer : communitySpawnInitializer
 {
-	[REDMeta]
-	public partial class communityPatrolInitializer : communitySpawnInitializer
+	[Ordinal(0)] 
+	[RED("patrolRole")] 
+	public CHandle<AIPatrolRole> PatrolRole
 	{
-		[Ordinal(0)] 
-		[RED("patrolRole")] 
-		public CHandle<AIPatrolRole> PatrolRole
-		{
-			get => GetPropertyValue<CHandle<AIPatrolRole>>();
-			set => SetPropertyValue<CHandle<AIPatrolRole>>(value);
-		}
-
-		public communityPatrolInitializer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<AIPatrolRole>>();
+		set => SetPropertyValue<CHandle<AIPatrolRole>>(value);
 	}
+
+	public communityPatrolInitializer()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

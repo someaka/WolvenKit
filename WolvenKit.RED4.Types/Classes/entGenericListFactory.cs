@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entGenericListFactory : entFactory
 {
-	[REDMeta]
-	public partial class entGenericListFactory : entFactory
+	public entGenericListFactory()
 	{
-		public entGenericListFactory()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

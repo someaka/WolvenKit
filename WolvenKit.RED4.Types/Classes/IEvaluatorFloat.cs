@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IEvaluatorFloat : IEvaluator
 {
-	[REDMeta]
-	public partial class IEvaluatorFloat : IEvaluator
+	public IEvaluatorFloat()
 	{
-		public IEvaluatorFloat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

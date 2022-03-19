@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class locVoResource : CResource
 {
-	[REDMeta]
-	public partial class locVoResource : CResource
+	public locVoResource()
 	{
-		public locVoResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

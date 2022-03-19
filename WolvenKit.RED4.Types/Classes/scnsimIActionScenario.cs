@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnsimIActionScenario : ISerializable
 {
-	[REDMeta]
-	public partial class scnsimIActionScenario : ISerializable
+	public scnsimIActionScenario()
 	{
-		public scnsimIActionScenario()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

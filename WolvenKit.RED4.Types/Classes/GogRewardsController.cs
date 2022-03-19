@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GogRewardsController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class GogRewardsController : inkWidgetLogicController
+	[Ordinal(1)] 
+	[RED("containerWidget")] 
+	public inkWidgetReference ContainerWidget
 	{
-		[Ordinal(1)] 
-		[RED("containerWidget")] 
-		public inkWidgetReference ContainerWidget
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		public GogRewardsController()
-		{
-			ContainerWidget = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	public GogRewardsController()
+	{
+		ContainerWidget = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PickUpDecisions : CarriedObject
 {
-	[REDMeta]
-	public partial class PickUpDecisions : CarriedObject
+	public PickUpDecisions()
 	{
-		public PickUpDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

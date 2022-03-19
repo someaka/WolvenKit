@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIStoppedBeingTrackedAsHostile : AIAIEvent
 {
-	[REDMeta]
-	public partial class AIStoppedBeingTrackedAsHostile : AIAIEvent
+	public AIStoppedBeingTrackedAsHostile()
 	{
-		public AIStoppedBeingTrackedAsHostile()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

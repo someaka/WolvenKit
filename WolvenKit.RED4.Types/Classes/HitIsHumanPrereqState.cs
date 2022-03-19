@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitIsHumanPrereqState : GenericHitPrereqState
 {
-	[REDMeta]
-	public partial class HitIsHumanPrereqState : GenericHitPrereqState
+	public HitIsHumanPrereqState()
 	{
-		public HitIsHumanPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AOEEffector : ActivatedDeviceTransfromAnim
 {
-	[REDMeta]
-	public partial class AOEEffector : ActivatedDeviceTransfromAnim
+	public AOEEffector()
 	{
-		public AOEEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

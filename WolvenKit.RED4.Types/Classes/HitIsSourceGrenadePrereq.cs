@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitIsSourceGrenadePrereq : GenericHitPrereq
 {
-	[REDMeta]
-	public partial class HitIsSourceGrenadePrereq : GenericHitPrereq
+	public HitIsSourceGrenadePrereq()
 	{
-		public HitIsSourceGrenadePrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

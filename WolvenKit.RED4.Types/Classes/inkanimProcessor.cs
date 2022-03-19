@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkanimProcessor : ISerializable
 {
-	[REDMeta]
-	public partial class inkanimProcessor : ISerializable
+	public inkanimProcessor()
 	{
-		public inkanimProcessor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

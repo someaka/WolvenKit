@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InNormalUpperBodyState : AINPCUpperBodyStateCheck
 {
-	[REDMeta]
-	public partial class InNormalUpperBodyState : AINPCUpperBodyStateCheck
+	public InNormalUpperBodyState()
 	{
-		public InNormalUpperBodyState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LocomotionGroundEvents : LocomotionEventsTransition
 {
-	[REDMeta]
-	public partial class LocomotionGroundEvents : LocomotionEventsTransition
+	public LocomotionGroundEvents()
 	{
-		public LocomotionGroundEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

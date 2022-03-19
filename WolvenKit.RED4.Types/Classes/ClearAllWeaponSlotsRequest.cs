@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearAllWeaponSlotsRequest : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ClearAllWeaponSlotsRequest : gamePlayerScriptableSystemRequest
+	public ClearAllWeaponSlotsRequest()
 	{
-		public ClearAllWeaponSlotsRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

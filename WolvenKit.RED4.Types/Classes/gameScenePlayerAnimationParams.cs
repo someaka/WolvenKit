@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScenePlayerAnimationParams : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameScenePlayerAnimationParams : RedBaseClass
+	public gameScenePlayerAnimationParams()
 	{
-		public gameScenePlayerAnimationParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

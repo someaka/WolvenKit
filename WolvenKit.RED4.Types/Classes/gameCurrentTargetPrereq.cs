@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCurrentTargetPrereq : gameIPrereq
 {
-	[REDMeta]
-	public partial class gameCurrentTargetPrereq : gameIPrereq
+	public gameCurrentTargetPrereq()
 	{
-		public gameCurrentTargetPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

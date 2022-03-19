@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamebbScriptID_EulerAngles : gamebbScriptID
 {
-	[REDMeta]
-	public partial class gamebbScriptID_EulerAngles : gamebbScriptID
+	public gamebbScriptID_EulerAngles()
 	{
-		public gamebbScriptID_EulerAngles()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

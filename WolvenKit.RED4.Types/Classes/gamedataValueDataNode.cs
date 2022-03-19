@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataValueDataNode : gamedataDataNode
 {
-	[REDMeta]
-	public partial class gamedataValueDataNode : gamedataDataNode
+	public gamedataValueDataNode()
 	{
-		public gamedataValueDataNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePhotoModeEnableEvent : redEvent
 {
-	[REDMeta]
-	public partial class gamePhotoModeEnableEvent : redEvent
+	public gamePhotoModeEnableEvent()
 	{
-		public gamePhotoModeEnableEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

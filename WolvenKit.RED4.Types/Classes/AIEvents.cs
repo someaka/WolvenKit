@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIEvents : IScriptable
 {
-	[REDMeta]
-	public partial class AIEvents : IScriptable
+	public AIEvents()
 	{
-		public AIEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

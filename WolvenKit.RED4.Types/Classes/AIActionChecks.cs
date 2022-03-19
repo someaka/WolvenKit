@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIActionChecks : IScriptable
 {
-	[REDMeta]
-	public partial class AIActionChecks : IScriptable
+	public AIActionChecks()
 	{
-		public AIActionChecks()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

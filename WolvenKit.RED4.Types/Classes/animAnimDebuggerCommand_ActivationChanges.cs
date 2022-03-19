@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimDebuggerCommand_ActivationChanges : animIAnimDebuggerCommand
 {
-	[REDMeta]
-	public partial class animAnimDebuggerCommand_ActivationChanges : animIAnimDebuggerCommand
+	public animAnimDebuggerCommand_ActivationChanges()
 	{
-		public animAnimDebuggerCommand_ActivationChanges()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

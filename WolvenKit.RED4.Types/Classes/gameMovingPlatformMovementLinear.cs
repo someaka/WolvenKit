@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMovingPlatformMovementLinear : gameIMovingPlatformMovementPointToPoint
 {
-	[REDMeta]
-	public partial class gameMovingPlatformMovementLinear : gameIMovingPlatformMovementPointToPoint
+	public gameMovingPlatformMovementLinear()
 	{
-		public gameMovingPlatformMovementLinear()
-		{
-			InitData = new();
+		InitData = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

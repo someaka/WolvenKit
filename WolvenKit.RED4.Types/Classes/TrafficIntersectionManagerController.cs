@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TrafficIntersectionManagerController : MasterController
 {
-	[REDMeta]
-	public partial class TrafficIntersectionManagerController : MasterController
+	public TrafficIntersectionManagerController()
 	{
-		public TrafficIntersectionManagerController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

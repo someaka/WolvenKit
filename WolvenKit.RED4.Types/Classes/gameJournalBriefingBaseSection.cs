@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameJournalBriefingBaseSection : gameJournalEntry
 {
-	[REDMeta]
-	public partial class gameJournalBriefingBaseSection : gameJournalEntry
+	public gameJournalBriefingBaseSection()
 	{
-		public gameJournalBriefingBaseSection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

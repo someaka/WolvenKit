@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameShootingAccuracySystem : gameIShootingAccuracySystem
 {
-	[REDMeta]
-	public partial class gameShootingAccuracySystem : gameIShootingAccuracySystem
+	public gameShootingAccuracySystem()
 	{
-		public gameShootingAccuracySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIVehicleAgent : AICAgent
 {
-	[REDMeta]
-	public partial class AIVehicleAgent : AICAgent
+	public AIVehicleAgent()
 	{
-		public AIVehicleAgent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

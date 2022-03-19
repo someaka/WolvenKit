@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RevokeQuickHackAccess : redEvent
 {
-	[REDMeta]
-	public partial class RevokeQuickHackAccess : redEvent
+	public RevokeQuickHackAccess()
 	{
-		public RevokeQuickHackAccess()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

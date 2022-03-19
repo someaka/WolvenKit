@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataSquadFenceBase_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataSquadFenceBase_Record : gamedataTweakDBRecord
+	public gamedataSquadFenceBase_Record()
 	{
-		public gamedataSquadFenceBase_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RequestStatsBB : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class RequestStatsBB : gamePlayerScriptableSystemRequest
+	public RequestStatsBB()
 	{
-		public RequestStatsBB()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

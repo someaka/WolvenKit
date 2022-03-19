@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIIObjectSelectionDebugProxy : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIIObjectSelectionDebugProxy : RedBaseClass
+	public AIIObjectSelectionDebugProxy()
 	{
-		public AIIObjectSelectionDebugProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

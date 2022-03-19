@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestCombatActionNotification : QuestSecuritySystemInput
 {
-	[REDMeta]
-	public partial class QuestCombatActionNotification : QuestSecuritySystemInput
+	public QuestCombatActionNotification()
 	{
-		public QuestCombatActionNotification()
-		{
-			NotifySpecificNPCs = new();
-			RevealPlayerSettings = new();
+		NotifySpecificNPCs = new();
+		RevealPlayerSettings = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

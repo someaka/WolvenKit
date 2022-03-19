@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AITrafficWorkspotCompiled : worldTrafficSpotCompiled
 {
-	[REDMeta]
-	public partial class AITrafficWorkspotCompiled : worldTrafficSpotCompiled
+	public AITrafficWorkspotCompiled()
 	{
-		public AITrafficWorkspotCompiled()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,31 +1,29 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class GridUserData : IScriptable
 {
-	[REDMeta]
-	public partial class GridUserData : IScriptable
+	[Ordinal(0)] 
+	[RED("equipArea")] 
+	public CEnum<gamedataEquipmentArea> EquipArea
 	{
-		[Ordinal(0)] 
-		[RED("equipArea")] 
-		public CEnum<gamedataEquipmentArea> EquipArea
-		{
-			get => GetPropertyValue<CEnum<gamedataEquipmentArea>>();
-			set => SetPropertyValue<CEnum<gamedataEquipmentArea>>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("align")] 
-		public CEnum<inkEHorizontalAlign> Align
-		{
-			get => GetPropertyValue<CEnum<inkEHorizontalAlign>>();
-			set => SetPropertyValue<CEnum<inkEHorizontalAlign>>(value);
-		}
-
-		public GridUserData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<gamedataEquipmentArea>>();
+		set => SetPropertyValue<CEnum<gamedataEquipmentArea>>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("align")] 
+	public CEnum<inkEHorizontalAlign> Align
+	{
+		get => GetPropertyValue<CEnum<inkEHorizontalAlign>>();
+		set => SetPropertyValue<CEnum<inkEHorizontalAlign>>(value);
+	}
+
+	public GridUserData()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

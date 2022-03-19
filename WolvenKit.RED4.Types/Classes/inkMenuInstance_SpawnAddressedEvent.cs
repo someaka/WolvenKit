@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMenuInstance_SpawnAddressedEvent : inkMenuInstance_SpawnEvent
 {
-	[REDMeta]
-	public partial class inkMenuInstance_SpawnAddressedEvent : inkMenuInstance_SpawnEvent
+	public inkMenuInstance_SpawnAddressedEvent()
 	{
-		public inkMenuInstance_SpawnAddressedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIWatchdogSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIWatchdogSystem : gameIGameSystem
+	public gameIWatchdogSystem()
 	{
-		public gameIWatchdogSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

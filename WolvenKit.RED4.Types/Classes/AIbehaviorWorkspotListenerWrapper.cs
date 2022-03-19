@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorWorkspotListenerWrapper : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviorWorkspotListenerWrapper : RedBaseClass
+	public AIbehaviorWorkspotListenerWrapper()
 	{
-		public AIbehaviorWorkspotListenerWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

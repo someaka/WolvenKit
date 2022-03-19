@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDebugContextPtr : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameDebugContextPtr : RedBaseClass
+	public gameDebugContextPtr()
 	{
-		public gameDebugContextPtr()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class attrAttribute : ISerializable
 {
-	[REDMeta]
-	public partial class attrAttribute : ISerializable
+	public attrAttribute()
 	{
-		public attrAttribute()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

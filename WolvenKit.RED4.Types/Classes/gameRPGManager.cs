@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameRPGManager : IScriptable
 {
-	[REDMeta]
-	public partial class gameRPGManager : IScriptable
+	public gameRPGManager()
 	{
-		public gameRPGManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

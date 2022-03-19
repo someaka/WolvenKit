@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTPPRepresentationSlotListener : gameIAttachmentSlotsListener
 {
-	[REDMeta]
-	public partial class gameTPPRepresentationSlotListener : gameIAttachmentSlotsListener
+	public gameTPPRepresentationSlotListener()
 	{
-		public gameTPPRepresentationSlotListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

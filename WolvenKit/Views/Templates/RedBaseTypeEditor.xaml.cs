@@ -74,12 +74,12 @@ namespace WolvenKit.Views.Editors
             else if (PropertyType.IsAssignableTo(typeof(IRedEnum)))
             {
                 var value = (IRedEnum)RedType;
-                return value.ToEnumString();
+                return value.ToString();
             }
             else if (PropertyType.IsAssignableTo(typeof(IRedBitField)))
             {
                 var value = (IRedBitField)RedType;
-                return value.ToBitFieldString();
+                return value.ToString();
             }
             else if (PropertyType.IsAssignableTo(typeof(CBool)))
             {

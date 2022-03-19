@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameLootManager : gameILootManager
 {
-	[REDMeta]
-	public partial class gameLootManager : gameILootManager
+	public gameLootManager()
 	{
-		public gameLootManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

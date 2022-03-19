@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsNPCDriver : AIVehicleConditionAbstract
 {
-	[REDMeta]
-	public partial class IsNPCDriver : AIVehicleConditionAbstract
+	public IsNPCDriver()
 	{
-		public IsNPCDriver()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

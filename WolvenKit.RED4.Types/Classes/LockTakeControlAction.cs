@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LockTakeControlAction : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class LockTakeControlAction : gameScriptableSystemRequest
+	[Ordinal(0)] 
+	[RED("isLocked")] 
+	public CBool IsLocked
 	{
-		[Ordinal(0)] 
-		[RED("isLocked")] 
-		public CBool IsLocked
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public LockTakeControlAction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public LockTakeControlAction()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

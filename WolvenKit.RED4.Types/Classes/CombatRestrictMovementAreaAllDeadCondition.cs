@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CombatRestrictMovementAreaAllDeadCondition : AICombatGuardAreaScriptCondition
 {
-	[REDMeta]
-	public partial class CombatRestrictMovementAreaAllDeadCondition : AICombatGuardAreaScriptCondition
+	public CombatRestrictMovementAreaAllDeadCondition()
 	{
-		public CombatRestrictMovementAreaAllDeadCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

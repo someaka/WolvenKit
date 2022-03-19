@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Blacklist : MorphData
 {
-	[REDMeta]
-	public partial class Blacklist : MorphData
+	public Blacklist()
 	{
-		public Blacklist()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

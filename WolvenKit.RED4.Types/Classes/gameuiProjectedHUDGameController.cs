@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiProjectedHUDGameController : gameuiHUDGameController
 {
-	[REDMeta]
-	public partial class gameuiProjectedHUDGameController : gameuiHUDGameController
+	public gameuiProjectedHUDGameController()
 	{
-		public gameuiProjectedHUDGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

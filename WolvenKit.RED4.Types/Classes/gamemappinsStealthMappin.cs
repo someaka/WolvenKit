@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsStealthMappin : gamemappinsRuntimeMappin
 {
-	[REDMeta]
-	public partial class gamemappinsStealthMappin : gamemappinsRuntimeMappin
+	public gamemappinsStealthMappin()
 	{
-		public gamemappinsStealthMappin()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

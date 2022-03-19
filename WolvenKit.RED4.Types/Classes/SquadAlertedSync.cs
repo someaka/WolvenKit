@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SquadAlertedSync : SquadTask
 {
-	[REDMeta]
-	public partial class SquadAlertedSync : SquadTask
+	public SquadAlertedSync()
 	{
-		public SquadAlertedSync()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

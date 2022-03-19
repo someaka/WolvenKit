@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameprojectileTrajectoryParams : IScriptable
 {
-	[REDMeta]
-	public partial class gameprojectileTrajectoryParams : IScriptable
+	public gameprojectileTrajectoryParams()
 	{
-		public gameprojectileTrajectoryParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

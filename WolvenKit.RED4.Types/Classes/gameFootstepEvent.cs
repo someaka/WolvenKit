@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameFootstepEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameFootstepEvent : redEvent
+	public gameFootstepEvent()
 	{
-		public gameFootstepEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

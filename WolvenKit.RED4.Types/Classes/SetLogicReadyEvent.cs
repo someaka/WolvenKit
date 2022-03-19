@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetLogicReadyEvent : redEvent
 {
-	[REDMeta]
-	public partial class SetLogicReadyEvent : redEvent
+	[Ordinal(0)] 
+	[RED("isReady")] 
+	public CBool IsReady
 	{
-		[Ordinal(0)] 
-		[RED("isReady")] 
-		public CBool IsReady
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public SetLogicReadyEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public SetLogicReadyEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

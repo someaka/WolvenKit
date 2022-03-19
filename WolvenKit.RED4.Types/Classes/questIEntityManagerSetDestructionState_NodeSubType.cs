@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIEntityManagerSetDestructionState_NodeSubType : questIEntityManager_NodeSubType
 {
-	[REDMeta]
-	public partial class questIEntityManagerSetDestructionState_NodeSubType : questIEntityManager_NodeSubType
+	public questIEntityManagerSetDestructionState_NodeSubType()
 	{
-		public questIEntityManagerSetDestructionState_NodeSubType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

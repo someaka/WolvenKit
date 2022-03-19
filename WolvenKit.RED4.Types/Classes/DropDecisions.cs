@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DropDecisions : CarriedObject
 {
-	[REDMeta]
-	public partial class DropDecisions : CarriedObject
+	public DropDecisions()
 	{
-		public DropDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

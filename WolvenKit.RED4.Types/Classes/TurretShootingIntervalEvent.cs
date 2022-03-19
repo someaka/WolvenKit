@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TurretShootingIntervalEvent : redEvent
 {
-	[REDMeta]
-	public partial class TurretShootingIntervalEvent : redEvent
+	public TurretShootingIntervalEvent()
 	{
-		public TurretShootingIntervalEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

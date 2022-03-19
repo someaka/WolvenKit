@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workIWorkspotItemAction : ISerializable
 {
-	[REDMeta]
-	public partial class workIWorkspotItemAction : ISerializable
+	public workIWorkspotItemAction()
 	{
-		public workIWorkspotItemAction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

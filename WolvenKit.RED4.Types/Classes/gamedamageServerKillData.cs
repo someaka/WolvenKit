@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedamageServerKillData : IScriptable
 {
-	[REDMeta]
-	public partial class gamedamageServerKillData : IScriptable
+	[Ordinal(0)] 
+	[RED("id")] 
+	public CUInt32 Id
 	{
-		[Ordinal(0)] 
-		[RED("id")] 
-		public CUInt32 Id
-		{
-			get => GetPropertyValue<CUInt32>();
-			set => SetPropertyValue<CUInt32>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("killInfo")] 
-		public gameuiKillInfo KillInfo
-		{
-			get => GetPropertyValue<gameuiKillInfo>();
-			set => SetPropertyValue<gameuiKillInfo>(value);
-		}
-
-		public gamedamageServerKillData()
-		{
-			KillInfo = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CUInt32>();
+		set => SetPropertyValue<CUInt32>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("killInfo")] 
+	public gameuiKillInfo KillInfo
+	{
+		get => GetPropertyValue<gameuiKillInfo>();
+		set => SetPropertyValue<gameuiKillInfo>(value);
+	}
+
+	public gamedamageServerKillData()
+	{
+		KillInfo = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

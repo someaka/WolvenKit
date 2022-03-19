@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiGenericNotificationGameController : gameuiWidgetGameController
 {
-	[REDMeta]
-	public partial class gameuiGenericNotificationGameController : gameuiWidgetGameController
+	public gameuiGenericNotificationGameController()
 	{
-		public gameuiGenericNotificationGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

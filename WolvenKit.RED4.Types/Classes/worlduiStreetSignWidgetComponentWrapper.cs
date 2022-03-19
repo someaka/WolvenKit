@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worlduiStreetSignWidgetComponentWrapper : inkIStreetSignWidgetComponentWrapper
 {
-	[REDMeta]
-	public partial class worlduiStreetSignWidgetComponentWrapper : inkIStreetSignWidgetComponentWrapper
+	public worlduiStreetSignWidgetComponentWrapper()
 	{
-		public worlduiStreetSignWidgetComponentWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

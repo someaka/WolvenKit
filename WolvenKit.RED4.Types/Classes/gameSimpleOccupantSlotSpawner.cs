@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSimpleOccupantSlotSpawner : entIComponent
 {
-	[REDMeta]
-	public partial class gameSimpleOccupantSlotSpawner : entIComponent
+	public gameSimpleOccupantSlotSpawner()
 	{
-		public gameSimpleOccupantSlotSpawner()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

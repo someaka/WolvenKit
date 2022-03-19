@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AcquireDeviceLink : redEvent
 {
-	[REDMeta]
-	public partial class AcquireDeviceLink : redEvent
+	public AcquireDeviceLink()
 	{
-		public AcquireDeviceLink()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

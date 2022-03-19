@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReevaluatePresetEvent : redEvent
 {
-	[REDMeta]
-	public partial class ReevaluatePresetEvent : redEvent
+	public ReevaluatePresetEvent()
 	{
-		public ReevaluatePresetEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

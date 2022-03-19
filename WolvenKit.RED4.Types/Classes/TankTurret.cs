@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TankTurret : gameWeakspotObject
 {
-	[REDMeta]
-	public partial class TankTurret : gameWeakspotObject
+	public TankTurret()
 	{
-		public TankTurret()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

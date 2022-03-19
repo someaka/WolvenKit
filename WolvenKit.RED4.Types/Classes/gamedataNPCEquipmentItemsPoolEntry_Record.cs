@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataNPCEquipmentItemsPoolEntry_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataNPCEquipmentItemsPoolEntry_Record : gamedataTweakDBRecord
+	public gamedataNPCEquipmentItemsPoolEntry_Record()
 	{
-		public gamedataNPCEquipmentItemsPoolEntry_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

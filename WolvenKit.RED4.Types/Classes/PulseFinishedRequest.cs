@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PulseFinishedRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class PulseFinishedRequest : gameScriptableSystemRequest
+	public PulseFinishedRequest()
 	{
-		public PulseFinishedRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

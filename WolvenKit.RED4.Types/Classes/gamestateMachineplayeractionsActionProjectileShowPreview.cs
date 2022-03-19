@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineplayeractionsActionProjectileShowPreview : gamestateMachineplayeractionsActionCharge
 {
-	[REDMeta]
-	public partial class gamestateMachineplayeractionsActionProjectileShowPreview : gamestateMachineplayeractionsActionCharge
+	public gamestateMachineplayeractionsActionProjectileShowPreview()
 	{
-		public gamestateMachineplayeractionsActionProjectileShowPreview()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

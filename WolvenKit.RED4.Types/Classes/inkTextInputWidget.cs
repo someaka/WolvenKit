@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkTextInputWidget : inkTextWidget
 {
-	[REDMeta]
-	public partial class inkTextInputWidget : inkTextWidget
+	public inkTextInputWidget()
 	{
-		public inkTextInputWidget()
-		{
-			IsInteractive = true;
-			CanSupportFocus = true;
+		IsInteractive = true;
+		CanSupportFocus = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

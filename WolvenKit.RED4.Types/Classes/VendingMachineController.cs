@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VendingMachineController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class VendingMachineController : ScriptableDeviceComponent
+	public VendingMachineController()
 	{
-		public VendingMachineController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceSafeDecisions : UpperBodyTransition
 {
-	[REDMeta]
-	public partial class ForceSafeDecisions : UpperBodyTransition
+	public ForceSafeDecisions()
 	{
-		public ForceSafeDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

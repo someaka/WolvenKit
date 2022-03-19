@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameeventsRefreshVisibility : redEvent
 {
-	[REDMeta]
-	public partial class gameeventsRefreshVisibility : redEvent
+	public gameeventsRefreshVisibility()
 	{
-		public gameeventsRefreshVisibility()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

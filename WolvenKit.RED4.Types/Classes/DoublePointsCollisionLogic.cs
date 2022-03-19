@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DoublePointsCollisionLogic : BonusCollisionLogic
 {
-	[REDMeta]
-	public partial class DoublePointsCollisionLogic : BonusCollisionLogic
+	public DoublePointsCollisionLogic()
 	{
-		public DoublePointsCollisionLogic()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

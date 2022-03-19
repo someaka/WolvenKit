@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameHasDialogVisualizerVisiblePrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class gameHasDialogVisualizerVisiblePrereqState : gamePrereqState
+	public gameHasDialogVisualizerVisiblePrereqState()
 	{
-		public gameHasDialogVisualizerVisiblePrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CheckDroppedThreat : CheckThreat
 {
-	[REDMeta]
-	public partial class CheckDroppedThreat : CheckThreat
+	public CheckDroppedThreat()
 	{
-		public CheckDroppedThreat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

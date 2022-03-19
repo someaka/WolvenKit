@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MessengerContactDataView : VirtualNestedListDataView
 {
-	[REDMeta]
-	public partial class MessengerContactDataView : VirtualNestedListDataView
+	public MessengerContactDataView()
 	{
-		public MessengerContactDataView()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

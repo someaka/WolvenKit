@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class redTOMLArrayString : redTOMLBaseValue
 {
-	[REDMeta]
-	public partial class redTOMLArrayString : redTOMLBaseValue
+	public redTOMLArrayString()
 	{
-		public redTOMLArrayString()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

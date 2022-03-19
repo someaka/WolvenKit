@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldLightChannelVolumeNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldLightChannelVolumeNodeInstance : worldINodeInstance
+	public worldLightChannelVolumeNodeInstance()
 	{
-		public worldLightChannelVolumeNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

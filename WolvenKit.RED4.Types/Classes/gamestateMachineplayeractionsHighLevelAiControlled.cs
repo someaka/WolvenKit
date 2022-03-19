@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineplayeractionsHighLevelAiControlled : gamestateMachineStateActionDefinition
 {
-	[REDMeta]
-	public partial class gamestateMachineplayeractionsHighLevelAiControlled : gamestateMachineStateActionDefinition
+	public gamestateMachineplayeractionsHighLevelAiControlled()
 	{
-		public gamestateMachineplayeractionsHighLevelAiControlled()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

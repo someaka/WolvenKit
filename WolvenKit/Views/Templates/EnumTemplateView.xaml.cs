@@ -63,6 +63,6 @@ namespace WolvenKit.Views.Templates
 
         private void SetRedValue(string value) => SetCurrentValue(RedEnumProperty, CEnum.Parse(RedEnum.GetInnerType(), value));
 
-        private string GetValueFromRedValue() => RedEnum.ToEnumString();
+        private string GetValueFromRedValue() => RedEnum.ToString();
     }
 }

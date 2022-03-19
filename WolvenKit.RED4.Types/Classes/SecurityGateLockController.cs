@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecurityGateLockController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class SecurityGateLockController : ScriptableDeviceComponent
+	public SecurityGateLockController()
 	{
-		public SecurityGateLockController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

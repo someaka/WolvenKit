@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Ladder : InteractiveDevice
 {
-	[REDMeta]
-	public partial class Ladder : InteractiveDevice
+	public Ladder()
 	{
-		public Ladder()
-		{
-			ControllerTypeName = "LadderController";
+		ControllerTypeName = "LadderController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

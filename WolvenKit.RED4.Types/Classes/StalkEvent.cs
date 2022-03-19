@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StalkEvent : redEvent
 {
-	[REDMeta]
-	public partial class StalkEvent : redEvent
+	public StalkEvent()
 	{
-		public StalkEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

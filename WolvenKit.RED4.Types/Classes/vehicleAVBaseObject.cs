@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleAVBaseObject : vehicleBaseObject
 {
-	[REDMeta]
-	public partial class vehicleAVBaseObject : vehicleBaseObject
+	public vehicleAVBaseObject()
 	{
-		public vehicleAVBaseObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

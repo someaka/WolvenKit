@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GameTimePrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class GameTimePrereq : gameIScriptablePrereq
+	[Ordinal(0)] 
+	[RED("delay")] 
+	public CFloat Delay
 	{
-		[Ordinal(0)] 
-		[RED("delay")] 
-		public CFloat Delay
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public GameTimePrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public GameTimePrereq()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

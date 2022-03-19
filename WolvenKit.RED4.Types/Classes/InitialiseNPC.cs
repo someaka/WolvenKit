@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InitialiseNPC : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class InitialiseNPC : AIbehaviortaskScript
+	public InitialiseNPC()
 	{
-		public InitialiseNPC()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

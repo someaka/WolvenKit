@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorClearActiveNodesDebuggerCommand : AIbehaviorIDebuggerCommand
 {
-	[REDMeta]
-	public partial class AIbehaviorClearActiveNodesDebuggerCommand : AIbehaviorIDebuggerCommand
+	public AIbehaviorClearActiveNodesDebuggerCommand()
 	{
-		public AIbehaviorClearActiveNodesDebuggerCommand()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

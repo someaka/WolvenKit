@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISquadNPCMember : AISquadMemberBase
 {
-	[REDMeta]
-	public partial class AISquadNPCMember : AISquadMemberBase
+	public AISquadNPCMember()
 	{
-		public AISquadNPCMember()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

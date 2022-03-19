@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameItemCreationPrereqDataWrapper : IScriptable
 {
-	[REDMeta]
-	public partial class gameItemCreationPrereqDataWrapper : IScriptable
+	public gameItemCreationPrereqDataWrapper()
 	{
-		public gameItemCreationPrereqDataWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

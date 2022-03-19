@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameGOGRewardsSystem : gameIOnlineSystem
 {
-	[REDMeta]
-	public partial class gameGOGRewardsSystem : gameIOnlineSystem
+	public gameGOGRewardsSystem()
 	{
-		public gameGOGRewardsSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

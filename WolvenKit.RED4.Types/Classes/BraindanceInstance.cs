@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BraindanceInstance : ModuleInstance
 {
-	[REDMeta]
-	public partial class BraindanceInstance : ModuleInstance
+	public BraindanceInstance()
 	{
-		public BraindanceInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

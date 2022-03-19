@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorWaitTargetToReachConditionDefinition : AIbehaviorConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorWaitTargetToReachConditionDefinition : AIbehaviorConditionDefinition
+	public AIbehaviorWaitTargetToReachConditionDefinition()
 	{
-		public AIbehaviorWaitTargetToReachConditionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

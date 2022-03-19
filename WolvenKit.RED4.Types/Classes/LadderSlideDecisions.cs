@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LadderSlideDecisions : LadderDecisions
 {
-	[REDMeta]
-	public partial class LadderSlideDecisions : LadderDecisions
+	public LadderSlideDecisions()
 	{
-		public LadderSlideDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

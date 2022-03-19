@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class communityCommunitySpawnSetTemplate : communityCommunityTemplate
 {
-	[REDMeta]
-	public partial class communityCommunitySpawnSetTemplate : communityCommunityTemplate
+	public communityCommunitySpawnSetTemplate()
 	{
-		public communityCommunitySpawnSetTemplate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

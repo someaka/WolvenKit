@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entSpawnersContainer : ISerializable
 {
-	[REDMeta]
-	public partial class entSpawnersContainer : ISerializable
+	public entSpawnersContainer()
 	{
-		public entSpawnersContainer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AirDeathDecisions : DeathDecisionsWithResurrection
 {
-	[REDMeta]
-	public partial class AirDeathDecisions : DeathDecisionsWithResurrection
+	public AirDeathDecisions()
 	{
-		public AirDeathDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

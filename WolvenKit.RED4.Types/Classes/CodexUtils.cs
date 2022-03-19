@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CodexUtils : IScriptable
 {
-	[REDMeta]
-	public partial class CodexUtils : IScriptable
+	public CodexUtils()
 	{
-		public CodexUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

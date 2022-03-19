@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataOffMeshLinkTag_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataOffMeshLinkTag_Record : gamedataTweakDBRecord
+	public gamedataOffMeshLinkTag_Record()
 	{
-		public gamedataOffMeshLinkTag_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

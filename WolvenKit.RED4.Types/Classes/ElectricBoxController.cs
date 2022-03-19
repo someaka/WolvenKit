@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ElectricBoxController : MasterController
 {
-	[REDMeta]
-	public partial class ElectricBoxController : MasterController
+	public ElectricBoxController()
 	{
-		public ElectricBoxController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

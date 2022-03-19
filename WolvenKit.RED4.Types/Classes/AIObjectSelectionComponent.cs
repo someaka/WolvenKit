@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIObjectSelectionComponent : entIComponent
 {
-	[REDMeta]
-	public partial class AIObjectSelectionComponent : entIComponent
+	public AIObjectSelectionComponent()
 	{
-		public AIObjectSelectionComponent()
-		{
-			Name = "ObjectSelector";
+		Name = "ObjectSelector";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

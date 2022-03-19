@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HotkeyManager : RedBaseClass
 {
-	[REDMeta]
-	public partial class HotkeyManager : RedBaseClass
+	public HotkeyManager()
 	{
-		public HotkeyManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

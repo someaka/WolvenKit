@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entISourceBinding : entIBinding
 {
-	[REDMeta]
-	public partial class entISourceBinding : entIBinding
+	public entISourceBinding()
 	{
-		public entISourceBinding()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

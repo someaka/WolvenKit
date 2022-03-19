@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeviceSystemBaseController : MasterController
 {
-	[REDMeta]
-	public partial class DeviceSystemBaseController : MasterController
+	public DeviceSystemBaseController()
 	{
-		public DeviceSystemBaseController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

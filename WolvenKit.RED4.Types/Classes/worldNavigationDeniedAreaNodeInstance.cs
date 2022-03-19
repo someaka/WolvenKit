@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldNavigationDeniedAreaNodeInstance : worldAreaShapeNodeInstance
 {
-	[REDMeta]
-	public partial class worldNavigationDeniedAreaNodeInstance : worldAreaShapeNodeInstance
+	public worldNavigationDeniedAreaNodeInstance()
 	{
-		public worldNavigationDeniedAreaNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

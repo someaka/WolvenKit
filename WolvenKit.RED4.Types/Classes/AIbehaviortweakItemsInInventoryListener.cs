@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviortweakItemsInInventoryListener : gameIInventoryListener
 {
-	[REDMeta]
-	public partial class AIbehaviortweakItemsInInventoryListener : gameIInventoryListener
+	public AIbehaviortweakItemsInInventoryListener()
 	{
-		public AIbehaviortweakItemsInInventoryListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

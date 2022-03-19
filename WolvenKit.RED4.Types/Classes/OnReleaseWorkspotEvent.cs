@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnReleaseWorkspotEvent : OnWorkspotAvailabilityEvent
 {
-	[REDMeta]
-	public partial class OnReleaseWorkspotEvent : OnWorkspotAvailabilityEvent
+	public OnReleaseWorkspotEvent()
 	{
-		public OnReleaseWorkspotEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetTimeStampToArgumentFloat : SetArguments
 {
-	[REDMeta]
-	public partial class SetTimeStampToArgumentFloat : SetArguments
+	public SetTimeStampToArgumentFloat()
 	{
-		public SetTimeStampToArgumentFloat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

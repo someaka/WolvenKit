@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CRenderSkyData : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class CRenderSkyData : ISceneStorageCustomData
+	public CRenderSkyData()
 	{
-		public CRenderSkyData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

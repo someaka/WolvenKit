@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleAutopilot : RedBaseClass
 {
-	[REDMeta]
-	public partial class vehicleAutopilot : RedBaseClass
+	public vehicleAutopilot()
 	{
-		public vehicleAutopilot()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

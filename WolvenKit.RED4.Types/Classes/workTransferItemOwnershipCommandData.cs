@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workTransferItemOwnershipCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workTransferItemOwnershipCommandData : workIWorkspotCommandData
+	public workTransferItemOwnershipCommandData()
 	{
-		public workTransferItemOwnershipCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

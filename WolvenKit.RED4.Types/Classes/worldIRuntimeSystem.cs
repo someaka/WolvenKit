@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldIRuntimeSystem : IUpdatableSystem
 {
-	[REDMeta]
-	public partial class worldIRuntimeSystem : IUpdatableSystem
+	public worldIRuntimeSystem()
 	{
-		public worldIRuntimeSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InitialStateDecisions : InputContextTransitionDecisions
 {
-	[REDMeta]
-	public partial class InitialStateDecisions : InputContextTransitionDecisions
+	public InitialStateDecisions()
 	{
-		public InitialStateDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

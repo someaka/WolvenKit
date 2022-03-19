@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmSavingRequesResult : inkCallbackBase
 {
-	[REDMeta]
-	public partial class gsmSavingRequesResult : inkCallbackBase
+	public gsmSavingRequesResult()
 	{
-		public gsmSavingRequesResult()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

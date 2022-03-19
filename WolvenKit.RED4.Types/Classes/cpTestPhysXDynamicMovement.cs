@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class cpTestPhysXDynamicMovement : gameObject
 {
-	[REDMeta]
-	public partial class cpTestPhysXDynamicMovement : gameObject
+	public cpTestPhysXDynamicMovement()
 	{
-		public cpTestPhysXDynamicMovement()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

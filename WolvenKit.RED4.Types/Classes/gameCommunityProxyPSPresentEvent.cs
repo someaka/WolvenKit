@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCommunityProxyPSPresentEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameCommunityProxyPSPresentEvent : redEvent
+	public gameCommunityProxyPSPresentEvent()
 	{
-		public gameCommunityProxyPSPresentEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LearnAction : ConsumeAction
 {
-	[REDMeta]
-	public partial class LearnAction : ConsumeAction
+	public LearnAction()
 	{
-		public LearnAction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

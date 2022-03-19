@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EncumbranceEvaluationEffector : gameEffector
 {
-	[REDMeta]
-	public partial class EncumbranceEvaluationEffector : gameEffector
+	public EncumbranceEvaluationEffector()
 	{
-		public EncumbranceEvaluationEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

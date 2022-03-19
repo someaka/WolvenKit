@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiHolocallCameraComponent : entRenderToTextureCameraComponent
 {
-	[REDMeta]
-	public partial class gameuiHolocallCameraComponent : entRenderToTextureCameraComponent
+	public gameuiHolocallCameraComponent()
 	{
-		public gameuiHolocallCameraComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

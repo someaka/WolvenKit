@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldSceneRecordingContentObserverNode : worldNode
 {
-	[REDMeta]
-	public partial class worldSceneRecordingContentObserverNode : worldNode
+	[Ordinal(4)] 
+	[RED("filter")] 
+	public worldSceneRecordingNodeFilter Filter
 	{
-		[Ordinal(4)] 
-		[RED("filter")] 
-		public worldSceneRecordingNodeFilter Filter
-		{
-			get => GetPropertyValue<worldSceneRecordingNodeFilter>();
-			set => SetPropertyValue<worldSceneRecordingNodeFilter>(value);
-		}
-
-		public worldSceneRecordingContentObserverNode()
-		{
-			Filter = new() { MeshNodesOnly = true, MeshResourceFilter = new() { ForceFilterIgnore = new(), ForceFilterMatch = new() } };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<worldSceneRecordingNodeFilter>();
+		set => SetPropertyValue<worldSceneRecordingNodeFilter>(value);
 	}
+
+	public worldSceneRecordingContentObserverNode()
+	{
+		Filter = new() { MeshNodesOnly = true, MeshResourceFilter = new() { ForceFilterIgnore = new(), ForceFilterMatch = new() } };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

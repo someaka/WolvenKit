@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldInteriorAreaNode : worldTriggerAreaNode
 {
-	[REDMeta]
-	public partial class worldInteriorAreaNode : worldTriggerAreaNode
+	public worldInteriorAreaNode()
 	{
-		public worldInteriorAreaNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

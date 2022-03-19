@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RequestDeviceWidgetsUpdateEvent : RequestWidgetUpdateEvent
 {
-	[REDMeta]
-	public partial class RequestDeviceWidgetsUpdateEvent : RequestWidgetUpdateEvent
+	[Ordinal(2)] 
+	[RED("requesters")] 
+	public CArray<gamePersistentID> Requesters
 	{
-		[Ordinal(2)] 
-		[RED("requesters")] 
-		public CArray<gamePersistentID> Requesters
-		{
-			get => GetPropertyValue<CArray<gamePersistentID>>();
-			set => SetPropertyValue<CArray<gamePersistentID>>(value);
-		}
-
-		public RequestDeviceWidgetsUpdateEvent()
-		{
-			Requesters = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<gamePersistentID>>();
+		set => SetPropertyValue<CArray<gamePersistentID>>(value);
 	}
+
+	public RequestDeviceWidgetsUpdateEvent()
+	{
+		Requesters = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

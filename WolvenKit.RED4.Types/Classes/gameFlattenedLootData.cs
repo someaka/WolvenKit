@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameFlattenedLootData : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameFlattenedLootData : RedBaseClass
+	[Ordinal(0)] 
+	[RED("lootID")] 
+	public TweakDBID LootID
 	{
-		[Ordinal(0)] 
-		[RED("lootID")] 
-		public TweakDBID LootID
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-
-		public gameFlattenedLootData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<TweakDBID>();
+		set => SetPropertyValue<TweakDBID>(value);
 	}
+
+	public gameFlattenedLootData()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

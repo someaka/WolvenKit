@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnRepeat : inkPointerEvent
 {
-	[REDMeta]
-	public partial class OnRepeat : inkPointerEvent
+	public OnRepeat()
 	{
-		public OnRepeat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

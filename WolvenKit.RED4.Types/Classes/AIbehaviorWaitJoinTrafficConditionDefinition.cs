@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorWaitJoinTrafficConditionDefinition : AIbehaviorConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorWaitJoinTrafficConditionDefinition : AIbehaviorConditionDefinition
+	public AIbehaviorWaitJoinTrafficConditionDefinition()
 	{
-		public AIbehaviorWaitJoinTrafficConditionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

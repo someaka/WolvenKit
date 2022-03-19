@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePuppetStatsListener : gameIStatsListener
 {
-	[REDMeta]
-	public partial class gamePuppetStatsListener : gameIStatsListener
+	public gamePuppetStatsListener()
 	{
-		public gamePuppetStatsListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SelfRemovalDecisions : gamestateMachineFunctor
 {
-	[REDMeta]
-	public partial class SelfRemovalDecisions : gamestateMachineFunctor
+	public SelfRemovalDecisions()
 	{
-		public SelfRemovalDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

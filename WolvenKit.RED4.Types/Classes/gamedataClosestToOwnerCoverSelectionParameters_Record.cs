@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataClosestToOwnerCoverSelectionParameters_Record : gamedataCoverSelectionParameters_Record
 {
-	[REDMeta]
-	public partial class gamedataClosestToOwnerCoverSelectionParameters_Record : gamedataCoverSelectionParameters_Record
+	public gamedataClosestToOwnerCoverSelectionParameters_Record()
 	{
-		public gamedataClosestToOwnerCoverSelectionParameters_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMuppetInputActionAimDownSight : gameIMuppetInputAction
 {
-	[REDMeta]
-	public partial class gameMuppetInputActionAimDownSight : gameIMuppetInputAction
+	public gameMuppetInputActionAimDownSight()
 	{
-		public gameMuppetInputActionAimDownSight()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

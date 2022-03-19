@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workIdleTransitionCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workIdleTransitionCommandData : workIWorkspotCommandData
+	public workIdleTransitionCommandData()
 	{
-		public workIdleTransitionCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

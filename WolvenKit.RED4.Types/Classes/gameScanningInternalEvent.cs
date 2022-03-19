@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScanningInternalEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameScanningInternalEvent : redEvent
+	public gameScanningInternalEvent()
 	{
-		public gameScanningInternalEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

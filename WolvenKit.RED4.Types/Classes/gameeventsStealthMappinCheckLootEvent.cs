@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameeventsStealthMappinCheckLootEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameeventsStealthMappinCheckLootEvent : redEvent
+	public gameeventsStealthMappinCheckLootEvent()
 	{
-		public gameeventsStealthMappinCheckLootEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTPPRepresentationPositionProvider : entIPositionProvider
 {
-	[REDMeta]
-	public partial class gameTPPRepresentationPositionProvider : entIPositionProvider
+	public gameTPPRepresentationPositionProvider()
 	{
-		public gameTPPRepresentationPositionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

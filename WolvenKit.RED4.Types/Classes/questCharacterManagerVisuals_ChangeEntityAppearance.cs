@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questCharacterManagerVisuals_ChangeEntityAppearance : questCharacterManagerVisuals_EntityAppearanceOperationBase
 {
-	[REDMeta]
-	public partial class questCharacterManagerVisuals_ChangeEntityAppearance : questCharacterManagerVisuals_EntityAppearanceOperationBase
+	public questCharacterManagerVisuals_ChangeEntityAppearance()
 	{
-		public questCharacterManagerVisuals_ChangeEntityAppearance()
-		{
-			AppearanceEntries = new() { new() };
+		AppearanceEntries = new() { new() };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

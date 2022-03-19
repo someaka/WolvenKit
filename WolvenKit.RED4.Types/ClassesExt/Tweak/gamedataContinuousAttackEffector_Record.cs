@@ -1,14 +1,13 @@
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class gamedataContinuousAttackEffector_Record
 {
-	public partial class gamedataContinuousAttackEffector_Record
-	{
-		[RED("delayTime")]
-		[REDProperty(IsIgnored = true)]
-		public CFloat DelayTime
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-	}
+    [RED("delayTime")]
+    [REDProperty(IsIgnored = true)]
+    public CFloat DelayTime
+    {
+        get => GetPropertyValue<CFloat>();
+        set => SetPropertyValue<CFloat>(value);
+    }
 }

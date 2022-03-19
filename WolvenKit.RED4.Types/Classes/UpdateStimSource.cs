@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UpdateStimSource : ReactionManagerTask
 {
-	[REDMeta]
-	public partial class UpdateStimSource : ReactionManagerTask
+	public UpdateStimSource()
 	{
-		public UpdateStimSource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EquipmentUIBBRequest : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class EquipmentUIBBRequest : gamePlayerScriptableSystemRequest
+	public EquipmentUIBBRequest()
 	{
-		public EquipmentUIBBRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

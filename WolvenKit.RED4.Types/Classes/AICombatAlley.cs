@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICombatAlley : IScriptable
 {
-	[REDMeta]
-	public partial class AICombatAlley : IScriptable
+	public AICombatAlley()
 	{
-		public AICombatAlley()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

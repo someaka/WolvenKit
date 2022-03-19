@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkSaveTransferRequestUpdate : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkSaveTransferRequestUpdate : inkCallbackBase
+	public inkSaveTransferRequestUpdate()
 	{
-		public inkSaveTransferRequestUpdate()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

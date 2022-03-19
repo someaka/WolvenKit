@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StashController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class StashController : ScriptableDeviceComponent
+	public StashController()
 	{
-		public StashController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

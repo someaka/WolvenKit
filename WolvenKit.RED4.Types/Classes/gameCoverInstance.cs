@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCoverInstance : gameSmartObjectWorkspotInstance
 {
-	[REDMeta]
-	public partial class gameCoverInstance : gameSmartObjectWorkspotInstance
+	public gameCoverInstance()
 	{
-		public gameCoverInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

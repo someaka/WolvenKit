@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataForceDismembermentEffector_Record : gamedataEffector_Record
 {
-	[REDMeta]
-	public partial class gamedataForceDismembermentEffector_Record : gamedataEffector_Record
+	public gamedataForceDismembermentEffector_Record()
 	{
-		public gamedataForceDismembermentEffector_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

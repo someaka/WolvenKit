@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questForcedBehaviorReference : AIResourceReference
 {
-	[REDMeta]
-	public partial class questForcedBehaviorReference : AIResourceReference
+	public questForcedBehaviorReference()
 	{
-		public questForcedBehaviorReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiBaseGOGRegisterController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class gameuiBaseGOGRegisterController : inkWidgetLogicController
+	public gameuiBaseGOGRegisterController()
 	{
-		public gameuiBaseGOGRegisterController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entEditorMeshComponent : entMeshComponent
 {
-	[REDMeta]
-	public partial class entEditorMeshComponent : entMeshComponent
+	public entEditorMeshComponent()
 	{
-		public entEditorMeshComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

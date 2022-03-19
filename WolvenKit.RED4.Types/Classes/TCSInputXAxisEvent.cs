@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TCSInputXAxisEvent : redEvent
 {
-	[REDMeta]
-	public partial class TCSInputXAxisEvent : redEvent
+	[Ordinal(0)] 
+	[RED("value")] 
+	public CFloat Value
 	{
-		[Ordinal(0)] 
-		[RED("value")] 
-		public CFloat Value
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public TCSInputXAxisEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public TCSInputXAxisEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CuttingGrenadeStopAttackEvent : redEvent
 {
-	[REDMeta]
-	public partial class CuttingGrenadeStopAttackEvent : redEvent
+	public CuttingGrenadeStopAttackEvent()
 	{
-		public CuttingGrenadeStopAttackEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

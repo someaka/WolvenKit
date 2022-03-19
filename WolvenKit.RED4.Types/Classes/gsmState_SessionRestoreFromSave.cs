@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmState_SessionRestoreFromSave : gsmState
 {
-	[REDMeta]
-	public partial class gsmState_SessionRestoreFromSave : gsmState
+	public gsmState_SessionRestoreFromSave()
 	{
-		public gsmState_SessionRestoreFromSave()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

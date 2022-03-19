@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReturnToDeviceScreenEvent : redEvent
 {
-	[REDMeta]
-	public partial class ReturnToDeviceScreenEvent : redEvent
+	public ReturnToDeviceScreenEvent()
 	{
-		public ReturnToDeviceScreenEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

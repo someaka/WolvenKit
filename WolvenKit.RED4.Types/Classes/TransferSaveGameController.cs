@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TransferSaveGameController : gameuiWidgetGameController
 {
-	[REDMeta]
-	public partial class TransferSaveGameController : gameuiWidgetGameController
+	[Ordinal(2)] 
+	[RED("notificationController")] 
+	public inkWidgetReference NotificationController
 	{
-		[Ordinal(2)] 
-		[RED("notificationController")] 
-		public inkWidgetReference NotificationController
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		public TransferSaveGameController()
-		{
-			NotificationController = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	public TransferSaveGameController()
+	{
+		NotificationController = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

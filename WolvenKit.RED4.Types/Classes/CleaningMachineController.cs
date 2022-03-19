@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CleaningMachineController : BasicDistractionDeviceController
 {
-	[REDMeta]
-	public partial class CleaningMachineController : BasicDistractionDeviceController
+	public CleaningMachineController()
 	{
-		public CleaningMachineController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

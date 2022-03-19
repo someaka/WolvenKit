@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiFPSCounterGameController : gameuiHUDGameController
 {
-	[REDMeta]
-	public partial class gameuiFPSCounterGameController : gameuiHUDGameController
+	[Ordinal(9)] 
+	[RED("counterWidget")] 
+	public inkTextWidgetReference CounterWidget
 	{
-		[Ordinal(9)] 
-		[RED("counterWidget")] 
-		public inkTextWidgetReference CounterWidget
-		{
-			get => GetPropertyValue<inkTextWidgetReference>();
-			set => SetPropertyValue<inkTextWidgetReference>(value);
-		}
-
-		public gameuiFPSCounterGameController()
-		{
-			CounterWidget = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkTextWidgetReference>();
+		set => SetPropertyValue<inkTextWidgetReference>(value);
 	}
+
+	public gameuiFPSCounterGameController()
+	{
+		CounterWidget = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

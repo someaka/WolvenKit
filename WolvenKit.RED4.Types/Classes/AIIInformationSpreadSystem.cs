@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIIInformationSpreadSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class AIIInformationSpreadSystem : gameIGameSystem
+	public AIIInformationSpreadSystem()
 	{
-		public AIIInformationSpreadSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

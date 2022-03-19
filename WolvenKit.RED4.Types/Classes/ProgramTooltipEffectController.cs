@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProgramTooltipEffectController : ItemTooltipModController
 {
-	[REDMeta]
-	public partial class ProgramTooltipEffectController : ItemTooltipModController
+	public ProgramTooltipEffectController()
 	{
-		public ProgramTooltipEffectController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

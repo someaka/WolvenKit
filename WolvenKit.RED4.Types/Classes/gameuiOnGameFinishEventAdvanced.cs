@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiOnGameFinishEventAdvanced : redEvent
 {
-	[REDMeta]
-	public partial class gameuiOnGameFinishEventAdvanced : redEvent
+	[Ordinal(0)] 
+	[RED("gameState")] 
+	public CHandle<gameuiSideScrollerMiniGameStateAdvanced> GameState
 	{
-		[Ordinal(0)] 
-		[RED("gameState")] 
-		public CHandle<gameuiSideScrollerMiniGameStateAdvanced> GameState
-		{
-			get => GetPropertyValue<CHandle<gameuiSideScrollerMiniGameStateAdvanced>>();
-			set => SetPropertyValue<CHandle<gameuiSideScrollerMiniGameStateAdvanced>>(value);
-		}
-
-		public gameuiOnGameFinishEventAdvanced()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<gameuiSideScrollerMiniGameStateAdvanced>>();
+		set => SetPropertyValue<CHandle<gameuiSideScrollerMiniGameStateAdvanced>>(value);
 	}
+
+	public gameuiOnGameFinishEventAdvanced()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

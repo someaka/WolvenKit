@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workDebugSourceCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workDebugSourceCommandData : workIWorkspotCommandData
+	public workDebugSourceCommandData()
 	{
-		public workDebugSourceCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

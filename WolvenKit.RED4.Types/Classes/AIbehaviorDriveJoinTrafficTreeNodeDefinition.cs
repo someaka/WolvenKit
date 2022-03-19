@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorDriveJoinTrafficTreeNodeDefinition : AIbehaviorDriveTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorDriveJoinTrafficTreeNodeDefinition : AIbehaviorDriveTreeNodeDefinition
+	public AIbehaviorDriveJoinTrafficTreeNodeDefinition()
 	{
-		public AIbehaviorDriveJoinTrafficTreeNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

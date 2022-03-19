@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entSlotAttachment : entITransformAttachment
 {
-	[REDMeta]
-	public partial class entSlotAttachment : entITransformAttachment
+	public entSlotAttachment()
 	{
-		public entSlotAttachment()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StreetSignSelector : inkTweakDBIDSelector
 {
-	[REDMeta]
-	public partial class StreetSignSelector : inkTweakDBIDSelector
+	public StreetSignSelector()
 	{
-		public StreetSignSelector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeviceActionPropertyFunctions : IScriptable
 {
-	[REDMeta]
-	public partial class DeviceActionPropertyFunctions : IScriptable
+	public DeviceActionPropertyFunctions()
 	{
-		public DeviceActionPropertyFunctions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

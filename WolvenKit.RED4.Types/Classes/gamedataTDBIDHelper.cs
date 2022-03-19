@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataTDBIDHelper : RedBaseClass
 {
-	[REDMeta]
-	public partial class gamedataTDBIDHelper : RedBaseClass
+	public gamedataTDBIDHelper()
 	{
-		public gamedataTDBIDHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemActionsHelper : IScriptable
 {
-	[REDMeta]
-	public partial class ItemActionsHelper : IScriptable
+	public ItemActionsHelper()
 	{
-		public ItemActionsHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

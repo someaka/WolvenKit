@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProximityLookatEvent : redEvent
 {
-	[REDMeta]
-	public partial class ProximityLookatEvent : redEvent
+	public ProximityLookatEvent()
 	{
-		public ProximityLookatEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

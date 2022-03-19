@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MinimapDataNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class MinimapDataNodeInstance : worldINodeInstance
+	public MinimapDataNodeInstance()
 	{
-		public MinimapDataNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

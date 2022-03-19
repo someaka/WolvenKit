@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AudioFunctionalTests : IScriptable
 {
-	[REDMeta]
-	public partial class AudioFunctionalTests : IScriptable
+	public AudioFunctionalTests()
 	{
-		public AudioFunctionalTests()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

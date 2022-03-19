@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workExcludedGesturesData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workExcludedGesturesData : workIWorkspotCommandData
+	public workExcludedGesturesData()
 	{
-		public workExcludedGesturesData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

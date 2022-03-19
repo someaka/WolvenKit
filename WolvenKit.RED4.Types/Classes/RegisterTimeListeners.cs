@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RegisterTimeListeners : redEvent
 {
-	[REDMeta]
-	public partial class RegisterTimeListeners : redEvent
+	public RegisterTimeListeners()
 	{
-		public RegisterTimeListeners()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

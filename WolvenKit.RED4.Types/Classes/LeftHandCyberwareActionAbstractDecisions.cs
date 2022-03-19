@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LeftHandCyberwareActionAbstractDecisions : LeftHandCyberwareTransition
 {
-	[REDMeta]
-	public partial class LeftHandCyberwareActionAbstractDecisions : LeftHandCyberwareTransition
+	public LeftHandCyberwareActionAbstractDecisions()
 	{
-		public LeftHandCyberwareActionAbstractDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

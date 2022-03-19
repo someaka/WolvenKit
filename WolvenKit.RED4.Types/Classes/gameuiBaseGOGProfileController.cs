@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiBaseGOGProfileController : gameuiWidgetGameController
 {
-	[REDMeta]
-	public partial class gameuiBaseGOGProfileController : gameuiWidgetGameController
+	public gameuiBaseGOGProfileController()
 	{
-		public gameuiBaseGOGProfileController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

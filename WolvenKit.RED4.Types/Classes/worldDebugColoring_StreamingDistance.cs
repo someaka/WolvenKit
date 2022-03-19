@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDebugColoring_StreamingDistance : worldEditorDebugColoringSettings
 {
-	[REDMeta]
-	public partial class worldDebugColoring_StreamingDistance : worldEditorDebugColoringSettings
+	public worldDebugColoring_StreamingDistance()
 	{
-		public worldDebugColoring_StreamingDistance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

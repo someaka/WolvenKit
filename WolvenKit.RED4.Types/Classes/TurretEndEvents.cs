@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TurretEndEvents : TurretTransition
 {
-	[REDMeta]
-	public partial class TurretEndEvents : TurretTransition
+	public TurretEndEvents()
 	{
-		public TurretEndEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

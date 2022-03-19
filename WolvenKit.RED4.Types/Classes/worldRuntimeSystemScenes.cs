@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemScenes : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemScenes : worldIRuntimeSystem
+	public worldRuntimeSystemScenes()
 	{
-		public worldRuntimeSystemScenes()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

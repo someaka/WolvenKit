@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsBlockedInTraffic : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class IsBlockedInTraffic : AIbehaviorconditionScript
+	public IsBlockedInTraffic()
 	{
-		public IsBlockedInTraffic()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

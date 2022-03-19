@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RemoveAllFastTravelLocksRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class RemoveAllFastTravelLocksRequest : gameScriptableSystemRequest
+	public RemoveAllFastTravelLocksRequest()
 	{
-		public RemoveAllFastTravelLocksRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

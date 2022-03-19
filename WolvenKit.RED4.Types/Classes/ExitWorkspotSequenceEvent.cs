@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExitWorkspotSequenceEvent : redEvent
 {
-	[REDMeta]
-	public partial class ExitWorkspotSequenceEvent : redEvent
+	public ExitWorkspotSequenceEvent()
 	{
-		public ExitWorkspotSequenceEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

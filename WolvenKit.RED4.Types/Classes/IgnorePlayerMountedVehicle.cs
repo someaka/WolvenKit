@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IgnorePlayerMountedVehicle : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class IgnorePlayerMountedVehicle : gameEffectObjectSingleFilter_Scripted
+	public IgnorePlayerMountedVehicle()
 	{
-		public IgnorePlayerMountedVehicle()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

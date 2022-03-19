@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NextFrameEvent : redEvent
 {
-	[REDMeta]
-	public partial class NextFrameEvent : redEvent
+	public NextFrameEvent()
 	{
-		public NextFrameEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

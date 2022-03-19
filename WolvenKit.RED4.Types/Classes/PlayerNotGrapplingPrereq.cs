@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerNotGrapplingPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class PlayerNotGrapplingPrereq : gameIScriptablePrereq
+	public PlayerNotGrapplingPrereq()
 	{
-		public PlayerNotGrapplingPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ShardCaseContainerPS : gameLootContainerBasePS
 {
-	[REDMeta]
-	public partial class ShardCaseContainerPS : gameLootContainerBasePS
+	public ShardCaseContainerPS()
 	{
-		public ShardCaseContainerPS()
-		{
-			MarkAsQuest = true;
+		MarkAsQuest = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

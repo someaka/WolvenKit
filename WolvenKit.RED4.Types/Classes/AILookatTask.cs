@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AILookatTask : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AILookatTask : AIbehaviortaskScript
+	public AILookatTask()
 	{
-		public AILookatTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

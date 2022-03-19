@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectSingleFilterScriptContext : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameEffectSingleFilterScriptContext : RedBaseClass
+	public gameEffectSingleFilterScriptContext()
 	{
-		public gameEffectSingleFilterScriptContext()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

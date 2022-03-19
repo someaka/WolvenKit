@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AITargetNodeInstance : AIITarget
 {
-	[REDMeta]
-	public partial class AITargetNodeInstance : AIITarget
+	public AITargetNodeInstance()
 	{
-		public AITargetNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

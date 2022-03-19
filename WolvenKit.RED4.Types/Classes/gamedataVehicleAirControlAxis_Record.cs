@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVehicleAirControlAxis_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataVehicleAirControlAxis_Record : gamedataTweakDBRecord
+	public gamedataVehicleAirControlAxis_Record()
 	{
-		public gamedataVehicleAirControlAxis_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

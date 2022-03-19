@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIStatPoolsListener : IScriptable
 {
-	[REDMeta]
-	public partial class gameIStatPoolsListener : IScriptable
+	public gameIStatPoolsListener()
 	{
-		public gameIStatPoolsListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

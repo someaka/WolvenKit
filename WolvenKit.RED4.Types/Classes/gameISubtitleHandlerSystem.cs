@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameISubtitleHandlerSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameISubtitleHandlerSystem : gameIGameSystem
+	public gameISubtitleHandlerSystem()
 	{
-		public gameISubtitleHandlerSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SingleWieldEvents : UpperBodyEventsTransition
 {
-	[REDMeta]
-	public partial class SingleWieldEvents : UpperBodyEventsTransition
+	[Ordinal(6)] 
+	[RED("hasInstantEquipHackBeenApplied")] 
+	public CBool HasInstantEquipHackBeenApplied
 	{
-		[Ordinal(6)] 
-		[RED("hasInstantEquipHackBeenApplied")] 
-		public CBool HasInstantEquipHackBeenApplied
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public SingleWieldEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public SingleWieldEvents()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

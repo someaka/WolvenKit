@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animIAnimationBuffer : ISerializable
 {
-	[REDMeta]
-	public partial class animIAnimationBuffer : ISerializable
+	public animIAnimationBuffer()
 	{
-		public animIAnimationBuffer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

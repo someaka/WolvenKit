@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineStateMachineDefinition : graphGraphDefinition
 {
-	[REDMeta]
-	public partial class gamestateMachineStateMachineDefinition : graphGraphDefinition
+	public gamestateMachineStateMachineDefinition()
 	{
-		public gamestateMachineStateMachineDefinition()
-		{
-			Nodes = new();
+		Nodes = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

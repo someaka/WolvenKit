@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class rendDebugDrawerScriptProxy : RedBaseClass
 {
-	[REDMeta]
-	public partial class rendDebugDrawerScriptProxy : RedBaseClass
+	public rendDebugDrawerScriptProxy()
 	{
-		public rendDebugDrawerScriptProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

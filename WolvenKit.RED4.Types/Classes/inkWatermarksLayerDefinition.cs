@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkWatermarksLayerDefinition : inkLayerDefinition
 {
-	[REDMeta]
-	public partial class inkWatermarksLayerDefinition : inkLayerDefinition
+	public inkWatermarksLayerDefinition()
 	{
-		public inkWatermarksLayerDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

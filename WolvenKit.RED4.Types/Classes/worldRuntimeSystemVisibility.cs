@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemVisibility : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemVisibility : worldIRuntimeSystem
+	public worldRuntimeSystemVisibility()
 	{
-		public worldRuntimeSystemVisibility()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class SkillCheckPrereq : DevelopmentCheckPrereq
 {
-	[REDMeta]
-	public partial class SkillCheckPrereq : DevelopmentCheckPrereq
+	[Ordinal(1)] 
+	[RED("skillToCheck")] 
+	public CEnum<gamedataProficiencyType> SkillToCheck
 	{
-		[Ordinal(1)] 
-		[RED("skillToCheck")] 
-		public CEnum<gamedataProficiencyType> SkillToCheck
-		{
-			get => GetPropertyValue<CEnum<gamedataProficiencyType>>();
-			set => SetPropertyValue<CEnum<gamedataProficiencyType>>(value);
-		}
-
-		public SkillCheckPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<gamedataProficiencyType>>();
+		set => SetPropertyValue<CEnum<gamedataProficiencyType>>(value);
 	}
+
+	public SkillCheckPrereq()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

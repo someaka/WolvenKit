@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnconsciousState : ChangeHighLevelStateAbstract
 {
-	[REDMeta]
-	public partial class UnconsciousState : ChangeHighLevelStateAbstract
+	public UnconsciousState()
 	{
-		public UnconsciousState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

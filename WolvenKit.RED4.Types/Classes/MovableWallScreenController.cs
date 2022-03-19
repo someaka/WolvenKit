@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MovableWallScreenController : DoorController
 {
-	[REDMeta]
-	public partial class MovableWallScreenController : DoorController
+	public MovableWallScreenController()
 	{
-		public MovableWallScreenController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class naviINavmeshGenerationSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class naviINavmeshGenerationSystem : gameIGameSystem
+	public naviINavmeshGenerationSystem()
 	{
-		public naviINavmeshGenerationSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

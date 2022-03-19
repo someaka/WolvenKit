@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForcedRagdollDeathTask : AIDeathReactionsTask
 {
-	[REDMeta]
-	public partial class ForcedRagdollDeathTask : AIDeathReactionsTask
+	public ForcedRagdollDeathTask()
 	{
-		public ForcedRagdollDeathTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

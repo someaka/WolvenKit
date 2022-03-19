@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkInputKeyIconManager : ISerializable
 {
-	[REDMeta]
-	public partial class inkInputKeyIconManager : ISerializable
+	public inkInputKeyIconManager()
 	{
-		public inkInputKeyIconManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

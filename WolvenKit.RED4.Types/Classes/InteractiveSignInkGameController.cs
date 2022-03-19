@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InteractiveSignInkGameController : DeviceInkGameControllerBase
 {
-	[REDMeta]
-	public partial class InteractiveSignInkGameController : DeviceInkGameControllerBase
+	public InteractiveSignInkGameController()
 	{
-		public InteractiveSignInkGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

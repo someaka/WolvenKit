@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearArgumentObject : SetArguments
 {
-	[REDMeta]
-	public partial class ClearArgumentObject : SetArguments
+	public ClearArgumentObject()
 	{
-		public ClearArgumentObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

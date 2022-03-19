@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleChangeAlarmEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleChangeAlarmEvent : redEvent
+	public vehicleChangeAlarmEvent()
 	{
-		public vehicleChangeAlarmEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LinkClickedEvent : redEvent
 {
-	[REDMeta]
-	public partial class LinkClickedEvent : redEvent
+	public LinkClickedEvent()
 	{
-		public LinkClickedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

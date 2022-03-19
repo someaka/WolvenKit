@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AdjustAnimWrappersForEscalatingPanicPhase : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AdjustAnimWrappersForEscalatingPanicPhase : AIbehaviortaskScript
+	public AdjustAnimWrappersForEscalatingPanicPhase()
 	{
-		public AdjustAnimWrappersForEscalatingPanicPhase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

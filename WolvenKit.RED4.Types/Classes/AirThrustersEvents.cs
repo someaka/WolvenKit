@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AirThrustersEvents : LocomotionAirEvents
 {
-	[REDMeta]
-	public partial class AirThrustersEvents : LocomotionAirEvents
+	public AirThrustersEvents()
 	{
-		public AirThrustersEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

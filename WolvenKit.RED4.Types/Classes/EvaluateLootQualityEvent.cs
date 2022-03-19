@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EvaluateLootQualityEvent : redEvent
 {
-	[REDMeta]
-	public partial class EvaluateLootQualityEvent : redEvent
+	public EvaluateLootQualityEvent()
 	{
-		public EvaluateLootQualityEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

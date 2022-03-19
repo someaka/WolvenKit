@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Debug_LookatTestEnabled : AIDebugConditions
 {
-	[REDMeta]
-	public partial class Debug_LookatTestEnabled : AIDebugConditions
+	public Debug_LookatTestEnabled()
 	{
-		public Debug_LookatTestEnabled()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnCheckSpeakerOrAddressDistractedInterruptCondition : scnIInterruptCondition
 {
-	[REDMeta]
-	public partial class scnCheckSpeakerOrAddressDistractedInterruptCondition : scnIInterruptCondition
+	public scnCheckSpeakerOrAddressDistractedInterruptCondition()
 	{
-		public scnCheckSpeakerOrAddressDistractedInterruptCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CRenderDistantLightData : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class CRenderDistantLightData : ISceneStorageCustomData
+	public CRenderDistantLightData()
 	{
-		public CRenderDistantLightData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

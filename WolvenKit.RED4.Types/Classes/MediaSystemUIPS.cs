@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MediaSystemUIPS : VirtualSystemPS
 {
-	[REDMeta]
-	public partial class MediaSystemUIPS : VirtualSystemPS
+	public MediaSystemUIPS()
 	{
-		public MediaSystemUIPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

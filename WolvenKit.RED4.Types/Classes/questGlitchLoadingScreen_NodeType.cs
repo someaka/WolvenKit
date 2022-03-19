@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questGlitchLoadingScreen_NodeType : questIUIManagerNodeType
 {
-	[REDMeta]
-	public partial class questGlitchLoadingScreen_NodeType : questIUIManagerNodeType
+	public questGlitchLoadingScreen_NodeType()
 	{
-		public questGlitchLoadingScreen_NodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

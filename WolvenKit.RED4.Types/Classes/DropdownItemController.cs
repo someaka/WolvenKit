@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DropdownItemController : BaseButtonView
 {
-	[REDMeta]
-	public partial class DropdownItemController : BaseButtonView
+	public DropdownItemController()
 	{
-		public DropdownItemController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAnimatedRagdollNotifyDisabledEvent : redEvent
 {
-	[REDMeta]
-	public partial class entAnimatedRagdollNotifyDisabledEvent : redEvent
+	public entAnimatedRagdollNotifyDisabledEvent()
 	{
-		public entAnimatedRagdollNotifyDisabledEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

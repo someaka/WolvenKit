@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimationResetEvent : gameTransformAnimationPlayEvent
 {
-	[REDMeta]
-	public partial class gameTransformAnimationResetEvent : gameTransformAnimationPlayEvent
+	public gameTransformAnimationResetEvent()
 	{
-		public gameTransformAnimationResetEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

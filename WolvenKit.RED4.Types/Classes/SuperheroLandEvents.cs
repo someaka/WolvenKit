@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SuperheroLandEvents : AbstractLandEvents
 {
-	[REDMeta]
-	public partial class SuperheroLandEvents : AbstractLandEvents
+	public SuperheroLandEvents()
 	{
-		public SuperheroLandEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

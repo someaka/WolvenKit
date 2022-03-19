@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UndressPlayer : redEvent
 {
-	[REDMeta]
-	public partial class UndressPlayer : redEvent
+	[Ordinal(0)] 
+	[RED("isCensored")] 
+	public CBool IsCensored
 	{
-		[Ordinal(0)] 
-		[RED("isCensored")] 
-		public CBool IsCensored
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public UndressPlayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public UndressPlayer()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

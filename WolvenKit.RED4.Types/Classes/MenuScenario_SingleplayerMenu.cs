@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MenuScenario_SingleplayerMenu : MenuScenario_PreGameSubMenu
 {
-	[REDMeta]
-	public partial class MenuScenario_SingleplayerMenu : MenuScenario_PreGameSubMenu
+	public MenuScenario_SingleplayerMenu()
 	{
-		public MenuScenario_SingleplayerMenu()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

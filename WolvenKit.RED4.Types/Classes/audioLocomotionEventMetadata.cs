@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audioLocomotionEventMetadata : audioAudioMetadata
 {
-	[REDMeta]
-	public partial class audioLocomotionEventMetadata : audioAudioMetadata
+	public audioLocomotionEventMetadata()
 	{
-		public audioLocomotionEventMetadata()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

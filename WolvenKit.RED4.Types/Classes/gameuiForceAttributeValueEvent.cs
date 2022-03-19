@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiForceAttributeValueEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiForceAttributeValueEvent : redEvent
+	public gameuiForceAttributeValueEvent()
 	{
-		public gameuiForceAttributeValueEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

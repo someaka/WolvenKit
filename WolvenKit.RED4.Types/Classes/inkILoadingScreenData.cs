@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkILoadingScreenData : RedBaseClass
 {
-	[REDMeta]
-	public partial class inkILoadingScreenData : RedBaseClass
+	public inkILoadingScreenData()
 	{
-		public inkILoadingScreenData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

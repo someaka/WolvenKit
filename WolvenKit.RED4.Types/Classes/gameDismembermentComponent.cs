@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDismembermentComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameDismembermentComponent : entIComponent
+	public gameDismembermentComponent()
 	{
-		public gameDismembermentComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

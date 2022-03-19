@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LockQHackInput : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class LockQHackInput : gameScriptableSystemRequest
+	[Ordinal(0)] 
+	[RED("isLocked")] 
+	public CBool IsLocked
 	{
-		[Ordinal(0)] 
-		[RED("isLocked")] 
-		public CBool IsLocked
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public LockQHackInput()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public LockQHackInput()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

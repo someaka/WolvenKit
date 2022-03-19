@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProjectileLauncherRoundDetonationDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class ProjectileLauncherRoundDetonationDelayEvent : redEvent
+	public ProjectileLauncherRoundDetonationDelayEvent()
 	{
-		public ProjectileLauncherRoundDetonationDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

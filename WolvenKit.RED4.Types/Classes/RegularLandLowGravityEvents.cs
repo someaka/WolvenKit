@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RegularLandLowGravityEvents : AbstractLandEvents
 {
-	[REDMeta]
-	public partial class RegularLandLowGravityEvents : AbstractLandEvents
+	public RegularLandLowGravityEvents()
 	{
-		public RegularLandLowGravityEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

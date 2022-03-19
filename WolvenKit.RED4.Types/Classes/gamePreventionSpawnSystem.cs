@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePreventionSpawnSystem : gameIPreventionSpawnSystem
 {
-	[REDMeta]
-	public partial class gamePreventionSpawnSystem : gameIPreventionSpawnSystem
+	public gamePreventionSpawnSystem()
 	{
-		public gamePreventionSpawnSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

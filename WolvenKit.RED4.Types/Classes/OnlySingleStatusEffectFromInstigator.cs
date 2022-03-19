@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnlySingleStatusEffectFromInstigator : gameEffectObjectSingleFilter_Scripted
 {
-	[REDMeta]
-	public partial class OnlySingleStatusEffectFromInstigator : gameEffectObjectSingleFilter_Scripted
+	public OnlySingleStatusEffectFromInstigator()
 	{
-		public OnlySingleStatusEffectFromInstigator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

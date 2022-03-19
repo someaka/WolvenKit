@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataPoolValueModifier_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataPoolValueModifier_Record : gamedataTweakDBRecord
+	public gamedataPoolValueModifier_Record()
 	{
-		public gamedataPoolValueModifier_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

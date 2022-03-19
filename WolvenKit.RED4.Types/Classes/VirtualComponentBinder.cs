@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VirtualComponentBinder : RedBaseClass
 {
-	[REDMeta]
-	public partial class VirtualComponentBinder : RedBaseClass
+	public VirtualComponentBinder()
 	{
-		public VirtualComponentBinder()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

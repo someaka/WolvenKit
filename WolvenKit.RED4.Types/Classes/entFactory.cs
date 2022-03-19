@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entFactory : ISerializable
 {
-	[REDMeta]
-	public partial class entFactory : ISerializable
+	public entFactory()
 	{
-		public entFactory()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

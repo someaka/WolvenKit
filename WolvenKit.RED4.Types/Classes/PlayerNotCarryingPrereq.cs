@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerNotCarryingPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class PlayerNotCarryingPrereq : gameIScriptablePrereq
+	public PlayerNotCarryingPrereq()
 	{
-		public PlayerNotCarryingPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

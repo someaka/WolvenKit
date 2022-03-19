@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICTreeNodeActionDefinition : AICTreeExtendableNodeDefinition
 {
-	[REDMeta]
-	public partial class AICTreeNodeActionDefinition : AICTreeExtendableNodeDefinition
+	public AICTreeNodeActionDefinition()
 	{
-		public AICTreeNodeActionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

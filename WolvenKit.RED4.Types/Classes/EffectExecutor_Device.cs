@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectExecutor_Device : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class EffectExecutor_Device : gameEffectExecutor_Scripted
+	[Ordinal(1)] 
+	[RED("maxDelay")] 
+	public CFloat MaxDelay
 	{
-		[Ordinal(1)] 
-		[RED("maxDelay")] 
-		public CFloat MaxDelay
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public EffectExecutor_Device()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public EffectExecutor_Device()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

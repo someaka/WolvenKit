@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DemolitionSkillCheck : SkillCheckBase
 {
-	[REDMeta]
-	public partial class DemolitionSkillCheck : SkillCheckBase
+	public DemolitionSkillCheck()
 	{
-		public DemolitionSkillCheck()
-		{
-			SkillToCheck = Enums.EDeviceChallengeSkill.Athletics;
+		SkillToCheck = Enums.EDeviceChallengeSkill.Athletics;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISubActionSetTopThreatPersistance_Record : gamedataAISubAction_Record
 {
-	[REDMeta]
-	public partial class gamedataAISubActionSetTopThreatPersistance_Record : gamedataAISubAction_Record
+	public gamedataAISubActionSetTopThreatPersistance_Record()
 	{
-		public gamedataAISubActionSetTopThreatPersistance_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

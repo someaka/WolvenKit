@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TCSInputXYAxisEvent : redEvent
 {
-	[REDMeta]
-	public partial class TCSInputXYAxisEvent : redEvent
+	[Ordinal(0)] 
+	[RED("isAnyInput")] 
+	public CBool IsAnyInput
 	{
-		[Ordinal(0)] 
-		[RED("isAnyInput")] 
-		public CBool IsAnyInput
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public TCSInputXYAxisEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public TCSInputXYAxisEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

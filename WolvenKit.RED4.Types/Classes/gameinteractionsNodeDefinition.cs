@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsNodeDefinition : IScriptable
 {
-	[REDMeta]
-	public partial class gameinteractionsNodeDefinition : IScriptable
+	public gameinteractionsNodeDefinition()
 	{
-		public gameinteractionsNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

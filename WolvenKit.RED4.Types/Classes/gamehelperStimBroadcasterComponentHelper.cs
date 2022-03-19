@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamehelperStimBroadcasterComponentHelper : IScriptable
 {
-	[REDMeta]
-	public partial class gamehelperStimBroadcasterComponentHelper : IScriptable
+	public gamehelperStimBroadcasterComponentHelper()
 	{
-		public gamehelperStimBroadcasterComponentHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExplorationDecisions : HighLevelTransition
 {
-	[REDMeta]
-	public partial class ExplorationDecisions : HighLevelTransition
+	public ExplorationDecisions()
 	{
-		public ExplorationDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

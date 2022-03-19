@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineplayeractionsLocomotionSwimmingDiving : gamestateMachineplayeractionsLocomotionBase
 {
-	[REDMeta]
-	public partial class gamestateMachineplayeractionsLocomotionSwimmingDiving : gamestateMachineplayeractionsLocomotionBase
+	public gamestateMachineplayeractionsLocomotionSwimmingDiving()
 	{
-		public gamestateMachineplayeractionsLocomotionSwimmingDiving()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

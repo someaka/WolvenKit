@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class senseStimuliData : IScriptable
 {
-	[REDMeta]
-	public partial class senseStimuliData : IScriptable
+	public senseStimuliData()
 	{
-		public senseStimuliData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

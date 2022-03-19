@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CDebugConsole : IDebugConsole
 {
-	[REDMeta]
-	public partial class CDebugConsole : IDebugConsole
+	public CDebugConsole()
 	{
-		public CDebugConsole()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIIWorkspotManager : gameIGameSystem
 {
-	[REDMeta]
-	public partial class AIIWorkspotManager : gameIGameSystem
+	public AIIWorkspotManager()
 	{
-		public AIIWorkspotManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

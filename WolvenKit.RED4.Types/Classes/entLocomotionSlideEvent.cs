@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entLocomotionSlideEvent : redEvent
 {
-	[REDMeta]
-	public partial class entLocomotionSlideEvent : redEvent
+	public entLocomotionSlideEvent()
 	{
-		public entLocomotionSlideEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

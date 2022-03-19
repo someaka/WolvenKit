@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkWorldLayer : inkLayer
 {
-	[REDMeta]
-	public partial class inkWorldLayer : inkLayer
+	public inkWorldLayer()
 	{
-		public inkWorldLayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimEvent_WorkspotFastExitCutoff : animAnimEvent
 {
-	[REDMeta]
-	public partial class animAnimEvent_WorkspotFastExitCutoff : animAnimEvent
+	public animAnimEvent_WorkspotFastExitCutoff()
 	{
-		public animAnimEvent_WorkspotFastExitCutoff()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

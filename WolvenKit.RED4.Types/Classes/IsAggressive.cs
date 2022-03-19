@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsAggressive : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class IsAggressive : AIbehaviorconditionScript
+	public IsAggressive()
 	{
-		public IsAggressive()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

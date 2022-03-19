@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class genNullRandomizationSupervisor : genIRandomizationSupervisor
 {
-	[REDMeta]
-	public partial class genNullRandomizationSupervisor : genIRandomizationSupervisor
+	public genNullRandomizationSupervisor()
 	{
-		public genNullRandomizationSupervisor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

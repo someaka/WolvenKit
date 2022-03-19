@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animIAnimStateTransitionInterpolator : ISerializable
 {
-	[REDMeta]
-	public partial class animIAnimStateTransitionInterpolator : ISerializable
+	public animIAnimStateTransitionInterpolator()
 	{
-		public animIAnimStateTransitionInterpolator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsIPredicateType : ISerializable
 {
-	[REDMeta]
-	public partial class gameinteractionsIPredicateType : ISerializable
+	public gameinteractionsIPredicateType()
 	{
-		public gameinteractionsIPredicateType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

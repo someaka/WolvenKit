@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAreaProvider : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameAreaProvider : RedBaseClass
+	public gameAreaProvider()
 	{
-		public gameAreaProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

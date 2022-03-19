@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NoAmmoEvents : WeaponEventsTransition
 {
-	[REDMeta]
-	public partial class NoAmmoEvents : WeaponEventsTransition
+	public NoAmmoEvents()
 	{
-		public NoAmmoEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

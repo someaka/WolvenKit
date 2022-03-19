@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeactivateAllNetworkLinksRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class DeactivateAllNetworkLinksRequest : gameScriptableSystemRequest
+	public DeactivateAllNetworkLinksRequest()
 	{
-		public DeactivateAllNetworkLinksRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCarriedObjectAttached : redEvent
 {
-	[REDMeta]
-	public partial class gameCarriedObjectAttached : redEvent
+	public gameCarriedObjectAttached()
 	{
-		public gameCarriedObjectAttached()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

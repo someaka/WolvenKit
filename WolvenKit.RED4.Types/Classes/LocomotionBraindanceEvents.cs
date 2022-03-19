@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LocomotionBraindanceEvents : LocomotionEventsTransition
 {
-	[REDMeta]
-	public partial class LocomotionBraindanceEvents : LocomotionEventsTransition
+	public LocomotionBraindanceEvents()
 	{
-		public LocomotionBraindanceEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

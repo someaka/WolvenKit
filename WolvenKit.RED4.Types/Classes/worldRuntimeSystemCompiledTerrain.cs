@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemCompiledTerrain : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemCompiledTerrain : worldIRuntimeSystem
+	public worldRuntimeSystemCompiledTerrain()
 	{
-		public worldRuntimeSystemCompiledTerrain()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

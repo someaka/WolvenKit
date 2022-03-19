@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Wardrobe : InteractiveDevice
 {
-	[REDMeta]
-	public partial class Wardrobe : InteractiveDevice
+	public Wardrobe()
 	{
-		public Wardrobe()
-		{
-			ControllerTypeName = "WardrobeController";
+		ControllerTypeName = "WardrobeController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

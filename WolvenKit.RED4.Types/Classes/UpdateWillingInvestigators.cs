@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UpdateWillingInvestigators : redEvent
 {
-	[REDMeta]
-	public partial class UpdateWillingInvestigators : redEvent
+	[Ordinal(0)] 
+	[RED("investigator")] 
+	public entEntityID Investigator
 	{
-		[Ordinal(0)] 
-		[RED("investigator")] 
-		public entEntityID Investigator
-		{
-			get => GetPropertyValue<entEntityID>();
-			set => SetPropertyValue<entEntityID>(value);
-		}
-
-		public UpdateWillingInvestigators()
-		{
-			Investigator = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<entEntityID>();
+		set => SetPropertyValue<entEntityID>(value);
 	}
+
+	public UpdateWillingInvestigators()
+	{
+		Investigator = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

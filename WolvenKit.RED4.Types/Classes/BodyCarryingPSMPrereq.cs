@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BodyCarryingPSMPrereq : PlayerStateMachinePrereq
 {
-	[REDMeta]
-	public partial class BodyCarryingPSMPrereq : PlayerStateMachinePrereq
+	public BodyCarryingPSMPrereq()
 	{
-		public BodyCarryingPSMPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

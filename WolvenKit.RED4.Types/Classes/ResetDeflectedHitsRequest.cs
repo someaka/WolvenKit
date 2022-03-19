@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetDeflectedHitsRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ResetDeflectedHitsRequest : gameScriptableSystemRequest
+	public ResetDeflectedHitsRequest()
 	{
-		public ResetDeflectedHitsRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

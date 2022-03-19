@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameBoolSignalTable : IScriptable
 {
-	[REDMeta]
-	public partial class gameBoolSignalTable : IScriptable
+	public gameBoolSignalTable()
 	{
-		public gameBoolSignalTable()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

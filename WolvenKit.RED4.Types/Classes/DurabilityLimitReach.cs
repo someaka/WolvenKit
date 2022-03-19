@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DurabilityLimitReach : redEvent
 {
-	[REDMeta]
-	public partial class DurabilityLimitReach : redEvent
+	public DurabilityLimitReach()
 	{
-		public DurabilityLimitReach()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleReadyToParkEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleReadyToParkEvent : redEvent
+	public vehicleReadyToParkEvent()
 	{
-		public vehicleReadyToParkEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

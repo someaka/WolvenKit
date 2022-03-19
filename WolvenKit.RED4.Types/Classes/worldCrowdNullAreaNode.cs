@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldCrowdNullAreaNode : worldAreaShapeNode
 {
-	[REDMeta]
-	public partial class worldCrowdNullAreaNode : worldAreaShapeNode
+	[Ordinal(6)] 
+	[RED("IsForBlockade")] 
+	public CBool IsForBlockade
 	{
-		[Ordinal(6)] 
-		[RED("IsForBlockade")] 
-		public CBool IsForBlockade
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public worldCrowdNullAreaNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public worldCrowdNullAreaNode()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

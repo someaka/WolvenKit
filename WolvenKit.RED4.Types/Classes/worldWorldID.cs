@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldWorldID : RedBaseClass
 {
-	[REDMeta]
-	public partial class worldWorldID : RedBaseClass
+	public worldWorldID()
 	{
-		public worldWorldID()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

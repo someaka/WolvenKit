@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class SetInspectStateEvent : redEvent
 {
-	[REDMeta]
-	public partial class SetInspectStateEvent : redEvent
+	[Ordinal(0)] 
+	[RED("state")] 
+	public CEnum<questObjectInspectEventType> State
 	{
-		[Ordinal(0)] 
-		[RED("state")] 
-		public CEnum<questObjectInspectEventType> State
-		{
-			get => GetPropertyValue<CEnum<questObjectInspectEventType>>();
-			set => SetPropertyValue<CEnum<questObjectInspectEventType>>(value);
-		}
-
-		public SetInspectStateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<questObjectInspectEventType>>();
+		set => SetPropertyValue<CEnum<questObjectInspectEventType>>(value);
 	}
+
+	public SetInspectStateEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

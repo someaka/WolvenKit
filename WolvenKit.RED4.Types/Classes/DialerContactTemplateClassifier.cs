@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DialerContactTemplateClassifier : inkVirtualItemTemplateClassifierWrapper
 {
-	[REDMeta]
-	public partial class DialerContactTemplateClassifier : inkVirtualItemTemplateClassifierWrapper
+	public DialerContactTemplateClassifier()
 	{
-		public DialerContactTemplateClassifier()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

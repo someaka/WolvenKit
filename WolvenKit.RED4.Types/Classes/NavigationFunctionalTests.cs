@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NavigationFunctionalTests : IScriptable
 {
-	[REDMeta]
-	public partial class NavigationFunctionalTests : IScriptable
+	public NavigationFunctionalTests()
 	{
-		public NavigationFunctionalTests()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

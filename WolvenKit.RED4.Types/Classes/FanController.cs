@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FanController : BasicDistractionDeviceController
 {
-	[REDMeta]
-	public partial class FanController : BasicDistractionDeviceController
+	public FanController()
 	{
-		public FanController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

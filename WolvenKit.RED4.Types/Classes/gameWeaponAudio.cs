@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameWeaponAudio : ISerializable
 {
-	[REDMeta]
-	public partial class gameWeaponAudio : ISerializable
+	public gameWeaponAudio()
 	{
-		public gameWeaponAudio()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

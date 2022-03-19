@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorInstantTaskNodeDefinition : AIbehaviorTaskNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorInstantTaskNodeDefinition : AIbehaviorTaskNodeDefinition
+	public AIbehaviorInstantTaskNodeDefinition()
 	{
-		public AIbehaviorInstantTaskNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

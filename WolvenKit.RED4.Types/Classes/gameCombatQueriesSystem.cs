@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCombatQueriesSystem : gameICombatQueriesSystem
 {
-	[REDMeta]
-	public partial class gameCombatQueriesSystem : gameICombatQueriesSystem
+	public gameCombatQueriesSystem()
 	{
-		public gameCombatQueriesSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

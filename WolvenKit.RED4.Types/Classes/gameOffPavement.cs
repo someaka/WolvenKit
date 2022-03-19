@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameOffPavement : redEvent
 {
-	[REDMeta]
-	public partial class gameOffPavement : redEvent
+	public gameOffPavement()
 	{
-		public gameOffPavement()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

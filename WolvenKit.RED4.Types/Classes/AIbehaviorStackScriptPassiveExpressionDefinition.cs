@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorStackScriptPassiveExpressionDefinition : AIbehaviorPassiveExpressionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorStackScriptPassiveExpressionDefinition : AIbehaviorPassiveExpressionDefinition
+	public AIbehaviorStackScriptPassiveExpressionDefinition()
 	{
-		public AIbehaviorStackScriptPassiveExpressionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EvaluateEncumbranceEvent : redEvent
 {
-	[REDMeta]
-	public partial class EvaluateEncumbranceEvent : redEvent
+	public EvaluateEncumbranceEvent()
 	{
-		public EvaluateEncumbranceEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

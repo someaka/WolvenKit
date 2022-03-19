@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIFactsDBManagerNodeType : ISerializable
 {
-	[REDMeta]
-	public partial class questIFactsDBManagerNodeType : ISerializable
+	public questIFactsDBManagerNodeType()
 	{
-		public questIFactsDBManagerNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIGameSystemReplicatedState : ISerializable
 {
-	[REDMeta]
-	public partial class gameIGameSystemReplicatedState : ISerializable
+	public gameIGameSystemReplicatedState()
 	{
-		public gameIGameSystemReplicatedState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

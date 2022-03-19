@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIUtilsCachedBoolValue : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIUtilsCachedBoolValue : RedBaseClass
+	public AIUtilsCachedBoolValue()
 	{
-		public AIUtilsCachedBoolValue()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

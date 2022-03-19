@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrappleForceShovePreyDecisions : GrappleStandDecisions
 {
-	[REDMeta]
-	public partial class GrappleForceShovePreyDecisions : GrappleStandDecisions
+	public GrappleForceShovePreyDecisions()
 	{
-		public GrappleForceShovePreyDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

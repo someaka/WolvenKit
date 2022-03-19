@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIRole : IScriptable
 {
-	[REDMeta]
-	public partial class AIRole : IScriptable
+	public AIRole()
 	{
-		public AIRole()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

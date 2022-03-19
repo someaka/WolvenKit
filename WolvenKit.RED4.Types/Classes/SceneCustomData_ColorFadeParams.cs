@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SceneCustomData_ColorFadeParams : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class SceneCustomData_ColorFadeParams : ISceneStorageCustomData
+	public SceneCustomData_ColorFadeParams()
 	{
-		public SceneCustomData_ColorFadeParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

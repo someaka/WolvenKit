@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MergedMesh : CMesh
 {
-	[REDMeta]
-	public partial class MergedMesh : CMesh
+	public MergedMesh()
 	{
-		public MergedMesh()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

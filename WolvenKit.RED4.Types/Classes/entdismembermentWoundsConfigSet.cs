@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entdismembermentWoundsConfigSet : RedBaseClass
 {
-	[REDMeta]
-	public partial class entdismembermentWoundsConfigSet : RedBaseClass
+	[Ordinal(0)] 
+	[RED("Configs")] 
+	public CArray<CHandle<entdismembermentWoundConfigContainer>> Configs
 	{
-		[Ordinal(0)] 
-		[RED("Configs")] 
-		public CArray<CHandle<entdismembermentWoundConfigContainer>> Configs
-		{
-			get => GetPropertyValue<CArray<CHandle<entdismembermentWoundConfigContainer>>>();
-			set => SetPropertyValue<CArray<CHandle<entdismembermentWoundConfigContainer>>>(value);
-		}
-
-		public entdismembermentWoundsConfigSet()
-		{
-			Configs = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<CHandle<entdismembermentWoundConfigContainer>>>();
+		set => SetPropertyValue<CArray<CHandle<entdismembermentWoundConfigContainer>>>(value);
 	}
+
+	public entdismembermentWoundsConfigSet()
+	{
+		Configs = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

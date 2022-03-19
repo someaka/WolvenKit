@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LibTreeDefTreeVariableBoolBase : LibTreeDefTreeVariable
 {
-	[REDMeta]
-	public partial class LibTreeDefTreeVariableBoolBase : LibTreeDefTreeVariable
+	public LibTreeDefTreeVariableBoolBase()
 	{
-		public LibTreeDefTreeVariableBoolBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

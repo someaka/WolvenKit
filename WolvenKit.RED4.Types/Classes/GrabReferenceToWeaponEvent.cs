@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GrabReferenceToWeaponEvent : redEvent
 {
-	[REDMeta]
-	public partial class GrabReferenceToWeaponEvent : redEvent
+	public GrabReferenceToWeaponEvent()
 	{
-		public GrabReferenceToWeaponEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

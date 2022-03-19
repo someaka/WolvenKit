@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAppearanceDissolveFinishEvent : redEvent
 {
-	[REDMeta]
-	public partial class entAppearanceDissolveFinishEvent : redEvent
+	public entAppearanceDissolveFinishEvent()
 	{
-		public entAppearanceDissolveFinishEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

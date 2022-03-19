@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DoorColliderEnableEvent : redEvent
 {
-	[REDMeta]
-	public partial class DoorColliderEnableEvent : redEvent
+	public DoorColliderEnableEvent()
 	{
-		public DoorColliderEnableEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

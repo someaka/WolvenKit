@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataSlotItemPartElement_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataSlotItemPartElement_Record : gamedataTweakDBRecord
+	public gamedataSlotItemPartElement_Record()
 	{
-		public gamedataSlotItemPartElement_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

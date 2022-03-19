@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audioMeleeWeaponNpcSettings : audioMeleeWeaponSettings
 {
-	[REDMeta]
-	public partial class audioMeleeWeaponNpcSettings : audioMeleeWeaponSettings
+	public audioMeleeWeaponNpcSettings()
 	{
-		public audioMeleeWeaponNpcSettings()
-		{
-			QuickAttackSettings = new();
-			StrongAttackSettings = new();
-			WeaponHandlingSettings = new();
+		QuickAttackSettings = new();
+		StrongAttackSettings = new();
+		WeaponHandlingSettings = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

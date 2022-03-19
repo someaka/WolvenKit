@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameJournalQuestPointOfInterestMapPin : gameJournalQuestMapPinBase
 {
-	[REDMeta]
-	public partial class gameJournalQuestPointOfInterestMapPin : gameJournalQuestMapPinBase
+	public gameJournalQuestPointOfInterestMapPin()
 	{
-		public gameJournalQuestPointOfInterestMapPin()
-		{
-			Entries = new();
-			EnableGPS = true;
+		Entries = new();
+		EnableGPS = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

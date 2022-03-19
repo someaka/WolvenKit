@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class enteventsSetDissolveVisibility : redEvent
 {
-	[REDMeta]
-	public partial class enteventsSetDissolveVisibility : redEvent
+	public enteventsSetDissolveVisibility()
 	{
-		public enteventsSetDissolveVisibility()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

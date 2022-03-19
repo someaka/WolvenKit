@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChangeNPCState : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class ChangeNPCState : AIbehaviortaskScript
+	public ChangeNPCState()
 	{
-		public ChangeNPCState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

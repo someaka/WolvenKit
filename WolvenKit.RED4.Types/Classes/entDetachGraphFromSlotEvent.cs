@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entDetachGraphFromSlotEvent : redEvent
 {
-	[REDMeta]
-	public partial class entDetachGraphFromSlotEvent : redEvent
+	public entDetachGraphFromSlotEvent()
 	{
-		public entDetachGraphFromSlotEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

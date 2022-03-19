@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InUnconsciousHighLevelState : AINPCHighLevelStateCheck
 {
-	[REDMeta]
-	public partial class InUnconsciousHighLevelState : AINPCHighLevelStateCheck
+	public InUnconsciousHighLevelState()
 	{
-		public InUnconsciousHighLevelState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

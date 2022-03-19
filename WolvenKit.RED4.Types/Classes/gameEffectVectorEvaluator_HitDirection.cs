@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectVectorEvaluator_HitDirection : gameEffectVectorEvaluator
 {
-	[REDMeta]
-	public partial class gameEffectVectorEvaluator_HitDirection : gameEffectVectorEvaluator
+	public gameEffectVectorEvaluator_HitDirection()
 	{
-		public gameEffectVectorEvaluator_HitDirection()
-		{
-			Modifier = 1.000000F;
+		Modifier = 1.000000F;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

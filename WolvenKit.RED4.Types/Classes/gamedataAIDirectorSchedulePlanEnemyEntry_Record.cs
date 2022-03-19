@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAIDirectorSchedulePlanEnemyEntry_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataAIDirectorSchedulePlanEnemyEntry_Record : gamedataTweakDBRecord
+	public gamedataAIDirectorSchedulePlanEnemyEntry_Record()
 	{
-		public gamedataAIDirectorSchedulePlanEnemyEntry_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

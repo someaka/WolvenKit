@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficScriptInterface : IScriptable
 {
-	[REDMeta]
-	public partial class worldTrafficScriptInterface : IScriptable
+	public worldTrafficScriptInterface()
 	{
-		public worldTrafficScriptInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

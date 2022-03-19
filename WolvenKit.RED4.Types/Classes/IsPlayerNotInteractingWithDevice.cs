@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsPlayerNotInteractingWithDevice : gameinteractionsInteractionScriptedCondition
 {
-	[REDMeta]
-	public partial class IsPlayerNotInteractingWithDevice : gameinteractionsInteractionScriptedCondition
+	public IsPlayerNotInteractingWithDevice()
 	{
-		public IsPlayerNotInteractingWithDevice()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

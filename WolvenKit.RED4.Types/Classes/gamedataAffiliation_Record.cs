@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAffiliation_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataAffiliation_Record : gamedataTweakDBRecord
+	public gamedataAffiliation_Record()
 	{
-		public gamedataAffiliation_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

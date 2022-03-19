@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIEffectParameter_BoolEvaluator : ISerializable
 {
-	[REDMeta]
-	public partial class gameIEffectParameter_BoolEvaluator : ISerializable
+	public gameIEffectParameter_BoolEvaluator()
 	{
-		public gameIEffectParameter_BoolEvaluator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

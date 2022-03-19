@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AOEAreaController : MasterController
 {
-	[REDMeta]
-	public partial class AOEAreaController : MasterController
+	public AOEAreaController()
 	{
-		public AOEAreaController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

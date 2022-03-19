@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehavioreventResolverScript : IScriptable
 {
-	[REDMeta]
-	public partial class AIbehavioreventResolverScript : IScriptable
+	public AIbehavioreventResolverScript()
 	{
-		public AIbehavioreventResolverScript()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

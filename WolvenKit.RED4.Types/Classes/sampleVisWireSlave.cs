@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class sampleVisWireSlave : gameObject
 {
-	[REDMeta]
-	public partial class sampleVisWireSlave : gameObject
+	public sampleVisWireSlave()
 	{
-		public sampleVisWireSlave()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDebugTimeState : gameITimeState
 {
-	[REDMeta]
-	public partial class gameDebugTimeState : gameITimeState
+	public gameDebugTimeState()
 	{
-		public gameDebugTimeState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

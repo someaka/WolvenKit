@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IScriptable : ISerializable
 {
-	[REDMeta]
-	public partial class IScriptable : ISerializable
+	public IScriptable()
 	{
-		public IScriptable()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

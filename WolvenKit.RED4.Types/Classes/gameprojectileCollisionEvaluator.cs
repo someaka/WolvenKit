@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameprojectileCollisionEvaluator : IScriptable
 {
-	[REDMeta]
-	public partial class gameprojectileCollisionEvaluator : IScriptable
+	public gameprojectileCollisionEvaluator()
 	{
-		public gameprojectileCollisionEvaluator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SaveWardrobeSetRequest : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class SaveWardrobeSetRequest : gamePlayerScriptableSystemRequest
+	[Ordinal(1)] 
+	[RED("clothingSet")] 
+	public ClothingSet ClothingSet
 	{
-		[Ordinal(1)] 
-		[RED("clothingSet")] 
-		public ClothingSet ClothingSet
-		{
-			get => GetPropertyValue<ClothingSet>();
-			set => SetPropertyValue<ClothingSet>(value);
-		}
-
-		public SaveWardrobeSetRequest()
-		{
-			ClothingSet = new() { SetID = -1, ClothingList = new() };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<ClothingSet>();
+		set => SetPropertyValue<ClothingSet>(value);
 	}
+
+	public SaveWardrobeSetRequest()
+	{
+		ClothingSet = new() { SetID = -1, ClothingList = new() };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

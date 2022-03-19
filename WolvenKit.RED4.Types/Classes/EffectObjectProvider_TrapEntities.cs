@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectObjectProvider_TrapEntities : gameEffectObjectProvider_Scripted
 {
-	[REDMeta]
-	public partial class EffectObjectProvider_TrapEntities : gameEffectObjectProvider_Scripted
+	public EffectObjectProvider_TrapEntities()
 	{
-		public EffectObjectProvider_TrapEntities()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

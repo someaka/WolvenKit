@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SuperheroLandRecoveryEvents : AbstractLandEvents
 {
-	[REDMeta]
-	public partial class SuperheroLandRecoveryEvents : AbstractLandEvents
+	public SuperheroLandRecoveryEvents()
 	{
-		public SuperheroLandRecoveryEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

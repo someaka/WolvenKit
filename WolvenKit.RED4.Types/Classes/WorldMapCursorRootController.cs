@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WorldMapCursorRootController : CursorRootController
 {
-	[REDMeta]
-	public partial class WorldMapCursorRootController : CursorRootController
+	public WorldMapCursorRootController()
 	{
-		public WorldMapCursorRootController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

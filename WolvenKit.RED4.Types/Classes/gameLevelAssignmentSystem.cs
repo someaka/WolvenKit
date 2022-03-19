@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameLevelAssignmentSystem : gameILevelAssignmentSystem
 {
-	[REDMeta]
-	public partial class gameLevelAssignmentSystem : gameILevelAssignmentSystem
+	public gameLevelAssignmentSystem()
 	{
-		public gameLevelAssignmentSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

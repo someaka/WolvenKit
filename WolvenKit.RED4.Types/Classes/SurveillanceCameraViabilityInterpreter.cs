@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SurveillanceCameraViabilityInterpreter : IScriptable
 {
-	[REDMeta]
-	public partial class SurveillanceCameraViabilityInterpreter : IScriptable
+	public SurveillanceCameraViabilityInterpreter()
 	{
-		public SurveillanceCameraViabilityInterpreter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

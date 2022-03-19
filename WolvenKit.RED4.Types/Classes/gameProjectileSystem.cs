@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameProjectileSystem : gameIProjectileSystem
 {
-	[REDMeta]
-	public partial class gameProjectileSystem : gameIProjectileSystem
+	public gameProjectileSystem()
 	{
-		public gameProjectileSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

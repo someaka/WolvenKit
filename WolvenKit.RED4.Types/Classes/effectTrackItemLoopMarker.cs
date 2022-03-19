@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectTrackItemLoopMarker : effectTrackItemMetadata
 {
-	[REDMeta]
-	public partial class effectTrackItemLoopMarker : effectTrackItemMetadata
+	public effectTrackItemLoopMarker()
 	{
-		public effectTrackItemLoopMarker()
-		{
-			TimeDuration = 1.000000F;
+		TimeDuration = 1.000000F;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

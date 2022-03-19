@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entISkinableComponent : entIPlacedComponent
 {
-	[REDMeta]
-	public partial class entISkinableComponent : entIPlacedComponent
+	public entISkinableComponent()
 	{
-		public entISkinableComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

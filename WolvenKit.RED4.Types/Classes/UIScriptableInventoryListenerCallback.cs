@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UIScriptableInventoryListenerCallback : gameInventoryScriptCallback
 {
-	[REDMeta]
-	public partial class UIScriptableInventoryListenerCallback : gameInventoryScriptCallback
+	[Ordinal(1)] 
+	[RED("uiScriptableSystem")] 
+	public CWeakHandle<UIScriptableSystem> UiScriptableSystem
 	{
-		[Ordinal(1)] 
-		[RED("uiScriptableSystem")] 
-		public CWeakHandle<UIScriptableSystem> UiScriptableSystem
-		{
-			get => GetPropertyValue<CWeakHandle<UIScriptableSystem>>();
-			set => SetPropertyValue<CWeakHandle<UIScriptableSystem>>(value);
-		}
-
-		public UIScriptableInventoryListenerCallback()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<UIScriptableSystem>>();
+		set => SetPropertyValue<CWeakHandle<UIScriptableSystem>>(value);
 	}
+
+	public UIScriptableInventoryListenerCallback()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

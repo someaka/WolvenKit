@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAugmentedRealitySign : gameObject
 {
-	[REDMeta]
-	public partial class gameAugmentedRealitySign : gameObject
+	public gameAugmentedRealitySign()
 	{
-		public gameAugmentedRealitySign()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

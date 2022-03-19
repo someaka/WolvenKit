@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UpdateDamageChangeEvent : redEvent
 {
-	[REDMeta]
-	public partial class UpdateDamageChangeEvent : redEvent
+	public UpdateDamageChangeEvent()
 	{
-		public UpdateDamageChangeEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class navRuntimeSystemPathfinding : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class navRuntimeSystemPathfinding : worldIRuntimeSystem
+	public navRuntimeSystemPathfinding()
 	{
-		public navRuntimeSystemPathfinding()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UIUnstreamedEvent : redEvent
 {
-	[REDMeta]
-	public partial class UIUnstreamedEvent : redEvent
+	public UIUnstreamedEvent()
 	{
-		public UIUnstreamedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

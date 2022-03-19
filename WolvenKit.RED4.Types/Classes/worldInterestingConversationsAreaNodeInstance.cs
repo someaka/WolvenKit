@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldInterestingConversationsAreaNodeInstance : worldTriggerAreaNodeInstance
 {
-	[REDMeta]
-	public partial class worldInterestingConversationsAreaNodeInstance : worldTriggerAreaNodeInstance
+	public worldInterestingConversationsAreaNodeInstance()
 	{
-		public worldInterestingConversationsAreaNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

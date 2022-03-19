@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIThreatLastKnownPositionProvider : AIThreatPositionProvider
 {
-	[REDMeta]
-	public partial class AIThreatLastKnownPositionProvider : AIThreatPositionProvider
+	public AIThreatLastKnownPositionProvider()
 	{
-		public AIThreatLastKnownPositionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

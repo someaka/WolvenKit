@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameHitShapeUserData : IScriptable
 {
-	[REDMeta]
-	public partial class gameHitShapeUserData : IScriptable
+	public gameHitShapeUserData()
 	{
-		public gameHitShapeUserData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

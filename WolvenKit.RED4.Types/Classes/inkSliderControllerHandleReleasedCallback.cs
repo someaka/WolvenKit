@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkSliderControllerHandleReleasedCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkSliderControllerHandleReleasedCallback : inkCallbackBase
+	public inkSliderControllerHandleReleasedCallback()
 	{
-		public inkSliderControllerHandleReleasedCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

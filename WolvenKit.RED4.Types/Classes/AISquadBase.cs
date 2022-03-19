@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISquadBase : ISerializable
 {
-	[REDMeta]
-	public partial class AISquadBase : ISerializable
+	public AISquadBase()
 	{
-		public AISquadBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

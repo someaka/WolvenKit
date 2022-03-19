@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICommandsManager : AIICommandsManager
 {
-	[REDMeta]
-	public partial class AICommandsManager : AIICommandsManager
+	public AICommandsManager()
 	{
-		public AICommandsManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

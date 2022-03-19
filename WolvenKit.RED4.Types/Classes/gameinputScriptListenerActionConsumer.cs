@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinputScriptListenerActionConsumer : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameinputScriptListenerActionConsumer : RedBaseClass
+	public gameinputScriptListenerActionConsumer()
 	{
-		public gameinputScriptListenerActionConsumer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

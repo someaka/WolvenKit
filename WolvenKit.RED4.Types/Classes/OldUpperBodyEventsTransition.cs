@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OldUpperBodyEventsTransition : OldUpperBodyTransition
 {
-	[REDMeta]
-	public partial class OldUpperBodyEventsTransition : OldUpperBodyTransition
+	public OldUpperBodyEventsTransition()
 	{
-		public OldUpperBodyEventsTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

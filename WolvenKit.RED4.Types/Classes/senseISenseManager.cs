@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class senseISenseManager : gameIGameSystem
 {
-	[REDMeta]
-	public partial class senseISenseManager : gameIGameSystem
+	public senseISenseManager()
 	{
-		public senseISenseManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

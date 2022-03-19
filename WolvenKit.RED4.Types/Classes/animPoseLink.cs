@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animPoseLink : RedBaseClass
 {
-	[REDMeta]
-	public partial class animPoseLink : RedBaseClass
+	[Ordinal(0)] 
+	[RED("node")] 
+	public CWeakHandle<animAnimNode_Base> Node
 	{
-		[Ordinal(0)] 
-		[RED("node")] 
-		public CWeakHandle<animAnimNode_Base> Node
-		{
-			get => GetPropertyValue<CWeakHandle<animAnimNode_Base>>();
-			set => SetPropertyValue<CWeakHandle<animAnimNode_Base>>(value);
-		}
-
-		public animPoseLink()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<animAnimNode_Base>>();
+		set => SetPropertyValue<CWeakHandle<animAnimNode_Base>>(value);
 	}
+
+	public animPoseLink()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

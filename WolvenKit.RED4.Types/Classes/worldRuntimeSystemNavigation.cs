@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemNavigation : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemNavigation : worldIRuntimeSystem
+	public worldRuntimeSystemNavigation()
 	{
-		public worldRuntimeSystemNavigation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

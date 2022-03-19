@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataNewsFeedTitle_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataNewsFeedTitle_Record : gamedataTweakDBRecord
+	public gamedataNewsFeedTitle_Record()
 	{
-		public gamedataNewsFeedTitle_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

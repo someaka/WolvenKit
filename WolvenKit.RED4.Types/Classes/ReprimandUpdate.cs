@@ -1,50 +1,48 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class ReprimandUpdate : redEvent
 {
-	[REDMeta]
-	public partial class ReprimandUpdate : redEvent
+	[Ordinal(0)] 
+	[RED("reprimandInstructions")] 
+	public CEnum<EReprimandInstructions> ReprimandInstructions
 	{
-		[Ordinal(0)] 
-		[RED("reprimandInstructions")] 
-		public CEnum<EReprimandInstructions> ReprimandInstructions
-		{
-			get => GetPropertyValue<CEnum<EReprimandInstructions>>();
-			set => SetPropertyValue<CEnum<EReprimandInstructions>>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("target")] 
-		public entEntityID Target
-		{
-			get => GetPropertyValue<entEntityID>();
-			set => SetPropertyValue<entEntityID>(value);
-		}
-
-		[Ordinal(2)] 
-		[RED("targetPos")] 
-		public Vector4 TargetPos
-		{
-			get => GetPropertyValue<Vector4>();
-			set => SetPropertyValue<Vector4>(value);
-		}
-
-		[Ordinal(3)] 
-		[RED("currentPerformer")] 
-		public CWeakHandle<gameObject> CurrentPerformer
-		{
-			get => GetPropertyValue<CWeakHandle<gameObject>>();
-			set => SetPropertyValue<CWeakHandle<gameObject>>(value);
-		}
-
-		public ReprimandUpdate()
-		{
-			Target = new();
-			TargetPos = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<EReprimandInstructions>>();
+		set => SetPropertyValue<CEnum<EReprimandInstructions>>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("target")] 
+	public entEntityID Target
+	{
+		get => GetPropertyValue<entEntityID>();
+		set => SetPropertyValue<entEntityID>(value);
+	}
+
+	[Ordinal(2)] 
+	[RED("targetPos")] 
+	public Vector4 TargetPos
+	{
+		get => GetPropertyValue<Vector4>();
+		set => SetPropertyValue<Vector4>(value);
+	}
+
+	[Ordinal(3)] 
+	[RED("currentPerformer")] 
+	public CWeakHandle<gameObject> CurrentPerformer
+	{
+		get => GetPropertyValue<CWeakHandle<gameObject>>();
+		set => SetPropertyValue<CWeakHandle<gameObject>>(value);
+	}
+
+	public ReprimandUpdate()
+	{
+		Target = new();
+		TargetPos = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

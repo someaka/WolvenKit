@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldITrafficSystem : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldITrafficSystem : worldIRuntimeSystem
+	public worldITrafficSystem()
 	{
-		public worldITrafficSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

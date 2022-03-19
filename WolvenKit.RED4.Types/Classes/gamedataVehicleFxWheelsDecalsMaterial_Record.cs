@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVehicleFxWheelsDecalsMaterial_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataVehicleFxWheelsDecalsMaterial_Record : gamedataTweakDBRecord
+	public gamedataVehicleFxWheelsDecalsMaterial_Record()
 	{
-		public gamedataVehicleFxWheelsDecalsMaterial_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

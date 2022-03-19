@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAIDirectorTensionAnalyzeComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameAIDirectorTensionAnalyzeComponent : entIComponent
+	public gameAIDirectorTensionAnalyzeComponent()
 	{
-		public gameAIDirectorTensionAnalyzeComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

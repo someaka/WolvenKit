@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GICGIEditSettings : ISerializable
 {
-	[REDMeta]
-	public partial class GICGIEditSettings : ISerializable
+	public GICGIEditSettings()
 	{
-		public GICGIEditSettings()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetExplosionInstigatorPositionAsStimSource : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SetExplosionInstigatorPositionAsStimSource : AIbehaviortaskScript
+	public SetExplosionInstigatorPositionAsStimSource()
 	{
-		public SetExplosionInstigatorPositionAsStimSource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

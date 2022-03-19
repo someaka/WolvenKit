@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workShadowDebugger : workDebuggingTool
 {
-	[REDMeta]
-	public partial class workShadowDebugger : workDebuggingTool
+	public workShadowDebugger()
 	{
-		public workShadowDebugger()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

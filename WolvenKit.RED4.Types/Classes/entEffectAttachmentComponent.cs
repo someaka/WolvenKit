@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entEffectAttachmentComponent : entIComponent
 {
-	[REDMeta]
-	public partial class entEffectAttachmentComponent : entIComponent
+	public entEffectAttachmentComponent()
 	{
-		public entEffectAttachmentComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

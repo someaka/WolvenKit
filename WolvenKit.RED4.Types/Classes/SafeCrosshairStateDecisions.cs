@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SafeCrosshairStateDecisions : BaseCrosshairState
 {
-	[REDMeta]
-	public partial class SafeCrosshairStateDecisions : BaseCrosshairState
+	public SafeCrosshairStateDecisions()
 	{
-		public SafeCrosshairStateDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

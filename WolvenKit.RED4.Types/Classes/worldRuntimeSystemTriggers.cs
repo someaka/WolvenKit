@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemTriggers : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemTriggers : worldIRuntimeSystem
+	public worldRuntimeSystemTriggers()
 	{
-		public worldRuntimeSystemTriggers()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectData_PiercePreview : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameEffectData_PiercePreview : RedBaseClass
+	public gameEffectData_PiercePreview()
 	{
-		public gameEffectData_PiercePreview()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

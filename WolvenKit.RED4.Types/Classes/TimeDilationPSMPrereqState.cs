@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TimeDilationPSMPrereqState : PlayerStateMachinePrereqState
 {
-	[REDMeta]
-	public partial class TimeDilationPSMPrereqState : PlayerStateMachinePrereqState
+	public TimeDilationPSMPrereqState()
 	{
-		public TimeDilationPSMPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

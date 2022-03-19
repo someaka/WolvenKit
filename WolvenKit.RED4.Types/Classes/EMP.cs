@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EMP : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class EMP : gameEffectExecutor_Scripted
+	public EMP()
 	{
-		public EMP()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

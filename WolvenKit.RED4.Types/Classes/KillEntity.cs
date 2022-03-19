@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class KillEntity : AIActionHelperTask
 {
-	[REDMeta]
-	public partial class KillEntity : AIActionHelperTask
+	public KillEntity()
 	{
-		public KillEntity()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

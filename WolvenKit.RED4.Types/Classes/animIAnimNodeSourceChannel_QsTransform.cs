@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animIAnimNodeSourceChannel_QsTransform : ISerializable
 {
-	[REDMeta]
-	public partial class animIAnimNodeSourceChannel_QsTransform : ISerializable
+	public animIAnimNodeSourceChannel_QsTransform()
 	{
-		public animIAnimNodeSourceChannel_QsTransform()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

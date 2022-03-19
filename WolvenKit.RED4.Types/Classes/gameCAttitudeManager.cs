@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCAttitudeManager : gameIAttitudeManager
 {
-	[REDMeta]
-	public partial class gameCAttitudeManager : gameIAttitudeManager
+	public gameCAttitudeManager()
 	{
-		public gameCAttitudeManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAndroidTurnOn : redEvent
 {
-	[REDMeta]
-	public partial class gameAndroidTurnOn : redEvent
+	public gameAndroidTurnOn()
 	{
-		public gameAndroidTurnOn()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

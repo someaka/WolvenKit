@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BeginFour : DefaultTransition
 {
-	[REDMeta]
-	public partial class BeginFour : DefaultTransition
+	public BeginFour()
 	{
-		public BeginFour()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

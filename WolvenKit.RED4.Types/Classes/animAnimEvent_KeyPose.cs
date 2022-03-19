@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimEvent_KeyPose : animAnimEvent
 {
-	[REDMeta]
-	public partial class animAnimEvent_KeyPose : animAnimEvent
+	public animAnimEvent_KeyPose()
 	{
-		public animAnimEvent_KeyPose()
-		{
-			EventName = "key_pose";
+		EventName = "key_pose";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

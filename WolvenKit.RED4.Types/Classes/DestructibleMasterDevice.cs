@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DestructibleMasterDevice : InteractiveMasterDevice
 {
-	[REDMeta]
-	public partial class DestructibleMasterDevice : InteractiveMasterDevice
+	public DestructibleMasterDevice()
 	{
-		public DestructibleMasterDevice()
-		{
-			ControllerTypeName = "DestructibleMasterDeviceController";
+		ControllerTypeName = "DestructibleMasterDeviceController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

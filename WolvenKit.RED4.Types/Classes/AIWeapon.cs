@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIWeapon : IScriptable
 {
-	[REDMeta]
-	public partial class AIWeapon : IScriptable
+	public AIWeapon()
 	{
-		public AIWeapon()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

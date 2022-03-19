@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameComponentsStateSaveComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameComponentsStateSaveComponent : entIComponent
+	public gameComponentsStateSaveComponent()
 	{
-		public gameComponentsStateSaveComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

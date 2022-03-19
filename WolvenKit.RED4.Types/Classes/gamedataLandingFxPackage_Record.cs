@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataLandingFxPackage_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataLandingFxPackage_Record : gamedataTweakDBRecord
+	public gamedataLandingFxPackage_Record()
 	{
-		public gamedataLandingFxPackage_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

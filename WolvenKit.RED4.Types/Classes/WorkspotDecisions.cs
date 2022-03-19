@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WorkspotDecisions : LocomotionGroundDecisions
 {
-	[REDMeta]
-	public partial class WorkspotDecisions : LocomotionGroundDecisions
+	public WorkspotDecisions()
 	{
-		public WorkspotDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EffectObjectProvider_PhysicalCollisionTrapEntities : gameEffectObjectProvider_Scripted
 {
-	[REDMeta]
-	public partial class EffectObjectProvider_PhysicalCollisionTrapEntities : gameEffectObjectProvider_Scripted
+	public EffectObjectProvider_PhysicalCollisionTrapEntities()
 	{
-		public EffectObjectProvider_PhysicalCollisionTrapEntities()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

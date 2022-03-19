@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDynamicEventNodeInstance : worldAreaShapeNodeInstance
 {
-	[REDMeta]
-	public partial class gameDynamicEventNodeInstance : worldAreaShapeNodeInstance
+	public gameDynamicEventNodeInstance()
 	{
-		public gameDynamicEventNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

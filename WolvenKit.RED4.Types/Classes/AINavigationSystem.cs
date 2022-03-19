@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AINavigationSystem : AIINavigationSystem
 {
-	[REDMeta]
-	public partial class AINavigationSystem : AIINavigationSystem
+	public AINavigationSystem()
 	{
-		public AINavigationSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

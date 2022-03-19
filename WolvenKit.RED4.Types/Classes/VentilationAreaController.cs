@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VentilationAreaController : MasterController
 {
-	[REDMeta]
-	public partial class VentilationAreaController : MasterController
+	public VentilationAreaController()
 	{
-		public VentilationAreaController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

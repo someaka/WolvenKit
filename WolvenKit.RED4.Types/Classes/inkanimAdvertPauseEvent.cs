@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkanimAdvertPauseEvent : inkanimEvent
 {
-	[REDMeta]
-	public partial class inkanimAdvertPauseEvent : inkanimEvent
+	public inkanimAdvertPauseEvent()
 	{
-		public inkanimAdvertPauseEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

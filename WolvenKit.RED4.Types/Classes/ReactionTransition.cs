@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReactionTransition : DefaultTransition
 {
-	[REDMeta]
-	public partial class ReactionTransition : DefaultTransition
+	public ReactionTransition()
 	{
-		public ReactionTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

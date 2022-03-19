@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiSideScrollerMiniGameDynObjectLogicAdvanced : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class gameuiSideScrollerMiniGameDynObjectLogicAdvanced : inkWidgetLogicController
+	public gameuiSideScrollerMiniGameDynObjectLogicAdvanced()
 	{
-		public gameuiSideScrollerMiniGameDynObjectLogicAdvanced()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

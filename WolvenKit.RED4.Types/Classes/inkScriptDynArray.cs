@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkScriptDynArray : IScriptable
 {
-	[REDMeta]
-	public partial class inkScriptDynArray : IScriptable
+	public inkScriptDynArray()
 	{
-		public inkScriptDynArray()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

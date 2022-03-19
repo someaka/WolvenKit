@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceLockElevator : ToggleLock
 {
-	[REDMeta]
-	public partial class ForceLockElevator : ToggleLock
+	public ForceLockElevator()
 	{
-		public ForceLockElevator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

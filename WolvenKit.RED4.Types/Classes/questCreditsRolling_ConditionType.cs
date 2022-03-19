@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questCreditsRolling_ConditionType : questIUIConditionType
 {
-	[REDMeta]
-	public partial class questCreditsRolling_ConditionType : questIUIConditionType
+	public questCreditsRolling_ConditionType()
 	{
-		public questCreditsRolling_ConditionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

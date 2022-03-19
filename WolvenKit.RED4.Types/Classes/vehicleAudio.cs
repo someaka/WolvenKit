@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleAudio : RedBaseClass
 {
-	[REDMeta]
-	public partial class vehicleAudio : RedBaseClass
+	public vehicleAudio()
 	{
-		public vehicleAudio()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

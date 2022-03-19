@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CombatGadgetHelper : IScriptable
 {
-	[REDMeta]
-	public partial class CombatGadgetHelper : IScriptable
+	public CombatGadgetHelper()
 	{
-		public CombatGadgetHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

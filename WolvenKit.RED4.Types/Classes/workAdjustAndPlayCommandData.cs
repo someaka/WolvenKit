@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workAdjustAndPlayCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workAdjustAndPlayCommandData : workIWorkspotCommandData
+	public workAdjustAndPlayCommandData()
 	{
-		public workAdjustAndPlayCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

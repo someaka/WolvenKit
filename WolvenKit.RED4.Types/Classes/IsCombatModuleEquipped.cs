@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsCombatModuleEquipped : AIAutonomousConditions
 {
-	[REDMeta]
-	public partial class IsCombatModuleEquipped : AIAutonomousConditions
+	public IsCombatModuleEquipped()
 	{
-		public IsCombatModuleEquipped()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

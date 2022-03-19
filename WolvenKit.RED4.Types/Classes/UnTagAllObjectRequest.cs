@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnTagAllObjectRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UnTagAllObjectRequest : gameScriptableSystemRequest
+	public UnTagAllObjectRequest()
 	{
-		public UnTagAllObjectRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

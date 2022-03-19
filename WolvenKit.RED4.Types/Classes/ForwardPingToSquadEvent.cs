@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForwardPingToSquadEvent : redEvent
 {
-	[REDMeta]
-	public partial class ForwardPingToSquadEvent : redEvent
+	public ForwardPingToSquadEvent()
 	{
-		public ForwardPingToSquadEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RadialMenuItem : gameuiHUDGameController
 {
-	[REDMeta]
-	public partial class RadialMenuItem : gameuiHUDGameController
+	public RadialMenuItem()
 	{
-		public RadialMenuItem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

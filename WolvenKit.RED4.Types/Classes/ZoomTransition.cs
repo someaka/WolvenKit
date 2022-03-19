@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ZoomTransition : DefaultTransition
 {
-	[REDMeta]
-	public partial class ZoomTransition : DefaultTransition
+	public ZoomTransition()
 	{
-		public ZoomTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

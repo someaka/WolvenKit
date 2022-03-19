@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class characterCreationBodyMorphOptionSelectorButton : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class characterCreationBodyMorphOptionSelectorButton : inkWidgetLogicController
+	[Ordinal(1)] 
+	[RED("overArrow")] 
+	public inkWidgetReference OverArrow
 	{
-		[Ordinal(1)] 
-		[RED("overArrow")] 
-		public inkWidgetReference OverArrow
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		public characterCreationBodyMorphOptionSelectorButton()
-		{
-			OverArrow = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	public characterCreationBodyMorphOptionSelectorButton()
+	{
+		OverArrow = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

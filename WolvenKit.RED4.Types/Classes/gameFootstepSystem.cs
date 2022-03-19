@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameFootstepSystem : gameIFootstepSystem
 {
-	[REDMeta]
-	public partial class gameFootstepSystem : gameIFootstepSystem
+	public gameFootstepSystem()
 	{
-		public gameFootstepSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

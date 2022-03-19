@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animPropSetup : RedBaseClass
 {
-	[REDMeta]
-	public partial class animPropSetup : RedBaseClass
+	public animPropSetup()
 	{
-		public animPropSetup()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleRadioStationInitialized : redEvent
 {
-	[REDMeta]
-	public partial class vehicleRadioStationInitialized : redEvent
+	public vehicleRadioStationInitialized()
 	{
-		public vehicleRadioStationInitialized()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

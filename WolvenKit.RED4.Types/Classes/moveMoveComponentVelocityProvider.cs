@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class moveMoveComponentVelocityProvider : entIVelocityProvider
 {
-	[REDMeta]
-	public partial class moveMoveComponentVelocityProvider : entIVelocityProvider
+	public moveMoveComponentVelocityProvider()
 	{
-		public moveMoveComponentVelocityProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

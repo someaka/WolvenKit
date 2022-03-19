@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OnlyNearest_AINavPath_Device : gameEffectObjectGroupFilter_Scripted
 {
-	[REDMeta]
-	public partial class OnlyNearest_AINavPath_Device : gameEffectObjectGroupFilter_Scripted
+	public OnlyNearest_AINavPath_Device()
 	{
-		public OnlyNearest_AINavPath_Device()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

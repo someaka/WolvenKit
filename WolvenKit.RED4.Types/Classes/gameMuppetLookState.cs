@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMuppetLookState : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameMuppetLookState : RedBaseClass
+	[Ordinal(0)] 
+	[RED("lookDir")] 
+	public EulerAngles LookDir
 	{
-		[Ordinal(0)] 
-		[RED("lookDir")] 
-		public EulerAngles LookDir
-		{
-			get => GetPropertyValue<EulerAngles>();
-			set => SetPropertyValue<EulerAngles>(value);
-		}
-
-		public gameMuppetLookState()
-		{
-			LookDir = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<EulerAngles>();
+		set => SetPropertyValue<EulerAngles>(value);
 	}
+
+	public gameMuppetLookState()
+	{
+		LookDir = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

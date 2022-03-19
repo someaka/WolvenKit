@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class redCallbackObject : IScriptable
 {
-	[REDMeta]
-	public partial class redCallbackObject : IScriptable
+	public redCallbackObject()
 	{
-		public redCallbackObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

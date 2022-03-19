@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameJournalQuestSubObjective : gameJournalQuestObjectiveBase
 {
-	[REDMeta]
-	public partial class gameJournalQuestSubObjective : gameJournalQuestObjectiveBase
+	public gameJournalQuestSubObjective()
 	{
-		public gameJournalQuestSubObjective()
-		{
-			Entries = new();
-			Description = new() { Unk1 = 0, Value = "" };
+		Entries = new();
+		Description = new() { Unk1 = 0, Value = "" };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

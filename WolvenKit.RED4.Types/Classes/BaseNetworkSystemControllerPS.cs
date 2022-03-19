@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BaseNetworkSystemControllerPS : MasterControllerPS
 {
-	[REDMeta]
-	public partial class BaseNetworkSystemControllerPS : MasterControllerPS
+	public BaseNetworkSystemControllerPS()
 	{
-		public BaseNetworkSystemControllerPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

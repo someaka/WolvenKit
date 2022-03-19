@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClimbLowGravityDecisions : LocomotionGroundDecisions
 {
-	[REDMeta]
-	public partial class ClimbLowGravityDecisions : LocomotionGroundDecisions
+	public ClimbLowGravityDecisions()
 	{
-		public ClimbLowGravityDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

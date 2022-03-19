@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSpatialQueriesSystem : gameISpatialQueriesSystem
 {
-	[REDMeta]
-	public partial class gameSpatialQueriesSystem : gameISpatialQueriesSystem
+	public gameSpatialQueriesSystem()
 	{
-		public gameSpatialQueriesSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

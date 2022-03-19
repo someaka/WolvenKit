@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSetupControlledByStoryEvent : AIAIEvent
 {
-	[REDMeta]
-	public partial class gameSetupControlledByStoryEvent : AIAIEvent
+	public gameSetupControlledByStoryEvent()
 	{
-		public gameSetupControlledByStoryEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

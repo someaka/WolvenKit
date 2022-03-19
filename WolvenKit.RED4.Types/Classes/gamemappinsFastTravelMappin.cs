@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsFastTravelMappin : gamemappinsRuntimeMappin
 {
-	[REDMeta]
-	public partial class gamemappinsFastTravelMappin : gamemappinsRuntimeMappin
+	public gamemappinsFastTravelMappin()
 	{
-		public gamemappinsFastTravelMappin()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

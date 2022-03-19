@@ -1,34 +1,32 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class InvisibleSceneStash : Device
 {
-	[REDMeta]
-	public partial class InvisibleSceneStash : Device
+	[Ordinal(84)] 
+	[RED("itemSlots")] 
+	public CArray<CEnum<gamedataEquipmentArea>> ItemSlots
 	{
-		[Ordinal(84)] 
-		[RED("itemSlots")] 
-		public CArray<CEnum<gamedataEquipmentArea>> ItemSlots
-		{
-			get => GetPropertyValue<CArray<CEnum<gamedataEquipmentArea>>>();
-			set => SetPropertyValue<CArray<CEnum<gamedataEquipmentArea>>>(value);
-		}
-
-		[Ordinal(85)] 
-		[RED("equipmentData")] 
-		public CHandle<EquipmentSystemPlayerData> EquipmentData
-		{
-			get => GetPropertyValue<CHandle<EquipmentSystemPlayerData>>();
-			set => SetPropertyValue<CHandle<EquipmentSystemPlayerData>>(value);
-		}
-
-		public InvisibleSceneStash()
-		{
-			ControllerTypeName = "InvisibleSceneStashController";
-			ItemSlots = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<CEnum<gamedataEquipmentArea>>>();
+		set => SetPropertyValue<CArray<CEnum<gamedataEquipmentArea>>>(value);
 	}
+
+	[Ordinal(85)] 
+	[RED("equipmentData")] 
+	public CHandle<EquipmentSystemPlayerData> EquipmentData
+	{
+		get => GetPropertyValue<CHandle<EquipmentSystemPlayerData>>();
+		set => SetPropertyValue<CHandle<EquipmentSystemPlayerData>>(value);
+	}
+
+	public InvisibleSceneStash()
+	{
+		ControllerTypeName = "InvisibleSceneStashController";
+		ItemSlots = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

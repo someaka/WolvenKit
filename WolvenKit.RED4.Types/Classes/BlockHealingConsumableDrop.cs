@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BlockHealingConsumableDrop : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class BlockHealingConsumableDrop : gameScriptableSystemRequest
+	public BlockHealingConsumableDrop()
 	{
-		public BlockHealingConsumableDrop()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

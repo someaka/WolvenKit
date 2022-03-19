@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiCharacterReplicaInitializedEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiCharacterReplicaInitializedEvent : redEvent
+	public gameuiCharacterReplicaInitializedEvent()
 	{
-		public gameuiCharacterReplicaInitializedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SuperheroLandDecisions : AbstractLandDecisions
 {
-	[REDMeta]
-	public partial class SuperheroLandDecisions : AbstractLandDecisions
+	public SuperheroLandDecisions()
 	{
-		public SuperheroLandDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

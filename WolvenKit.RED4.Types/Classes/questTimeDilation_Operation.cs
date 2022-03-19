@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questTimeDilation_Operation : ISerializable
 {
-	[REDMeta]
-	public partial class questTimeDilation_Operation : ISerializable
+	public questTimeDilation_Operation()
 	{
-		public questTimeDilation_Operation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

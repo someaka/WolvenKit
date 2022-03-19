@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CWindImpulseCollector : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class CWindImpulseCollector : ISceneStorageCustomData
+	public CWindImpulseCollector()
 	{
-		public CWindImpulseCollector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

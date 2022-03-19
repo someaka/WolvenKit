@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISubActionForceDeath_Record_Implementation : IScriptable
 {
-	[REDMeta]
-	public partial class AISubActionForceDeath_Record_Implementation : IScriptable
+	public AISubActionForceDeath_Record_Implementation()
 	{
-		public AISubActionForceDeath_Record_Implementation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

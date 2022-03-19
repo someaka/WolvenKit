@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiCreditsSectionController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class gameuiCreditsSectionController : inkWidgetLogicController
+	[Ordinal(1)] 
+	[RED("sectionName")] 
+	public inkTextWidgetReference SectionName
 	{
-		[Ordinal(1)] 
-		[RED("sectionName")] 
-		public inkTextWidgetReference SectionName
-		{
-			get => GetPropertyValue<inkTextWidgetReference>();
-			set => SetPropertyValue<inkTextWidgetReference>(value);
-		}
-
-		public gameuiCreditsSectionController()
-		{
-			SectionName = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkTextWidgetReference>();
+		set => SetPropertyValue<inkTextWidgetReference>(value);
 	}
+
+	public gameuiCreditsSectionController()
+	{
+		SectionName = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

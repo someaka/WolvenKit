@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsEnableClientSideInteractionEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameinteractionsEnableClientSideInteractionEvent : redEvent
+	public gameinteractionsEnableClientSideInteractionEvent()
 	{
-		public gameinteractionsEnableClientSideInteractionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

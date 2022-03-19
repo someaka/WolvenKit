@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class puppetpreviewPuppetPreview_UIObjectsLoaderSystemListener : gameuiIUIObjectsLoaderSystemListener
 {
-	[REDMeta]
-	public partial class puppetpreviewPuppetPreview_UIObjectsLoaderSystemListener : gameuiIUIObjectsLoaderSystemListener
+	public puppetpreviewPuppetPreview_UIObjectsLoaderSystemListener()
 	{
-		public puppetpreviewPuppetPreview_UIObjectsLoaderSystemListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

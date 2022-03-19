@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UsingCoverPSMPrereq : PlayerStateMachinePrereq
 {
-	[REDMeta]
-	public partial class UsingCoverPSMPrereq : PlayerStateMachinePrereq
+	public UsingCoverPSMPrereq()
 	{
-		public UsingCoverPSMPrereq()
-		{
-			SkipWhenApplied = true;
+		SkipWhenApplied = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

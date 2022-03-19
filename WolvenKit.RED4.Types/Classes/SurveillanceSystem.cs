@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SurveillanceSystem : DeviceSystemBase
 {
-	[REDMeta]
-	public partial class SurveillanceSystem : DeviceSystemBase
+	public SurveillanceSystem()
 	{
-		public SurveillanceSystem()
-		{
-			ControllerTypeName = "SurveillanceSystemController";
+		ControllerTypeName = "SurveillanceSystemController";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

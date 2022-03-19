@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questQuestResource : questQuestPhaseResource
 {
-	[REDMeta]
-	public partial class questQuestResource : questQuestPhaseResource
+	public questQuestResource()
 	{
-		public questQuestResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

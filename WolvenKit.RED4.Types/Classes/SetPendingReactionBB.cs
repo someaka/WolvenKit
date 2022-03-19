@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetPendingReactionBB : StatusEffectTasks
 {
-	[REDMeta]
-	public partial class SetPendingReactionBB : StatusEffectTasks
+	public SetPendingReactionBB()
 	{
-		public SetPendingReactionBB()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ComDeviceTransition : DefaultTransition
 {
-	[REDMeta]
-	public partial class ComDeviceTransition : DefaultTransition
+	public ComDeviceTransition()
 	{
-		public ComDeviceTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

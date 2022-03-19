@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimEvent_ForceRagdoll : animAnimEvent
 {
-	[REDMeta]
-	public partial class animAnimEvent_ForceRagdoll : animAnimEvent
+	public animAnimEvent_ForceRagdoll()
 	{
-		public animAnimEvent_ForceRagdoll()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

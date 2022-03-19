@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameContinuousEffector : gameEffector
 {
-	[REDMeta]
-	public partial class gameContinuousEffector : gameEffector
+	public gameContinuousEffector()
 	{
-		public gameContinuousEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

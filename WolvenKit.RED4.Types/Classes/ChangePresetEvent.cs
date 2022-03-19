@@ -1,23 +1,21 @@
 using static WolvenKit.RED4.Types.Enums;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public partial class ChangePresetEvent : redEvent
 {
-	[REDMeta]
-	public partial class ChangePresetEvent : redEvent
+	[Ordinal(0)] 
+	[RED("presetID")] 
+	public CEnum<ESmartHousePreset> PresetID
 	{
-		[Ordinal(0)] 
-		[RED("presetID")] 
-		public CEnum<ESmartHousePreset> PresetID
-		{
-			get => GetPropertyValue<CEnum<ESmartHousePreset>>();
-			set => SetPropertyValue<CEnum<ESmartHousePreset>>(value);
-		}
-
-		public ChangePresetEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CEnum<ESmartHousePreset>>();
+		set => SetPropertyValue<CEnum<ESmartHousePreset>>(value);
 	}
+
+	public ChangePresetEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

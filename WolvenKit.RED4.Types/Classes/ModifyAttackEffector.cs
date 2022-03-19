@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ModifyAttackEffector : gameEffector
 {
-	[REDMeta]
-	public partial class ModifyAttackEffector : gameEffector
+	public ModifyAttackEffector()
 	{
-		public ModifyAttackEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

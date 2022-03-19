@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCustomRequestFilter : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameCustomRequestFilter : RedBaseClass
+	public gameCustomRequestFilter()
 	{
-		public gameCustomRequestFilter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

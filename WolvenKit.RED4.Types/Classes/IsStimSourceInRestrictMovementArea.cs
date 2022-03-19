@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsStimSourceInRestrictMovementArea : RestrictedMovementAreaCondition
 {
-	[REDMeta]
-	public partial class IsStimSourceInRestrictMovementArea : RestrictedMovementAreaCondition
+	public IsStimSourceInRestrictMovementArea()
 	{
-		public IsStimSourceInRestrictMovementArea()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

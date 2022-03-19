@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineeventDrawVaultDebug : gamestateMachineeventDrawClimbDebug
 {
-	[REDMeta]
-	public partial class gamestateMachineeventDrawVaultDebug : gamestateMachineeventDrawClimbDebug
+	public gamestateMachineeventDrawVaultDebug()
 	{
-		public gamestateMachineeventDrawVaultDebug()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

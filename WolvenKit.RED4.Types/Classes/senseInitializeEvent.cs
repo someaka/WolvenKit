@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class senseInitializeEvent : redEvent
 {
-	[REDMeta]
-	public partial class senseInitializeEvent : redEvent
+	public senseInitializeEvent()
 	{
-		public senseInitializeEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

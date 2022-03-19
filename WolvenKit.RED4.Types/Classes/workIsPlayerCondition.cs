@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workIsPlayerCondition : workIWorkspotCondition
 {
-	[REDMeta]
-	public partial class workIsPlayerCondition : workIWorkspotCondition
+	public workIsPlayerCondition()
 	{
-		public workIsPlayerCondition()
-		{
-			Equals_ = true;
+		Equals_ = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

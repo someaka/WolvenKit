@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAngleRange_Record : gamedataSenseShape_Record
 {
-	[REDMeta]
-	public partial class gamedataAngleRange_Record : gamedataSenseShape_Record
+	public gamedataAngleRange_Record()
 	{
-		public gamedataAngleRange_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questStartNodeDefinition : questStartEndNodeDefinition
 {
-	[REDMeta]
-	public partial class questStartNodeDefinition : questStartEndNodeDefinition
+	public questStartNodeDefinition()
 	{
-		public questStartNodeDefinition()
-		{
-			Sockets = new();
-			Id = 65535;
+		Sockets = new();
+		Id = 65535;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

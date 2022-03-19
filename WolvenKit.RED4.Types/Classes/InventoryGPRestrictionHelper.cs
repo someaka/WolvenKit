@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InventoryGPRestrictionHelper : IScriptable
 {
-	[REDMeta]
-	public partial class InventoryGPRestrictionHelper : IScriptable
+	public InventoryGPRestrictionHelper()
 	{
-		public InventoryGPRestrictionHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

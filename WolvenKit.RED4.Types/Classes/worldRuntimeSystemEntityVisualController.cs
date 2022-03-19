@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemEntityVisualController : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemEntityVisualController : worldIRuntimeSystem
+	public worldRuntimeSystemEntityVisualController()
 	{
-		public worldRuntimeSystemEntityVisualController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

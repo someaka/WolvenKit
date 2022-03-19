@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AiControlledEvents : HighLevelTransition
 {
-	[REDMeta]
-	public partial class AiControlledEvents : HighLevelTransition
+	public AiControlledEvents()
 	{
-		public AiControlledEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SprintLowGravityEvents : LocomotionGroundEvents
 {
-	[REDMeta]
-	public partial class SprintLowGravityEvents : LocomotionGroundEvents
+	public SprintLowGravityEvents()
 	{
-		public SprintLowGravityEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

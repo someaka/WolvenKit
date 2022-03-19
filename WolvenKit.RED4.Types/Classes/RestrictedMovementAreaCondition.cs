@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RestrictedMovementAreaCondition : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class RestrictedMovementAreaCondition : AIbehaviorconditionScript
+	public RestrictedMovementAreaCondition()
 	{
-		public RestrictedMovementAreaCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

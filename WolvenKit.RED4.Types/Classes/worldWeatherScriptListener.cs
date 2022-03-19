@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldWeatherScriptListener : IScriptable
 {
-	[REDMeta]
-	public partial class worldWeatherScriptListener : IScriptable
+	public worldWeatherScriptListener()
 	{
-		public worldWeatherScriptListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

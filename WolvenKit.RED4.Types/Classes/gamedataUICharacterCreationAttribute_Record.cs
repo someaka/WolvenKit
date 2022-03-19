@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataUICharacterCreationAttribute_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataUICharacterCreationAttribute_Record : gamedataTweakDBRecord
+	public gamedataUICharacterCreationAttribute_Record()
 	{
-		public gamedataUICharacterCreationAttribute_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

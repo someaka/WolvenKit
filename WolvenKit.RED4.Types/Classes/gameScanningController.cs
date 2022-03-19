@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScanningController : IScriptable
 {
-	[REDMeta]
-	public partial class gameScanningController : IScriptable
+	public gameScanningController()
 	{
-		public gameScanningController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

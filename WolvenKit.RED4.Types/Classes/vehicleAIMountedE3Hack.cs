@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleAIMountedE3Hack : redEvent
 {
-	[REDMeta]
-	public partial class vehicleAIMountedE3Hack : redEvent
+	public vehicleAIMountedE3Hack()
 	{
-		public vehicleAIMountedE3Hack()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleAbortSummoningActionEvent : gameActionEvent
 {
-	[REDMeta]
-	public partial class vehicleAbortSummoningActionEvent : gameActionEvent
+	public vehicleAbortSummoningActionEvent()
 	{
-		public vehicleAbortSummoningActionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

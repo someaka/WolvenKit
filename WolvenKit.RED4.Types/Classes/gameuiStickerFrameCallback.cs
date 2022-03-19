@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiStickerFrameCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class gameuiStickerFrameCallback : inkCallbackBase
+	public gameuiStickerFrameCallback()
 	{
-		public gameuiStickerFrameCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

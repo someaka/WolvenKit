@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDisableAimAssist : redEvent
 {
-	[REDMeta]
-	public partial class gameDisableAimAssist : redEvent
+	public gameDisableAimAssist()
 	{
-		public gameDisableAimAssist()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

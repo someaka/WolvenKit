@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemSnapSovler : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemSnapSovler : worldIRuntimeSystem
+	public worldRuntimeSystemSnapSovler()
 	{
-		public worldRuntimeSystemSnapSovler()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

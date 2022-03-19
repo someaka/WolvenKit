@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiTrapsGenRule : gameuiMinigameGenerationRule
 {
-	[REDMeta]
-	public partial class gameuiTrapsGenRule : gameuiMinigameGenerationRule
+	public gameuiTrapsGenRule()
 	{
-		public gameuiTrapsGenRule()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

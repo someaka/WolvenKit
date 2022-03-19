@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiIChoiceVisualizer : ISerializable
 {
-	[REDMeta]
-	public partial class gameuiIChoiceVisualizer : ISerializable
+	public gameuiIChoiceVisualizer()
 	{
-		public gameuiIChoiceVisualizer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

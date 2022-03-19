@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InvalidateTooltipOwnerEvent : redEvent
 {
-	[REDMeta]
-	public partial class InvalidateTooltipOwnerEvent : redEvent
+	public InvalidateTooltipOwnerEvent()
 	{
-		public InvalidateTooltipOwnerEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

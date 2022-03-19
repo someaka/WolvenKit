@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearBeingNoticedBB : redEvent
 {
-	[REDMeta]
-	public partial class ClearBeingNoticedBB : redEvent
+	public ClearBeingNoticedBB()
 	{
-		public ClearBeingNoticedBB()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

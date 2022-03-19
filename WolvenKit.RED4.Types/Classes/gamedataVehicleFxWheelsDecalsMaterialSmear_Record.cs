@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVehicleFxWheelsDecalsMaterialSmear_Record : gamedataVehicleFxWheelsDecalsMaterial_Record
 {
-	[REDMeta]
-	public partial class gamedataVehicleFxWheelsDecalsMaterialSmear_Record : gamedataVehicleFxWheelsDecalsMaterial_Record
+	public gamedataVehicleFxWheelsDecalsMaterialSmear_Record()
 	{
-		public gamedataVehicleFxWheelsDecalsMaterialSmear_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

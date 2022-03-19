@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LookatCombatTarget : AIGenericEntityLookatTask
 {
-	[REDMeta]
-	public partial class LookatCombatTarget : AIGenericEntityLookatTask
+	public LookatCombatTarget()
 	{
-		public LookatCombatTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

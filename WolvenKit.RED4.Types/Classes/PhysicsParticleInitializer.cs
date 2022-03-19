@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PhysicsParticleInitializer : ISerializable
 {
-	[REDMeta]
-	public partial class PhysicsParticleInitializer : ISerializable
+	public PhysicsParticleInitializer()
 	{
-		public PhysicsParticleInitializer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

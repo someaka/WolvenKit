@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiUIObjectsLoaderSystem : gameuiIUIObjectsLoaderSystem
 {
-	[REDMeta]
-	public partial class gameuiUIObjectsLoaderSystem : gameuiIUIObjectsLoaderSystem
+	public gameuiUIObjectsLoaderSystem()
 	{
-		public gameuiUIObjectsLoaderSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

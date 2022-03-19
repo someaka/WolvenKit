@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class mpPersistentTestBox : gameObject
 {
-	[REDMeta]
-	public partial class mpPersistentTestBox : gameObject
+	public mpPersistentTestBox()
 	{
-		public mpPersistentTestBox()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

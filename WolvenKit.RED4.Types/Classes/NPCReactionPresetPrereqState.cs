@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NPCReactionPresetPrereqState : gamePrereqState
 {
-	[REDMeta]
-	public partial class NPCReactionPresetPrereqState : gamePrereqState
+	public NPCReactionPresetPrereqState()
 	{
-		public NPCReactionPresetPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

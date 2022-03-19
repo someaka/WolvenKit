@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameLocationManager : gameILocationManager
 {
-	[REDMeta]
-	public partial class gameLocationManager : gameILocationManager
+	public gameLocationManager()
 	{
-		public gameLocationManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DeadState : ChangeHighLevelStateAbstract
 {
-	[REDMeta]
-	public partial class DeadState : ChangeHighLevelStateAbstract
+	public DeadState()
 	{
-		public DeadState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MathHelper : IScriptable
 {
-	[REDMeta]
-	public partial class MathHelper : IScriptable
+	public MathHelper()
 	{
-		public MathHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

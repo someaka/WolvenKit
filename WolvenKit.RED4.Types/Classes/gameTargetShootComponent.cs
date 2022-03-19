@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTargetShootComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameTargetShootComponent : entIComponent
+	public gameTargetShootComponent()
 	{
-		public gameTargetShootComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

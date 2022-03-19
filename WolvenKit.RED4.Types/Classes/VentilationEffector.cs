@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VentilationEffector : ActivatedDeviceTransfromAnim
 {
-	[REDMeta]
-	public partial class VentilationEffector : ActivatedDeviceTransfromAnim
+	[Ordinal(95)] 
+	[RED("effectComponent")] 
+	public CHandle<entIPlacedComponent> EffectComponent
 	{
-		[Ordinal(95)] 
-		[RED("effectComponent")] 
-		public CHandle<entIPlacedComponent> EffectComponent
-		{
-			get => GetPropertyValue<CHandle<entIPlacedComponent>>();
-			set => SetPropertyValue<CHandle<entIPlacedComponent>>(value);
-		}
-
-		public VentilationEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<entIPlacedComponent>>();
+		set => SetPropertyValue<CHandle<entIPlacedComponent>>(value);
 	}
+
+	public VentilationEffector()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

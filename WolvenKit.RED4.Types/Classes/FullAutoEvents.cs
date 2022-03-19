@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FullAutoEvents : WeaponEventsTransition
 {
-	[REDMeta]
-	public partial class FullAutoEvents : WeaponEventsTransition
+	public FullAutoEvents()
 	{
-		public FullAutoEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

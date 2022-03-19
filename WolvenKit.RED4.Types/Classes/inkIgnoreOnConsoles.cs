@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkIgnoreOnConsoles : inkUserData
 {
-	[REDMeta]
-	public partial class inkIgnoreOnConsoles : inkUserData
+	public inkIgnoreOnConsoles()
 	{
-		public inkIgnoreOnConsoles()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

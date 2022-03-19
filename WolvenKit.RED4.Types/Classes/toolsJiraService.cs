@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class toolsJiraService : RedBaseClass
 {
-	[REDMeta]
-	public partial class toolsJiraService : RedBaseClass
+	public toolsJiraService()
 	{
-		public toolsJiraService()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

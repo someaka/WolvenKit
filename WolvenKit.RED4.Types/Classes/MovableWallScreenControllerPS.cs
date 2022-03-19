@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MovableWallScreenControllerPS : DoorControllerPS
 {
-	[REDMeta]
-	public partial class MovableWallScreenControllerPS : DoorControllerPS
+	public MovableWallScreenControllerPS()
 	{
-		public MovableWallScreenControllerPS()
-		{
-			TweakDBRecord = 77660230936;
-			TweakDBDescriptionRecord = 131405305371;
+		TweakDBRecord = 77660230936;
+		TweakDBDescriptionRecord = 131405305371;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

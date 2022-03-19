@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkWatermarksLayer : inkFullScreenLayer
 {
-	[REDMeta]
-	public partial class inkWatermarksLayer : inkFullScreenLayer
+	public inkWatermarksLayer()
 	{
-		public inkWatermarksLayer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

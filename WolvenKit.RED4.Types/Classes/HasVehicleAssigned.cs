@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HasVehicleAssigned : AIVehicleConditionAbstract
 {
-	[REDMeta]
-	public partial class HasVehicleAssigned : AIVehicleConditionAbstract
+	public HasVehicleAssigned()
 	{
-		public HasVehicleAssigned()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

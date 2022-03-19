@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ITexture : CResource
 {
-	[REDMeta]
-	public partial class ITexture : CResource
+	public ITexture()
 	{
-		public ITexture()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAIDirectorTensionAnalyzer : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameAIDirectorTensionAnalyzer : RedBaseClass
+	public gameAIDirectorTensionAnalyzer()
 	{
-		public gameAIDirectorTensionAnalyzer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

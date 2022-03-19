@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animISyncMethod : ISerializable
 {
-	[REDMeta]
-	public partial class animISyncMethod : ISerializable
+	public animISyncMethod()
 	{
-		public animISyncMethod()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePingSystem : gameIPingSystem
 {
-	[REDMeta]
-	public partial class gamePingSystem : gameIPingSystem
+	public gamePingSystem()
 	{
-		public gamePingSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

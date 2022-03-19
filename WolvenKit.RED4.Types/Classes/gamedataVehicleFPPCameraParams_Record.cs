@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVehicleFPPCameraParams_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataVehicleFPPCameraParams_Record : gamedataTweakDBRecord
+	public gamedataVehicleFPPCameraParams_Record()
 	{
-		public gamedataVehicleFPPCameraParams_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

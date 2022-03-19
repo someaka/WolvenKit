@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorScriptExecutionContext : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviorScriptExecutionContext : RedBaseClass
+	public AIbehaviorScriptExecutionContext()
 	{
-		public AIbehaviorScriptExecutionContext()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

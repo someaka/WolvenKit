@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorTaskDefinition : ISerializable
 {
-	[REDMeta]
-	public partial class AIbehaviorTaskDefinition : ISerializable
+	[Ordinal(0)] 
+	[RED("ignoreTaskCompletion")] 
+	public CBool IgnoreTaskCompletion
 	{
-		[Ordinal(0)] 
-		[RED("ignoreTaskCompletion")] 
-		public CBool IgnoreTaskCompletion
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public AIbehaviorTaskDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public AIbehaviorTaskDefinition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

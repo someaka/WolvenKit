@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMenuLayer_SetCursorVisibility : redEvent
 {
-	[REDMeta]
-	public partial class inkMenuLayer_SetCursorVisibility : redEvent
+	public inkMenuLayer_SetCursorVisibility()
 	{
-		public inkMenuLayer_SetCursorVisibility()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataChoiceCaptionPartType_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataChoiceCaptionPartType_Record : gamedataTweakDBRecord
+	public gamedataChoiceCaptionPartType_Record()
 	{
-		public gamedataChoiceCaptionPartType_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICoverSelectionRuntimeData : RedBaseClass
 {
-	[REDMeta]
-	public partial class AICoverSelectionRuntimeData : RedBaseClass
+	public AICoverSelectionRuntimeData()
 	{
-		public AICoverSelectionRuntimeData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

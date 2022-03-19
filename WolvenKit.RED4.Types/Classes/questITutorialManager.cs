@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questITutorialManager : gameIGameSystem
 {
-	[REDMeta]
-	public partial class questITutorialManager : gameIGameSystem
+	public questITutorialManager()
 	{
-		public questITutorialManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

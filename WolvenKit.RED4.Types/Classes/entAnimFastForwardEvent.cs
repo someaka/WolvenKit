@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAnimFastForwardEvent : redEvent
 {
-	[REDMeta]
-	public partial class entAnimFastForwardEvent : redEvent
+	public entAnimFastForwardEvent()
 	{
-		public entAnimFastForwardEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

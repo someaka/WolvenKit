@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animMotionTableProvider_Animation : animIMotionTableProvider
 {
-	[REDMeta]
-	public partial class animMotionTableProvider_Animation : animIMotionTableProvider
+	public animMotionTableProvider_Animation()
 	{
-		public animMotionTableProvider_Animation()
-		{
-			Id = -1;
-			ParentId = -1;
+		Id = -1;
+		ParentId = -1;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

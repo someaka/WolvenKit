@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BreachAccessPointEvent : redEvent
 {
-	[REDMeta]
-	public partial class BreachAccessPointEvent : redEvent
+	public BreachAccessPointEvent()
 	{
-		public BreachAccessPointEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

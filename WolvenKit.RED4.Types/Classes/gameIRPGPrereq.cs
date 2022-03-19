@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIRPGPrereq : gameIComparisonPrereq
 {
-	[REDMeta]
-	public partial class gameIRPGPrereq : gameIComparisonPrereq
+	public gameIRPGPrereq()
 	{
-		public gameIRPGPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

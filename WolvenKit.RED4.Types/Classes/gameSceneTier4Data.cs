@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSceneTier4Data : gameSceneTierDataMotionConstrained
 {
-	[REDMeta]
-	public partial class gameSceneTier4Data : gameSceneTierDataMotionConstrained
+	public gameSceneTier4Data()
 	{
-		public gameSceneTier4Data()
-		{
-			Tier = Enums.GameplayTier.Tier4_FPPCinematic;
-			Params = new();
+		Tier = Enums.GameplayTier.Tier4_FPPCinematic;
+		Params = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

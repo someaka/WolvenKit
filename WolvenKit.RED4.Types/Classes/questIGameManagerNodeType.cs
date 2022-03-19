@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIGameManagerNodeType : questISignalStoppingNodeType
 {
-	[REDMeta]
-	public partial class questIGameManagerNodeType : questISignalStoppingNodeType
+	public questIGameManagerNodeType()
 	{
-		public questIGameManagerNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

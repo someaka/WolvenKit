@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SmartDespawnRequest : redEvent
 {
-	[REDMeta]
-	public partial class SmartDespawnRequest : redEvent
+	public SmartDespawnRequest()
 	{
-		public SmartDespawnRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

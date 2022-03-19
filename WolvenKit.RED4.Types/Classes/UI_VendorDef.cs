@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UI_VendorDef : gamebbScriptDefinition
 {
-	[REDMeta]
-	public partial class UI_VendorDef : gamebbScriptDefinition
+	[Ordinal(0)] 
+	[RED("VendorData")] 
+	public gamebbScriptID_Variant VendorData
 	{
-		[Ordinal(0)] 
-		[RED("VendorData")] 
-		public gamebbScriptID_Variant VendorData
-		{
-			get => GetPropertyValue<gamebbScriptID_Variant>();
-			set => SetPropertyValue<gamebbScriptID_Variant>(value);
-		}
-
-		public UI_VendorDef()
-		{
-			VendorData = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gamebbScriptID_Variant>();
+		set => SetPropertyValue<gamebbScriptID_Variant>(value);
 	}
+
+	public UI_VendorDef()
+	{
+		VendorData = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

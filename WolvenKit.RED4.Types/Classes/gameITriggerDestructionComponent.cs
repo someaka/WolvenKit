@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameITriggerDestructionComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameITriggerDestructionComponent : entIComponent
+	[Ordinal(3)] 
+	[RED("startActive")] 
+	public CBool StartActive
 	{
-		[Ordinal(3)] 
-		[RED("startActive")] 
-		public CBool StartActive
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public gameITriggerDestructionComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public gameITriggerDestructionComponent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

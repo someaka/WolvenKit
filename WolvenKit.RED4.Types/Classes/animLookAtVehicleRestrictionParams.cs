@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animLookAtVehicleRestrictionParams : ISerializable
 {
-	[REDMeta]
-	public partial class animLookAtVehicleRestrictionParams : ISerializable
+	public animLookAtVehicleRestrictionParams()
 	{
-		public animLookAtVehicleRestrictionParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

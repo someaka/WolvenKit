@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitTriggeredCallback : HitCallback
 {
-	[REDMeta]
-	public partial class HitTriggeredCallback : HitCallback
+	public HitTriggeredCallback()
 	{
-		public HitTriggeredCallback()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

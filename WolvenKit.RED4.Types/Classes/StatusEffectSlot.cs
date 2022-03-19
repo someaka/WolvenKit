@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StatusEffectSlot : RadialSlot
 {
-	[REDMeta]
-	public partial class StatusEffectSlot : RadialSlot
+	public StatusEffectSlot()
 	{
-		public StatusEffectSlot()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

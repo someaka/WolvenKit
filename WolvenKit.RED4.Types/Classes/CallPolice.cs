@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CallPolice : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class CallPolice : AIbehaviortaskScript
+	public CallPolice()
 	{
-		public CallPolice()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

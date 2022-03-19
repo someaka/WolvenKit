@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LateInit : redEvent
 {
-	[REDMeta]
-	public partial class LateInit : redEvent
+	public LateInit()
 	{
-		public LateInit()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

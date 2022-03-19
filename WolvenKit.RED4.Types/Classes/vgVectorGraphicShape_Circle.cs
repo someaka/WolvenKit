@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vgVectorGraphicShape_Circle : vgBaseVectorGraphicShape
 {
-	[REDMeta]
-	public partial class vgVectorGraphicShape_Circle : vgBaseVectorGraphicShape
+	[Ordinal(2)] 
+	[RED("dius")] 
+	public CFloat Dius
 	{
-		[Ordinal(2)] 
-		[RED("dius")] 
-		public CFloat Dius
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public vgVectorGraphicShape_Circle()
-		{
-			CalTransform = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public vgVectorGraphicShape_Circle()
+	{
+		CalTransform = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

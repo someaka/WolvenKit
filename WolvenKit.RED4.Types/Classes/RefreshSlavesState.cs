@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RefreshSlavesState : redEvent
 {
-	[REDMeta]
-	public partial class RefreshSlavesState : redEvent
+	public RefreshSlavesState()
 	{
-		public RefreshSlavesState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

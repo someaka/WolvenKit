@@ -1,26 +1,22 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CrosshairModule : HUDModule
 {
-	[REDMeta]
-	public partial class CrosshairModule : HUDModule
+	[Ordinal(3)] 
+	[RED("activeCrosshairs")] 
+	public CArray<CHandle<Crosshair>> ActiveCrosshairs
 	{
-		[Ordinal(3)] 
-		[RED("activeCrosshairs")] 
-		public CArray<CHandle<Crosshair>> ActiveCrosshairs
-		{
-			get => GetPropertyValue<CArray<CHandle<Crosshair>>>();
-			set => SetPropertyValue<CArray<CHandle<Crosshair>>>(value);
-		}
-
-		public CrosshairModule()
-		{
-			InstancesList = new();
-			ActiveCrosshairs = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<CHandle<Crosshair>>>();
+		set => SetPropertyValue<CArray<CHandle<Crosshair>>>(value);
 	}
+
+	public CrosshairModule()
+	{
+		InstancesList = new();
+		ActiveCrosshairs = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

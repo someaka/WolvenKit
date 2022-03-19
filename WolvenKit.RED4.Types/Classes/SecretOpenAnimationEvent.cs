@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SecretOpenAnimationEvent : redEvent
 {
-	[REDMeta]
-	public partial class SecretOpenAnimationEvent : redEvent
+	public SecretOpenAnimationEvent()
 	{
-		public SecretOpenAnimationEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAppearanceMeshLoadedEvent : redEvent
 {
-	[REDMeta]
-	public partial class entAppearanceMeshLoadedEvent : redEvent
+	public entAppearanceMeshLoadedEvent()
 	{
-		public entAppearanceMeshLoadedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

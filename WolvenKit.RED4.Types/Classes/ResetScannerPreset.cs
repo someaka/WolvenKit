@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetScannerPreset : redEvent
 {
-	[REDMeta]
-	public partial class ResetScannerPreset : redEvent
+	public ResetScannerPreset()
 	{
-		public ResetScannerPreset()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

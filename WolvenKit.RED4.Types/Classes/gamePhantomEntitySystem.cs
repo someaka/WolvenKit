@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePhantomEntitySystem : gameIPhantomEntitySystem
 {
-	[REDMeta]
-	public partial class gamePhantomEntitySystem : gameIPhantomEntitySystem
+	public gamePhantomEntitySystem()
 	{
-		public gamePhantomEntitySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

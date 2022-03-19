@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TonemappingModeACESApprox : ITonemappingMode
 {
-	[REDMeta]
-	public partial class TonemappingModeACESApprox : ITonemappingMode
+	public TonemappingModeACESApprox()
 	{
-		public TonemappingModeACESApprox()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

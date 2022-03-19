@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IParticleEvent : IParticleModule
 {
-	[REDMeta]
-	public partial class IParticleEvent : IParticleModule
+	[Ordinal(3)] 
+	[RED("eventName")] 
+	public CName EventName
 	{
-		[Ordinal(3)] 
-		[RED("eventName")] 
-		public CName EventName
-		{
-			get => GetPropertyValue<CName>();
-			set => SetPropertyValue<CName>(value);
-		}
-
-		public IParticleEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CName>();
+		set => SetPropertyValue<CName>(value);
 	}
+
+	public IParticleEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

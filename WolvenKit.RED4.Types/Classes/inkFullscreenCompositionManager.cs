@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkFullscreenCompositionManager : ISerializable
 {
-	[REDMeta]
-	public partial class inkFullscreenCompositionManager : ISerializable
+	public inkFullscreenCompositionManager()
 	{
-		public inkFullscreenCompositionManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

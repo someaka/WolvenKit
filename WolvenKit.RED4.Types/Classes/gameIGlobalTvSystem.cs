@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIGlobalTvSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIGlobalTvSystem : gameIGameSystem
+	public gameIGlobalTvSystem()
 	{
-		public gameIGlobalTvSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAIAction_Record : gamedataAINode_Record
 {
-	[REDMeta]
-	public partial class gamedataAIAction_Record : gamedataAINode_Record
+	public gamedataAIAction_Record()
 	{
-		public gamedataAIAction_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

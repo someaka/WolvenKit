@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIPuppetSwappedEvent : redEvent
 {
-	[REDMeta]
-	public partial class AIPuppetSwappedEvent : redEvent
+	public AIPuppetSwappedEvent()
 	{
-		public AIPuppetSwappedEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

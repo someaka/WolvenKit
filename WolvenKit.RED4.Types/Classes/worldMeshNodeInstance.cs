@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldMeshNodeInstance : worldSnappableNodeInstance
 {
-	[REDMeta]
-	public partial class worldMeshNodeInstance : worldSnappableNodeInstance
+	public worldMeshNodeInstance()
 	{
-		public worldMeshNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

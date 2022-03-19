@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OverheatEvents : WeaponEventsTransition
 {
-	[REDMeta]
-	public partial class OverheatEvents : WeaponEventsTransition
+	public OverheatEvents()
 	{
-		public OverheatEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

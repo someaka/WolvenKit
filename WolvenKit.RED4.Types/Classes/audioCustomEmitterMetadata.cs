@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audioCustomEmitterMetadata : audioAudioMetadata
 {
-	[REDMeta]
-	public partial class audioCustomEmitterMetadata : audioAudioMetadata
+	public audioCustomEmitterMetadata()
 	{
-		public audioCustomEmitterMetadata()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

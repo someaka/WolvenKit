@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NetworkAreaController : MasterController
 {
-	[REDMeta]
-	public partial class NetworkAreaController : MasterController
+	public NetworkAreaController()
 	{
-		public NetworkAreaController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

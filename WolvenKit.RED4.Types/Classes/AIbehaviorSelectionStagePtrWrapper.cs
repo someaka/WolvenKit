@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorSelectionStagePtrWrapper : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviorSelectionStagePtrWrapper : RedBaseClass
+	public AIbehaviorSelectionStagePtrWrapper()
 	{
-		public AIbehaviorSelectionStagePtrWrapper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

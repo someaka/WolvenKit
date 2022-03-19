@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConfessionalBlackboardDef : DeviceBaseBlackboardDef
 {
-	[REDMeta]
-	public partial class ConfessionalBlackboardDef : DeviceBaseBlackboardDef
+	[Ordinal(7)] 
+	[RED("IsConfessing")] 
+	public gamebbScriptID_Bool IsConfessing
 	{
-		[Ordinal(7)] 
-		[RED("IsConfessing")] 
-		public gamebbScriptID_Bool IsConfessing
-		{
-			get => GetPropertyValue<gamebbScriptID_Bool>();
-			set => SetPropertyValue<gamebbScriptID_Bool>(value);
-		}
-
-		public ConfessionalBlackboardDef()
-		{
-			IsConfessing = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<gamebbScriptID_Bool>();
+		set => SetPropertyValue<gamebbScriptID_Bool>(value);
 	}
+
+	public ConfessionalBlackboardDef()
+	{
+		IsConfessing = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

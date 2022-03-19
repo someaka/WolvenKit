@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiICharacterCustomizationBodyController : gameuiICharacterCustomizationComponent
 {
-	[REDMeta]
-	public partial class gameuiICharacterCustomizationBodyController : gameuiICharacterCustomizationComponent
+	public gameuiICharacterCustomizationBodyController()
 	{
-		public gameuiICharacterCustomizationBodyController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

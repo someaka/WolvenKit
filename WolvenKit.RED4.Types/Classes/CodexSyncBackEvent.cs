@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CodexSyncBackEvent : redEvent
 {
-	[REDMeta]
-	public partial class CodexSyncBackEvent : redEvent
+	public CodexSyncBackEvent()
 	{
-		public CodexSyncBackEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

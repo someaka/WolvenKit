@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CoderController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class CoderController : ScriptableDeviceComponent
+	public CoderController()
 	{
-		public CoderController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

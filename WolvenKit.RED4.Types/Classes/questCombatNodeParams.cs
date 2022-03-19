@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questCombatNodeParams : questAICommandParams
 {
-	[REDMeta]
-	public partial class questCombatNodeParams : questAICommandParams
+	public questCombatNodeParams()
 	{
-		public questCombatNodeParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

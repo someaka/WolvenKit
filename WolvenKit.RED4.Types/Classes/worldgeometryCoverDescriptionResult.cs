@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldgeometryCoverDescriptionResult : ISerializable
 {
-	[REDMeta]
-	public partial class worldgeometryCoverDescriptionResult : ISerializable
+	public worldgeometryCoverDescriptionResult()
 	{
-		public worldgeometryCoverDescriptionResult()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

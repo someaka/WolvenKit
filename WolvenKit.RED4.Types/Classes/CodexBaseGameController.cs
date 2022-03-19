@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CodexBaseGameController : gameuiMenuGameController
 {
-	[REDMeta]
-	public partial class CodexBaseGameController : gameuiMenuGameController
+	public CodexBaseGameController()
 	{
-		public CodexBaseGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

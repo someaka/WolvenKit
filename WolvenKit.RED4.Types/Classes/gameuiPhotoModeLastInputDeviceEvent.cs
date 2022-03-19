@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiPhotoModeLastInputDeviceEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameuiPhotoModeLastInputDeviceEvent : redEvent
+	public gameuiPhotoModeLastInputDeviceEvent()
 	{
-		public gameuiPhotoModeLastInputDeviceEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

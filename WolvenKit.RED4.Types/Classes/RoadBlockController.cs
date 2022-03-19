@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RoadBlockController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class RoadBlockController : ScriptableDeviceComponent
+	public RoadBlockController()
 	{
-		public RoadBlockController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

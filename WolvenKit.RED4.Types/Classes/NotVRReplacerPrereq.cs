@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NotVRReplacerPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class NotVRReplacerPrereq : gameIScriptablePrereq
+	public NotVRReplacerPrereq()
 	{
-		public NotVRReplacerPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

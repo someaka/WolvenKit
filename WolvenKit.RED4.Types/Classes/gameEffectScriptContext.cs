@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectScriptContext : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameEffectScriptContext : RedBaseClass
+	public gameEffectScriptContext()
 	{
-		public gameEffectScriptContext()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

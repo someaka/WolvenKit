@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorDriveFollowSlotTreeNodeDefinition : AIbehaviorDriveTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorDriveFollowSlotTreeNodeDefinition : AIbehaviorDriveTreeNodeDefinition
+	public AIbehaviorDriveFollowSlotTreeNodeDefinition()
 	{
-		public AIbehaviorDriveFollowSlotTreeNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

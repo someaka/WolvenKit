@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SwimmingPSMPrereqState : PlayerStateMachinePrereqState
 {
-	[REDMeta]
-	public partial class SwimmingPSMPrereqState : PlayerStateMachinePrereqState
+	public SwimmingPSMPrereqState()
 	{
-		public SwimmingPSMPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

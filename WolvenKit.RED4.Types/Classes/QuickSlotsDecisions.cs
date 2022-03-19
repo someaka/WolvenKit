@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickSlotsDecisions : QuickSlotsTransition
 {
-	[REDMeta]
-	public partial class QuickSlotsDecisions : QuickSlotsTransition
+	public QuickSlotsDecisions()
 	{
-		public QuickSlotsDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

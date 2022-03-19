@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class hubStaticSelectorPostArrangeEvent : redEvent
 {
-	[REDMeta]
-	public partial class hubStaticSelectorPostArrangeEvent : redEvent
+	public hubStaticSelectorPostArrangeEvent()
 	{
-		public hubStaticSelectorPostArrangeEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetAvoidThreatDestination : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SetAvoidThreatDestination : AIbehaviortaskScript
+	public SetAvoidThreatDestination()
 	{
-		public SetAvoidThreatDestination()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

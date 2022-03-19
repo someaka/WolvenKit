@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ChargeLogicController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class ChargeLogicController : inkWidgetLogicController
+	public ChargeLogicController()
 	{
-		public ChargeLogicController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

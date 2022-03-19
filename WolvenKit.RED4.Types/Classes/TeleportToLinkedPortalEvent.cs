@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TeleportToLinkedPortalEvent : redEvent
 {
-	[REDMeta]
-	public partial class TeleportToLinkedPortalEvent : redEvent
+	public TeleportToLinkedPortalEvent()
 	{
-		public TeleportToLinkedPortalEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

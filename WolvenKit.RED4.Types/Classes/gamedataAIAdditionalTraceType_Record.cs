@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAIAdditionalTraceType_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataAIAdditionalTraceType_Record : gamedataTweakDBRecord
+	public gamedataAIAdditionalTraceType_Record()
 	{
-		public gamedataAIAdditionalTraceType_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerCoverHelper : IScriptable
 {
-	[REDMeta]
-	public partial class PlayerCoverHelper : IScriptable
+	public PlayerCoverHelper()
 	{
-		public PlayerCoverHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

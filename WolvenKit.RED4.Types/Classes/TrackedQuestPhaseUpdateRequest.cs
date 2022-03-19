@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TrackedQuestPhaseUpdateRequest : redEvent
 {
-	[REDMeta]
-	public partial class TrackedQuestPhaseUpdateRequest : redEvent
+	public TrackedQuestPhaseUpdateRequest()
 	{
-		public TrackedQuestPhaseUpdateRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questvehicleJoinTrafficParams : questVehicleSpecificCommandParams
 {
-	[REDMeta]
-	public partial class questvehicleJoinTrafficParams : questVehicleSpecificCommandParams
+	public questvehicleJoinTrafficParams()
 	{
-		public questvehicleJoinTrafficParams()
-		{
-			PushOtherVehiclesAside = true;
-			SecureTimeOut = 60.000000F;
+		PushOtherVehiclesAside = true;
+		SecureTimeOut = 60.000000F;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

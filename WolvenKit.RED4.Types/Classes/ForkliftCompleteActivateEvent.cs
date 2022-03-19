@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForkliftCompleteActivateEvent : redEvent
 {
-	[REDMeta]
-	public partial class ForkliftCompleteActivateEvent : redEvent
+	public ForkliftCompleteActivateEvent()
 	{
-		public ForkliftCompleteActivateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

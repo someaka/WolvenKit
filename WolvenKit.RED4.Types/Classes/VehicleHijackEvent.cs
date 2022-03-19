@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleHijackEvent : redEvent
 {
-	[REDMeta]
-	public partial class VehicleHijackEvent : redEvent
+	public VehicleHijackEvent()
 	{
-		public VehicleHijackEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

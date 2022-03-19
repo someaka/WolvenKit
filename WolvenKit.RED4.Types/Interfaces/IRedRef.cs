@@ -1,11 +1,10 @@
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public interface IRedRef : IRedType
 {
-    public interface IRedRef : IRedType
-    {
-        public CName DepotPath { get; set; }
+    public CName DepotPath { get; set; }
 
-        public InternalEnums.EImportFlags Flags { get; set; }
+    public InternalEnums.EImportFlags Flags { get; set; }
 
-        public uint GetPersistentHash();
-    }
+    public uint GetPersistentHash();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldOffMeshConnectionPayload : RedBaseClass
 {
-	[REDMeta]
-	public partial class worldOffMeshConnectionPayload : RedBaseClass
+	public worldOffMeshConnectionPayload()
 	{
-		public worldOffMeshConnectionPayload()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkOffscreenWidgetSpawnEvt : redEvent
 {
-	[REDMeta]
-	public partial class inkOffscreenWidgetSpawnEvt : redEvent
+	public inkOffscreenWidgetSpawnEvt()
 	{
-		public inkOffscreenWidgetSpawnEvt()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

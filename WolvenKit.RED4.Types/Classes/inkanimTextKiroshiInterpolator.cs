@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkanimTextKiroshiInterpolator : inkanimTextInterpolator
 {
-	[REDMeta]
-	public partial class inkanimTextKiroshiInterpolator : inkanimTextInterpolator
+	public inkanimTextKiroshiInterpolator()
 	{
-		public inkanimTextKiroshiInterpolator()
-		{
-			InterpolationDirection = Enums.inkanimInterpolationDirection.FromTo;
+		InterpolationDirection = Enums.inkanimInterpolationDirection.FromTo;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

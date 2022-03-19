@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WeakFenceController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class WeakFenceController : ScriptableDeviceComponent
+	public WeakFenceController()
 	{
-		public WeakFenceController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

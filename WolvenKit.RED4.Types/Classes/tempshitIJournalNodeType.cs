@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class tempshitIJournalNodeType : ISerializable
 {
-	[REDMeta]
-	public partial class tempshitIJournalNodeType : ISerializable
+	public tempshitIJournalNodeType()
 	{
-		public tempshitIJournalNodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

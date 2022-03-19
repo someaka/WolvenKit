@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StrikeExecutor_Debug_PrintStats : StrikeExecutor_Debug
 {
-	[REDMeta]
-	public partial class StrikeExecutor_Debug_PrintStats : StrikeExecutor_Debug
+	public StrikeExecutor_Debug_PrintStats()
 	{
-		public StrikeExecutor_Debug_PrintStats()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

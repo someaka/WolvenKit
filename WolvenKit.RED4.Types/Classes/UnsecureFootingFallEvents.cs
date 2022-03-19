@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnsecureFootingFallEvents : FallEvents
 {
-	[REDMeta]
-	public partial class UnsecureFootingFallEvents : FallEvents
+	public UnsecureFootingFallEvents()
 	{
-		public UnsecureFootingFallEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

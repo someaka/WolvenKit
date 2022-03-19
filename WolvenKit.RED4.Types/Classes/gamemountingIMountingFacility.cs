@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemountingIMountingFacility : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gamemountingIMountingFacility : gameIGameSystem
+	public gamemountingIMountingFacility()
 	{
-		public gamemountingIMountingFacility()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

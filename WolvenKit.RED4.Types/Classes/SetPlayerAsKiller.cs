@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SetPlayerAsKiller : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class SetPlayerAsKiller : AIbehaviortaskScript
+	public SetPlayerAsKiller()
 	{
-		public SetPlayerAsKiller()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

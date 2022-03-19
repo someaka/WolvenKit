@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VehicleDamageStageTurnOffEvent : redEvent
 {
-	[REDMeta]
-	public partial class VehicleDamageStageTurnOffEvent : redEvent
+	public VehicleDamageStageTurnOffEvent()
 	{
-		public VehicleDamageStageTurnOffEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

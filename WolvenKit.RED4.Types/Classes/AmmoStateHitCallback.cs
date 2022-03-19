@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AmmoStateHitCallback : HitCallback
 {
-	[REDMeta]
-	public partial class AmmoStateHitCallback : HitCallback
+	public AmmoStateHitCallback()
 	{
-		public AmmoStateHitCallback()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

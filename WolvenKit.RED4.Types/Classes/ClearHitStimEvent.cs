@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearHitStimEvent : redEvent
 {
-	[REDMeta]
-	public partial class ClearHitStimEvent : redEvent
+	public ClearHitStimEvent()
 	{
-		public ClearHitStimEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questDisableTeleportingMonitoring_NodeType : questIWorldDataManagerNodeType
 {
-	[REDMeta]
-	public partial class questDisableTeleportingMonitoring_NodeType : questIWorldDataManagerNodeType
+	public questDisableTeleportingMonitoring_NodeType()
 	{
-		public questDisableTeleportingMonitoring_NodeType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

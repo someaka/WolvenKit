@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAcousticsOutdoornessAreaNodeInstance : worldAreaShapeNodeInstance
 {
-	[REDMeta]
-	public partial class worldAcousticsOutdoornessAreaNodeInstance : worldAreaShapeNodeInstance
+	public worldAcousticsOutdoornessAreaNodeInstance()
 	{
-		public worldAcousticsOutdoornessAreaNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

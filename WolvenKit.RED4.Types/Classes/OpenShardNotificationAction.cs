@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class OpenShardNotificationAction : GenericNotificationBaseAction
 {
-	[REDMeta]
-	public partial class OpenShardNotificationAction : GenericNotificationBaseAction
+	[Ordinal(0)] 
+	[RED("eventDispatcher")] 
+	public CHandle<gameuiGameSystemUI> EventDispatcher
 	{
-		[Ordinal(0)] 
-		[RED("eventDispatcher")] 
-		public CHandle<gameuiGameSystemUI> EventDispatcher
-		{
-			get => GetPropertyValue<CHandle<gameuiGameSystemUI>>();
-			set => SetPropertyValue<CHandle<gameuiGameSystemUI>>(value);
-		}
-
-		public OpenShardNotificationAction()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<gameuiGameSystemUI>>();
+		set => SetPropertyValue<CHandle<gameuiGameSystemUI>>(value);
 	}
+
+	public OpenShardNotificationAction()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

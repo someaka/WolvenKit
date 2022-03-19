@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameKillTriggerNodeInstance : worldAreaShapeNodeInstance
 {
-	[REDMeta]
-	public partial class gameKillTriggerNodeInstance : worldAreaShapeNodeInstance
+	public gameKillTriggerNodeInstance()
 	{
-		public gameKillTriggerNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

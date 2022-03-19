@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleVcarRootLogicController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class vehicleVcarRootLogicController : inkWidgetLogicController
+	public vehicleVcarRootLogicController()
 	{
-		public vehicleVcarRootLogicController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

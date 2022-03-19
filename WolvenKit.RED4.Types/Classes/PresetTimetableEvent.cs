@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PresetTimetableEvent : redEvent
 {
-	[REDMeta]
-	public partial class PresetTimetableEvent : redEvent
+	[Ordinal(0)] 
+	[RED("arrayPosition")] 
+	public CInt32 ArrayPosition
 	{
-		[Ordinal(0)] 
-		[RED("arrayPosition")] 
-		public CInt32 ArrayPosition
-		{
-			get => GetPropertyValue<CInt32>();
-			set => SetPropertyValue<CInt32>(value);
-		}
-
-		public PresetTimetableEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CInt32>();
+		set => SetPropertyValue<CInt32>(value);
 	}
+
+	public PresetTimetableEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

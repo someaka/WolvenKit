@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkLinePatternWidgetReference : inkImageWidgetReference
 {
-	[REDMeta]
-	public partial class inkLinePatternWidgetReference : inkImageWidgetReference
+	public inkLinePatternWidgetReference()
 	{
-		public inkLinePatternWidgetReference()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

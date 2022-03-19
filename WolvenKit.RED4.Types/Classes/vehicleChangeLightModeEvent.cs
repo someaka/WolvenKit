@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class vehicleChangeLightModeEvent : redEvent
 {
-	[REDMeta]
-	public partial class vehicleChangeLightModeEvent : redEvent
+	public vehicleChangeLightModeEvent()
 	{
-		public vehicleChangeLightModeEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

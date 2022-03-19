@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SwimmingDeathEvents : DeathEvents
 {
-	[REDMeta]
-	public partial class SwimmingDeathEvents : DeathEvents
+	public SwimmingDeathEvents()
 	{
-		public SwimmingDeathEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StackClearCombatTarget : AIbehaviortaskStackScript
 {
-	[REDMeta]
-	public partial class StackClearCombatTarget : AIbehaviortaskStackScript
+	public StackClearCombatTarget()
 	{
-		public StackClearCombatTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

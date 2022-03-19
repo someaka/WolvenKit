@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class JukeboxController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class JukeboxController : ScriptableDeviceComponent
+	public JukeboxController()
 	{
-		public JukeboxController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

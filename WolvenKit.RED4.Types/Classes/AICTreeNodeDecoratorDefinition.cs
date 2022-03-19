@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICTreeNodeDecoratorDefinition : AICTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AICTreeNodeDecoratorDefinition : AICTreeNodeDefinition
+	[Ordinal(0)] 
+	[RED("child")] 
+	public CHandle<LibTreeINodeDefinition> Child
 	{
-		[Ordinal(0)] 
-		[RED("child")] 
-		public CHandle<LibTreeINodeDefinition> Child
-		{
-			get => GetPropertyValue<CHandle<LibTreeINodeDefinition>>();
-			set => SetPropertyValue<CHandle<LibTreeINodeDefinition>>(value);
-		}
-
-		public AICTreeNodeDecoratorDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<LibTreeINodeDefinition>>();
+		set => SetPropertyValue<CHandle<LibTreeINodeDefinition>>(value);
 	}
+
+	public AICTreeNodeDecoratorDefinition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

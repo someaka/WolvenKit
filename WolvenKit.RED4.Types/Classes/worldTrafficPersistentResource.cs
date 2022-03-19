@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficPersistentResource : resStreamedResource
 {
-	[REDMeta]
-	public partial class worldTrafficPersistentResource : resStreamedResource
+	[Ordinal(1)] 
+	[RED("data")] 
+	public worldTrafficPersistentData Data
 	{
-		[Ordinal(1)] 
-		[RED("data")] 
-		public worldTrafficPersistentData Data
-		{
-			get => GetPropertyValue<worldTrafficPersistentData>();
-			set => SetPropertyValue<worldTrafficPersistentData>(value);
-		}
-
-		public worldTrafficPersistentResource()
-		{
-			Data = new() { Lanes = new(), NeighborGroups = new() };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<worldTrafficPersistentData>();
+		set => SetPropertyValue<worldTrafficPersistentData>(value);
 	}
+
+	public worldTrafficPersistentResource()
+	{
+		Data = new() { Lanes = new(), NeighborGroups = new() };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

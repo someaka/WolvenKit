@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workMotionAnimClip : workAnimClip
 {
-	[REDMeta]
-	public partial class workMotionAnimClip : workAnimClip
+	public workMotionAnimClip()
 	{
-		public workMotionAnimClip()
-		{
-			Flags = 32770;
+		Flags = 32770;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

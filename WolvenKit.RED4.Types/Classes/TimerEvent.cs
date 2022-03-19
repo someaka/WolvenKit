@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TimerEvent : redEvent
 {
-	[REDMeta]
-	public partial class TimerEvent : redEvent
+	public TimerEvent()
 	{
-		public TimerEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

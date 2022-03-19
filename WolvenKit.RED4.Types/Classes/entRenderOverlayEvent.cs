@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entRenderOverlayEvent : redEvent
 {
-	[REDMeta]
-	public partial class entRenderOverlayEvent : redEvent
+	public entRenderOverlayEvent()
 	{
-		public entRenderOverlayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkIgnoreSwapHorizontallyMode : inkUserData
 {
-	[REDMeta]
-	public partial class inkIgnoreSwapHorizontallyMode : inkUserData
+	public inkIgnoreSwapHorizontallyMode()
 	{
-		public inkIgnoreSwapHorizontallyMode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

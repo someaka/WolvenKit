@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVisualStatePopStateMachineEvent : redEvent
 {
-	[REDMeta]
-	public partial class inkVisualStatePopStateMachineEvent : redEvent
+	public inkVisualStatePopStateMachineEvent()
 	{
-		public inkVisualStatePopStateMachineEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

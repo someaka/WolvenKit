@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entUncontrolledMovementEndEvent : redEvent
 {
-	[REDMeta]
-	public partial class entUncontrolledMovementEndEvent : redEvent
+	public entUncontrolledMovementEndEvent()
 	{
-		public entUncontrolledMovementEndEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

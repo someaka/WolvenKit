@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisableAllVehicleInteractionsNotEnabledPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class DisableAllVehicleInteractionsNotEnabledPrereq : gameIScriptablePrereq
+	public DisableAllVehicleInteractionsNotEnabledPrereq()
 	{
-		public DisableAllVehicleInteractionsNotEnabledPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

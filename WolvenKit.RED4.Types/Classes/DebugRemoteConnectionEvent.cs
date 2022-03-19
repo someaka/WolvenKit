@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DebugRemoteConnectionEvent : redEvent
 {
-	[REDMeta]
-	public partial class DebugRemoteConnectionEvent : redEvent
+	public DebugRemoteConnectionEvent()
 	{
-		public DebugRemoteConnectionEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

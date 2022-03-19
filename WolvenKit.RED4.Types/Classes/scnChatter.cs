@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnChatter : RedBaseClass
 {
-	[REDMeta]
-	public partial class scnChatter : RedBaseClass
+	[Ordinal(0)] 
+	[RED("id")] 
+	public CUInt16 Id
 	{
-		[Ordinal(0)] 
-		[RED("id")] 
-		public CUInt16 Id
-		{
-			get => GetPropertyValue<CUInt16>();
-			set => SetPropertyValue<CUInt16>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("voicesetComponent")] 
-		public CWeakHandle<scnVoicesetComponent> VoicesetComponent
-		{
-			get => GetPropertyValue<CWeakHandle<scnVoicesetComponent>>();
-			set => SetPropertyValue<CWeakHandle<scnVoicesetComponent>>(value);
-		}
-
-		public scnChatter()
-		{
-			Id = 65535;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CUInt16>();
+		set => SetPropertyValue<CUInt16>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("voicesetComponent")] 
+	public CWeakHandle<scnVoicesetComponent> VoicesetComponent
+	{
+		get => GetPropertyValue<CWeakHandle<scnVoicesetComponent>>();
+		set => SetPropertyValue<CWeakHandle<scnVoicesetComponent>>(value);
+	}
+
+	public scnChatter()
+	{
+		Id = 65535;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

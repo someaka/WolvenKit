@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitIsBodyPartHeadPrereq : GenericHitPrereq
 {
-	[REDMeta]
-	public partial class HitIsBodyPartHeadPrereq : GenericHitPrereq
+	public HitIsBodyPartHeadPrereq()
 	{
-		public HitIsBodyPartHeadPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

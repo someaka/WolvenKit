@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResetFrameDamage : redEvent
 {
-	[REDMeta]
-	public partial class ResetFrameDamage : redEvent
+	public ResetFrameDamage()
 	{
-		public ResetFrameDamage()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

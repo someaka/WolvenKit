@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameRemoveCooldownEvent : gameCooldownSystemEvent
 {
-	[REDMeta]
-	public partial class gameRemoveCooldownEvent : gameCooldownSystemEvent
+	public gameRemoveCooldownEvent()
 	{
-		public gameRemoveCooldownEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

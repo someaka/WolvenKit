@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForcedKnockdownDecisions : KnockdownDecisions
 {
-	[REDMeta]
-	public partial class ForcedKnockdownDecisions : KnockdownDecisions
+	public ForcedKnockdownDecisions()
 	{
-		public ForcedKnockdownDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

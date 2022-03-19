@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animLookAtPreset : IScriptable
 {
-	[REDMeta]
-	public partial class animLookAtPreset : IScriptable
+	public animLookAtPreset()
 	{
-		public animLookAtPreset()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

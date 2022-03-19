@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NPCIncapacitatedPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class NPCIncapacitatedPrereq : gameIScriptablePrereq
+	public NPCIncapacitatedPrereq()
 	{
-		public NPCIncapacitatedPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

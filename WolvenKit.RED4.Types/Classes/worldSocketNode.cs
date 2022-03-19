@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldSocketNode : worldNode
 {
-	[REDMeta]
-	public partial class worldSocketNode : worldNode
+	public worldSocketNode()
 	{
-		public worldSocketNode()
-		{
-			IsVisibleInGame = true;
+		IsVisibleInGame = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

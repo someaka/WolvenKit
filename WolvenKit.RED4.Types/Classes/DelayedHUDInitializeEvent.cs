@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DelayedHUDInitializeEvent : redEvent
 {
-	[REDMeta]
-	public partial class DelayedHUDInitializeEvent : redEvent
+	public DelayedHUDInitializeEvent()
 	{
-		public DelayedHUDInitializeEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamegraphCGraphResource : CResource
 {
-	[REDMeta]
-	public partial class gamegraphCGraphResource : CResource
+	public gamegraphCGraphResource()
 	{
-		public gamegraphCGraphResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

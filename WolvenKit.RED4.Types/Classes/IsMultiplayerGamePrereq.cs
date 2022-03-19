@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsMultiplayerGamePrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class IsMultiplayerGamePrereq : gameIScriptablePrereq
+	public IsMultiplayerGamePrereq()
 	{
-		public IsMultiplayerGamePrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

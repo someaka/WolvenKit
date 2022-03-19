@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePreviewItemData : gameUniqueItemData
 {
-	[REDMeta]
-	public partial class gamePreviewItemData : gameUniqueItemData
+	public gamePreviewItemData()
 	{
-		public gamePreviewItemData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEffectObjectProvider_Stimuli_EntitiesInRange : gameEffectObjectProvider
 {
-	[REDMeta]
-	public partial class gameEffectObjectProvider_Stimuli_EntitiesInRange : gameEffectObjectProvider
+	public gameEffectObjectProvider_Stimuli_EntitiesInRange()
 	{
-		public gameEffectObjectProvider_Stimuli_EntitiesInRange()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

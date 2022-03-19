@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficConnectivityOutLane : RedBaseClass
 {
-	[REDMeta]
-	public partial class worldTrafficConnectivityOutLane : RedBaseClass
+	public worldTrafficConnectivityOutLane()
 	{
-		public worldTrafficConnectivityOutLane()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,6 +1,5 @@
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public interface IRedInteger
 {
-    public interface IRedInteger
-    {
-    }
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkLayerProxy : ISerializable
 {
-	[REDMeta]
-	public partial class inkLayerProxy : ISerializable
+	public inkLayerProxy()
 	{
-		public inkLayerProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

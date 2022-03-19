@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePlayerTierComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gamePlayerTierComponent : entIComponent
+	public gamePlayerTierComponent()
 	{
-		public gamePlayerTierComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

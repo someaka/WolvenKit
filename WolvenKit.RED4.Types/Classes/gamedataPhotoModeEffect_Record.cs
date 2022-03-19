@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataPhotoModeEffect_Record : gamedataPhotoModeItem_Record
 {
-	[REDMeta]
-	public partial class gamedataPhotoModeEffect_Record : gamedataPhotoModeItem_Record
+	public gamedataPhotoModeEffect_Record()
 	{
-		public gamedataPhotoModeEffect_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIPathSecurityCoverSelection : AICoverSelectionParameters
 {
-	[REDMeta]
-	public partial class AIPathSecurityCoverSelection : AICoverSelectionParameters
+	public AIPathSecurityCoverSelection()
 	{
-		public AIPathSecurityCoverSelection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

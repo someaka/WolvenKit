@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questAICommandNodeFunctionProvider : IScriptable
 {
-	[REDMeta]
-	public partial class questAICommandNodeFunctionProvider : IScriptable
+	public questAICommandNodeFunctionProvider()
 	{
-		public questAICommandNodeFunctionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

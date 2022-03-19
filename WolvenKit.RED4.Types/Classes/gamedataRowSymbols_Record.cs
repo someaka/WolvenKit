@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataRowSymbols_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataRowSymbols_Record : gamedataTweakDBRecord
+	public gamedataRowSymbols_Record()
 	{
-		public gamedataRowSymbols_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

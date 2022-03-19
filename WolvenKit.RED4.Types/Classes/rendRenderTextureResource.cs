@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class rendRenderTextureResource : RedBaseClass
 {
-	[REDMeta]
-	public partial class rendRenderTextureResource : RedBaseClass
+	[Ordinal(0)] 
+	[RED("renderResourceBlobPC")] 
+	public CHandle<IRenderResourceBlob> RenderResourceBlobPC
 	{
-		[Ordinal(0)] 
-		[RED("renderResourceBlobPC")] 
-		public CHandle<IRenderResourceBlob> RenderResourceBlobPC
-		{
-			get => GetPropertyValue<CHandle<IRenderResourceBlob>>();
-			set => SetPropertyValue<CHandle<IRenderResourceBlob>>(value);
-		}
-
-		public rendRenderTextureResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<IRenderResourceBlob>>();
+		set => SetPropertyValue<CHandle<IRenderResourceBlob>>(value);
 	}
+
+	public rendRenderTextureResource()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

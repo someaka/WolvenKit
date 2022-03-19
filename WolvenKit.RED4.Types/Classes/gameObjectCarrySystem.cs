@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameObjectCarrySystem : gameIObjectCarrySystem
 {
-	[REDMeta]
-	public partial class gameObjectCarrySystem : gameIObjectCarrySystem
+	public gameObjectCarrySystem()
 	{
-		public gameObjectCarrySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

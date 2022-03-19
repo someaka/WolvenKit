@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TweakAIActionRecord : IScriptable
 {
-	[REDMeta]
-	public partial class TweakAIActionRecord : IScriptable
+	public TweakAIActionRecord()
 	{
-		public TweakAIActionRecord()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

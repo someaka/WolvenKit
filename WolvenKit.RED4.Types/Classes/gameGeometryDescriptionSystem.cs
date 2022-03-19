@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameGeometryDescriptionSystem : IScriptable
 {
-	[REDMeta]
-	public partial class gameGeometryDescriptionSystem : IScriptable
+	public gameGeometryDescriptionSystem()
 	{
-		public gameGeometryDescriptionSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

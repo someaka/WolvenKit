@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIClearRoleCommandParams : questScriptedAICommandParams
 {
-	[REDMeta]
-	public partial class AIClearRoleCommandParams : questScriptedAICommandParams
+	public AIClearRoleCommandParams()
 	{
-		public AIClearRoleCommandParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

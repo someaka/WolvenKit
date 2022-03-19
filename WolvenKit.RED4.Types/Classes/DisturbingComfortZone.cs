@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisturbingComfortZone : redEvent
 {
-	[REDMeta]
-	public partial class DisturbingComfortZone : redEvent
+	public DisturbingComfortZone()
 	{
-		public DisturbingComfortZone()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

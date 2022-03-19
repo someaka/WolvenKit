@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NoReactionPerformedRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class NoReactionPerformedRequest : gameScriptableSystemRequest
+	public NoReactionPerformedRequest()
 	{
-		public NoReactionPerformedRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

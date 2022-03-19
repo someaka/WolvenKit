@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PreventionCrimeWitnessRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class PreventionCrimeWitnessRequest : gameScriptableSystemRequest
+	[Ordinal(0)] 
+	[RED("criminalPosition")] 
+	public Vector4 CriminalPosition
 	{
-		[Ordinal(0)] 
-		[RED("criminalPosition")] 
-		public Vector4 CriminalPosition
-		{
-			get => GetPropertyValue<Vector4>();
-			set => SetPropertyValue<Vector4>(value);
-		}
-
-		public PreventionCrimeWitnessRequest()
-		{
-			CriminalPosition = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<Vector4>();
+		set => SetPropertyValue<Vector4>(value);
 	}
+
+	public PreventionCrimeWitnessRequest()
+	{
+		CriminalPosition = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

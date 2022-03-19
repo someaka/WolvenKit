@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkFlexWidget : inkCompoundWidget
 {
-	[REDMeta]
-	public partial class inkFlexWidget : inkCompoundWidget
+	public inkFlexWidget()
 	{
-		public inkFlexWidget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

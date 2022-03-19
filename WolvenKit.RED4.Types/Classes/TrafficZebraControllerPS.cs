@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TrafficZebraControllerPS : TrafficLightControllerPS
 {
-	[REDMeta]
-	public partial class TrafficZebraControllerPS : TrafficLightControllerPS
+	public TrafficZebraControllerPS()
 	{
-		public TrafficZebraControllerPS()
-		{
-			DeviceName = "Gameplay-Devices-DisplayNames-Zebra";
+		DeviceName = "Gameplay-Devices-DisplayNames-Zebra";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

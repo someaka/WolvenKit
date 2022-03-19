@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ObjectScanningDescription : IScriptable
 {
-	[REDMeta]
-	public partial class ObjectScanningDescription : IScriptable
+	public ObjectScanningDescription()
 	{
-		public ObjectScanningDescription()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

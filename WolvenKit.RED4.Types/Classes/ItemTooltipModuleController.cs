@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ItemTooltipModuleController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class ItemTooltipModuleController : inkWidgetLogicController
+	[Ordinal(1)] 
+	[RED("lineWidget")] 
+	public inkWidgetReference LineWidget
 	{
-		[Ordinal(1)] 
-		[RED("lineWidget")] 
-		public inkWidgetReference LineWidget
-		{
-			get => GetPropertyValue<inkWidgetReference>();
-			set => SetPropertyValue<inkWidgetReference>(value);
-		}
-
-		public ItemTooltipModuleController()
-		{
-			LineWidget = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<inkWidgetReference>();
+		set => SetPropertyValue<inkWidgetReference>(value);
 	}
+
+	public ItemTooltipModuleController()
+	{
+		LineWidget = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

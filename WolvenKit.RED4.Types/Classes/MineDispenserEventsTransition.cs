@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MineDispenserEventsTransition : MineDispenserTransition
 {
-	[REDMeta]
-	public partial class MineDispenserEventsTransition : MineDispenserTransition
+	public MineDispenserEventsTransition()
 	{
-		public MineDispenserEventsTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemBinkUpdate : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemBinkUpdate : worldIRuntimeSystem
+	public worldRuntimeSystemBinkUpdate()
 	{
-		public worldRuntimeSystemBinkUpdate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

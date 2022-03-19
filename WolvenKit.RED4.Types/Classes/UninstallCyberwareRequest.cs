@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UninstallCyberwareRequest : UnequipRequest
 {
-	[REDMeta]
-	public partial class UninstallCyberwareRequest : UnequipRequest
+	public UninstallCyberwareRequest()
 	{
-		public UninstallCyberwareRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

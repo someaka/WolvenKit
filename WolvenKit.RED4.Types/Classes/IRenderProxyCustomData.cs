@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IRenderProxyCustomData : RedBaseClass
 {
-	[REDMeta]
-	public partial class IRenderProxyCustomData : RedBaseClass
+	public IRenderProxyCustomData()
 	{
-		public IRenderProxyCustomData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CarriedObject : OldUpperBodyTransition
 {
-	[REDMeta]
-	public partial class CarriedObject : OldUpperBodyTransition
+	public CarriedObject()
 	{
-		public CarriedObject()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

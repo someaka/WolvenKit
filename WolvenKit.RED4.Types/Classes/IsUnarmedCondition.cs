@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsUnarmedCondition : workIScriptedCondition
 {
-	[REDMeta]
-	public partial class IsUnarmedCondition : workIScriptedCondition
+	public IsUnarmedCondition()
 	{
-		public IsUnarmedCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldStaticLightNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldStaticLightNodeInstance : worldINodeInstance
+	public worldStaticLightNodeInstance()
 	{
-		public worldStaticLightNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

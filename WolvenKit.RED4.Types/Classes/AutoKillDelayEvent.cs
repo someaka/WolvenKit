@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AutoKillDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class AutoKillDelayEvent : redEvent
+	public AutoKillDelayEvent()
 	{
-		public AutoKillDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

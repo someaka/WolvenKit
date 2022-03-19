@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkWidgetSlotController : inkIWidgetSlotController
 {
-	[REDMeta]
-	public partial class inkWidgetSlotController : inkIWidgetSlotController
+	public inkWidgetSlotController()
 	{
-		public inkWidgetSlotController()
-		{
-			Layout = new() { Padding = new(), Margin = new(), AnchorPoint = new(), SizeCoefficient = 1.000000F };
+		Layout = new() { Padding = new(), Margin = new(), AnchorPoint = new(), SizeCoefficient = 1.000000F };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

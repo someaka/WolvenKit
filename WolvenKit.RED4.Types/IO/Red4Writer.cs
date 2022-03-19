@@ -9,557 +9,505 @@ using WolvenKit.Core.Extensions;
 using WolvenKit.RED4.Types;
 using WolvenKit.RED4.Types.Exceptions;
 
-namespace WolvenKit.RED4.IO
+namespace WolvenKit.RED4.IO;
+
+public class Red4Writer : IDisposable
 {
-    public class Red4Writer : IDisposable
+    protected readonly BinaryWriter _writer;
+
+    public ICacheList<CName> StringCacheList = new CacheList<CName>(new CNameComparer());
+    public ICacheList<ImportEntry> ImportCacheList = new CacheList<ImportEntry>(new ImportComparer());
+    public ICacheList<RedBuffer> BufferCacheList = new CacheList<RedBuffer>(ReferenceEqualityComparer.Instance);
+
+    public int CurrentChunk { get; private set; }
+
+    public readonly Dictionary<long, string> CNameRef = new();
+    public readonly Dictionary<long, ImportEntry> ImportRef = new();
+    public readonly Dictionary<long, RedBuffer> BufferRef = new();
+
+    protected readonly Dictionary<int, StringInfo> _chunkStringList = new();
+    protected readonly Dictionary<int, ImportInfo> _chunkImportList = new();
+    protected readonly Dictionary<int, BufferInfo> _chunkBufferList = new();
+
+    protected readonly List<(int, Guid, int, int, int)> _targetList = new();
+    protected readonly Dictionary<int, List<Guid>> ChildChunks = new();
+
+    public readonly Dictionary<Guid, int> _chunkGuidToId = new();
+
+    private Encoding _encoding;
+    private bool _disposed;
+
+    public Red4Writer(Stream output) : this(output, Encoding.UTF8, false)
     {
-        protected readonly BinaryWriter _writer;
+    }
 
-        public ICacheList<CName> StringCacheList = new CacheList<CName>(new CNameComparer());
-        public ICacheList<ImportEntry> ImportCacheList = new CacheList<ImportEntry>(new ImportComparer());
-        public ICacheList<RedBuffer> BufferCacheList = new CacheList<RedBuffer>(ReferenceEqualityComparer.Instance);
+    public Red4Writer(Stream output, Encoding encoding) : this(output, encoding, false)
+    {
+    }
 
-        public int CurrentChunk { get; private set; }
+    public Red4Writer(Stream output, Encoding encoding, bool leaveOpen)
+    {
+        StringCacheList.Add("");
 
-        public readonly Dictionary<long, string> CNameRef = new();
-        public readonly Dictionary<long, ImportEntry> ImportRef = new();
-        public readonly Dictionary<long, RedBuffer> BufferRef = new();
+        _writer = new BinaryWriter(output, encoding, leaveOpen);
+        _encoding = encoding;
+    }
 
-        protected readonly Dictionary<int, StringInfo> _chunkStringList = new();
-        protected readonly Dictionary<int, ImportInfo> _chunkImportList = new();
-        protected readonly Dictionary<int, BufferInfo> _chunkBufferList = new();
+    public Stream BaseStream => _writer.BaseStream;
+    public BinaryWriter BaseWriter => _writer;
 
-        protected readonly List<(int, Guid, int, int, int)> _targetList = new();
-        protected readonly Dictionary<int, List<Guid>> ChildChunks = new();
+    public int Position => (int)_writer.BaseStream.Position;
 
-        public readonly Dictionary<Guid, int> _chunkGuidToId = new();
+    protected Dictionary<RedBaseClass, ChunkInfo> _chunkInfos = new();
 
-        private Encoding _encoding;
-        private bool _disposed;
+    #region Support
 
-        public Red4Writer(Stream output) : this(output, Encoding.UTF8, false)
+    public void WriteVLQ(int value) => _writer.WriteVLQInt32(value);
+
+    #endregion
+
+    public List<(int, Guid, int, int, int)> GetTargets(int chunkIndex)
+    {
+        return _targetList.Where(t => t.Item1 == chunkIndex).ToList();
+    }
+
+    public ushort GetStringIndex(string value, bool add = true)
+    {
+        var index = StringCacheList.IndexOf(value);
+
+        if (add && index == ushort.MaxValue)
         {
+            index = StringCacheList.Add(value);
         }
 
-        public Red4Writer(Stream output, Encoding encoding) : this(output, encoding, false)
+        if (index == ushort.MaxValue)
         {
+            throw new Exception();
         }
 
-        public Red4Writer(Stream output, Encoding encoding, bool leaveOpen)
-        {
-            StringCacheList.Add("");
+        return index;
+    }
 
-            _writer = new BinaryWriter(output, encoding, leaveOpen);
-            _encoding = encoding;
+    public ushort GetImportIndex(ImportEntry value, bool add = true)
+    {
+        var index = ImportCacheList.IndexOf(value);
+        if (add && index == ushort.MaxValue)
+        {
+            index = ImportCacheList.Add(value);
         }
 
-        public Stream BaseStream => _writer.BaseStream;
-        public BinaryWriter BaseWriter => _writer;
-
-        public int Position => (int)_writer.BaseStream.Position;
-
-        protected Dictionary<RedBaseClass, ChunkInfo> _chunkInfos = new();
-
-        #region Support
-
-        public void WriteVLQ(int value) => _writer.WriteVLQInt32(value);
-
-        #endregion
-
-        public List<(int, Guid, int, int, int)> GetTargets(int chunkIndex)
+        if (index == ushort.MaxValue)
         {
-            return _targetList.Where(t => t.Item1 == chunkIndex).ToList();
+            throw new Exception();
         }
 
-        public ushort GetStringIndex(string value, bool add = true)
+        return (ushort)(index + 1);
+    }
+
+    public ushort GetRedBufferIndex(RedBuffer value, bool add = true)
+    {
+        var index = BufferCacheList.IndexOf(value);
+        if (add && index == ushort.MaxValue)
         {
-            var index = StringCacheList.IndexOf(value);
-
-            if (add && index == ushort.MaxValue)
-            {
-                index = StringCacheList.Add(value);
-            }
-
-            if (index == ushort.MaxValue)
-            {
-                throw new Exception();
-            }
-
-            return index;
+            index = BufferCacheList.Add(value);
         }
 
-        public ushort GetImportIndex(ImportEntry value, bool add = true)
+        if (index == ushort.MaxValue)
         {
-            var index = ImportCacheList.IndexOf(value);
-            if (add && index == ushort.MaxValue)
-            {
-                index = ImportCacheList.Add(value);
-            }
-
-            if (index == ushort.MaxValue)
-            {
-                throw new Exception();
-            }
-
-            return (ushort)(index + 1);
+            throw new Exception();
         }
 
-        public ushort GetRedBufferIndex(RedBuffer value, bool add = true)
+        return (ushort)(index + 1);
+    }
+
+    public void StartChunk(RedBaseClass chunk)
+    {
+        CurrentChunk = _chunkInfos[chunk].Id;
+        ChildChunks[_chunkInfos[chunk].Id] = new();
+
+        if (_chunkInfos[chunk].Guid != Guid.Empty)
         {
-            var index = BufferCacheList.IndexOf(value);
-            if (add && index == ushort.MaxValue)
-            {
-                index = BufferCacheList.Add(value);
-            }
-
-            if (index == ushort.MaxValue)
-            {
-                throw new Exception();
-            }
-
-            return (ushort)(index + 1);
+            _chunkGuidToId.Add(_chunkInfos[chunk].Guid, _chunkInfos[chunk].Id);
         }
 
-        public void StartChunk(RedBaseClass chunk)
+        if (_chunkInfos[chunk].Id == 0)
         {
-            CurrentChunk = _chunkInfos[chunk].Id;
-            ChildChunks[_chunkInfos[chunk].Id] = new();
+            return;
+        }
 
-            if (_chunkInfos[chunk].Guid != Guid.Empty)
-            {
-                _chunkGuidToId.Add(_chunkInfos[chunk].Guid, _chunkInfos[chunk].Id);
-            }
+        _chunkStringList.Add(_chunkInfos[chunk].Id - 1, new() {List = StringCacheList.ToList() });
+        StringCacheList.Clear();
 
-            if (_chunkInfos[chunk].Id == 0)
+        _chunkImportList.Add(_chunkInfos[chunk].Id - 1, new (){List = ImportCacheList.ToList()});
+        ImportCacheList.Clear();
+
+        _chunkBufferList.Add(_chunkInfos[chunk].Id - 1, new() { List = BufferCacheList.ToList() });
+        BufferCacheList.Clear();
+    }
+
+    public void GenerateStringDictionary()
+    {
+        _chunkStringList.Add(CurrentChunk, new() { List = StringCacheList.ToList() });
+        StringCacheList.Clear();
+
+        _chunkImportList.Add(CurrentChunk, new (){List = ImportCacheList.ToList()});
+        ImportCacheList.Clear();
+
+        _chunkBufferList.Add(CurrentChunk, new() { List = BufferCacheList.ToList() });
+        BufferCacheList.Clear();
+
+        var targetList = new List<(int, Guid, int, int, int)>(_targetList);
+
+        var length = _chunkStringList.Count;
+        for (int i = 0; i < length; i++)
+        {
+            GenerateFor(i);
+        }
+
+        void GenerateFor(int chunk)
+        {
+            if (!_chunkStringList.ContainsKey(chunk))
             {
                 return;
             }
 
-            _chunkStringList.Add(_chunkInfos[chunk].Id - 1, new() {List = StringCacheList.ToList() });
-            StringCacheList.Clear();
+            var stringList = _chunkStringList[chunk];
+            var importList = _chunkImportList[chunk];
+            var bufferList = _chunkBufferList[chunk];
 
-            _chunkImportList.Add(_chunkInfos[chunk].Id - 1, new (){List = ImportCacheList.ToList()});
-            ImportCacheList.Clear();
-
-            _chunkBufferList.Add(_chunkInfos[chunk].Id - 1, new() { List = BufferCacheList.ToList() });
-            BufferCacheList.Clear();
-        }
-
-        public void GenerateStringDictionary()
-        {
-            _chunkStringList.Add(CurrentChunk, new() { List = StringCacheList.ToList() });
-            StringCacheList.Clear();
-
-            _chunkImportList.Add(CurrentChunk, new (){List = ImportCacheList.ToList()});
-            ImportCacheList.Clear();
-
-            _chunkBufferList.Add(CurrentChunk, new() { List = BufferCacheList.ToList() });
-            BufferCacheList.Clear();
-
-            var targetList = new List<(int, Guid, int, int, int)>(_targetList);
-
-            var length = _chunkStringList.Count;
-            for (int i = 0; i < length; i++)
+            var list = targetList.Where(x => x.Item1 == chunk);
+            foreach (var tuple in list)
             {
-                GenerateFor(i);
-            }
+                StringCacheList.AddRange(stringList.List.GetRange(stringList.LastIndex, tuple.Item3 - stringList.LastIndex));
+                stringList.LastIndex = tuple.Item3;
 
-            void GenerateFor(int chunk)
-            {
-                if (!_chunkStringList.ContainsKey(chunk))
+                ImportCacheList.AddRange(importList.List.GetRange(importList.LastIndex, tuple.Item4 - importList.LastIndex));
+                importList.LastIndex = tuple.Item4;
+
+                BufferCacheList.AddRange(bufferList.List.GetRange(bufferList.LastIndex, tuple.Item5 - bufferList.LastIndex));
+                bufferList.LastIndex = tuple.Item5;
+
+                if (_chunkGuidToId[tuple.Item2] > chunk)
                 {
-                    return;
+                    GenerateFor(_chunkGuidToId[tuple.Item2]);
                 }
-
-                var stringList = _chunkStringList[chunk];
-                var importList = _chunkImportList[chunk];
-                var bufferList = _chunkBufferList[chunk];
-
-                var list = targetList.Where(x => x.Item1 == chunk);
-                foreach (var tuple in list)
-                {
-                    StringCacheList.AddRange(stringList.List.GetRange(stringList.LastIndex, tuple.Item3 - stringList.LastIndex));
-                    stringList.LastIndex = tuple.Item3;
-
-                    ImportCacheList.AddRange(importList.List.GetRange(importList.LastIndex, tuple.Item4 - importList.LastIndex));
-                    importList.LastIndex = tuple.Item4;
-
-                    BufferCacheList.AddRange(bufferList.List.GetRange(bufferList.LastIndex, tuple.Item5 - bufferList.LastIndex));
-                    bufferList.LastIndex = tuple.Item5;
-
-                    if (_chunkGuidToId[tuple.Item2] > chunk)
-                    {
-                        GenerateFor(_chunkGuidToId[tuple.Item2]);
-                    }
-                }
-                StringCacheList.AddRange(stringList.List.GetRange(stringList.LastIndex, stringList.List.Count - stringList.LastIndex));
-                ImportCacheList.AddRange(importList.List.GetRange(importList.LastIndex, importList.List.Count - importList.LastIndex));
-                BufferCacheList.AddRange(bufferList.List.GetRange(bufferList.LastIndex, bufferList.List.Count - bufferList.LastIndex));
-
-                _chunkStringList.Remove(chunk);
-                _chunkImportList.Remove(chunk);
-                _chunkBufferList.Remove(chunk);
             }
-        }
+            StringCacheList.AddRange(stringList.List.GetRange(stringList.LastIndex, stringList.List.Count - stringList.LastIndex));
+            ImportCacheList.AddRange(importList.List.GetRange(importList.LastIndex, importList.List.Count - importList.LastIndex));
+            BufferCacheList.AddRange(bufferList.List.GetRange(bufferList.LastIndex, bufferList.List.Count - bufferList.LastIndex));
 
-        protected class StringInfo
+            _chunkStringList.Remove(chunk);
+            _chunkImportList.Remove(chunk);
+            _chunkBufferList.Remove(chunk);
+        }
+    }
+
+    protected class StringInfo
+    {
+        public List<CName> List { get; set; } = new();
+        public int LastIndex { get; set; }
+    }
+
+    protected class ImportInfo
+    {
+        public List<ImportEntry> List { get; set; } = new();
+        public int LastIndex { get; set; }
+    }
+
+    protected class BufferInfo
+    {
+        public List<RedBuffer> List { get; set; } = new();
+        public int LastIndex { get; set; }
+    }
+
+    #region Fundamentals
+
+    public virtual void Write(CBool val) => _writer.Write((byte)val);
+    public virtual void Write(CDouble val) => _writer.Write(val);
+    public virtual void Write(CFloat val) => _writer.Write(val);
+    public virtual void Write(CInt8 val) => _writer.Write(val);
+    public virtual void Write(CUInt8 val) => _writer.Write(val);
+    public virtual void Write(CInt16 val) => _writer.Write(val);
+    public virtual void Write(CUInt16 val) => _writer.Write(val);
+    public virtual void Write(CInt32 val) => _writer.Write(val);
+    public virtual void Write(CUInt32 val) => _writer.Write(val);
+    public virtual void Write(CInt64 val) => _writer.Write(val);
+    public virtual void Write(CUInt64 val) => _writer.Write(val);
+
+    #endregion
+
+    #region Simple
+
+    public virtual void Write(CDateTime val) => _writer.Write(val);
+    public virtual void Write(CGuid val) => _writer.Write(val);
+
+    public virtual void Write(CName val)
+    {
+        if ((string)val! == null)
         {
-            public List<CName> List { get; set; } = new();
-            public int LastIndex { get; set; }
+            throw new ArgumentNullException(nameof(val));
         }
 
-        protected class ImportInfo
+        CNameRef.Add(_writer.BaseStream.Position, val!);
+        _writer.Write(GetStringIndex(val!));
+    }
+
+    public virtual void Write(CRUID val) => _writer.Write(val);
+    public virtual void Write(CString val) => _writer.WriteLengthPrefixedString(val);
+
+    public virtual void Write(CVariant val)
+    {
+        if (val.Value == null)
         {
-            public List<ImportEntry> List { get; set; } = new();
-            public int LastIndex { get; set; }
+            throw new ArgumentNullException(nameof(val));
         }
 
-        protected class BufferInfo
+        var typeName = RedReflection.GetRedTypeFromCSType(val.Value.GetType(), Flags.Empty);
+
+        CNameRef.Add(_writer.BaseStream.Position, typeName);
+        _writer.Write(GetStringIndex(typeName));
+
+        var pos = _writer.BaseStream.Position;
+        _writer.Write(0);
+        Write(val.Value);
+        var bytesWritten = (uint)(_writer.BaseStream.Position - pos);
+
+        _writer.BaseStream.Position -= bytesWritten;
+        _writer.Write(bytesWritten);
+        _writer.BaseStream.Position += bytesWritten - 4;
+    }
+
+    public List<RedBuffer> BufferStack = new();
+
+    public virtual void Write(DataBuffer val)
+    {
+        if (val.Buffer.IsEmpty)
         {
-            public List<RedBuffer> List { get; set; } = new();
-            public int LastIndex { get; set; }
+            _writer.Write(0x80000000);
         }
-
-        #region Fundamentals
-
-        public virtual void Write(CBool val) => _writer.Write((byte)val);
-        public virtual void Write(CDouble val) => _writer.Write(val);
-        public virtual void Write(CFloat val) => _writer.Write(val);
-        public virtual void Write(CInt8 val) => _writer.Write(val);
-        public virtual void Write(CUInt8 val) => _writer.Write(val);
-        public virtual void Write(CInt16 val) => _writer.Write(val);
-        public virtual void Write(CUInt16 val) => _writer.Write(val);
-        public virtual void Write(CInt32 val) => _writer.Write(val);
-        public virtual void Write(CUInt32 val) => _writer.Write(val);
-        public virtual void Write(CInt64 val) => _writer.Write(val);
-        public virtual void Write(CUInt64 val) => _writer.Write(val);
-
-        #endregion
-
-        #region Simple
-
-        public virtual void Write(CDateTime val) => _writer.Write(val);
-        public virtual void Write(CGuid val) => _writer.Write(val);
-
-        public virtual void Write(CName val)
-        {
-            if ((string)val! == null)
-            {
-                throw new ArgumentNullException(nameof(val));
-            }
-
-            CNameRef.Add(_writer.BaseStream.Position, val!);
-            _writer.Write(GetStringIndex(val!));
-        }
-
-        public virtual void Write(CRUID val) => _writer.Write(val);
-        public virtual void Write(CString val) => _writer.WriteLengthPrefixedString(val);
-
-        public virtual void Write(CVariant val)
-        {
-            if (val.Value == null)
-            {
-                throw new ArgumentNullException(nameof(val));
-            }
-
-            var typeName = RedReflection.GetRedTypeFromCSType(val.Value.GetType(), Flags.Empty);
-
-            CNameRef.Add(_writer.BaseStream.Position, typeName);
-            _writer.Write(GetStringIndex(typeName));
-
-            var pos = _writer.BaseStream.Position;
-            _writer.Write(0);
-            Write(val.Value);
-            var bytesWritten = (uint)(_writer.BaseStream.Position - pos);
-
-            _writer.BaseStream.Position -= bytesWritten;
-            _writer.Write(bytesWritten);
-            _writer.BaseStream.Position += bytesWritten - 4;
-        }
-
-        public List<RedBuffer> BufferStack = new();
-
-        public virtual void Write(DataBuffer val)
-        {
-            if (val.Buffer.IsEmpty)
-            {
-                _writer.Write(0x80000000);
-            }
-            else
-            {
-                BufferRef.Add(_writer.BaseStream.Position, val.Buffer);
-                _writer.Write((GetRedBufferIndex(val.Buffer) | 0x80000000) + 1);
-            }
-        }
-
-        public virtual void Write(EditorObjectID val) => ThrowNotImplemented();
-
-        public virtual void Write(LocalizationString val)
-        {
-            _writer.Write(val.Unk1);
-            _writer.WriteLengthPrefixedString(val.Value);
-        }
-
-        public virtual void Write(MessageResourcePath val) => ThrowNotImplemented();
-        public virtual void Write(NodeRef val) => _writer.WriteLengthPrefixedString(val);
-        public virtual void Write(SerializationDeferredDataBuffer val)
+        else
         {
             BufferRef.Add(_writer.BaseStream.Position, val.Buffer);
-            _writer.Write((ushort)(GetRedBufferIndex(val.Buffer) + 1));
+            _writer.Write((GetRedBufferIndex(val.Buffer) | 0x80000000) + 1);
         }
+    }
 
-        public virtual void Write(SharedDataBuffer val) => _writer.Write(val.Buffer.GetBytes());
-        public virtual void Write(TweakDBID val) => _writer.Write((ulong)val);
-        public virtual void Write(gamedataLocKeyWrapper val) => _writer.Write((ulong)val);
+    public virtual void Write(EditorObjectID val) => ThrowNotImplemented();
 
-        #endregion Simple
+    public virtual void Write(LocalizationString val)
+    {
+        _writer.Write(val.Unk1);
+        _writer.WriteLengthPrefixedString(val.Value);
+    }
 
-        // TODO: Check for generic arguments
-        private MethodInfo? GetMethod(string name, int genericParameterCount, Type[] types)
+    public virtual void Write(MessageResourcePath val) => ThrowNotImplemented();
+    public virtual void Write(NodeRef val) => _writer.WriteLengthPrefixedString(val);
+    public virtual void Write(SerializationDeferredDataBuffer val)
+    {
+        BufferRef.Add(_writer.BaseStream.Position, val.Buffer);
+        _writer.Write((ushort)(GetRedBufferIndex(val.Buffer) + 1));
+    }
+
+    public virtual void Write(SharedDataBuffer val) => _writer.Write(val.Buffer.GetBytes());
+    public virtual void Write(TweakDBID val) => _writer.Write((ulong)val);
+    public virtual void Write(gamedataLocKeyWrapper val) => _writer.Write((ulong)val);
+
+    #endregion Simple
+
+    // TODO: Check for generic arguments
+    private MethodInfo? GetMethod(string name, int genericParameterCount, Type[] types)
+    {
+        var methods = typeof(Red4Writer).GetMethods();
+        foreach (var methodInfo in methods)
         {
-            var methods = typeof(Red4Writer).GetMethods();
-            foreach (var methodInfo in methods)
+            if (methodInfo.Name != name)
             {
-                if (methodInfo.Name != name)
-                {
-                    continue;
-                }
+                continue;
+            }
 
-                if (genericParameterCount == 0 && methodInfo.IsGenericMethod)
-                {
-                    continue;
-                }
+            if (genericParameterCount == 0 && methodInfo.IsGenericMethod)
+            {
+                continue;
+            }
 
-                if (genericParameterCount > 0 && !methodInfo.IsGenericMethod)
-                {
-                    continue;
-                }
+            if (genericParameterCount > 0 && !methodInfo.IsGenericMethod)
+            {
+                continue;
+            }
 
-                var methodParameters = methodInfo.GetParameters();
-                if (methodParameters.Length != types.Length)
-                {
-                    continue;
-                }
+            var methodParameters = methodInfo.GetParameters();
+            if (methodParameters.Length != types.Length)
+            {
+                continue;
+            }
 
-                var match = true;
-                for (int i = 0; i < methodParameters.Length; i++)
-                {
-                    var methodParameterType = methodParameters[i].ParameterType;
-                    var parameterType = types[i];
+            var match = true;
+            for (int i = 0; i < methodParameters.Length; i++)
+            {
+                var methodParameterType = methodParameters[i].ParameterType;
+                var parameterType = types[i];
 
-                    if (methodParameterType.IsGenericType)
+                if (methodParameterType.IsGenericType)
+                {
+                    if (!parameterType.IsGenericType)
                     {
-                        if (!parameterType.IsGenericType)
-                        {
-                            match = false;
-                            break;
-                        }
-
-                        if (methodParameterType.GetGenericTypeDefinition() != parameterType.GetGenericTypeDefinition())
-                        {
-                            match = false;
-                            break;
-                        }
+                        match = false;
+                        break;
                     }
-                    else
+
+                    if (methodParameterType.GetGenericTypeDefinition() != parameterType.GetGenericTypeDefinition())
                     {
-                        if (parameterType.IsGenericType)
-                        {
-                            match = false;
-                            break;
-                        }
-
-                        if (methodParameterType != parameterType)
-                        {
-                            match = false;
-                            break;
-                        }
+                        match = false;
+                        break;
                     }
                 }
-
-                if (match)
+                else
                 {
-                    return methodInfo;
+                    if (parameterType.IsGenericType)
+                    {
+                        match = false;
+                        break;
+                    }
+
+                    if (methodParameterType != parameterType)
+                    {
+                        match = false;
+                        break;
+                    }
                 }
             }
 
-            return null;
-        }
-
-        #region General
-
-        public virtual void Write(IRedArray instance)
-        {
-            var genericType = instance.GetType().GetGenericTypeDefinition();
-            var innerType = instance.GetType().GetGenericArguments()[0];
-
-            var method = GetMethod("Write", 1, new[] { genericType });
-            if (method == null)
+            if (match)
             {
-                throw new MissingMethodException("Method Red4Writer.Write<T>(CArray<T>) could not be found");
-            }
-            var generic = method.MakeGenericMethod(innerType);
-
-            generic.Invoke(this, new object[] { instance });
-        }
-
-        public virtual void Write<T>(CArray<T> instance) where T : IRedType
-        {
-            _writer.Write((uint)instance.Count);
-            foreach (var element in instance)
-            {
-                Write(element);
+                return methodInfo;
             }
         }
 
-        public virtual void Write(IRedArrayFixedSize instance)
+        return null;
+    }
+
+    #region General
+
+    public virtual void Write(IRedArray instance)
+    {
+        var genericType = instance.GetType().GetGenericTypeDefinition();
+        var innerType = instance.GetType().GetGenericArguments()[0];
+
+        var method = GetMethod("Write", 1, new[] { genericType });
+        if (method == null)
         {
-            var genericType = instance.GetType().GetGenericTypeDefinition();
-            var innerType = instance.GetType().GetGenericArguments()[0];
-
-            var method = GetMethod("Write", 1, new[] { genericType });
-            if (method == null)
-            {
-                throw new MissingMethodException("Method Red4Writer.Write<T>(CArrayFixedSize<T>) could not be found");
-            }
-            var generic = method.MakeGenericMethod(innerType);
-
-            generic.Invoke(this, new object[] { instance });
+            throw new MissingMethodException("Method Red4Writer.Write<T>(CArray<T>) could not be found");
         }
+        var generic = method.MakeGenericMethod(innerType);
 
-        public virtual void Write<T>(CArrayFixedSize<T?> instance) where T : IRedType
+        generic.Invoke(this, new object[] { instance });
+    }
+
+    public virtual void Write<T>(CArray<T> instance) where T : IRedType
+    {
+        _writer.Write((uint)instance.Count);
+        foreach (var element in instance)
         {
-            var count = instance.Count(e => e != null);
-
-            _writer.Write((uint)count);
-            foreach (var element in instance)
-            {
-                if (element == null)
-                {
-                    continue;
-                }
-
-                Write(element);
-            }
+            Write(element);
         }
+    }
 
-        public virtual void Write(IRedStatic instance)
+    public virtual void Write(IRedArrayFixedSize instance)
+    {
+        var genericType = instance.GetType().GetGenericTypeDefinition();
+        var innerType = instance.GetType().GetGenericArguments()[0];
+
+        var method = GetMethod("Write", 1, new[] { genericType });
+        if (method == null)
         {
-            var genericType = instance.GetType().GetGenericTypeDefinition();
-            var innerType = instance.GetType().GetGenericArguments()[0];
-
-            var method = GetMethod("Write", 1, new[] { genericType });
-            if (method == null)
-            {
-                throw new MissingMethodException("Method Red4Writer.Write<T>(CStatic<T>) could not be found");
-            }
-            var generic = method.MakeGenericMethod(innerType);
-
-            generic.Invoke(this, new object[] { instance });
+            throw new MissingMethodException("Method Red4Writer.Write<T>(CArrayFixedSize<T>) could not be found");
         }
+        var generic = method.MakeGenericMethod(innerType);
 
-        public virtual void Write<T>(CStatic<T> instance) where T : IRedType
+        generic.Invoke(this, new object[] { instance });
+    }
+
+    public virtual void Write<T>(CArrayFixedSize<T?> instance) where T : IRedType
+    {
+        var count = instance.Count(e => e != null);
+
+        _writer.Write((uint)count);
+        foreach (var element in instance)
         {
-            var count = instance.Count(e => e != null);
-
-            _writer.Write((uint)count);
-            foreach (var element in instance)
+            if (element == null)
             {
-                if (element == null)
-                {
-                    continue;
-                }
-
-                Write(element);
+                continue;
             }
+
+            Write(element);
         }
+    }
 
-        public virtual void Write(IRedBitField instance)
+    public virtual void Write(IRedStatic instance)
+    {
+        var genericType = instance.GetType().GetGenericTypeDefinition();
+        var innerType = instance.GetType().GetGenericArguments()[0];
+
+        var method = GetMethod("Write", 1, new[] { genericType });
+        if (method == null)
         {
-            var enumString = instance.ToBitFieldString();
-            if (enumString == "0")
+            throw new MissingMethodException("Method Red4Writer.Write<T>(CStatic<T>) could not be found");
+        }
+        var generic = method.MakeGenericMethod(innerType);
+
+        generic.Invoke(this, new object[] { instance });
+    }
+
+    public virtual void Write<T>(CStatic<T> instance) where T : IRedType
+    {
+        var count = instance.Count(e => e != null);
+
+        _writer.Write((uint)count);
+        foreach (var element in instance)
+        {
+            if (element == null)
             {
-                _writer.Write((ushort)0);
-                return;
+                continue;
             }
 
-            var flags = enumString.Split(',');
-            for (int i = 0; i < flags.Length; i++)
-            {
-                var tFlag = flags[i].Trim();
-                CNameRef.Add(_writer.BaseStream.Position, tFlag);
-                _writer.Write(GetStringIndex(tFlag));
-            }
+            Write(element);
+        }
+    }
+
+    public virtual void Write(IRedBitField instance)
+    {
+        var enumString = instance.ToString();
+        if (enumString == "0")
+        {
             _writer.Write((ushort)0);
+            return;
         }
 
-        public virtual void Write(IRedEnum instance)
+        var flags = enumString.Split(',');
+        for (int i = 0; i < flags.Length; i++)
         {
-            CNameRef.Add(_writer.BaseStream.Position, instance.ToEnumString());
-            _writer.Write(GetStringIndex(instance.ToEnumString()));
+            var tFlag = flags[i].Trim();
+            CNameRef.Add(_writer.BaseStream.Position, tFlag);
+            _writer.Write(GetStringIndex(tFlag));
         }
+        _writer.Write((ushort)0);
+    }
 
-        public List<RedBaseClass> ChunkQueue = new();
-        public Dictionary<Guid,List<(long, int, Type)>> ChunkReferences = new();
+    public virtual void Write(IRedEnum instance)
+    {
+        CNameRef.Add(_writer.BaseStream.Position, instance.ToString());
+        _writer.Write(GetStringIndex(instance.ToString()));
+    }
 
-        protected void InternalHandleWriter(RedBaseClass? classRef, int pointerOffset) => InternalHandleWriter(classRef, pointerOffset, typeof(int));
+    public List<RedBaseClass> ChunkQueue = new();
+    public Dictionary<Guid,List<(long, int, Type)>> ChunkReferences = new();
 
-        protected void InternalHandleWriter(RedBaseClass? classRef, int pointerOffset, Type indexType)
+    protected void InternalHandleWriter(RedBaseClass? classRef, int pointerOffset) => InternalHandleWriter(classRef, pointerOffset, typeof(int));
+
+    protected void InternalHandleWriter(RedBaseClass? classRef, int pointerOffset, Type indexType)
+    {
+        if (classRef == null)
         {
-            if (classRef == null)
-            {
-                if (indexType == typeof(int))
-                {
-                    _writer.Write(0);
-                }
-                else if (indexType == typeof(short))
-                {
-                    _writer.Write((short)0);
-                }
-                else
-                {
-                    throw new NotSupportedException(nameof(InternalHandleWriter));
-                }
-                return;
-            }
-
-            if (!_chunkInfos.ContainsKey(classRef))
-            {
-                _chunkInfos.Add(classRef, new ChunkInfo());
-            }
-
-            var chunkIndex = _chunkInfos[classRef].Id;
-            if (chunkIndex != -1)
-            {
-                if (indexType == typeof(int))
-                {
-                    _writer.Write(chunkIndex + pointerOffset);
-                }
-                else if (indexType == typeof(short))
-                {
-                    _writer.Write((short)(chunkIndex + pointerOffset));
-                }
-                else
-                {
-                    throw new NotSupportedException(nameof(InternalHandleWriter));
-                }
-                
-                return;
-            }
-
-            if (_chunkInfos[classRef].Guid == Guid.Empty)
-            {
-                _chunkInfos[classRef].Guid = Guid.NewGuid();
-
-                ChunkReferences.Add(_chunkInfos[classRef].Guid, new List<(long, int, Type)>());
-            }
-
-            ChunkQueue.Add(classRef);
-
-            _targetList.Add((CurrentChunk, _chunkInfos[classRef].Guid, StringCacheList.Count, ImportCacheList.Count, BufferCacheList.Count));
-            ChildChunks[CurrentChunk].Add(_chunkInfos[classRef].Guid);
-
-            ChunkReferences[_chunkInfos[classRef].Guid].Add((BaseStream.Position, pointerOffset, indexType));
             if (indexType == typeof(int))
             {
                 _writer.Write(0);
@@ -572,396 +520,447 @@ namespace WolvenKit.RED4.IO
             {
                 throw new NotSupportedException(nameof(InternalHandleWriter));
             }
+            return;
         }
 
-        public virtual void Write(IRedHandle instance) => InternalHandleWriter(instance.GetValue(), 1);
-
-        public virtual void Write(IRedWeakHandle instance) => InternalHandleWriter(instance.GetValue(), 1);
-
-        // TODO
-        public virtual void Write(IRedLegacySingleChannelCurve instance)
+        if (!_chunkInfos.ContainsKey(classRef))
         {
-            _writer.Write((uint)instance.Count);
-            foreach (var curvePoint in instance)
-            {
-                var value = curvePoint.GetValue();
-                if (value is RedBaseClass cls)
-                {
-                    WriteFixedClass(cls);
-                }
-                else
-                {
-                    Write(curvePoint.GetValue());
-                }
-
-                _writer.Write(curvePoint.GetPoint());
-            }
-            _writer.Write((byte)instance.InterpolationType);
-            _writer.Write((byte)instance.LinkType);
+            _chunkInfos.Add(classRef, new ChunkInfo());
         }
 
-        public virtual void Write(IRedMultiChannelCurve instance)
+        var chunkIndex = _chunkInfos[classRef].Id;
+        if (chunkIndex != -1)
         {
-            var genericType = instance.GetType().GetGenericTypeDefinition();
-            var innerType = instance.GetType().GetGenericArguments()[0];
-
-            var method = GetMethod("Write", 1, new[] { genericType });
-            if (method == null)
+            if (indexType == typeof(int))
             {
-                throw new MissingMethodException("Method Red4Writer.Write<T>(MultiChannelCurve<T>) could not be found");
+                _writer.Write(chunkIndex + pointerOffset);
             }
-            var generic = method.MakeGenericMethod(innerType);
-
-            generic.Invoke(this, new object[] { instance });
+            else if (indexType == typeof(short))
+            {
+                _writer.Write((short)(chunkIndex + pointerOffset));
+            }
+            else
+            {
+                throw new NotSupportedException(nameof(InternalHandleWriter));
+            }
+                
+            return;
         }
 
-        public virtual void Write<T>(MultiChannelCurve<T> instance) where T : IRedType
+        if (_chunkInfos[classRef].Guid == Guid.Empty)
         {
-            _writer.Write(instance.NumChannels);
-            _writer.Write((byte)instance.InterpolationType);
-            _writer.Write((byte)instance.LinkType);
-            _writer.Write(instance.Alignment);
+            _chunkInfos[classRef].Guid = Guid.NewGuid();
 
-            _writer.Write((uint)instance.Data.Length);
-            _writer.Write(instance.Data);
+            ChunkReferences.Add(_chunkInfos[classRef].Guid, new List<(long, int, Type)>());
         }
 
-        public virtual void Write(IRedResourceReference instance)
+        ChunkQueue.Add(classRef);
+
+        _targetList.Add((CurrentChunk, _chunkInfos[classRef].Guid, StringCacheList.Count, ImportCacheList.Count, BufferCacheList.Count));
+        ChildChunks[CurrentChunk].Add(_chunkInfos[classRef].Guid);
+
+        ChunkReferences[_chunkInfos[classRef].Guid].Add((BaseStream.Position, pointerOffset, indexType));
+        if (indexType == typeof(int))
         {
-            if (instance.DepotPath == "")
-            {
-                _writer.Write((ushort)0);
-                return;
-            }
-
-            var val = new ImportEntry("", instance.DepotPath, (ushort)instance.Flags);
-
-            ImportRef.Add(_writer.BaseStream.Position, val);
-            _writer.Write(GetImportIndex(val));
+            _writer.Write(0);
         }
-
-        public virtual void Write(IRedResourceAsyncReference instance)
+        else if (indexType == typeof(short))
         {
-            if (instance.DepotPath == "")
-            {
-                _writer.Write((ushort)0);
-                return;
-            }
-
-            var val = new ImportEntry("", instance.DepotPath, (ushort)instance.Flags);
-
-            ImportRef.Add(_writer.BaseStream.Position, val);
-            _writer.Write(GetImportIndex(val));
+            _writer.Write((short)0);
         }
-
-        #endregion General
-
-        public virtual void Write(RedBaseClass instance) => ThrowNotImplemented();
-
-        public virtual void WriteFixedClass(RedBaseClass instance)
+        else
         {
-            var typeInfo = RedReflection.GetTypeInfo(instance.GetType());
-            foreach (var propertyInfo in typeInfo.GetWritableProperties())
-            {
-                if (propertyInfo.RedName == null)
-                {
-                    throw new RedNameMissingException($"{instance.GetType().Name}.{propertyInfo.Name}");
-                }
-
-                var value = instance.GetProperty(propertyInfo.RedName);
-                // TODO: null values?
-                Write(value!);
-            }
+            throw new NotSupportedException(nameof(InternalHandleWriter));
         }
+    }
 
-        #region Helper
+    public virtual void Write(IRedHandle instance) => InternalHandleWriter(instance.GetValue(), 1);
 
-        protected IRedPrimitive ThrowNotImplemented([CallerMemberName] string callerMemberName = "")
+    public virtual void Write(IRedWeakHandle instance) => InternalHandleWriter(instance.GetValue(), 1);
+
+    // TODO
+    public virtual void Write(IRedLegacySingleChannelCurve instance)
+    {
+        _writer.Write((uint)instance.Count);
+        foreach (var curvePoint in instance)
         {
-            throw new NotImplementedException($"{nameof(Red4Writer)}.{callerMemberName}");
-        }
+            var value = curvePoint.GetValue();
+            if (value is RedBaseClass cls)
+            {
+                WriteFixedClass(cls);
+            }
+            else
+            {
+                Write(curvePoint.GetValue());
+            }
 
-        protected IRedPrimitive ThrowNotSupported([CallerMemberName] string callerMemberName = "")
+            _writer.Write(curvePoint.GetPoint());
+        }
+        _writer.Write((byte)instance.InterpolationType);
+        _writer.Write((byte)instance.LinkType);
+    }
+
+    public virtual void Write(IRedMultiChannelCurve instance)
+    {
+        var genericType = instance.GetType().GetGenericTypeDefinition();
+        var innerType = instance.GetType().GetGenericArguments()[0];
+
+        var method = GetMethod("Write", 1, new[] { genericType });
+        if (method == null)
         {
-            throw new NotSupportedException($"{nameof(Red4Writer)}.{callerMemberName}");
+            throw new MissingMethodException("Method Red4Writer.Write<T>(MultiChannelCurve<T>) could not be found");
         }
+        var generic = method.MakeGenericMethod(innerType);
 
-        #endregion
+        generic.Invoke(this, new object[] { instance });
+    }
 
-        public virtual void WriteClass(RedBaseClass instance)
+    public virtual void Write<T>(MultiChannelCurve<T> instance) where T : IRedType
+    {
+        _writer.Write(instance.NumChannels);
+        _writer.Write((byte)instance.InterpolationType);
+        _writer.Write((byte)instance.LinkType);
+        _writer.Write(instance.Alignment);
+
+        _writer.Write((uint)instance.Data.Length);
+        _writer.Write(instance.Data);
+    }
+
+    public virtual void Write(IRedResourceReference instance)
+    {
+        if (instance.DepotPath == "")
         {
-            ThrowNotImplemented();
+            _writer.Write((ushort)0);
+            return;
         }
 
-        public virtual void Write(IRedType instance, [CallerMemberName] string callerMemberName = "")
+        var val = new ImportEntry("", instance.DepotPath, (ushort)instance.Flags);
+
+        ImportRef.Add(_writer.BaseStream.Position, val);
+        _writer.Write(GetImportIndex(val));
+    }
+
+    public virtual void Write(IRedResourceAsyncReference instance)
+    {
+        if (instance.DepotPath == "")
         {
-            if (callerMemberName == nameof(WriteGeneric))
-            {
-                throw new Exception();
-            }
-
-            if (instance is RedBaseClass cls)
-            {
-                WriteClass(cls);
-                return;
-            }
-
-            if (instance is IRedGenericType genInstance)
-            {
-                WriteGeneric(genInstance);
-                return;
-            }
-
-            var type = instance.GetType();
-            switch (type)
-            {
-                case { } when type == typeof(CBool):
-                    Write((CBool)instance);
-                    return;
-
-                case { } when type == typeof(CDouble):
-                    Write((CDouble)instance);
-                    return;
-
-                case { } when type == typeof(CFloat):
-                    Write((CFloat)instance);
-                    return;
-
-                case { } when type == typeof(CInt16):
-                    Write((CInt16)instance);
-                    return;
-
-                case { } when type == typeof(CInt32):
-                    Write((CInt32)instance);
-                    return;
-
-                case { } when type == typeof(CInt64):
-                    Write((CInt64)instance);
-                    return;
-
-                case { } when type == typeof(CInt8):
-                    Write((CInt8)instance);
-                    return;
-
-                case { } when type == typeof(CUInt16):
-                    Write((CUInt16)instance);
-                    return;
-
-                case { } when type == typeof(CUInt32):
-                    Write((CUInt32)instance);
-                    return;
-
-                case { } when type == typeof(CUInt64):
-                    Write((CUInt64)instance);
-                    return;
-
-                case { } when type == typeof(CUInt8):
-                    Write((CUInt8)instance);
-                    return;
-
-                case { } when type == typeof(CDateTime):
-                    Write((CDateTime)instance);
-                    return;
-
-                case { } when type == typeof(CGuid):
-                    Write((CGuid)instance);
-                    return;
-
-                case { } when type == typeof(CName):
-                    Write((CName)instance);
-                    return;
-
-                case { } when type == typeof(CRUID):
-                    Write((CRUID)instance);
-                    return;
-
-                case { } when type == typeof(CString):
-                    Write((CString)instance);
-                    return;
-
-                case { } when type == typeof(CVariant):
-                    Write((CVariant)instance);
-                    return;
-
-                case { } when type == typeof(DataBuffer):
-                    Write((DataBuffer)instance);
-                    return;
-
-                case { } when type == typeof(EditorObjectID):
-                    Write((EditorObjectID)instance);
-                    return;
-
-                case { } when type == typeof(LocalizationString):
-                    Write((LocalizationString)instance);
-                    return;
-
-                case { } when type == typeof(MessageResourcePath):
-                    Write((MessageResourcePath)instance);
-                    return;
-
-                case { } when type == typeof(NodeRef):
-                    Write((NodeRef)instance);
-                    return;
-
-                case { } when type == typeof(SerializationDeferredDataBuffer):
-                    Write((SerializationDeferredDataBuffer)instance);
-                    return;
-
-                case { } when type == typeof(SharedDataBuffer):
-                    Write((SharedDataBuffer)instance);
-                    return;
-
-                case { } when type == typeof(TweakDBID):
-                    Write((TweakDBID)instance);
-                    return;
-
-                case { } when type == typeof(gamedataLocKeyWrapper):
-                    Write((gamedataLocKeyWrapper)instance);
-                    return;
-            }
-
-            ThrowNotSupported(instance.GetType().Name);
+            _writer.Write((ushort)0);
+            return;
         }
 
-        public virtual void WriteGeneric(IRedGenericType genInstance)
+        var val = new ImportEntry("", instance.DepotPath, (ushort)instance.Flags);
+
+        ImportRef.Add(_writer.BaseStream.Position, val);
+        _writer.Write(GetImportIndex(val));
+    }
+
+    #endregion General
+
+    public virtual void Write(RedBaseClass instance) => ThrowNotImplemented();
+
+    public virtual void WriteFixedClass(RedBaseClass instance)
+    {
+        var typeInfo = RedReflection.GetTypeInfo(instance.GetType());
+        foreach (var propertyInfo in typeInfo.GetWritableProperties())
         {
-            var type = genInstance.GetType();
-
-            if (typeof(IRedArray).IsAssignableFrom(type))
+            if (propertyInfo.RedName == null)
             {
-                Write((IRedArray)genInstance);
-                return;
+                throw new RedNameMissingException($"{instance.GetType().Name}.{propertyInfo.Name}");
             }
 
-            if (typeof(IRedArrayFixedSize).IsAssignableFrom(type))
-            {
-                Write((IRedArrayFixedSize)genInstance);
-                return;
-            }
-
-            if (typeof(IRedBitField).IsAssignableFrom(type))
-            {
-                Write((IRedBitField)genInstance);
-                return;
-            }
-
-            if (typeof(IRedEnum).IsAssignableFrom(type))
-            {
-                Write((IRedEnum)genInstance);
-                return;
-            }
-
-            if (typeof(IRedHandle).IsAssignableFrom(type))
-            {
-                Write((IRedHandle)genInstance);
-                return;
-            }
-
-            if (typeof(IRedLegacySingleChannelCurve).IsAssignableFrom(type))
-            {
-                Write((IRedLegacySingleChannelCurve)genInstance);
-                return;
-            }
-
-            if (typeof(IRedMultiChannelCurve).IsAssignableFrom(type))
-            {
-                Write((IRedMultiChannelCurve)genInstance);
-                return;
-            }
-
-            if (typeof(IRedResourceReference).IsAssignableFrom(type))
-            {
-                Write((IRedResourceReference)genInstance);
-                return;
-            }
-
-            if (typeof(IRedResourceAsyncReference).IsAssignableFrom(type))
-            {
-                Write((IRedResourceAsyncReference)genInstance);
-                return;
-            }
-
-            if (typeof(IRedStatic).IsAssignableFrom(type))
-            {
-                Write((IRedStatic)genInstance);
-                return;
-            }
-
-            if (typeof(IRedWeakHandle).IsAssignableFrom(type))
-            {
-                Write((IRedWeakHandle)genInstance);
-                return;
-            }
-
-            ThrowNotSupported(genInstance.GetType().Name);
+            var value = instance.GetProperty(propertyInfo.RedName);
+            // TODO: null values?
+            Write(value!);
         }
+    }
 
-        #region IDisposable
+    #region Helper
 
-        protected virtual void Dispose(bool disposing)
+    protected IRedPrimitive ThrowNotImplemented([CallerMemberName] string callerMemberName = "")
+    {
+        throw new NotImplementedException($"{nameof(Red4Writer)}.{callerMemberName}");
+    }
+
+    protected IRedPrimitive ThrowNotSupported([CallerMemberName] string callerMemberName = "")
+    {
+        throw new NotSupportedException($"{nameof(Red4Writer)}.{callerMemberName}");
+    }
+
+    #endregion
+
+    public virtual void WriteClass(RedBaseClass instance)
+    {
+        ThrowNotImplemented();
+    }
+
+    public virtual void Write(IRedType instance, [CallerMemberName] string callerMemberName = "")
+    {
+        if (callerMemberName == nameof(WriteGeneric))
         {
-            if (!_disposed)
-            {
-                if (disposing)
-                {
-                    _writer.Close();
-                }
-                _disposed = true;
-            }
+            throw new Exception();
         }
 
-        public void Dispose() => Dispose(true);
-
-        public virtual void Close() => Dispose(true);
-
-        #endregion IDisposable
-
-        protected class ChunkInfo
+        if (instance is RedBaseClass cls)
         {
-            public int Id { get; set; } = -1;
-            public Guid Guid { get; set; } = Guid.Empty;
+            WriteClass(cls);
+            return;
         }
 
-        protected class CNameComparer : IEqualityComparer<CName>
+        if (instance is IRedGenericType genInstance)
         {
-            public bool Equals(CName? a, CName? b)
+            WriteGeneric(genInstance);
+            return;
+        }
+
+        var type = instance.GetType();
+        switch (type)
+        {
+            case { } when type == typeof(CBool):
+                Write((CBool)instance);
+                return;
+
+            case { } when type == typeof(CDouble):
+                Write((CDouble)instance);
+                return;
+
+            case { } when type == typeof(CFloat):
+                Write((CFloat)instance);
+                return;
+
+            case { } when type == typeof(CInt16):
+                Write((CInt16)instance);
+                return;
+
+            case { } when type == typeof(CInt32):
+                Write((CInt32)instance);
+                return;
+
+            case { } when type == typeof(CInt64):
+                Write((CInt64)instance);
+                return;
+
+            case { } when type == typeof(CInt8):
+                Write((CInt8)instance);
+                return;
+
+            case { } when type == typeof(CUInt16):
+                Write((CUInt16)instance);
+                return;
+
+            case { } when type == typeof(CUInt32):
+                Write((CUInt32)instance);
+                return;
+
+            case { } when type == typeof(CUInt64):
+                Write((CUInt64)instance);
+                return;
+
+            case { } when type == typeof(CUInt8):
+                Write((CUInt8)instance);
+                return;
+
+            case { } when type == typeof(CDateTime):
+                Write((CDateTime)instance);
+                return;
+
+            case { } when type == typeof(CGuid):
+                Write((CGuid)instance);
+                return;
+
+            case { } when type == typeof(CName):
+                Write((CName)instance);
+                return;
+
+            case { } when type == typeof(CRUID):
+                Write((CRUID)instance);
+                return;
+
+            case { } when type == typeof(CString):
+                Write((CString)instance);
+                return;
+
+            case { } when type == typeof(CVariant):
+                Write((CVariant)instance);
+                return;
+
+            case { } when type == typeof(DataBuffer):
+                Write((DataBuffer)instance);
+                return;
+
+            case { } when type == typeof(EditorObjectID):
+                Write((EditorObjectID)instance);
+                return;
+
+            case { } when type == typeof(LocalizationString):
+                Write((LocalizationString)instance);
+                return;
+
+            case { } when type == typeof(MessageResourcePath):
+                Write((MessageResourcePath)instance);
+                return;
+
+            case { } when type == typeof(NodeRef):
+                Write((NodeRef)instance);
+                return;
+
+            case { } when type == typeof(SerializationDeferredDataBuffer):
+                Write((SerializationDeferredDataBuffer)instance);
+                return;
+
+            case { } when type == typeof(SharedDataBuffer):
+                Write((SharedDataBuffer)instance);
+                return;
+
+            case { } when type == typeof(TweakDBID):
+                Write((TweakDBID)instance);
+                return;
+
+            case { } when type == typeof(gamedataLocKeyWrapper):
+                Write((gamedataLocKeyWrapper)instance);
+                return;
+        }
+
+        ThrowNotSupported(instance.GetType().Name);
+    }
+
+    public virtual void WriteGeneric(IRedGenericType genInstance)
+    {
+        var type = genInstance.GetType();
+
+        if (typeof(IRedArray).IsAssignableFrom(type))
+        {
+            Write((IRedArray)genInstance);
+            return;
+        }
+
+        if (typeof(IRedArrayFixedSize).IsAssignableFrom(type))
+        {
+            Write((IRedArrayFixedSize)genInstance);
+            return;
+        }
+
+        if (typeof(IRedBitField).IsAssignableFrom(type))
+        {
+            Write((IRedBitField)genInstance);
+            return;
+        }
+
+        if (typeof(IRedEnum).IsAssignableFrom(type))
+        {
+            Write((IRedEnum)genInstance);
+            return;
+        }
+
+        if (typeof(IRedHandle).IsAssignableFrom(type))
+        {
+            Write((IRedHandle)genInstance);
+            return;
+        }
+
+        if (typeof(IRedLegacySingleChannelCurve).IsAssignableFrom(type))
+        {
+            Write((IRedLegacySingleChannelCurve)genInstance);
+            return;
+        }
+
+        if (typeof(IRedMultiChannelCurve).IsAssignableFrom(type))
+        {
+            Write((IRedMultiChannelCurve)genInstance);
+            return;
+        }
+
+        if (typeof(IRedResourceReference).IsAssignableFrom(type))
+        {
+            Write((IRedResourceReference)genInstance);
+            return;
+        }
+
+        if (typeof(IRedResourceAsyncReference).IsAssignableFrom(type))
+        {
+            Write((IRedResourceAsyncReference)genInstance);
+            return;
+        }
+
+        if (typeof(IRedStatic).IsAssignableFrom(type))
+        {
+            Write((IRedStatic)genInstance);
+            return;
+        }
+
+        if (typeof(IRedWeakHandle).IsAssignableFrom(type))
+        {
+            Write((IRedWeakHandle)genInstance);
+            return;
+        }
+
+        ThrowNotSupported(genInstance.GetType().Name);
+    }
+
+    #region IDisposable
+
+    protected virtual void Dispose(bool disposing)
+    {
+        if (!_disposed)
+        {
+            if (disposing)
             {
-                if (ReferenceEquals(a, b))
-                {
-                    return true;
-                }
+                _writer.Close();
+            }
+            _disposed = true;
+        }
+    }
 
-                if (a is null || b is null || a.Length != b.Length)
-                {
-                    return false;
-                }
+    public void Dispose() => Dispose(true);
 
-                return string.Equals(a, b);
+    public virtual void Close() => Dispose(true);
+
+    #endregion IDisposable
+
+    protected class ChunkInfo
+    {
+        public int Id { get; set; } = -1;
+        public Guid Guid { get; set; } = Guid.Empty;
+    }
+
+    protected class CNameComparer : IEqualityComparer<CName>
+    {
+        public bool Equals(CName? a, CName? b)
+        {
+            if (ReferenceEquals(a, b))
+            {
+                return true;
             }
 
-            public bool Equals(CName x, string y) => string.Equals(x, y);
-
-            public int GetHashCode(CName obj) => obj.GetHashCode();
-        }
-
-        protected class ImportComparer : IEqualityComparer<ImportEntry>
-        {
-            public bool Equals(ImportEntry? a, ImportEntry? b)
+            if (a is null || b is null || a.Length != b.Length)
             {
-                if (ReferenceEquals(a, b))
-                {
-                    return true;
-                }
-
-                if (a is null || b is null)
-                {
-                    return false;
-                }
-
-                return string.Equals(a.DepotPath, b.DepotPath);
+                return false;
             }
 
-            public int GetHashCode(ImportEntry obj) => obj.DepotPath.GetHashCode();
+            return string.Equals(a, b);
         }
+
+        public bool Equals(CName x, string y) => string.Equals(x, y);
+
+        public int GetHashCode(CName obj) => obj.GetHashCode();
+    }
+
+    protected class ImportComparer : IEqualityComparer<ImportEntry>
+    {
+        public bool Equals(ImportEntry? a, ImportEntry? b)
+        {
+            if (ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            if (a is null || b is null)
+            {
+                return false;
+            }
+
+            return string.Equals(a.DepotPath, b.DepotPath);
+        }
+
+        public int GetHashCode(ImportEntry obj) => obj.DepotPath.GetHashCode();
     }
 }

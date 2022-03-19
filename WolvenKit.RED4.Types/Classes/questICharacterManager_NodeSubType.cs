@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questICharacterManager_NodeSubType : questPuppetNodeType
 {
-	[REDMeta]
-	public partial class questICharacterManager_NodeSubType : questPuppetNodeType
+	public questICharacterManager_NodeSubType()
 	{
-		public questICharacterManager_NodeSubType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

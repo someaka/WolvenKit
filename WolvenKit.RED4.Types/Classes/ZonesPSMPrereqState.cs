@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ZonesPSMPrereqState : PlayerStateMachinePrereqState
 {
-	[REDMeta]
-	public partial class ZonesPSMPrereqState : PlayerStateMachinePrereqState
+	public ZonesPSMPrereqState()
 	{
-		public ZonesPSMPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

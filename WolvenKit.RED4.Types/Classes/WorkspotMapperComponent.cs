@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WorkspotMapperComponent : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class WorkspotMapperComponent : gameScriptableComponent
+	[Ordinal(5)] 
+	[RED("workspotsMap")] 
+	public CArray<CHandle<WorkspotMapData>> WorkspotsMap
 	{
-		[Ordinal(5)] 
-		[RED("workspotsMap")] 
-		public CArray<CHandle<WorkspotMapData>> WorkspotsMap
-		{
-			get => GetPropertyValue<CArray<CHandle<WorkspotMapData>>>();
-			set => SetPropertyValue<CArray<CHandle<WorkspotMapData>>>(value);
-		}
-
-		public WorkspotMapperComponent()
-		{
-			WorkspotsMap = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CArray<CHandle<WorkspotMapData>>>();
+		set => SetPropertyValue<CArray<CHandle<WorkspotMapData>>>(value);
 	}
+
+	public WorkspotMapperComponent()
+	{
+		WorkspotsMap = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

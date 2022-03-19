@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIGameSystem : IScriptable
 {
-	[REDMeta]
-	public partial class gameIGameSystem : IScriptable
+	public gameIGameSystem()
 	{
-		public gameIGameSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

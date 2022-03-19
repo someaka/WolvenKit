@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RevealPlayerPositionEffector : gameEffector
 {
-	[REDMeta]
-	public partial class RevealPlayerPositionEffector : gameEffector
+	public RevealPlayerPositionEffector()
 	{
-		public RevealPlayerPositionEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReleaseEvents : CarriedObjectEvents
 {
-	[REDMeta]
-	public partial class ReleaseEvents : CarriedObjectEvents
+	public ReleaseEvents()
 	{
-		public ReleaseEvents()
-		{
-			StyleName = "CarriedObject.Style";
-			ForceStyleName = "CarriedObject.ForcedStyle";
+		StyleName = "CarriedObject.Style";
+		ForceStyleName = "CarriedObject.ForcedStyle";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

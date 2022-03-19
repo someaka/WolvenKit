@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class mpRemotePlayer : mpPlayer
 {
-	[REDMeta]
-	public partial class mpRemotePlayer : mpPlayer
+	public mpRemotePlayer()
 	{
-		public mpRemotePlayer()
-		{
-			PeerID = new() { Value = 255 };
+		PeerID = new() { Value = 255 };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

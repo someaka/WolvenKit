@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAbsoluteZLimiterCoverSelectionParameters_Record : gamedataCoverSelectionParameters_Record
 {
-	[REDMeta]
-	public partial class gamedataAbsoluteZLimiterCoverSelectionParameters_Record : gamedataCoverSelectionParameters_Record
+	public gamedataAbsoluteZLimiterCoverSelectionParameters_Record()
 	{
-		public gamedataAbsoluteZLimiterCoverSelectionParameters_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

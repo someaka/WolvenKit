@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICondition : IScriptable
 {
-	[REDMeta]
-	public partial class AICondition : IScriptable
+	public AICondition()
 	{
-		public AICondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

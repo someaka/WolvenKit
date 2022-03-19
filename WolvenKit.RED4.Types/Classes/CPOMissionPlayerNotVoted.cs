@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CPOMissionPlayerNotVoted : CPOMissionPlayerVoted
 {
-	[REDMeta]
-	public partial class CPOMissionPlayerNotVoted : CPOMissionPlayerVoted
+	public CPOMissionPlayerNotVoted()
 	{
-		public CPOMissionPlayerNotVoted()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ZoomLevelBaseDecisions : ZoomDecisionsTransition
 {
-	[REDMeta]
-	public partial class ZoomLevelBaseDecisions : ZoomDecisionsTransition
+	public ZoomLevelBaseDecisions()
 	{
-		public ZoomLevelBaseDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

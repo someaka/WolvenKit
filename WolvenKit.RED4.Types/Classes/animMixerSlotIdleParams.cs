@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animMixerSlotIdleParams : ISerializable
 {
-	[REDMeta]
-	public partial class animMixerSlotIdleParams : ISerializable
+	public animMixerSlotIdleParams()
 	{
-		public animMixerSlotIdleParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

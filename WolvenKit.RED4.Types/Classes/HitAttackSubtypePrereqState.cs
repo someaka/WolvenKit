@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HitAttackSubtypePrereqState : GenericHitPrereqState
 {
-	[REDMeta]
-	public partial class HitAttackSubtypePrereqState : GenericHitPrereqState
+	public HitAttackSubtypePrereqState()
 	{
-		public HitAttackSubtypePrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

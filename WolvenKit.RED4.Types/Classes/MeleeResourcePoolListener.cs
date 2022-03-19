@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleeResourcePoolListener : gameScriptStatPoolsListener
 {
-	[REDMeta]
-	public partial class MeleeResourcePoolListener : gameScriptStatPoolsListener
+	[Ordinal(0)] 
+	[RED("meleeCrosshair")] 
+	public CWeakHandle<CrosshairGameController_Melee> MeleeCrosshair
 	{
-		[Ordinal(0)] 
-		[RED("meleeCrosshair")] 
-		public CWeakHandle<CrosshairGameController_Melee> MeleeCrosshair
-		{
-			get => GetPropertyValue<CWeakHandle<CrosshairGameController_Melee>>();
-			set => SetPropertyValue<CWeakHandle<CrosshairGameController_Melee>>(value);
-		}
-
-		public MeleeResourcePoolListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<CrosshairGameController_Melee>>();
+		set => SetPropertyValue<CWeakHandle<CrosshairGameController_Melee>>(value);
 	}
+
+	public MeleeResourcePoolListener()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

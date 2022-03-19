@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class VendingMachineSetup : RedBaseClass
 {
-	[REDMeta]
-	public partial class VendingMachineSetup : RedBaseClass
+	[Ordinal(0)] 
+	[RED("timeToCompletePurchase")] 
+	public CFloat TimeToCompletePurchase
 	{
-		[Ordinal(0)] 
-		[RED("timeToCompletePurchase")] 
-		public CFloat TimeToCompletePurchase
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public VendingMachineSetup()
-		{
-			TimeToCompletePurchase = 0.100000F;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public VendingMachineSetup()
+	{
+		TimeToCompletePurchase = 0.100000F;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

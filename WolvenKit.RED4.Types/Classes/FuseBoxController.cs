@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FuseBoxController : MasterController
 {
-	[REDMeta]
-	public partial class FuseBoxController : MasterController
+	public FuseBoxController()
 	{
-		public FuseBoxController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

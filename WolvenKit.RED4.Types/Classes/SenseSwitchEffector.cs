@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SenseSwitchEffector : gameEffector
 {
-	[REDMeta]
-	public partial class SenseSwitchEffector : gameEffector
+	public SenseSwitchEffector()
 	{
-		public SenseSwitchEffector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CrouchDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class CrouchDelayEvent : redEvent
+	public CrouchDelayEvent()
 	{
-		public CrouchDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

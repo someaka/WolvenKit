@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldWorld : worldPrefab
 {
-	[REDMeta]
-	public partial class worldWorld : worldPrefab
+	public worldWorld()
 	{
-		public worldWorld()
-		{
-			Type = Enums.worldPrefabType.Area;
+		Type = Enums.worldPrefabType.Area;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

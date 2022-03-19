@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkScriptWeakHashMap : IScriptable
 {
-	[REDMeta]
-	public partial class inkScriptWeakHashMap : IScriptable
+	public inkScriptWeakHashMap()
 	{
-		public inkScriptWeakHashMap()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

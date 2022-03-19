@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TweakAIActionCondition : TweakAIActionConditionAbstract
 {
-	[REDMeta]
-	public partial class TweakAIActionCondition : TweakAIActionConditionAbstract
+	[Ordinal(2)] 
+	[RED("record")] 
+	public TweakDBID Record
 	{
-		[Ordinal(2)] 
-		[RED("record")] 
-		public TweakDBID Record
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-
-		public TweakAIActionCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<TweakDBID>();
+		set => SetPropertyValue<TweakDBID>(value);
 	}
+
+	public TweakAIActionCondition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

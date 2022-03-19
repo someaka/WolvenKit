@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDebugColoring_GameVisualFluff : worldEditorDebugColoringSettings
 {
-	[REDMeta]
-	public partial class worldDebugColoring_GameVisualFluff : worldEditorDebugColoringSettings
+	public worldDebugColoring_GameVisualFluff()
 	{
-		public worldDebugColoring_GameVisualFluff()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

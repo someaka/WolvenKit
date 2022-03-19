@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameinteractionsvisLootVisualizerDefinition : gameinteractionsvisIVisualizerDefinition
 {
-	[REDMeta]
-	public partial class gameinteractionsvisLootVisualizerDefinition : gameinteractionsvisIVisualizerDefinition
+	public gameinteractionsvisLootVisualizerDefinition()
 	{
-		public gameinteractionsvisLootVisualizerDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

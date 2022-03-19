@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviortweakNPCCallbacks : RedBaseClass
 {
-	[REDMeta]
-	public partial class AIbehaviortweakNPCCallbacks : RedBaseClass
+	public AIbehaviortweakNPCCallbacks()
 	{
-		public AIbehaviortweakNPCCallbacks()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

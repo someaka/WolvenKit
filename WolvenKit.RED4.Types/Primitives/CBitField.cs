@@ -2,96 +2,86 @@ using System;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace WolvenKit.RED4.Types
+namespace WolvenKit.RED4.Types;
+
+public static class CBitField
 {
-
-    public static class CBitField
+    public static IRedBitField Parse(Type enumType, string value)
     {
-        public static IRedBitField? Parse(Type enumType, string value)
+        var method = typeof(CBitField).GetMethod(nameof(Parse), BindingFlags.Public | BindingFlags.Static, null, new[] { typeof(string) }, null);
+        if (method == null)
         {
-            var method = typeof(CBitField).GetMethod(nameof(Parse), BindingFlags.Public | BindingFlags.Static, null, new[] { typeof(string) }, null);
-            if (method == null)
-            {
-                throw new MissingMethodException("Method CBitfield.Parse<T>() could not be found");
-            }
-            var generic = method.MakeGenericMethod(enumType);
+            throw new MissingMethodException("Method CBitfield.Parse<T>() could not be found");
+        }
+        var generic = method.MakeGenericMethod(enumType);
 
-            return (IRedBitField?)generic.Invoke(null, new object[] { value });
+        var result = generic.Invoke(null, new object[] { value });
+        if (result == null)
+        {
+            throw new Exception();
         }
 
-        public static CBitField<T>? Parse<T>(string value) where T : struct, Enum
-        {
-            if (Enum.TryParse<T>(value, out var result))
-            {
-                return result;
-            }
-
-            return null;
-            //return new CBitField<T>(value);
-        }
+        return (IRedBitField)result;
     }
 
-    [REDType(IsValueType = true)]
-    [DebuggerDisplay("{Value}")]
-    public class CBitField<T> : IRedBitField<T>, IEquatable<CBitField<T>> where T : struct, Enum
+    public static CBitField<T> Parse<T>(string value) where T : struct, Enum
     {
-        public T Value { get; set; }
-
-        public CBitField() { }
-
-        private CBitField(T value)
+        if (Enum.TryParse<T>(value, out var result))
         {
-            Value = value;
+            return result;
         }
 
-        public static implicit operator CBitField<T>(T value) => new(value);
-        public static implicit operator T(CBitField<T> value) => value.Value;
-
-        public static implicit operator CBitField<T>(Enum value) => new((T)value);
-        public static implicit operator Enum(CBitField<T> value) => (Enum)value.Value;
-
-        public Type GetInnerType() => typeof(T);
-
-        public string ToBitFieldString()
-        {
-            return Value.ToString();
-        }
-
-        public override int GetHashCode() => Value.GetHashCode();
-
-        public override bool Equals(object? obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj.GetType() != this.GetType())
-            {
-                return false;
-            }
-
-            return Equals((CBitField<T>)obj);
-        }
-
-        public bool Equals(CBitField<T>? other)
-        {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
-            return Equals(Value, other.Value);
-        }
+        return default(T);
     }
+}
+
+[DebuggerDisplay("{_value}")]
+public readonly struct CBitField<T> : IRedBitField<T>, IEquatable<CBitField<T>> where T : struct, Enum
+{
+    [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+    private readonly T _value;
+
+
+    public CBitField()
+    {
+        _value = default;
+    }
+
+    private CBitField(T value)
+    {
+        _value = value;
+    }
+
+    public static implicit operator CBitField<T>(T value) => new(value);
+    public static implicit operator T(CBitField<T> value) => value._value;
+
+    public static implicit operator CBitField<T>(Enum value) => new((T)value);
+    public static implicit operator Enum(CBitField<T> value) => value._value;
+
+    public Type GetInnerType() => typeof(T);
+
+
+    public override bool Equals(object? obj)
+    {
+        if (ReferenceEquals(null, obj))
+        {
+            return false;
+        }
+
+        if (obj.GetType() != this.GetType())
+        {
+            return false;
+        }
+
+        return Equals((CBitField<T>)obj);
+    }
+
+    public bool Equals(CBitField<T> other)
+    {
+        return Equals(_value, other._value);
+    }
+
+    public override int GetHashCode() => _value.GetHashCode();
+
+    public override string ToString() => _value.ToString();
 }

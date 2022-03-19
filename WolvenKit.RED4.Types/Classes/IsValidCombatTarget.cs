@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsValidCombatTarget : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class IsValidCombatTarget : AIbehaviorconditionScript
+	public IsValidCombatTarget()
 	{
-		public IsValidCombatTarget()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

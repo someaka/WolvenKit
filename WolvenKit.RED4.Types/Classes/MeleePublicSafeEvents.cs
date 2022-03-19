@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleePublicSafeEvents : MeleeEventsTransition
 {
-	[REDMeta]
-	public partial class MeleePublicSafeEvents : MeleeEventsTransition
+	[Ordinal(1)] 
+	[RED("unequipTime")] 
+	public CFloat UnequipTime
 	{
-		[Ordinal(1)] 
-		[RED("unequipTime")] 
-		public CFloat UnequipTime
-		{
-			get => GetPropertyValue<CFloat>();
-			set => SetPropertyValue<CFloat>(value);
-		}
-
-		public MeleePublicSafeEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CFloat>();
+		set => SetPropertyValue<CFloat>(value);
 	}
+
+	public MeleePublicSafeEvents()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

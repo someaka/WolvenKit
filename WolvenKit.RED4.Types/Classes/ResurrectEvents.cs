@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ResurrectEvents : HighLevelTransition
 {
-	[REDMeta]
-	public partial class ResurrectEvents : HighLevelTransition
+	public ResurrectEvents()
 	{
-		public ResurrectEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

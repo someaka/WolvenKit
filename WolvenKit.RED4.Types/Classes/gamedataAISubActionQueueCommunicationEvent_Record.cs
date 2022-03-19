@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAISubActionQueueCommunicationEvent_Record : gamedataAISubAction_Record
 {
-	[REDMeta]
-	public partial class gamedataAISubActionQueueCommunicationEvent_Record : gamedataAISubAction_Record
+	public gamedataAISubActionQueueCommunicationEvent_Record()
 	{
-		public gamedataAISubActionQueueCommunicationEvent_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

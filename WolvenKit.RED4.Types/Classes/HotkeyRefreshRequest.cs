@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HotkeyRefreshRequest : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class HotkeyRefreshRequest : gamePlayerScriptableSystemRequest
+	public HotkeyRefreshRequest()
 	{
-		public HotkeyRefreshRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

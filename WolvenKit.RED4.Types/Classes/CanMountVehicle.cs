@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CanMountVehicle : AIVehicleConditionAbstract
 {
-	[REDMeta]
-	public partial class CanMountVehicle : AIVehicleConditionAbstract
+	public CanMountVehicle()
 	{
-		public CanMountVehicle()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

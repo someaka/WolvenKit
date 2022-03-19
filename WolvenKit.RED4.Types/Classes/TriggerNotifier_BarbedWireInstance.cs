@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TriggerNotifier_BarbedWireInstance : entTriggerNotifier_ScriptInstance
 {
-	[REDMeta]
-	public partial class TriggerNotifier_BarbedWireInstance : entTriggerNotifier_ScriptInstance
+	public TriggerNotifier_BarbedWireInstance()
 	{
-		public TriggerNotifier_BarbedWireInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

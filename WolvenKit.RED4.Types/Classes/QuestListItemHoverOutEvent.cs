@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuestListItemHoverOutEvent : redEvent
 {
-	[REDMeta]
-	public partial class QuestListItemHoverOutEvent : redEvent
+	public QuestListItemHoverOutEvent()
 	{
-		public QuestListItemHoverOutEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

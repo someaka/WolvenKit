@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MeleeRecoveryEvents : MeleeNotReadyEvents
 {
-	[REDMeta]
-	public partial class MeleeRecoveryEvents : MeleeNotReadyEvents
+	public MeleeRecoveryEvents()
 	{
-		public MeleeRecoveryEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

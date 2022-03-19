@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIStimuliSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIStimuliSystem : gameIGameSystem
+	public gameIStimuliSystem()
 	{
-		public gameIStimuliSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

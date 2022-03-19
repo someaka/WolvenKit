@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldAIDirectorSpawnNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldAIDirectorSpawnNodeInstance : worldINodeInstance
+	public worldAIDirectorSpawnNodeInstance()
 	{
-		public worldAIDirectorSpawnNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

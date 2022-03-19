@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BodyInvestigated : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class BodyInvestigated : AIbehaviortaskScript
+	public BodyInvestigated()
 	{
-		public BodyInvestigated()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePlayerTakeControlAsChild : redEvent
 {
-	[REDMeta]
-	public partial class gamePlayerTakeControlAsChild : redEvent
+	public gamePlayerTakeControlAsChild()
 	{
-		public gamePlayerTakeControlAsChild()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

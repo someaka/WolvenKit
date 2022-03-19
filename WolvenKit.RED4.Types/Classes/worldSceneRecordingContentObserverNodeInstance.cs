@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldSceneRecordingContentObserverNodeInstance : worldINodeInstance
 {
-	[REDMeta]
-	public partial class worldSceneRecordingContentObserverNodeInstance : worldINodeInstance
+	public worldSceneRecordingContentObserverNodeInstance()
 	{
-		public worldSceneRecordingContentObserverNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

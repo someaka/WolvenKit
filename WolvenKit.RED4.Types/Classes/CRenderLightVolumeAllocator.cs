@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CRenderLightVolumeAllocator : ISceneStorageCustomData
 {
-	[REDMeta]
-	public partial class CRenderLightVolumeAllocator : ISceneStorageCustomData
+	public CRenderLightVolumeAllocator()
 	{
-		public CRenderLightVolumeAllocator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

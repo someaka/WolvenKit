@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RadialMenuHelper : IScriptable
 {
-	[REDMeta]
-	public partial class RadialMenuHelper : IScriptable
+	public RadialMenuHelper()
 	{
-		public RadialMenuHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

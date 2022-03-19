@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entRagdollRequestCollectAnimPose : redEvent
 {
-	[REDMeta]
-	public partial class entRagdollRequestCollectAnimPose : redEvent
+	public entRagdollRequestCollectAnimPose()
 	{
-		public entRagdollRequestCollectAnimPose()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

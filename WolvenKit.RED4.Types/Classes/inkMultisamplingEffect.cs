@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkMultisamplingEffect : inkIEffect
 {
-	[REDMeta]
-	public partial class inkMultisamplingEffect : inkIEffect
+	public inkMultisamplingEffect()
 	{
-		public inkMultisamplingEffect()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

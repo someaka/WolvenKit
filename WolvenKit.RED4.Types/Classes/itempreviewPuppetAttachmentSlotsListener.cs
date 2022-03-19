@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class itempreviewPuppetAttachmentSlotsListener : gameIAttachmentSlotsListener
 {
-	[REDMeta]
-	public partial class itempreviewPuppetAttachmentSlotsListener : gameIAttachmentSlotsListener
+	public itempreviewPuppetAttachmentSlotsListener()
 	{
-		public itempreviewPuppetAttachmentSlotsListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

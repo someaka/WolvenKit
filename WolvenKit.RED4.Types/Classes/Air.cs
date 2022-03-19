@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class Air : DefaultTransition
 {
-	[REDMeta]
-	public partial class Air : DefaultTransition
+	public Air()
 	{
-		public Air()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

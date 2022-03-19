@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldOnAreaShapeCompiledEvent : RedBaseClass
 {
-	[REDMeta]
-	public partial class worldOnAreaShapeCompiledEvent : RedBaseClass
+	public worldOnAreaShapeCompiledEvent()
 	{
-		public worldOnAreaShapeCompiledEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

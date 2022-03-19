@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class panzerGameController : gameuiPanzerMiniGameController
 {
-	[REDMeta]
-	public partial class panzerGameController : gameuiPanzerMiniGameController
+	public panzerGameController()
 	{
-		public panzerGameController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

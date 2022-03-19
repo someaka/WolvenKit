@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class textTextParameterSet : IScriptable
 {
-	[REDMeta]
-	public partial class textTextParameterSet : IScriptable
+	public textTextParameterSet()
 	{
-		public textTextParameterSet()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

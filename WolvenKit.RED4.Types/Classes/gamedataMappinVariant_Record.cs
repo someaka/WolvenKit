@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataMappinVariant_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataMappinVariant_Record : gamedataTweakDBRecord
+	public gamedataMappinVariant_Record()
 	{
-		public gamedataMappinVariant_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

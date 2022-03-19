@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PerkResetEvent : redEvent
 {
-	[REDMeta]
-	public partial class PerkResetEvent : redEvent
+	public PerkResetEvent()
 	{
-		public PerkResetEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

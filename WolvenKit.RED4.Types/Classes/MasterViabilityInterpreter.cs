@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MasterViabilityInterpreter : IScriptable
 {
-	[REDMeta]
-	public partial class MasterViabilityInterpreter : IScriptable
+	public MasterViabilityInterpreter()
 	{
-		public MasterViabilityInterpreter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

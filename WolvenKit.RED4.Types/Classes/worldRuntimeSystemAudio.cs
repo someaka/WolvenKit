@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemAudio : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemAudio : worldIRuntimeSystem
+	public worldRuntimeSystemAudio()
 	{
-		public worldRuntimeSystemAudio()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

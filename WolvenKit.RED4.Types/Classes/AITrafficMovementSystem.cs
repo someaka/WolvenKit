@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AITrafficMovementSystem : AIITrafficMovementSystem
 {
-	[REDMeta]
-	public partial class AITrafficMovementSystem : AIITrafficMovementSystem
+	public AITrafficMovementSystem()
 	{
-		public AITrafficMovementSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

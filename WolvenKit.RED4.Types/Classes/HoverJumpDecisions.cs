@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class HoverJumpDecisions : LocomotionAirDecisions
 {
-	[REDMeta]
-	public partial class HoverJumpDecisions : LocomotionAirDecisions
+	public HoverJumpDecisions()
 	{
-		public HoverJumpDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

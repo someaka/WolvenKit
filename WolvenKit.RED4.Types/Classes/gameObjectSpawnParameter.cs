@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameObjectSpawnParameter : ISerializable
 {
-	[REDMeta]
-	public partial class gameObjectSpawnParameter : ISerializable
+	public gameObjectSpawnParameter()
 	{
-		public gameObjectSpawnParameter()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

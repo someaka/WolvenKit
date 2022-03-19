@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ReactAfterDodge : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class ReactAfterDodge : AIbehaviorconditionScript
+	public ReactAfterDodge()
 	{
-		public ReactAfterDodge()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

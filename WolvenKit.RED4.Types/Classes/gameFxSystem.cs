@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameFxSystem : gameIFxSystem
 {
-	[REDMeta]
-	public partial class gameFxSystem : gameIFxSystem
+	public gameFxSystem()
 	{
-		public gameFxSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

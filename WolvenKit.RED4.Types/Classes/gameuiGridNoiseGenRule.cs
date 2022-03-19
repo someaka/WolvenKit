@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiGridNoiseGenRule : gameuiMinigameGenerationRule
 {
-	[REDMeta]
-	public partial class gameuiGridNoiseGenRule : gameuiMinigameGenerationRule
+	public gameuiGridNoiseGenRule()
 	{
-		public gameuiGridNoiseGenRule()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

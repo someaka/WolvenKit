@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questIBaseCondition : graphIGraphNodeCondition
 {
-	[REDMeta]
-	public partial class questIBaseCondition : graphIGraphNodeCondition
+	public questIBaseCondition()
 	{
-		public questIBaseCondition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExitingEvents : ExitingEventsBase
 {
-	[REDMeta]
-	public partial class ExitingEvents : ExitingEventsBase
+	public ExitingEvents()
 	{
-		public ExitingEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

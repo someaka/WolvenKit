@@ -1,18 +1,15 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConfessionBoothControllerPS : BasicDistractionDeviceControllerPS
 {
-	[REDMeta]
-	public partial class ConfessionBoothControllerPS : BasicDistractionDeviceControllerPS
+	public ConfessionBoothControllerPS()
 	{
-		public ConfessionBoothControllerPS()
-		{
-			DeviceName = "LocKey#1942";
-			TweakDBRecord = 102833522601;
-			TweakDBDescriptionRecord = 152595250458;
+		DeviceName = "LocKey#1942";
+		TweakDBRecord = 102833522601;
+		TweakDBDescriptionRecord = 152595250458;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

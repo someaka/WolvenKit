@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AnimationsLoaded : gameTaggedSignalUserData
 {
-	[REDMeta]
-	public partial class AnimationsLoaded : gameTaggedSignalUserData
+	public AnimationsLoaded()
 	{
-		public AnimationsLoaded()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

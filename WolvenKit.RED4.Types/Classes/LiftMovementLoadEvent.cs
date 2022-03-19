@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LiftMovementLoadEvent : redEvent
 {
-	[REDMeta]
-	public partial class LiftMovementLoadEvent : redEvent
+	public LiftMovementLoadEvent()
 	{
-		public LiftMovementLoadEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

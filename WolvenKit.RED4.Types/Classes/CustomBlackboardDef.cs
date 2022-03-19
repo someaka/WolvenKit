@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CustomBlackboardDef : gamebbScriptDefinition
 {
-	[REDMeta]
-	public partial class CustomBlackboardDef : gamebbScriptDefinition
+	public CustomBlackboardDef()
 	{
-		public CustomBlackboardDef()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

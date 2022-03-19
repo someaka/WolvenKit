@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimNode_SetDrivenKey_InternalsISetDrivenKeyEntryProvider : ISerializable
 {
-	[REDMeta]
-	public partial class animAnimNode_SetDrivenKey_InternalsISetDrivenKeyEntryProvider : ISerializable
+	public animAnimNode_SetDrivenKey_InternalsISetDrivenKeyEntryProvider()
 	{
-		public animAnimNode_SetDrivenKey_InternalsISetDrivenKeyEntryProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

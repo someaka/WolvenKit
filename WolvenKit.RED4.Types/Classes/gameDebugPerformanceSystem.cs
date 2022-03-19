@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameDebugPerformanceSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameDebugPerformanceSystem : gameIGameSystem
+	public gameDebugPerformanceSystem()
 	{
-		public gameDebugPerformanceSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class moveIMotionPlannerComponent : entIComponent
 {
-	[REDMeta]
-	public partial class moveIMotionPlannerComponent : entIComponent
+	public moveIMotionPlannerComponent()
 	{
-		public moveIMotionPlannerComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

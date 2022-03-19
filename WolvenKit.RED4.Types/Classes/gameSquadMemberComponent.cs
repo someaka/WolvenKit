@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameSquadMemberComponent : gameComponent
 {
-	[REDMeta]
-	public partial class gameSquadMemberComponent : gameComponent
+	public gameSquadMemberComponent()
 	{
-		public gameSquadMemberComponent()
-		{
-			Name = "SquadMember";
+		Name = "SquadMember";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

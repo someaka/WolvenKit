@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIFollowerBeforeTakedown : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AIFollowerBeforeTakedown : AIbehaviortaskScript
+	public AIFollowerBeforeTakedown()
 	{
-		public AIFollowerBeforeTakedown()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

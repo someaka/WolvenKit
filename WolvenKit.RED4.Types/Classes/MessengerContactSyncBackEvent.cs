@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MessengerContactSyncBackEvent : redEvent
 {
-	[REDMeta]
-	public partial class MessengerContactSyncBackEvent : redEvent
+	public MessengerContactSyncBackEvent()
 	{
-		public MessengerContactSyncBackEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

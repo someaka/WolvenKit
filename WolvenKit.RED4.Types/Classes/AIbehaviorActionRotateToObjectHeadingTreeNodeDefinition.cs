@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorActionRotateToObjectHeadingTreeNodeDefinition : AIbehaviorActionRotateBaseTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorActionRotateToObjectHeadingTreeNodeDefinition : AIbehaviorActionRotateBaseTreeNodeDefinition
+	public AIbehaviorActionRotateToObjectHeadingTreeNodeDefinition()
 	{
-		public AIbehaviorActionRotateToObjectHeadingTreeNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InkAnimHelper : IScriptable
 {
-	[REDMeta]
-	public partial class InkAnimHelper : IScriptable
+	public InkAnimHelper()
 	{
-		public InkAnimHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

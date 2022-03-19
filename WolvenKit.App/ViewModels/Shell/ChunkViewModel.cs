@@ -978,12 +978,12 @@ namespace WolvenKit.ViewModels.Shell
             else if (PropertyType.IsAssignableTo(typeof(IRedEnum)))
             {
                 var value = (IRedEnum)Data;
-                Value = value.ToEnumString();
+                Value = value.ToString();
             }
             else if (PropertyType.IsAssignableTo(typeof(IRedBitField)))
             {
                 var value = (IRedBitField)Data;
-                Value = value.ToBitFieldString();
+                Value = value.ToString();
             }
             //else if (PropertyType.IsAssignableTo(typeof(TweakDBID)))
             //{

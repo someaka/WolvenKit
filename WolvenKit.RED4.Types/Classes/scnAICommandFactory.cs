@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnAICommandFactory : IScriptable
 {
-	[REDMeta]
-	public partial class scnAICommandFactory : IScriptable
+	public scnAICommandFactory()
 	{
-		public scnAICommandFactory()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

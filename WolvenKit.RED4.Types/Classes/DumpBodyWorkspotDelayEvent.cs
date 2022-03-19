@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DumpBodyWorkspotDelayEvent : redEvent
 {
-	[REDMeta]
-	public partial class DumpBodyWorkspotDelayEvent : redEvent
+	public DumpBodyWorkspotDelayEvent()
 	{
-		public DumpBodyWorkspotDelayEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

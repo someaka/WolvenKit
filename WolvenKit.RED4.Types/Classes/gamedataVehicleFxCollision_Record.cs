@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataVehicleFxCollision_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataVehicleFxCollision_Record : gamedataTweakDBRecord
+	public gamedataVehicleFxCollision_Record()
 	{
-		public gamedataVehicleFxCollision_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

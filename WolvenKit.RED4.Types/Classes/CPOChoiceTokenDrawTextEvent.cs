@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CPOChoiceTokenDrawTextEvent : redEvent
 {
-	[REDMeta]
-	public partial class CPOChoiceTokenDrawTextEvent : redEvent
+	public CPOChoiceTokenDrawTextEvent()
 	{
-		public CPOChoiceTokenDrawTextEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

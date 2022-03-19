@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class grsGatherAreaManager : RedBaseClass
 {
-	[REDMeta]
-	public partial class grsGatherAreaManager : RedBaseClass
+	[Ordinal(0)] 
+	[RED("activeGatherAreaRepInfo")] 
+	public grsGatherAreaReplicatedInfo ActiveGatherAreaRepInfo
 	{
-		[Ordinal(0)] 
-		[RED("activeGatherAreaRepInfo")] 
-		public grsGatherAreaReplicatedInfo ActiveGatherAreaRepInfo
-		{
-			get => GetPropertyValue<grsGatherAreaReplicatedInfo>();
-			set => SetPropertyValue<grsGatherAreaReplicatedInfo>(value);
-		}
-
-		public grsGatherAreaManager()
-		{
-			ActiveGatherAreaRepInfo = new() { EnteredPlayerIDs = new(0) };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<grsGatherAreaReplicatedInfo>();
+		set => SetPropertyValue<grsGatherAreaReplicatedInfo>(value);
 	}
+
+	public grsGatherAreaManager()
+	{
+		ActiveGatherAreaRepInfo = new() { EnteredPlayerIDs = new(0) };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

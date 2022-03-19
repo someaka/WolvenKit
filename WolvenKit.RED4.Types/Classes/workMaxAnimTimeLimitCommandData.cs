@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class workMaxAnimTimeLimitCommandData : workIWorkspotCommandData
 {
-	[REDMeta]
-	public partial class workMaxAnimTimeLimitCommandData : workIWorkspotCommandData
+	public workMaxAnimTimeLimitCommandData()
 	{
-		public workMaxAnimTimeLimitCommandData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

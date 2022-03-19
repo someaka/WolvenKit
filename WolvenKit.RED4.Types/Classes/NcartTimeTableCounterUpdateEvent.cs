@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NcartTimeTableCounterUpdateEvent : redEvent
 {
-	[REDMeta]
-	public partial class NcartTimeTableCounterUpdateEvent : redEvent
+	public NcartTimeTableCounterUpdateEvent()
 	{
-		public NcartTimeTableCounterUpdateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

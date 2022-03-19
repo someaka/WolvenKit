@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DurabilityComponent : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class DurabilityComponent : gameScriptableComponent
+	public DurabilityComponent()
 	{
-		public DurabilityComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

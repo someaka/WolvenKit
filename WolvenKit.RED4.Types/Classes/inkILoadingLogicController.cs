@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkILoadingLogicController : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class inkILoadingLogicController : inkWidgetLogicController
+	public inkILoadingLogicController()
 	{
-		public inkILoadingLogicController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

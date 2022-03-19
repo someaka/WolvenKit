@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIsQuickhackPanelOpenedPrereqState : RedBaseClass
 {
-	[REDMeta]
-	public partial class gameIsQuickhackPanelOpenedPrereqState : RedBaseClass
+	public gameIsQuickhackPanelOpenedPrereqState()
 	{
-		public gameIsQuickhackPanelOpenedPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

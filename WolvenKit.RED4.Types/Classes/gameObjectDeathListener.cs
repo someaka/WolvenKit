@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameObjectDeathListener : gameIStatPoolsListener
 {
-	[REDMeta]
-	public partial class gameObjectDeathListener : gameIStatPoolsListener
+	public gameObjectDeathListener()
 	{
-		public gameObjectDeathListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

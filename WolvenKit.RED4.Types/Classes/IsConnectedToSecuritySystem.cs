@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IsConnectedToSecuritySystem : AIAutonomousConditions
 {
-	[REDMeta]
-	public partial class IsConnectedToSecuritySystem : AIAutonomousConditions
+	public IsConnectedToSecuritySystem()
 	{
-		public IsConnectedToSecuritySystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

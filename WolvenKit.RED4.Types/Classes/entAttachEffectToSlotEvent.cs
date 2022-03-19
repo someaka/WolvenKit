@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entAttachEffectToSlotEvent : entAttachEffectEvent
 {
-	[REDMeta]
-	public partial class entAttachEffectToSlotEvent : entAttachEffectEvent
+	public entAttachEffectToSlotEvent()
 	{
-		public entAttachEffectToSlotEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

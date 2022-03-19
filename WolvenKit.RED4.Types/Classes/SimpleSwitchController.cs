@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SimpleSwitchController : MasterController
 {
-	[REDMeta]
-	public partial class SimpleSwitchController : MasterController
+	public SimpleSwitchController()
 	{
-		public SimpleSwitchController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

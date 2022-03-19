@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorLeaveCoverImmediatelyNodeDefinition : AIbehaviorDecoratorNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorLeaveCoverImmediatelyNodeDefinition : AIbehaviorDecoratorNodeDefinition
+	public AIbehaviorLeaveCoverImmediatelyNodeDefinition()
 	{
-		public AIbehaviorLeaveCoverImmediatelyNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

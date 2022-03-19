@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CacheStatusEffectAnimationTask : StatusEffectTasks
 {
-	[REDMeta]
-	public partial class CacheStatusEffectAnimationTask : StatusEffectTasks
+	public CacheStatusEffectAnimationTask()
 	{
-		public CacheStatusEffectAnimationTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

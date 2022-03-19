@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataBountyDrawTable_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataBountyDrawTable_Record : gamedataTweakDBRecord
+	public gamedataBountyDrawTable_Record()
 	{
-		public gamedataBountyDrawTable_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

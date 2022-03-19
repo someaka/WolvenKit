@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GameplayLightControllerPS : ElectricLightControllerPS
 {
-	[REDMeta]
-	public partial class GameplayLightControllerPS : ElectricLightControllerPS
+	public GameplayLightControllerPS()
 	{
-		public GameplayLightControllerPS()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

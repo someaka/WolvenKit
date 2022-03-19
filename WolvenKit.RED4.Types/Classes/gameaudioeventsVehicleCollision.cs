@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameaudioeventsVehicleCollision : redEvent
 {
-	[REDMeta]
-	public partial class gameaudioeventsVehicleCollision : redEvent
+	public gameaudioeventsVehicleCollision()
 	{
-		public gameaudioeventsVehicleCollision()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

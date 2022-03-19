@@ -61,7 +61,7 @@ namespace WolvenKit.Views.Templates
                 foreach (var s in Enum.GetNames(ibf.GetInnerType()))
                 {
                     view.BindingCollection.Add(s);
-                    if (ibf.ToBitFieldString().Contains(s))
+                    if (ibf.ToString().Contains(s))
                     {
                         view.SelectedItems.Add(s);
                     }
@@ -87,6 +87,6 @@ namespace WolvenKit.Views.Templates
 
         private void SetRedValue(ObservableCollection<string> value) => SetRedValue(string.Join(", ", value));//Type type = typeof(CBitField<>).MakeGenericType(RedBitfield.GetInnerType());//SetCurrentValue(RedBitfieldProperty, (IRedBitField)System.Activator.CreateInstance(type, value.ToList()));
 
-        private ObservableCollection<string> GetValueFromRedValue() => new ObservableCollection<string>(RedBitfield?.ToBitFieldString().Split(", ") ?? Array.Empty<string>());
+        private ObservableCollection<string> GetValueFromRedValue() => new ObservableCollection<string>(RedBitfield?.ToString().Split(", ") ?? Array.Empty<string>());
     }
 }

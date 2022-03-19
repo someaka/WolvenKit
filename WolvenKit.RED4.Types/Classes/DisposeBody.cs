@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisposeBody : ActionDisposal
 {
-	[REDMeta]
-	public partial class DisposeBody : ActionDisposal
+	public DisposeBody()
 	{
-		public DisposeBody()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

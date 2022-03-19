@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WardrobeController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class WardrobeController : ScriptableDeviceComponent
+	public WardrobeController()
 	{
-		public WardrobeController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

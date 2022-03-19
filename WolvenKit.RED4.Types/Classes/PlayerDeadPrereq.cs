@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerDeadPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class PlayerDeadPrereq : gameIScriptablePrereq
+	public PlayerDeadPrereq()
 	{
-		public PlayerDeadPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

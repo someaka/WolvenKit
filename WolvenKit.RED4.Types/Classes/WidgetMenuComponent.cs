@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WidgetMenuComponent : WidgetMenuComponentInterface
 {
-	[REDMeta]
-	public partial class WidgetMenuComponent : WidgetMenuComponentInterface
+	public WidgetMenuComponent()
 	{
-		public WidgetMenuComponent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

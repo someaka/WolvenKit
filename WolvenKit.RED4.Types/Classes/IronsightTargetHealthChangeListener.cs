@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IronsightTargetHealthChangeListener : gameScriptStatPoolsListener
 {
-	[REDMeta]
-	public partial class IronsightTargetHealthChangeListener : gameScriptStatPoolsListener
+	[Ordinal(0)] 
+	[RED("parentIronsight")] 
+	public CWeakHandle<IronsightGameController> ParentIronsight
 	{
-		[Ordinal(0)] 
-		[RED("parentIronsight")] 
-		public CWeakHandle<IronsightGameController> ParentIronsight
-		{
-			get => GetPropertyValue<CWeakHandle<IronsightGameController>>();
-			set => SetPropertyValue<CWeakHandle<IronsightGameController>>(value);
-		}
-
-		public IronsightTargetHealthChangeListener()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CWeakHandle<IronsightGameController>>();
+		set => SetPropertyValue<CWeakHandle<IronsightGameController>>(value);
 	}
+
+	public IronsightTargetHealthChangeListener()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

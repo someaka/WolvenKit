@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnCheckTriggerInterruptCondition : scnIInterruptCondition
 {
-	[REDMeta]
-	public partial class scnCheckTriggerInterruptCondition : scnIInterruptCondition
+	[Ordinal(0)] 
+	[RED("params")] 
+	public scnCheckTriggerInterruptConditionParams Params
 	{
-		[Ordinal(0)] 
-		[RED("params")] 
-		public scnCheckTriggerInterruptConditionParams Params
-		{
-			get => GetPropertyValue<scnCheckTriggerInterruptConditionParams>();
-			set => SetPropertyValue<scnCheckTriggerInterruptConditionParams>(value);
-		}
-
-		public scnCheckTriggerInterruptCondition()
-		{
-			Params = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<scnCheckTriggerInterruptConditionParams>();
+		set => SetPropertyValue<scnCheckTriggerInterruptConditionParams>(value);
 	}
+
+	public scnCheckTriggerInterruptCondition()
+	{
+		Params = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameScanningActivatorComponent : entIComponent
 {
-	[REDMeta]
-	public partial class gameScanningActivatorComponent : entIComponent
+	public gameScanningActivatorComponent()
 	{
-		public gameScanningActivatorComponent()
-		{
-			Name = "Component";
+		Name = "Component";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

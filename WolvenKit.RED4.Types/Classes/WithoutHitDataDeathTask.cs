@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WithoutHitDataDeathTask : AIDeathReactionsTask
 {
-	[REDMeta]
-	public partial class WithoutHitDataDeathTask : AIDeathReactionsTask
+	public WithoutHitDataDeathTask()
 	{
-		public WithoutHitDataDeathTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

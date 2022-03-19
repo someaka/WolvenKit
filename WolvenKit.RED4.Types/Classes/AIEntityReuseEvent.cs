@@ -1,26 +1,22 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIEntityReuseEvent : AIAIEvent
 {
-	[REDMeta]
-	public partial class AIEntityReuseEvent : AIAIEvent
+	[Ordinal(2)] 
+	[RED("destination")] 
+	public worldGlobalNodeID Destination
 	{
-		[Ordinal(2)] 
-		[RED("destination")] 
-		public worldGlobalNodeID Destination
-		{
-			get => GetPropertyValue<worldGlobalNodeID>();
-			set => SetPropertyValue<worldGlobalNodeID>(value);
-		}
-
-		public AIEntityReuseEvent()
-		{
-			Name = "EntityTeleportRequested";
-			Destination = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<worldGlobalNodeID>();
+		set => SetPropertyValue<worldGlobalNodeID>(value);
 	}
+
+	public AIEntityReuseEvent()
+	{
+		Name = "EntityTeleportRequested";
+		Destination = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

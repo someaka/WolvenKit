@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamestateMachineStateMachineBody : gamestateMachineIStateMachineBody
 {
-	[REDMeta]
-	public partial class gamestateMachineStateMachineBody : gamestateMachineIStateMachineBody
+	public gamestateMachineStateMachineBody()
 	{
-		public gamestateMachineStateMachineBody()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

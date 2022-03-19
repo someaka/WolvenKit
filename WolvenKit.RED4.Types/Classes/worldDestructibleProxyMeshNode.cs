@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDestructibleProxyMeshNode : worldPrefabProxyMeshNode
 {
-	[REDMeta]
-	public partial class worldDestructibleProxyMeshNode : worldPrefabProxyMeshNode
+	[Ordinal(18)] 
+	[RED("ownerHash")] 
+	public CUInt64 OwnerHash
 	{
-		[Ordinal(18)] 
-		[RED("ownerHash")] 
-		public CUInt64 OwnerHash
-		{
-			get => GetPropertyValue<CUInt64>();
-			set => SetPropertyValue<CUInt64>(value);
-		}
-
-		public worldDestructibleProxyMeshNode()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CUInt64>();
+		set => SetPropertyValue<CUInt64>(value);
 	}
+
+	public worldDestructibleProxyMeshNode()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

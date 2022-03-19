@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DelayedDescriptionIntro : redEvent
 {
-	[REDMeta]
-	public partial class DelayedDescriptionIntro : redEvent
+	public DelayedDescriptionIntro()
 	{
-		public DelayedDescriptionIntro()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

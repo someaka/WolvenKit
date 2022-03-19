@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearEquipmentRequest : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ClearEquipmentRequest : gamePlayerScriptableSystemRequest
+	public ClearEquipmentRequest()
 	{
-		public ClearEquipmentRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

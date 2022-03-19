@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class resResourceMetricsReportGenerator : IScriptable
 {
-	[REDMeta]
-	public partial class resResourceMetricsReportGenerator : IScriptable
+	public resResourceMetricsReportGenerator()
 	{
-		public resResourceMetricsReportGenerator()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

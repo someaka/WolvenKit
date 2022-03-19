@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIBlackboardUpdateProxy : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIBlackboardUpdateProxy : gameIGameSystem
+	public gameIBlackboardUpdateProxy()
 	{
-		public gameIBlackboardUpdateProxy()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

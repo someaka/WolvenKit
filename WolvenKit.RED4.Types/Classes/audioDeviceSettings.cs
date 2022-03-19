@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audioDeviceSettings : audioEntitySettings
 {
-	[REDMeta]
-	public partial class audioDeviceSettings : audioEntitySettings
+	[Ordinal(6)] 
+	[RED("deviceSettings")] 
+	public audioDeviceStateSettings DeviceSettings
 	{
-		[Ordinal(6)] 
-		[RED("deviceSettings")] 
-		public audioDeviceStateSettings DeviceSettings
-		{
-			get => GetPropertyValue<audioDeviceStateSettings>();
-			set => SetPropertyValue<audioDeviceStateSettings>(value);
-		}
-
-		public audioDeviceSettings()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<audioDeviceStateSettings>();
+		set => SetPropertyValue<audioDeviceStateSettings>(value);
 	}
+
+	public audioDeviceSettings()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

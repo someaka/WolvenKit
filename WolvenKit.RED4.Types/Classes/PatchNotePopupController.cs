@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PatchNotePopupController : gameuiWidgetGameController
 {
-	[REDMeta]
-	public partial class PatchNotePopupController : gameuiWidgetGameController
+	public PatchNotePopupController()
 	{
-		public PatchNotePopupController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

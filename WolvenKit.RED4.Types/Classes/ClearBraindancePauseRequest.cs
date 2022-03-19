@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ClearBraindancePauseRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class ClearBraindancePauseRequest : gameScriptableSystemRequest
+	public ClearBraindancePauseRequest()
 	{
-		public ClearBraindancePauseRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

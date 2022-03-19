@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class audioInlinedAudioMetadata : audioAudioMetadataBase
 {
-	[REDMeta]
-	public partial class audioInlinedAudioMetadata : audioAudioMetadataBase
+	public audioInlinedAudioMetadata()
 	{
-		public audioInlinedAudioMetadata()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

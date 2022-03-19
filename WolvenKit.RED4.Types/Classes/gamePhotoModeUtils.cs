@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamePhotoModeUtils : RedBaseClass
 {
-	[REDMeta]
-	public partial class gamePhotoModeUtils : RedBaseClass
+	public gamePhotoModeUtils()
 	{
-		public gamePhotoModeUtils()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

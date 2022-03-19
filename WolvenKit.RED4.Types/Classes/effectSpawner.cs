@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectSpawner : ISerializable
 {
-	[REDMeta]
-	public partial class effectSpawner : ISerializable
+	public effectSpawner()
 	{
-		public effectSpawner()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

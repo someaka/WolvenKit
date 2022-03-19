@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BlindingLightController : BasicDistractionDeviceController
 {
-	[REDMeta]
-	public partial class BlindingLightController : BasicDistractionDeviceController
+	public BlindingLightController()
 	{
-		public BlindingLightController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

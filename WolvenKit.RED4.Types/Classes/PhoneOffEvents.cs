@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PhoneOffEvents : ComDeviceTransition
 {
-	[REDMeta]
-	public partial class PhoneOffEvents : ComDeviceTransition
+	public PhoneOffEvents()
 	{
-		public PhoneOffEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

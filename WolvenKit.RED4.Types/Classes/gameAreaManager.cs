@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAreaManager : gameIAreaManager
 {
-	[REDMeta]
-	public partial class gameAreaManager : gameIAreaManager
+	public gameAreaManager()
 	{
-		public gameAreaManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIFearInPlaceEvent : AIAIEvent
 {
-	[REDMeta]
-	public partial class AIFearInPlaceEvent : AIAIEvent
+	public AIFearInPlaceEvent()
 	{
-		public AIFearInPlaceEvent()
-		{
-			Name = "fearInPlace";
+		Name = "fearInPlace";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

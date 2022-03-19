@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsIPointOfInterestVariant : ISerializable
 {
-	[REDMeta]
-	public partial class gamemappinsIPointOfInterestVariant : ISerializable
+	public gamemappinsIPointOfInterestVariant()
 	{
-		public gamemappinsIPointOfInterestVariant()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

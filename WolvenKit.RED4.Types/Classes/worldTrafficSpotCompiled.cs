@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldTrafficSpotCompiled : ISerializable
 {
-	[REDMeta]
-	public partial class worldTrafficSpotCompiled : ISerializable
+	public worldTrafficSpotCompiled()
 	{
-		public worldTrafficSpotCompiled()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

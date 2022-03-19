@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class mpPlayerManager : gameIPlayerManager
 {
-	[REDMeta]
-	public partial class mpPlayerManager : gameIPlayerManager
+	public mpPlayerManager()
 	{
-		public mpPlayerManager()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

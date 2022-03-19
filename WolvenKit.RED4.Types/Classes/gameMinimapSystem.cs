@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMinimapSystem : gameIMinimapSystem
 {
-	[REDMeta]
-	public partial class gameMinimapSystem : gameIMinimapSystem
+	public gameMinimapSystem()
 	{
-		public gameMinimapSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

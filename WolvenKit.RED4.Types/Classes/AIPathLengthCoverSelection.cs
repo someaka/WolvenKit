@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIPathLengthCoverSelection : AICoverSelectionParameters
 {
-	[REDMeta]
-	public partial class AIPathLengthCoverSelection : AICoverSelectionParameters
+	public AIPathLengthCoverSelection()
 	{
-		public AIPathLengthCoverSelection()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

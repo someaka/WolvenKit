@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IdleEvents : VehicleEventsTransition
 {
-	[REDMeta]
-	public partial class IdleEvents : VehicleEventsTransition
+	public IdleEvents()
 	{
-		public IdleEvents()
-		{
-			CameraToggleHoldToResetTimeSeconds = 0.350000F;
+		CameraToggleHoldToResetTimeSeconds = 0.350000F;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

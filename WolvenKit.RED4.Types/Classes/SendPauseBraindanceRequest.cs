@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SendPauseBraindanceRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class SendPauseBraindanceRequest : gameScriptableSystemRequest
+	public SendPauseBraindanceRequest()
 	{
-		public SendPauseBraindanceRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkWorldWidgetInfos : inkUserData
 {
-	[REDMeta]
-	public partial class inkWorldWidgetInfos : inkUserData
+	public inkWorldWidgetInfos()
 	{
-		public inkWorldWidgetInfos()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

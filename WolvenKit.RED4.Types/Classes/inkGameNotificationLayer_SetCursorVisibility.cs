@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkGameNotificationLayer_SetCursorVisibility : redEvent
 {
-	[REDMeta]
-	public partial class inkGameNotificationLayer_SetCursorVisibility : redEvent
+	public inkGameNotificationLayer_SetCursorVisibility()
 	{
-		public inkGameNotificationLayer_SetCursorVisibility()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

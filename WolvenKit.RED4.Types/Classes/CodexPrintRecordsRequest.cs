@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CodexPrintRecordsRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class CodexPrintRecordsRequest : gameScriptableSystemRequest
+	public CodexPrintRecordsRequest()
 	{
-		public CodexPrintRecordsRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

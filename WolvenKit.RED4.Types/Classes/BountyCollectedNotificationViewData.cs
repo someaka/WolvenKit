@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BountyCollectedNotificationViewData : gameuiGenericNotificationViewData
 {
-	[REDMeta]
-	public partial class BountyCollectedNotificationViewData : gameuiGenericNotificationViewData
+	public BountyCollectedNotificationViewData()
 	{
-		public BountyCollectedNotificationViewData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

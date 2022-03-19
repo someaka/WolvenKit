@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnBluelineSelectedRequest : gamePlayerScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class scnBluelineSelectedRequest : gamePlayerScriptableSystemRequest
+	public scnBluelineSelectedRequest()
 	{
-		public scnBluelineSelectedRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

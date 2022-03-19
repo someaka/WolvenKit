@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FunctionalTestsGameEngine : CGameEngine
 {
-	[REDMeta]
-	public partial class FunctionalTestsGameEngine : CGameEngine
+	public FunctionalTestsGameEngine()
 	{
-		public FunctionalTestsGameEngine()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

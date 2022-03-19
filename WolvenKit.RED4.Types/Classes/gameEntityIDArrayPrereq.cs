@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameEntityIDArrayPrereq : gameIPrereq
 {
-	[REDMeta]
-	public partial class gameEntityIDArrayPrereq : gameIPrereq
+	public gameEntityIDArrayPrereq()
 	{
-		public gameEntityIDArrayPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

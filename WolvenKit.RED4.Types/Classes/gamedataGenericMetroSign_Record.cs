@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataGenericMetroSign_Record : gamedataBaseSign_Record
 {
-	[REDMeta]
-	public partial class gamedataGenericMetroSign_Record : gamedataBaseSign_Record
+	public gamedataGenericMetroSign_Record()
 	{
-		public gamedataGenericMetroSign_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

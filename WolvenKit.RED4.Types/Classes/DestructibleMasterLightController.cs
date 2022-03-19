@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DestructibleMasterLightController : DestructibleMasterDeviceController
 {
-	[REDMeta]
-	public partial class DestructibleMasterLightController : DestructibleMasterDeviceController
+	public DestructibleMasterLightController()
 	{
-		public DestructibleMasterLightController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

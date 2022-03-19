@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class SteetCredDataHelper : IScriptable
 {
-	[REDMeta]
-	public partial class SteetCredDataHelper : IScriptable
+	public SteetCredDataHelper()
 	{
-		public SteetCredDataHelper()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class WorkSpotTask : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class WorkSpotTask : AIbehaviortaskScript
+	public WorkSpotTask()
 	{
-		public WorkSpotTask()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

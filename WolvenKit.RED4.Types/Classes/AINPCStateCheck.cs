@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AINPCStateCheck : AIbehaviorconditionScript
 {
-	[REDMeta]
-	public partial class AINPCStateCheck : AIbehaviorconditionScript
+	public AINPCStateCheck()
 	{
-		public AINPCStateCheck()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

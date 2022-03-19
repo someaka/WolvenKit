@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiOnHitCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class gameuiOnHitCallback : inkCallbackBase
+	public gameuiOnHitCallback()
 	{
-		public gameuiOnHitCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

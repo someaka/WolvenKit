@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class StrikeExecutor_Debug_VDB : StrikeExecutor_Debug
 {
-	[REDMeta]
-	public partial class StrikeExecutor_Debug_VDB : StrikeExecutor_Debug
+	public StrikeExecutor_Debug_VDB()
 	{
-		public StrikeExecutor_Debug_VDB()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

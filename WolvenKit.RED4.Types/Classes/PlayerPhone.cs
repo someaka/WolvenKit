@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PlayerPhone : gameScriptableComponent
 {
-	[REDMeta]
-	public partial class PlayerPhone : gameScriptableComponent
+	public PlayerPhone()
 	{
-		public PlayerPhone()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

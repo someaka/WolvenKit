@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ExitLightControllerPS : ScriptableDeviceComponentPS
 {
-	[REDMeta]
-	public partial class ExitLightControllerPS : ScriptableDeviceComponentPS
+	public ExitLightControllerPS()
 	{
-		public ExitLightControllerPS()
-		{
-			DeviceName = "Exit Light";
+		DeviceName = "Exit Light";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

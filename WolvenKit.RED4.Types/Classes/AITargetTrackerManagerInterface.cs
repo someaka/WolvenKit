@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AITargetTrackerManagerInterface : gameIGameSystem
 {
-	[REDMeta]
-	public partial class AITargetTrackerManagerInterface : gameIGameSystem
+	public AITargetTrackerManagerInterface()
 	{
-		public AITargetTrackerManagerInterface()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

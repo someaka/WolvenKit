@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameBlueprintStackableItemData : gameItemData
 {
-	[REDMeta]
-	public partial class gameBlueprintStackableItemData : gameItemData
+	public gameBlueprintStackableItemData()
 	{
-		public gameBlueprintStackableItemData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

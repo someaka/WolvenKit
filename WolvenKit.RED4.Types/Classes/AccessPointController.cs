@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AccessPointController : MasterController
 {
-	[REDMeta]
-	public partial class AccessPointController : MasterController
+	public AccessPointController()
 	{
-		public AccessPointController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

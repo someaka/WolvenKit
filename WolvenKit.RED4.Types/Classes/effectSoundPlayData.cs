@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class effectSoundPlayData : effectPlacedTrackItemPlayData
 {
-	[REDMeta]
-	public partial class effectSoundPlayData : effectPlacedTrackItemPlayData
+	public effectSoundPlayData()
 	{
-		public effectSoundPlayData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

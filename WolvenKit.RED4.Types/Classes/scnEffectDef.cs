@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnEffectDef : RedBaseClass
 {
-	[REDMeta]
-	public partial class scnEffectDef : RedBaseClass
+	[Ordinal(0)] 
+	[RED("id")] 
+	public scnEffectId Id
 	{
-		[Ordinal(0)] 
-		[RED("id")] 
-		public scnEffectId Id
-		{
-			get => GetPropertyValue<scnEffectId>();
-			set => SetPropertyValue<scnEffectId>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("effect")] 
-		public CResourceAsyncReference<worldEffect> Effect
-		{
-			get => GetPropertyValue<CResourceAsyncReference<worldEffect>>();
-			set => SetPropertyValue<CResourceAsyncReference<worldEffect>>(value);
-		}
-
-		public scnEffectDef()
-		{
-			Id = new() { Id = 4294967295 };
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<scnEffectId>();
+		set => SetPropertyValue<scnEffectId>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("effect")] 
+	public CResourceAsyncReference<worldEffect> Effect
+	{
+		get => GetPropertyValue<CResourceAsyncReference<worldEffect>>();
+		set => SetPropertyValue<CResourceAsyncReference<worldEffect>>(value);
+	}
+
+	public scnEffectDef()
+	{
+		Id = new() { Id = 4294967295 };
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

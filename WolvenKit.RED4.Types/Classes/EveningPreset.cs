@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EveningPreset : SmartHousePreset
 {
-	[REDMeta]
-	public partial class EveningPreset : SmartHousePreset
+	public EveningPreset()
 	{
-		public EveningPreset()
-		{
-			Timetable = new() { Time = new() };
+		Timetable = new() { Time = new() };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldCompiledNodeInstanceSetupInfo : RedBaseClass
 {
-	[REDMeta]
-	public partial class worldCompiledNodeInstanceSetupInfo : RedBaseClass
+	public worldCompiledNodeInstanceSetupInfo()
 	{
-		public worldCompiledNodeInstanceSetupInfo()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

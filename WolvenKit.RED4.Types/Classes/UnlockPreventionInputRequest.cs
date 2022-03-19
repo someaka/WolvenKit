@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnlockPreventionInputRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class UnlockPreventionInputRequest : gameScriptableSystemRequest
+	public UnlockPreventionInputRequest()
 	{
-		public UnlockPreventionInputRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameICameraSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameICameraSystem : gameIGameSystem
+	public gameICameraSystem()
 	{
-		public gameICameraSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

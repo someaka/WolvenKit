@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AuthorisationNotification : GenericNotificationController
 {
-	[REDMeta]
-	public partial class AuthorisationNotification : GenericNotificationController
+	public AuthorisationNotification()
 	{
-		public AuthorisationNotification()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

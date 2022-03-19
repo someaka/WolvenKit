@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BurstEvents : WeaponEventsTransition
 {
-	[REDMeta]
-	public partial class BurstEvents : WeaponEventsTransition
+	public BurstEvents()
 	{
-		public BurstEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

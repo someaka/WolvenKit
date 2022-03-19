@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InAttackUpperBodyState : AINPCUpperBodyStateCheck
 {
-	[REDMeta]
-	public partial class InAttackUpperBodyState : AINPCUpperBodyStateCheck
+	public InAttackUpperBodyState()
 	{
-		public InAttackUpperBodyState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

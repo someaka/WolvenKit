@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamebbScriptID_Float : gamebbScriptID
 {
-	[REDMeta]
-	public partial class gamebbScriptID_Float : gamebbScriptID
+	public gamebbScriptID_Float()
 	{
-		public gamebbScriptID_Float()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class genIRandomizationSupervisor : IScriptable
 {
-	[REDMeta]
-	public partial class genIRandomizationSupervisor : IScriptable
+	public genIRandomizationSupervisor()
 	{
-		public genIRandomizationSupervisor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

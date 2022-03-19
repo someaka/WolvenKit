@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class BackActionCallback : redEvent
 {
-	[REDMeta]
-	public partial class BackActionCallback : redEvent
+	public BackActionCallback()
 	{
-		public BackActionCallback()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

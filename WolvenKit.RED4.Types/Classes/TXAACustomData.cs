@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class TXAACustomData : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class TXAACustomData : ICameraStorageCustomData
+	public TXAACustomData()
 	{
-		public TXAACustomData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

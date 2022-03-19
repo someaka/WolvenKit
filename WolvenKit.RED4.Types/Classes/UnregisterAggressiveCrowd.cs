@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class UnregisterAggressiveCrowd : redEvent
 {
-	[REDMeta]
-	public partial class UnregisterAggressiveCrowd : redEvent
+	public UnregisterAggressiveCrowd()
 	{
-		public UnregisterAggressiveCrowd()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

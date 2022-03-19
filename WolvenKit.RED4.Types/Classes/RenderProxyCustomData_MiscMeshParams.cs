@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RenderProxyCustomData_MiscMeshParams : IRenderProxyCustomData
 {
-	[REDMeta]
-	public partial class RenderProxyCustomData_MiscMeshParams : IRenderProxyCustomData
+	public RenderProxyCustomData_MiscMeshParams()
 	{
-		public RenderProxyCustomData_MiscMeshParams()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

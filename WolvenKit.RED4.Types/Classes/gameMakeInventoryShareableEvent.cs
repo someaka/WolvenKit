@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameMakeInventoryShareableEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameMakeInventoryShareableEvent : redEvent
+	public gameMakeInventoryShareableEvent()
 	{
-		public gameMakeInventoryShareableEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

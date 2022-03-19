@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldRuntimeSystemFoliage : worldIRuntimeSystem
 {
-	[REDMeta]
-	public partial class worldRuntimeSystemFoliage : worldIRuntimeSystem
+	public worldRuntimeSystemFoliage()
 	{
-		public worldRuntimeSystemFoliage()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

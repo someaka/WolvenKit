@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameeventsProperlySeenByPlayerEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameeventsProperlySeenByPlayerEvent : redEvent
+	public gameeventsProperlySeenByPlayerEvent()
 	{
-		public gameeventsProperlySeenByPlayerEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

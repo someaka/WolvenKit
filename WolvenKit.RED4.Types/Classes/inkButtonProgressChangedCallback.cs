@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkButtonProgressChangedCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkButtonProgressChangedCallback : inkCallbackBase
+	public inkButtonProgressChangedCallback()
 	{
-		public inkButtonProgressChangedCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LibTreeCTreeResource : CResource
 {
-	[REDMeta]
-	public partial class LibTreeCTreeResource : CResource
+	[Ordinal(1)] 
+	[RED("variables")] 
+	public LibTreeDefTreeVariablesList Variables
 	{
-		[Ordinal(1)] 
-		[RED("variables")] 
-		public LibTreeDefTreeVariablesList Variables
-		{
-			get => GetPropertyValue<LibTreeDefTreeVariablesList>();
-			set => SetPropertyValue<LibTreeDefTreeVariablesList>(value);
-		}
-
-		public LibTreeCTreeResource()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<LibTreeDefTreeVariablesList>();
+		set => SetPropertyValue<LibTreeDefTreeVariablesList>(value);
 	}
+
+	public LibTreeCTreeResource()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameaudioIAudioSubSystem : IScriptable
 {
-	[REDMeta]
-	public partial class gameaudioIAudioSubSystem : IScriptable
+	public gameaudioIAudioSubSystem()
 	{
-		public gameaudioIAudioSubSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

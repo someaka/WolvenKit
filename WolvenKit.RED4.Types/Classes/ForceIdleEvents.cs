@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceIdleEvents : LocomotionGroundEvents
 {
-	[REDMeta]
-	public partial class ForceIdleEvents : LocomotionGroundEvents
+	public ForceIdleEvents()
 	{
-		public ForceIdleEvents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

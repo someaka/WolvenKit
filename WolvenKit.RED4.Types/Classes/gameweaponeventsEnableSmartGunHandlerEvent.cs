@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameweaponeventsEnableSmartGunHandlerEvent : redEvent
 {
-	[REDMeta]
-	public partial class gameweaponeventsEnableSmartGunHandlerEvent : redEvent
+	public gameweaponeventsEnableSmartGunHandlerEvent()
 	{
-		public gameweaponeventsEnableSmartGunHandlerEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

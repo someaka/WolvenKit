@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questAICommandNodeBase : questSignalStoppingNodeDefinition
 {
-	[REDMeta]
-	public partial class questAICommandNodeBase : questSignalStoppingNodeDefinition
+	public questAICommandNodeBase()
 	{
-		public questAICommandNodeBase()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

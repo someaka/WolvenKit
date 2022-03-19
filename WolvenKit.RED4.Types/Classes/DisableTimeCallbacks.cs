@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisableTimeCallbacks : redEvent
 {
-	[REDMeta]
-	public partial class DisableTimeCallbacks : redEvent
+	public DisableTimeCallbacks()
 	{
-		public DisableTimeCallbacks()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

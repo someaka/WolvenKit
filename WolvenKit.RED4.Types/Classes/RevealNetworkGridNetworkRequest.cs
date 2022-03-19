@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class RevealNetworkGridNetworkRequest : redEvent
 {
-	[REDMeta]
-	public partial class RevealNetworkGridNetworkRequest : redEvent
+	public RevealNetworkGridNetworkRequest()
 	{
-		public RevealNetworkGridNetworkRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

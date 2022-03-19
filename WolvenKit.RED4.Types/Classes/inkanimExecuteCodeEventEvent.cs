@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkanimExecuteCodeEventEvent : inkanimEvent
 {
-	[REDMeta]
-	public partial class inkanimExecuteCodeEventEvent : inkanimEvent
+	[Ordinal(1)] 
+	[RED("eventToExecute")] 
+	public CHandle<redEvent> EventToExecute
 	{
-		[Ordinal(1)] 
-		[RED("eventToExecute")] 
-		public CHandle<redEvent> EventToExecute
-		{
-			get => GetPropertyValue<CHandle<redEvent>>();
-			set => SetPropertyValue<CHandle<redEvent>>(value);
-		}
-
-		public inkanimExecuteCodeEventEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CHandle<redEvent>>();
+		set => SetPropertyValue<CHandle<redEvent>>(value);
 	}
+
+	public inkanimExecuteCodeEventEvent()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

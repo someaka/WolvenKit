@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InventoryCyberwareDetails : inkWidgetLogicController
 {
-	[REDMeta]
-	public partial class InventoryCyberwareDetails : inkWidgetLogicController
+	public InventoryCyberwareDetails()
 	{
-		public InventoryCyberwareDetails()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

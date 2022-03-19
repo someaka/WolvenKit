@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldDynamicMeshNodeInstance : worldMeshNodeInstance
 {
-	[REDMeta]
-	public partial class worldDynamicMeshNodeInstance : worldMeshNodeInstance
+	public worldDynamicMeshNodeInstance()
 	{
-		public worldDynamicMeshNodeInstance()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

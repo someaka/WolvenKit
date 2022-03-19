@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataLookAtPart_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataLookAtPart_Record : gamedataTweakDBRecord
+	public gamedataLookAtPart_Record()
 	{
-		public gamedataLookAtPart_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

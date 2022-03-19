@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CameraCustomData_DataMoshing : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class CameraCustomData_DataMoshing : ICameraStorageCustomData
+	public CameraCustomData_DataMoshing()
 	{
-		public CameraCustomData_DataMoshing()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

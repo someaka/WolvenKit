@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CameraCustomData_ReflectionProbes : ICameraStorageCustomData
 {
-	[REDMeta]
-	public partial class CameraCustomData_ReflectionProbes : ICameraStorageCustomData
+	public CameraCustomData_ReflectionProbes()
 	{
-		public CameraCustomData_ReflectionProbes()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

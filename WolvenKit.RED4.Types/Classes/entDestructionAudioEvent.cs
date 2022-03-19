@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entDestructionAudioEvent : redEvent
 {
-	[REDMeta]
-	public partial class entDestructionAudioEvent : redEvent
+	public entDestructionAudioEvent()
 	{
-		public entDestructionAudioEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

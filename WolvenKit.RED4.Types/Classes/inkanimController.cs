@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkanimController : IScriptable
 {
-	[REDMeta]
-	public partial class inkanimController : IScriptable
+	public inkanimController()
 	{
-		public inkanimController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

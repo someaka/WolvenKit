@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAnimationPersistentDataSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameAnimationPersistentDataSystem : gameIGameSystem
+	public gameAnimationPersistentDataSystem()
 	{
-		public gameAnimationPersistentDataSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

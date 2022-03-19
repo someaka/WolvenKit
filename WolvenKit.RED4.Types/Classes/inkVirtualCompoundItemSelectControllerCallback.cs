@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVirtualCompoundItemSelectControllerCallback : inkCallbackBase
 {
-	[REDMeta]
-	public partial class inkVirtualCompoundItemSelectControllerCallback : inkCallbackBase
+	public inkVirtualCompoundItemSelectControllerCallback()
 	{
-		public inkVirtualCompoundItemSelectControllerCallback()
-		{
-			CallbackName = "";
-			Listeners = new();
+		CallbackName = "";
+		Listeners = new();
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActionFloat : ScriptableDeviceAction
 {
-	[REDMeta]
-	public partial class ActionFloat : ScriptableDeviceAction
+	public ActionFloat()
 	{
-		public ActionFloat()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

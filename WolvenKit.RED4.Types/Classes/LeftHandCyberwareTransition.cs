@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LeftHandCyberwareTransition : DefaultTransition
 {
-	[REDMeta]
-	public partial class LeftHandCyberwareTransition : DefaultTransition
+	public LeftHandCyberwareTransition()
 	{
-		public LeftHandCyberwareTransition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorWaitSplineToFollowConditionDefinition : AIbehaviorConditionDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorWaitSplineToFollowConditionDefinition : AIbehaviorConditionDefinition
+	public AIbehaviorWaitSplineToFollowConditionDefinition()
 	{
-		public AIbehaviorWaitSplineToFollowConditionDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

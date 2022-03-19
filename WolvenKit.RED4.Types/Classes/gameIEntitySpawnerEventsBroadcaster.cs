@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameIEntitySpawnerEventsBroadcaster : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameIEntitySpawnerEventsBroadcaster : gameIGameSystem
+	public gameIEntitySpawnerEventsBroadcaster()
 	{
-		public gameIEntitySpawnerEventsBroadcaster()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamemappinsPointOfInterestMappin : gamemappinsIMappin
 {
-	[REDMeta]
-	public partial class gamemappinsPointOfInterestMappin : gamemappinsIMappin
+	public gamemappinsPointOfInterestMappin()
 	{
-		public gamemappinsPointOfInterestMappin()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

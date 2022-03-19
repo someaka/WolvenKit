@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ProximityDetectorController : ScriptableDeviceComponent
 {
-	[REDMeta]
-	public partial class ProximityDetectorController : ScriptableDeviceComponent
+	public ProximityDetectorController()
 	{
-		public ProximityDetectorController()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

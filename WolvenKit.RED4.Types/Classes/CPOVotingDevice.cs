@@ -1,26 +1,22 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class CPOVotingDevice : CPOMissionDevice
 {
-	[REDMeta]
-	public partial class CPOVotingDevice : CPOMissionDevice
+	[Ordinal(40)] 
+	[RED("deviceName")] 
+	public CName DeviceName
 	{
-		[Ordinal(40)] 
-		[RED("deviceName")] 
-		public CName DeviceName
-		{
-			get => GetPropertyValue<CName>();
-			set => SetPropertyValue<CName>(value);
-		}
-
-		public CPOVotingDevice()
-		{
-			BlockAfterOperation = false;
-			FactToUnblock = "defaults to compatibleDeviceName_enabled";
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CName>();
+		set => SetPropertyValue<CName>(value);
 	}
+
+	public CPOVotingDevice()
+	{
+		BlockAfterOperation = false;
+		FactToUnblock = "defaults to compatibleDeviceName_enabled";
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class EvaluateMappinsVisualStateEvent : redEvent
 {
-	[REDMeta]
-	public partial class EvaluateMappinsVisualStateEvent : redEvent
+	public EvaluateMappinsVisualStateEvent()
 	{
-		public EvaluateMappinsVisualStateEvent()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

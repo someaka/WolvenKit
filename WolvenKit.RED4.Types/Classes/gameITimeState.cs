@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameITimeState : ISerializable
 {
-	[REDMeta]
-	public partial class gameITimeState : ISerializable
+	public gameITimeState()
 	{
-		public gameITimeState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

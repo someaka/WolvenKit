@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameCompiledShootingSpotData : gameCompiledCoverData
 {
-	[REDMeta]
-	public partial class gameCompiledShootingSpotData : gameCompiledCoverData
+	public gameCompiledShootingSpotData()
 	{
-		public gameCompiledShootingSpotData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

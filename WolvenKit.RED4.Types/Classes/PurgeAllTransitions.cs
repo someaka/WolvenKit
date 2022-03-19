@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PurgeAllTransitions : redEvent
 {
-	[REDMeta]
-	public partial class PurgeAllTransitions : redEvent
+	public PurgeAllTransitions()
 	{
-		public PurgeAllTransitions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

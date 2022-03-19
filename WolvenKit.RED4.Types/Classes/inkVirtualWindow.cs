@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkVirtualWindow : inkWindow
 {
-	[REDMeta]
-	public partial class inkVirtualWindow : inkWindow
+	public inkVirtualWindow()
 	{
-		public inkVirtualWindow()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

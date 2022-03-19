@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceFreezeDecisions : LocomotionGroundDecisions
 {
-	[REDMeta]
-	public partial class ForceFreezeDecisions : LocomotionGroundDecisions
+	public ForceFreezeDecisions()
 	{
-		public ForceFreezeDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

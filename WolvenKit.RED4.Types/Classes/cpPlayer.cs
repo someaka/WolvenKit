@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class cpPlayer : gamePlayer
 {
-	[REDMeta]
-	public partial class cpPlayer : gamePlayer
+	public cpPlayer()
 	{
-		public cpPlayer()
-		{
-			PeerID = new() { Value = 255 };
+		PeerID = new() { Value = 255 };
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

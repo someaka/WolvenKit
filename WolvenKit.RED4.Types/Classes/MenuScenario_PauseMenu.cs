@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class MenuScenario_PauseMenu : MenuScenario_BaseMenu
 {
-	[REDMeta]
-	public partial class MenuScenario_PauseMenu : MenuScenario_BaseMenu
+	public MenuScenario_PauseMenu()
 	{
-		public MenuScenario_PauseMenu()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

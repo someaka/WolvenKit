@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class entStaticPositionProvider : entIPositionProvider
 {
-	[REDMeta]
-	public partial class entStaticPositionProvider : entIPositionProvider
+	public entStaticPositionProvider()
 	{
-		public entStaticPositionProvider()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

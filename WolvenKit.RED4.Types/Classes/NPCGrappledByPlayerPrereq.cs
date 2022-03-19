@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class NPCGrappledByPlayerPrereq : gameIScriptablePrereq
 {
-	[REDMeta]
-	public partial class NPCGrappledByPlayerPrereq : gameIScriptablePrereq
+	public NPCGrappledByPlayerPrereq()
 	{
-		public NPCGrappledByPlayerPrereq()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

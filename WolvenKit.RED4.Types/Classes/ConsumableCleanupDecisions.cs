@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ConsumableCleanupDecisions : ConsumableTransitions
 {
-	[REDMeta]
-	public partial class ConsumableCleanupDecisions : ConsumableTransitions
+	public ConsumableCleanupDecisions()
 	{
-		public ConsumableCleanupDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DEVICE_Actor : gameHudActor
 {
-	[REDMeta]
-	public partial class DEVICE_Actor : gameHudActor
+	public DEVICE_Actor()
 	{
-		public DEVICE_Actor()
-		{
-			Type = Enums.HUDActorType.DEVICE;
+		Type = Enums.HUDActorType.DEVICE;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gsmMenuState_ErrorPopup : gsmPopupState
 {
-	[REDMeta]
-	public partial class gsmMenuState_ErrorPopup : gsmPopupState
+	public gsmMenuState_ErrorPopup()
 	{
-		public gsmMenuState_ErrorPopup()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

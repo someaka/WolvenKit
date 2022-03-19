@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gamedataAimAssistConfigPreset_Record : gamedataTweakDBRecord
 {
-	[REDMeta]
-	public partial class gamedataAimAssistConfigPreset_Record : gamedataTweakDBRecord
+	public gamedataAimAssistConfigPreset_Record()
 	{
-		public gamedataAimAssistConfigPreset_Record()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

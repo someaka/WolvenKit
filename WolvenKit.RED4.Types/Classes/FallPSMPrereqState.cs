@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class FallPSMPrereqState : PlayerStateMachinePrereqState
 {
-	[REDMeta]
-	public partial class FallPSMPrereqState : PlayerStateMachinePrereqState
+	public FallPSMPrereqState()
 	{
-		public FallPSMPrereqState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiPanzerBullet : gameuiSideScrollerMiniGameDynObjectLogicAdvanced
 {
-	[REDMeta]
-	public partial class gameuiPanzerBullet : gameuiSideScrollerMiniGameDynObjectLogicAdvanced
+	public gameuiPanzerBullet()
 	{
-		public gameuiPanzerBullet()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AISubActionAttackWithWeapon_Record_Implementation : IScriptable
 {
-	[REDMeta]
-	public partial class AISubActionAttackWithWeapon_Record_Implementation : IScriptable
+	public AISubActionAttackWithWeapon_Record_Implementation()
 	{
-		public AISubActionAttackWithWeapon_Record_Implementation()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

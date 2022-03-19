@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIPrepareTakedownData : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class AIPrepareTakedownData : AIbehaviortaskScript
+	public AIPrepareTakedownData()
 	{
-		public AIPrepareTakedownData()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

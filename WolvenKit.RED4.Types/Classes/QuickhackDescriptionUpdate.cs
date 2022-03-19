@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class QuickhackDescriptionUpdate : redEvent
 {
-	[REDMeta]
-	public partial class QuickhackDescriptionUpdate : redEvent
+	public QuickhackDescriptionUpdate()
 	{
-		public QuickhackDescriptionUpdate()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

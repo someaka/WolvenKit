@@ -1,33 +1,29 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisableRPGRequirementsForDeviceActions : redEvent
 {
-	[REDMeta]
-	public partial class DisableRPGRequirementsForDeviceActions : redEvent
+	[Ordinal(0)] 
+	[RED("action")] 
+	public TweakDBID Action
 	{
-		[Ordinal(0)] 
-		[RED("action")] 
-		public TweakDBID Action
-		{
-			get => GetPropertyValue<TweakDBID>();
-			set => SetPropertyValue<TweakDBID>(value);
-		}
-
-		[Ordinal(1)] 
-		[RED("disable")] 
-		public CBool Disable
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public DisableRPGRequirementsForDeviceActions()
-		{
-			Disable = true;
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<TweakDBID>();
+		set => SetPropertyValue<TweakDBID>(value);
 	}
+
+	[Ordinal(1)] 
+	[RED("disable")] 
+	public CBool Disable
+	{
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
+	}
+
+	public DisableRPGRequirementsForDeviceActions()
+	{
+		Disable = true;
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

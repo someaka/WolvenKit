@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldCompiledSector : RedBaseClass
 {
-	[REDMeta]
-	public partial class worldCompiledSector : RedBaseClass
+	public worldCompiledSector()
 	{
-		public worldCompiledSector()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

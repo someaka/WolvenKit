@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class inkIsAbleToSwapHorizontally : inkUserData
 {
-	[REDMeta]
-	public partial class inkIsAbleToSwapHorizontally : inkUserData
+	public inkIsAbleToSwapHorizontally()
 	{
-		public inkIsAbleToSwapHorizontally()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameAchievementSystem : gameIAchievementSystem
 {
-	[REDMeta]
-	public partial class gameAchievementSystem : gameIAchievementSystem
+	public gameAchievementSystem()
 	{
-		public gameAchievementSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

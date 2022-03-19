@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIbehaviorForcedBehaviorNodeDefinition : AIbehaviorTreeNodeDefinition
 {
-	[REDMeta]
-	public partial class AIbehaviorForcedBehaviorNodeDefinition : AIbehaviorTreeNodeDefinition
+	public AIbehaviorForcedBehaviorNodeDefinition()
 	{
-		public AIbehaviorForcedBehaviorNodeDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

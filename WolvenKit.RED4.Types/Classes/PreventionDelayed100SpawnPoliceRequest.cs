@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class PreventionDelayed100SpawnPoliceRequest : gameScriptableSystemRequest
 {
-	[REDMeta]
-	public partial class PreventionDelayed100SpawnPoliceRequest : gameScriptableSystemRequest
+	public PreventionDelayed100SpawnPoliceRequest()
 	{
-		public PreventionDelayed100SpawnPoliceRequest()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

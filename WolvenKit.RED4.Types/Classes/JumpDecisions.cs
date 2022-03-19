@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class JumpDecisions : LocomotionAirDecisions
 {
-	[REDMeta]
-	public partial class JumpDecisions : LocomotionAirDecisions
+	[Ordinal(3)] 
+	[RED("jumpPressed")] 
+	public CBool JumpPressed
 	{
-		[Ordinal(3)] 
-		[RED("jumpPressed")] 
-		public CBool JumpPressed
-		{
-			get => GetPropertyValue<CBool>();
-			set => SetPropertyValue<CBool>(value);
-		}
-
-		public JumpDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<CBool>();
+		set => SetPropertyValue<CBool>(value);
 	}
+
+	public JumpDecisions()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class LookAtTargetExecutor : gameEffectExecutor_Scripted
 {
-	[REDMeta]
-	public partial class LookAtTargetExecutor : gameEffectExecutor_Scripted
+	public LookAtTargetExecutor()
 	{
-		public LookAtTargetExecutor()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

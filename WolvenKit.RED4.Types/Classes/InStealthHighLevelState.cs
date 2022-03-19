@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class InStealthHighLevelState : AINPCHighLevelStateCheck
 {
-	[REDMeta]
-	public partial class InStealthHighLevelState : AINPCHighLevelStateCheck
+	public InStealthHighLevelState()
 	{
-		public InStealthHighLevelState()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class IMaterial : CResource
 {
-	[REDMeta]
-	public partial class IMaterial : CResource
+	public IMaterial()
 	{
-		public IMaterial()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,17 +1,14 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class DisposeEvents : CarriedObjectEvents
 {
-	[REDMeta]
-	public partial class DisposeEvents : CarriedObjectEvents
+	public DisposeEvents()
 	{
-		public DisposeEvents()
-		{
-			StyleName = "CarriedObject.Style";
-			ForceStyleName = "CarriedObject.ForcedStyle";
+		StyleName = "CarriedObject.Style";
+		ForceStyleName = "CarriedObject.ForcedStyle";
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

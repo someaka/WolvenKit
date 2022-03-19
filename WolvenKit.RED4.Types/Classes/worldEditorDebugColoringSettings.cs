@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class worldEditorDebugColoringSettings : ISerializable
 {
-	[REDMeta]
-	public partial class worldEditorDebugColoringSettings : ISerializable
+	public worldEditorDebugColoringSettings()
 	{
-		public worldEditorDebugColoringSettings()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

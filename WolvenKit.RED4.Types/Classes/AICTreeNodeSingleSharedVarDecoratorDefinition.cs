@@ -1,23 +1,19 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AICTreeNodeSingleSharedVarDecoratorDefinition : AICTreeNodeSharedVarsBaseDecoratorDefinition
 {
-	[REDMeta]
-	public partial class AICTreeNodeSingleSharedVarDecoratorDefinition : AICTreeNodeSharedVarsBaseDecoratorDefinition
+	[Ordinal(1)] 
+	[RED("sharedVarName")] 
+	public LibTreeSharedVarRegistrationName SharedVarName
 	{
-		[Ordinal(1)] 
-		[RED("sharedVarName")] 
-		public LibTreeSharedVarRegistrationName SharedVarName
-		{
-			get => GetPropertyValue<LibTreeSharedVarRegistrationName>();
-			set => SetPropertyValue<LibTreeSharedVarRegistrationName>(value);
-		}
-
-		public AICTreeNodeSingleSharedVarDecoratorDefinition()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<LibTreeSharedVarRegistrationName>();
+		set => SetPropertyValue<LibTreeSharedVarRegistrationName>(value);
 	}
+
+	public AICTreeNodeSingleSharedVarDecoratorDefinition()
+	{
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

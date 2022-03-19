@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ActivateCoverDecisions : CoverActionTransition
 {
-	[REDMeta]
-	public partial class ActivateCoverDecisions : CoverActionTransition
+	public ActivateCoverDecisions()
 	{
-		public ActivateCoverDecisions()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class scnRidAnimationContainerSRRefId : RedBaseClass
 {
-	[REDMeta]
-	public partial class scnRidAnimationContainerSRRefId : RedBaseClass
+	public scnRidAnimationContainerSRRefId()
 	{
-		public scnRidAnimationContainerSRRefId()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

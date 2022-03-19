@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiDialogListChoiceVisualizer : gameuiIChoiceVisualizer
 {
-	[REDMeta]
-	public partial class gameuiDialogListChoiceVisualizer : gameuiIChoiceVisualizer
+	public gameuiDialogListChoiceVisualizer()
 	{
-		public gameuiDialogListChoiceVisualizer()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

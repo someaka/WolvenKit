@@ -1,16 +1,13 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameTransformAnimatorComponentReplicatedState : netIComponentState
 {
-	[REDMeta]
-	public partial class gameTransformAnimatorComponentReplicatedState : netIComponentState
+	public gameTransformAnimatorComponentReplicatedState()
 	{
-		public gameTransformAnimatorComponentReplicatedState()
-		{
-			Enabled = true;
+		Enabled = true;
 
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class animAnimStateTransitionCondition_AnyAnimEnd : animIAnimStateTransitionCondition
 {
-	[REDMeta]
-	public partial class animAnimStateTransitionCondition_AnyAnimEnd : animIAnimStateTransitionCondition
+	public animAnimStateTransitionCondition_AnyAnimEnd()
 	{
-		public animAnimStateTransitionCondition_AnyAnimEnd()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

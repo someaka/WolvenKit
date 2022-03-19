@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameITransformAnimatorSaveSystem : gameIGameSystem
 {
-	[REDMeta]
-	public partial class gameITransformAnimatorSaveSystem : gameIGameSystem
+	public gameITransformAnimatorSaveSystem()
 	{
-		public gameITransformAnimatorSaveSystem()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

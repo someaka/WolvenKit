@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class gameuiPersonalLinkControllerCustomizationStateUpdater : gameuiICustomizationStateUpdater
 {
-	[REDMeta]
-	public partial class gameuiPersonalLinkControllerCustomizationStateUpdater : gameuiICustomizationStateUpdater
+	public gameuiPersonalLinkControllerCustomizationStateUpdater()
 	{
-		public gameuiPersonalLinkControllerCustomizationStateUpdater()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

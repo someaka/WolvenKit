@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class questHackingManager_ActionType : ISerializable
 {
-	[REDMeta]
-	public partial class questHackingManager_ActionType : ISerializable
+	public questHackingManager_ActionType()
 	{
-		public questHackingManager_ActionType()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

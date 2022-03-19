@@ -1,25 +1,21 @@
-using static WolvenKit.RED4.Types.Enums;
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class ForceUIRefreshEvent : redEvent
 {
-	[REDMeta]
-	public partial class ForceUIRefreshEvent : redEvent
+	[Ordinal(0)] 
+	[RED("ownerID")] 
+	public entEntityID OwnerID
 	{
-		[Ordinal(0)] 
-		[RED("ownerID")] 
-		public entEntityID OwnerID
-		{
-			get => GetPropertyValue<entEntityID>();
-			set => SetPropertyValue<entEntityID>(value);
-		}
-
-		public ForceUIRefreshEvent()
-		{
-			OwnerID = new();
-
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		get => GetPropertyValue<entEntityID>();
+		set => SetPropertyValue<entEntityID>(value);
 	}
+
+	public ForceUIRefreshEvent()
+	{
+		OwnerID = new();
+
+		PostConstruct();
+	}
+
+	partial void PostConstruct();
 }

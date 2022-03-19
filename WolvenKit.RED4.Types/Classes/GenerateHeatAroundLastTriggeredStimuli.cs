@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class GenerateHeatAroundLastTriggeredStimuli : AIbehaviortaskScript
 {
-	[REDMeta]
-	public partial class GenerateHeatAroundLastTriggeredStimuli : AIbehaviortaskScript
+	public GenerateHeatAroundLastTriggeredStimuli()
 	{
-		public GenerateHeatAroundLastTriggeredStimuli()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }

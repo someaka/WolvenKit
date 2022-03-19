@@ -1,14 +1,11 @@
+namespace WolvenKit.RED4.Types;
 
-namespace WolvenKit.RED4.Types
+public partial class AIMandatoryComponents : AIRelatedComponents
 {
-	[REDMeta]
-	public partial class AIMandatoryComponents : AIRelatedComponents
+	public AIMandatoryComponents()
 	{
-		public AIMandatoryComponents()
-		{
-			PostConstruct();
-		}
-
-		partial void PostConstruct();
+		PostConstruct();
 	}
+
+	partial void PostConstruct();
 }
