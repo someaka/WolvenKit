@@ -9,4 +9,12 @@ public partial class animAnimNode_ForegroundSegmentEnd
         get => GetPropertyValue<CUInt32>();
         set => SetPropertyValue<CUInt32>(value);
     }
+
+    [Ordinal(992)]
+    [RED("isPairedWithSelf")]
+    public CBool IsPairedWithSelf
+    {
+        get => GetPropertyValue<CBool>();
+        set => SetPropertyValue<CBool>(value);
+    }
 }
