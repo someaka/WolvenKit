@@ -16,10 +16,10 @@ public partial class CameraParams : RedBaseClass
         set => SetPropertyValue<CHandle<EngDemoContainer>>(value);
     }
 
-    //[RED("maxRotationAngle")]
-    //public CFloat MaxRotationAngle
-    //{
-    //    get => GetPropertyValue<CFloat>();
-    //    set => SetPropertyValue<CFloat>(value);
-    //}
+    [RED("maxRotationAngle")]
+    public CFloat MaxRotationAngle
+    {
+        get => GetPropertyValue<CFloat>();
+        set => SetPropertyValue<CFloat>(value);
+    }
 }
