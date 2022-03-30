@@ -11,6 +11,7 @@ using System.Windows;
 using System.Windows.Input;
 using DynamicData;
 using Microsoft.Extensions.FileSystemGlobbing;
+using MoreLinq;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using Splat;
@@ -399,6 +400,9 @@ namespace WolvenKit.ViewModels.Tools
 
             await Task.Run(() =>
             {
+                CyberEnhancedSearch();
+
+                /*
                 if (IsRegexSearchEnabled)
                 {
                     RegexSearch();
@@ -407,9 +411,93 @@ namespace WolvenKit.ViewModels.Tools
                 {
                     KeywordSearch();
                 }
+                */
             });
 
             _progressService.IsIndeterminate = false;
+        }
+
+        private enum QueryType {
+            Normal,
+            Negative
+        };
+
+        private readonly record struct Term(QueryType Type, string Filter);
+        private readonly record struct Search(QueryType Type, string Input);
+        private readonly record struct SearchRefinement(QueryType Type, Term[] Terms);
+
+        private static readonly Func<string, Search> _determinePositiveOrNegativeMatch =
+            (string input) =>
+                Regex.IsMatch(input, "\\s+\\!(\\.|\\w)")
+                    ? new Search(QueryType.Negative, input)
+                    : new Search(QueryType.Normal, input);
+
+        private static readonly Func<Term, Term> HonorFileExtension =
+            (Term term) => term with { Filter = Regex.Replace(term.Filter, "(^|\\W)\\.(?<term>\\w+?)", "$1\\.${term}") };
+
+        private static readonly Func<Term, Term> AllowOptionalTerm =
+            (Term term) => term with { Filter = Regex.Replace(term.Filter, "(?<term>[^?]+)\\?$", "(?:${term})?") };
+
+        private static readonly Func<Term, Term> AllowExcludingTerm =
+            (Term term) => term with { Filter = Regex.Replace(term.Filter, "^\\!(?<term>.+)$", "(?:${term})") };
+
+        private static readonly Func<Term, Term> LimitORToOneTerm =
+            (Term term) => term with { Filter = Regex.Replace(term.Filter, "\\|", "(?:$`|$')") };
+
+
+        private static readonly Regex RefinementMarker = new("\\s+>\\s+", RegexOptions.Compiled, TimeSpan.Parse("00:00:30"));
+        private static readonly Regex Whitespace = new("\\s+", RegexOptions.Compiled, TimeSpan.Parse("00:00:30"));
+
+        private static readonly Func<Regex, Search, SearchRefinement> SplitToRefinementsOn =
+            (Regex separator, Search search) =>
+                new SearchRefinement
+                {
+                    Type = search.Type,
+                    Terms = separator.Split(search.Input).Select(term => new Term { Type = search.Type, Filter = term }).ToArray(),
+                };
+
+        private void CyberEnhancedSearch()
+        {
+            var sequentialRegexpEnabledSearchRefinements =
+                RefinementMarker
+                    .Split(SearchBarText)
+                    .Select(DeterminePositiveOrNegativeMatch)
+                    .Select(searchRefinement => new SearchRefinement { Type = searchRefinement.Type, T Whitespace.Split(searchRefinement.Regexp) })
+                    .Select(searchTerms => searchTerms
+                            .Select(HonorFileExtension)
+                            .Select(AllowOptionalTerm)
+                            .Select(AllowExcludingTerm)
+                            .Select(LimitORToOneTerm))
+                    .Select(enhancedSearchTerms => $"^.*{string.Join(".*?", enhancedSearchTerms)}.*$")
+                    .Select(l2rCyberSearch => new Regex(l2rCyberSearch, RegexOptions.Compiled | RegexOptions.IgnoreCase, TimeSpan.Parse("00:00:30")))
+                    .ToArray();
+
+            var gameFiles =
+                _archiveManager
+                    .Archives
+                    .Connect()
+                    .TransformMany((archive => archive.Files.Values), (fileInArchive => fileInArchive.Key));
+
+            var filesMatchingQuery =
+                gameFiles
+                    .Filter((file) =>
+                        sequentialRegexpEnabledSearchRefinements
+                            .All(l2rStringOrRegexpPathMatcher => l2rStringOrRegexpPathMatcher
+                                .IsMatch(file.Name)));
+
+            // Should add an indicator here of the failure
+
+            var viewableFileList =
+                filesMatchingQuery
+                    .Transform(matchingFile => new RedFileViewModel(matchingFile))
+                    .Bind(out var list);
+
+            viewableFileList
+                .Subscribe()
+                .Dispose();
+
+            RightItems.Clear();
+            RightItems.AddRange(list);
         }
 
         /// <summary>
