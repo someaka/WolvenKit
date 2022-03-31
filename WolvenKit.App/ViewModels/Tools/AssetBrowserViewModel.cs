@@ -417,59 +417,105 @@ namespace WolvenKit.ViewModels.Tools
             _progressService.IsIndeterminate = false;
         }
 
-        private enum QueryType {
-            Normal,
-            Negative
-        };
+        private enum TermType
+        {
+            Unknown,
+            Include,
+            Exclude,
+        }
 
-        private readonly record struct Term(QueryType Type, string Filter);
-        private readonly record struct Search(QueryType Type, string Input);
-        private readonly record struct SearchRefinement(QueryType Type, Term[] Terms);
+        private readonly record struct Term(TermType Type, string Pattern, string NegationPattern);
+        private readonly record struct SearchRefinement(Term[] Terms);
 
-        private static readonly Func<string, Search> _determinePositiveOrNegativeMatch =
-            (string input) =>
-                Regex.IsMatch(input, "\\s+\\!(\\.|\\w)")
-                    ? new Search(QueryType.Negative, input)
-                    : new Search(QueryType.Normal, input);
+        private readonly record struct CyberSearch(Func<string, bool> Match, bool ContainsExclusion, string SourcePattern, string SourceNegationPattern);
 
-        private static readonly Func<Term, Term> HonorFileExtension =
-            (Term term) => term with { Filter = Regex.Replace(term.Filter, "(^|\\W)\\.(?<term>\\w+?)", "$1\\.${term}") };
+        private static readonly string Negation = "^\\!(?<term>.+)$";
+        private static readonly Regex RefinementSeparator = new("\\s+>\\s+", RegexOptions.Compiled);
+        private static readonly Regex Whitespace = new("\\s+", RegexOptions.Compiled);
 
-        private static readonly Func<Term, Term> AllowOptionalTerm =
-            (Term term) => term with { Filter = Regex.Replace(term.Filter, "(?<term>[^?]+)\\?$", "(?:${term})?") };
+        private static readonly Func<string, string> CombineTermsToPreventSplit =
+            (string search) =>
+                search;
 
-        private static readonly Func<Term, Term> AllowExcludingTerm =
-            (Term term) => term with { Filter = Regex.Replace(term.Filter, "^\\!(?<term>.+)$", "(?:${term})") };
-
-        private static readonly Func<Term, Term> LimitORToOneTerm =
-            (Term term) => term with { Filter = Regex.Replace(term.Filter, "\\|", "(?:$`|$')") };
-
-
-        private static readonly Regex RefinementMarker = new("\\s+>\\s+", RegexOptions.Compiled, TimeSpan.Parse("00:00:30"));
-        private static readonly Regex Whitespace = new("\\s+", RegexOptions.Compiled, TimeSpan.Parse("00:00:30"));
-
-        private static readonly Func<Regex, Search, SearchRefinement> SplitToRefinementsOn =
-            (Regex separator, Search search) =>
+        private static readonly Func<string, SearchRefinement> SplitRefinementToTerms =
+            (string search) =>
                 new SearchRefinement
                 {
-                    Type = search.Type,
-                    Terms = separator.Split(search.Input).Select(term => new Term { Type = search.Type, Filter = term }).ToArray(),
+                    Terms = Whitespace.Split(search).Select(term => new Term { Type = TermType.Unknown, Pattern = term }).ToArray(),
                 };
+
+        private static readonly Func<Term, Term> HonorFileExtension =
+            (Term term) =>
+                term with { Pattern = Regex.Replace(term.Pattern, "(^|\\W)\\.(?<term>\\w+?)", "$1\\.${term}") };
+
+        private static readonly Func<Term, Term> DropUnnecessaryGlobStars =
+            (Term term) => term;
+
+        private static readonly Func<Term, Term> LimitOrToOneTerm =
+            (Term term) =>
+                Regex.IsMatch(term.Pattern, "\\|")
+                ? term with { Pattern = $"(?:{term.Pattern})" }
+                : term;
+
+        // Negative regexps are extremely fraught even when not synthesized,
+        // so instead we simply fail on a negative match (with the corresponding
+        // positive match so that we know the refinement is otherwise satisfied).
+        private static readonly Func<Term, Term> AllowExcludingTerm =
+            (Term term) =>
+                !Regex.IsMatch(term.Pattern, Negation)
+                    ? term with { Type = TermType.Include }
+                    : term with
+                    {
+                        Type = TermType.Exclude,
+                        Pattern = Regex.Replace(term.Pattern, Negation, "(?:${term})"),
+                        NegationPattern = Regex.Replace(term.Pattern, Negation, "(?:.*)")
+                    };
+
+        private static readonly Func<SearchRefinement, CyberSearch> AsMatchFunctions =
+            (SearchRefinement searchRefinement) =>
+            {
+                var searchContainsExclusion =
+                    searchRefinement.Terms.Any(term => term.Type == TermType.Exclude);
+
+                var pattern = $"^.*{string.Join(".*?", searchRefinement.Terms.Select(term => term.Pattern))}.*$";
+                var patternWithExclusionsNegated = $"^.*{string.Join(".*?", searchRefinement.Terms.Select(term => term.NegationPattern ?? term.Pattern))}.*$";
+
+                var cyberSearch = new CyberSearch
+                {
+                    Match =
+                        searchContainsExclusion
+                        ? (string candidate) => (!Regex.IsMatch(candidate, pattern) && Regex.IsMatch(candidate, patternWithExclusionsNegated))
+                        : (string candidate) => Regex.IsMatch(candidate, pattern),
+
+                    ContainsExclusion = searchContainsExclusion,
+                    SourcePattern = pattern,
+                    SourceNegationPattern = patternWithExclusionsNegated,
+                };
+
+                return cyberSearch;
+            };
 
         private void CyberEnhancedSearch()
         {
-            var sequentialRegexpEnabledSearchRefinements =
-                RefinementMarker
+            var searchAsSequentialRefinements =
+                RefinementSeparator
                     .Split(SearchBarText)
-                    .Select(DeterminePositiveOrNegativeMatch)
-                    .Select(searchRefinement => new SearchRefinement { Type = searchRefinement.Type, T Whitespace.Split(searchRefinement.Regexp) })
-                    .Select(searchTerms => searchTerms
+                    .Select(CombineTermsToPreventSplit)
+                    .Select(SplitRefinementToTerms)
+                    .Select(searchRefinement => searchRefinement with
+                    {
+                        Terms = searchRefinement.Terms
                             .Select(HonorFileExtension)
-                            .Select(AllowOptionalTerm)
+                            .Select(DropUnnecessaryGlobStars)
+                            .Select(LimitOrToOneTerm)
+                            .ToArray()
+                    })
+                    .Select(searchRefinement => searchRefinement with {
+                        Terms = searchRefinement.Terms
                             .Select(AllowExcludingTerm)
-                            .Select(LimitORToOneTerm))
-                    .Select(enhancedSearchTerms => $"^.*{string.Join(".*?", enhancedSearchTerms)}.*$")
-                    .Select(l2rCyberSearch => new Regex(l2rCyberSearch, RegexOptions.Compiled | RegexOptions.IgnoreCase, TimeSpan.Parse("00:00:30")))
+                            .ToArray()
+                    })
+                    .Select(AsMatchFunctions)
                     .ToArray();
 
             var gameFiles =
@@ -478,12 +524,22 @@ namespace WolvenKit.ViewModels.Tools
                     .Connect()
                     .TransformMany((archive => archive.Files.Values), (fileInArchive => fileInArchive.Key));
 
+            var testCases = new string[] {
+                    "/base/characters/jackie.ent",
+                    "/base/jackie/characters.app",
+                    "/base/items/feet/characters/jackie/boots.app",
+                    "/base/items/head/characters/jackie/cap.mesh"
+            };
+
+            foreach (var testCase in testCases)
+            {
+                var yes = searchAsSequentialRefinements.All(r => r.Match(testCase));
+                var x = yes;
+            }
             var filesMatchingQuery =
                 gameFiles
                     .Filter((file) =>
-                        sequentialRegexpEnabledSearchRefinements
-                            .All(l2rStringOrRegexpPathMatcher => l2rStringOrRegexpPathMatcher
-                                .IsMatch(file.Name)));
+                        searchAsSequentialRefinements.All(refinement => refinement.Match(file.Name)));
 
             // Should add an indicator here of the failure
 
